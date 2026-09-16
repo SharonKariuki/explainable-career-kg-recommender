@@ -1,0 +1,51 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets and local databases
+.env
+db.sqlite3
+
+# Data and model artifacts: never committed.
+# The folders themselves are kept through .gitkeep files. The pattern
+# "data/raw/**" rather than "data/raw/" is used because git cannot re-include
+# a file (.gitkeep) inside a directory that is ignored as a whole.
+data/raw/**
+!data/raw/**/
+!data/raw/**/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+data/graph/**
+!data/graph/.gitkeep
+*.pkl
+*.npy
+*.npz
+*.zip
+*.gpickle
+*.pt
+*.safetensors
+
+# Django
+staticfiles/
+media/
+
+# Frontend
+node_modules/
+frontend/build/
+frontend/dist/
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/
