@@ -1,0 +1,26 @@
+# Pinned direct dependencies for the career recommender (Python 3.11).
+# Resolved and verified on 2026-09-16. See docs/06-sprint-log.md for notes.
+
+# Web framework and API
+Django==5.2.17
+djangorestframework==3.18.1
+
+# Database driver and configuration
+psycopg2-binary==2.9.13
+python-dotenv==1.2.3
+
+# Semantic matching (model weights download on first use in Sprint 2)
+sentence-transformers==6.0.1
+torch==2.14.0
+transformers==5.17.0
+
+# Knowledge graph and data handling
+networkx==3.6.1
+numpy==2.4.6
+pandas==3.0.5
+
+# Testing and code quality
+pytest==9.1.1
+pytest-django==4.14.0
+black==26.5.1
+flake8==7.3.0
