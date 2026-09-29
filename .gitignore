@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.pytest_cache/
+
+# Django
+db.sqlite3
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+
+# Environment (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# O*NET / ESCO downloads (large, re-downloadable)
+data/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
