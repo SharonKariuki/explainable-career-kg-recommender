@@ -47,6 +47,39 @@ The repository holds two apps side by side:
 
    The server runs at http://127.0.0.1:8000/.
 
+## Dataset
+
+The processed dataset in `data/processed/` is committed, so nothing needs to be
+downloaded to use it. To inspect one occupation (from `backend/`, with the
+virtual environment active):
+
+```bash
+python -m pipeline.summary "Data Scientists"
+```
+
+To rebuild it from the original sources, run the pipeline steps in order:
+
+```bash
+python -m pipeline.download     # O*NET 31.0, ESCO v1.1.0, crosswalk -> data/raw/ (checksums verified)
+python -m pipeline.onet         # occupations, rated skills and tools
+python -m pipeline.esco         # ESCO skills linked through the crosswalk
+python -m pipeline.embeddings   # skill label embeddings -> data/cache/ (first run downloads the model)
+python -m pipeline.mapping      # which ESCO skills are the same as an O*NET skill
+```
+
+| File | Contents |
+|---|---|
+| `occupations.csv` | The 24 in-scope tech occupations and their domain |
+| `onet_skills.csv` | Essential, Transferable and Knowledge ratings; importance and level on 0-1 |
+| `onet_tools.csv` | Software tools, weighted 1.0 In Demand / 0.75 Hot Technology / 0.5 other |
+| `esco_occupations.csv` | ESCO occupations linked through the ESCO-O*NET crosswalk |
+| `esco_occupation_skills.csv` | ESCO skills per occupation, weighted by how consistently they are required |
+| `esco_skills.csv` | ESCO skill labels, types and alternative labels |
+| `esco_onet_map.csv` | Each ESCO skill's closest O*NET skill; `merged` when similarity is at least 0.90 |
+
+O*NET is licensed under CC BY 4.0 by the U.S. Department of Labor, Employment and
+Training Administration. ESCO is published by the European Commission.
+
 ## Frontend
 
 ```bash
