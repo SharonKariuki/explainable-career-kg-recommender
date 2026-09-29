@@ -1,0 +1,25 @@
+onet_soc_code,title,domain,evidence
+15-1251.00,Computer Programmers,software engineering,Core software occupation
+15-1252.00,Software Developers,software engineering,Core software occupation
+15-1253.00,Software Quality Assurance Analysts and Testers,software engineering,Core software occupation
+15-1254.00,Web Developers,software engineering,Core software occupation
+15-1255.00,Web and Digital Interface Designers,software engineering,Front-end and interface development
+15-1211.00,Computer Systems Analysts,software engineering,Systems analysis and design
+15-1299.07,Blockchain Engineers,software engineering,Specialised software engineering
+15-1299.08,Computer Systems Engineers/Architects,cloud computing,O*NET Job Titles and Sample of Reported Titles list cloud architecture titles
+15-1299.09,Information Technology Project Managers,software engineering,Common progression path for software graduates
+15-2051.00,Data Scientists,data science,Core data science occupation
+15-2051.01,Business Intelligence Analysts,data science,Analytics and reporting
+15-1242.00,Database Administrators,data science,Data management
+15-1243.00,Database Architects,data science,Data management; Job Titles include Cloud Architect
+15-1243.01,Data Warehousing Specialists,data science,Data engineering
+15-2041.00,Statisticians,data science,Statistical analysis
+15-1212.00,Information Security Analysts,cybersecurity,Core security occupation; Job Titles include Cloud Security Engineer
+15-1299.04,Penetration Testers,cybersecurity,Core security occupation
+15-1299.05,Information Security Engineers,cybersecurity,Core security occupation; Job Titles include Cloud Engineer
+15-1299.06,Digital Forensics Analysts,cybersecurity,Core security occupation
+15-1241.00,Computer Network Architects,cloud computing,Job Titles include Cloud Architect and Cloud Network Engineer
+15-1244.00,Network and Computer Systems Administrators,cloud computing,Infrastructure operations
+15-1231.00,Computer Network Support Specialists,cloud computing,Job Titles include Cloud Engineer and Cloud Support Specialist
+15-1232.00,Computer User Support Specialists,cloud computing,Entry-level infrastructure role; Job Titles include Cloud Operations Specialist
+15-1221.00,Computer and Information Research Scientists,artificial intelligence,Job Titles include Machine Learning Engineer and Machine Learning Scientist
