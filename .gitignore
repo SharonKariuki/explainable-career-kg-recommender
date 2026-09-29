@@ -19,7 +19,7 @@ npm-debug.log*
 !.env.example
 
 # O*NET / ESCO downloads (large, re-downloadable)
-data/
+data/raw/
 
 # Editors and OS
 .vscode/
