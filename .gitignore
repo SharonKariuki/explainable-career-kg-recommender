@@ -20,6 +20,7 @@ npm-debug.log*
 
 # O*NET / ESCO downloads (large, re-downloadable)
 data/raw/
+data/cache/
 
 # Editors and OS
 .vscode/
