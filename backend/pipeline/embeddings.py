@@ -6,6 +6,7 @@ long as the model and the set of labels are unchanged.
 """
 
 import hashlib
+import re
 
 import numpy as np
 import pandas as pd
@@ -14,6 +15,11 @@ from pipeline import DATA_DIR, PROCESSED_DIR
 
 MODEL_NAME = 'sentence-transformers/all-MiniLM-L6-v2'
 CACHE_FILE = DATA_DIR / 'cache' / 'skill_embeddings.npz'
+
+
+def strip_qualifier(label):
+    """Drop ESCO's disambiguating suffix: 'Python (computer programming)' -> 'Python'."""
+    return re.sub(r'\s*\([^)]*\)\s*$', '', label).strip()
 
 
 def skill_labels():
@@ -27,6 +33,7 @@ def skill_labels():
         pd.DataFrame({'source': 'onet_skill', 'skill_id': rated['element_id'], 'label': rated['skill'], 'preferred': True}),
         pd.DataFrame({'source': 'onet_tool', 'skill_id': tools['tool'], 'label': tools['tool'], 'preferred': True}),
         pd.DataFrame({'source': 'esco', 'skill_id': esco['skill_uri'], 'label': esco['label'], 'preferred': True}),
+        pd.DataFrame({'source': 'esco', 'skill_id': esco['skill_uri'], 'label': esco['label'].map(strip_qualifier), 'preferred': False}),
         pd.DataFrame({'source': 'esco', 'skill_id': esco_alt['skill_uri'], 'label': esco_alt['label'], 'preferred': False}),
     ]
     labels = pd.concat(frames, ignore_index=True)
