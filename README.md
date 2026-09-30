@@ -87,13 +87,16 @@ careers and the skills they require, matches a user's skills to graph skills
 with SBERT, and ranks careers. From `backend/`:
 
 ```bash
-python -m recommender.ranking Python "machine learning" statistics --top 5
+python -m recommender.engine Python "machine learning" statistics --top 5
 ```
 
-It prints how each skill was matched (flagging matches below 0.60 similarity as
-low confidence) and each career's score broken down by skill. The first run
-downloads the SBERT model; after that, loading takes about 20 seconds and a
-ranking is instant.
+Each career is scored as a weighted sum of Coverage (how much of the profile it
+requires), ProfileSimilarity (SBERT similarity to its O*NET description) and
+GraphProximity (personalised PageRank from the matched skills); the formula is
+documented in `recommender/engine.py`. The output shows how each skill was
+matched, each career's three components, and the skills behind them. The first
+run downloads the SBERT model; after that, loading takes about 20 seconds and a
+ranking takes well under a second.
 
 Run the tests from `backend/`:
 

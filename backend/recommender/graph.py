@@ -59,7 +59,8 @@ def build_graph():
     graph = nx.Graph()
 
     for row in read('occupations.csv').itertuples():
-        graph.add_node(career_id(row.onet_soc_code), kind='career', label=row.title, domain=row.domain)
+        graph.add_node(career_id(row.onet_soc_code), kind='career', label=row.title, domain=row.domain,
+                       description=row.description)
 
     def require(career, skill, weight, source, label, skill_type):
         if skill not in graph:
