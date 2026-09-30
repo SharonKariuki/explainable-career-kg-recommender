@@ -75,7 +75,7 @@ python -m pipeline.mapping      # which ESCO skills are the same as an O*NET ski
 | `esco_occupations.csv` | ESCO occupations linked through the ESCO-O*NET crosswalk |
 | `esco_occupation_skills.csv` | ESCO skills per occupation, weighted by how consistently they are required |
 | `esco_skills.csv` | ESCO skill labels, types and alternative labels |
-| `esco_onet_map.csv` | Each ESCO skill's closest O*NET skill; `merged` when similarity is at least 0.90 |
+| `esco_onet_map.csv` | Each ESCO skill's closest O*NET skill; `merged` when similarity is at least 0.90 or the pair is in the hand-checked list in `mapping.py` |
 
 O*NET is licensed under CC BY 4.0 by the U.S. Department of Labor, Employment and
 Training Administration. ESCO is published by the European Commission.
