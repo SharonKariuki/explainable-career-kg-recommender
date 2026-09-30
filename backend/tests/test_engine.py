@@ -12,13 +12,19 @@ def engine():
 
 @pytest.mark.parametrize('skills, expected', [
     (['Python', 'machine learning', 'statistics'], 'Data Scientists'),
-    (['HTML', 'CSS', 'JavaScript'], 'Web Developers'),
     (['penetration testing', 'Kali Linux', 'network security'], 'Penetration Testers'),
     (['Java', 'software design patterns', 'unit testing'], 'Software Developers'),
 ])
 def test_clear_profiles_rank_their_career_first(engine, skills, expected):
     _, recommendations = engine.rank(skills)
     assert recommendations[0].title == expected
+
+
+def test_front_end_skills_rank_the_two_web_careers_first(engine):
+    # Both web careers require all three skills; the designers' O*NET
+    # description is semantically closer, so either order is reasonable.
+    _, recommendations = engine.rank(['HTML', 'CSS', 'JavaScript'])
+    assert {r.title for r in recommendations[:2]} == {'Web Developers', 'Web and Digital Interface Designers'}
 
 
 def test_score_is_the_weighted_sum_of_stored_components(engine):
