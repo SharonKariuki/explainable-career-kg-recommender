@@ -31,17 +31,23 @@ class SkillMatch:
     low_confidence: bool
 
 
+def graph_skill_names(kg):
+    """Every name each graph skill node is known by: one row per (node_id, label)."""
+    labels = skill_labels()
+    esco_ids = esco_node_ids()
+    labels['node_id'] = [
+        esco_ids[skill_id] if source == 'esco' else onet_node_id(source, skill_id)
+        for source, skill_id in zip(labels['source'], labels['skill_id'])
+    ]
+    # Rated skills below the importance cutoff for every career are not in the graph.
+    labels = labels[labels['node_id'].isin(kg.graph.nodes)]
+    return labels.drop_duplicates(['node_id', 'label'])[['node_id', 'label']].reset_index(drop=True)
+
+
 class SkillMatcher:
     def __init__(self, kg):
         self.kg = kg
-        labels = skill_labels()
-        esco_ids = esco_node_ids()
-        labels['node_id'] = [
-            esco_ids[skill_id] if source == 'esco' else onet_node_id(source, skill_id)
-            for source, skill_id in zip(labels['source'], labels['skill_id'])
-        ]
-        # Rated skills below the importance cutoff for every career are not in the graph.
-        labels = labels[labels['node_id'].isin(kg.graph.nodes)].drop_duplicates(['node_id', 'label'])
+        labels = graph_skill_names(kg)
         self.texts = labels['label'].tolist()
         self.node_ids = labels['node_id'].tolist()
         vectors = load_embeddings(self.texts)
