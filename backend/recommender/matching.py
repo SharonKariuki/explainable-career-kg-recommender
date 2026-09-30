@@ -53,13 +53,20 @@ class SkillMatcher:
         vectors = load_embeddings(self.texts)
         self.matrix = np.stack([vectors[text] for text in self.texts])
 
+    @staticmethod
+    def clean(skills):
+        """Distinct non-empty skills, trimmed, in the order given (repeats ignore case)."""
+        cleaned = (s.strip() for s in skills if s and s.strip())
+        return list({q.casefold(): q for q in reversed(list(cleaned))}.values())[::-1]
+
     def match(self, skills):
         """One SkillMatch per distinct non-empty skill, in the order given."""
-        cleaned = (s.strip() for s in skills if s and s.strip())
-        queries = list({q.casefold(): q for q in reversed(list(cleaned))}.values())[::-1]
-        if not queries:
-            return []
-        scores = encode(queries) @ self.matrix.T
+        queries = self.clean(skills)
+        return self.match_encoded(queries, encode(queries)) if queries else []
+
+    def match_encoded(self, queries, vectors):
+        """Match already-cleaned queries whose embeddings the caller has computed."""
+        scores = vectors @ self.matrix.T
         matches = []
         for query, row in zip(queries, scores):
             best = int(row.argmax())
