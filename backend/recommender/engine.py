@@ -50,12 +50,21 @@ PAGERANK_DAMPING = 0.85
 
 @dataclass(frozen=True)
 class EngineParams:
+    """Defaults chosen by `python -m recommender.tuning` on the validation profiles.
+
+    Component weights: best validation MRR (0.630; Coverage alone 0.584).
+    Depth: 1 and 3 score within 0.006 MRR, so the depth at which every
+    recommendation shares at least one declared skill is kept. Low-confidence
+    threshold and weight: every validation skill matched at similarity 1.0,
+    so they could not be tuned; the threshold comes from probing typical
+    inputs (see matching.py) and the weight keeps such matches at half value.
+    """
     max_depth: int = 1
     low_confidence_threshold: float = 0.60
     low_confidence_weight: float = 0.5
-    coverage_weight: float = 0.5
-    similarity_weight: float = 0.25
-    proximity_weight: float = 0.25
+    coverage_weight: float = 0.3
+    similarity_weight: float = 0.3
+    proximity_weight: float = 0.4
 
 
 DEFAULT_PARAMS = EngineParams()

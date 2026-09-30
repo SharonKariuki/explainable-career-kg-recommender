@@ -98,6 +98,16 @@ matched, each career's three components, and the skills behind them. The first
 run downloads the SBERT model; after that, loading takes about 20 seconds and a
 ranking takes well under a second.
 
+The keyword-matching baseline (no embeddings, no graph) takes the same input:
+
+```bash
+python -m recommender.baseline Python "machine learning" statistics --top 5
+```
+
+The engine's parameters were chosen by a grid search on synthetic validation
+profiles; re-run it (about 3 minutes) with `python -m recommender.tuning`, which
+writes every configuration's scores to `data/results/tuning.csv`.
+
 Run the tests from `backend/`:
 
 ```bash
