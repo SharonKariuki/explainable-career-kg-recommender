@@ -1,12 +1,12 @@
 """Encode every skill label with a sentence-transformers model and cache the vectors.
 
 Labels come from the processed dataset: O*NET rated skills, O*NET tools, and
-ESCO preferred and alternative labels. The cache in data/cache/ is reused as
-long as the model and the set of labels are unchanged.
+ESCO preferred and alternative labels. The cache in data/cache/ keeps every
+text encoded so far with the current model, so only new labels are encoded.
 """
 
-import hashlib
 import re
+from functools import lru_cache
 
 import numpy as np
 import pandas as pd
@@ -41,27 +41,39 @@ def skill_labels():
     return labels.drop_duplicates(['source', 'skill_id', 'label']).reset_index(drop=True)
 
 
-def fingerprint(texts):
-    return hashlib.sha256('\n'.join([MODEL_NAME, *texts]).encode('utf-8')).hexdigest()
+@lru_cache(maxsize=1)
+def get_model():
+    from sentence_transformers import SentenceTransformer
+
+    return SentenceTransformer(MODEL_NAME)
+
+
+def encode(texts):
+    """Unit-length embeddings for `texts`, one row per text."""
+    return get_model().encode(list(texts), batch_size=128, normalize_embeddings=True).astype(np.float32)
 
 
 def load_embeddings(texts):
-    """Return {text: unit vector} for the given texts, from cache when possible."""
-    texts = sorted(set(texts))
-    key = fingerprint(texts)
+    """Return {text: unit vector} for the given texts.
 
+    Vectors already in the cache are reused; only texts it does not hold yet
+    are encoded, and then added to it. The cache is discarded if it was built
+    with a different model.
+    """
+    texts = set(texts)
+    cache = {}
     if CACHE_FILE.exists():
         cached = np.load(CACHE_FILE, allow_pickle=False)
-        if str(cached['fingerprint']) == key:
-            return dict(zip(cached['texts'].tolist(), cached['vectors']))
+        if 'model' in cached.files and str(cached['model']) == MODEL_NAME:
+            cache = dict(zip(cached['texts'].tolist(), cached['vectors']))
 
-    from sentence_transformers import SentenceTransformer
-
-    model = SentenceTransformer(MODEL_NAME)
-    vectors = model.encode(texts, batch_size=128, normalize_embeddings=True, show_progress_bar=True).astype(np.float32)
-    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    np.savez(CACHE_FILE, fingerprint=key, texts=np.array(texts), vectors=vectors)
-    return dict(zip(texts, vectors))
+    missing = sorted(texts - cache.keys())
+    if missing:
+        cache.update(zip(missing, encode(missing)))
+        CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+        ordered = sorted(cache)
+        np.savez(CACHE_FILE, model=MODEL_NAME, texts=np.array(ordered), vectors=np.stack([cache[t] for t in ordered]))
+    return {text: cache[text] for text in texts}
 
 
 def main():
