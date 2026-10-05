@@ -4,7 +4,9 @@ An explainable, knowledge-graph-based career guidance recommender.
 
 The repository holds two apps side by side:
 
-- `backend/`: Django project (`config`) with a placeholder `core` app
+- `backend/`: Django REST API (`config` project, `core` app for accounts, skill
+  profiles and recommendations), the data pipeline (`pipeline/`) and the
+  recommender (`recommender/`)
 - `frontend/`: React app built with Vite
 
 ## Prerequisites
@@ -42,7 +44,7 @@ The repository holds two apps side by side:
 
    ```bash
    python manage.py migrate
-   python manage.py runserver
+   python manage.py runserver --noreload
    ```
 
    The server runs at http://127.0.0.1:8000/.
@@ -136,3 +138,42 @@ npm run dev
 ```
 
 The app runs at http://localhost:5173/.
+
+## Running the web app
+
+Start both apps, each in its own terminal, after the setup steps above:
+
+```bash
+# terminal 1, in backend/ with the virtual environment active
+python manage.py runserver --noreload
+
+# terminal 2, in frontend/
+npm run dev
+```
+
+Django loads the knowledge graph and the SBERT model when it starts, so wait
+for "Starting development server" (about 20 seconds) before using the app. Use
+`--noreload`: Django's auto-reloader checks every loaded module for changes each
+second, and once the model libraries are loaded that slows startup to several
+minutes. Restart the server yourself after changing backend code. Then
+open http://localhost:5173/, create an account, list your skills and choose
+**Save and see my careers**. Each career links to its explanation and the
+skills you would need to build.
+
+In development Vite forwards `/api` requests to Django on port 8000. If that
+port is taken, run Django on another one and tell Vite where it is:
+
+```bash
+python manage.py runserver 8010 --noreload           # backend
+API_PROXY_TARGET=http://127.0.0.1:8010 npm run dev   # frontend (PowerShell: $env:API_PROXY_TARGET="http://127.0.0.1:8010"; npm run dev)
+```
+
+The API, under `/api/`, needs a token from register or login on every other
+endpoint:
+
+| Endpoint | Purpose |
+|---|---|
+| `POST auth/register/`, `POST auth/login/`, `POST auth/logout/`, `GET auth/me/` | Accounts and tokens |
+| `GET`, `PUT profile/` | The signed-in user's skills |
+| `GET recommendations/?top=N` | Ranked careers with score components |
+| `GET recommendations/<career code>/` | One career's explanation, contributing skills and skills gap |
