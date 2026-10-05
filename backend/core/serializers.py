@@ -2,6 +2,8 @@ from django.contrib.auth import authenticate, get_user_model
 from django.contrib.auth.password_validation import validate_password
 from rest_framework import serializers
 
+from recommender.matching import SkillMatcher
+
 User = get_user_model()
 
 
@@ -21,6 +23,20 @@ class RegisterSerializer(serializers.Serializer):
 
     def create(self, data):
         return User.objects.create_user(data['username'], data.get('email', ''), data['password'])
+
+
+MAX_SKILLS = 30
+
+
+class SkillProfileSerializer(serializers.Serializer):
+    skills = serializers.ListField(
+        child=serializers.CharField(max_length=100, allow_blank=True), max_length=MAX_SKILLS,
+    )
+    updated_at = serializers.DateTimeField(read_only=True)
+
+    def validate_skills(self, value):
+        # Same cleaning the matcher applies: trimmed, no blanks, no repeats ignoring case.
+        return SkillMatcher.clean(value)
 
 
 class LoginSerializer(serializers.Serializer):
