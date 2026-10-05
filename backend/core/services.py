@@ -8,7 +8,7 @@ that, ranking a profile takes well under a second.
 from dataclasses import asdict
 
 from recommender.engine import DEFAULT_PARAMS, get_engine
-from recommender.explanation import ExplanationGenerator
+from recommender.explanation import ExplanationGenerator, requirement_level
 from recommender.skills_gap import get_skills_gap
 
 
@@ -49,6 +49,11 @@ def recommendation_summary(recommendation, rank_position):
     }
 
 
+def with_requirement(item):
+    """Add the plain label ('Core requirement', 'Important', 'Supporting') for its edge weight."""
+    return {**item, 'requirement': requirement_level(item['edge_weight'])[1]}
+
+
 def recommendation_detail(recommendation, rank_position, matches):
     r = recommendation
     explanation = ExplanationGenerator().explain(r)
@@ -61,7 +66,7 @@ def recommendation_detail(recommendation, rank_position, matches):
             'graph_proximity': p.proximity_weight,
         },
         'explanation': list(explanation.sentences),
-        'skill_contributions': [asdict(c) for c in r.skill_contributions],
+        'skill_contributions': [with_requirement(asdict(c)) for c in r.skill_contributions],
         'proximity_paths': [asdict(p) for p in r.proximity_paths],
-        'skills_gap': [asdict(g) for g in get_skills_gap().gaps(r, matches)],
+        'skills_gap': [with_requirement(asdict(g)) for g in get_skills_gap().gaps(r, matches)],
     }

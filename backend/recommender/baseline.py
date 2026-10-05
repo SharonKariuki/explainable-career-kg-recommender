@@ -6,12 +6,8 @@ traversal. A declared skill matches a career skill when, ignoring case, the
 two are equal or one contains the other (containment only for terms of at
 least MIN_SUBSTRING_LENGTH characters, so "C" or "R" do not match
 everything). A career scores the fraction of declared skills it matches.
-
-Usage (from backend/):
-    python -m recommender.baseline Python "machine learning" statistics --top 5
 """
 
-import argparse
 from dataclasses import dataclass
 from functools import lru_cache
 
@@ -81,21 +77,3 @@ class KeywordBaseline:
 @lru_cache(maxsize=1)
 def get_baseline():
     return KeywordBaseline(get_graph())
-
-
-def main():
-    parser = argparse.ArgumentParser(description='Rank careers for a list of skills by keyword matching.')
-    parser.add_argument('skills', nargs='+')
-    parser.add_argument('--top', type=int, default=10)
-    args = parser.parse_args()
-
-    matches, recommendations = get_baseline().rank(args.skills, top_k=args.top)
-    for m in matches:
-        print(f'  {m.query!r}: {len(m.skill_ids)} skill names contain or equal it')
-    for i, r in enumerate(recommendations, 1):
-        shown = ', '.join(sorted({label for _, label in r.matched})[:5])
-        print(f'{i:>3}. {r.title}  score {r.score:.2f}  ({shown})')
-
-
-if __name__ == '__main__':
-    main()

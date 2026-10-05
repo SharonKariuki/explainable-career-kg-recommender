@@ -71,6 +71,7 @@ def test_detail_has_the_explanation_and_skills_gap():
     assert sum(weights.values()) == pytest.approx(1)
     assert data['score'] == pytest.approx(sum(weights[k] * data['components'][k] for k in weights))
     assert {c['query'] for c in data['skill_contributions']} <= set(DATA_SKILLS)
+    assert {c['requirement'] for c in data['skill_contributions']} <= {'Core requirement', 'Important', 'Supporting'}
     gap = [g['label'] for g in data['skills_gap']]
     assert 'NumPy' in gap and not set(gap) & {'Python', 'statistics', 'machine learning'}
 

@@ -85,49 +85,25 @@ Training Administration. ESCO is published by the European Commission.
 ## Recommender
 
 `backend/recommender/` loads the dataset into an in-memory knowledge graph of
-careers and the skills they require, matches a user's skills to graph skills
-with SBERT, and ranks careers. From `backend/`:
+careers and the skills they require, matches a user's skills to it with SBERT,
+and ranks careers by a weighted sum of Coverage, ProfileSimilarity and
+GraphProximity (defined in `recommender/engine.py`). Each recommendation comes
+with a plain-language explanation and the skills to build. From `backend/`:
 
 ```bash
-python -m recommender.engine Python "machine learning" statistics --top 5
+python -m recommender Python "machine learning" statistics             # explained top 3
+python -m recommender Python "machine learning" statistics --baseline  # keyword baseline
 ```
 
-Each career is scored as a weighted sum of Coverage (how much of the profile it
-requires), ProfileSimilarity (SBERT similarity to its O*NET description) and
-GraphProximity (personalised PageRank from the matched skills); the formula is
-documented in `recommender/engine.py`. The output shows how each skill was
-matched, each career's three components, and the skills behind them. The first
-run downloads the SBERT model; after that, loading takes about 20 seconds and a
-ranking takes well under a second.
+The first run downloads the SBERT model; after that, loading takes about 20
+seconds and a ranking well under a second.
 
-Each recommendation can be explained in plain language and comes with a skills
-gap (the career's requirements you did not list, most important first):
-
-```bash
-python -m recommender.explanation Python "machine learning" statistics --top 3
-python -m recommender.skills_gap Python "machine learning" statistics --top 3
-```
-
-Explanations are checked for fidelity (they may only state what the score used)
-with `python -m recommender.fidelity`, and scored for completeness and
-readability with `python -m recommender.explanation_quality`; the rubric and
-results are in `docs/explainability_rubric.md`.
-
-The keyword-matching baseline (no embeddings, no graph) takes the same input:
-
-```bash
-python -m recommender.baseline Python "machine learning" statistics --top 5
-```
-
-The engine's parameters were chosen by a grid search on synthetic validation
-profiles; re-run it (about 3 minutes) with `python -m recommender.tuning`, which
-writes every configuration's scores to `data/results/tuning.csv`.
-
-Run the tests from `backend/`:
-
-```bash
-python -m pytest
-```
+| Command | Purpose |
+|---|---|
+| `python -m pytest` | Run the tests |
+| `python -m recommender.tuning` | Grid search that chose the engine's parameters (about 3 minutes; writes `data/results/tuning.csv`) |
+| `python -m recommender.fidelity` | Check that explanations only state what the score used |
+| `python -m recommender.explanation_quality` | Score explanations for completeness and readability (`docs/explainability_rubric.md`) |
 
 ## Frontend
 

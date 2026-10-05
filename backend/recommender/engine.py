@@ -28,12 +28,8 @@ A match below `low_confidence_threshold` keeps its nearest skill node but
 counts at `low_confidence_weight` of its similarity. Every recommendation
 stores its components and the skills behind them, which is what the
 explanation module reads.
-
-Usage (from backend/):
-    python -m recommender.engine Python "machine learning" statistics --top 5
 """
 
-import argparse
 import math
 from dataclasses import dataclass, replace
 from functools import lru_cache
@@ -43,7 +39,7 @@ import numpy as np
 
 from pipeline.embeddings import encode, get_model, load_embeddings
 from recommender.graph import get_graph
-from recommender.matching import SkillMatcher
+from recommender.matching import LOW_CONFIDENCE_THRESHOLD, SkillMatcher
 
 PAGERANK_DAMPING = 0.85
 
@@ -60,7 +56,7 @@ class EngineParams:
     inputs (see matching.py) and the weight keeps such matches at half value.
     """
     max_depth: int = 1
-    low_confidence_threshold: float = 0.60
+    low_confidence_threshold: float = LOW_CONFIDENCE_THRESHOLD
     low_confidence_weight: float = 0.5
     coverage_weight: float = 0.3
     similarity_weight: float = 0.3
@@ -228,33 +224,3 @@ def get_engine():
     kg = get_graph()
     get_model()
     return RecommendationEngine(kg, SkillMatcher(kg))
-
-
-def main():
-    parser = argparse.ArgumentParser(description='Rank careers for a list of skills.')
-    parser.add_argument('skills', nargs='+', help='declared skills, e.g. Python "machine learning"')
-    parser.add_argument('--top', type=int, default=10, help='number of careers to show')
-    args = parser.parse_args()
-
-    matches, recommendations = get_engine().rank(args.skills, top_k=args.top)
-
-    print('Matched skills')
-    for m in matches:
-        flag = '  (low confidence)' if m.low_confidence else ''
-        print(f'  {m.query!r} -> {m.node_label} [{m.similarity:.2f}]{flag}')
-
-    print('\nRecommended careers')
-    if not recommendations:
-        print('  (none)')
-    for i, r in enumerate(recommendations, 1):
-        c = r.components
-        print(f'{i:>3}. {r.title} ({r.domain})  score {r.score:.3f}  '
-              f'[coverage {c.coverage:.2f}, similarity {c.profile_similarity:.2f}, proximity {c.graph_proximity:.2f}]')
-        for s in r.skill_contributions:
-            print(f'       {s.skill_label}: coverage +{s.coverage_share:.2f} '
-                  f'(match {s.match_similarity:.2f}, weight {s.edge_weight:.2f}, idf {s.idf:.2f})')
-        print('       reached through: ' + ', '.join(f'{p.skill_label} ({p.share:.0%})' for p in r.proximity_paths))
-
-
-if __name__ == '__main__':
-    main()
