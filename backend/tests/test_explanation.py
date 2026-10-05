@@ -51,7 +51,15 @@ def test_proximity_separates_the_users_skills_from_related_ones():
     mine = contribution('statistics')
     paths = [ProximityPath('tool:statistics', 'statistics', 0.4), ProximityPath('tool:SAS', 'SAS', 0.1)]
     text = explain(recommendation([mine], paths)).text
-    assert 'connected mainly through your statistics, with further links through related skills such as SAS' in text
+    # statistics was already named, so it is referred to rather than repeated
+    assert 'connected mainly through the skills above, with further links through related skills such as SAS' in text
+
+
+def test_proximity_names_the_users_skills_not_already_listed():
+    contributions = [contribution(f'Skill{i}', share=0.3 - i * 0.05) for i in range(4)]
+    paths = [ProximityPath('tool:Skill3', 'Skill3', 0.4)]
+    text = explain(recommendation(contributions, paths)).text
+    assert 'connected mainly through your Skill3' in text
 
 
 def test_careers_without_direct_skills_say_so():
