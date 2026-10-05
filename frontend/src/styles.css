@@ -108,6 +108,58 @@ button.link {
   line-height: 1;
 }
 
+.card + .card, .card + .results, .results + .card { margin-top: 1rem; }
+a + .card { margin-top: 0.75rem; }
+
+.matches { list-style: none; padding: 0; margin: 0.25rem 0 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+.note { background: var(--warn-soft); color: var(--warn); padding: 0.6rem 0.8rem; border-radius: 8px; }
+.tag {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.tag.warn { background: var(--warn-soft); color: var(--warn); }
+
+.results { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 1rem; }
+.result h2 { margin: 0; }
+.result h2 a { color: var(--text); text-decoration: none; }
+.result h2 a:hover { text-decoration: underline; }
+.result-head { display: flex; align-items: flex-start; gap: 0.9rem; }
+.rank {
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.domain { margin: 0; text-transform: capitalize; }
+.score { font-weight: 700; font-size: 1.25rem; font-variant-numeric: tabular-nums; }
+
+.meters { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.6rem 1.25rem; margin: 0.75rem 0; }
+.meters.stacked { grid-template-columns: 1fr; max-width: 34rem; }
+.card > h2:first-child { margin-top: 0; }
+.meter-label { display: flex; justify-content: space-between; gap: 0.5rem; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.meter-track { height: 0.5rem; background: var(--border); border-radius: 999px; overflow: hidden; }
+.meter-fill { height: 100%; background: var(--accent); border-radius: 999px; }
+
+.explanation p { margin: 0.4rem 0; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+
+.gap { padding-left: 1.4rem; margin: 0.5rem 0 0; display: grid; gap: 0.45rem; }
+.gap-skill { font-weight: 500; }
+.source { margin-left: 0.5rem; font-size: 0.85rem; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
