@@ -7,4 +7,7 @@ urlpatterns = [
     path('auth/login/', views.login),
     path('auth/logout/', views.logout),
     path('auth/me/', views.me),
+    path('profile/', views.profile),
+    path('recommendations/', views.recommendations),
+    path('recommendations/<str:career_code>/', views.recommendation_detail),
 ]
