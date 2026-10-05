@@ -13,12 +13,8 @@ and XGobi for Statisticians, ahead of Mathematics and Stata).
 
 Each gap skill keeps its edge weight, IDF and the data sources of its edge,
 so it can be traced to the graph and explained.
-
-Usage (from backend/):
-    python -m recommender.skills_gap Python statistics --top 3
 """
 
-import argparse
 from dataclasses import dataclass
 from functools import lru_cache
 
@@ -70,23 +66,3 @@ class SkillsGapModule:
 def get_skills_gap():
     engine = get_engine()
     return SkillsGapModule(engine.kg, engine.idf)
-
-
-def main():
-    parser = argparse.ArgumentParser(description='Show the skills gap for the top recommendations.')
-    parser.add_argument('skills', nargs='+')
-    parser.add_argument('--top', type=int, default=3, help='number of careers')
-    parser.add_argument('--limit', type=int, default=DEFAULT_LIMIT, help='gap skills per career')
-    args = parser.parse_args()
-
-    matches, recommendations = get_engine().rank(args.skills, top_k=args.top)
-    module = get_skills_gap()
-    for i, r in enumerate(recommendations, 1):
-        print(f'{i}. {r.title}: skills to build')
-        for g in module.gaps(r, matches, limit=args.limit):
-            print(f'     {g.label}  (priority {g.priority:.2f}: weight {g.edge_weight:.2f}, idf {g.idf:.2f}; '
-                  f'{", ".join(g.sources)})')
-
-
-if __name__ == '__main__':
-    main()

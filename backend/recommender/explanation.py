@@ -6,15 +6,11 @@ value, the skills the GraphProximity random walk arrived through, and the
 weighted sum that gives the score. Nothing else is consulted, so each claim
 can be traced back to the score (see fidelity.py). Alongside the text, an
 Explanation records the skills it names and the component values it quotes.
-
-Usage (from backend/):
-    python -m recommender.explanation Python "machine learning" statistics --top 3
 """
 
-import argparse
 from dataclasses import dataclass
 
-from recommender.engine import DEFAULT_PARAMS, get_engine
+from recommender.engine import DEFAULT_PARAMS
 
 SHOWN_CONTRIBUTIONS = 3
 
@@ -32,10 +28,10 @@ class Explanation:
         return ' '.join(self.sentences)
 
 
-REQUIREMENT_LEVELS = (  # (minimum edge weight, singular, plural)
-    (0.75, 'a core requirement', 'core requirements'),
-    (0.5, 'an important skill', 'important skills'),
-    (0.0, 'a supporting skill', 'supporting skills'),
+REQUIREMENT_LEVELS = (  # (minimum edge weight, label, singular, plural)
+    (0.75, 'Core requirement', 'a core requirement', 'core requirements'),
+    (0.5, 'Important', 'an important skill', 'important skills'),
+    (0.0, 'Supporting', 'a supporting skill', 'supporting skills'),
 )
 
 
@@ -49,7 +45,7 @@ def requirement_groups(contributions):
     for level in REQUIREMENT_LEVELS:
         members = [name(c) for c in contributions if requirement_level(c.edge_weight) is level]
         if members:
-            groups.append(f'{join(members)} as {level[1] if len(members) == 1 else level[2]}')
+            groups.append(f'{join(members)} as {level[2] if len(members) == 1 else level[3]}')
     return groups
 
 
@@ -159,19 +155,3 @@ class ExplanationGenerator:
             mentioned_skill_ids=tuple(dict.fromkeys(skills)),
             quoted_components=tuple(quoted),
         )
-
-
-def main():
-    parser = argparse.ArgumentParser(description='Explain the top recommendations for a list of skills.')
-    parser.add_argument('skills', nargs='+')
-    parser.add_argument('--top', type=int, default=3)
-    args = parser.parse_args()
-
-    _, recommendations = get_engine().rank(args.skills, top_k=args.top)
-    generator = ExplanationGenerator()
-    for i, r in enumerate(recommendations, 1):
-        print(f'{i}. {generator.explain(r).text}\n')
-
-
-if __name__ == '__main__':
-    main()

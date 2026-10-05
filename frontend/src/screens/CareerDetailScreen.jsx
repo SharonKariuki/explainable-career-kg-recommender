@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { getRecommendation } from '../api.js'
 import { Meter, Status } from '../components.jsx'
-import { requirementLevel, sourceNames } from '../format.js'
+import { sourceNames } from '../format.js'
 
 export default function CareerDetailScreen({ code }) {
   const [career, setCareer] = useState(null)
@@ -65,7 +65,7 @@ export default function CareerDetailScreen({ code }) {
                     {s.skill_label}
                     {s.low_confidence && <span className="tag warn">uncertain</span>}
                   </td>
-                  <td>{requirementLevel(s.edge_weight)}</td>
+                  <td>{s.requirement}</td>
                 </tr>
               ))}
             </tbody>
@@ -82,7 +82,7 @@ export default function CareerDetailScreen({ code }) {
           {career.skills_gap.map((g) => (
             <li key={g.skill_id}>
               <span className="gap-skill">{g.label}</span>
-              <span className="tag">{requirementLevel(g.edge_weight)}</span>
+              <span className="tag">{g.requirement}</span>
               <span className="muted source">{sourceNames(g.sources)}</span>
             </li>
           ))}
