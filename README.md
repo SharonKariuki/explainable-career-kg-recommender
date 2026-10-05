@@ -98,6 +98,19 @@ matched, each career's three components, and the skills behind them. The first
 run downloads the SBERT model; after that, loading takes about 20 seconds and a
 ranking takes well under a second.
 
+Each recommendation can be explained in plain language and comes with a skills
+gap (the career's requirements you did not list, most important first):
+
+```bash
+python -m recommender.explanation Python "machine learning" statistics --top 3
+python -m recommender.skills_gap Python "machine learning" statistics --top 3
+```
+
+Explanations are checked for fidelity (they may only state what the score used)
+with `python -m recommender.fidelity`, and scored for completeness and
+readability with `python -m recommender.explanation_quality`; the rubric and
+results are in `docs/explainability_rubric.md`.
+
 The keyword-matching baseline (no embeddings, no graph) takes the same input:
 
 ```bash

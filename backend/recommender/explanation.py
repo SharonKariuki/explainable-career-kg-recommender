@@ -129,10 +129,14 @@ class ExplanationGenerator:
 
         if r.proximity_paths:
             yours = {s.skill_id for s in contributions}
-            own = [p.skill_label for p in r.proximity_paths if p.skill_id in yours]
+            listed = {s.skill_id for s in shown}
+            own_paths = [p for p in r.proximity_paths if p.skill_id in yours]
+            own = [p.skill_label for p in own_paths]
             related = [p.skill_label for p in r.proximity_paths if p.skill_id not in yours]
             links = []
-            if own:
+            if own and all(p.skill_id in listed for p in own_paths):
+                links.append('mainly through the skills above')  # already named; don't repeat them
+            elif own:
                 links.append(f'mainly through your {join(own)}')
             if related:
                 links.append(f'{"with further links" if own else "mainly"} through related skills such as {join(related)}')
