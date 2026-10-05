@@ -7,7 +7,7 @@ that, ranking a profile takes well under a second.
 
 from dataclasses import asdict
 
-from recommender.engine import get_engine
+from recommender.engine import DEFAULT_PARAMS, get_engine
 from recommender.explanation import ExplanationGenerator
 from recommender.skills_gap import get_skills_gap
 
@@ -52,8 +52,14 @@ def recommendation_summary(recommendation, rank_position):
 def recommendation_detail(recommendation, rank_position, matches):
     r = recommendation
     explanation = ExplanationGenerator().explain(r)
+    p = DEFAULT_PARAMS
     return {
         **recommendation_summary(r, rank_position),
+        'weights': {
+            'coverage': p.coverage_weight,
+            'profile_similarity': p.similarity_weight,
+            'graph_proximity': p.proximity_weight,
+        },
         'explanation': list(explanation.sentences),
         'skill_contributions': [asdict(c) for c in r.skill_contributions],
         'proximity_paths': [asdict(p) for p in r.proximity_paths],
