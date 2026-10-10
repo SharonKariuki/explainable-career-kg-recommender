@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { getRecommendation } from '../api.js'
+import CareerGraph from '../CareerGraph.jsx'
 import { Meter, Status } from '../components.jsx'
 import { sourceNames } from '../format.js'
 
@@ -35,6 +36,8 @@ export default function CareerDetailScreen({ code }) {
       <section className="card">
         <p className="muted domain">Match #{career.rank} · {career.domain}</p>
         <h1>{career.title}</h1>
+
+        <CareerGraph career={career} />
 
         <h2>Why it suits you</h2>
         <div className="explanation">
