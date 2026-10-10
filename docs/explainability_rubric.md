@@ -48,9 +48,9 @@ profiles and for 10 profiles written in everyday words ("good with people",
 | Measure | Result |
 |---|---|
 | Fidelity | 1,798 / 1,798 explanations pass (all 360 validation profiles, top 5 each) |
-| Completeness | 1.00 mean; every applicable criterion met in all 186 (C3 applied to 94, C4 to 8) |
-| Flesch-Kincaid grade | mean 9.7, max 12.8; 98% at grade 12 or below |
-| Flesch reading ease | mean 49.7 |
+| Completeness | 1.00 mean; every applicable criterion met in all 186 (C3 applied to 96, C4 to 8) |
+| Flesch-Kincaid grade | mean 9.7, max 13.0; 98% at grade 12 or below |
+| Flesch reading ease | mean 49.8 |
 | Words per sentence | mean 13.7; longest sentence 38 words |
 | Technical terms | none |
 

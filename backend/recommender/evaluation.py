@@ -89,6 +89,9 @@ def test_profiles(kg):
 HELD_OUT_SEED = 3
 NOISY_SEED = 4
 NOISY_MIN_EDGE_WEIGHT = 0.5
+# Tuning uses its own hidden names and profiles, independent of the test set.
+VALIDATION_HELD_OUT_SEED = 6
+NOISY_VALIDATION_SEED = 5
 
 
 def held_out_names(kg, seed=HELD_OUT_SEED):
@@ -121,6 +124,12 @@ def noisy_profiles(kg, held, seed=NOISY_SEED, sizes=PROFILE_SIZES, per_size=PROF
                     skill_ids=tuple(skill_ids),
                 ))
     return profiles
+
+
+def noisy_validation(kg):
+    """(hidden names, profiles) for tuning on unseen wording."""
+    held = held_out_names(kg, VALIDATION_HELD_OUT_SEED)
+    return held, noisy_profiles(kg, held, seed=NOISY_VALIDATION_SEED)
 
 
 # Profiles in everyday words, each with the careers that should rank first.

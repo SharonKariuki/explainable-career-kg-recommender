@@ -46,21 +46,19 @@ PAGERANK_DAMPING = 0.85
 
 @dataclass(frozen=True)
 class EngineParams:
-    """Defaults chosen by `python -m recommender.tuning` on the validation profiles.
+    """Defaults chosen by `python -m recommender.tuning` on clean and
+    unseen-wording validation profiles (combined MRR 0.608).
 
-    Component weights: best validation MRR (0.630; Coverage alone 0.584).
-    Depth: 1 and 3 score within 0.006 MRR, so the depth at which every
-    recommendation shares at least one declared skill is kept. Low-confidence
-    threshold and weight: every validation skill matched at similarity 1.0,
-    so they could not be tuned; the threshold comes from probing typical
-    inputs (see matching.py) and the weight keeps such matches at half value.
+    Depth 3 and threshold 0.70 scored within 0.002 of these, which is noise;
+    depth 1 keeps every recommendation tied to a declared skill, and 0.60 is
+    the threshold the held-out matching results support.
     """
     max_depth: int = 1
     low_confidence_threshold: float = LOW_CONFIDENCE_THRESHOLD
     low_confidence_weight: float = 0.5
-    coverage_weight: float = 0.3
-    similarity_weight: float = 0.3
-    proximity_weight: float = 0.4
+    coverage_weight: float = 0.7
+    similarity_weight: float = 0.1
+    proximity_weight: float = 0.2
 
 
 DEFAULT_PARAMS = EngineParams()
@@ -198,16 +196,24 @@ class RecommendationEngine:
         return matches, recommendations[:top_k] if top_k else recommendations
 
     def random_walk(self, strength):
+        """Visit probabilities, or None when no matched skill carries any weight
+        (every match uncertain with low_confidence_weight 0): nothing to walk from."""
         restart = {node: s * self.idf[node] for node, s in strength.items()}
+        if not any(restart.values()):
+            return None
         return nx.pagerank(self.kg.graph, alpha=PAGERANK_DAMPING, personalization=restart, weight='weight', tol=1e-8)
 
     def proximity(self, visits):
+        if visits is None:
+            return {c: 0.0 for c in self.careers}
         raw = {c: visits[c] / self.strength[c] for c in self.careers}
         top = max(raw.values())
         return {c: v / top if top else 0.0 for c, v in raw.items()}
 
     def proximity_paths(self, career, visits, limit=3):
         """The skills the walk mostly arrives through; shares of the career's visits."""
+        if visits is None:
+            return ()
         inflow = {
             skill: visits[skill] * weight / self.strength[skill]
             for skill, weight in self.kg.skills_of(career).items()

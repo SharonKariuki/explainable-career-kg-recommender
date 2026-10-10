@@ -82,3 +82,11 @@ def test_three_skill_profile_ranks_quickly_once_loaded(engine):
     start = time.perf_counter()
     engine.rank(['Python', 'Docker', 'AWS'])
     assert time.perf_counter() - start < 3
+
+
+def test_a_profile_of_only_ignored_uncertain_matches_does_not_crash(engine):
+    prepared = engine.prepare(['playing guitar'])
+    assert prepared.matches[0].similarity < 0.6
+    _, recommendations = engine.score(prepared, EngineParams(low_confidence_weight=0.0))
+    for r in recommendations:
+        assert r.components.coverage == 0 and r.components.graph_proximity == 0 and r.proximity_paths == ()

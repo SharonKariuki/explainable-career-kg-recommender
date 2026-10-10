@@ -3,8 +3,10 @@
 Grid: traversal depth, low-confidence threshold and weight, and every
 combination of the three component weights in steps of 0.1 that sums to 1.
 Each configuration is scored by mean reciprocal rank (MRR) of the correct
-career over the 360 validation profiles; the test profiles are not used, so
-they stay unseen for the final evaluation.
+career over two validation sets of 360 profiles each: clean (names the
+matcher knows) and unseen wording (names hidden from the matcher, so skills
+must be recognised by meaning). Weights tuned on clean profiles alone leaned
+too heavily on the graph for everyday wording. No test profiles are used.
 
 Only the low-confidence settings change the components (through PageRank),
 so each profile is scored once per low-confidence setting with every career
@@ -26,8 +28,9 @@ import pandas as pd
 
 from pipeline import DATA_DIR
 from recommender.baseline import get_baseline
-from recommender.engine import EngineParams, get_engine
-from recommender.evaluation import reciprocal_rank, validation_profiles
+from recommender.engine import EngineParams, RecommendationEngine, get_engine
+from recommender.evaluation import noisy_validation, reciprocal_rank, validation_profiles
+from recommender.matching import SkillMatcher
 
 RESULTS_FILE = DATA_DIR / 'results' / 'tuning.csv'
 
@@ -77,40 +80,56 @@ def rank_of_target(table, weights, depth):
     return 1 + int((better & keep).sum())
 
 
+def score_set(engine, profiles):
+    """Component tables for every low-confidence setting: {(threshold, weight): [table per profile]}."""
+    prepared = [engine.prepare(p.skills) for p in profiles]
+    return {
+        (threshold, weight): [component_table(engine, pp, p.career_id, threshold, weight)
+                              for pp, p in zip(prepared, profiles)]
+        for threshold, weight in low_confidence_grid()
+    }
+
+
 def main():
     engine, baseline = get_engine(), get_baseline()
-    profiles = validation_profiles(engine.kg)
-    sizes = np.array([p.size for p in profiles])
+    kg = engine.kg
+    held, noisy = noisy_validation(kg)
+    sets = {
+        'clean': (engine, validation_profiles(kg)),
+        'noisy': (RecommendationEngine(kg, SkillMatcher(kg, held.values())), noisy),
+    }
 
     start = time.perf_counter()
-    prepared = [engine.prepare(p.skills) for p in profiles]
-    rows = []
-    for threshold, lc_weight in low_confidence_grid():
-        tables = [component_table(engine, pp, p.career_id, threshold, lc_weight) for pp, p in zip(prepared, profiles)]
-        for weights, depth in itertools.product(weight_grid(), DEPTHS):
-            ranks = [rank_of_target(t, weights, depth) for t in tables]
-            rr = np.array([1 / r if r else 0.0 for r in ranks])
-            hit3 = np.array([bool(r and r <= 3) for r in ranks])
-            rows.append({
-                'max_depth': depth, 'low_confidence_threshold': threshold, 'low_confidence_weight': lc_weight,
-                'coverage_weight': weights[0], 'similarity_weight': weights[1], 'proximity_weight': weights[2],
-                'mrr': rr.mean(), 'recall_at_3': hit3.mean(),
-                **{f'mrr_size_{s}': rr[sizes == s].mean() for s in sorted(set(sizes))},
-            })
-        print(f'low-confidence threshold {threshold}, weight {lc_weight}: done ({time.perf_counter() - start:.0f}s)')
+    tables = {}
+    for name, (set_engine, profiles) in sets.items():
+        tables[name] = score_set(set_engine, profiles)
+        print(f'{name} validation scored ({time.perf_counter() - start:.0f}s)')
+    sizes = np.concatenate([[p.size for p in profiles] for _, profiles in sets.values()])
 
-    results = pd.DataFrame(rows).sort_values(['mrr', 'recall_at_3'], ascending=False).round(4)
+    rows = []
+    for (threshold, lc_weight), weights, depth in itertools.product(low_confidence_grid(), weight_grid(), DEPTHS):
+        rr = {}
+        for name in sets:
+            ranks = [rank_of_target(t, weights, depth) for t in tables[name][threshold, lc_weight]]
+            rr[name] = np.array([1 / r if r else 0.0 for r in ranks])
+        both = np.concatenate([rr[name] for name in sets])
+        rows.append({
+            'max_depth': depth, 'low_confidence_threshold': threshold, 'low_confidence_weight': lc_weight,
+            'coverage_weight': weights[0], 'similarity_weight': weights[1], 'proximity_weight': weights[2],
+            'mrr': both.mean(), **{f'mrr_{name}': rr[name].mean() for name in sets},
+            **{f'mrr_size_{s}': both[sizes == s].mean() for s in sorted(set(sizes))},
+        })
+
+    results = pd.DataFrame(rows).sort_values('mrr', ascending=False).round(4)
     RESULTS_FILE.parent.mkdir(parents=True, exist_ok=True)
     results.to_csv(RESULTS_FILE, index=False)
     print(f'\n{len(results)} configurations -> {RESULTS_FILE}\n')
     print(results.head(10).to_string(index=False))
 
-    rr = np.array([
-        reciprocal_rank([r.career_id for r in baseline.rank(p.skills, top_k=None)[1]], {p.career_id})
-        for p in profiles
-    ])
-    by_size = ', '.join(f'size {s}: {rr[sizes == s].mean():.3f}' for s in sorted(set(sizes)))
-    print(f'\nKeyword baseline on the same profiles: MRR {rr.mean():.3f} ({by_size})')
+    for name, (_, profiles) in sets.items():
+        rr = [reciprocal_rank([r.career_id for r in baseline.rank(p.skills, top_k=None)[1]], {p.career_id})
+              for p in profiles]
+        print(f'Keyword baseline, {name} validation: MRR {np.mean(rr):.3f}')
 
 
 if __name__ == '__main__':
