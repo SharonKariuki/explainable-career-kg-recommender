@@ -2,7 +2,8 @@ import pytest
 
 from recommender.evaluation import (
     MIN_EDGE_WEIGHT, PROFILE_SIZES, PROFILES_PER_SIZE, hand_written_profiles, held_out_names, noisy_profiles,
-    precision_at_k, recall_at_k, reciprocal_rank, test_profiles as make_test_profiles, validation_profiles,
+    noisy_validation, precision_at_k, recall_at_k, reciprocal_rank, test_profiles as make_test_profiles,
+    validation_profiles,
 )
 from recommender.graph import get_graph
 from recommender.matching import SkillMatcher
@@ -59,6 +60,17 @@ def test_noisy_profiles_use_only_held_out_names(kg):
     for p in profiles:
         assert p.skills == tuple(held[s] for s in p.skill_ids)
         assert all(kg.skills_of(p.career_id)[s] >= 0.5 for s in p.skill_ids)
+
+
+def test_noisy_validation_is_independent_of_the_noisy_test_set(kg):
+    test_held = held_out_names(kg)
+    val_held, val_profiles = noisy_validation(kg)
+    test_profiles_ = noisy_profiles(kg, test_held)
+    # Skills with a single alternative name are hidden in both, so overlap is
+    # small but not zero: fewer than 1% of profiles may coincide.
+    assert sum(test_held[n] != val_held.get(n) for n in test_held) > len(test_held) / 2
+    shared = {p.skills for p in val_profiles} & {p.skills for p in test_profiles_}
+    assert len(shared) < len(val_profiles) / 100
 
 
 def test_hand_written_profiles_name_real_careers(kg):
