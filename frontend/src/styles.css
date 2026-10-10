@@ -160,6 +160,23 @@ th { color: var(--muted); font-weight: 600; }
 .gap-skill { font-weight: 500; }
 .source { margin-left: 0.5rem; font-size: 0.85rem; }
 
+.career-graph { margin: 1rem 0 0.5rem; }
+.career-graph-scroll { overflow-x: auto; }
+.career-graph svg { display: block; width: 100%; min-width: 34rem; height: auto; }
+.career-graph figcaption { font-size: 0.85rem; margin-top: 0.4rem; }
+.career-graph .edge { fill: none; }
+.career-graph .edge.have { stroke: var(--accent); opacity: 0.55; }
+.career-graph .edge.uncertain { stroke: var(--warn); opacity: 0.6; stroke-dasharray: 6 5; }
+.career-graph .edge.build { stroke: var(--muted); opacity: 0.4; stroke-dasharray: 4 5; }
+.career-graph .node rect { stroke-width: 1.5; }
+.career-graph .node text { font-size: 13px; fill: var(--text); }
+.career-graph .node.have rect { fill: var(--accent-soft); stroke: var(--accent); }
+.career-graph .node.uncertain rect { fill: var(--warn-soft); stroke: var(--warn); stroke-dasharray: 5 4; }
+.career-graph .node.build rect { fill: var(--surface); stroke: var(--muted); stroke-dasharray: 4 4; }
+.career-graph .node.career rect { fill: var(--accent); stroke: var(--accent); }
+.career-graph .node.career text { fill: var(--accent-text); font-weight: 700; font-size: 13px; }
+.career-graph .graph-note { font-size: 13px; fill: var(--muted); font-style: italic; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
