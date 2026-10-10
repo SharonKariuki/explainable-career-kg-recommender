@@ -45,9 +45,13 @@ def graph_skill_names(kg):
 
 
 class SkillMatcher:
-    def __init__(self, kg):
+    def __init__(self, kg, hidden_names=()):
+        """`hidden_names` are left out of the index (ignoring case), so evaluation
+        can test whether a skill is still recognised from its other names."""
         self.kg = kg
         labels = graph_skill_names(kg)
+        hidden = {name.casefold() for name in hidden_names}
+        labels = labels[~labels['label'].str.casefold().isin(hidden)]
         self.texts = labels['label'].tolist()
         self.node_ids = labels['node_id'].tolist()
         vectors = load_embeddings(self.texts)
