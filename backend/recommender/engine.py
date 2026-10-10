@@ -198,16 +198,24 @@ class RecommendationEngine:
         return matches, recommendations[:top_k] if top_k else recommendations
 
     def random_walk(self, strength):
+        """Visit probabilities, or None when no matched skill carries any weight
+        (every match uncertain with low_confidence_weight 0): nothing to walk from."""
         restart = {node: s * self.idf[node] for node, s in strength.items()}
+        if not any(restart.values()):
+            return None
         return nx.pagerank(self.kg.graph, alpha=PAGERANK_DAMPING, personalization=restart, weight='weight', tol=1e-8)
 
     def proximity(self, visits):
+        if visits is None:
+            return {c: 0.0 for c in self.careers}
         raw = {c: visits[c] / self.strength[c] for c in self.careers}
         top = max(raw.values())
         return {c: v / top if top else 0.0 for c, v in raw.items()}
 
     def proximity_paths(self, career, visits, limit=3):
         """The skills the walk mostly arrives through; shares of the career's visits."""
+        if visits is None:
+            return ()
         inflow = {
             skill: visits[skill] * weight / self.strength[skill]
             for skill, weight in self.kg.skills_of(career).items()
