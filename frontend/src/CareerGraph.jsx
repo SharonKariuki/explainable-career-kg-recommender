@@ -61,6 +61,19 @@ export default function CareerGraph({ career, gapLimit = 5 }) {
 
   return (
     <figure className="career-graph">
+      {/* Phones: the same connections, stacked so they stay readable. */}
+      <div className="graph-narrow">
+        <ul className="chips">
+          {have.map((s) => <li key={s.key} className={s.uncertain ? 'chip uncertain' : 'chip'}>{s.label}</li>)}
+          {!have.length && <li className="muted">none of your skills directly</li>}
+        </ul>
+        <div className="graph-arrow" aria-hidden="true">↓</div>
+        <div className="graph-career">{career.title}</div>
+        <div className="graph-arrow" aria-hidden="true">↓ <span className="muted">skills to build</span></div>
+        <ul className="chips">
+          {build.map((s) => <li key={s.key} className="chip build">{s.label}</li>)}
+        </ul>
+      </div>
       <div className="career-graph-scroll">
         <svg viewBox={`0 0 ${WIDTH} ${height}`} role="img" aria-label={description}>
           {left.map((s) => (
@@ -94,8 +107,9 @@ export default function CareerGraph({ career, gapLimit = 5 }) {
         </svg>
       </div>
       <figcaption className="muted">
-        Left: your skills this career requires. Right: the top skills to build. Thicker lines mean the
-        career needs the skill more{have.some((s) => s.uncertain) ? '; dashed amber marks an uncertain match' : ''}.
+        Your skills this career requires, and the top skills to build.
+        <span className="wide-only"> Thicker lines mean the career needs the skill more.</span>
+        {have.some((s) => s.uncertain) && ' Dashed amber marks an uncertain match.'}
       </figcaption>
     </figure>
   )

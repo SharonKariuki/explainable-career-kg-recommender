@@ -176,6 +176,24 @@ th { color: var(--muted); font-weight: 600; }
 .career-graph .node.career rect { fill: var(--accent); stroke: var(--accent); }
 .career-graph .node.career text { fill: var(--accent-text); font-weight: 700; font-size: 13px; }
 .career-graph .graph-note { font-size: 13px; fill: var(--muted); font-style: italic; }
+.graph-narrow { display: none; }
+.graph-narrow .chip { padding: 0.3rem 0.8rem; }
+.graph-narrow .chip.uncertain { background: var(--warn-soft); border: 1px dashed var(--warn); }
+.graph-narrow .chip.build { background: var(--surface); border: 1px dashed var(--muted); }
+.graph-arrow { color: var(--accent); font-size: 1.2rem; margin: 0.2rem 0 0.2rem 0.6rem; }
+.graph-career {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .graph-narrow { display: block; }
+  .career-graph-scroll, .wide-only { display: none; }
+}
 
 .visually-hidden {
   position: absolute;
