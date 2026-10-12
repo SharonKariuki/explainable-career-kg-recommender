@@ -54,3 +54,11 @@ def test_logout_revokes_the_token(client):
     assert client.get('/api/auth/me/').data['username'] == 'amina'
     assert client.post('/api/auth/logout/').status_code == 204
     assert client.get('/api/auth/me/').status_code == 401
+
+
+def test_a_stale_token_does_not_block_logging_in_again(client):
+    token = register(client).data['token']
+    client.credentials(HTTP_AUTHORIZATION=f'Token {token}')
+    client.post('/api/auth/logout/')
+    response = client.post('/api/auth/login/', {'username': 'amina', 'password': PASSWORD}, format='json')
+    assert response.status_code == 200 and response.data['token'] != token
