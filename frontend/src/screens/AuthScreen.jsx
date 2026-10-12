@@ -12,6 +12,12 @@ export default function AuthScreen({ onSignedIn }) {
 
   const isRegister = mode === 'register'
 
+  // Editing a field clears the last error, which may no longer apply.
+  const edit = (setter) => (event) => {
+    setter(event.target.value)
+    setError(null)
+  }
+
   async function submit(event) {
     event.preventDefault()
     setBusy(true)
@@ -40,12 +46,12 @@ export default function AuthScreen({ onSignedIn }) {
       <form onSubmit={submit} className="stack">
         <label>
           Username
-          <input value={username} onChange={(e) => setUsername(e.target.value)} autoComplete="username" required />
+          <input value={username} onChange={edit(setUsername)} autoComplete="username" required />
         </label>
         {isRegister && (
           <label>
             Email <span className="muted">(optional)</span>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
+            <input type="email" value={email} onChange={edit(setEmail)} autoComplete="email" />
           </label>
         )}
         <label>
@@ -53,7 +59,7 @@ export default function AuthScreen({ onSignedIn }) {
           <input
             type="password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={edit(setPassword)}
             autoComplete={isRegister ? 'new-password' : 'current-password'}
             required
           />
