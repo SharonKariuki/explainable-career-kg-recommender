@@ -1,6 +1,6 @@
 from rest_framework import status
 from rest_framework.authtoken.models import Token
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.exceptions import NotFound, ValidationError
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
@@ -18,6 +18,7 @@ def token_response(user, status_code=status.HTTP_200_OK):
 
 
 @api_view(['POST'])
+@authentication_classes([])  # a stale token must not block signing in
 @permission_classes([AllowAny])
 def register(request):
     serializer = RegisterSerializer(data=request.data)
@@ -26,6 +27,7 @@ def register(request):
 
 
 @api_view(['POST'])
+@authentication_classes([])  # a stale token must not block signing in
 @permission_classes([AllowAny])
 def login(request):
     serializer = LoginSerializer(data=request.data)
