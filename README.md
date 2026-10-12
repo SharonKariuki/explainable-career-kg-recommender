@@ -1,13 +1,60 @@
 # AjiraGuide
 
-An explainable, knowledge-graph-based career guidance recommender.
+**Explainable career guidance for tech roles.** Enter the skills you have, in
+your own words, and AjiraGuide recommends tech careers, explains each one in
+plain language, and shows which skills to build next.
 
-The repository holds two apps side by side:
+![Career page: your skills, the career and the skills to build](docs/images/career.png)
 
-- `backend/`: Django REST API (`config` project, `core` app for accounts, skill
-  profiles and recommendations), the data pipeline (`pipeline/`) and the
-  recommender (`recommender/`)
-- `frontend/`: React app built with Vite
+It combines a **knowledge graph** of 24 tech careers and 2,030 skills, built
+from O*NET 31.0 and ESCO v1.1.0, with **SBERT** semantic matching, so
+"talking to customers" finds *communicate with customers* and "JS" finds
+*JavaScript*. Every explanation is generated only from the parts of the score
+it describes, and a fidelity check confirms that in code.
+
+| Your career matches | On a phone |
+|---|---|
+| ![Ranked careers with score components](docs/images/recommendations.png) | ![Career page on a phone](docs/images/phone.png) |
+
+## Results
+
+Mean reciprocal rank of the correct career on held-out profiles
+([full report](docs/testing_and_evaluation_report.md)):
+
+| Profiles | Keyword baseline | AjiraGuide |
+|---|---|---|
+| 2 skills, clean wording | 0.349 | **0.528** |
+| 2 skills, wording the system has never seen | 0.132 | **0.552** |
+| All test profiles, clean wording | 0.429 | **0.620** |
+| All test profiles, unseen wording | 0.208 | **0.599** |
+
+1,798 of 1,798 explanations pass the fidelity check; their mean reading level
+is grade 9.7. 116 automated tests pass.
+
+## How it works
+
+```mermaid
+flowchart LR
+    A["O*NET 31.0 + ESCO v1.1.0"] --> B["Data pipeline<br/>clean, weight, merge"]
+    B --> C[("Knowledge graph<br/>24 careers, 2,030 skills")]
+    U["Your skills"] --> M["SBERT matching"]
+    C --> M
+    M --> E["Engine<br/>Coverage + Similarity + PageRank proximity"]
+    C --> E
+    E --> X["Explanation + fidelity check"]
+    E --> G["Skills gap"]
+    X --> W["Django REST API + React app"]
+    G --> W
+```
+
+| Folder | Contents |
+|---|---|
+| `backend/pipeline/` | Downloads O*NET and ESCO, cleans and weights them, merges duplicate skills |
+| `backend/recommender/` | Knowledge graph, matching, scoring, explanations, fidelity, skills gap, evaluation |
+| `backend/core/` | Django REST API: accounts, skill profiles, recommendations |
+| `frontend/` | React app (Vite) |
+| `data/processed/` | The cleaned dataset, versioned with the code |
+| `docs/` | Evaluation report and explainability rubric |
 
 ## Prerequisites
 
