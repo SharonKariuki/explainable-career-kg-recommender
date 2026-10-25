@@ -148,9 +148,9 @@ seconds and a ranking well under a second.
 | Command | Purpose |
 |---|---|
 | `python -m pytest` | Run the tests |
-| `python -m recommender.tuning` | Grid search that chose the engine's parameters (about 3 minutes; writes `data/results/tuning.csv`) |
+| `python -m recommender.tuning --run NAME` | Grid search that chose the engine's parameters (about 3 minutes; writes `data/results/NAME/tuning.csv`) |
 | `python -m recommender.fidelity` | Check that explanations only state what the score used |
-| `python -m recommender.explanation_quality` | Score explanations for completeness and readability (`docs/explainability_rubric.md`) |
+| `python -m recommender.explanation_quality --run NAME` | Score explanations for completeness and readability (`docs/explainability_rubric.md`) |
 
 ## Frontend
 

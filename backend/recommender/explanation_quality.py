@@ -15,7 +15,7 @@ Readability: Flesch-Kincaid grade level, Flesch reading ease, sentence
 lengths, and technical terms a student would not know.
 
 Usage (from backend/):
-    python -m recommender.explanation_quality     # score a sample, write data/results/explanation_quality.csv
+    python -m recommender.explanation_quality --run NAME   # score a sample, write data/results/<run>/explanation_quality.csv
 """
 
 import re
@@ -117,16 +117,20 @@ HAND_WRITTEN_PROFILES = (
 )
 
 
-def main():
+def main(argv=None):
     import pandas as pd
 
-    from pipeline import DATA_DIR
-    from recommender.engine import get_engine
-    from recommender.evaluation import validation_profiles
+    from recommender.engine import DEFAULT_PARAMS, get_engine
+    from recommender.evaluation import describe_sets, validation_profiles
     from recommender.explanation import ExplanationGenerator
+    from recommender.results import configuration, parse_run, run_started, write_csv, write_manifest
+
+    run = parse_run(__doc__.splitlines()[0], argv)
+    started = run_started(__spec__.name, argv)
 
     engine, generator = get_engine(), ExplanationGenerator()
-    sample = [(p.profile_id, p.skills, 'synthetic') for p in validation_profiles(engine.kg)[::7]]
+    validation = validation_profiles(engine.kg)
+    sample = [(p.profile_id, p.skills, 'synthetic') for p in validation[::7]]
     sample += [(f'hand-{i}', skills, 'hand-written') for i, skills in enumerate(HAND_WRITTEN_PROFILES)]
     rows = []
     for profile_id, skills, kind in sample:
@@ -136,9 +140,10 @@ def main():
                          'rank': rank, 'career': r.title, **score(x, r), 'text': x.text})
 
     results = pd.DataFrame(rows)
-    out = DATA_DIR / 'results' / 'explanation_quality.csv'
-    out.parent.mkdir(parents=True, exist_ok=True)
-    results.to_csv(out, index=False)
+    out = write_csv(results, run, 'explanation_quality.csv')
+    sets = describe_sets({'synthetic-validation': validation, 'explanation-sample': HAND_WRITTEN_PROFILES},
+                         roles={'explanation-sample': 'development'})  # every 7th validation profile is scored
+    write_manifest(run, started, sets, configuration(DEFAULT_PARAMS))
 
     criteria = [c for c in results.columns if c.startswith('C')]
     kinds = results.drop_duplicates('profile_id')['kind'].value_counts()

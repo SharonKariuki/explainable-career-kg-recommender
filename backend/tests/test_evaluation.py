@@ -1,9 +1,11 @@
+import math
+
 import pytest
 
 from recommender.evaluation import (
     MIN_EDGE_WEIGHT, PROFILE_SIZES, PROFILES_PER_SIZE, hand_written_profiles, held_out_names, noisy_profiles,
-    noisy_validation, precision_at_k, recall_at_k, reciprocal_rank, test_profiles as make_test_profiles,
-    validation_profiles,
+    ndcg_at_k, noisy_validation, open_test_sets, precision_at_k, recall_at_k, reciprocal_rank,
+    test_profiles as make_test_profiles, validation_profiles,
 )
 from recommender.graph import get_graph
 from recommender.matching import SkillMatcher
@@ -19,6 +21,14 @@ def validation(kg):
     return validation_profiles(kg)
 
 
+@pytest.fixture
+def unlocked(monkeypatch):
+    """Test sets opened as the final evaluation opens them, with the working tree treated as clean."""
+    monkeypatch.setattr('recommender.evaluation.git_state', lambda: {'commit': 'x', 'clean': True, 'changes': []})
+    with open_test_sets():
+        yield
+
+
 def test_every_career_gets_profiles_at_every_size(kg, validation):
     assert len(validation) == len(kg.careers()) * len(PROFILE_SIZES) * PROFILES_PER_SIZE
     for p in validation:
@@ -32,7 +42,7 @@ def test_profile_skills_are_core_requirements_of_their_career(kg, validation):
         assert all(required[s] >= MIN_EDGE_WEIGHT for s in p.skill_ids)
 
 
-def test_profiles_are_reproducible_and_sets_differ(kg, validation):
+def test_profiles_are_reproducible_and_sets_differ(kg, validation, unlocked):
     assert validation_profiles(kg) == validation
     test = make_test_profiles(kg)
     assert {(p.career_id, p.skills) for p in validation}.isdisjoint({(p.career_id, p.skills) for p in test})
@@ -43,7 +53,7 @@ def test_some_skills_are_written_differently_from_the_node_label(kg, validation)
     assert rewritten > 0
 
 
-def test_held_out_names_are_hidden_from_the_matcher(kg):
+def test_held_out_names_are_hidden_from_the_matcher(kg, unlocked):
     held = held_out_names(kg)
     matcher = SkillMatcher(kg, hidden_names=held.values())
     indexed = {t.casefold() for t in matcher.texts}
@@ -52,7 +62,7 @@ def test_held_out_names_are_hidden_from_the_matcher(kg):
     assert all(kg.node(node)['label'] != name for node, name in held.items())
 
 
-def test_noisy_profiles_use_only_held_out_names(kg):
+def test_noisy_profiles_use_only_held_out_names(kg, unlocked):
     held = held_out_names(kg)
     profiles = noisy_profiles(kg, held)
     assert len(profiles) == len(kg.careers()) * len(PROFILE_SIZES) * PROFILES_PER_SIZE
@@ -62,7 +72,7 @@ def test_noisy_profiles_use_only_held_out_names(kg):
         assert all(kg.skills_of(p.career_id)[s] >= 0.5 for s in p.skill_ids)
 
 
-def test_noisy_validation_is_independent_of_the_noisy_test_set(kg):
+def test_noisy_validation_is_independent_of_the_noisy_test_set(kg, unlocked):
     test_held = held_out_names(kg)
     val_held, val_profiles = noisy_validation(kg)
     test_profiles_ = noisy_profiles(kg, test_held)
@@ -87,3 +97,13 @@ def test_metrics():
     assert recall_at_k(ranked, {'c'}, 3) == 1
     assert reciprocal_rank(ranked, {'c'}) == pytest.approx(1 / 3)
     assert reciprocal_rank(ranked, {'e'}) == 0
+
+
+def test_ndcg():
+    ranked = ['a', 'b', 'c', 'd']
+    assert ndcg_at_k(ranked, {'a': 1}, 5) == 1
+    assert ndcg_at_k(ranked, {'c': 1}, 5) == pytest.approx(0.5)  # 1 / log2(4)
+    assert ndcg_at_k(ranked, {'d': 1}, 3) == 0
+    assert ndcg_at_k([], {'a': 3}, 5) == 0
+    # graded: the ideal order puts grade 3 first
+    assert ndcg_at_k(['b', 'a'], {'a': 3, 'b': 1}, 2) == pytest.approx((1 + 3 / math.log2(3)) / (3 + 1 / math.log2(3)))

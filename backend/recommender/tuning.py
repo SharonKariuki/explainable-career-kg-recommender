@@ -13,11 +13,11 @@ so each profile is scored once per low-confidence setting with every career
 as a candidate; depth and weights are then applied to those stored
 components, breaking ties by title as the engine does.
 
-Writes data/results/tuning.csv (one row per configuration) and prints the
-best configurations and the keyword baseline on the same profiles.
+Writes data/results/<run>/tuning.csv (one row per configuration) and prints
+the best configurations and the keyword baseline on the same profiles.
 
 Usage (from backend/):
-    python -m recommender.tuning
+    python -m recommender.tuning --run NAME
 """
 
 import itertools
@@ -26,13 +26,11 @@ import time
 import numpy as np
 import pandas as pd
 
-from pipeline import DATA_DIR
 from recommender.baseline import get_baseline
 from recommender.engine import EngineParams, RecommendationEngine, get_engine
-from recommender.evaluation import noisy_validation, reciprocal_rank, validation_profiles
+from recommender.evaluation import describe_sets, noisy_validation, reciprocal_rank, validation_profiles
 from recommender.matching import SkillMatcher
-
-RESULTS_FILE = DATA_DIR / 'results' / 'tuning.csv'
+from recommender.results import configuration, parse_run, run_started, write_csv, write_manifest
 
 DEPTHS = (1, 3)
 LOW_CONFIDENCE_THRESHOLDS = (0.5, 0.6, 0.7)
@@ -90,12 +88,15 @@ def score_set(engine, profiles):
     }
 
 
-def main():
+def main(argv=None):
+    run = parse_run(__doc__.splitlines()[0], argv)
+    started = run_started(__spec__.name, argv)
     engine, baseline = get_engine(), get_baseline()
     kg = engine.kg
     held, noisy = noisy_validation(kg)
+    clean = validation_profiles(kg)
     sets = {
-        'clean': (engine, validation_profiles(kg)),
+        'clean': (engine, clean),
         'noisy': (RecommendationEngine(kg, SkillMatcher(kg, held.values())), noisy),
     }
 
@@ -121,9 +122,10 @@ def main():
         })
 
     results = pd.DataFrame(rows).sort_values('mrr', ascending=False).round(4)
-    RESULTS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    results.to_csv(RESULTS_FILE, index=False)
-    print(f'\n{len(results)} configurations -> {RESULTS_FILE}\n')
+    results_file = write_csv(results, run, 'tuning.csv')
+    write_manifest(run, started, describe_sets({'synthetic-validation': clean, 'noisy-validation': (held, noisy)}),
+                   configuration(None))  # a grid search: no single parameter set
+    print(f'\n{len(results)} configurations -> {results_file}\n')
     print(results.head(10).to_string(index=False))
 
     for name, (_, profiles) in sets.items():

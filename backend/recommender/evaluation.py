@@ -7,13 +7,22 @@ when it has any (an ESCO alternative label, or the O*NET name of a merged
 ESCO skill) and is sometimes lower-cased.
 
 Validation and test sets come from different fixed seeds, so parameters are
-tuned on one and reported on the other.
+tuned on one and reported on the other. Test seeds are locked: the
+generators refuse them outside open_test_sets(). Roles, provenance and
+hashes of every set: docs/evaluation_protocol.md.
 """
 
+import dataclasses
+import hashlib
+import json
+import math
 import random
+from contextlib import contextmanager
 from dataclasses import dataclass
+from typing import Callable
 
 from recommender.matching import graph_skill_names
+from recommender.results import git_state
 
 PROFILE_SIZES = (2, 3, 5)
 PROFILES_PER_SIZE = 5
@@ -39,6 +48,7 @@ class Profile:
 
 
 def generate_profiles(kg, seed, sizes=PROFILE_SIZES, per_size=PROFILES_PER_SIZE):
+    check_seed(seed)
     rng = random.Random(seed)
     names = graph_skill_names(kg).groupby('node_id')['label'].apply(list).to_dict()
 
@@ -93,8 +103,38 @@ NOISY_MIN_EDGE_WEIGHT = 0.5
 VALIDATION_HELD_OUT_SEED = 6
 NOISY_VALIDATION_SEED = 5
 
+# Only the final evaluation may load test sets, and only from a clean working
+# tree, so every test result maps to a commit.
+TEST_SEEDS = frozenset({TEST_SEED, HELD_OUT_SEED, NOISY_SEED})
+_test_access = False
+
+
+class LockedSetError(RuntimeError):
+    pass
+
+
+def check_seed(seed):
+    if seed in TEST_SEEDS and not _test_access:
+        raise LockedSetError(f'seed {seed} belongs to a test set; load it inside open_test_sets()')
+
+
+@contextmanager
+def open_test_sets():
+    """Unlock the test sets for the body of a with-block; refuses a dirty working tree."""
+    global _test_access
+    state = git_state()
+    if not state['clean']:
+        raise LockedSetError('test sets need a clean working tree (commit first); uncommitted: '
+                             + '; '.join(state['changes'][:5]))
+    previous, _test_access = _test_access, True
+    try:
+        yield
+    finally:
+        _test_access = previous
+
 
 def held_out_names(kg, seed=HELD_OUT_SEED):
+    check_seed(seed)
     rng = random.Random(seed)
     names = graph_skill_names(kg).groupby('node_id')['label'].apply(list)
     held = {}
@@ -109,6 +149,7 @@ def held_out_names(kg, seed=HELD_OUT_SEED):
 
 def noisy_profiles(kg, held, seed=NOISY_SEED, sizes=PROFILE_SIZES, per_size=PROFILES_PER_SIZE):
     """Profiles written only with held-out names, from each career's requirements."""
+    check_seed(seed)
     rng = random.Random(seed)
     profiles = []
     for career in sorted(kg.careers()):
@@ -130,6 +171,12 @@ def noisy_validation(kg):
     """(hidden names, profiles) for tuning on unseen wording."""
     held = held_out_names(kg, VALIDATION_HELD_OUT_SEED)
     return held, noisy_profiles(kg, held, seed=NOISY_VALIDATION_SEED)
+
+
+def noisy_test(kg):
+    """(hidden names, profiles) for the final evaluation on unseen wording."""
+    held = held_out_names(kg)
+    return held, noisy_profiles(kg, held)
 
 
 # Profiles in everyday words, each with the careers that should rank first.
@@ -192,6 +239,54 @@ def hand_written_profiles(kg):
     ]
 
 
+@dataclass(frozen=True)
+class ProfileSet:
+    role: str       # development, validation or test
+    load: Callable  # kg -> profiles, or (hidden names, profiles) for the noisy sets
+
+
+PROFILE_SETS = {
+    'synthetic-validation': ProfileSet('validation', validation_profiles),
+    'noisy-validation': ProfileSet('validation', noisy_validation),
+    'synthetic-test': ProfileSet('test', test_profiles),
+    'noisy-test': ProfileSet('test', noisy_test),
+    'hand-v1': ProfileSet('development', hand_written_profiles),  # tested in the v1 report, then used to diagnose
+}
+
+
+def canonical(value):
+    if dataclasses.is_dataclass(value):
+        return {f.name: canonical(getattr(value, f.name)) for f in dataclasses.fields(value)}
+    if isinstance(value, dict):
+        return {str(k): canonical(v) for k, v in sorted(value.items())}
+    if isinstance(value, (set, frozenset)):
+        return sorted(canonical(v) for v in value)
+    if isinstance(value, (list, tuple)):
+        return [canonical(v) for v in value]
+    return value
+
+
+def set_hash(content):
+    """sha256 of a profile set's canonical JSON (profile order kept, sets and dicts sorted)."""
+    text = json.dumps(canonical(content), sort_keys=True, ensure_ascii=False, separators=(',', ':'))
+    return hashlib.sha256(text.encode()).hexdigest()
+
+
+def describe_sets(sets, roles=None):
+    """{name: role, size and hash} for a run manifest; roles come from PROFILE_SETS unless given."""
+    roles = roles or {}
+
+    def profiles(content):  # the noisy sets are (hidden names, profiles)
+        is_pair = isinstance(content, tuple) and len(content) == 2 and isinstance(content[0], dict)
+        return content[1] if is_pair else content
+    return {
+        name: {'role': roles.get(name) or PROFILE_SETS[name].role,
+               'profiles': len(profiles(content)),
+               'sha256': set_hash(content)}
+        for name, content in sets.items()
+    }
+
+
 def matching_accuracy(matcher, profiles, threshold):
     """How often each profile skill is matched to the exact skill it was sampled from."""
     pairs = [(text, skill) for p in profiles for text, skill in zip(p.skills, p.skill_ids)]
@@ -208,6 +303,12 @@ def matching_accuracy(matcher, profiles, threshold):
     }
 
 
+# Model selection uses validation sets only: the primary metric decides, and a
+# candidate that fails any guardrail is rejected (docs/evaluation_protocol.md).
+SELECTION_METRIC = 'nDCG@5'
+SELECTION_GUARDRAILS = ('candidate rate', 'known-answer probes', 'validation MRR')
+
+
 def precision_at_k(ranked, relevant, k):
     return len(set(ranked[:k]) & set(relevant)) / k
 
@@ -221,3 +322,11 @@ def reciprocal_rank(ranked, relevant):
         if item in relevant:
             return 1 / position
     return 0.0
+
+
+def ndcg_at_k(ranked, grades, k):
+    """nDCG with linear gains: {career: grade} labels; 0 when nothing is recommended."""
+    dcg = sum(grades.get(item, 0) / math.log2(position + 1) for position, item in enumerate(ranked[:k], 1))
+    ideal = sum(g / math.log2(position + 1)
+                for position, g in enumerate(sorted(grades.values(), reverse=True)[:k], 1))
+    return dcg / ideal if ideal else 0.0
