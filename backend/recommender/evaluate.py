@@ -14,28 +14,28 @@ Profile sets, none used for tuning:
 
 Metrics: Precision@1, Precision@3, Recall@3, Recall@5 and MRR, overall and
 by profile size, plus a 95% bootstrap interval for full minus keyword MRR.
-Writes data/results/evaluation.csv.
+Writes data/results/<run>/evaluation.csv.
 
 Usage (from backend/):
-    python -m recommender.evaluate
+    python -m recommender.evaluate --run NAME
 """
 
 import random
+import sys
 
 import numpy as np
 import pandas as pd
 
-from pipeline import DATA_DIR
 from recommender.baseline import KeywordBaseline
 from recommender.engine import DEFAULT_PARAMS, EngineParams, PreparedProfile, RecommendationEngine
 from recommender.evaluation import (
-    hand_written_profiles, held_out_names, matching_accuracy, noisy_profiles, precision_at_k, recall_at_k,
-    reciprocal_rank, test_profiles,
+    LockedSetError, describe_sets, hand_written_profiles, matching_accuracy, noisy_test, open_test_sets, precision_at_k,
+    recall_at_k, reciprocal_rank, test_profiles,
 )
 from recommender.graph import get_graph
 from recommender.matching import SkillMatch, SkillMatcher
+from recommender.results import configuration, parse_run, run_started, write_csv, write_manifest
 
-RESULTS_FILE = DATA_DIR / 'results' / 'evaluation.csv'
 SYSTEMS = ('keyword', 'sbert_only', 'graph_only', 'full')
 BOOTSTRAP_SAMPLES = 2000
 
@@ -111,15 +111,19 @@ def evaluate(systems, dataset, profiles):
     return rows
 
 
-def main():
+def main(argv=None):
+    run = parse_run(__doc__.splitlines()[0], argv)
+    started = run_started(__spec__.name, argv)
     kg = get_graph()
-    held = held_out_names(kg)
+    with open_test_sets():  # refuses a dirty working tree; locked again on exit
+        test = test_profiles(kg)
+        held, noisy = noisy_test(kg)
+    hand = hand_written_profiles(kg)
     plain, hidden = Systems(kg), Systems(kg, hidden_names=held.values())
-    noisy = noisy_profiles(kg, held)
 
-    rows = (evaluate(plain, 'test', test_profiles(kg))
+    rows = (evaluate(plain, 'test', test)
             + evaluate(hidden, 'noisy', noisy)
-            + evaluate(plain, 'hand', hand_written_profiles(kg)))
+            + evaluate(plain, 'hand', hand))
     per_profile = pd.DataFrame(rows)
 
     measures = ['p@1', 'p@3', 'r@3', 'r@5', 'mrr']
@@ -128,8 +132,9 @@ def main():
     summary = pd.concat([overall.reset_index(), by_size.reset_index()]).round(4)
     summary['size'] = summary['size'].astype(str)
     summary = summary[['dataset', 'system', 'size', *measures]]
-    RESULTS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    summary.to_csv(RESULTS_FILE, index=False)
+    results_file = write_csv(summary, run, 'evaluation.csv')
+    write_manifest(run, started, describe_sets({'synthetic-test': test, 'noisy-test': (held, noisy), 'hand-v1': hand}),
+                   configuration(DEFAULT_PARAMS))
 
     pd.set_option('display.width', 140)
     for dataset in ('test', 'noisy', 'hand'):
@@ -153,8 +158,12 @@ def main():
     print(f'\nMatching on held-out names: {accuracy["correct"]:.1%} correct; '
           f'{accuracy["correct_when_confident"]:.1%} above the threshold, '
           f'{accuracy["correct_when_uncertain"]:.1%} below it ({accuracy["uncertain_share"]:.1%} of skills)')
-    print(f'\nResults: {RESULTS_FILE}')
+    print(f'\nResults: {results_file}')
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except LockedSetError as error:
+        print(f'evaluate.py: error: {error}', file=sys.stderr)
+        sys.exit(2)
