@@ -1,0 +1,49 @@
+{
+  "run": "v1-validation",
+  "command": "python -m recommender.validate --run v1-validation",
+  "started": "2026-10-25T08:56:19+00:00",
+  "git": {
+    "commit": "9432dfb922b6cc5be270ed811b1355f84cc9d23d",
+    "clean": true,
+    "changes": []
+  },
+  "finished": "2026-10-25T08:59:39+00:00",
+  "profile_sets": {
+    "synthetic-validation": {
+      "role": "validation",
+      "profiles": 360,
+      "sha256": "05352ba9178648d9380e185c78a65339f39d8699ea357442f2c808c948c8d944"
+    },
+    "noisy-validation": {
+      "role": "validation",
+      "profiles": 360,
+      "sha256": "b78e59478c0a53f184bcda760170253de5ccf74d045c7db5b1278e79549a4b84"
+    },
+    "hand-v1": {
+      "role": "development",
+      "profiles": 30,
+      "sha256": "0ad60ebd2ee04c13d6f5dc3c944a64d5826ab091bcee6ffc28f8a1946a08532d"
+    }
+  },
+  "configuration": {
+    "id": "c0b9e4737326",
+    "params": {
+      "max_depth": 1,
+      "low_confidence_threshold": 0.6,
+      "low_confidence_weight": 0.5,
+      "coverage_weight": 0.7,
+      "similarity_weight": 0.1,
+      "proximity_weight": 0.2
+    },
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "processed_data": {
+      "esco_occupation_skills.csv": "730a0fd91330a4d0d50c50029e2d579c3ab1acacb300a32ccbc86cc020f68e6f",
+      "esco_occupations.csv": "40d9022063397afb94fdd42b21ab48c437fcebd04407a8cec22b2c657a92a76c",
+      "esco_onet_map.csv": "0f969e55c9bc4a83b169610fc27c38e1ca9de4fd4972a0c8d7535d882f1cefe2",
+      "esco_skills.csv": "8ca13e4006818d6c261ce40ce28fb4ce37678118de1cc1ea0bc6266fe9221579",
+      "occupations.csv": "1e269e3b46ee92fe38f7da2d374c135fcd6bec4a1fccad632a6c1ff7e2b17f5c",
+      "onet_skills.csv": "40739fd1460fd8925a588cf2ba521f8322e9eb003b57afb1e747bae6271cf37d",
+      "onet_tools.csv": "85704841128099482501c5e6c6b966bf1aeed2fd844552864d831dbaafe7eeea"
+    }
+  }
+}
