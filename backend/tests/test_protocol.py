@@ -163,8 +163,11 @@ def test_access_does_not_leak_into_other_workflows(kg, tree, results_dir, monkey
 # Only the final evaluation may touch test sets (source inspection)
 
 TEST_ONLY = {'open_test_sets', 'test_profiles', 'noisy_test', 'held_out_names', 'noisy_profiles', 'generate_profiles',
-             'check_seed', 'TEST_SEED', 'HELD_OUT_SEED', 'NOISY_SEED', 'TEST_SEEDS', '_test_access', 'PROFILE_SETS'}
-ALLOWED = {'evaluation.py': TEST_ONLY, 'evaluate.py': {'open_test_sets', 'test_profiles', 'noisy_test'}}
+             'check_seed', 'TEST_SEED', 'HELD_OUT_SEED', 'NOISY_SEED', 'TEST_SEEDS', '_test_access', 'PROFILE_SETS',
+             'check_test_set', 'task_test_profiles'}
+ALLOWED = {'evaluation.py': TEST_ONLY, 'evaluate.py': {'open_test_sets', 'test_profiles', 'noisy_test',
+                                                    'task_test_profiles'},
+           'task_sets.py': {'check_test_set', 'task_test_profiles'}}
 
 
 def identifiers(path):
