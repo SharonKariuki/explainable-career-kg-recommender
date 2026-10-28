@@ -7,7 +7,7 @@ from rest_framework.response import Response
 
 from core import services
 from core.models import SkillProfile
-from core.serializers import LoginSerializer, RegisterSerializer, SkillProfileSerializer
+from core.serializers import GoogleLoginSerializer, LoginSerializer, RegisterSerializer, SkillProfileSerializer
 
 DEFAULT_TOP = 10
 
@@ -31,6 +31,15 @@ def register(request):
 @permission_classes([AllowAny])
 def login(request):
     serializer = LoginSerializer(data=request.data)
+    serializer.is_valid(raise_exception=True)
+    return token_response(serializer.validated_data['user'])
+
+
+@api_view(['POST'])
+@authentication_classes([])  # a stale token must not block signing in
+@permission_classes([AllowAny])
+def google_login(request):
+    serializer = GoogleLoginSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)
     return token_response(serializer.validated_data['user'])
 
