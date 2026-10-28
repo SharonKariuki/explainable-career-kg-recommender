@@ -2,6 +2,8 @@ Django==5.2.17
 djangorestframework==3.18.1
 psycopg2-binary==2.9.13
 python-dotenv==1.2.3
+google-auth==2.62.0
+requests==2.34.2
 pandas==3.0.6
 numpy==2.4.6
 sentence-transformers==6.1.0

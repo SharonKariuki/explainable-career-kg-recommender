@@ -67,6 +67,12 @@ export async function login(username, password) {
   return data
 }
 
+export async function googleLogin(credential) {
+  const data = await request('POST', '/auth/google/', { credential })
+  setToken(data.token)
+  return data
+}
+
 export async function logout() {
   try {
     await request('POST', '/auth/logout/')

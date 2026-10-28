@@ -1,6 +1,61 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-import { login, register } from '../api.js'
+import { googleLogin, login, register } from '../api.js'
+
+// Google sign-in shows only when frontend/.env sets VITE_GOOGLE_CLIENT_ID.
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID
+
+let googleScript = null
+
+// Google Identity Services, loaded once and only on the sign-in screen.
+function loadGoogle() {
+  googleScript ??= new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src = 'https://accounts.google.com/gsi/client'
+    script.async = true
+    script.onload = () => resolve(window.google)
+    script.onerror = () => {
+      googleScript = null
+      reject(new Error('Could not reach Google. Check your connection and try again.'))
+    }
+    document.head.append(script)
+  })
+  return googleScript
+}
+
+// Google draws its own button; it hands back an ID token for the API to check.
+function GoogleButton({ text, onCredential, onError }) {
+  const slot = useRef(null)
+  const latest = useRef({ onCredential, onError })
+  useEffect(() => {
+    latest.current = { onCredential, onError }
+  })
+
+  useEffect(() => {
+    let cancelled = false
+    loadGoogle()
+      .then((google) => {
+        if (cancelled || !slot.current) return
+        google.accounts.id.initialize({
+          client_id: GOOGLE_CLIENT_ID,
+          callback: (response) => latest.current.onCredential(response.credential),
+        })
+        google.accounts.id.renderButton(slot.current, {
+          theme: 'outline',
+          size: 'large',
+          shape: 'pill',
+          text,
+          width: Math.min(400, slot.current.offsetWidth),
+        })
+      })
+      .catch((err) => !cancelled && latest.current.onError(err.message))
+    return () => {
+      cancelled = true
+    }
+  }, [text])
+
+  return <div ref={slot} className="google-btn" />
+}
 
 export default function AuthScreen({ onSignedIn }) {
   const [mode, setMode] = useState('login')
@@ -25,6 +80,18 @@ export default function AuthScreen({ onSignedIn }) {
     try {
       const user = isRegister ? await register(username, password, email) : await login(username, password)
       onSignedIn(user)
+    } catch (err) {
+      setError(err.message)
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  async function signInWithGoogle(credential) {
+    setBusy(true)
+    setError(null)
+    try {
+      onSignedIn(await googleLogin(credential))
     } catch (err) {
       setError(err.message)
     } finally {
@@ -69,6 +136,16 @@ export default function AuthScreen({ onSignedIn }) {
           {busy ? 'Please wait…' : isRegister ? 'Create account' : 'Sign in'}
         </button>
       </form>
+      {GOOGLE_CLIENT_ID && (
+        <>
+          <p className="auth-divider muted">or</p>
+          <GoogleButton
+            text={isRegister ? 'signup_with' : 'signin_with'}
+            onCredential={signInWithGoogle}
+            onError={setError}
+          />
+        </>
+      )}
       <p className="muted">
         {isRegister ? 'Already have an account?' : 'New here?'}{' '}
         <button type="button" className="link" onClick={switchMode}>
