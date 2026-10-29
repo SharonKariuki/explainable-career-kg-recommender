@@ -1,10 +1,14 @@
+import itertools
 import math
+import random
 
 import pytest
 
 from recommender.evaluation import (
     MIN_EDGE_WEIGHT, PROFILE_SIZES, PROFILES_PER_SIZE, hand_written_profiles, held_out_names, noisy_profiles,
-    ndcg_at_k, noisy_validation, open_test_sets, precision_at_k, recall_at_k, reciprocal_rank,
+    chance_hit_at_k, chance_precision_at_1, chance_reciprocal_rank, graded_disclosure, graded_metrics,
+    graded_summary, hit_at_k, ndcg_at_k, noisy_validation,
+    open_test_sets, precision_at_k, recall_at_k, reciprocal_rank,
     test_profiles as make_test_profiles, validation_profiles,
 )
 from recommender.graph import get_graph
@@ -107,3 +111,72 @@ def test_ndcg():
     assert ndcg_at_k([], {'a': 3}, 5) == 0
     # graded: the ideal order puts grade 3 first
     assert ndcg_at_k(['b', 'a'], {'a': 3, 'b': 1}, 2) == pytest.approx((1 + 3 / math.log2(3)) / (3 + 1 / math.log2(3)))
+
+
+def test_hit_at_k():
+    ranked = ['a', 'b', 'c', 'd']
+    assert hit_at_k(ranked, {'c', 'x'}, 3) == 1
+    assert hit_at_k(ranked, {'d'}, 3) == 0
+    assert hit_at_k([], {'a'}, 5) == 0
+
+
+@pytest.mark.parametrize('n_relevant', [1, 2, 3])
+def test_chance_levels_match_every_ordering(n_relevant):
+    items, relevant = range(6), set(range(n_relevant))
+    orders = list(itertools.permutations(items))
+    mean = lambda f: sum(f(list(o)) for o in orders) / len(orders)
+    assert chance_precision_at_1(n_relevant, 6) == pytest.approx(mean(lambda o: precision_at_k(o, relevant, 1)))
+    assert chance_reciprocal_rank(n_relevant, 6) == pytest.approx(mean(lambda o: reciprocal_rank(o, relevant)))
+    for k in (1, 3):
+        assert chance_hit_at_k(n_relevant, 6, k) == pytest.approx(mean(lambda o: hit_at_k(o, relevant, k)))
+
+
+GRADES = {'own': 3, 'twin': 2, 'related': 1}
+OTHERS = [f'c{i}' for i in range(21)]
+
+
+def test_graded_precision_pairs_grade_two_with_strict_grade_three():
+    twin_first = graded_metrics(['twin', 'own', *OTHERS], GRADES, 24)
+    assert (twin_first['p@1'], twin_first['p@1_grade3']) == (1, 0)
+    assert twin_first['mrr'] == 1 and twin_first['mrr_grade3'] == 0.5 and twin_first['hit@3'] == 1
+    related_first = graded_metrics(['related', 'own', *OTHERS], GRADES, 24)
+    assert (related_first['p@1'], related_first['p@1_grade3'], related_first['mrr']) == (0, 0, 1)
+    empty = graded_metrics([], GRADES, 24)
+    assert empty['candidate_rate'] == 0 and empty['p@1'] == empty['mrr'] == empty['ndcg@5'] == 0
+    assert twin_first['chance_p@1'] == 2 / 24 and twin_first['chance_p@1_grade3'] == 1 / 24
+    assert twin_first['chance_mrr'] == pytest.approx(chance_reciprocal_rank(3, 24))
+
+
+def test_sparse_grade_two_is_disclosed_and_bounds_the_gap():
+    """As in the tasks-v1 test split: one profile in 120 has a grade-2 label."""
+    rows = [graded_metrics(['related', 'own', *OTHERS], {'own': 3, 'related': 1}, 24) for _ in range(119)]
+    rows.append(graded_metrics(['twin', 'own', *OTHERS], GRADES, 24))
+    summary = graded_summary(rows)
+    assert summary['grade_2_profiles'] == 1 and summary['p@1_gap_bound'] == pytest.approx(1 / 120)
+    assert summary['p@1'] - summary['p@1_grade3'] == pytest.approx(1 / 120)
+    text = graded_disclosure('tasks-v1 test', summary)
+    assert '120 profiles, 1 with a grade-2 label' in text and '1/120 = 0.008' in text
+    assert 'No claim about near-identical tasks' in text
+
+
+def test_without_grade_two_the_two_precisions_agree():
+    rows = [graded_metrics(r, {'own': 3, 'related': 1}, 24) for r in (['own'], ['related', 'own'], [])]
+    summary = graded_summary(rows)
+    assert summary['grade_2_profiles'] == 0 and summary['p@1'] == summary['p@1_grade3']
+
+
+def test_the_gap_never_exceeds_the_grade_two_share():
+    rng = random.Random(0)
+    careers = [f'c{i}' for i in range(24)]
+    for _ in range(50):
+        rows = []
+        for _ in range(30):
+            labelled = rng.sample(careers, 4)
+            grades = {labelled[0]: 3, labelled[1]: rng.choice([2, 1]), labelled[2]: 1}
+            rows.append(graded_metrics(rng.sample(careers, 24), grades, 24))
+        summary = graded_summary(rows)
+        assert 0 <= summary['p@1'] - summary['p@1_grade3'] <= summary['p@1_gap_bound'] + 1e-12
+
+
+def test_chance_with_nothing_relevant_is_zero():
+    assert chance_reciprocal_rank(0, 24) == 0

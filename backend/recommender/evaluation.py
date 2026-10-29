@@ -118,6 +118,12 @@ def check_seed(seed):
         raise LockedSetError(f'seed {seed} belongs to a test set; load it inside open_test_sets()')
 
 
+def check_test_set(name):
+    """The same lock for test sets read from frozen files."""
+    if not _test_access:
+        raise LockedSetError(f'{name} is a test set; load it inside open_test_sets()')
+
+
 @contextmanager
 def open_test_sets():
     """Unlock the test sets for the body of a with-block; refuses a dirty working tree."""
@@ -324,9 +330,75 @@ def reciprocal_rank(ranked, relevant):
     return 0.0
 
 
+def hit_at_k(ranked, relevant, k):
+    return float(bool(set(ranked[:k]) & set(relevant)))
+
+
+# Expected values for a uniformly random ranking of n_items with n_relevant relevant,
+# reported next to each metric on graded sets, where labels are broad.
+def chance_precision_at_1(n_relevant, n_items):
+    return n_relevant / n_items
+
+
+def chance_hit_at_k(n_relevant, n_items, k):
+    return 1 - math.comb(n_items - n_relevant, k) / math.comb(n_items, k)
+
+
+def chance_reciprocal_rank(n_relevant, n_items):
+    """Sum over positions i of 1/i times P(first relevant item at i)."""
+    if not n_relevant:
+        return 0.0
+    return sum(math.comb(n_items - i, n_relevant - 1) / math.comb(n_items, n_relevant) / i
+               for i in range(1, n_items - n_relevant + 2))
+
+
 def ndcg_at_k(ranked, grades, k):
     """nDCG with linear gains: {career: grade} labels; 0 when nothing is recommended."""
     dcg = sum(grades.get(item, 0) / math.log2(position + 1) for position, item in enumerate(ranked[:k], 1))
     ideal = sum(g / math.log2(position + 1)
                 for position, g in enumerate(sorted(grades.values(), reverse=True)[:k], 1))
     return dcg / ideal if ideal else 0.0
+
+
+# Graded sets (tasks-v1, hand-v2): thresholds as in docs/evaluation_protocol.md.
+
+def graded_metrics(ranked, grades, n_careers):
+    """Per-profile metrics for {career: 3, 2 or 1} labels, each with its chance level.
+    Precision@1 counts grade >= 2 and is paired with the strict grade-3 version."""
+    at_least = lambda g: {c for c, x in grades.items() if x >= g}
+    three, two, one = at_least(3), at_least(2), at_least(1)
+    return {
+        'p@1': precision_at_k(ranked, two, 1), 'p@1_grade3': precision_at_k(ranked, three, 1),
+        'mrr': reciprocal_rank(ranked, one), 'mrr_grade2': reciprocal_rank(ranked, two),
+        'mrr_grade3': reciprocal_rank(ranked, three),
+        'r@3': recall_at_k(ranked, one, 3), 'r@5': recall_at_k(ranked, one, 5),
+        'hit@3': hit_at_k(ranked, two, 3), 'hit@5': hit_at_k(ranked, two, 5),
+        'ndcg@3': ndcg_at_k(ranked, grades, 3), 'ndcg@5': ndcg_at_k(ranked, grades, 5),
+        'candidate_rate': float(bool(ranked)),
+        'chance_p@1': chance_precision_at_1(len(two), n_careers),
+        'chance_p@1_grade3': chance_precision_at_1(len(three), n_careers),
+        'chance_mrr': chance_reciprocal_rank(len(one), n_careers),
+        'chance_mrr_grade2': chance_reciprocal_rank(len(two), n_careers),
+        'chance_hit@3': chance_hit_at_k(len(two), n_careers, 3),
+        'chance_hit@5': chance_hit_at_k(len(two), n_careers, 5),
+        'has_grade_2': 2 in grades.values(),
+    }
+
+
+def graded_summary(rows):
+    """Means over a graded set. Precision@1 at grade >= 2 can exceed the grade-3 version only
+    on profiles with a grade-2 label, so their share bounds the gap between the two."""
+    n = len(rows)
+    grade_2 = sum(r['has_grade_2'] for r in rows)
+    means = {m: sum(r[m] for r in rows) / n for m in rows[0] if m != 'has_grade_2'}
+    return {'profiles': n, 'grade_2_profiles': grade_2, 'p@1_gap_bound': grade_2 / n, **means}
+
+
+def graded_disclosure(name, summary):
+    """The sentence reported with every graded Precision@1; it makes no claim about grade 2."""
+    s = summary
+    return (f"{name}: {s['profiles']} profiles, {s['grade_2_profiles']} with a grade-2 label. "
+            f"Precision@1 is {s['p@1']:.3f} at grade >= 2 and {s['p@1_grade3']:.3f} at grade 3 only "
+            f"(chance {s['chance_p@1']:.3f} and {s['chance_p@1_grade3']:.3f}); the two can differ by at most "
+            f"{s['grade_2_profiles']}/{s['profiles']} = {s['p@1_gap_bound']:.3f}. "
+            f"No claim about near-identical tasks is made from these profiles.")
