@@ -703,3 +703,65 @@ a.row:hover b { text-decoration: underline; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---- Catalogue, saved careers, roadmap progress, settings ---- */
+
+.clamp { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.career-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 4px; }
+.card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.card-foot > a, .card-foot .card-links a { display: inline-flex; align-items: center; gap: 2px; font-size: 13px; font-weight: 500; text-decoration: none; }
+.card-foot > a:hover { text-decoration: underline; }
+.card-foot .card-links { padding-top: 0; border-top: 0; }
+.save-btn[aria-pressed='true'] .icon { fill: currentColor; }
+
+.explanation-lead { margin-top: 8px; line-height: 1.6; font-size: 14px; }
+.chip.tag { padding: 4px 12px; gap: 5px; }
+
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  border-radius: var(--r-pill);
+  background: var(--expected);
+}
+.segmented button { padding: 4px 11px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; color: var(--muted); }
+.segmented button:hover:not(:disabled):not(.on) { color: var(--fg); }
+.segmented button.on { background: var(--card); color: var(--fg); box-shadow: var(--shadow-micro); }
+.segmented button:disabled { cursor: progress; }
+.roadmap-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 8px; }
+.roadmap-row.done .row-main b { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--soft); }
+.roadmap-row.done .av { background: var(--green-bg); color: var(--green); }
+.roadmap-row.learning .av { background: var(--notice-bg); color: var(--amber); }
+.roadmap-summary .progress { margin-top: 10px; max-width: 28rem; }
+
+.suggestions { display: grid; gap: 2px; }
+.suggestions .chips { margin-top: 6px; }
+.chip.suggestion { padding: 5px 12px 5px 9px; gap: 5px; background: var(--card); border: 1px solid var(--line); cursor: pointer; }
+.chip.suggestion:hover { border-color: var(--fg); }
+.chip.suggestion em { font-style: normal; font-size: 11px; color: var(--muted); margin-left: 2px; }
+
+.setting-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; }
+.setting-row b { display: block; font-size: 14px; }
+.state.ok { padding: 12px 14px; border-radius: var(--r-tile); background: var(--green-bg); color: var(--green); }
+.btn.danger { background: var(--red); color: #fff; border: 1px solid var(--red); }
+.btn.danger-outline { background: transparent; color: var(--red); border: 1px solid var(--red); }
+.btn.danger-outline:hover { background: var(--red-bg); }
+.danger-zone { border-color: var(--red-bg); }
+
+.nav-rule { border: 0; border-top: 1px solid var(--line); margin: 6px 4px; }
+.sidebar-user a { color: inherit; text-decoration: none; }
+.sidebar-user a:hover { text-decoration: underline; }
+.kpi-inline { font-size: 13px; color: var(--muted); margin: 4px 0 0; }
+.kpi-inline b { color: var(--fg); font-size: 16px; }
+
+@media (max-width: 480px) {
+  .setting-row { flex-wrap: wrap; }
+}

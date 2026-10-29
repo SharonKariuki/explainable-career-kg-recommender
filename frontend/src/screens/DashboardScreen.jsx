@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { getRecommendations } from '../api.js'
+import { getProgress, getRecommendations, getSaved } from '../api.js'
 import { EmptyState, IconButton, Kpi, LogoTile, Notice, Pill, Progress, Status, ThemeToggle } from '../components.jsx'
 import { capitalise } from '../format.js'
 import { Icon } from '../icons.jsx'
@@ -58,8 +58,8 @@ export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme 
 
   useEffect(() => {
     let current = true
-    getRecommendations(ALL_CAREERS)
-      .then((result) => current && setData(result))
+    Promise.all([getRecommendations(ALL_CAREERS), getSaved(), getProgress()])
+      .then(([result, saved, progress]) => current && setData({ ...result, saved: saved.careers, progress: progress.skills }))
       .catch((err) => current && setError(err.message))
     return () => {
       current = false
@@ -77,6 +77,8 @@ export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme 
       </div>
       {/* On phones there is no sidebar, so its theme and sign-out controls live here. */}
       <div className="greet-actions phone-only">
+        <IconButton icon="bookmark" label="Saved careers" href="#/saved" />
+        <IconButton icon="settings" label="Settings" href="#/settings" />
         <ThemeToggle theme={theme} onToggle={onToggleTheme} />
         <IconButton icon="logout" label="Sign out" onClick={onSignOut} />
       </div>
@@ -102,6 +104,7 @@ export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme 
   const confident = data.matches.length - uncertain
   const top = data.recommendations.slice(0, 3)
   const next = nextStep(skillCount, uncertain, top[0])
+  const learningCount = data.progress.filter((p) => p.status === 'learning').length
 
   return (
     <>
@@ -176,6 +179,56 @@ export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme 
             </ol>
           ) : (
             <p className="muted">None of your skills matched a career yet. Try rewording them.</p>
+          )}
+        </section>
+
+        <section className="card panel">
+          <div className="ph">
+            <h2>Saved careers</h2>
+            <a href="#/saved">See all</a>
+          </div>
+          {data.saved.length ? (
+            <ul className="list">
+              {data.saved.slice(0, 3).map((c) => (
+                <li key={c.career_code}>
+                  <a className="row" href={`#/careers/${c.career_code}`}>
+                    <span className="av"><Icon name="bookmark" size={16} /></span>
+                    <span className="row-main">
+                      <b>{c.title}</b>
+                      <span className="sub">{c.match ? `Your match #${c.match.rank}` : 'Not linked to your skills'}</span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="muted small">
+              Nothing saved yet. <a href="#/careers">Explore careers</a> and save the ones you want to come back to.
+            </p>
+          )}
+        </section>
+
+        <section className="card panel">
+          <div className="ph">
+            <h2>Roadmap progress</h2>
+            <a href="#/roadmap">Open roadmap</a>
+          </div>
+          {data.progress.length ? (
+            <>
+              <p className="num kpi-inline">
+                <b>{learningCount}</b> learning · <b>{data.progress.length - learningCount}</b> done
+              </p>
+              <ul className="chips">
+                {data.progress.slice(0, 6).map((p) => (
+                  <li key={p.skill_id} className="chip tag">
+                    {p.status === 'done' && <Icon name="check" size={13} />}
+                    {p.label}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p className="muted small">Mark skills as learning or done on a career's roadmap to track them here.</p>
           )}
         </section>
       </div>

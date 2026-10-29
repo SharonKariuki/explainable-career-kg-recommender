@@ -86,3 +86,25 @@ export const getProfile = () => request('GET', '/profile/')
 export const saveProfile = (skills) => request('PUT', '/profile/', { skills })
 export const getRecommendations = (top = 10) => request('GET', `/recommendations/?top=${top}`)
 export const getRecommendation = (code) => request('GET', `/recommendations/${encodeURIComponent(code)}/`)
+
+export const getCareers = () => request('GET', '/careers/')
+export const getCareer = (code) => request('GET', `/careers/${encodeURIComponent(code)}/`)
+export const getSaved = () => request('GET', '/saved/')
+export const saveCareer = (code) => request('PUT', `/saved/${encodeURIComponent(code)}/`)
+export const unsaveCareer = (code) => request('DELETE', `/saved/${encodeURIComponent(code)}/`)
+export const searchSkills = (query) => request('GET', `/skills/?q=${encodeURIComponent(query)}`)
+export const getProgress = () => request('GET', '/progress/')
+export const setProgress = (skillId, status) => request('PUT', '/progress/', { skill_id: skillId, status })
+export const updateAccount = (email) => request('PATCH', '/auth/me/', { email })
+
+// Changing the password replaces the token, signing out anyone holding the old one.
+export async function changePassword(currentPassword, newPassword) {
+  const data = await request('POST', '/auth/password/', { current_password: currentPassword, new_password: newPassword })
+  setToken(data.token)
+  return data
+}
+
+export async function deleteAccount(confirm) {
+  await request('DELETE', '/auth/me/', { confirm })
+  setToken(null)
+}

@@ -12,6 +12,8 @@ import DashboardScreen from './screens/DashboardScreen.jsx'
 import ProfileScreen from './screens/ProfileScreen.jsx'
 import RecommendationsScreen from './screens/RecommendationsScreen.jsx'
 import RoadmapScreen from './screens/RoadmapScreen.jsx'
+import SavedScreen from './screens/SavedScreen.jsx'
+import SettingsScreen from './screens/SettingsScreen.jsx'
 
 const CAREER_ROUTE = /^\/careers\/([\w.-]+)$/
 const ROADMAP_ROUTE = /^\/roadmap(?:\/([\w.-]+))?$/
@@ -24,6 +26,12 @@ const NAV = [
   { path: '/assessment', label: 'Your skills', icon: 'plus' },
   { path: '/careers', label: 'Explore', icon: 'explore' },
   { path: '/roadmap', label: 'Roadmap', icon: 'roadmap' },
+]
+
+// Sidebar only; on phones they are reached from the dashboard.
+const MORE_NAV = [
+  { path: '/saved', label: 'Saved', icon: 'bookmark' },
+  { path: '/settings', label: 'Settings', icon: 'settings' },
 ]
 
 function initials(name) {
@@ -52,6 +60,11 @@ function App() {
     navigate('/')
   }
 
+  function accountDeleted() {
+    setUser(null)
+    navigate('/')
+  }
+
   function signedIn(account) {
     setUser(account)
     navigate('/dashboard')
@@ -75,9 +88,13 @@ function App() {
   else if (path === '/careers') screen = <CareersScreen />
   else if (career) screen = <CareerDetailScreen key={career[1]} code={career[1]} />
   else if (roadmap) screen = <RoadmapScreen code={roadmap[1]} />
+  else if (path === '/saved') screen = <SavedScreen />
+  else if (path === '/settings') {
+    screen = <SettingsScreen theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
+  }
   else screen = <DashboardScreen user={user} onSignOut={signOut} theme={theme} onToggleTheme={toggleTheme} />
 
-  const active = NAV.find((n) => path.startsWith(n.path))?.path ?? '/dashboard'
+  const active = [...NAV, ...MORE_NAV].find((n) => path.startsWith(n.path))?.path ?? '/dashboard'
   const current = (n) => (n.path === active ? 'page' : undefined)
 
   return (
@@ -94,10 +111,17 @@ function App() {
               {n.label}
             </a>
           ))}
+          <hr className="nav-rule" />
+          {MORE_NAV.map((n) => (
+            <a key={n.path} href={`#${n.path}`} aria-current={current(n)}>
+              <Icon name={n.icon} />
+              {n.label}
+            </a>
+          ))}
         </nav>
         <div className="sidebar-user">
           <span className="av">{initials(user.username)}</span>
-          <span className="grow truncate">{user.username}</span>
+          <a className="grow truncate" href="#/settings" title="Settings">{user.username}</a>
           <ThemeToggle theme={theme} onToggle={toggleTheme} glass={false} />
           <IconButton icon="logout" label="Sign out" onClick={signOut} glass={false} />
         </div>
