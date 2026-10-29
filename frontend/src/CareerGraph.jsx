@@ -33,7 +33,7 @@ function Node({ x, y, label, className, width = NODE_W, height = NODE_H, wrap = 
   return (
     <g className={className}>
       <title>{label}</title>
-      <rect x={x} y={y} width={width} height={height} rx="8" />
+      <rect x={x} y={y} width={width} height={height} rx={Math.min(height / 2, 16)} />
       <text x={x + width / 2} y={y + height / 2} dominantBaseline="central" textAnchor="middle">
         {lines.map((line, i) => (
           <tspan key={line} x={x + width / 2} dy={i === 0 ? `${-(lines.length - 1) * 0.6}em` : '1.2em'}>{line}</tspan>
