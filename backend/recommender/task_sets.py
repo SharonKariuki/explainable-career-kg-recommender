@@ -37,7 +37,7 @@ import itertools
 import json
 import random
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 import networkx as nx
 import pandas as pd
@@ -94,6 +94,7 @@ class GradedProfile:
     career_id: str
     skills: tuple
     grades: dict  # career id -> 3, 2 or 1
+    strata: dict = field(default_factory=dict)  # covariate -> value, for the overlap breakdown
 
 
 def career_id(code):
@@ -427,7 +428,9 @@ def _load(split):
     table = read_table()
     return [
         GradedProfile(r.profile_id, career_id(r.onet_soc_code), (r.task,),
-                      {career_id(c): g for c, g in json.loads(r.grades).items()})
+                      {career_id(c): g for c, g in json.loads(r.grades).items()},
+                      {'description cosine third': int(r.cosine_third),
+                       'names a graph skill': bool(r.names_a_graph_skill)})
         for r in table[table.split == split].itertuples()
     ]
 
