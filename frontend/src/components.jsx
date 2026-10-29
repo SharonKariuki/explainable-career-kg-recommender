@@ -1,6 +1,9 @@
 // Warm Glass building blocks shared by the screens. Glass is for controls,
 // white cards for reading, and each screen has at most one black hero card.
 
+import { useState } from 'react'
+
+import { saveCareer, unsaveCareer } from './api.js'
 import { Icon } from './icons.jsx'
 
 export function LogoTile({ size = 42 }) {
@@ -168,5 +171,62 @@ export function EmptyState({ title, children, action }) {
       {children && <p className="muted">{children}</p>}
       {action && <a className="btn primary" href={action.href}>{action.label}</a>}
     </section>
+  )
+}
+
+// Bookmarks a career. The button flips at once and flips back if the request fails.
+export function SaveButton({ code, saved: initial, onChange, compact = false }) {
+  const [saved, setSaved] = useState(initial)
+  const [busy, setBusy] = useState(false)
+
+  async function toggle() {
+    const next = !saved
+    setSaved(next)
+    setBusy(true)
+    try {
+      await (next ? saveCareer(code) : unsaveCareer(code))
+      onChange?.(next)
+    } catch {
+      setSaved(!next)
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  const label = saved ? 'Saved' : 'Save'
+  return (
+    <button
+      type="button"
+      className={`btn ${compact ? 'small' : ''} ${saved ? 'dark' : 'glass'} save-btn`}
+      onClick={toggle}
+      disabled={busy}
+      aria-pressed={saved}
+      aria-label={compact ? `${saved ? 'Unsave' : 'Save'} this career` : undefined}
+      title={saved ? 'Remove from saved careers' : 'Save this career'}
+    >
+      <Icon name="bookmark" size={16} />
+      {label}
+    </button>
+  )
+}
+
+// Choose one of a few options, such as a skill's roadmap status.
+export function Segmented({ label, options, value, onChange, disabled }) {
+  return (
+    <div className="segmented" role="radiogroup" aria-label={label}>
+      {options.map((o) => (
+        <button
+          key={o.value}
+          type="button"
+          role="radio"
+          aria-checked={o.value === value}
+          className={o.value === value ? 'on' : ''}
+          onClick={() => o.value !== value && onChange(o.value)}
+          disabled={disabled}
+        >
+          {o.label}
+        </button>
+      ))}
+    </div>
   )
 }

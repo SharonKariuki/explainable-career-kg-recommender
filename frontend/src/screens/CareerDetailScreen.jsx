@@ -1,49 +1,80 @@
 import { useEffect, useState } from 'react'
 
-import { getRecommendation } from '../api.js'
+import { getCareer, getRecommendation } from '../api.js'
 import CareerGraph from '../CareerGraph.jsx'
-import { Meter, PageHeader, Pill, Status } from '../components.jsx'
+import { Meter, Notice, PageHeader, Pill, SaveButton, Status } from '../components.jsx'
 import { capitalise, sourceNames } from '../format.js'
 import { Icon } from '../icons.jsx'
 
-const BACK = { href: '#/recommendations', label: 'All my matches' }
-
 export default function CareerDetailScreen({ code }) {
+  const [profile, setProfile] = useState(null)
   const [career, setCareer] = useState(null)
   const [error, setError] = useState(null)
 
   useEffect(() => {
     // App keys this screen by career code, so state starts fresh for each career.
     let current = true
-    getRecommendation(code)
-      .then((result) => current && setCareer(result))
+    getCareer(code)
+      .then(async (result) => {
+        // Only a career linked to the user's skills has an explained match.
+        const match = result.match ? await getRecommendation(code) : null
+        if (!current) return
+        setProfile(result)
+        setCareer(match)
+      })
       .catch((err) => current && setError(err.message))
     return () => {
       current = false
     }
   }, [code])
 
-  if (!career) {
+  const back = profile?.match
+    ? { href: '#/recommendations', label: 'All my matches' }
+    : { href: '#/careers', label: 'Explore careers' }
+
+  if (!profile) {
     return (
       <>
-        <PageHeader title="Career" back={BACK} />
+        <PageHeader title="Career" back={back} />
         <Status loading={!error} error={error} />
       </>
     )
   }
 
+  const subtitle = career
+    ? `Match #${career.rank} · ${capitalise(profile.domain)}`
+    : `${capitalise(profile.domain)} · not linked to your skills yet`
+
+  return (
+    <>
+      <PageHeader title={profile.title} subtitle={subtitle} back={back} />
+
+      <div className="button-row">
+        <SaveButton code={code} saved={profile.saved} />
+        {career && (
+          <>
+            <a className="btn glass" href={`#/roadmap/${code}`}><Icon name="roadmap" />Skills roadmap</a>
+            <button type="button" className="btn glass" onClick={() => document.getElementById('career-graph').scrollIntoView()}>
+              <Icon name="graph" />Skills graph
+            </button>
+          </>
+        )}
+      </div>
+
+      <section className="card panel">
+        <p className="mono">About this career</p>
+        <p className="explanation-lead">{profile.description}</p>
+      </section>
+
+      {career ? <MatchDetail career={career} code={code} /> : <Requirements profile={profile} />}
+    </>
+  )
+}
+
+function MatchDetail({ career, code }) {
   const c = career.components
   return (
     <>
-      <PageHeader title={career.title} subtitle={`Match #${career.rank} · ${capitalise(career.domain)}`} back={BACK} />
-
-      <div className="button-row">
-        <a className="btn glass" href={`#/roadmap/${code}`}><Icon name="roadmap" />Skills roadmap</a>
-        <button type="button" className="btn glass" onClick={() => document.getElementById('career-graph').scrollIntoView()}>
-          <Icon name="graph" />Skills graph
-        </button>
-      </div>
-
       <section className="card panel">
         <p className="mono">Why it suits you</p>
         <div className="explanation">
@@ -114,6 +145,52 @@ export default function CareerDetailScreen({ code }) {
               </li>
             ))}
           </ol>
+        </section>
+      </div>
+    </>
+  )
+}
+
+// For a career none of the user's skills link to: what it asks for, from the knowledge graph.
+function Requirements({ profile }) {
+  return (
+    <>
+      <Notice icon="bulb" title="None of your skills link to this career yet" action={{ href: '#/assessment', label: 'Edit skills' }}>
+        Add skills from the list below that you already have, and it will be ranked and explained for you.
+      </Notice>
+
+      <div className="split-2">
+        <section className="card panel">
+          <div className="ph">
+            <h2>What this career requires</h2>
+            <span className="num">{profile.skill_count}</span>
+          </div>
+          <p className="muted small">The most important first; skills distinctive to this career lead.</p>
+          <ol className="list">
+            {profile.requirements.map((r, i) => (
+              <li key={r.skill_id} className="row">
+                <span className="av num">{i + 1}</span>
+                <span className="row-main">
+                  <b>{r.label}</b>
+                  <span className="sub">{capitalise(r.skill_type || 'skill')}</span>
+                </span>
+                <span className="row-value"><Pill>{r.requirement}</Pill></span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="card panel">
+          <div className="ph">
+            <h2>Tools used</h2>
+            <span className="num">{profile.tool_count}</span>
+          </div>
+          <p className="muted small">The software this career relies on most.</p>
+          <ul className="chips">
+            {profile.tools.map((t) => (
+              <li key={t.skill_id} className="chip tag">{t.label}</li>
+            ))}
+          </ul>
         </section>
       </div>
     </>
