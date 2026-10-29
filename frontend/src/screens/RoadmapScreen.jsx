@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { getRecommendation, getRecommendations } from '../api.js'
-import { EmptyState, Notice, PageHeader, Pill, Status } from '../components.jsx'
+import { getProfile, getProgress, getRecommendation, getRecommendations, saveProfile, setProgress } from '../api.js'
+import { EmptyState, Notice, PageHeader, Pill, Progress, Segmented, Status } from '../components.jsx'
 import { capitalise, sourceNames } from '../format.js'
 import { Icon } from '../icons.jsx'
 import { navigate } from '../router.js'
@@ -59,24 +59,71 @@ export default function RoadmapScreen({ code }) {
   )
 }
 
+const STATUSES = [
+  { value: 'todo', label: 'To do' },
+  { value: 'learning', label: 'Learning' },
+  { value: 'done', label: 'Done' },
+]
+
+function statusMap(progress) {
+  return Object.fromEntries(progress.skills.map((p) => [p.skill_id, p.status]))
+}
+
 function RoadmapDetail({ code }) {
   const [career, setCareer] = useState(null)
+  const [statuses, setStatuses] = useState({})
   const [error, setError] = useState(null)
+  const [busy, setBusy] = useState(null) // the skill being updated
+  const [reload, setReload] = useState(0)
 
   useEffect(() => {
     let current = true
-    getRecommendation(code)
-      .then((result) => current && setCareer(result))
+    Promise.all([getRecommendation(code), getProgress()])
+      .then(([result, progress]) => {
+        if (!current) return
+        setCareer(result)
+        setStatuses(statusMap(progress))
+      })
       .catch((err) => current && setError(err.message))
     return () => {
       current = false
     }
-  }, [code])
+  }, [code, reload])
+
+  async function changeStatus(skillId, status) {
+    setBusy(skillId)
+    setError(null)
+    try {
+      setStatuses(statusMap(await setProgress(skillId, status)))
+    } catch (err) {
+      setError(err.message)
+    } finally {
+      setBusy(null)
+    }
+  }
+
+  // A learned skill joins the profile, so the ranking and this roadmap count it.
+  async function addToProfile(skillId, label) {
+    setBusy(skillId)
+    setError(null)
+    try {
+      const profile = await getProfile()
+      await saveProfile([...profile.skills, label])
+      setReload((n) => n + 1)
+    } catch (err) {
+      setError(err.message)
+    } finally {
+      setBusy(null)
+    }
+  }
 
   if (!career) return <Status loading={!error} error={error} />
 
   const have = career.skill_contributions
   const gap = career.skills_gap
+  const statusOf = (g) => statuses[g.skill_id] || 'todo'
+  const done = gap.filter((g) => statusOf(g) === 'done').length
+  const learning = gap.filter((g) => statusOf(g) === 'learning').length
 
   return (
     <>
@@ -85,16 +132,19 @@ function RoadmapDetail({ code }) {
           <p className="mono">Match #{career.rank} · {career.domain}</p>
           <h2>{career.title}</h2>
           <p className="muted small num">
-            Uses {have.length} of your skills · {gap.length} skills to build shown
+            Uses {have.length} of your skills · {done} of {gap.length} to build done · {learning} learning
           </p>
+          <Progress value={gap.length ? done / gap.length : 1} tone="gold" label={`${done} of ${gap.length} skills done`} />
         </div>
         <a className="btn glass" href={`#/careers/${code}`}>Details</a>
       </section>
 
       <Notice icon="bulb" title="How skills to build are ordered">
         Skills the career needs most come first; among those, skills distinctive to this career lead over ones nearly
-        every career needs.
+        every career needs. Your progress is saved to your account.
       </Notice>
+
+      {error && <Status error={error} />}
 
       <div className="split-2">
         <section className="card panel">
@@ -130,16 +180,39 @@ function RoadmapDetail({ code }) {
           </div>
           {gap.length ? (
             <ol className="list">
-              {gap.map((g, i) => (
-                <li key={g.skill_id} className="row">
-                  <span className="av num" aria-label={`Priority ${i + 1}`}>{i + 1}</span>
-                  <span className="row-main">
-                    <b>{g.label}</b>
-                    <span className="sub">{capitalise(g.skill_type)} · {sourceNames(g.sources)}</span>
-                  </span>
-                  <span className="row-value"><Pill>{g.requirement}</Pill></span>
-                </li>
-              ))}
+              {gap.map((g, i) => {
+                const status = statusOf(g)
+                return (
+                  <li key={g.skill_id} className={`row roadmap-row ${status}`}>
+                    <span className="av num" aria-label={`Priority ${i + 1}`}>
+                      {status === 'done' ? <Icon name="check" size={16} /> : i + 1}
+                    </span>
+                    <span className="row-main">
+                      <b>{g.label}</b>
+                      <span className="sub">{capitalise(g.skill_type)} · {sourceNames(g.sources)} · {g.requirement}</span>
+                      <span className="roadmap-controls">
+                        <Segmented
+                          label={`Progress on ${g.label}`}
+                          options={STATUSES}
+                          value={status}
+                          onChange={(next) => changeStatus(g.skill_id, next)}
+                          disabled={busy === g.skill_id}
+                        />
+                        {status === 'done' && (
+                          <button
+                            type="button"
+                            className="link small"
+                            onClick={() => addToProfile(g.skill_id, g.label)}
+                            disabled={busy === g.skill_id}
+                          >
+                            Add to my skills
+                          </button>
+                        )}
+                      </span>
+                    </span>
+                  </li>
+                )
+              })}
             </ol>
           ) : (
             <p className="empty">Your profile already covers every skill this career requires.</p>
