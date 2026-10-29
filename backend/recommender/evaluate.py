@@ -14,7 +14,10 @@ Profile sets, none used for tuning:
 
 Metrics: Precision@1, Precision@3, Recall@3, Recall@5 and MRR, overall and
 by profile size, plus a 95% bootstrap interval for full minus keyword MRR.
-Writes data/results/<run>/evaluation.csv.
+Writes data/results/<run>/evaluation.csv. Once tasks-v1 is frozen, its test split is also
+scored and written to graded.csv: Precision@1 at grade >= 2 beside grade 3 only, with the
+grade-2 disclosure (docs/evaluation_protocol.md), and graded_breakdown.csv: nDCG@5 by
+third of own-description cosine and by whether the task names a graph skill.
 
 Usage (from backend/):
     python -m recommender.evaluate --run NAME
@@ -26,11 +29,12 @@ import sys
 import numpy as np
 import pandas as pd
 
+from recommender import task_sets
 from recommender.baseline import KeywordBaseline
 from recommender.engine import DEFAULT_PARAMS, EngineParams, PreparedProfile, RecommendationEngine
 from recommender.evaluation import (
-    LockedSetError, describe_sets, hand_written_profiles, matching_accuracy, noisy_test, open_test_sets, precision_at_k,
-    recall_at_k, reciprocal_rank, test_profiles,
+    LockedSetError, describe_sets, graded_disclosure, graded_metrics, graded_summary, hand_written_profiles,
+    matching_accuracy, noisy_test, open_test_sets, precision_at_k, recall_at_k, reciprocal_rank, test_profiles,
 )
 from recommender.graph import get_graph
 from recommender.matching import SkillMatch, SkillMatcher
@@ -111,6 +115,57 @@ def evaluate(systems, dataset, profiles):
     return rows
 
 
+GRADED_KEYS = ('dataset', 'role', 'system', 'profile_id', 'strata')
+BREAKDOWN_METRIC = 'ndcg@5'
+GRADED_SHOWN = ['profiles', 'grade_2_profiles', 'p@1', 'p@1_grade3', 'chance_p@1', 'mrr', 'chance_mrr', 'ndcg@5']
+
+
+def evaluate_graded(systems, dataset, role, profiles):
+    """One row per (system, profile) on a graded set (tasks-v1, hand-v2)."""
+    return [{'dataset': dataset, 'role': role, 'system': system, 'profile_id': p.profile_id, 'strata': p.strata,
+             **graded_metrics(systems.rank(system, p.skills), p.grades, len(systems.careers))}
+            for p in profiles for system in SYSTEMS]
+
+
+def graded_report(rows):
+    """Per set and system: the graded summary and the disclosure that goes with its Precision@1."""
+    groups = {}
+    for r in rows:
+        groups.setdefault((r['dataset'], r['role'], r['system']), []).append(
+            {k: v for k, v in r.items() if k not in GRADED_KEYS})
+    return pd.DataFrame([
+        {'dataset': dataset, 'role': role, 'system': system, **summary,
+         'disclosure': graded_disclosure(f'{dataset}, {system}', summary)}
+        for (dataset, role, system), summary in ((k, graded_summary(v)) for k, v in groups.items())
+    ]).round(4)
+
+
+def graded_breakdown(rows):
+    """nDCG@5 per set, system and value of each covariate in the profiles' strata: how much of
+    a result comes from text overlap with the career descriptions or the graph's skill names.
+    None when no profile carries strata."""
+    long = pd.DataFrame([{'dataset': r['dataset'], 'role': r['role'], 'system': r['system'],
+                          'covariate': covariate, 'value': str(value), BREAKDOWN_METRIC: r[BREAKDOWN_METRIC]}
+                         for r in rows for covariate, value in r['strata'].items()])
+    if long.empty:
+        return None
+    return (long.groupby(['dataset', 'role', 'covariate', 'value', 'system'])[BREAKDOWN_METRIC]
+            .agg(['size', 'mean']).rename(columns={'size': 'profiles', 'mean': BREAKDOWN_METRIC})
+            .reset_index().round(4))
+
+
+def print_graded(table, breakdown=None):
+    for dataset in table.dataset.unique():
+        rows = table[table.dataset == dataset].set_index('system')
+        print(f'\n== {dataset} ({rows.role.iloc[0]}, graded)')
+        print(rows[GRADED_SHOWN].to_string())
+        print(rows.loc['full', 'disclosure'] if 'full' in rows.index else rows.disclosure.iloc[0])
+        if breakdown is not None and dataset in set(breakdown.dataset):
+            wide = breakdown[breakdown.dataset == dataset].pivot_table(
+                index=['covariate', 'value', 'profiles'], columns='system', values=BREAKDOWN_METRIC)
+            print(f'{BREAKDOWN_METRIC} by text overlap:\n' + wide[[s for s in SYSTEMS if s in wide]].to_string())
+
+
 def main(argv=None):
     run = parse_run(__doc__.splitlines()[0], argv)
     started = run_started(__spec__.name, argv)
@@ -118,6 +173,7 @@ def main(argv=None):
     with open_test_sets():  # refuses a dirty working tree; locked again on exit
         test = test_profiles(kg)
         held, noisy = noisy_test(kg)
+        graded = {'tasks-v1-test': task_sets.task_test_profiles()} if task_sets.is_frozen() else {}
     hand = hand_written_profiles(kg)
     plain, hidden = Systems(kg), Systems(kg, hidden_names=held.values())
 
@@ -133,7 +189,15 @@ def main(argv=None):
     summary['size'] = summary['size'].astype(str)
     summary = summary[['dataset', 'system', 'size', *measures]]
     results_file = write_csv(summary, run, 'evaluation.csv')
-    write_manifest(run, started, describe_sets({'synthetic-test': test, 'noisy-test': (held, noisy), 'hand-v1': hand}),
+    graded_rows = [r for name, profiles in graded.items() for r in evaluate_graded(plain, name, 'test', profiles)]
+    graded_table = graded_report(graded_rows) if graded_rows else None
+    breakdown = graded_breakdown(graded_rows) if graded_rows else None
+    if graded_table is not None:
+        write_csv(graded_table, run, 'graded.csv')
+    if breakdown is not None:
+        write_csv(breakdown, run, 'graded_breakdown.csv')
+    write_manifest(run, started, describe_sets({'synthetic-test': test, 'noisy-test': (held, noisy), 'hand-v1': hand,
+                                                **graded}, roles={name: 'test' for name in graded}),
                    configuration(DEFAULT_PARAMS))
 
     pd.set_option('display.width', 140)
@@ -153,6 +217,11 @@ def main(argv=None):
             sp = sparse.pivot(index='profile_id', columns='system', values='mrr')
             low, high = bootstrap_interval((sp['full'] - sp['keyword']).tolist())
             print(f'  on 2-skill profiles: {(sp["full"] - sp["keyword"]).mean():+.3f} (95% CI {low:+.3f} to {high:+.3f})')
+
+    if graded_table is not None:
+        print_graded(graded_table, breakdown)
+    else:
+        print('\ntasks-v1 is not frozen: graded test reporting skipped')
 
     accuracy = matching_accuracy(hidden.engine.matcher, noisy, DEFAULT_PARAMS.low_confidence_threshold)
     print(f'\nMatching on held-out names: {accuracy["correct"]:.1%} correct; '

@@ -60,6 +60,8 @@ Notes:
    results, with uncertainty where the sample allows it.
 5. Labels are frozen by hash before they are used for any reported result.
 6. Scoring weights stay as tuned in v1 throughout Phase 1.
+7. Graph corrections never cite O*NET task statements as evidence, since
+   they are evaluation inputs.
 
 ## How the rules are enforced
 
@@ -145,26 +147,143 @@ intervals for differences against the v1 baseline and SBERT-only. Negative
 and inconclusive results are reported as they are; no test metric is used
 to choose or adjust a configuration.
 
+### Graded sets: relevance thresholds and supplementary reporting
+
+On graded sets (`tasks-v1`, `hand-v2`) Precision@1 counts a hit when the
+first career has grade ≥ 2 (a listing occupation or one with a
+near-identical task). Recall@K and MRR keep grade ≥ 1, and nDCG uses the
+grades. These do not change the selection rule above.
+
+Because grade-1 labels are broad (a median of six relevant careers out of
+24 on `tasks-v1`), the following are reported alongside, for information
+only:
+
+- MRR at grade ≥ 2, the same threshold as Precision@1
+- Hit@3 and Hit@5 at grade ≥ 2: whether any such career is in the top K
+- a strict view: Precision@1 and MRR counting grade 3 only, always shown
+  next to Precision@1 at grade ≥ 2, with the number of profiles carrying a
+  grade-2 label and the largest gap it allows between the two
+  (`graded_metrics`, `graded_summary` and `graded_disclosure` in
+  `evaluation.py`)
+- the chance level of Precision@1, MRR and Hit@K for a random ranking,
+  computed per profile from its number of relevant careers (`chance_*` in
+  `evaluation.py`); on `tasks-v1` chance MRR at grade ≥ 1 is 0.42. No
+  chance level is computed for nDCG or Recall@K.
+
+Every graded `tasks-v1` result also reports nDCG@5 for each system by
+third of own-description cosine (0 lowest) and by the graph-skill wording flag
+(`graded_breakdown` in `evaluate.py`, written to `graded_breakdown.csv`
+and printed under the graded table). It shows how much of a result comes
+from text overlap with the career descriptions or the graph's vocabulary:
+a result that holds only in the top cosine third, or only for tasks that
+name a graph skill, is reported as such.
+
 ## Planned sets (not yet built)
 
-### Task-statement profiles
+### Task-statement profiles (`tasks-v1`, frozen 2026-10-28)
 
-O*NET task statements are written independently of the graph, so they test
-the graph corrections without circularity.
+O*NET task statements are written independently of the graph (the pipeline
+never reads them), so they test graph corrections without circularity.
+Built by `python -m recommender.task_sets nominate` and `build`
+(`backend/recommender/task_sets.py`); neither step runs the recommender.
 
-- Inputs: Core task statements only, split per career into validation and
-  test pools.
-- Graded relevance, kept for ambiguous tasks rather than dropping them:
-  - 3: the source occupation
-  - 2: an occupation with a near-identical task, nominated at SBERT cosine
-    ≥ 0.85 and confirmed by semantic review (similarity alone never sets a
-    label)
-  - 1: an O*NET Primary-Short related occupation
-- Other O*NET relatedness tiers are recorded for a sensitivity analysis.
-- Known risk: a single task picks its own occupation from the 24 career
-  descriptions 38% of the time (chance is 4%), which favours text
-  similarity. SBERT-only is reported alongside the full system on these
-  sets.
+- **Inputs:** O*NET 31.0 Core task statements, one per profile, entered
+  word for word as a single input.
+- **Coverage:** 10 profiles per career drawn with seed 7: 240 profiles, 5
+  validation and 5 test per career.
+- **Graded relevance**, kept for ambiguous tasks rather than dropping them:
+  - 3: an occupation that lists the task
+  - 2: the occupation of a near-identical task, nominated at SBERT cosine
+    ≥ 0.85 and accepted on review in `data/eval_sets/twin_review.csv`
+    (similarity alone never sets a label). Of 22 nominated pairs, 18 are
+    accepted. Four are rejected: one pair of different scope whose careers
+    are only Primary-Long related, and three where the second occupation
+    oversees or coordinates the analyst's task, since the Primary-Short
+    relation already grades that career 1.
+  - 1: an O*NET Primary-Short related occupation of a listing occupation,
+    in O*NET's direction
+- Primary-Long and Supplemental relations are stored, ungraded, for a
+  sensitivity analysis.
+
+**Evaluation-design decisions** (fixed before any recommender run on the set):
+
+1. **Duplicate texts.** Task texts that are equal after lower-casing and
+   removing punctuation and extra spacing are one profile. O*NET lists 15
+   such texts under two occupations each; both occupations get grade 3,
+   since the task is equally their own. Without this, the same input would
+   appear twice with opposite correct answers.
+2. **Quota ownership.** A merged profile counts toward the 10 of the
+   listing occupation with the lowest Task ID; the other occupation's 10
+   come from its remaining tasks. The rule is arbitrary but deterministic.
+3. **Graph-skill wording flag.** A task is flagged when it contains a graph
+   skill name of two or more words (any case) or a single-word tool name in
+   its exact case. Single generic words ("data", "design") never count. On
+   O*NET 31.0 no Core task contains a single-word tool name, so the flag
+   marks tasks sharing a multi-word phrase with the graph's vocabulary
+   ("business intelligence", "write reports"): an exact lexical route for
+   the matcher, not a mention of a tool.
+4. **Split.** Hard constraints: 5 validation and 5 test per career, and
+   tasks linked by any nominated pair (accepted or rejected) in the same
+   split. Within those, an exact search over every split of each career
+   balances, in order: the career's flagged tasks, then its tasks in each
+   third of own-description cosine (thirds of the 240 values, equal values
+   together), then the overall totals. Result: flagged tasks 20 and 20,
+   every career within one on the flag and on each third, and mean cosine
+   0.444 (validation) against 0.439 (test).
+
+- **Leakage, reported rather than filtered:** a task picks its own
+  occupation from the 24 career descriptions 40% of the time (chance 4%).
+  Each profile stores its cosine to its listing occupations' descriptions
+  (the highest, to 2 decimals), its third, and the wording flag, for the
+  planned breakdown above; SBERT-only is reported alongside the full
+  system. The split is balanced on these covariates, never on recommender
+  output.
+- **Grade 2 is rare.** Identical texts are merged and graded 3, and only
+  three reworded pairs are accepted, so 4 validation profiles and **1 test
+  profile** carry a grade-2 label. On test, Precision@1 at grade ≥ 2 can
+  differ from the strict grade-3 version by at most one profile (1/120);
+  both are reported, and no claim about near-identical tasks is made from
+  the test split. The labels are not changed to raise this count.
+- **Reproducibility.** The frozen `tasks_v1.csv` is authoritative: nothing
+  rewrites it, and SBERT values are only compared, never used to re-split.
+  `python -m recommender.task_sets verify` checks it in three tiers:
+  1. *Integrity:* the raw O*NET files and, once frozen, the frozen files
+     match their sha256 (below). Fails on any difference.
+  2. *Exact regeneration, without SBERT:* each selected task appears once;
+     task IDs, texts, listing occupations and labels regenerate from the
+     raw files and the reviewed pairs; each stored cosine third is the
+     third of its stored cosine; and the split regenerates from the stored
+     flag and thirds. Fails on any difference.
+  3. *Covariate drift, with SBERT:* recomputed cosines must lie within
+     ±0.01 of the stored ones (fails otherwise); a task whose recomputed
+     third differs is reported as a warning, and the stored third and split
+     stand. Cosines are stored to 2 decimals, so a harmless floating-point
+     difference can cross a rounding edge and change a value by one step,
+     0.01; a larger difference means a real change, such as another model
+     version or edited descriptions.
+
+  The stored flag and cosines describe the v1 data (`COVARIATE_DATA` in
+  `task_sets.py`). After that data changes, for example through a graph
+  correction, both stand as stored: the flag is no longer recomputed in
+  tier 2 and cosine drift is no longer checked in tier 3, which says so in
+  a warning. Residual limit: an edit that moves stored cosines by at most
+  0.01 and adjusts thirds and split to match would pass tiers 2 and 3 with
+  only warnings; once frozen, tier 1's hash rejects any edit. Selection and
+  split use Python's seeded `random` and were built with Python 3.11.9.
+- **Freezing:** `tasks_v1.csv` and `twin_review.csv` are frozen together;
+  their sha256 values go in `task_sets.FROZEN` and the table below. Until
+  then the loaders refuse to load either split, and the test split is
+  locked like the other test sets.
+
+| Field | Value |
+|---|---|
+| `Task Statements.txt` sha256 | `aee1788c7ce2ebf19c1700bc4a1d7aa69a59965736d56a521945256df3f68d08` |
+| `Related Occupations.txt` sha256 | `af539f6f01a36e9514a0dd13cbe125df8cca1114c690505342837f338621906c` |
+| `db_31_0_text.zip` sha256 | `6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9` |
+| Near-identical pairs reviewed and approved by | Sharon Kariuki (all 22 decisions) |
+| Approval date | 2026-10-28 |
+| `tasks_v1.csv` sha256 | `f6cc9db450c9b8fdb714e5f01f3ab2a91760868e8b1fca7661bcc410a2a2a84b` |
+| `twin_review.csv` sha256 | `1b557b3b2f3c922a9c5b396b8e57a6b4f194164acb4a9fc54411d05b4e4dc6b4` |
 
 ### Hand-written profiles (`hand-v2`)
 
