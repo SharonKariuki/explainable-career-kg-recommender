@@ -8,7 +8,8 @@ from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token
 from rest_framework import serializers
 
-from core.models import GoogleAccount
+from core import services
+from core.models import GoogleAccount, SkillProgress
 from recommender.matching import SkillMatcher
 
 User = get_user_model()
@@ -104,3 +105,44 @@ class GoogleLoginSerializer(serializers.Serializer):
         user = User.objects.create_user(unique_username(claims['email']), claims['email'])  # no usable password
         GoogleAccount.objects.create(user=user, subject=claims['sub'])
         return user
+
+
+class AccountSerializer(serializers.Serializer):
+    email = serializers.EmailField(allow_blank=True)
+
+
+class PasswordChangeSerializer(serializers.Serializer):
+    """Changes the password. An account made with Google has none yet, so it may set one without the current."""
+
+    current_password = serializers.CharField(write_only=True, required=False, allow_blank=True)
+    new_password = serializers.CharField(write_only=True)
+
+    def validate(self, data):
+        user = self.context['user']
+        if user.has_usable_password() and not user.check_password(data.get('current_password', '')):
+            raise serializers.ValidationError({'current_password': 'Your current password is incorrect.'})
+        validate_password(data['new_password'], user)
+        return data
+
+
+class DeleteAccountSerializer(serializers.Serializer):
+    """Deleting is permanent, so the user retypes their username to confirm."""
+
+    confirm = serializers.CharField()
+
+    def validate_confirm(self, value):
+        if value != self.context['user'].username:
+            raise serializers.ValidationError('Type your username exactly to confirm.')
+        return value
+
+
+class SkillProgressSerializer(serializers.Serializer):
+    TODO = 'todo'  # not stored: a skill with no progress row is still to do
+
+    skill_id = serializers.CharField(max_length=255)
+    status = serializers.ChoiceField(choices=[TODO, SkillProgress.LEARNING, SkillProgress.DONE])
+
+    def validate_skill_id(self, value):
+        if services.skill_label(value) is None:
+            raise serializers.ValidationError('There is no such skill.')
+        return value
