@@ -10,9 +10,10 @@ With one correct career per profile, Precision@3 is at most 1/3, so P@1 is
 the precision figure to compare against a target.
 
 Once tasks-v1 is frozen, its validation split is also scored and written to graded.csv:
-Precision@1 at grade >= 2 beside grade 3 only, with the grade-2 disclosure.
+Precision@1 at grade >= 2 beside grade 3 only, with the grade-2 disclosure, and its
+nDCG@5 by text overlap to graded_breakdown.csv.
 
-Writes data/results/<run>/validation.csv, probes.csv and manifest.json (and graded.csv).
+Writes data/results/<run>/validation.csv, probes.csv and manifest.json (and the graded files).
 
 Usage (from backend/):
     python -m recommender.validate --run NAME
@@ -22,7 +23,9 @@ import pandas as pd
 
 from recommender import task_sets
 from recommender.engine import DEFAULT_PARAMS
-from recommender.evaluate import SYSTEMS, Systems, bootstrap_interval, evaluate_graded, graded_report, print_graded
+from recommender.evaluate import (
+    SYSTEMS, Systems, bootstrap_interval, evaluate_graded, graded_breakdown, graded_report, print_graded,
+)
 from recommender.evaluation import (
     describe_sets, hand_written_profiles, ndcg_at_k, noisy_validation, precision_at_k, recall_at_k, reciprocal_rank,
     validation_profiles,
@@ -84,11 +87,14 @@ def main(argv=None):
 
     graded_rows = [r for name, profiles in graded.items() for r in evaluate_graded(plain, name, 'validation', profiles)]
     graded_table = graded_report(graded_rows) if graded_rows else None
+    breakdown = graded_breakdown(graded_rows) if graded_rows else None
 
     results_file = write_csv(summary, run, 'validation.csv')
     write_csv(probes, run, 'probes.csv')
     if graded_table is not None:
         write_csv(graded_table, run, 'graded.csv')
+    if breakdown is not None:
+        write_csv(breakdown, run, 'graded_breakdown.csv')
     write_manifest(run, started, describe_sets({'synthetic-validation': clean, 'noisy-validation': (held, noisy),
                                                 'hand-v1': hand, **graded},
                                                roles={name: 'validation' for name in graded}),
@@ -103,7 +109,7 @@ def main(argv=None):
         print(f"full: P@1 {full['p@1']:.3f} (95% CI {full['p@1_low']:.3f}-{full['p@1_high']:.3f}), "
               f"nDCG@5 {full['ndcg@5']:.3f} (95% CI {full['ndcg@5_low']:.3f}-{full['ndcg@5_high']:.3f})")
     if graded_table is not None:
-        print_graded(graded_table)
+        print_graded(graded_table, breakdown)
     else:
         print('\ntasks-v1 is not frozen: graded validation reporting skipped')
     print(f'\nRegression probes: {probes.passed.sum()} of {len(probes)} pass')

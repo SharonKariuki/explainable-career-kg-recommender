@@ -33,10 +33,11 @@ class FakeSystems:
 
 def graded(split):
     """Three profiles; only the first has a grade-2 label, and its twin career ranks first."""
+    strata = lambda third, named: {'description cosine third': third, 'names a graph skill': named}
     return [
-        GradedProfile(f'{split}-1', OWN, ('twin task',), {OWN: 3, TWIN: 2, RELATED: 1}),
-        GradedProfile(f'{split}-2', OWN, ('own task',), {OWN: 3, RELATED: 1}),
-        GradedProfile(f'{split}-3', OWN, ('related task',), {OWN: 3, RELATED: 1}),
+        GradedProfile(f'{split}-1', OWN, ('twin task',), {OWN: 3, TWIN: 2, RELATED: 1}, strata(0, True)),
+        GradedProfile(f'{split}-2', OWN, ('own task',), {OWN: 3, RELATED: 1}, strata(0, False)),
+        GradedProfile(f'{split}-3', OWN, ('related task',), {OWN: 3, RELATED: 1}, strata(2, False)),
     ]
 
 
@@ -96,6 +97,28 @@ def test_frozen_graded_sets_are_reported_beside_strict_precision(script, name, c
     assert manifest['profile_sets'][name]['role'] == ('test' if script is evaluate else 'validation')
 
 
+@pytest.mark.parametrize('script', [validate, evaluate])
+def test_frozen_graded_sets_are_broken_down_by_text_overlap(script, fixture, monkeypatch, capsys):
+    frozen(monkeypatch, True)
+    script.main(['--run', 'overlap'])
+    table = pd.read_csv(fixture / 'overlap' / 'graded_breakdown.csv', dtype={'value': str})
+    full = table[table.system == 'full'].set_index(['covariate', 'value'])
+    ndcg = [evaluation.ndcg_at_k(FakeSystems(None).rank('full', p.skills), p.grades, 5) for p in graded('x')]
+    expected = {('description cosine third', '0'): [ndcg[0], ndcg[1]], ('description cosine third', '2'): [ndcg[2]],
+                ('names a graph skill', 'True'): [ndcg[0]], ('names a graph skill', 'False'): [ndcg[1], ndcg[2]]}
+    assert set(full.index) == set(expected)
+    for key, values in expected.items():
+        assert full.loc[key, 'profiles'] == len(values)
+        assert full.loc[key, 'ndcg@5'] == pytest.approx(sum(values) / len(values), abs=1e-4)
+    assert set(table.system) == set(evaluate.SYSTEMS)
+    assert 'ndcg@5 by text overlap' in capsys.readouterr().out
+
+
+def test_profiles_without_strata_have_no_breakdown():
+    rows = [{'dataset': 'd', 'role': 'r', 'system': 'full', 'strata': {}, 'ndcg@5': 1.0}]
+    assert evaluate.graded_breakdown(rows) is None
+
+
 @pytest.mark.parametrize('script, csv, v1_csv', [
     (validate, 'validation.csv', V1_RUN / 'validation.csv'),
     (evaluate, 'evaluation.csv', results.RESULTS_DIR / 'evaluation.csv'),
@@ -104,7 +127,7 @@ def test_unfrozen_graded_sets_are_skipped_and_outputs_unchanged(script, csv, v1_
     frozen(monkeypatch, False)
     script.main(['--run', 'plain'])
     run = fixture / 'plain'
-    assert not (run / 'graded.csv').exists()
+    assert not (run / 'graded.csv').exists() and not (run / 'graded_breakdown.csv').exists()
     assert 'tasks-v1 is not frozen' in capsys.readouterr().out
     assert header(run / csv) == header(v1_csv)
     manifest = json.loads((run / 'manifest.json').read_text(encoding='utf-8'))

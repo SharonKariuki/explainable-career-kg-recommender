@@ -170,12 +170,13 @@ only:
   `evaluation.py`); on `tasks-v1` chance MRR at grade ≥ 1 is 0.42. No
   chance level is computed for nDCG or Recall@K.
 
-**Planned, not yet implemented:** nDCG@5 broken down by thirds of
-own-description cosine and by the graph-skill wording flag, to show how much
-of a result comes from text overlap with the career descriptions or the
-graph's vocabulary. The task set stores both covariates, but the reporting
-code does not use them yet; this breakdown must be implemented before any
-result on the frozen `tasks-v1` is reported.
+Every graded `tasks-v1` result also reports nDCG@5 for each system by
+third of own-description cosine (0 lowest) and by the graph-skill wording flag
+(`graded_breakdown` in `evaluate.py`, written to `graded_breakdown.csv`
+and printed under the graded table). It shows how much of a result comes
+from text overlap with the career descriptions or the graph's vocabulary:
+a result that holds only in the top cosine third, or only for tasks that
+name a graph skill, is reported as such.
 
 ## Planned sets (not yet built)
 

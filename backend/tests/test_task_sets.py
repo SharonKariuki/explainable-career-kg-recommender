@@ -59,6 +59,16 @@ def test_the_test_split_is_locked_and_nothing_loads_before_freezing(monkeypatch)
                 ts.task_test_profiles()
 
 
+@pytest.mark.skipif(None in ts.FROZEN.values(), reason='tasks-v1 is not frozen')
+def test_loaded_profiles_carry_the_overlap_covariates():
+    stored = ts.read_table().set_index('profile_id')
+    for p in ts.task_validation_profiles():
+        assert p.strata == {'description cosine third': stored.at[p.profile_id, 'cosine_third'],
+                            'names a graph skill': stored.at[p.profile_id, 'names_a_graph_skill']}
+        assert p.strata['description cosine third'] in {0, 1, 2}  # 0 is the lowest third
+        assert isinstance(p.strata['names a graph skill'], bool)
+
+
 # With the raw files and the built set
 
 @needs_data
