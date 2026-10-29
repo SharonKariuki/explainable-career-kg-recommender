@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
 import { googleLogin, login, register } from '../api.js'
+import { LogoTile } from '../components.jsx'
+import { Icon } from '../icons.jsx'
 
 // Google sign-in shows only when frontend/.env sets VITE_GOOGLE_CLIENT_ID.
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID
@@ -105,53 +107,65 @@ export default function AuthScreen({ onSignedIn }) {
   }
 
   return (
-    <section className="card narrow">
-      <h1>{isRegister ? 'Create your account' : 'Sign in'}</h1>
-      <p className="muted">
-        AjiraGuide suggests tech careers from the skills you already have, and explains why.
-      </p>
-      <form onSubmit={submit} className="stack">
-        <label>
-          Username
-          <input value={username} onChange={edit(setUsername)} autoComplete="username" required />
-        </label>
-        {isRegister && (
+    <div className="auth-panel">
+      <div className="auth-brand">
+        <LogoTile size={48} />
+        <span>AjiraGuide</span>
+      </div>
+      <section className="card auth-card">
+        <h1>{isRegister ? 'Create your account' : 'Sign in'}</h1>
+        <p className="subtitle">
+          AjiraGuide suggests tech careers from the skills you already have, and explains why.
+        </p>
+        <form onSubmit={submit} className="stack">
           <label>
-            Email <span className="muted">(optional)</span>
-            <input type="email" value={email} onChange={edit(setEmail)} autoComplete="email" />
+            Username
+            <input className="field" value={username} onChange={edit(setUsername)} autoComplete="username" required />
           </label>
+          {isRegister && (
+            <label>
+              <span>Email <span className="muted">(optional)</span></span>
+              <input className="field" type="email" value={email} onChange={edit(setEmail)} autoComplete="email" />
+            </label>
+          )}
+          <label>
+            Password
+            <input
+              className="field"
+              type="password"
+              value={password}
+              onChange={edit(setPassword)}
+              autoComplete={isRegister ? 'new-password' : 'current-password'}
+              required
+            />
+          </label>
+          {error && (
+            <p className="state error" role="alert">
+              <Icon name="alert" />
+              {error}
+            </p>
+          )}
+          <button type="submit" className="btn primary block" disabled={busy}>
+            {busy ? 'Please wait…' : isRegister ? 'Create account' : 'Sign in'}
+          </button>
+        </form>
+        {GOOGLE_CLIENT_ID && (
+          <>
+            <p className="auth-divider muted small">or</p>
+            <GoogleButton
+              text={isRegister ? 'signup_with' : 'signin_with'}
+              onCredential={signInWithGoogle}
+              onError={setError}
+            />
+          </>
         )}
-        <label>
-          Password
-          <input
-            type="password"
-            value={password}
-            onChange={edit(setPassword)}
-            autoComplete={isRegister ? 'new-password' : 'current-password'}
-            required
-          />
-        </label>
-        {error && <p className="error" role="alert">{error}</p>}
-        <button type="submit" disabled={busy}>
-          {busy ? 'Please wait…' : isRegister ? 'Create account' : 'Sign in'}
-        </button>
-      </form>
-      {GOOGLE_CLIENT_ID && (
-        <>
-          <p className="auth-divider muted">or</p>
-          <GoogleButton
-            text={isRegister ? 'signup_with' : 'signin_with'}
-            onCredential={signInWithGoogle}
-            onError={setError}
-          />
-        </>
-      )}
-      <p className="muted">
-        {isRegister ? 'Already have an account?' : 'New here?'}{' '}
-        <button type="button" className="link" onClick={switchMode}>
-          {isRegister ? 'Sign in' : 'Create an account'}
-        </button>
-      </p>
-    </section>
+        <p className="muted small auth-switch">
+          {isRegister ? 'Already have an account?' : 'New here?'}{' '}
+          <button type="button" className="link" onClick={switchMode}>
+            {isRegister ? 'Sign in' : 'Create an account'}
+          </button>
+        </p>
+      </section>
+    </div>
   )
 }
