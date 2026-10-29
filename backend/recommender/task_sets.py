@@ -63,7 +63,10 @@ RAW_FILES = {
     RAW_DIR / 'onet' / 'db_31_0_text.zip': '6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9',
 }
 # sha256 (line endings normalised) of each frozen file; None until it is reviewed and frozen.
-FROZEN = {'tasks_v1.csv': None, 'twin_review.csv': None}
+FROZEN = {
+    'tasks_v1.csv': 'f6cc9db450c9b8fdb714e5f01f3ab2a91760868e8b1fca7661bcc410a2a2a84b',
+    'twin_review.csv': '1b557b3b2f3c922a9c5b396b8e57a6b4f194164acb4a9fc54411d05b4e4dc6b4',
+}
 # Processed data (normalised sha256) the stored covariates were computed from (v1): the wording
 # flag from the graph's skill names, the cosine from occupations.csv descriptions.
 COVARIATE_DATA = {

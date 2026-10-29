@@ -179,7 +179,7 @@ result on the frozen `tasks-v1` is reported.
 
 ## Planned sets (not yet built)
 
-### Task-statement profiles (`tasks-v1`, draft)
+### Task-statement profiles (`tasks-v1`, frozen 2026-10-28)
 
 O*NET task statements are written independently of the graph (the pipeline
 never reads them), so they test graph corrections without circularity.
@@ -279,10 +279,10 @@ Built by `python -m recommender.task_sets nominate` and `build`
 | `Task Statements.txt` sha256 | `aee1788c7ce2ebf19c1700bc4a1d7aa69a59965736d56a521945256df3f68d08` |
 | `Related Occupations.txt` sha256 | `af539f6f01a36e9514a0dd13cbe125df8cca1114c690505342837f338621906c` |
 | `db_31_0_text.zip` sha256 | `6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9` |
-| Near-identical pairs reviewed and approved by | _to be recorded_ |
-| Approval date | _to be recorded_ |
-| `tasks_v1.csv` sha256 | _to be recorded_ |
-| `twin_review.csv` sha256 | _to be recorded_ |
+| Near-identical pairs reviewed and approved by | Sharon Kariuki (all 22 decisions) |
+| Approval date | 2026-10-28 |
+| `tasks_v1.csv` sha256 | `f6cc9db450c9b8fdb714e5f01f3ab2a91760868e8b1fca7661bcc410a2a2a84b` |
+| `twin_review.csv` sha256 | `1b557b3b2f3c922a9c5b396b8e57a6b4f194164acb4a9fc54411d05b4e4dc6b4` |
 
 ### Hand-written profiles (`hand-v2`)
 
