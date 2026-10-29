@@ -765,3 +765,49 @@ a.row:hover b { text-decoration: underline; }
 @media (max-width: 480px) {
   .setting-row { flex-wrap: wrap; }
 }
+
+/* ---- Matches and the career page ---- */
+
+.match-badge { display: grid; justify-items: end; gap: 4px; flex: none; text-align: right; }
+.skill-chips { margin: 0 0 12px; }
+.chip.skill { padding: 4px 12px 4px 9px; gap: 5px; background: var(--green-bg); color: var(--green); }
+.chip.skill.unsure { background: var(--amber-bg); color: var(--amber); border: 1px dashed var(--amber); }
+.chip.skill em { font-style: normal; font-size: 11px; font-weight: 400; }
+
+.disclosure > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.disclosure > summary::-webkit-details-marker { display: none; }
+.disclosure > summary .icon { transform: rotate(-90deg); color: var(--muted); }
+.disclosure[open] > summary .icon { transform: none; }
+.disclosure > summary:hover span { text-decoration: underline; }
+.disclosure-body { padding-top: 6px; }
+.disclosure.more > summary { font-size: 13px; font-weight: 500; color: var(--muted); }
+.disclosure.more > summary:hover { color: var(--fg); }
+.technical h3 { margin: 18px 0 4px; font-size: 13.5px; }
+.technical h3:first-child { margin-top: 6px; }
+.technical p { line-height: 1.6; font-size: 13px; }
+.technical p + p { margin-top: 6px; }
+.formula { margin-top: 6px; font: 500 12px/1.6 var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.row.evidence { grid-template-columns: minmax(0, 1fr); }
+.row.evidence b { font-size: 13px; font-weight: 500; }
+
+.hero-card h2.mono { margin: 0; }
+.hero-reason { font-size: 14px; line-height: 1.6; }
+.av.have { background: var(--green-bg); color: var(--green); }
+.av.unsure { background: var(--amber-bg); color: var(--amber); }
+.panel-foot { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 13px; font-weight: 500; }
+.panel-foot a { display: inline-flex; align-items: center; gap: 2px; text-decoration: none; }
+.panel-foot a:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .result-head { flex-wrap: wrap; }
+  .match-badge { justify-items: start; text-align: left; width: 100%; padding-left: 45px; }
+}

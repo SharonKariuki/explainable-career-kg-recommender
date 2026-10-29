@@ -6,6 +6,11 @@ export function sourceNames(sources) {
   return sources.map((s) => SOURCES[s] || s).join(', ')
 }
 
+// The API's fit level ('strong', 'good', 'possible'); its thresholds stay in the backend.
+export function fitLabel(fit) {
+  return `${capitalise(fit)} match`
+}
+
 export function capitalise(text) {
   return text.charAt(0).toUpperCase() + text.slice(1)
 }
@@ -21,12 +26,10 @@ export function domainOptions(recommendations) {
   ]
 }
 
-// Recommendations in the chosen domain whose title or summary contains the query.
+// Recommendations in the chosen domain whose title, reason or matched skills contain the query.
 export function filterRecommendations(recommendations, domain, query) {
   const q = query.trim().toLowerCase()
-  return recommendations.filter(
-    (r) =>
-      (domain === 'all' || r.domain === domain) &&
-      (!q || r.title.toLowerCase().includes(q) || r.summary.toLowerCase().includes(q)),
-  )
+  const found = (r) =>
+    [r.title, r.reason, ...r.matched_skills.flatMap((s) => [s.label, s.query])].some((t) => t.toLowerCase().includes(q))
+  return recommendations.filter((r) => (domain === 'all' || r.domain === domain) && (!q || found(r)))
 }

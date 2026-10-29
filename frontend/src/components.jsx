@@ -4,6 +4,7 @@
 import { useState } from 'react'
 
 import { saveCareer, unsaveCareer } from './api.js'
+import { fitLabel } from './format.js'
 import { Icon } from './icons.jsx'
 
 export function LogoTile({ size = 42 }) {
@@ -141,6 +142,41 @@ export function Meter({ label, value, weight }) {
       </div>
       <Progress value={value} label={`${label} ${value.toFixed(2)} out of 1`} />
     </div>
+  )
+}
+
+// The engine's plain fit label with the 0-1 match score beneath it. The label
+// carries the meaning in text, so colour is never the only cue.
+export function MatchBadge({ fit, score }) {
+  return (
+    <div className="match-badge">
+      <Pill tone={fit === 'strong' ? 'ok' : 'neutral'}>{fitLabel(fit)}</Pill>
+      <span className="sub num">Match score {score.toFixed(2)}</span>
+    </div>
+  )
+}
+
+// A native <details>, so it opens from the keyboard and reads as expandable.
+export function Disclosure({ summary, id, className = '', children }) {
+  return (
+    <details className={`disclosure ${className}`} id={id}>
+      <summary>
+        <Icon name="chevron" size={16} />
+        <span>{summary}</span>
+      </summary>
+      <div className="disclosure-body">{children}</div>
+    </details>
+  )
+}
+
+// One of the user's skills a career uses; an uncertain match says so in words.
+export function SkillChip({ skill }) {
+  return (
+    <li className={skill.low_confidence ? 'chip skill unsure' : 'chip skill'}>
+      <Icon name={skill.low_confidence ? 'alert' : 'check'} size={14} />
+      {skill.label}
+      {skill.low_confidence && <em>unsure match</em>}
+    </li>
   )
 }
 
