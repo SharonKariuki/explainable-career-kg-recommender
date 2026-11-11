@@ -1,0 +1,44 @@
+# Builds the API image on every pull request that touches the backend, and
+# publishes it to GitHub Container Registry when main changes.
+name: Backend image
+
+on:
+  push:
+    branches: [main]
+    paths: [backend/**, data/processed/**, .github/workflows/backend-image.yml]
+  pull_request:
+    paths: [backend/**, data/processed/**, .dockerignore, .github/workflows/backend-image.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE: ghcr.io/sharonkariuki/ajiraguide-api
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        if: github.event_name != 'pull_request'
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: backend/Dockerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: |
+            ${{ env.IMAGE }}:latest
+            ${{ env.IMAGE }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
