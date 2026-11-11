@@ -27,6 +27,11 @@ class Explanation:
     def text(self):
         return ' '.join(self.sentences)
 
+    @property
+    def reason(self):
+        """The sentence naming which of the user's skills the role uses, or that it uses none."""
+        return self.sentences[1]
+
 
 REQUIREMENT_LEVELS = (  # (minimum edge weight, label, singular, plural)
     (0.75, 'Core requirement', 'a core requirement', 'core requirements'),
@@ -49,12 +54,17 @@ def requirement_groups(contributions):
     return groups
 
 
-def fit(score):
+def fit_level(score):
+    """'strong', 'good' or 'possible': the plain label the API and the first sentence share."""
     if score >= 0.6:
-        return 'a strong'
+        return 'strong'
     if score >= 0.4:
-        return 'a good'
-    return 'a possible'
+        return 'good'
+    return 'possible'
+
+
+def fit(score):
+    return f'a {fit_level(score)}'
 
 
 def similarity_phrase(value):

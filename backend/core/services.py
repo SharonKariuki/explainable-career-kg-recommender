@@ -8,7 +8,7 @@ that, ranking a profile takes well under a second.
 from dataclasses import asdict
 
 from recommender.engine import DEFAULT_PARAMS, get_engine
-from recommender.explanation import ExplanationGenerator, requirement_level
+from recommender.explanation import ExplanationGenerator, fit_level, requirement_level
 from recommender.skills_gap import get_skills_gap
 
 
@@ -46,6 +46,21 @@ def recommendation_summary(recommendation, rank_position):
         'score': r.score,
         'components': asdict(r.components),
         'summary': explanation.sentences[0],
+        'fit': fit_level(r.score),
+        'reason': explanation.reason,
+        'matched_skills': [matched_skill(c) for c in r.skill_contributions],
+    }
+
+
+def matched_skill(contribution):
+    """One of the user's skills the career requires, as the match card shows it."""
+    c = contribution
+    return {
+        'skill_id': c.skill_id,
+        'label': c.skill_label,
+        'query': c.query,
+        'requirement': requirement_level(c.edge_weight)[1],
+        'low_confidence': c.low_confidence,
     }
 
 
