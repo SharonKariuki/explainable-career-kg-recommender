@@ -1,0 +1,361 @@
+{
+  "skills": [
+    "Python",
+    "machine learning",
+    "statistics",
+    "playing guitar"
+  ],
+  "matches": [
+    {
+      "query": "Python",
+      "skill": "Python",
+      "similarity": 1.0,
+      "low_confidence": false
+    },
+    {
+      "query": "machine learning",
+      "skill": "machine learning",
+      "similarity": 1.0,
+      "low_confidence": false
+    },
+    {
+      "query": "statistics",
+      "skill": "statistics",
+      "similarity": 1.0,
+      "low_confidence": false
+    },
+    {
+      "query": "playing guitar",
+      "skill": "JamBoard",
+      "similarity": 0.3997,
+      "low_confidence": true
+    }
+  ],
+  "recommendations": [
+    {
+      "rank": 1,
+      "career_code": "15-2051.00",
+      "title": "Data Scientists",
+      "domain": "data science",
+      "score": 0.5018,
+      "components": {
+        "coverage": 0.3772,
+        "profile_similarity": 0.3781,
+        "graph_proximity": 1.0
+      },
+      "summary": "Data Scientists is a good match for your skills (score 0.50).",
+      "fit": "good",
+      "reason": "Of the skills you listed, the role treats statistics and Python as core requirements and machine learning as a supporting skill.",
+      "matched_skills": [
+        {
+          "skill_id": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+          "label": "statistics",
+          "query": "statistics",
+          "requirement": "Core requirement",
+          "low_confidence": false
+        },
+        {
+          "skill_id": "tool:Python",
+          "label": "Python",
+          "query": "Python",
+          "requirement": "Core requirement",
+          "low_confidence": false
+        },
+        {
+          "skill_id": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+          "label": "machine learning",
+          "query": "machine learning",
+          "requirement": "Supporting",
+          "low_confidence": false
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "career_code": "15-2041.00",
+      "title": "Statisticians",
+      "domain": "data science",
+      "score": 0.3559,
+      "components": {
+        "coverage": 0.346,
+        "profile_similarity": 0.3606,
+        "graph_proximity": 0.3886
+      },
+      "summary": "Statisticians is a possible match for your skills (score 0.36).",
+      "fit": "possible",
+      "reason": "Of the skills you listed, the role treats statistics and Python as core requirements.",
+      "matched_skills": [
+        {
+          "skill_id": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+          "label": "statistics",
+          "query": "statistics",
+          "requirement": "Core requirement",
+          "low_confidence": false
+        },
+        {
+          "skill_id": "tool:Python",
+          "label": "Python",
+          "query": "Python",
+          "requirement": "Core requirement",
+          "low_confidence": false
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "career_code": "15-2051.01",
+      "title": "Business Intelligence Analysts",
+      "domain": "data science",
+      "score": 0.2614,
+      "components": {
+        "coverage": 0.2837,
+        "profile_similarity": 0.2661,
+        "graph_proximity": 0.1808
+      },
+      "summary": "Business Intelligence Analysts is a possible match for your skills (score 0.26).",
+      "fit": "possible",
+      "reason": "Of the skills you listed, the role treats statistics and Python as core requirements.",
+      "matched_skills": [
+        {
+          "skill_id": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+          "label": "statistics",
+          "query": "statistics",
+          "requirement": "Core requirement",
+          "low_confidence": false
+        },
+        {
+          "skill_id": "tool:Python",
+          "label": "Python",
+          "query": "Python",
+          "requirement": "Core requirement",
+          "low_confidence": false
+        }
+      ]
+    }
+  ],
+  "detail": {
+    "rank": 1,
+    "career_code": "15-2051.00",
+    "title": "Data Scientists",
+    "domain": "data science",
+    "score": 0.5018,
+    "components": {
+      "coverage": 0.3772,
+      "profile_similarity": 0.3781,
+      "graph_proximity": 1.0
+    },
+    "summary": "Data Scientists is a good match for your skills (score 0.50).",
+    "fit": "good",
+    "reason": "Of the skills you listed, the role treats statistics and Python as core requirements and machine learning as a supporting skill.",
+    "matched_skills": [
+      {
+        "skill_id": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+        "label": "statistics",
+        "query": "statistics",
+        "requirement": "Core requirement",
+        "low_confidence": false
+      },
+      {
+        "skill_id": "tool:Python",
+        "label": "Python",
+        "query": "Python",
+        "requirement": "Core requirement",
+        "low_confidence": false
+      },
+      {
+        "skill_id": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+        "label": "machine learning",
+        "query": "machine learning",
+        "requirement": "Supporting",
+        "low_confidence": false
+      }
+    ],
+    "weights": {
+      "coverage": 0.7,
+      "profile_similarity": 0.1,
+      "graph_proximity": 0.2
+    },
+    "explanation": [
+      "Data Scientists is a good match for your skills (score 0.50).",
+      "Of the skills you listed, the role treats statistics and Python as core requirements and machine learning as a supporting skill.",
+      "Together they cover 38% of your profile.",
+      "Taken together, your skills relate to how O*NET describes this role (similarity 0.38).",
+      "In the skills graph the role sits close to your profile (proximity 1.00), connected mainly through the skills above.",
+      "The score weights coverage 70%, similarity 10% and proximity 20%."
+    ],
+    "skill_contributions": [
+      {
+        "query": "statistics",
+        "skill_id": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+        "skill_label": "statistics",
+        "match_similarity": 1.0,
+        "low_confidence": false,
+        "edge_weight": 0.8,
+        "idf": 2.5686,
+        "coverage_share": 0.1992,
+        "requirement": "Core requirement"
+      },
+      {
+        "query": "Python",
+        "skill_id": "tool:Python",
+        "skill_label": "Python",
+        "match_similarity": 1.0,
+        "low_confidence": false,
+        "edge_weight": 1.0,
+        "idf": 1.0,
+        "coverage_share": 0.0969,
+        "requirement": "Core requirement"
+      },
+      {
+        "query": "machine learning",
+        "skill_id": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+        "skill_label": "machine learning",
+        "match_similarity": 1.0,
+        "low_confidence": false,
+        "edge_weight": 0.2,
+        "idf": 4.1781,
+        "coverage_share": 0.081,
+        "requirement": "Supporting"
+      }
+    ],
+    "proximity_paths": [
+      {
+        "skill_id": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+        "skill_label": "machine learning",
+        "share": 0.6512
+      },
+      {
+        "skill_id": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+        "skill_label": "statistics",
+        "share": 0.11
+      },
+      {
+        "skill_id": "tool:Python",
+        "skill_label": "Python",
+        "share": 0.0076
+      }
+    ],
+    "skills_gap": [
+      {
+        "skill_id": "tool:NumPy",
+        "label": "NumPy",
+        "skill_type": "tool",
+        "edge_weight": 1.0,
+        "idf": 4.1781,
+        "priority": 4.1781,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:Scikit-learn",
+        "label": "Scikit-learn",
+        "skill_type": "tool",
+        "edge_weight": 1.0,
+        "idf": 3.4849,
+        "priority": 3.4849,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:pandas",
+        "label": "pandas",
+        "skill_type": "tool",
+        "edge_weight": 1.0,
+        "idf": 3.4849,
+        "priority": 3.4849,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:PyTorch",
+        "label": "PyTorch",
+        "skill_type": "tool",
+        "edge_weight": 1.0,
+        "idf": 3.0794,
+        "priority": 3.0794,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:TensorFlow",
+        "label": "TensorFlow",
+        "skill_type": "tool",
+        "edge_weight": 1.0,
+        "idf": 3.0794,
+        "priority": 3.0794,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:Snowflake",
+        "label": "Snowflake",
+        "skill_type": "tool",
+        "edge_weight": 1.0,
+        "idf": 2.3863,
+        "priority": 2.3863,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:Microsoft Power BI",
+        "label": "Microsoft Power BI",
+        "skill_type": "tool",
+        "edge_weight": 1.0,
+        "idf": 2.0986,
+        "priority": 2.0986,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:Alteryx software",
+        "label": "Alteryx software",
+        "skill_type": "tool",
+        "edge_weight": 0.75,
+        "idf": 3.0794,
+        "priority": 1.7322,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "tool:Google Looker Analytics",
+        "label": "Google Looker Analytics",
+        "skill_type": "tool",
+        "edge_weight": 0.75,
+        "idf": 3.0794,
+        "priority": 1.7322,
+        "sources": [
+          "onet_tool"
+        ],
+        "requirement": "Core requirement"
+      },
+      {
+        "skill_id": "esco:31c69100-b612-4a61-8db5-fd314318854c",
+        "label": "execute analytical mathematical calculations",
+        "skill_type": "skill/competence",
+        "edge_weight": 0.8,
+        "idf": 2.3863,
+        "priority": 1.5272,
+        "sources": [
+          "esco"
+        ],
+        "requirement": "Core requirement"
+      }
+    ]
+  }
+}

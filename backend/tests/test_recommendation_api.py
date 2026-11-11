@@ -48,6 +48,35 @@ def test_recommendations_rank_the_saved_profile():
     assert len(data['recommendations']) == 5
 
 
+def test_summaries_add_the_fit_reason_and_matched_skills():
+    client = signed_in()
+    client.put('/api/profile/', {'skills': DATA_SKILLS}, format='json')
+    summaries = client.get('/api/recommendations/?top=10').data['recommendations']
+    for item in summaries:
+        # The fields the screens already read are still there.
+        assert {'rank', 'career_code', 'title', 'domain', 'score', 'components', 'summary'} <= set(item)
+        assert item['fit'] == ('strong' if item['score'] >= 0.6 else 'good' if item['score'] >= 0.4 else 'possible')
+        assert item['matched_skills'] and {s['query'] for s in item['matched_skills']} <= set(DATA_SKILLS)
+        assert {s['requirement'] for s in item['matched_skills']} <= {'Core requirement', 'Important', 'Supporting'}
+
+    first = summaries[0]
+    detail = client.get(f"/api/recommendations/{first['career_code']}/").data
+    assert first['reason'] == detail['reason'] == detail['explanation'][1]
+    assert [s['skill_id'] for s in first['matched_skills']] == [c['skill_id'] for c in detail['skill_contributions']]
+    assert all(s['label'] in first['reason'] for s in first['matched_skills'][:3])
+
+
+def test_uncertain_matches_are_flagged_in_the_summary():
+    client = signed_in()
+    client.put('/api/profile/', {'skills': ['HTML', 'playing guitar']}, format='json')
+    matches = client.get('/api/recommendations/').data['matches']
+    uncertain = {m['query'] for m in matches if m['low_confidence']}
+    assert 'playing guitar' in uncertain
+    for item in client.get('/api/recommendations/').data['recommendations']:
+        for s in item['matched_skills']:
+            assert s['low_confidence'] == (s['query'] in uncertain)
+
+
 def test_an_empty_profile_has_no_recommendations():
     data = signed_in().get('/api/recommendations/').data
     assert data['matches'] == [] and data['recommendations'] == []

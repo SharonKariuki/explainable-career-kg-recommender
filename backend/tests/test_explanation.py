@@ -1,5 +1,5 @@
 from recommender.engine import ProximityPath, Recommendation, ScoreComponents, SkillContribution
-from recommender.explanation import ExplanationGenerator
+from recommender.explanation import ExplanationGenerator, fit_level
 
 
 def contribution(label, query=None, weight=1.0, similarity=1.0, low=False, share=0.2):
@@ -75,3 +75,15 @@ def test_quoted_components_appear_in_the_text():
     }
     for _, value in x.quoted_components:
         assert value in x.text
+
+
+def test_the_fit_label_follows_the_score_thresholds():
+    assert [fit_level(s) for s in (0.6, 0.59, 0.4, 0.39)] == ['strong', 'good', 'good', 'possible']
+    assert explain(recommendation(score=0.45)).sentences[0].startswith('Data Scientists is a good match')
+
+
+def test_the_reason_is_the_sentence_about_the_users_skills():
+    assert explain(recommendation([contribution('Python')])).reason == (
+        'Of the skills you listed, the role treats Python as a core requirement.'
+    )
+    assert explain(recommendation()).reason == 'The role does not directly require any of the skills you listed.'

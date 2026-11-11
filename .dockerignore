@@ -1,0 +1,13 @@
+# Only backend/ and data/processed/ go into the API image.
+**/__pycache__
+**/.pytest_cache
+**/.env
+venv
+frontend
+docs
+data/raw
+data/cache
+data/results
+data/eval_sets
+backend.zip
+.git
