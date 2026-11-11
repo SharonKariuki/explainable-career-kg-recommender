@@ -1,0 +1,8 @@
+name,expectation,passed,observed,change_needed
+unrelated-hobby,'cooking' is uncertain and no career scores 0.4 or more,False,'cooking' -> Chef 0.711; top score 0.582,"matching: tool names (Chef) need a shared word, or a margin test between the top candidates"
+teamwork,'teamwork' does not put Penetration Testers first,False,'teamwork' -> manage a team 0.651; first: Penetration Testers,"matching or data: teamwork should not resolve to the 3-career ESCO node ""manage a team"""
+generic-pair,"['SQL', 'python'] does not rank the smallest career (Blockchain Engineers) first",False,"first: Blockchain Engineers 0.907 (coverage 1.00, proximity 1.00, total edge weight 71)",proximity: compare against a profile-free baseline instead of dividing by total edge weight
+size-bias,off-target proximity correlates with 1/total edge weight below 0.3,False,"corr(median off-target proximity, 1/total edge weight) = 0.73 over synthetic-validation",proximity: as for generic-pair
+public-speaking,'public speaking' matches Speaking with confidence,False,'public speaking' -> Speaking 0.564 (uncertain),matching data: an evidence-cited alias (O*NET Speaking) or a lexical check
+explanation-context,the top explanation names unused skills and any career within 0.01,False,"Web Developers 0.469; unused skills ['team management']; within 0.01 of it: ['Software Developers', 'Computer Systems Analysts']; not disclosed: ['team management', 'near-tie']",explanation: explain() sees one recommendation; it needs the matches and neighbouring scores
+insufficient-signal,a profile of only ubiquitous skills does not rank every career,False,"24 of 24 careers ranked for ['SQL', 'python', 'excel']; top Statisticians 0.915",engine or API: a candidate filter or a not-enough-signal response
