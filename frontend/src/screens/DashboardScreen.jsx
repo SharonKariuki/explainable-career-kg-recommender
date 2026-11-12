@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { getRecommendations } from '../api.js'
 import { EmptyState, Pill, Status } from '../components.jsx'
-import { capitalise } from '../format.js'
+import { capitalise, fitLabel } from '../format.js'
 import { Icon } from '../icons.jsx'
 
 // The skills screen advises three or more skills for better results.
@@ -234,7 +234,7 @@ export default function DashboardScreen({ user }) {
             <div className="tile-head spread">
               <div>
                 <h2 id="top-label">Top matches</h2>
-                <p className="sub">Scores run from 0 to 1</p>
+                <p className="sub">How well each career fits your skills</p>
               </div>
               <a className="tile-tag" href="#/recommendations">See all</a>
             </div>
@@ -248,7 +248,7 @@ export default function DashboardScreen({ user }) {
                         <span className="sub">{capitalise(r.domain)}</span>
                       </span>
                       <ScoreBar score={r.score} />
-                      <strong className="num">{r.score.toFixed(2)}</strong>
+                      <Pill tone={r.fit === 'strong' ? 'match' : 'neutral'}>{fitLabel(r.fit)}</Pill>
                     </a>
                   </li>
                 ))}
