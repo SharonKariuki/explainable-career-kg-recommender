@@ -109,7 +109,7 @@ export default function CareerGraph({ career, gapLimit = 5 }) {
       <figcaption className="muted">
         Your skills this career requires, and the top skills to build.
         <span className="wide-only"> Thicker lines mean the career needs the skill more.</span>
-        {have.some((s) => s.uncertain) && ' Dashed amber marks an uncertain match.'}
+        {have.some((s) => s.uncertain) && ' A dashed outline marks an uncertain match.'}
       </figcaption>
     </figure>
   )

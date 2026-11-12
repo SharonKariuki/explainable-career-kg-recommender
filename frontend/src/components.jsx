@@ -1,5 +1,5 @@
-// Warm Glass building blocks shared by the screens. Glass is for controls,
-// white cards for reading, and each screen has at most one black hero card.
+// Cobalt & Pearl building blocks shared by the screens. Glass is for controls,
+// white cards for reading, and each screen has at most one navy hero card.
 
 import { useEffect, useState } from 'react'
 
@@ -9,7 +9,9 @@ import { Icon } from './icons.jsx'
 
 export function LogoTile({ size = 42 }) {
   return (
-    <span className="logo-tile" style={{ '--size': `${size}px` }} aria-hidden="true">A</span>
+    <span className="logo-tile" style={{ '--size': `${size}px` }} aria-hidden="true">
+      <img src="/brand/ajiraguide-mark.png" alt="" />
+    </span>
   )
 }
 
@@ -150,7 +152,7 @@ export function Meter({ label, value, weight }) {
 export function MatchBadge({ fit, score }) {
   return (
     <div className="match-badge">
-      <Pill tone={fit === 'strong' ? 'ok' : 'neutral'}>{fitLabel(fit)}</Pill>
+      <Pill tone={fit === 'strong' ? 'match' : 'neutral'}>{fitLabel(fit)}</Pill>
       <span className="sub num">Match score {score.toFixed(2)}</span>
     </div>
   )

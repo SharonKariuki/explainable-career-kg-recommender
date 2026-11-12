@@ -6,28 +6,28 @@
     <title>AjiraGuide user guide</title>
     <style>
       :root {
-        --base: #efe8e2;
+        --base: #f5f7fb;
         --card: #ffffff;
-        --fg: #111113;
-        --muted: #6b6b73;
-        --line: #ececf0;
-        --gold: #b07a22;
+        --fg: #0f1a33;
+        --muted: #48536b;
+        --line: #e2e7f0;
+        --link: #3b4fa8;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --base: #141416;
-          --card: #1c1c20;
+          --base: #050506;
+          --card: #121214;
           --fg: #f2f2f4;
-          --muted: #a6a5ae;
-          --line: #2c2c32;
-          --gold: #e0a03a;
+          --muted: #a1a1aa;
+          --line: #232327;
+          --link: #96b3ff;
         }
       }
       body {
         margin: 0;
         background: var(--base);
         color: var(--fg);
-        font: 16px/1.6 Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+        font: 16px/1.6 Geist, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
       }
       main {
         max-width: 720px;
@@ -45,7 +45,7 @@
       h3 { font-size: 16px; margin: 20px 0 6px; }
       p, li { color: var(--fg); }
       .muted { color: var(--muted); }
-      a { color: var(--gold); }
+      a { color: var(--link); }
       ul, ol { padding-left: 22px; }
       nav ol { columns: 2; column-gap: 32px; }
       @media (max-width: 560px) { nav ol { columns: 1; } }

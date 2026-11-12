@@ -134,7 +134,7 @@ function RoadmapDetail({ code }) {
           <p className="muted small num">
             Uses {have.length} of your skills · {done} of {gap.length} to build done · {learning} learning
           </p>
-          <Progress value={gap.length ? done / gap.length : 1} tone="gold" label={`${done} of ${gap.length} skills done`} />
+          <Progress value={gap.length ? done / gap.length : 1} tone="amber" label={`${done} of ${gap.length} skills done`} />
         </div>
         <a className="btn glass" href={`#/careers/${code}`}>Details</a>
       </section>

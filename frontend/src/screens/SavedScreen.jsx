@@ -45,7 +45,7 @@ export default function SavedScreen() {
             <p className="result-summary clamp">{c.description}</p>
             <p className="career-meta">
               {c.match ? (
-                <Pill tone="ok">Your match #{c.match.rank} · {c.match.score.toFixed(2)}</Pill>
+                <Pill tone="match">Your match #{c.match.rank} · {c.match.score.toFixed(2)}</Pill>
               ) : (
                 <Pill>Not linked to your skills</Pill>
               )}

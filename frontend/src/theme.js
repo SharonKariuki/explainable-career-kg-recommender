@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react'
 
 const THEME_KEY = 'ajiraguide.theme'
-const THEME_COLOR = { light: '#efe8e2', dark: '#0a0a0b' }
+const THEME_COLOR = { light: '#f5f7fb', dark: '#050506' }
 
 export function useTheme() {
   const [theme, setTheme] = useState(() => document.documentElement.dataset.theme || 'light')
