@@ -106,8 +106,9 @@ export default function ProfileScreen({ onSaved }) {
   if (status === 'loading') return <>{header}<Status loading /></>
 
   return (
+    <>
+    {header}
     <div className="narrow-page">
-      {header}
 
       <form onSubmit={addSkill} className="search glass add-skill">
         <Icon name="plus" size={17} />
@@ -226,5 +227,6 @@ export default function ProfileScreen({ onSaved }) {
         </button>
       </div>
     </div>
+    </>
   )
 }

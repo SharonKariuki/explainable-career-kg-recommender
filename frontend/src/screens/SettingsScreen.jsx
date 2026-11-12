@@ -33,8 +33,9 @@ export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDele
   if (!account) return <>{header}<Status loading={!error} error={error} /></>
 
   return (
+    <>
+    {header}
     <div className="narrow-page">
-      {header}
       <AccountPanel account={account} onChange={setAccount} />
       <PasswordPanel hasPassword={account.has_password} onChanged={() => setAccount({ ...account, has_password: true })} />
 
@@ -80,6 +81,7 @@ export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDele
 
       <DeletePanel username={account.username} onDeleted={onDeleted} />
     </div>
+    </>
   )
 }
 

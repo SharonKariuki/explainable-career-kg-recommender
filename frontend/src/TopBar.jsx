@@ -130,9 +130,10 @@ export function AvatarMenu({ username, links, active, theme, onToggleTheme, onSi
 }
 
 // nav: the main links; more: the account links. active is the current link's path.
-export function TopBar({ nav, more, active, user, theme, onToggleTheme, onSignOut }) {
+// stuck: the page has scrolled, so the bar turns from clear to glass.
+export function TopBar({ nav, more, active, user, theme, onToggleTheme, onSignOut, stuck = false }) {
   return (
-    <header className="topbar glass">
+    <header className={stuck ? 'topbar glass is-stuck' : 'topbar glass'}>
       {/* The logo lockup: the A mark, a hairline, and the wordmark. */}
       <a href="#/dashboard" className="brand" aria-label="AjiraGuide home">
         <i className="brand-mark" aria-hidden="true" />

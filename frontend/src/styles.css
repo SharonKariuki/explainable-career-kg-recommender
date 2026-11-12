@@ -55,6 +55,7 @@
   --shadow-hero: 0 12px 28px rgba(10, 20, 48, 0.28);
   --shadow-fab: 0 6px 16px rgba(10, 20, 48, 0.3);
   --shadow-micro: 0 1px 3px rgba(15, 26, 51, 0.1);
+  --row-lift: 0 14px 28px -14px rgba(10, 20, 48, 0.3), 0 3px 8px -2px rgba(15, 26, 51, 0.08);
   --primary-glow: inset 0 -1.5px 0 rgb(255 180 92 / 0.85), 0 10px 24px -12px rgb(255 180 92 / 0.6);
 
   /* Radii */
@@ -97,6 +98,8 @@
   --panel-mist: #a9bcf2;
   --panel-glow: rgb(92 118 222 / 0.7);
   --tile-glass: linear-gradient(165deg, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0.84));
+
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
   --font: 'Geist', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
@@ -154,6 +157,7 @@
   --hero-edge: rgba(255, 255, 255, 0.16);
   --shadow-hero: 0 12px 28px rgba(0, 0, 0, 0.55);
   --shadow-fab: 0 6px 16px rgba(0, 0, 0, 0.5);
+  --row-lift: 0 14px 28px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgb(150 179 255 / 0.18);
   --inverse-hover: #1a2a5c;
   --inverse-edge: rgb(150 179 255 / 0.4);
   color-scheme: dark;
@@ -233,7 +237,15 @@ input, select { font: inherit; color: inherit; }
   .glass { background: var(--glass-fallback); }
 }
 
-.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); }
+/* Frosted, like the dashboard's tiles. */
+.card {
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--r-hero);
+  box-shadow: var(--glass-shadow);
+}
 .panel { padding: 14px 16px; }
 .ph { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px; }
 .ph > span, .ph > a { font-size: 12px; color: var(--muted); }
@@ -242,14 +254,15 @@ input, select { font: inherit; color: inherit; }
 
 /* ---- App shell ---- */
 
-.app { min-height: 100vh; --shell-width: 1040px; }
+.app { min-height: 100vh; --shell-width: 1040px; overflow-x: clip; }
 .content {
   display: grid;
   gap: var(--section-gap);
   align-content: start;
   width: 100%;
   min-width: 0;
-  padding: 14px var(--gutter) calc(var(--tabbar-bottom) + var(--tabbar-height) + 24px);
+  --pad-top: 14px;
+  padding: var(--pad-top) var(--gutter) calc(var(--tabbar-bottom) + var(--tabbar-height) + 24px);
 }
 
 .tabs {
@@ -393,7 +406,7 @@ input, select { font: inherit; color: inherit; }
   .topbar > .avatar-menu { justify-content: flex-end; }
   .topnav { display: flex; gap: 4px; }
   .tabs { display: none; }
-  .content { max-width: var(--shell-width); margin: 0 auto; padding: 24px 32px 48px; }
+  .content { max-width: var(--shell-width); margin: 0 auto; --pad-top: 24px; padding: var(--pad-top) 32px 48px; }
 }
 /* Mid widths: the pills keep their icons and drop their labels. */
 @media (min-width: 760px) and (max-width: 999px) {
@@ -418,7 +431,47 @@ input, select { font: inherit; color: inherit; }
 /* The landing site's white A mark (public/brand), centred on the navy tile. */
 .logo-tile img { display: block; width: 56%; height: 56%; object-fit: contain; }
 
-.page-header { display: grid; gap: 12px; justify-items: start; padding-top: 6px; }
+/* Every screen opens on the navy wash: the header runs edge to edge and up
+   behind the top bar, then fades into the page above the first card. */
+.page-header {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  margin: calc(-72px - var(--pad-top)) calc(50% - 50vw) 0;
+  padding: calc(92px + var(--pad-top)) calc(50vw - 50%) 72px;
+  color: #fff;
+  background:
+    radial-gradient(60% 80% at 92% 12%, var(--panel-glow), transparent 72%),
+    linear-gradient(168deg, var(--navy) 0, #111c44 40%, var(--panel-mid) 68%, var(--panel-mist) 88%, transparent 100%);
+  /* The wash is diagonal, so its left side would end on a hard edge; the mask fades the whole foot. */
+  -webkit-mask-image: linear-gradient(#000 calc(100% - 72px), transparent);
+  mask-image: linear-gradient(#000 calc(100% - 72px), transparent);
+}
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--grain);
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  -webkit-mask-image: linear-gradient(#000 55%, transparent);
+  mask-image: linear-gradient(#000 55%, transparent);
+}
+.page-header + * { margin-top: -36px; position: relative; }
+.page-header .subtitle { color: #d5ddf5; }
+.page-header .back-link, .page-header .icon-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--hero-edge);
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  color: #fff;
+}
+.page-header .back-link:hover, .page-header .icon-btn:hover { background: rgba(255, 255, 255, 0.22); }
+.page-header :focus-visible { outline-color: #fff; }
 .page-header-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; width: 100%; }
 .subtitle { font-size: 13px; color: var(--muted); margin-top: 4px; max-width: 62ch; }
 .back-link {
@@ -921,13 +974,12 @@ a.row:hover b { text-decoration: underline; }
    edge, holds the top bar, the greeting and every tile. Navy washes diagonally
    down it into a pale mist and then into the page behind the tiles. ---- */
 
-/* On the dashboard the top bar is clear and sits inside the hero, so it scrolls
-   away with it instead of sticking over the tiles. */
+/* At the top of a page the bar is clear and sits on the navy wash; once the
+   page scrolls it turns back to glass. The dashboard is wider and full bleed. */
 .app.on-hero { --shell-width: 1240px; }
 .app.on-hero .content { max-width: none; padding-top: 0; padding-left: 0; padding-right: 0; }
-.app.on-hero .topbar {
-  position: relative;
-  top: 0;
+.topbar { transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, padding 0.2s; }
+.topbar:not(.is-stuck) {
   background: none;
   border-color: transparent;
   box-shadow: none;
@@ -935,14 +987,15 @@ a.row:hover b { text-decoration: underline; }
   backdrop-filter: none;
   color: #fff;
 }
-.app.on-hero .topbar .brand { color: #fff; }.app.on-hero .topnav a { color: rgba(255, 255, 255, 0.82); background: rgba(255, 255, 255, 0.08); }
-.app.on-hero .topnav a:hover { color: #fff; background: rgba(255, 255, 255, 0.16); }
-.app.on-hero .topnav a[aria-current='page'] { color: #fff; background: rgba(255, 255, 255, 0.24); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28); }
-.app.on-hero .avatar-btn { background: rgba(255, 255, 255, 0.1); border-color: var(--hero-edge); box-shadow: none; color: #fff; }
-.app.on-hero .avatar-btn:hover, .app.on-hero .avatar-btn[aria-expanded='true'] { background: rgba(255, 255, 255, 0.2); color: #fff; }
-.app.on-hero .avatar-btn .av { color: var(--navy); background: #fff; }
-.app.on-hero .topbar :focus-visible, .dash-band :focus-visible { outline-color: #fff; }
-.app.on-hero .menu :focus-visible { outline-color: var(--fg); }
+.topbar:not(.is-stuck) .brand { color: #fff; }
+.topbar:not(.is-stuck) .topnav a { color: rgba(255, 255, 255, 0.82); background: rgba(255, 255, 255, 0.08); }
+.topbar:not(.is-stuck) .topnav a:hover { color: #fff; background: rgba(255, 255, 255, 0.16); }
+.topbar:not(.is-stuck) .topnav a[aria-current='page'] { color: #fff; background: rgba(255, 255, 255, 0.24); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28); }
+.topbar:not(.is-stuck) .avatar-btn { background: rgba(255, 255, 255, 0.1); border-color: var(--hero-edge); box-shadow: none; color: #fff; }
+.topbar:not(.is-stuck) .avatar-btn:hover, .topbar:not(.is-stuck) .avatar-btn[aria-expanded='true'] { background: rgba(255, 255, 255, 0.2); color: #fff; }
+.topbar:not(.is-stuck) .avatar-btn .av { color: var(--navy); background: #fff; }
+.topbar:not(.is-stuck) :focus-visible, .dash-band :focus-visible { outline-color: #fff; }
+.topbar:not(.is-stuck) .menu :focus-visible { outline-color: var(--fg); }
 
 .dash-panel {
   position: relative;
@@ -963,7 +1016,7 @@ a.row:hover b { text-decoration: underline; }
   inset: 0;
   width: auto;
   z-index: -1;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background: var(--grain);
   opacity: 0.4;
   mix-blend-mode: overlay;
   -webkit-mask-image: linear-gradient(168deg, #000 300px, transparent 660px);
@@ -1080,14 +1133,14 @@ a.tile-tag:hover { border-color: var(--fg); }
 }
 .tile-row .row-main { flex: 1; min-width: 0; }
 .tile-row strong { font-size: 13px; }
-a.tile-row:hover { border-color: var(--soft); }
-a.tile-row:hover b { text-decoration: underline; }
+a.tile-row { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+a.tile-row:hover { transform: translateY(-2px); box-shadow: var(--row-lift); }
 .seg-bar { flex: none; display: flex; gap: 2.5px; }
 .seg-bar i { width: 4px; height: 15px; border-radius: 2px; background: var(--expected); }
 .seg-bar i.on { background: var(--notice-icon); }
 
 @media (min-width: 760px) {
-  .app.on-hero .topbar { padding: 0; }
+  .topbar:not(.is-stuck) { padding: 0; }
   .dash-panel { padding-bottom: 16px; }
   .dash-band { padding: 102px 0 30px; }
   .dash-band h1 { font-size: 34px; }

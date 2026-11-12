@@ -38,6 +38,18 @@ const MORE_NAV = [
   { path: '/settings', label: 'Settings', icon: 'settings' },
 ]
 
+// True once the page has scrolled, when the top bar leaves the navy wash.
+function useScrolled() {
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+  return scrolled
+}
+
 function App() {
   const route = useRoute()
   const path = route === '/profile' ? '/assessment' : route  // the old address still works
@@ -46,6 +58,7 @@ function App() {
   const [startupError, setStartupError] = useState(null)
   const [signedOutNotice, setSignedOutNotice] = useState(null)
   const [theme, toggleTheme] = useTheme()
+  const scrolled = useScrolled()
 
   // A saved token may have expired or been revoked; confirm it on load. Only a
   // 401 means signed out: a network error or a sleeping server keeps the token.
@@ -118,7 +131,7 @@ function App() {
 
   return (
     <div className={active === '/dashboard' ? 'app on-hero' : 'app'}>
-      <TopBar nav={NAV} more={MORE_NAV} active={active} user={user} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} />
+      <TopBar nav={NAV} more={MORE_NAV} active={active} user={user} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} stuck={scrolled} />
 
       <main className="content">
         <WakingNotice />
