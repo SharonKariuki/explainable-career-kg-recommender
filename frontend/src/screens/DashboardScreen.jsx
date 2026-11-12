@@ -118,7 +118,7 @@ export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme 
             <p className="hero-sub">from the {plural(skillCount, 'skill')} in your profile</p>
             <Progress
               value={data.matches.length ? confident / data.matches.length : 0}
-              tone="gold"
+              tone="amber"
               label={`${confident} of ${data.matches.length} skills matched confidently`}
             />
             <div className="hero-foot">
