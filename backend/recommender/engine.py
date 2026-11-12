@@ -96,6 +96,7 @@ class SkillContribution:
     edge_weight: float
     idf: float
     coverage_share: float
+    requirement_weight: float | None = None  # what its label is read from; None means edge_weight
 
 
 @dataclass(frozen=True)
@@ -186,6 +187,7 @@ class RecommendationEngine:
                         match_similarity=best[s].similarity, low_confidence=best[s].low_confidence,
                         edge_weight=required[s], idf=round(self.idf[s], 4),
                         coverage_share=strength[s] * self.idf[s] * required[s] / profile_idf,
+                        requirement_weight=self.kg.requirement_weight(career, s),
                     )
                     for s in best if s in required
                 ),

@@ -90,3 +90,17 @@ def test_a_profile_of_only_ignored_uncertain_matches_does_not_crash(engine):
     _, recommendations = engine.score(prepared, EngineParams(low_confidence_weight=0.0))
     for r in recommendations:
         assert r.components.coverage == 0 and r.components.graph_proximity == 0 and r.proximity_paths == ()
+
+
+def test_hot_technology_tools_are_not_called_core_requirements(engine):
+    from recommender.explanation import ExplanationGenerator, requirement_level
+    skills = ['Python', 'sql', 'JavaScript', 'Hypertext markup language HTML', 'Cascading style sheets CSS',
+              'Git', 'GitHub', 'problem solving']
+    _, recommendations = engine.rank(skills, top_k=None)
+    support = next(r for r in recommendations if r.title == 'Computer User Support Specialists')
+    labels = {c.skill_label: requirement_level(c.requirement_weight)[1] for c in support.skill_contributions}
+    assert labels['Cascading style sheets CSS'] == labels['Hypertext markup language HTML'] == 'Important'
+    assert labels['Structured query language SQL'] == 'Core requirement'
+    # Groups run core, then important, then supporting, so nothing after CSS may be core.
+    after_css = ExplanationGenerator().explain(support).reason.split('Cascading style sheets CSS', 1)[1]
+    assert 'core requirement' not in after_css and 'important skill' in after_css

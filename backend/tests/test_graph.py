@@ -1,9 +1,14 @@
+import hashlib
+
 import pytest
 
+from recommender.explanation import requirement_level
 from recommender.graph import IMPORTANCE_CUTOFF, KnowledgeGraphManager, esco_node_ids, read
 
 DATA_SCIENTISTS = 'career:15-2051.00'
 SOFTWARE_DEVELOPERS = 'career:15-1252.00'
+USER_SUPPORT = 'career:15-1232.00'
+WEB_DEVELOPERS = 'career:15-1254.00'
 
 
 @pytest.fixture(scope='module')
@@ -62,3 +67,37 @@ def test_traversal_respects_the_depth_limit(kg):
 
 def test_traversal_ignores_unknown_start_nodes(kg):
     assert kg.traverse(['tool:Not A Real Tool'], max_depth=3) == {}
+
+
+def career_edges(kg):
+    for a, b, data in kg.graph.edges(data=True):
+        yield (a, b, data) if kg.node(a)['kind'] == 'career' else (b, a, data)
+
+
+def test_edge_weights_are_pinned(kg):
+    # Requirement labels read each source's weight; the weights careers are scored by must not move.
+    rows = sorted((career, skill, f"{data['weight']:.6f}") for career, skill, data in career_edges(kg))
+    assert hashlib.sha256(repr(rows).encode()).hexdigest() == (
+        '07b9c58b5097dec8654acd560c4ca0d65536328c30ab6a2a289c23049e710be0')
+
+
+def test_each_source_keeps_its_own_weight(kg):
+    for *_, data in kg.graph.edges(data=True):
+        assert set(data['source_weights']) == data['sources']
+        assert max(data['source_weights'].values()) == data['weight']
+
+
+@pytest.mark.parametrize('career, skill, label', [
+    (USER_SUPPORT, 'tool:Cascading style sheets CSS', 'Important'),            # Hot Technology only
+    (USER_SUPPORT, 'tool:Structured query language SQL', 'Core requirement'),  # In Demand
+    (WEB_DEVELOPERS, 'tool:Cascading style sheets CSS', 'Core requirement'),   # In Demand
+])
+def test_requirement_labels_follow_the_source_that_set_them(kg, career, skill, label):
+    assert requirement_level(kg.requirement_weight(career, skill))[1] == label
+
+
+def test_only_in_demand_tools_make_a_tool_alone_core(kg):
+    for career, skill, data in career_edges(kg):
+        weights = data['source_weights']
+        core = any(w >= 0.75 for source, w in weights.items() if source != 'onet_tool')             or weights.get('onet_tool', 0) >= 1.0
+        assert (requirement_level(kg.requirement_weight(career, skill))[1] == 'Core requirement') == core
