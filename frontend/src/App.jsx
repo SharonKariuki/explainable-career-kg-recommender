@@ -117,7 +117,7 @@ function App() {
   const current = (n) => (n.path === active ? 'page' : undefined)
 
   return (
-    <div className="app">
+    <div className={active === '/dashboard' ? 'app on-hero' : 'app'}>
       <TopBar nav={NAV} more={MORE_NAV} active={active} user={user} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} />
 
       <main className="content">
