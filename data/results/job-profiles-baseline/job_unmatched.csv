@@ -1,0 +1,72 @@
+skill,nearest,similarity,career
+Volatility,Penetration testing software,0.3515,Digital Forensics Analysts
+Magnet AXIOM,set theory,0.3645,Digital Forensics Analysts
+DAX,Scala,0.3829,Business Intelligence Analysts
+Chain of custody,supply chain management,0.3911,Digital Forensics Analysts
+Concentration,Science,0.3947,Computer Programmers
+breaking things to check they work,Troubleshooting,0.4077,Software Quality Assurance Analysts and Testers
+Switches,Computers and Electronics,0.4099,Computer Network Support Specialists
+CompTIA A+,Objective C,0.4166,Computer User Support Specialists
+Curiosity,Science,0.4251,Penetration Testers
+Cypress,graphics editor software,0.4253,Software Quality Assurance Analysts and Testers
+Use cases,IBM Rational ClearCase,0.4271,Computer Systems Analysts
+Linear algebra,C++,0.4302,Computer and Information Research Scientists
+making dashboards for managers,liaise with managers,0.4401,Business Intelligence Analysts
+Autopsy,computer forensics,0.4411,Digital Forensics Analysts
+Wireframing,ICT network cable limitations,0.4452,Web and Digital Interface Designers
+working with blockchain and NFTs,blockchain consensus mechanisms,0.4587,Blockchain Engineers
+Dashboards,Google Analytics,0.4624,Business Intelligence Analysts
+Hardhat,easyCIS,0.4658,Blockchain Engineers
+setting up routers and switches,integrate system components,0.4668,Computer Network Support Specialists
+Attention to detail,provide information,0.4756,Information Security Analysts
+Foundry,identify suppliers,0.4835,Blockchain Engineers
+Patience,Troubleshooting,0.489,Computer Network Support Specialists
+EnCase,IBM Rational ClearCase,0.4937,Digital Forensics Analysts
+TestRail,TestNG,0.4937,Software Quality Assurance Analysts and Testers
+making web pages work on phones,mobile device software frameworks,0.4939,Web Developers
+keeping the office network running,Microsoft Access,0.4946,Network and Computer Systems Administrators
+setting up user accounts and servers,integrate system components,0.4963,Network and Computer Systems Administrators
+CCNP,Adobe Photoshop,0.4977,Computer Network Architects
+fixing internet connection problems,maintain internet protocol configuration,0.4981,Computer Network Support Specialists
+planning how big IT systems fit together,integrate system components,0.5007,Computer Systems Engineers/Architects
+Windows registry analysis,statistical analysis system software,0.5022,Digital Forensics Analysts
+Reliability,guarantee customer satisfaction,0.5043,Network and Computer Systems Administrators
+Printers,manage digital documents,0.5067,Computer User Support Specialists
+coding online shops,use e-services,0.5077,Web Developers
+writing code all day,Writing,0.5105,Computer Programmers
+OSCP,Apple iOS,0.511,Penetration Testers
+Probability,statistics,0.5112,Statisticians
+building crypto apps,Encryption software,0.5149,Blockchain Engineers
+NIST framework,Network intrusion prevention systems NIPS,0.5188,Information Security Analysts
+Incident response,respond to incidents in cloud,0.52,Information Security Analysts
+Power Query,Structured query language SQL,0.522,Business Intelligence Analysts
+working with probability and numbers,Mathematics,0.5241,Statisticians
+keeping the network online,Cisco,0.5268,Computer Network Support Specialists
+Empathy,psychology,0.5273,Web and Digital Interface Designers
+CISSP,List processing language LISP,0.5289,Information Security Engineers
+Ethers.js,Ethereal,0.5289,Blockchain Engineers
+Typography,use word processing software,0.5358,Web and Digital Interface Designers
+CI/CD,tools for software configuration management,0.5459,Software Developers
+Looker,Google Looker Analytics,0.5472,Business Intelligence Analysts
+MPLS,Multiprotocol Label Switching MPLS,0.5513,Computer Network Architects
+recovering deleted files as evidence,use software for data preservation,0.5517,Digital Forensics Analysts
+Business acumen,business law,0.5521,Data Scientists
+finding bugs in apps,Defect tracking software,0.5566,Software Quality Assurance Analysts and Testers
+planning databases for big systems,analyse big data,0.559,Database Architects
+CompTIA Network+,Connectivity software,0.5624,Computer Network Support Specialists
+making websites easy to use,manage online content,0.5637,Web and Digital Interface Designers
+Ethereum,blockchain platforms,0.5637,Blockchain Engineers
+KPI reporting,Reporting software,0.5659,Business Intelligence Analysts
+finding security holes in websites,web application security threats,0.5698,Penetration Testers
+creating charts that explain business numbers,deliver visual presentation of data,0.5708,Business Intelligence Analysts
+fixing people's laptops,repair ICT devices,0.572,Computer User Support Specialists
+High availability,manage findable accessible interoperable and reusable data,0.5735,Database Administrators
+CompTIA Security+,ensure information security,0.5762,Information Security Analysts
+Continuous learning,machine learning,0.579,Blockchain Engineers
+ER diagrams,Diagramming software,0.5791,Database Architects
+Hypothesis testing,statistics,0.5796,Statisticians
+drawing app screens,use technical drawing software,0.5896,Web and Digital Interface Designers
+Microsoft 365,Microsoft Azure software,0.5929,Computer User Support Specialists
+Experimental design,Design,0.5977,Statisticians
+improving how company systems work,apply organisational techniques,0.5986,Computer Systems Analysts
+protecting companies from hackers,secure sensitive customer's information,0.5995,Information Security Analysts

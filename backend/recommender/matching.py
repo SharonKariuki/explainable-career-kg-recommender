@@ -3,14 +3,18 @@
 Every name a graph skill is known by (O*NET label, tool name, ESCO preferred
 and alternative labels) has a cached SBERT embedding. A declared skill is
 encoded with the same model and matched to the node owning the most similar
-name by cosine similarity. Matches below LOW_CONFIDENCE_THRESHOLD are still
+name by cosine similarity. skill_aliases.csv adds the abbreviations, product
+nicknames and certifications job postings use but the sources do not name
+(SIEM, K8s, CompTIA A+), each as another name of an existing skill node. Matches below LOW_CONFIDENCE_THRESHOLD are still
 returned, with the nearest node, but flagged so they can be treated and
 explained as uncertain.
 """
 
 from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
+import pandas as pd
 
 from pipeline.embeddings import encode, load_embeddings, skill_labels
 from recommender.graph import esco_node_ids, onet_node_id
@@ -19,6 +23,11 @@ from recommender.graph import esco_node_ids, onet_node_id
 # "sql", "cloud computing"), vaguer ones at 0.53-0.65 ("teamwork", "public
 # speaking"), and unrelated words mostly at 0.35-0.59 ("gardening", "asdf").
 LOW_CONFIDENCE_THRESHOLD = 0.60
+ALIASES_FILE = Path(__file__).with_name('skill_aliases.csv')
+
+
+def skill_aliases(path=ALIASES_FILE):
+    return pd.read_csv(path, comment='#', dtype=str)
 
 
 @dataclass(frozen=True)
@@ -44,12 +53,25 @@ def graph_skill_names(kg):
     return labels.drop_duplicates(['node_id', 'label'])[['node_id', 'label']].reset_index(drop=True)
 
 
+def matcher_names(kg):
+    """The graph's names plus skill_aliases.csv. Only the matcher uses the aliases:
+    evaluation profiles are written from the graph's own names, so the sets do not change."""
+    labels = graph_skill_names(kg)
+    owner = labels.drop_duplicates('label').set_index('label')['node_id']
+    aliases = skill_aliases()
+    unknown = sorted(set(aliases['target']) - set(owner.index))
+    if unknown:
+        raise ValueError(f'skill_aliases.csv names skills the graph does not have: {", ".join(unknown)}')
+    aliases = pd.DataFrame({'node_id': aliases['target'].map(owner), 'label': aliases['alias']})
+    return pd.concat([labels, aliases]).drop_duplicates(['node_id', 'label']).reset_index(drop=True)
+
+
 class SkillMatcher:
     def __init__(self, kg, hidden_names=()):
         """`hidden_names` are left out of the index (ignoring case), so evaluation
         can test whether a skill is still recognised from its other names."""
         self.kg = kg
-        labels = graph_skill_names(kg)
+        labels = matcher_names(kg)
         hidden = {name.casefold() for name in hidden_names}
         labels = labels[~labels['label'].str.casefold().isin(hidden)]
         self.texts = labels['label'].tolist()

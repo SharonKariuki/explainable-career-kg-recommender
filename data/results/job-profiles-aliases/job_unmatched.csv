@@ -1,0 +1,37 @@
+skill,nearest,similarity,career
+Concentration,Science,0.3947,Computer Programmers
+breaking things to check they work,Troubleshooting,0.4077,Software Quality Assurance Analysts and Testers
+working with blockchain and NFTs,blockchain consensus mechanisms,0.4587,Blockchain Engineers
+making web pages work on phones,mobile device software frameworks,0.4939,Web Developers
+keeping the office network running,Microsoft Access,0.4946,Network and Computer Systems Administrators
+setting up user accounts and servers,integrate system components,0.4963,Network and Computer Systems Administrators
+fixing internet connection problems,maintain internet protocol configuration,0.4981,Computer Network Support Specialists
+planning how big IT systems fit together,integrate system components,0.5007,Computer Systems Engineers/Architects
+Windows registry analysis,statistical analysis system software,0.5022,Digital Forensics Analysts
+Reliability,guarantee customer satisfaction,0.5043,Network and Computer Systems Administrators
+Printers,manage digital documents,0.5067,Computer User Support Specialists
+coding online shops,use e-services,0.5077,Web Developers
+writing code all day,Writing,0.5105,Computer Programmers
+building crypto apps,Encryption software,0.5149,Blockchain Engineers
+NIST framework,Network intrusion prevention systems NIPS,0.5188,Information Security Analysts
+keeping the network online,Cisco,0.5268,Computer Network Support Specialists
+Empathy,psychology,0.5273,Web and Digital Interface Designers
+Typography,use word processing software,0.5358,Web and Digital Interface Designers
+Looker,Google Looker Analytics,0.5472,Business Intelligence Analysts
+MPLS,Multiprotocol Label Switching MPLS,0.5513,Computer Network Architects
+recovering deleted files as evidence,use software for data preservation,0.5517,Digital Forensics Analysts
+Business acumen,business law,0.5521,Data Scientists
+finding bugs in apps,Defect tracking software,0.5566,Software Quality Assurance Analysts and Testers
+planning databases for big systems,analyse big data,0.559,Database Architects
+making websites easy to use,manage online content,0.5637,Web and Digital Interface Designers
+KPI reporting,Reporting software,0.5659,Business Intelligence Analysts
+finding security holes in websites,web application security threats,0.5698,Penetration Testers
+creating charts that explain business numbers,deliver visual presentation of data,0.5708,Business Intelligence Analysts
+fixing people's laptops,repair ICT devices,0.572,Computer User Support Specialists
+High availability,manage findable accessible interoperable and reusable data,0.5735,Database Administrators
+ER diagrams,Diagramming software,0.5791,Database Architects
+drawing app screens,use technical drawing software,0.5896,Web and Digital Interface Designers
+Experimental design,Design,0.5977,Statisticians
+improving how company systems work,apply organisational techniques,0.5986,Computer Systems Analysts
+setting up routers and switches,ICT networking hardware,0.5989,Computer Network Support Specialists
+protecting companies from hackers,secure sensitive customer's information,0.5995,Information Security Analysts
