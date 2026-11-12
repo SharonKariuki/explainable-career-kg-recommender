@@ -14,8 +14,8 @@ const { TopBar } = (await runnerImport('./src/TopBar.jsx', { root, logLevel: 'er
 const { menuTarget } = (await runnerImport('./src/menu.js', { root, logLevel: 'error' })).module
 
 const NAV = [
-  { path: '/dashboard', label: 'Home', icon: 'home' },
-  { path: '/careers', label: 'Explore', icon: 'explore' },
+  { path: '/home', label: 'Home', icon: 'home' },
+  { path: '/careers', label: 'Careers', icon: 'explore' },
 ]
 const MORE = [{ path: '/saved', label: 'Saved', icon: 'bookmark' }]
 

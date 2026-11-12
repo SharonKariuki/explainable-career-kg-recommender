@@ -135,7 +135,7 @@ export function TopBar({ nav, more, active, user, theme, onToggleTheme, onSignOu
   return (
     <header className={stuck ? 'topbar glass is-stuck' : 'topbar glass'}>
       {/* The logo lockup: the A mark, a hairline, and the wordmark. */}
-      <a href="#/dashboard" className="brand" aria-label="AjiraGuide home">
+      <a href="#/home" className="brand" aria-label="AjiraGuide home">
         <i className="brand-mark" aria-hidden="true" />
         <i className="brand-rule" aria-hidden="true" />
         <span className="brand-word" aria-hidden="true">AjiraGuide</span>

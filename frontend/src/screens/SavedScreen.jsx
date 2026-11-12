@@ -53,7 +53,7 @@ export default function SavedScreen() {
             <div className="card-foot">
               <span className="card-links">
                 <a href={`#/careers/${c.career_code}`}>Details <Icon name="forward" size={14} /></a>
-                {c.match && <a href={`#/roadmap/${c.career_code}`}>Roadmap <Icon name="forward" size={14} /></a>}
+                {c.match && <a href={`#/plan/${c.career_code}`}>Roadmap <Icon name="forward" size={14} /></a>}
               </span>
               {/* Unsaving keeps the card until the next visit, so a slip is easy to undo. */}
               <SaveButton code={c.career_code} saved compact />

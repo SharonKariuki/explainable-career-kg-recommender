@@ -28,34 +28,34 @@ function nextStep(skillCount, unsure, top) {
     return {
       title: `Add ${plural(ADVISED_SKILLS - skillCount, 'more skill')}.`,
       text: 'Three or more skills give better results.',
-      action: { href: '#/assessment', label: 'Add skills' },
+      action: { href: '#/profile', label: 'Add skills' },
     }
   }
   if (unsure.length === 1) {
     return {
       title: `Reword “${unsure[0]}”.`,
       text: 'It had no close match in our data, so it counts for less in your matches.',
-      action: { href: '#/assessment', label: 'Edit skills' },
+      action: { href: '#/profile', label: 'Edit skills' },
     }
   }
   if (unsure.length) {
     return {
       title: `Reword ${plural(unsure.length, 'uncertain skill')}.`,
       text: `${unsure.map((q) => `“${q}”`).join(', ')} had no close match in our data, so they count for less.`,
-      action: { href: '#/assessment', label: 'Edit skills' },
+      action: { href: '#/profile', label: 'Edit skills' },
     }
   }
   if (!top) {
     return {
       title: 'No careers linked yet.',
       text: 'None of your skills matched a career. Try rewording them.',
-      action: { href: '#/assessment', label: 'Edit skills' },
+      action: { href: '#/profile', label: 'Edit skills' },
     }
   }
   return {
     title: `See what to learn for ${top.title}.`,
     text: 'Your top match, with the skills it needs that you have not listed.',
-    action: { href: `#/roadmap/${top.career_code}`, label: 'Open roadmap' },
+    action: { href: `#/plan/${top.career_code}`, label: 'Open roadmap' },
   }
 }
 
@@ -93,8 +93,8 @@ export default function DashboardScreen({ user }) {
       </div>
       {ready && (
         <div className="band-buttons">
-          <a className="btn band-ghost" href="#/assessment">Edit skills</a>
-          <a className="btn band-solid" href="#/recommendations">See matches<ArrowDisc /></a>
+          <a className="btn band-ghost" href="#/profile">Edit skills</a>
+          <a className="btn band-solid" href="#/matches">See matches<ArrowDisc /></a>
         </div>
       )}
     </header>
@@ -106,7 +106,7 @@ export default function DashboardScreen({ user }) {
     return (
       <div className="dash-panel">
         {band}
-        <EmptyState title="Start with your skills" action={{ href: '#/assessment', label: 'Add your skills' }}>
+        <EmptyState title="Start with your skills" action={{ href: '#/profile', label: 'Add your skills' }}>
           List what you can already do, in your own words. AjiraGuide ranks the tech careers that use those skills and
           explains each match.
         </EmptyState>
@@ -176,7 +176,7 @@ export default function DashboardScreen({ user }) {
               <h2 id="more-label">What else fits</h2>
               <p className="sub">Your next matches; scores run from 0 to 1</p>
             </div>
-            <a className="tile-tag" href="#/recommendations">See all</a>
+            <a className="tile-tag" href="#/matches">See all</a>
           </div>
           {others.length ? (
             <ol className="tile-list">
@@ -207,7 +207,7 @@ export default function DashboardScreen({ user }) {
                 {plural(skillCount, 'skill')} in your profile{uncertain > 0 && ` · ${uncertain} uncertain`}
               </p>
             </div>
-            <a className="tile-tag" href="#/assessment">Edit</a>
+            <a className="tile-tag" href="#/profile">Edit</a>
           </div>
           <ul className="tile-list">
             {skillRows.map((m) => (

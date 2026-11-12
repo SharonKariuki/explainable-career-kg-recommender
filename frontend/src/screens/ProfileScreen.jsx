@@ -98,7 +98,7 @@ export default function ProfileScreen({ onSaved }) {
 
   const header = (
     <PageHeader
-      title="Your skills"
+      title="My profile"
       subtitle="List the skills you have, in your own words: tools (Python, Excel), topics (statistics) or things you do well (talking to customers). Three or more give better results."
     />
   )

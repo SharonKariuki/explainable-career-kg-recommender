@@ -33,7 +33,7 @@ export default function CareerDetailScreen({ code }) {
   }, [code])
 
   const back = profile?.match
-    ? { href: '#/recommendations', label: 'All my matches' }
+    ? { href: '#/matches', label: 'All my matches' }
     : { href: '#/careers', label: 'Explore careers' }
 
   if (!profile) {
@@ -57,7 +57,7 @@ export default function CareerDetailScreen({ code }) {
         <SaveButton code={code} saved={profile.saved} />
         {career && (
           <>
-            <a className="btn glass" href={`#/roadmap/${code}`}><Icon name="roadmap" />Skills roadmap</a>
+            <a className="btn glass" href={`#/plan/${code}`}><Icon name="roadmap" />Skills roadmap</a>
             <button type="button" className="btn glass" onClick={openTechnical}>
               <Icon name="graph" />How this was calculated
             </button>
@@ -119,7 +119,7 @@ function SkillsYouHave({ skills }) {
               <span className="row-main">
                 <b>{s.skill_label}</b>
                 {s.low_confidence ? (
-                  <span className="sub">Unsure match for your “{s.query}”. <a href="#/assessment">Reword it</a></span>
+                  <span className="sub">Unsure match for your “{s.query}”. <a href="#/profile">Reword it</a></span>
                 ) : (
                   s.query.toLowerCase() !== s.skill_label.toLowerCase() && <span className="sub">You said “{s.query}”</span>
                 )}
@@ -175,7 +175,7 @@ function SkillsToDevelop({ gap, code }) {
               </ol>
             </Disclosure>
           )}
-          <p className="panel-foot"><a href={`#/roadmap/${code}`}>Track these in your roadmap <Icon name="forward" size={14} /></a></p>
+          <p className="panel-foot"><a href={`#/plan/${code}`}>Track these in your roadmap <Icon name="forward" size={14} /></a></p>
         </>
       ) : (
         <p className="empty">Your skills already include every skill this career requires.</p>
@@ -276,7 +276,7 @@ function Requirements({ profile }) {
         <p className="explanation-lead">{profile.description}</p>
       </section>
 
-      <Notice icon="bulb" title="None of your skills link to this career yet" action={{ href: '#/assessment', label: 'Edit skills' }}>
+      <Notice icon="bulb" title="None of your skills link to this career yet" action={{ href: '#/profile', label: 'Edit skills' }}>
         Add skills from the list below that you already have, and it will be ranked and explained for you.
       </Notice>
 

@@ -67,7 +67,7 @@ export default function CareersScreen() {
 
       {!data.skills.length && (
         <p className="muted small">
-          <a href="#/assessment">Add your skills</a> to see how well you match each career.
+          <a href="#/profile">Add your skills</a> to see how well you match each career.
         </p>
       )}
 

@@ -23,7 +23,7 @@ export default function RoadmapScreen({ code }) {
     }
   }, [])
 
-  const header = <PageHeader title="Skills roadmap" subtitle="What you already bring to a career, and what to build next." />
+  const header = <PageHeader title="My plan" subtitle="What you already bring to a career, and what to build next." />
 
   if (!careers) return <>{header}<Status loading={!error} error={error} /></>
 
@@ -31,7 +31,7 @@ export default function RoadmapScreen({ code }) {
     return (
       <>
         {header}
-        <EmptyState title="No careers to plan for yet" action={{ href: '#/assessment', label: 'Add your skills' }}>
+        <EmptyState title="No careers to plan for yet" action={{ href: '#/profile', label: 'Add your skills' }}>
           A roadmap needs a career that uses at least one of your skills.
         </EmptyState>
       </>
@@ -45,7 +45,7 @@ export default function RoadmapScreen({ code }) {
       {header}
       <label className="select glass">
         <span className="visually-hidden">Career</span>
-        <select value={selected} onChange={(e) => navigate(`/roadmap/${e.target.value}`)}>
+        <select value={selected} onChange={(e) => navigate(`/plan/${e.target.value}`)}>
           {/* A career outside the ranking still shows, so the select matches the address. */}
           {!careers.some((c) => c.career_code === selected) && <option value={selected}>{selected}</option>}
           {careers.map((c) => (

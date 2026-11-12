@@ -23,7 +23,7 @@ export default function RecommendationsScreen() {
 
   const header = (
     <PageHeader title="Your career matches" subtitle="Your top 10, ranked by how well your skills fit.">
-      <IconButton icon="edit" label="Edit your skills" href="#/assessment" />
+      <IconButton icon="edit" label="Edit your skills" href="#/profile" />
     </PageHeader>
   )
 
@@ -33,7 +33,7 @@ export default function RecommendationsScreen() {
     return (
       <>
         {header}
-        <EmptyState title="You have not listed any skills yet" action={{ href: '#/assessment', label: 'Add your skills' }} />
+        <EmptyState title="You have not listed any skills yet" action={{ href: '#/profile', label: 'Add your skills' }} />
       </>
     )
   }
@@ -69,7 +69,7 @@ export function SkillReading({ matches }) {
   return (
     <>
       {uncertain.length > 0 && (
-        <Notice icon="alert" title="Some skills had no close match" action={{ href: '#/assessment', label: 'Reword' }}>
+        <Notice icon="alert" title="Some skills had no close match" action={{ href: '#/profile', label: 'Reword' }}>
           {uncertain.map((m) => `“${m.query}” was read as ${m.skill}`).join('; ')}. They count for less in your ranking.
         </Notice>
       )}
@@ -86,7 +86,7 @@ export function SkillReading({ matches }) {
               </li>
             ))}
           </ul>
-          <p className="muted small"><a href="#/assessment">Edit your skills</a></p>
+          <p className="muted small"><a href="#/profile">Edit your skills</a></p>
         </Disclosure>
       </section>
     </>
@@ -112,7 +112,7 @@ export function MatchCard({ match: r }) {
       )}
       <div className="card-links">
         <a href={`#/careers/${r.career_code}`}>See why it fits<span className="visually-hidden">: {r.title}</span> <Icon name="forward" size={14} /></a>
-        <a href={`#/roadmap/${r.career_code}`}>Skills roadmap<span className="visually-hidden"> for {r.title}</span> <Icon name="forward" size={14} /></a>
+        <a href={`#/plan/${r.career_code}`}>Skills roadmap<span className="visually-hidden"> for {r.title}</span> <Icon name="forward" size={14} /></a>
       </div>
     </li>
   )
