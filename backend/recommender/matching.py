@@ -82,8 +82,10 @@ class SkillMatcher:
     @staticmethod
     def clean(skills):
         """Distinct non-empty skills, trimmed, in the order given (repeats ignore case)."""
-        cleaned = (s.strip() for s in skills if s and s.strip())
-        return list({q.casefold(): q for q in reversed(list(cleaned))}.values())[::-1]
+        distinct = {}
+        for q in (s.strip() for s in skills if s and s.strip()):
+            distinct.setdefault(q.casefold(), q)
+        return list(distinct.values())
 
     def match(self, skills):
         """One SkillMatch per distinct non-empty skill, in the order given."""
