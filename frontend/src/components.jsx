@@ -9,7 +9,9 @@ import { Icon } from './icons.jsx'
 
 export function LogoTile({ size = 42 }) {
   return (
-    <span className="logo-tile" style={{ '--size': `${size}px` }} aria-hidden="true">A</span>
+    <span className="logo-tile" style={{ '--size': `${size}px` }} aria-hidden="true">
+      <img src="/brand/ajiraguide-mark.png" alt="" />
+    </span>
   )
 }
 
