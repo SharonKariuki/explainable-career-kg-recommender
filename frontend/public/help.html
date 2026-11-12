@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AjiraGuide user guide</title>
+    <style>
+      :root {
+        --base: #efe8e2;
+        --card: #ffffff;
+        --fg: #111113;
+        --muted: #6b6b73;
+        --line: #ececf0;
+        --gold: #b07a22;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --base: #141416;
+          --card: #1c1c20;
+          --fg: #f2f2f4;
+          --muted: #a6a5ae;
+          --line: #2c2c32;
+          --gold: #e0a03a;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--base);
+        color: var(--fg);
+        font: 16px/1.6 Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 32px auto;
+        padding: 32px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+      }
+      @media (max-width: 760px) {
+        main { margin: 16px; padding: 20px; }
+      }
+      h1 { font-size: 28px; margin: 0 0 4px; }
+      h2 { font-size: 20px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+      h3 { font-size: 16px; margin: 20px 0 6px; }
+      p, li { color: var(--fg); }
+      .muted { color: var(--muted); }
+      a { color: var(--gold); }
+      ul, ol { padding-left: 22px; }
+      nav ol { columns: 2; column-gap: 32px; }
+      @media (max-width: 560px) { nav ol { columns: 1; } }
+      table { border-collapse: collapse; width: 100%; font-size: 15px; }
+      th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>User guide</h1>
+      <p class="muted">AjiraGuide · how to use it</p>
+
+      <p>
+        AjiraGuide suggests technology careers from the skills you already have, explains each suggestion in plain
+        language and shows the skills to build next. It works even if you can only list a few skills.
+      </p>
+
+      <nav aria-label="Contents">
+        <ol>
+          <li><a href="#account">Create an account</a></li>
+          <li><a href="#skills">Add your skills</a></li>
+          <li><a href="#about">Tell us about you</a></li>
+          <li><a href="#matches">Read your matches</a></li>
+          <li><a href="#career">A career's page</a></li>
+          <li><a href="#roadmap">Plan with the roadmap</a></li>
+          <li><a href="#more">Explore, saved and history</a></li>
+          <li><a href="#settings">Your account</a></li>
+          <li><a href="#problems">If something goes wrong</a></li>
+          <li><a href="#admins">For administrators</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="account">1. Create an account</h2>
+      <ul>
+        <li>Choose <strong>Create an account</strong>, pick a username and a password. Your full name and email are optional.</li>
+        <li>Or choose <strong>Sign in with Google</strong>: AjiraGuide receives only your name and email address.</li>
+        <li>You stay signed in on that browser until you sign out.</li>
+      </ul>
+
+      <h2 id="skills">2. Add your skills</h2>
+      <ol>
+        <li>Open <strong>Your skills</strong> and type a skill in your own words: a tool (<em>Python</em>, <em>Excel</em>),
+          a topic (<em>statistics</em>) or something you do well (<em>talking to customers</em>).</li>
+        <li>Suggestions appear as you type. Pick one, or keep your own wording: AjiraGuide matches by meaning, so
+          <em>coding</em> and <em>programming</em> are understood alike.</li>
+        <li>Add <strong>three or more</strong> skills for better results, then choose <strong>Save and see my careers</strong>.</li>
+      </ol>
+      <p>
+        If a skill had no close match, AjiraGuide says so and treats it with caution. Try rewording it, for example
+        <em>spreadsheets</em> instead of <em>sheets</em>.
+      </p>
+
+      <h2 id="about">3. Tell us about you (optional)</h2>
+      <p>
+        Below your skills, <strong>About you</strong> asks for your education level, field of study, career interests
+        and work or project experience. AjiraGuide compares what you write with each career's description and counts it
+        towards your matches. Write a sentence or two in plain words, for example
+        <em>"I like finding patterns in data and explaining them to others."</em> Leave it empty to be matched on skills alone.
+      </p>
+
+      <h2 id="matches">4. Read your matches</h2>
+      <p><strong>Matches</strong> lists careers best first. Each card shows:</p>
+      <table>
+        <tr><th>Fit</th><td><strong>Strong</strong>, <strong>good</strong> or <strong>possible</strong>, from the match score.</td></tr>
+        <tr><th>Score</th><td>From 0 to 1. It combines how many of your skills the career uses, how closely your profile
+          matches the career's description, and how close the career is to your skills in the skills graph.</td></tr>
+        <tr><th>Reason</th><td>Which of your skills the career uses, and how much it needs them.</td></tr>
+      </table>
+      <p>Use the search box and domain filters to narrow the list.</p>
+
+      <h2 id="career">5. A career's page</h2>
+      <ul>
+        <li><strong>Why it matches:</strong> the plain-language explanation. Every statement in it comes from the score
+          itself, so it never claims more than the system used.</li>
+        <li><strong>Skills to build:</strong> what the career needs that you have not listed, most important first.</li>
+        <li><strong>Technical details</strong> (collapsed): the score breakdown and a diagram of how your skills connect
+          to the career.</li>
+        <li><strong>Save</strong> keeps the career in your saved list.</li>
+      </ul>
+
+      <h2 id="roadmap">6. Plan with the roadmap</h2>
+      <p>
+        <strong>Roadmap</strong> turns a career's missing skills into a checklist. Mark a skill as
+        <strong>learning</strong> or <strong>done</strong>; adding a skill you have finished to your profile updates your matches.
+      </p>
+
+      <h2 id="more">7. Explore, saved and history</h2>
+      <ul>
+        <li><strong>Explore:</strong> all 24 careers, including those your skills do not reach yet.</li>
+        <li><strong>Saved:</strong> the careers you bookmarked.</li>
+        <li><strong>History:</strong> a snapshot of your matches each time you change your skills or background, with each
+          career marked as moved up, down or new.</li>
+      </ul>
+
+      <h2 id="settings">8. Your account</h2>
+      <p>
+        In <strong>Settings</strong> you can change your name, email and password, switch between light and dark mode,
+        and delete your account. Deleting removes your account, skills, saved careers, progress and history straight away.
+      </p>
+
+      <h2 id="problems">9. If something goes wrong</h2>
+      <table>
+        <tr><th>"AjiraGuide is starting up"</th><td>The server sleeps when nobody is using it. Wait up to a minute; the page
+          carries on by itself.</td></tr>
+        <tr><th>"Can't reach AjiraGuide"</th><td>Check your internet connection, then choose <strong>Try again</strong>.</td></tr>
+        <tr><th>"Your session has ended"</th><td>Sign in again. This happens after signing out elsewhere or changing your password.</td></tr>
+        <tr><th>No Google button</th><td>Google sign-in may be blocked by your browser's privacy settings; use a username and password instead.</td></tr>
+        <tr><th>Few or odd matches</th><td>Add more skills, reword skills marked as loosely matched, or fill in <strong>About you</strong>.</td></tr>
+      </table>
+      <p>
+        AjiraGuide covers technology careers only, uses O*NET data from the United States labour market, and supports
+        English only. Treat its suggestions as a starting point, not a replacement for a career counsellor.
+      </p>
+
+      <h2 id="admins">10. For administrators</h2>
+      <p>
+        Administrators sign in at the API's <code>/admin/</code> address. There they can manage users and their profiles,
+        browse the careers and skills (read-only; they are rebuilt from O*NET and ESCO with the data pipeline) and open the
+        <strong>System report</strong>: user numbers, cold-start profiles, popular careers and skills, and declared skills
+        that matched nothing closely.
+      </p>
+
+      <p><a href="/">Back to AjiraGuide</a> · <a href="/privacy.html">Privacy policy</a></p>
+    </main>
+  </body>
+</html>
