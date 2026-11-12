@@ -20,39 +20,110 @@ function setToken(token) {
   }
 }
 
+export const OFFLINE_MESSAGE = "Can't reach AjiraGuide. Check your internet connection and try again."
+export const SIGNED_OUT_EVENT = 'ajiraguide:signed-out'
+
+// The hosted backend sleeps when idle; while it starts, the gateway answers
+// 502, 503 or 504. Those requests never reached the app, so they are safe to
+// repeat: wait and retry for about a minute before giving up.
+const WAKING_STATUSES = new Set([502, 503, 504])
+const WAKING_RETRY_MS = [2000, 3000, 5000, 8000, 10000, 12000, 15000]
+
+const wakingListeners = new Set()
+
+// Calls listener(true) while requests wait for the backend to start, then listener(false).
+export function onWaking(listener) {
+  wakingListeners.add(listener)
+  return () => wakingListeners.delete(listener)
+}
+
+function setWaking(waking) {
+  wakingListeners.forEach((listener) => listener(waking))
+}
+
 export class ApiError extends Error {
-  constructor(status, data) {
-    super(firstMessage(data) || `Request failed (${status})`)
+  constructor(status, data, message) {
+    super(message ?? describe(status, data))
     this.status = status
     this.data = data
   }
 }
 
-// DRF errors look like {"detail": "..."} or {"field": ["..."]}.
-function firstMessage(data) {
-  if (!data || typeof data !== 'object') return null
-  if (typeof data.detail === 'string') return data.detail
-  for (const value of Object.values(data)) {
-    if (Array.isArray(value) && value.length) return String(value[0])
-    if (typeof value === 'string') return value
-  }
-  return null
+const FIELD_LABELS = {
+  username: 'Username',
+  password: 'Password',
+  email: 'Email',
+  current_password: 'Current password',
+  new_password: 'New password',
+  confirm: 'Confirmation',
+  skills: 'Skills',
+  education_level: 'Education level',
+  field_of_study: 'Field of study',
+  interests: 'Career interests',
+  experience: 'Experience',
+  top: 'Number of results',
 }
+
+// DRF errors look like {"detail": "..."}, {"non_field_errors": ["..."]} or
+// {"field": ["..."]}; every message is kept, with its field named.
+function messagesOf(data, field = null) {
+  if (typeof data === 'string') {
+    const label = field && field !== 'detail' && field !== 'non_field_errors' ? FIELD_LABELS[field] ?? field : null
+    return [label ? `${label}: ${data}` : data]
+  }
+  if (Array.isArray(data)) return data.flatMap((item) => messagesOf(item, field))
+  if (data && typeof data === 'object') {
+    return Object.entries(data).flatMap(([key, value]) => messagesOf(value, /^\d+$/.test(key) ? field : key))
+  }
+  return []
+}
+
+function describe(status, data) {
+  const detail = messagesOf(data).join(' ')
+  if (status === 400) return detail || 'Some details need fixing. Check the form and try again.'
+  if (status === 401) return 'Your session has ended. Please sign in again.'
+  if (status === 403) return detail || "You don't have permission to do that."
+  if (status === 404) return detail || "We couldn't find that. It may have been removed."
+  if (status === 429) return 'Too many attempts. Please wait a minute and try again.'
+  if (WAKING_STATUSES.has(status)) return 'AjiraGuide is taking longer than usual to start. Please try again in a minute.'
+  if (status >= 500) return 'Something went wrong on our side. Please try again, and if it keeps happening, let us know.'
+  return detail || `Something went wrong (error ${status}). Please try again.`
+}
+
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 async function request(method, path, body) {
   const headers = { 'Content-Type': 'application/json' }
   const token = getToken()
   if (token) headers.Authorization = `Token ${token}`
 
-  const response = await fetch(`/api${path}`, {
-    method,
-    headers,
-    body: body === undefined ? undefined : JSON.stringify(body),
-  })
-  const data = response.status === 204 ? null : await response.json().catch(() => null)
-  if (response.status === 401) setToken(null)
-  if (!response.ok) throw new ApiError(response.status, data)
-  return data
+  for (let attempt = 0; ; attempt++) {
+    let response
+    try {
+      response = await fetch(`/api${path}`, {
+        method,
+        headers,
+        body: body === undefined ? undefined : JSON.stringify(body),
+      })
+    } catch {
+      setWaking(false)
+      throw new ApiError(0, null, OFFLINE_MESSAGE)
+    }
+    if (WAKING_STATUSES.has(response.status) && attempt < WAKING_RETRY_MS.length) {
+      setWaking(true)
+      await wait(WAKING_RETRY_MS[attempt])
+      continue
+    }
+    setWaking(false)
+
+    const data = response.status === 204 ? null : await response.json().catch(() => null)
+    if (response.status === 401) {
+      setToken(null)
+      if (token) window.dispatchEvent(new Event(SIGNED_OUT_EVENT))
+    }
+    if (!response.ok) throw new ApiError(response.status, data)
+    return data
+  }
 }
 
 export async function register(username, password, email) {

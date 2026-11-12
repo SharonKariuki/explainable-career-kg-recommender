@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { getToken, logout, me } from './api.js'
-import { IconButton, LogoTile, Status, ThemeToggle } from './components.jsx'
+import { SIGNED_OUT_EVENT, getToken, logout, me } from './api.js'
+import { IconButton, LogoTile, Status, ThemeToggle, WakingNotice } from './components.jsx'
 import { Icon } from './icons.jsx'
 import { navigate, useRoute } from './router.js'
 import { useTheme } from './theme.js'
@@ -43,15 +43,29 @@ function App() {
   const path = route === '/profile' ? '/assessment' : route  // the old address still works
   const [user, setUser] = useState(null)
   const [checking, setChecking] = useState(Boolean(getToken()))
+  const [startupError, setStartupError] = useState(null)
+  const [signedOutNotice, setSignedOutNotice] = useState(null)
   const [theme, toggleTheme] = useTheme()
 
-  // A saved token may have expired or been revoked; confirm it on load.
+  // A saved token may have expired or been revoked; confirm it on load. Only a
+  // 401 means signed out: a network error or a sleeping server keeps the token.
   useEffect(() => {
     if (!getToken()) return
     me()
       .then(setUser)
-      .catch(() => setUser(null))
+      .catch((err) => (err.status === 401 ? setUser(null) : setStartupError(err.message)))
       .finally(() => setChecking(false))
+  }, [])
+
+  // Any request answered 401 (expired or revoked token) returns to sign-in.
+  useEffect(() => {
+    const onSignedOut = () => {
+      setUser(null)
+      setSignedOutNotice('Your session has ended. Please sign in again.')
+      navigate('/')
+    }
+    window.addEventListener(SIGNED_OUT_EVENT, onSignedOut)
+    return () => window.removeEventListener(SIGNED_OUT_EVENT, onSignedOut)
   }, [])
 
   async function signOut() {
@@ -66,16 +80,19 @@ function App() {
   }
 
   function signedIn(account) {
+    setSignedOutNotice(null)
     setUser(account)
     navigate('/dashboard')
   }
 
-  if (checking) return <main className="auth"><Status loading /></main>
+  if (checking) return <main className="auth"><WakingNotice /><Status loading /></main>
+  if (startupError) return <main className="auth"><Status error={startupError} /></main>
   if (!user) {
     return (
       <main className="auth">
+        <WakingNotice />
         <ThemeToggle theme={theme} onToggle={toggleTheme} className="auth-theme" />
-        <AuthScreen onSignedIn={signedIn} />
+        <AuthScreen onSignedIn={signedIn} notice={signedOutNotice} />
       </main>
     )
   }
@@ -127,7 +144,10 @@ function App() {
         </div>
       </aside>
 
-      <main className="content">{screen}</main>
+      <main className="content">
+        <WakingNotice />
+        {screen}
+      </main>
 
       <nav className="tabs glass" aria-label="Main">
         {NAV.map((n, i) =>
