@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { getProgress, getRecommendations, getSaved } from '../api.js'
-import { EmptyState, IconButton, Kpi, LogoTile, Notice, Pill, Progress, Status, ThemeToggle } from '../components.jsx'
+import { EmptyState, Kpi, Notice, Pill, Progress, Status } from '../components.jsx'
 import { capitalise } from '../format.js'
 import { Icon } from '../icons.jsx'
 
@@ -51,7 +51,7 @@ function nextStep(skillCount, uncertain, top) {
   }
 }
 
-export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme }) {
+export default function DashboardScreen({ user }) {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
   const [hello] = useState(() => greeting(new Date().getHours()))
@@ -68,20 +68,9 @@ export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme 
 
   const header = (
     <header className="greet">
-      <div className="who">
-        <LogoTile />
-        <div>
-          <p>{hello}</p>
-          <h1>{user.username}</h1>
-        </div>
-      </div>
-      {/* On phones there is no sidebar, so its theme and sign-out controls live here. */}
-      <div className="greet-actions phone-only">
-        <IconButton icon="bookmark" label="Saved careers" href="#/saved" />
-        <IconButton icon="matches" label="History of your matches" href="#/history" />
-        <IconButton icon="settings" label="Settings" href="#/settings" />
-        <ThemeToggle theme={theme} onToggle={onToggleTheme} />
-        <IconButton icon="logout" label="Sign out" onClick={onSignOut} />
+      <div>
+        <p>{hello}</p>
+        <h1>{user.username}</h1>
       </div>
     </header>
   )

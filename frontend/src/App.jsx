@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 
 import { SIGNED_OUT_EVENT, getToken, logout, me } from './api.js'
-import { IconButton, LogoTile, Status, ThemeToggle, WakingNotice } from './components.jsx'
+import { Status, ThemeToggle, WakingNotice } from './components.jsx'
 import { Icon } from './icons.jsx'
 import { navigate, useRoute } from './router.js'
 import { useTheme } from './theme.js'
+import { TopBar } from './TopBar.jsx'
 import AuthScreen from './screens/AuthScreen.jsx'
 import CareerDetailScreen from './screens/CareerDetailScreen.jsx'
 import CareersScreen from './screens/CareersScreen.jsx'
@@ -20,8 +21,8 @@ const CAREER_ROUTE = /^\/careers\/([\w.-]+)$/
 const ROADMAP_ROUTE = /^\/roadmap(?:\/([\w.-]+))?$/
 const HISTORY_ROUTE = /^\/history(?:\/(\d+))?$/
 
-// The sidebar (wide screens) and the floating tab bar (phones) share these;
-// on phones the middle one is the round black button.
+// The top bar's pills (wide screens) and the floating tab bar (phones) share
+// these; on phones the middle one is the round navy button.
 const NAV = [
   { path: '/dashboard', label: 'Home', icon: 'home' },
   { path: '/recommendations', label: 'Matches', icon: 'matches' },
@@ -30,16 +31,12 @@ const NAV = [
   { path: '/roadmap', label: 'Roadmap', icon: 'roadmap' },
 ]
 
-// Sidebar only; on phones they are reached from the dashboard.
+// Reached from the avatar menu, at every width.
 const MORE_NAV = [
   { path: '/saved', label: 'Saved', icon: 'bookmark' },
   { path: '/history', label: 'History', icon: 'matches' },
   { path: '/settings', label: 'Settings', icon: 'settings' },
 ]
-
-function initials(name) {
-  return name.slice(0, 2).toUpperCase()
-}
 
 function App() {
   const route = useRoute()
@@ -114,40 +111,14 @@ function App() {
   else if (path === '/settings') {
     screen = <SettingsScreen theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
   }
-  else screen = <DashboardScreen user={user} onSignOut={signOut} theme={theme} onToggleTheme={toggleTheme} />
+  else screen = <DashboardScreen user={user} />
 
   const active = [...NAV, ...MORE_NAV].find((n) => path.startsWith(n.path))?.path ?? '/dashboard'
   const current = (n) => (n.path === active ? 'page' : undefined)
 
   return (
     <div className="app">
-      <aside className="sidebar glass">
-        <a href="#/dashboard" className="brand">
-          <LogoTile size={36} />
-          AjiraGuide
-        </a>
-        <nav aria-label="Main">
-          {NAV.map((n) => (
-            <a key={n.path} href={`#${n.path}`} aria-current={current(n)}>
-              <Icon name={n.icon} />
-              {n.label}
-            </a>
-          ))}
-          <hr className="nav-rule" />
-          {MORE_NAV.map((n) => (
-            <a key={n.path} href={`#${n.path}`} aria-current={current(n)}>
-              <Icon name={n.icon} />
-              {n.label}
-            </a>
-          ))}
-        </nav>
-        <div className="sidebar-user">
-          <span className="av">{initials(user.username)}</span>
-          <a className="grow truncate" href="#/settings" title="Settings">{user.username}</a>
-          <ThemeToggle theme={theme} onToggle={toggleTheme} glass={false} />
-          <IconButton icon="logout" label="Sign out" onClick={signOut} glass={false} />
-        </div>
-      </aside>
+      <TopBar nav={NAV} more={MORE_NAV} active={active} user={user} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} />
 
       <main className="content">
         <WakingNotice />

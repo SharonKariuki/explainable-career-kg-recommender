@@ -35,7 +35,7 @@ export function PageHeader({ title, subtitle, back, children }) {
   )
 }
 
-// glass={false} gives the quieter borderless variant used inside the sidebar.
+// glass={false} gives the quieter borderless variant.
 export function IconButton({ icon, label, onClick, href, glass = true, className = '' }) {
   const classes = `icon-btn ${glass ? 'glass' : 'plain'} ${className}`
   if (href) {
