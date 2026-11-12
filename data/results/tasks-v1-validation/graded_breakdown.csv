@@ -1,0 +1,21 @@
+dataset,role,covariate,value,system,profiles,ndcg@5
+tasks-v1-validation,validation,description cosine third,0,full,41,0.2077
+tasks-v1-validation,validation,description cosine third,0,graph_only,41,0.0
+tasks-v1-validation,validation,description cosine third,0,keyword,41,0.0817
+tasks-v1-validation,validation,description cosine third,0,sbert_only,41,0.343
+tasks-v1-validation,validation,description cosine third,1,full,39,0.3602
+tasks-v1-validation,validation,description cosine third,1,graph_only,39,0.0
+tasks-v1-validation,validation,description cosine third,1,keyword,39,0.1322
+tasks-v1-validation,validation,description cosine third,1,sbert_only,39,0.6357
+tasks-v1-validation,validation,description cosine third,2,full,40,0.4169
+tasks-v1-validation,validation,description cosine third,2,graph_only,40,0.0
+tasks-v1-validation,validation,description cosine third,2,keyword,40,0.1604
+tasks-v1-validation,validation,description cosine third,2,sbert_only,40,0.7913
+tasks-v1-validation,validation,names a graph skill,False,full,100,0.351
+tasks-v1-validation,validation,names a graph skill,False,graph_only,100,0.0
+tasks-v1-validation,validation,names a graph skill,False,keyword,100,0.0965
+tasks-v1-validation,validation,names a graph skill,False,sbert_only,100,0.5917
+tasks-v1-validation,validation,names a graph skill,True,full,20,0.207
+tasks-v1-validation,validation,names a graph skill,True,graph_only,20,0.0
+tasks-v1-validation,validation,names a graph skill,True,keyword,20,0.2637
+tasks-v1-validation,validation,names a graph skill,True,sbert_only,20,0.567
