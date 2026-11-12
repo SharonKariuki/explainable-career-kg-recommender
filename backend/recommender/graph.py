@@ -11,7 +11,9 @@ career requires a skill, weighted 0-1:
 - ESCO skills: consensus weight over the linked ESCO occupations
 
 When two sources give the same career-skill edge, the higher weight wins and
-both sources are recorded.
+both sources are recorded, each with its own weight. Scores use the edge
+weight; requirement labels use `requirement_weight`, which does not let the
+Hot Technology flag alone make a tool a core requirement.
 """
 
 from collections import deque
@@ -21,6 +23,7 @@ import networkx as nx
 import pandas as pd
 
 from pipeline import PROCESSED_DIR
+from pipeline.onet import TOOL_WEIGHTS
 
 # Importance 3 ("Important") on O*NET's 1-5 scale. Every career is rated on
 # all 68 elements, so without a cutoff every career links to every generic
@@ -69,8 +72,9 @@ def build_graph():
             edge = graph.edges[career, skill]
             edge['weight'] = max(edge['weight'], weight)
             edge['sources'].add(source)
+            edge['source_weights'][source] = max(edge['source_weights'].get(source, 0), weight)
         else:
-            graph.add_edge(career, skill, weight=weight, sources={source})
+            graph.add_edge(career, skill, weight=weight, sources={source}, source_weights={source: weight})
 
     rated = read('onet_skills.csv')
     for row in rated[rated['importance'] >= IMPORTANCE_CUTOFF].itertuples():
@@ -112,6 +116,16 @@ class KnowledgeGraphManager:
     def skills_of(self, career):
         """{skill node: edge weight} for everything the career requires."""
         return {skill: data['weight'] for _, skill, data in self.graph.edges(career, data=True)}
+
+    def requirement_weight(self, career, skill):
+        """The weight a skill's requirement label is read from. It is the edge weight,
+        except that a tool O*NET flags only as Hot Technology counts like any other tool:
+        that flag means in demand across many occupations, not core to this one. Only
+        In Demand tools, and rated or ESCO skills weighted 0.75 or more, are core."""
+        return max(
+            TOOL_WEIGHTS['other'] if source == 'onet_tool' and weight < TOOL_WEIGHTS['in_demand'] else weight
+            for source, weight in self.graph.edges[career, skill]['source_weights'].items()
+        )
 
     def careers_requiring(self, skill):
         return {career: data['weight'] for _, career, data in self.graph.edges(skill, data=True)}

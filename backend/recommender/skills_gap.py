@@ -32,6 +32,7 @@ class GapSkill:
     idf: float
     priority: float
     sources: tuple
+    requirement_weight: float | None = None  # what its label is read from; None means edge_weight
 
 
 class SkillsGapModule:
@@ -57,6 +58,7 @@ class SkillsGapModule:
                 idf=idf,
                 priority=weight * weight * idf,
                 sources=tuple(sorted(self.kg.graph.edges[career, skill]['sources'])),
+                requirement_weight=self.kg.requirement_weight(career, skill),
             ))
         items.sort(key=lambda g: (-g.priority, g.label))
         return tuple(items[:limit]) if limit else tuple(items)

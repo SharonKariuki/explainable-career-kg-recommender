@@ -8,7 +8,7 @@ that, ranking a profile takes well under a second.
 from dataclasses import asdict
 
 from recommender.engine import DEFAULT_PARAMS, get_engine
-from recommender.explanation import ExplanationGenerator, fit_level, requirement_level
+from recommender.explanation import ExplanationGenerator, fit_level, requirement_level, requirement_of
 from recommender.skills_gap import get_skills_gap
 
 
@@ -59,14 +59,15 @@ def matched_skill(contribution):
         'skill_id': c.skill_id,
         'label': c.skill_label,
         'query': c.query,
-        'requirement': requirement_level(c.edge_weight)[1],
+        'requirement': requirement_of(c)[1],
         'low_confidence': c.low_confidence,
     }
 
 
 def with_requirement(item):
-    """Add the plain label ('Core requirement', 'Important', 'Supporting') for its edge weight."""
-    return {**item, 'requirement': requirement_level(item['edge_weight'])[1]}
+    """Add the plain label ('Core requirement', 'Important', 'Supporting') for its requirement weight."""
+    weight = item.get('requirement_weight')
+    return {**item, 'requirement': requirement_level(item['edge_weight'] if weight is None else weight)[1]}
 
 
 def recommendation_detail(recommendation, rank_position, matches):
@@ -105,14 +106,14 @@ def career_node_id(code):
     return node if node in kg().graph and kg().node(node)['kind'] == 'career' else None
 
 
-def requirement_item(skill, weight, have):
+def requirement_item(career, skill, weight, have):
     node = kg().node(skill)
     return {
         'skill_id': skill,
         'label': node['label'],
         'skill_type': node['skill_type'],
         'edge_weight': weight,
-        'requirement': requirement_level(weight)[1],
+        'requirement': requirement_level(kg().requirement_weight(career, skill))[1],
         'have': skill in have,
     }
 
@@ -149,10 +150,10 @@ def career_profile(career, matches=()):
     tools = [s for s in ordered if kg().node(s)['skill_type'] == 'tool']
     return {
         **career_summary(career),
-        'requirements': [requirement_item(s, required[s], have) for s in skills[:SHOWN_REQUIREMENTS]],
-        'tools': [requirement_item(s, required[s], have) for s in tools[:SHOWN_TOOLS]],
+        'requirements': [requirement_item(career, s, required[s], have) for s in skills[:SHOWN_REQUIREMENTS]],
+        'tools': [requirement_item(career, s, required[s], have) for s in tools[:SHOWN_TOOLS]],
         # Every required skill the user has, which the top lists above may leave out.
-        'your_skills': [requirement_item(s, required[s], have) for s in ordered if s in have],
+        'your_skills': [requirement_item(career, s, required[s], have) for s in ordered if s in have],
     }
 
 

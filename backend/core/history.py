@@ -11,7 +11,7 @@ from django.db import transaction
 from core import services
 from core.models import Recommendation, RecommendationExplanation, RecommendationRun, SkillGap
 from recommender.engine import DEFAULT_PARAMS
-from recommender.explanation import ExplanationGenerator, fit_level, requirement_level
+from recommender.explanation import ExplanationGenerator, fit_level, requirement_of
 from recommender.skills_gap import get_skills_gap
 
 SNAPSHOT_SIZE = 10
@@ -38,7 +38,7 @@ def snapshot(user, profile):
         RecommendationExplanation.objects.create(recommendation=stored, sentences=list(explainer.explain(r).sentences))
         SkillGap.objects.bulk_create(
             SkillGap(recommendation=stored, position=i, skill_id=g.skill_id, label=g.label,
-                     requirement=requirement_level(g.edge_weight)[1])
+                     requirement=requirement_of(g)[1])
             for i, g in enumerate(get_skills_gap().gaps(r, matches, limit=GAPS_PER_RECOMMENDATION), 1)
         )
     return run

@@ -44,11 +44,18 @@ def requirement_level(edge_weight):
     return next(level for level in REQUIREMENT_LEVELS if edge_weight >= level[0])
 
 
+def requirement_of(item):
+    """The level of a skill contribution or gap skill, read from its requirement weight
+    (see KnowledgeGraphManager.requirement_weight) when it has one."""
+    weight = getattr(item, 'requirement_weight', None)
+    return requirement_level(item.edge_weight if weight is None else weight)
+
+
 def requirement_groups(contributions):
     """'statistics and Python as core requirements and machine learning as a supporting skill'."""
     groups = []
     for level in REQUIREMENT_LEVELS:
-        members = [name(c) for c in contributions if requirement_level(c.edge_weight) is level]
+        members = [name(c) for c in contributions if requirement_of(c) is level]
         if members:
             groups.append(f'{join(members)} as {level[2] if len(members) == 1 else level[3]}')
     return groups

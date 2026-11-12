@@ -2,10 +2,10 @@ from recommender.engine import ProximityPath, Recommendation, ScoreComponents, S
 from recommender.explanation import ExplanationGenerator, fit_level
 
 
-def contribution(label, query=None, weight=1.0, similarity=1.0, low=False, share=0.2):
+def contribution(label, query=None, weight=1.0, similarity=1.0, low=False, share=0.2, requirement=None):
     return SkillContribution(
         query=query or label, skill_id=f'tool:{label}', skill_label=label, match_similarity=similarity,
-        low_confidence=low, edge_weight=weight, idf=1.0, coverage_share=share,
+        low_confidence=low, edge_weight=weight, idf=1.0, coverage_share=share, requirement_weight=requirement,
     )
 
 
@@ -30,6 +30,12 @@ def test_requirements_are_grouped_by_level_with_the_users_own_words():
     text = explain(r).text
     assert "statistics and Structured query language SQL (your 'sql') as core requirements" in text
     assert 'machine learning as a supporting skill' in text
+
+
+def test_requirement_labels_use_the_requirement_weight_not_the_score_weight():
+    # A Hot Technology tool scores at 0.75 but is labelled from its requirement weight.
+    r = recommendation([contribution('Cascading style sheets CSS', query='CSS', weight=0.75, requirement=0.5)])
+    assert "Cascading style sheets CSS (your 'CSS') as an important skill" in explain(r).text
 
 
 def test_only_the_top_three_are_listed_but_the_rest_are_counted():
