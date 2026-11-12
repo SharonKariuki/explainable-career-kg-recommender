@@ -101,7 +101,22 @@ In Google Cloud Console > **APIs & Services**:
    While it is **Testing**, only listed test users can sign in. Sign-in asks
    only for name and email, which needs no Google review.
 
-## 6. Final check
+## 6. Administrators
+
+The admin site is at `https://<api host>/admin/` (the Azure address, not the
+Vercel one). It manages users and their profiles, shows the careers and skills
+catalogue, and has a **System report** (users, cold-start profiles, popular
+careers and skills, and declared skills with no close match).
+
+Create the first administrator from a computer that has the backend set up,
+pointing it at the production database for one command:
+
+```bash
+cd backend
+DB_HOST='<neon host>' DB_NAME='<neon database>' DB_USER='<neon user>' DB_PASSWORD='<neon password>' DB_SSLMODE=require python manage.py createsuperuser
+```
+
+## 7. Final check
 
 Open the Vercel address in a private window, create an account with a
 password, add skills and open a recommendation; then sign out and sign in with

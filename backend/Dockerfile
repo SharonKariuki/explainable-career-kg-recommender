@@ -23,6 +23,9 @@ COPY backend/ .
 RUN DJANGO_SECRET_KEY=build DB_NAME=x DB_USER=x DB_PASSWORD=x DB_HOST=x DB_PORT=5432 \
     python -c "import django; import os; os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings'; django.setup(); from core.services import warm_up; warm_up()"
 
+# The admin site's CSS and JS, served by WhiteNoise.
+RUN DJANGO_SECRET_KEY=build DB_NAME=x DB_USER=x DB_PASSWORD=x DB_HOST=x DB_PORT=5432     python manage.py collectstatic --noinput
+
 RUN useradd --create-home app && chown -R app /app
 USER app
 

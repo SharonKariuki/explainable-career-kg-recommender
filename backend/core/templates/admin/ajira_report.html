@@ -1,0 +1,69 @@
+{% extends "admin/base_site.html" %}
+{% block breadcrumbs %}<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Home</a> &rsaquo; System report</div>{% endblock %}
+{% block content %}
+<div id="content-main">
+  <div class="module">
+    <h2>Users</h2>
+    <table style="width: 100%;">
+      <tr><th>Accounts</th><td>{{ report.users.total }}</td></tr>
+      <tr><th>Joined in the last 7 days</th><td>{{ report.users.last_7_days }}</td></tr>
+      <tr><th>Joined in the last 30 days</th><td>{{ report.users.last_30_days }}</td></tr>
+      <tr><th>Signed up with Google</th><td>{{ report.users.google }}</td></tr>
+      <tr><th>Administrators</th><td>{{ report.users.staff }}</td></tr>
+    </table>
+  </div>
+
+  <div class="module">
+    <h2>Profiles</h2>
+    <table style="width: 100%;">
+      <tr><th>Profiles with at least one skill</th><td>{{ report.profiles.with_skills }}</td></tr>
+      <tr><th>Cold-start profiles ({{ report.profiles.cold_start_limit }} skills or fewer)</th><td>{{ report.profiles.cold_start }}</td></tr>
+      <tr><th>Average skills per profile</th><td>{{ report.profiles.mean_skills }}</td></tr>
+      <tr><th>Roadmap skills being learned / done</th><td>{{ report.progress.learning }} / {{ report.progress.done }}</td></tr>
+    </table>
+  </div>
+
+  <div class="module">
+    <h2>Most common first recommendation</h2>
+    <p style="padding: 0 10px;">Across the {{ report.ranked_profiles }} most recently updated profiles.</p>
+    <table style="width: 100%;">
+      <thead><tr><th>Career</th><th>Profiles</th></tr></thead>
+      {% for title, n in report.first_choice %}<tr><td>{{ title }}</td><td>{{ n }}</td></tr>{% empty %}<tr><td colspan="2">No profiles yet.</td></tr>{% endfor %}
+    </table>
+  </div>
+
+  <div class="module">
+    <h2>Most saved careers</h2>
+    <table style="width: 100%;">
+      <thead><tr><th>Career</th><th>Saves</th></tr></thead>
+      {% for title, n in report.saved %}<tr><td>{{ title }}</td><td>{{ n }}</td></tr>{% empty %}<tr><td colspan="2">Nothing saved yet.</td></tr>{% endfor %}
+    </table>
+  </div>
+
+  <div class="module">
+    <h2>Most declared skills</h2>
+    <table style="width: 100%;">
+      <thead><tr><th>Skill</th><th>Profiles</th></tr></thead>
+      {% for skill, n in report.declared %}<tr><td>{{ skill }}</td><td>{{ n }}</td></tr>{% empty %}<tr><td colspan="2">No skills yet.</td></tr>{% endfor %}
+    </table>
+  </div>
+
+  <div class="module">
+    <h2>Skills with no close match</h2>
+    <p style="padding: 0 10px;">Declared skills below the low-confidence threshold: candidates for new skill names in the data.</p>
+    <table style="width: 100%;">
+      <thead><tr><th>Skill as typed</th><th>Profiles</th><th>Nearest skill</th><th>Similarity</th></tr></thead>
+      {% for u in report.unmatched %}<tr><td>{{ u.skill }}</td><td>{{ u.profiles }}</td><td>{{ u.nearest }}</td><td>{{ u.similarity|floatformat:2 }}</td></tr>{% empty %}<tr><td colspan="4">Every declared skill matched closely.</td></tr>{% endfor %}
+    </table>
+  </div>
+
+  <div class="module">
+    <h2>Recommender</h2>
+    <table style="width: 100%;">
+      <tr><th>Careers / skills / links in the graph</th><td>{{ report.engine.careers }} / {{ report.engine.skills }} / {{ report.engine.edges }}</td></tr>
+      <tr><th>Weights: coverage / similarity / proximity</th><td>{{ report.engine.coverage_weight }} / {{ report.engine.similarity_weight }} / {{ report.engine.proximity_weight }}</td></tr>
+      <tr><th>Traversal depth / low-confidence threshold</th><td>{{ report.engine.max_depth }} / {{ report.engine.low_confidence_threshold }}</td></tr>
+    </table>
+  </div>
+</div>
+{% endblock %}

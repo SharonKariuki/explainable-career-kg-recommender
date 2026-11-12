@@ -1,0 +1,11 @@
+{% extends "admin/index.html" %}
+{% block content %}
+<div class="module" style="margin-bottom: 20px;">
+  <table style="width: 100%;">
+    <caption>AjiraGuide</caption>
+    <tr><th scope="row"><a href="{% url 'admin:report' %}">System report</a></th><td>Users, cold-start profiles, popular careers and skills, unmatched skills</td></tr>
+    <tr><th scope="row"><a href="{% url 'admin:catalogue' %}">Careers and skills</a></th><td>The occupational data the recommender uses (read-only)</td></tr>
+  </table>
+</div>
+{{ block.super }}
+{% endblock %}
