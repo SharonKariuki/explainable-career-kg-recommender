@@ -166,6 +166,8 @@ export const saveCareer = (code) => request('PUT', `/saved/${encodeURIComponent(
 export const unsaveCareer = (code) => request('DELETE', `/saved/${encodeURIComponent(code)}/`)
 export const searchSkills = (query) => request('GET', `/skills/?q=${encodeURIComponent(query)}`)
 export const getProgress = () => request('GET', '/progress/')
+export const getHistory = () => request('GET', '/history/')
+export const getHistoryRun = (id) => request('GET', `/history/${encodeURIComponent(id)}/`)
 export const setProgress = (skillId, status) => request('PUT', '/progress/', { skill_id: skillId, status })
 export const updateAccount = (email) => request('PATCH', '/auth/me/', { email })
 

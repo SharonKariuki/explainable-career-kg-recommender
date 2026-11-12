@@ -33,3 +33,16 @@ export function filterRecommendations(recommendations, domain, query) {
     [r.title, r.reason, ...r.matched_skills.flatMap((s) => [s.label, s.query])].some((t) => t.toLowerCase().includes(q))
   return recommendations.filter((r) => (domain === 'all' || r.domain === domain) && (!q || found(r)))
 }
+
+// For the history screen: a snapshot time, and how a career moved since the previous snapshot.
+export function when(timestamp) {
+  return new Date(timestamp).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })
+}
+
+// "Up 2", "Down 1", "Same place" or "New" against the previous snapshot.
+export function movement(rank, previousRank) {
+  if (previousRank == null) return { label: 'New', tone: 'ok' }
+  if (previousRank === rank) return { label: 'Same place', tone: 'neutral' }
+  const moved = previousRank - rank
+  return moved > 0 ? { label: `Up ${moved}`, tone: 'ok' } : { label: `Down ${-moved}`, tone: 'warn' }
+}

@@ -5,8 +5,8 @@ from rest_framework.exceptions import NotFound, ValidationError
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
-from core import services
-from core.models import SavedCareer, SkillProfile, SkillProgress
+from core import history, services
+from core.models import RecommendationRun, SavedCareer, SkillProfile, SkillProgress
 from core.serializers import (
     AccountSerializer, DeleteAccountSerializer, GoogleLoginSerializer, LoginSerializer, PasswordChangeSerializer,
     RegisterSerializer, SkillProfileSerializer, SkillProgressSerializer,
@@ -102,6 +102,9 @@ def profile(request):
         for field, value in serializer.validated_data.items():
             setattr(skill_profile, field, value.strip() if isinstance(value, str) else value)
         skill_profile.save()
+        latest = RecommendationRun.objects.filter(user=request.user).first()
+        if latest is None or (latest.skills, latest.background) != (skill_profile.skills, skill_profile.background_text()):
+            history.snapshot(request.user, skill_profile)
     return Response(SkillProfileSerializer(skill_profile).data)
 
 
@@ -236,3 +239,22 @@ def progress(request):
             SkillProgress.objects.update_or_create(user=request.user, skill_id=skill_id, defaults={'status': new_status})
     items = SkillProgress.objects.filter(user=request.user).order_by('-updated_at')
     return Response({'skills': [progress_item(p) for p in items if services.skill_label(p.skill_id)]})
+
+
+# ---- Recommendation history ----
+
+@api_view(['GET'])
+def recommendation_history(request):
+    """The user's snapshots, newest first, each marked when its top three changed."""
+    runs = list(RecommendationRun.objects.filter(user=request.user).prefetch_related('recommendations'))
+    return Response({'runs': [history.run_summary(run, runs[i + 1] if i + 1 < len(runs) else None)
+                              for i, run in enumerate(runs)]})
+
+
+@api_view(['GET'])
+def recommendation_history_detail(request, run_id):
+    run = RecommendationRun.objects.filter(user=request.user, id=run_id).first()
+    if run is None:
+        raise NotFound('That snapshot was not found.')
+    previous = RecommendationRun.objects.filter(user=request.user, created_at__lte=run.created_at, id__lt=run.id).first()
+    return Response(history.run_detail(run, previous))
