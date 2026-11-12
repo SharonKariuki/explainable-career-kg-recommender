@@ -17,6 +17,7 @@ User = get_user_model()
 
 class RegisterSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=150)
+    name = serializers.CharField(max_length=150, required=False, allow_blank=True)  # the full name, kept in first_name
     email = serializers.EmailField(required=False, allow_blank=True)
     password = serializers.CharField(write_only=True)
 
@@ -30,7 +31,8 @@ class RegisterSerializer(serializers.Serializer):
         return data
 
     def create(self, data):
-        return User.objects.create_user(data['username'], data.get('email', ''), data['password'])
+        return User.objects.create_user(data['username'], data.get('email', ''), data['password'],
+                                        first_name=data.get('name', '').strip())
 
 
 MAX_SKILLS = 30
@@ -102,13 +104,17 @@ class GoogleLoginSerializer(serializers.Serializer):
         link = GoogleAccount.objects.select_related('user').filter(subject=claims['sub']).first()
         if link:
             return link.user
-        user = User.objects.create_user(unique_username(claims['email']), claims['email'])  # no usable password
+        user = User.objects.create_user(unique_username(claims['email']), claims['email'],  # no usable password
+                                        first_name=claims.get('name', '')[:150])
         GoogleAccount.objects.create(user=user, subject=claims['sub'])
         return user
 
 
 class AccountSerializer(serializers.Serializer):
-    email = serializers.EmailField(allow_blank=True)
+    """Either field may be sent alone; the full name is kept in User.first_name."""
+
+    email = serializers.EmailField(allow_blank=True, required=False)
+    name = serializers.CharField(max_length=150, allow_blank=True, required=False)
 
 
 class PasswordChangeSerializer(serializers.Serializer):

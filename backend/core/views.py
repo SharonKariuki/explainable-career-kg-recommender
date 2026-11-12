@@ -56,6 +56,7 @@ def logout(request):
 def account(user):
     return {
         'username': user.username,
+        'name': user.first_name,
         'email': user.email,
         'has_password': user.has_usable_password(),
         'google': hasattr(user, 'google_account'),
@@ -69,8 +70,12 @@ def me(request):
     if request.method == 'PATCH':
         serializer = AccountSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user.email = serializer.validated_data['email']
-        user.save(update_fields=['email'])
+        fields = {'email': 'email', 'name': 'first_name'}
+        changed = [fields[k] for k in serializer.validated_data]
+        for key, value in serializer.validated_data.items():
+            setattr(user, fields[key], value.strip())
+        if changed:
+            user.save(update_fields=changed)
     elif request.method == 'DELETE':
         DeleteAccountSerializer(data=request.data, context={'user': user}).is_valid(raise_exception=True)
         user.delete()  # cascades to the token, profile, saved careers and progress

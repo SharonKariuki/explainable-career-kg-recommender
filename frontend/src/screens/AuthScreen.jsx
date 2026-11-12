@@ -63,6 +63,7 @@ export default function AuthScreen({ onSignedIn }) {
   const [mode, setMode] = useState('login')
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
   const [busy, setBusy] = useState(false)
@@ -80,7 +81,7 @@ export default function AuthScreen({ onSignedIn }) {
     setBusy(true)
     setError(null)
     try {
-      const user = isRegister ? await register(username, password, email) : await login(username, password)
+      const user = isRegister ? await register(username, password, email, name.trim()) : await login(username, password)
       onSignedIn(user)
     } catch (err) {
       setError(err.message)
@@ -124,6 +125,12 @@ export default function AuthScreen({ onSignedIn }) {
           </label>
           {isRegister && (
             <label>
+              <span>Full name <span className="muted">(optional)</span></span>
+              <input className="field" value={name} onChange={edit(setName)} autoComplete="name" maxLength={150} />
+            </label>
+          )}
+          {isRegister && (
+            <label>
               <span>Email <span className="muted">(optional)</span></span>
               <input className="field" type="email" value={email} onChange={edit(setEmail)} autoComplete="email" />
             </label>
@@ -164,6 +171,9 @@ export default function AuthScreen({ onSignedIn }) {
           <button type="button" className="link" onClick={switchMode}>
             {isRegister ? 'Sign in' : 'Create an account'}
           </button>
+        </p>
+        <p className="muted small auth-switch">
+          <a href="/help.html">How AjiraGuide works</a> · <a href="/privacy.html">Privacy</a>
         </p>
       </section>
     </div>

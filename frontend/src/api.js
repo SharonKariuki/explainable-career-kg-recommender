@@ -55,8 +55,8 @@ async function request(method, path, body) {
   return data
 }
 
-export async function register(username, password, email) {
-  const data = await request('POST', '/auth/register/', { username, password, email })
+export async function register(username, password, email, name = '') {
+  const data = await request('POST', '/auth/register/', { username, password, email, name })
   setToken(data.token)
   return data
 }
@@ -95,7 +95,8 @@ export const unsaveCareer = (code) => request('DELETE', `/saved/${encodeURICompo
 export const searchSkills = (query) => request('GET', `/skills/?q=${encodeURIComponent(query)}`)
 export const getProgress = () => request('GET', '/progress/')
 export const setProgress = (skillId, status) => request('PUT', '/progress/', { skill_id: skillId, status })
-export const updateAccount = (email) => request('PATCH', '/auth/me/', { email })
+// Sends only the fields given, e.g. { email } or { name, email }.
+export const updateAccount = (changes) => request('PATCH', '/auth/me/', changes)
 
 // Changing the password replaces the token, signing out anyone holding the old one.
 export async function changePassword(currentPassword, newPassword) {
