@@ -1,0 +1,170 @@
+{
+  "15-1251.00": {
+    "title": "Computer Programmers",
+    "posting_a": ["COBOL, C/C++, SQL, and Visual Basic", "structured coding and analysis", "SQL Server, Oracle", "C#, Java, Python", ".NET, Visual Studio, SSIS/SSRS, Azure DevOps", "REST, JSON/XML, stored procedures", "Docker/OpenShift, GitLab", "write and modify applications, instructions, procedures, manuals, documentation"],
+    "posting_b": ["ETL tools (Talend, SSIS, Informatica, etc)", "Object-Oriented Programming (Java/Python)", "MS SQL Server, Oracle", "API-based integrations (REST/SOAP)", "file-based exchanges (sFTP)", "batch processing", "COBOL, Access VBA, or Mainframe processes", "prepare logical flow charts", "AWS cloud services (e.g., S3, RDS, Lambda)"],
+    "student": ["Java and C++ (coursework)", "wrote SQL queries for a uni project", "debugging", "Git"],
+    "sources": ["https://www.governmentjobs.com/careers/sonoma/jobs/newprint/5245459", "https://www.governmentjobs.com/careers/annearundel/jobs/newprint/5398150"]
+  },
+  "15-1252.00": {
+    "title": "Software Developers",
+    "posting_a": ["C# (VB.NET, Java, or C++ also welcome)", "object-oriented design, data structures, and algorithms", ".NET ecosystem and Visual Studio", "WPF, WinForms", "unit tests", "Python or PowerShell", "Git, including pull requests and code reviews", "CI/CD pipelines, Agile practices", "Jira and Bitbucket", "JSON, XML"],
+    "posting_b": [".Net/.Net Core", "C#/ASP.net", "SQL Server", "Full-stack web development (HTML5, CSS, JavaScript)", "DevOps", "Scrum/Agile Development Methodologies", "GitHub", "REST", "Angular", "Microsoft Azure"],
+    "student": ["Java, Python", "built a REST API with Spring Boot for my final year project", "data structures & algorithms", "GitHub"],
+    "sources": ["https://job-boards.greenhouse.io/datacor/jobs/5257433007", "https://www.governmentjobs.com/careers/sanbernardino/jobs/newprint/5482157"]
+  },
+  "15-1253.00": {
+    "title": "Software Quality Assurance Analysts and Testers",
+    "posting_a": ["HP Quick Test Professional", "Load Runner & Selenium", "SOAP UI web services testing, UI & Mobile testing", "writing SQL's and preparing test data", "data warehouse concepts, tools and testing", "manual and automated software test scripts", "HP Application Life Cycle Management Software - Quality Center Enterprise Edition", "HPE Unified Functional Testing software scripts"],
+    "posting_b": ["test plans, test cases", "coordinate (UAT) sessions", "track quality issues and defects to resolution", "manual or automated test cases", "smoke, functional, integration, and regression testing", "automation testing tools", "functional and technical design specifications", "test data, data validation, and scripts"],
+    "student": ["manual testing", "wrote test cases for group project", "Selenium basics", "logging bugs in Jira"],
+    "sources": ["https://www.governmentjobs.com/careers/saws/jobs/newprint/4537287", "https://www.governmentjobs.com/careers/colorado/jobs/newprint/2519736"]
+  },
+  "15-1254.00": {
+    "title": "Web Developers",
+    "posting_a": ["HTML5, CSS3, and JavaScript", "WordPress and Elementor", "custom PHP, CSS, and JS", "Contentful", "A/B testing", "event tracking validation", "cross-browser testing", "Chrome DevTools", "performance optimization"],
+    "posting_b": [".NET", "C#", "HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Angular", "WordPress", "WCAG 2.0"],
+    "student": ["HTML/CSS/JS", "React", "made my portfolio site and deployed on Netlify", "responsive design"],
+    "sources": ["https://www.mediabistro.com/jobs/3539701700-junior-web-developer", "https://www.governmentjobs.com/careers/harriscountytx/jobs/newprint/4535613"]
+  },
+  "15-1255.00": {
+    "title": "Web and Digital Interface Designers",
+    "posting_a": ["Figma", "component-based design", "auto-layout", "prototyping", "developer handoff", "user interviews", "usability testing", "journey mapping", "wireframes", "WCAG 2.1"],
+    "posting_b": ["interaction design principles", "user experience (UX) design principles and processes", "information architecture", "responsive design", "typography and color theory", "create wireframes and prototypes", "Adobe InDesign or Illustrator", "Figma Sketch, Adobe XD, Photoshop", "Tableau"],
+    "student": ["Figma", "UI/UX design", "did user research + wireframes for a class app", "Adobe Illustrator"],
+    "sources": ["https://www.governmentjobs.com/careers/sc/jobs/newprint/5343671", "https://www.governmentjobs.com/careers/detroit/jobs/newprint/4419744"]
+  },
+  "15-1211.00": {
+    "title": "Computer Systems Analysts",
+    "posting_a": ["SQL or similar programming language", "Business and functional requirements", "Functional specifications", "Test scripts", "Flowcharts, diagrams", "Diagramming business process workflows", "Performs system acceptance testing", "Creating end-user system training documents", "Troubleshooting minor desktop issues"],
+    "posting_b": ["Requirements gathering", "Business process analysis", "Stakeholder management", "Testing and validation", "BI platforms, SQL", "SCRUM or Agile", "Power platforms", "UAT", "user stories", "process flow diagrams"],
+    "student": ["requirements gathering", "UML diagrams", "SQL", "worked with a client to document their workflow"],
+    "sources": ["https://www.governmentjobs.com/careers/clarkcounty/jobs/newprint/4099029", "https://www.governmentjobs.com/careers/iowa/jobs/newprint/5359123"]
+  },
+  "15-1299.07": {
+    "title": "Blockchain Engineers",
+    "posting_a": ["Solidity", "Truffle", "Hardhat", "Foundry", "Remix", "Slither", "Mythril", "Echidna", "JavaScript or TypeScript", "blockchain security practices and common vulnerabilities"],
+    "posting_b": ["Solidity", "Hardhat, Remix and OpenZepplin", "Smart Contracts", "Ethereum", "Polygon", "decentralized applications and cryptocurrency tokens", "writing unit tests for your smart contracts", "Build smart contracts and back end web services"],
+    "student": ["Solidity", "deployed an ERC-20 token on a testnet", "web3.js", "JavaScript"],
+    "sources": ["https://web3.career/solidity-engineer-only-us-citizen-and-green-card-tampa-fl-jersey-city-nj-texas-city-tx-hybrid-ampstek/151234", "https://web3.career/blockchain-engineer-solidity-ferrumnetwork/21360"]
+  },
+  "15-1299.08": {
+    "title": "Computer Systems Engineers/Architects",
+    "posting_a": ["Microsoft Azure Gov", "Microsoft Active Directory", "Windows Server administration", "VMware", "Hyper-V hypervisor administration", "CI/CD pipelines", "TOGAF", "capacity planning", "systems integration and interoperability", "disaster recovery"],
+    "posting_b": ["Azure", "AWS", "GCP", "VMware or similar", "PowerShell", "Terraform", "Ansible", "hybrid or multi-cloud architectures", "high availability", "data center design"],
+    "student": ["AWS cloud practitioner (studying)", "Linux", "set up VMs in VirtualBox", "networking basics"],
+    "sources": ["https://www.governmentjobs.com/careers/eugene/jobs/newprint/5224229", "https://www.governmentjobs.com/careers/sc/jobs/newprint/5315977"]
+  },
+  "15-1299.09": {
+    "title": "Information Technology Project Managers",
+    "posting_a": ["Agile, Waterfall, DevOps, DevSecOps, and/or Rapid Application Development", "Microsoft Project or other project management tools", "evaluating contracts, budgets, proposals, and vendor/contractor compliance", "business process redesign", "organizational change management", "business analysis tools", "secure systems and software development lifecycle management", "manage multiple projects and priorities"],
+    "posting_b": ["PMP Certification", "ITIL Foundation certification", "delivery of technology (IT-enabled) projects", "change management", "Identify, assess, and mitigate project risks", "Identify project stakeholders", "communication strategies", "Collaborate with procurement and vendors", "lessons learned"],
+    "student": ["led our capstone team as scrum master", "Trello / Jira", "Gantt charts", "good communication"],
+    "sources": ["https://www.governmentjobs.com/careers/hacla/jobs/newprint/5165839", "https://www.governmentjobs.com/careers/broomfield/jobs/newprint/5284389"]
+  },
+  "15-2051.00": {
+    "title": "Data Scientists",
+    "posting_a": ["Python", "NumPy", "pandas", "scikit-learn", "matplotlib", "SQL", "regression", "clustering", "time series forecasting", "supervised and unsupervised learning"],
+    "posting_b": ["Python", "train machine learning models and put them into production", "SQL", "recommendation engines", "statistical principles", "predictive modeling", "data science pipelines in production", "Guide complex experiments", "craft compelling stories with data"],
+    "student": ["Python (pandas, sklearn)", "Kaggle competitions", "machine learning", "Jupyter notebooks"],
+    "sources": ["https://www.governmentjobs.com/careers/ebmud/jobs/newprint/5017327", "https://jobs.lever.co/theathletic/8ce32ac7-13d2-4b27-9bee-4ba3d6a97884"]
+  },
+  "15-2051.01": {
+    "title": "Business Intelligence Analysts",
+    "posting_a": ["Crystal Reports, Web Intelligence, or SSRS", "Agile sprint methodology", "Microsoft Excel (lookups, formulas, pivots, macros)", "writing SQL statements to analyze data: joining, filtering, aggregating", "SAP Lumira, Tableau, or Power BI", "data warehousing, data modeling, and data mining", "gathering requirements"],
+    "posting_b": ["Power BI", "Microsoft Excel", "Tableau", "BI visualization software", "multi-dimensional data sources", "data visualizations", "advanced Excel skills", "data governance and stewardship"],
+    "student": ["Power BI dashboards", "Excel pivot tables", "SQL", "data storytelling"],
+    "sources": ["https://www.governmentjobs.com/careers/pima/jobs/newprint/4487590", "https://www.governmentjobs.com/careers/portofportland/jobs/newprint/4341288"]
+  },
+  "15-1242.00": {
+    "title": "Database Administrators",
+    "posting_a": ["SQL Server and Windows OS", "SQL Reporting Services (SSRS)", "SQL Integration Services (SSIS)", "SQL Analysis Services (SSAS)", "TSQL, DAX, C#, and PowerShell", "SQL Server Management Studio", "Azure Data Studio", "Power BI Desktop", "database design"],
+    "posting_b": ["Microsoft SQL Server", "Oracle databases", "SSIS", "agent jobs", "database maintenance plans", "SolarWinds", "Veeam", "DB2", "RDBMS modeling, design, replication, propagation, and tuning"],
+    "student": ["MySQL", "database design (ER diagrams)", "backup and restore labs", "SQL"],
+    "sources": ["https://www.governmentjobs.com/careers/pasco/jobs/newprint/4728937", "https://www.governmentjobs.com/careers/riverside/jobs/newprint/4696870"]
+  },
+  "15-1243.00": {
+    "title": "Database Architects",
+    "posting_a": ["Azure DevOps", "Azure Synapse", "Snowflake", "Databricks", "Microsoft Transact-SQL (T-SQL)", "Oracle and SQL Server", "enterprise data modeling", "Conceptual, logical, and physical data modeling", "dimensional modeling (Kimball)", "star/snowflake schemas"],
+    "posting_b": ["conceptual, logical, and physical data models", "data warehouses, and data lakes", "SQL Server, Oracle, PostgreSQL, MongoDB", "Erwin, ER/Studio", "Azure, AWS, or Google Cloud", "Apache Airflow", "Terraform", "data governance", "data lineage, cataloging, and data stewardship"],
+    "student": ["data modeling", "PostgreSQL", "normalization (3NF)", "designed the DB schema for our team app"],
+    "sources": ["https://www.governmentjobs.com/careers/washington/jobs/newprint/5179350", "https://www.governmentjobs.com/careers/cityofmckinney/jobs/newprint/5141582"]
+  },
+  "15-1243.01": {
+    "title": "Data Warehousing Specialists",
+    "posting_a": ["Matillion/Azure Data Factory", "Snowflake", "Power BI", "SQL", "stored procedures and functions in Snowflake", "dimensional modeling", "Azure DevOps and Git", "SSIS", "Azure Databricks", "Agile methodology"],
+    "posting_b": ["Teradata", "Business Objects", "Linux", "Azure DevOps", "automated data warehouse ETL applications", "data warehouse policies and practices", "ETL", "relational database"],
+    "student": ["ETL pipeline project", "SQL", "star schema", "Python scripting"],
+    "sources": ["https://www.governmentjobs.com/careers/harriscountytx/jobs/newprint/4777688", "https://www.governmentjobs.com/careers/michigan/jobs/newprint/5038683"]
+  },
+  "15-2041.00": {
+    "title": "Statisticians",
+    "posting_a": ["SPSS", "R", "SQL", "Python", "Stan", "SAS", "Stata", "Bayesian inference", "hierarchical/multilevel modeling", "experimental design"],
+    "posting_b": ["Statistical Analysis Software (SAS)", "SAS code", "inferential and descriptive statistics", "design complex research studies", "analyze and interpret data using inferential statistical techniques", "Fatality Analysis Reporting System (FARS)", "research practices and procedures"],
+    "student": ["R", "regression analysis", "hypothesis testing", "SPSS from stats modules"],
+    "sources": ["https://www.governmentjobs.com/careers/colorado/jobs/newprint/4727499", "https://www.governmentjobs.com/careers/sc/jobs/newprint/2219641"]
+  },
+  "15-1212.00": {
+    "title": "Information Security Analysts",
+    "posting_a": ["SIEM systems", "vulnerability scans", "endpoint protection", "data loss prevention", "intrusion detection/prevention systems", "NIST Cybersecurity Framework", "ISO 27000 series", "OWASP", "identity and access management", "responding to security incidents"],
+    "posting_b": ["EDR", "IDS", "Firewall", "WAF", "DLP", "SIEM", "Wireshark", "Nessus", "Splunk", "CompTIA Security+"],
+    "student": ["Security+ (in progress)", "Wireshark", "did a SOC home lab with Splunk", "incident response basics"],
+    "sources": ["https://www.governmentjobs.com/careers/fairfaxcounty/jobs/newprint/5393333", "https://www.governmentjobs.com/careers/saws/jobs/newprint/4450506"]
+  },
+  "15-1299.04": {
+    "title": "Penetration Testers",
+    "posting_a": ["Web Application testing", "Network Penetration testing", "API and serverless penetration testing", "Kali Linux", "Metaspoilt", "Burp suite", "Cobalt Strike", "Tenable Nessus", "Scout Suite", "AWS CLI"],
+    "posting_b": ["TCP/IP", "Perl, Python, Bash, or C", "Open Web Application Security Project (OWASP)", "Penetration Testing Execution Standard (PTES)", "vulnerability scanning", "password cracking", "Kali Linux suite", "Metasploit", "nmap", "Burp Suite"],
+    "student": ["TryHackMe / HackTheBox", "Kali Linux", "nmap", "basic Python scripting"],
+    "sources": ["https://builtin.com/job/penetration-tester/3582433", "https://builtin.com/job/manager-penetration-tester/4518368"]
+  },
+  "15-1299.05": {
+    "title": "Information Security Engineers",
+    "posting_a": ["cloud security", "AWS, Azure, or Google Cloud", "firewalls, intrusion detection/prevention systems, SIEM, and vulnerability management tools", "designing secure cloud architecture", "implementing security controls", "security policies, standards, and procedures for cloud environments", "security assessments, penetration testing, and vulnerability scans", "AWS Certified Security certification"],
+    "posting_b": ["SIEM, EDR, vulnerability management", "identity and access management", "firewalls, access control lists (ACLs)", "network segmentation", "multi-factor authentication (MFA)", "single sign-on (SSO)", "privileged access management", "incident response", "threat detection", "security architecture"],
+    "student": ["network security module", "configured pfSense firewall in a lab", "Linux hardening", "Python"],
+    "sources": ["https://www.governmentjobs.com/careers/pabureau/jobs/newprint/4764150", "https://www.governmentjobs.com/careers/townofcary/jobs/newprint/5243411"]
+  },
+  "15-1299.06": {
+    "title": "Digital Forensics Analysts",
+    "posting_a": ["EnCase", "FTK", "X-Ways Forensics", "Cellebrite", "forensic imaging", "data carving", "file systems", "chain of custody procedures", "expert testimony", "Linux"],
+    "posting_b": ["Cellebrite", "Encase images", "digital forensic examination techniques", "digital discovery", "secure virtual machines", "manage permissions on file servers", "case management systems", "expert testimony in court related to computer analysis"],
+    "student": ["Autopsy", "disk imaging with FTK Imager", "chain of custody", "forensics coursework"],
+    "sources": ["https://www.governmentjobs.com/careers/fortmyersfl/jobs/newprint/4767667", "https://www.governmentjobs.com/careers/riverside/jobs/newprint/4785781"]
+  },
+  "15-1241.00": {
+    "title": "Computer Network Architects",
+    "posting_a": ["network protocols (TCP/IP, BGP, OSPF, etc.)", "enterprise-grade routers, switches, firewalls, and load balancers", "SD-WAN", "VPN", "network segmentation", "enterprise-level network architecture", "disaster recovery planning", "business continuity strategies", "Cisco Certified Internetwork Expert (CCIE)"],
+    "posting_b": ["LAN", "WAN", "SD-WAN", "wireless", "data center", "logical and physical network diagrams", "migration strategies", "cutover planning", "cloud networking concepts or hybrid network environments", "Cisco CCNA"],
+    "student": ["CCNA coursework", "designed a network topology in Packet Tracer", "subnetting", "routing protocols (OSPF)"],
+    "sources": ["https://www.governmentjobs.com/careers/washingtonmn/jobs/newprint/5117860", "https://www.governmentjobs.com/careers/pabureau/jobs/newprint/5231575"]
+  },
+  "15-1244.00": {
+    "title": "Network and Computer Systems Administrators",
+    "posting_a": ["VMware", "SAN environments", "Windows Server (2008-2022)", "Windows AD", "Exchange", "Cisco/Brocade networking equipment", "SNMP", "VPN", "CompTIA Network+", "Disaster recovery plans"],
+    "posting_b": ["LAN and WAN Networks", "Firewall servers", "MS Windows Server", "Active Directory", "DNS", "TCP/IP", "OSI Model", "Cisco ASA", "Cisco IOS", "ExtremeOS"],
+    "student": ["Windows Server lab (AD, DNS, DHCP)", "Linux command line", "Cisco Packet Tracer", "PowerShell scripts"],
+    "sources": ["https://www.governmentjobs.com/careers/stluciecountyfl/jobs/newprint/5143402", "https://www.governmentjobs.com/careers/mclennanco/jobs/newprint/4637819"]
+  },
+  "15-1231.00": {
+    "title": "Computer Network Support Specialists",
+    "posting_a": ["routers, firewalls, switches, and application servers", "local and wide area networks", "VPN functionality", "centralized patch management", "Microsoft Windows Server", "Active Directory", "DNS", "DHCP", "Group Policy", "VMWare"],
+    "posting_b": ["workstation hardware", "server hardware and software", "network devices", "routers", "cable runs", "switch installation", "backup, anti-virus and security procedures", "diagnostic and preventative maintenance"],
+    "student": ["CompTIA Network+", "crimped and tested ethernet cables", "troubleshooting connectivity", "basic switch config"],
+    "sources": ["https://www.governmentjobs.com/careers/tc911/jobs/newprint/5156538", "https://www.governmentjobs.com/careers/murfreesborotn/jobs/newprint/5459288"]
+  },
+  "15-1232.00": {
+    "title": "Computer User Support Specialists",
+    "posting_a": ["Microsoft Windows Operating Systems", "Microsoft Office Products", "CompTIA A+ Certification", "Help Desk tracking system", "anti-virus procedures", "computer hardware", "peripheral equipment", "read technical instructions, procedures, manuals and charts"],
+    "posting_b": ["Windows 11", "Microsoft 365 (F3, G3, G5)", "Microsoft Intune", "Microsoft Defender for Endpoint", "Active Directory", "Group Policy", "Ticketing Systems", "Remote Support", "knowledge base", "Customer Service"],
+    "student": ["helped out at the campus IT help desk", "fixing laptops and printers", "Windows 10/11", "customer service"],
+    "sources": ["https://www.governmentjobs.com/careers/columbiasc/jobs/newprint/5354071", "https://www.governmentjobs.com/careers/sanmarcos/jobs/newprint/4520077"]
+  },
+  "15-1221.00": {
+    "title": "Computer and Information Research Scientists",
+    "posting_a": ["deep learning research", "Large Language Models", "Reinforcement Learning", "PyTorch", "Python", "data structures, and algorithms", "ML model optimization", "GPU acceleration", "time series forecasting", "uncertainty quantification"],
+    "posting_b": ["program synthesis and probabilistic programming", "neural and symbolic methods", "machine learning", "AI reasoning systems", "cognitive modeling", "Knowledge representation", "Reinforcement learning", "Open-source software", "Academic publications and presentations at leading conferences"],
+    "student": ["undergrad research on neural networks", "PyTorch", "reading and replicating papers", "LaTeX"],
+    "sources": ["https://builtin.com/job/hewlett-packard-labs-machine-learning-research-scientist-early-career/4105585", "https://builtin.com/job/research-scientist-world-models/9153334"]
+  }
+}

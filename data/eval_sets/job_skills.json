@@ -1,0 +1,194 @@
+{
+  "15-1251.00": {
+    "title": "Computer Programmers",
+    "core": ["Java", "C++", "C#", "Python", "Debugging", "Object-oriented programming", "Code review", "Writing code from specifications"],
+    "common": ["Git", "SQL", "Unit testing", "Linux", "Data structures", "Algorithms"],
+    "soft": ["Attention to detail", "Problem solving", "Concentration"],
+    "everyday": ["writing code all day", "turning instructions into programs", "fixing bugs in code"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm", "https://roadmap.sh/"]
+  },
+  "15-1252.00": {
+    "title": "Software Developers",
+    "core": ["Java", "Python", "JavaScript", "Software design", "Data structures", "Algorithms", "REST APIs", "Git"],
+    "common": ["SQL", "Agile", "Unit testing", "Docker", "CI/CD", "Cloud computing"],
+    "soft": ["Problem solving", "Teamwork", "Creativity"],
+    "everyday": ["building apps", "making software for companies", "designing programs people use"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm", "https://roadmap.sh/full-stack/developer-skills"]
+  },
+  "15-1253.00": {
+    "title": "Software Quality Assurance Analysts and Testers",
+    "core": ["Manual testing", "Test cases", "Selenium", "Cypress", "Regression testing", "Bug tracking", "TestRail", "Postman"],
+    "common": ["Jira", "Agile", "API testing", "Playwright", "SQL", "CI/CD"],
+    "soft": ["Attention to detail", "Analytical thinking", "Written communication"],
+    "everyday": ["finding bugs in apps", "testing software before release", "breaking things to check they work"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm", "https://resumegeni.com/job-descriptions/qa-engineer", "https://jobicy.com/careers/software-tester.md"]
+  },
+  "15-1254.00": {
+    "title": "Web Developers",
+    "core": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Responsive design", "TypeScript", "REST APIs"],
+    "common": ["Git", "SQL", "PHP", "WordPress", "Web accessibility", "SEO"],
+    "soft": ["Creativity", "Attention to detail", "Customer communication"],
+    "everyday": ["building websites", "making web pages work on phones", "coding online shops"],
+    "sources": ["https://roadmap.sh/frontend/developer-skills", "https://roadmap.sh/full-stack/developer-skills", "https://www.freecodecamp.org/news/web-developer-roadmap/"]
+  },
+  "15-1255.00": {
+    "title": "Web and Digital Interface Designers",
+    "core": ["Figma", "Wireframing", "Prototyping", "User research", "Usability testing", "Design systems", "Adobe XD", "User interface design"],
+    "common": ["Adobe Photoshop", "HTML", "CSS", "Web accessibility", "Typography", "Google Analytics"],
+    "soft": ["Creativity", "Empathy", "Visual communication"],
+    "everyday": ["designing how apps look", "making websites easy to use", "drawing app screens"],
+    "sources": ["https://resumegeni.com/job-descriptions/ux-designer-job-description", "https://ixdf.org/jobs/ui-ux-designer-with-figma-expertise-remote", "https://designproject.io/jobs/ux-designer-figma-at-market-cloud-pdmrd2"]
+  },
+  "15-1211.00": {
+    "title": "Computer Systems Analysts",
+    "core": ["Requirements gathering", "Systems analysis", "Business process mapping", "UML", "BPMN", "Use cases", "Microsoft Visio", "ERP systems"],
+    "common": ["SQL", "Agile", "Documentation", "Jira", "Data analysis", "SAP"],
+    "soft": ["Communication", "Problem solving", "Stakeholder management"],
+    "everyday": ["figuring out what computer systems a business needs", "connecting business and IT", "improving how company systems work"],
+    "sources": ["https://www.4cornerresources.com/job-descriptions/computer-analyst/", "https://www.prospects.ac.uk/job-profiles/systems-analyst", "https://jobicy.com/careers/computer-systems-analyst"]
+  },
+  "15-1299.07": {
+    "title": "Blockchain Engineers",
+    "core": ["Solidity", "Ethereum", "Smart contracts", "Web3.js", "Ethers.js", "Hardhat", "Foundry", "Smart contract security"],
+    "common": ["JavaScript", "TypeScript", "Rust", "Go", "Node.js", "Git"],
+    "soft": ["Problem solving", "Attention to detail", "Continuous learning"],
+    "everyday": ["building crypto apps", "writing smart contracts", "working with blockchain and NFTs"],
+    "sources": ["https://www.hackerearth.com/job-description/blockchain-developers", "https://cryptojobslist.com/jobs/blockchain-engineer-nethermind-remote", "https://web3.career/blockchain-jobs?page=309"]
+  },
+  "15-1299.08": {
+    "title": "Computer Systems Engineers/Architects",
+    "core": ["AWS", "Microsoft Azure", "Google Cloud Platform", "Terraform", "Kubernetes", "Cloud architecture", "Infrastructure as code", "System design"],
+    "common": ["Docker", "Linux", "CI/CD", "Networking", "Python", "Ansible"],
+    "soft": ["Stakeholder communication", "Strategic thinking", "Leadership"],
+    "everyday": ["designing cloud systems", "planning how big IT systems fit together", "setting up servers in the cloud"],
+    "sources": ["https://resumegeni.com/zh-hans/blog/cloud-architect-job-description", "https://jobs.joindevops.com/jobs/109676820-cloud-architect", "https://www.dice.com/job-detail/eacdf0c9-b5bd-43a9-94e0-74840d4e5ddf"]
+  },
+  "15-1299.09": {
+    "title": "Information Technology Project Managers",
+    "core": ["Project management", "PMP", "Scrum", "Risk management", "Budget management", "Microsoft Project", "Project scheduling", "Waterfall"],
+    "common": ["Agile", "Jira", "Smartsheet", "Stakeholder management", "Resource planning", "Microsoft Excel"],
+    "soft": ["Leadership", "Communication", "Negotiation"],
+    "everyday": ["managing tech projects", "keeping a team on schedule", "leading software projects"],
+    "sources": ["https://huntr.co/resume-skills/project-manager", "https://www.4cornerresources.com/job-descriptions/project-manager/", "https://www.roberthalf.com/us/en/insights/career-development/how-to-become-an-it-project-manager"]
+  },
+  "15-2051.00": {
+    "title": "Data Scientists",
+    "core": ["Python", "Machine learning", "scikit-learn", "Pandas", "Statistical modeling", "Deep learning", "TensorFlow", "Feature engineering"],
+    "common": ["SQL", "R", "Data visualization", "Jupyter", "Spark", "Git"],
+    "soft": ["Curiosity", "Communication", "Business acumen"],
+    "everyday": ["predicting things with data", "training AI models", "finding patterns in big data"],
+    "sources": ["https://365datascience.com/career-advice/data-scientist-job-market/", "https://www.indeed.com/hire/c/info/skills-for-data-scientists?co=US"]
+  },
+  "15-2051.01": {
+    "title": "Business Intelligence Analysts",
+    "core": ["Power BI", "Tableau", "SQL", "Dashboards", "KPI reporting", "Data modeling", "DAX", "Looker"],
+    "common": ["Microsoft Excel", "ETL", "Python", "Data warehousing", "Power Query", "Snowflake"],
+    "soft": ["Data storytelling", "Business acumen", "Communication"],
+    "everyday": ["making dashboards for managers", "turning sales data into reports", "creating charts that explain business numbers"],
+    "sources": ["https://www.4cornerresources.com/job-descriptions/bi-analyst/", "https://resumegeni.com/skills-guides/business-intelligence-analyst-skills-guide", "https://interviewkickstart.com/job-description/business-intelligence-analyst"]
+  },
+  "15-1242.00": {
+    "title": "Database Administrators",
+    "core": ["Microsoft SQL Server", "Oracle Database", "Backup and recovery", "Performance tuning", "Database security", "PostgreSQL", "MySQL", "High availability"],
+    "common": ["SQL", "Linux", "PL/SQL", "PowerShell", "Shell scripting", "Cloud databases"],
+    "soft": ["Problem solving", "Attention to detail", "Communication"],
+    "everyday": ["keeping databases running", "backing up company data", "making databases faster"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm", "https://www.techrepublic.com/article/database-administrator-vs-database-architect-whats-the-difference/", "https://www.yardstick.team/compare-roles/data-engineer-vs-database-administrator-decoding-the-differences"]
+  },
+  "15-1243.00": {
+    "title": "Database Architects",
+    "core": ["Data modeling", "Database design", "Data architecture", "Normalization", "ER diagrams", "NoSQL", "Data governance", "Cloud databases"],
+    "common": ["SQL", "Oracle Database", "Microsoft SQL Server", "PostgreSQL", "AWS", "Performance tuning"],
+    "soft": ["Strategic thinking", "Communication", "Leadership"],
+    "everyday": ["designing how data is stored", "planning databases for big systems", "drawing database structures"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm", "https://www.techrepublic.com/article/database-administrator-vs-database-architect-whats-the-difference/", "https://www.zippia.com/database-administrator-jobs/database-administrator-vs-database-architect-differences"]
+  },
+  "15-1243.01": {
+    "title": "Data Warehousing Specialists",
+    "core": ["ETL", "Data warehousing", "Dimensional modeling", "Star schema", "Snowflake", "Informatica", "SSIS", "dbt"],
+    "common": ["SQL", "Python", "Airflow", "Query optimization", "Azure Data Factory", "Power BI"],
+    "soft": ["Attention to detail", "Problem solving", "Collaboration"],
+    "everyday": ["moving data into one big database", "building data pipelines", "organizing company data for reports"],
+    "sources": ["https://www.secondtalent.com/occupations/data-warehouse-engineer/", "https://www.dice.com/job-detail/dc15a963-c386-477e-a97e-26414ea2d38e", "https://remotive.com/remote/jobs/data/sr-snowflake-dwh-etl-informatica-consultant-4997931"]
+  },
+  "15-2041.00": {
+    "title": "Statisticians",
+    "core": ["R", "SAS", "Regression analysis", "Experimental design", "Hypothesis testing", "Sampling", "Probability", "Bayesian statistics"],
+    "common": ["Python", "SQL", "Stata", "Microsoft Excel", "Data visualization", "SPSS"],
+    "soft": ["Analytical thinking", "Communication", "Attention to detail"],
+    "everyday": ["doing statistics on surveys", "analyzing experiment results", "working with probability and numbers"],
+    "sources": ["https://jobicy.com/careers/statistician", "https://www.usajobs.gov/job/867168200", "https://hakia.com/careers/statistician"]
+  },
+  "15-1212.00": {
+    "title": "Information Security Analysts",
+    "core": ["SIEM", "Splunk", "Incident response", "Vulnerability scanning", "Threat analysis", "Security monitoring", "Firewalls", "CompTIA Security+"],
+    "common": ["Networking", "Linux", "Windows", "NIST framework", "Wireshark", "Risk assessment"],
+    "soft": ["Analytical thinking", "Attention to detail", "Communication"],
+    "everyday": ["protecting companies from hackers", "watching for cyber attacks", "keeping networks safe"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm", "https://www.cbtnuggets.com/blog/certifications/security/security-analyst-vs-engineer-where-to-start", "https://infosec-jobs.com/insights/information-security-analyst-vs-information-security-engineer/"]
+  },
+  "15-1299.04": {
+    "title": "Penetration Testers",
+    "core": ["Metasploit", "Burp Suite", "Kali Linux", "Nmap", "Penetration testing", "Web application security", "OWASP Top 10", "OSCP"],
+    "common": ["Python", "Bash", "Wireshark", "Linux", "Networking", "Report writing"],
+    "soft": ["Critical thinking", "Written communication", "Curiosity"],
+    "everyday": ["hacking systems legally", "finding security holes in websites", "ethical hacking"],
+    "sources": ["https://www.4cornerresources.com/career-guides/penetration-tester", "https://tryhackme.com/resources/blog/which-skills-are-essential-for-a-penetration-testing-career", "https://trailhead.salesforce.com/content/learn/modules/penetration-testing/discover-the-skills-of-a-penetration-tester"]
+  },
+  "15-1299.05": {
+    "title": "Information Security Engineers",
+    "core": ["Security architecture", "Identity and access management", "Cloud security", "Firewalls", "Intrusion detection systems", "Encryption", "CISSP", "Security hardening"],
+    "common": ["SIEM", "Splunk", "AWS", "Python", "Linux", "NIST framework"],
+    "soft": ["Problem solving", "Collaboration", "Attention to detail"],
+    "everyday": ["building security systems", "setting up firewalls and access controls", "making cloud systems secure"],
+    "sources": ["https://www.cbtnuggets.com/blog/certifications/security/security-analyst-vs-engineer-where-to-start", "https://jobicy.com/careers/information-security-engineer.md", "https://interviewkickstart.com/job-description/security-engineer"]
+  },
+  "15-1299.06": {
+    "title": "Digital Forensics Analysts",
+    "core": ["EnCase", "FTK", "Autopsy", "Volatility", "Memory forensics", "Chain of custody", "File system analysis", "Magnet AXIOM"],
+    "common": ["Incident response", "Python", "Windows registry analysis", "Linux", "Wireshark", "Report writing"],
+    "soft": ["Attention to detail", "Integrity", "Written communication"],
+    "everyday": ["investigating cyber crimes", "recovering deleted files as evidence", "finding out how a hack happened"],
+    "sources": ["https://destcert.com/career-guide/how-to-become-digital-forensic-analyst/", "https://cyberdefenders.org/blog/how-to-become-digital-forensics-analyst/", "https://www.dice.com/job-detail/516b9de8-430f-472e-8546-1fe8b1d48c47"]
+  },
+  "15-1241.00": {
+    "title": "Computer Network Architects",
+    "core": ["Network design", "BGP", "OSPF", "SD-WAN", "Cisco", "MPLS", "CCNP", "Network security architecture"],
+    "common": ["TCP/IP", "Firewalls", "Palo Alto Networks", "VPN", "Cloud networking", "Juniper"],
+    "soft": ["Strategic thinking", "Communication", "Leadership"],
+    "everyday": ["designing company networks", "planning how computers connect across offices", "building internet infrastructure"],
+    "sources": ["https://www.4cornerresources.com/job-descriptions/network-architect/", "https://jobdescription.org/jobs/information-technology/computer-network-architect", "https://www.clearancejobs.com/jobs/9223292/network-architect-routingadns"]
+  },
+  "15-1244.00": {
+    "title": "Network and Computer Systems Administrators",
+    "core": ["Windows Server", "Active Directory", "Linux administration", "VMware", "PowerShell", "Group Policy", "DNS", "DHCP"],
+    "common": ["Bash", "Backup and recovery", "Microsoft 365", "Networking", "Hyper-V", "Patch management"],
+    "soft": ["Problem solving", "Reliability", "Communication"],
+    "everyday": ["managing company servers", "keeping the office network running", "setting up user accounts and servers"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm", "https://resumegeni.com/fr/blog/systems-administrator-job-description", "https://jobs.hiringourheroes.org/jobs/237331121/apply"]
+  },
+  "15-1231.00": {
+    "title": "Computer Network Support Specialists",
+    "core": ["Network troubleshooting", "TCP/IP", "Routers", "Switches", "CompTIA Network+", "Network monitoring", "LAN/WAN", "Cisco"],
+    "common": ["DNS", "DHCP", "VPN", "Wireshark", "Ticketing systems", "Windows Server"],
+    "soft": ["Problem solving", "Customer service", "Patience"],
+    "everyday": ["fixing internet connection problems", "setting up routers and switches", "keeping the network online"],
+    "sources": ["https://www.zippia.com/help-desk-engineer-jobs/help-desk-engineer-vs-network-support-engineer-differences", "https://www.ituonline.com/blogs/how-to-transition-from-help-desk-support-to-network-support-2/"]
+  },
+  "15-1232.00": {
+    "title": "Computer User Support Specialists",
+    "core": ["Help desk support", "Ticketing systems", "Windows troubleshooting", "Hardware troubleshooting", "CompTIA A+", "Active Directory", "Microsoft 365", "Remote desktop support"],
+    "common": ["macOS", "Printers", "ServiceNow", "Networking basics", "Software installation", "Mobile devices"],
+    "soft": ["Customer service", "Patience", "Communication"],
+    "everyday": ["fixing people's laptops", "helping people with computer problems", "working at an IT help desk"],
+    "sources": ["https://www.givainc.com/blog/the-difference-between-helpdesk-technical-support-desktop-support-skills-required/", "https://www.comptia.org/ja-jp/blog/best-it-support-and-help-desk-jobs/", "https://www.zippia.com/help-desk-specialist-jobs/help-desk-specialist-vs-desktop-support-technician-differences"]
+  },
+  "15-1221.00": {
+    "title": "Computer and Information Research Scientists",
+    "core": ["Algorithms", "Machine learning", "Research methods", "Mathematics", "PyTorch", "Publishing research papers", "C++", "Theory of computation"],
+    "common": ["Python", "Linear algebra", "Statistics", "Git", "Linux", "Deep learning"],
+    "soft": ["Critical thinking", "Creativity", "Scientific writing"],
+    "everyday": ["inventing new computer technology", "doing research in AI", "solving hard computer science problems"],
+    "sources": ["https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm", "https://www.bestcolleges.com/computer-science/how-to-become-computer-information-research-scientist/", "https://www.purdue.edu/science/careers/what_can_i_do_with_a_major/Career Pages/computer-scientists.html"]
+  }
+}
