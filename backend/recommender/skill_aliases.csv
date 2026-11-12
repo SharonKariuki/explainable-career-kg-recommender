@@ -1,0 +1,130 @@
+alias,target
+# Abbreviations, product nicknames, certifications and newer tools that job postings use
+# but O*NET and ESCO do not name. Each maps to the closest skill name in the graph.
+# Lines starting with # are comments.
+# Databases and data
+Postgres,PostgreSQL
+Neon,PostgreSQL
+Supabase,PostgreSQL
+MS SQL,Microsoft SQL Server
+MSSQL,Microsoft SQL Server
+T-SQL,Microsoft SQL Server
+Firebase,NoSQL
+Firestore,NoSQL
+dbt,"extract, transform, load"
+ETL pipelines,"extract, transform, load"
+ELT,"extract, transform, load"
+Star schema,data warehouse
+Dimensional modeling,data warehouse
+Data marts,data warehouse
+Data warehousing,data warehouse
+DAX,Microsoft Power BI
+Power Query,Microsoft Power BI
+Dashboards,deliver visual presentation of data
+Data storytelling,deliver visual presentation of data
+Feature engineering,data feature engineering
+Linear algebra,Mathematics
+Calculus,Mathematics
+Probability,statistics
+Hypothesis testing,statistics
+# Cloud and DevOps
+K8s,Kubernetes
+GCP,Google Cloud software
+Azure,Microsoft Azure software
+EC2,Amazon Web Services AWS software
+CI/CD,DevOps
+GitHub Actions,DevOps
+Jenkins pipelines,DevOps
+Infrastructure as code,IBM Terraform
+# Software and web
+JS,JavaScript
+TS,TypeScript
+Node,Node.js
+Next.js,React
+Use cases,ICT system user requirements
+User stories,ICT system user requirements
+# Testing
+Cypress,Selenium
+Playwright,Selenium
+TestRail,Defect tracking software
+Test cases,design software testing
+Test plans,plan software testing
+Manual testing,execute software tests
+# Design
+Wireframing,create website wireframe
+Wireframes,create website wireframe
+Mockups,develop software mockup
+UX design,create prototype of user experience solutions
+UI/UX,create prototype of user experience solutions
+User research,execute ICT user research activities
+# Project management
+PMP,ICT project management
+PMI,ICT project management
+CAPM,ICT project management
+PRINCE2,Prince2 project management
+# Security
+SIEM,IBM QRadar SIEM
+Microsoft Sentinel,Microsoft Azure Sentinel
+SOC,Security incident management software
+Incident response,Security incident management software
+CompTIA Security+,cyber security
+CISSP,information security strategy
+CISM,information security strategy
+CEH,Penetration testing software
+OSCP,Penetration testing software
+Burp,Penetration testing software
+Ethical hacking,Penetration testing software
+# Digital forensics
+FTK,AccessData FTK
+EnCase,Guidance Software EnCase Forensic
+Autopsy,Computer forensic software
+Volatility,Computer forensic software
+Magnet AXIOM,Computer forensic software
+Cellebrite,Computer forensic software
+Chain of custody,preserve digital evidence
+Evidence handling,preserve digital evidence
+# Networks and support
+CCNA,Cisco IOS
+CCNP,Cisco IOS
+Switches,ICT networking hardware
+Routers,ICT networking hardware
+Switching and routing,ICT networking hardware
+CompTIA Network+,ICT networking hardware
+CompTIA A+,repair ICT devices
+Microsoft 365,Microsoft Office software
+Office 365,Microsoft Office software
+M365,Microsoft Office software
+Help desk,Help desk software
+Service desk,Help desk software
+# Blockchain
+Ethereum,blockchain platforms
+Hardhat,Solidity
+Foundry,Solidity
+Truffle,Solidity
+Ethers.js,Solidity
+Web3,blockchain platforms
+# Soft skills: every career needs these, so they map to O*NET's general skills,
+# which nearly all careers share, instead of a specialist skill that happens to
+# share a word ("Problem solving" is not "Troubleshooting").
+Problem solving,Complex Problem Solving
+Problem-solving skills,Complex Problem Solving
+Critical thinking,Critical Thinking
+Analytical skills,Critical Thinking
+Attention to detail,Critical Thinking
+Communication,Speaking
+Communication skills,Speaking
+Verbal communication,Speaking
+Public speaking,Speaking
+Presentation skills,Speaking
+Written communication,Writing
+Listening,Active Listening
+Patience,Active Listening
+Teamwork,Coordination
+Team player,Coordination
+Collaboration,Coordination
+Time management,Time Management
+Curiosity,Active Learning
+Continuous learning,Active Learning
+Willingness to learn,Active Learning
+Adaptability,Active Learning
+Decision making,Judgment and Decision Making

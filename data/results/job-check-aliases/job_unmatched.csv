@@ -1,0 +1,116 @@
+skill,nearest,similarity,career
+deployed an ERC-20 token on a testnet,NetSuite ERP,0.2956,Blockchain Engineers
+made my portfolio site and deployed on Netlify,SAP NetWeaver,0.3617,Web Developers
+WCAG 2.1,tools for software configuration management,0.3987,Web and Digital Interface Designers
+GPU acceleration,Microsoft Dynamics GP,0.4014,Computer and Information Research Scientists
+Slither,KornShell,0.4079,Blockchain Engineers
+Chrome DevTools,Software development tools,0.4102,Web Developers
+multi-factor authentication (MFA),Remote authentication dial-in user service RADIUS software,0.4126,Information Security Engineers
+WCAG 2.0,tools for software configuration management,0.413,Web Developers
+lessons learned,Education and Training,0.4131,Information Technology Project Managers
+typography and color theory,graphics editor software,0.4193,Web and Digital Interface Designers
+subnetting,ICT system programming,0.422,Computer Network Architects
+Polygon,trigonometry,0.4265,Blockchain Engineers
+Cobalt Strike,use presentation software,0.4268,Penetration Testers
+neural and symbolic methods,scientific research methodology,0.4336,Computer and Information Research Scientists
+Scout Suite,Basecamp,0.4355,Penetration Testers
+ISO 27000 series,Database management systems,0.4362,Information Security Analysts
+Linux hardening,manage system security,0.4432,Information Security Engineers
+coordinate (UAT) sessions,manage staff,0.4457,Software Quality Assurance Analysts and Testers
+Stan,graphics editor software,0.4546,Statisticians
+ITIL Foundation certification,ICT security standards,0.4546,Information Technology Project Managers
+"SOAP UI web services testing, UI & Mobile testing",execute software tests,0.4548,Software Quality Assurance Analysts and Testers
+Remix,graphics editor software,0.4583,Blockchain Engineers
+auto-layout,Autodesk AutoCAD,0.4652,Web and Digital Interface Designers
+disk imaging with FTK Imager,image formation,0.4676,Digital Forensics Analysts
+"Windows Server lab (AD, DNS, DHCP)",Microsoft Windows Server,0.4741,Network and Computer Systems Administrators
+WAF,Oracle Warehouse Builder,0.4745,Information Security Analysts
+"TSQL, DAX, C#, and PowerShell",query languages,0.4769,Database Administrators
+cable runs,install low voltage wiring,0.477,Computer Network Support Specialists
+ExtremeOS,tools for software configuration management,0.4801,Network and Computer Systems Administrators
+"WPF, WinForms",Microsoft Visual C# .NET,0.482,Software Developers
+AWS Certified Security certification,Amazon Web Services AWS software,0.4845,Information Security Engineers
+Mythril,IONA Orbix,0.4849,Blockchain Engineers
+developer handoff,graphics editor software,0.4908,Web and Digital Interface Designers
+"Hardhat, Remix and OpenZepplin",Solidity,0.4943,Blockchain Engineers
+hierarchical/multilevel modeling,Scientific Software International SSI Hierarchical Linear and Non-Linear Modeling HLM,0.4973,Statisticians
+set up VMs in VirtualBox,Microsoft Hyper-V Server,0.4974,Computer Systems Engineers/Architects
+blockchain security practices and common vulnerabilities,blockchain consensus mechanisms,0.4979,Blockchain Engineers
+Bayesian inference,statistics,0.4993,Statisticians
+Fatality Analysis Reporting System (FARS),Reporting software,0.5009,Statisticians
+agent jobs,recruit employees,0.5024,Database Administrators
+UAT,"data extraction, transformation and loading tools",0.5026,Computer Systems Analysts
+Guide complex experiments,scientific research methodology,0.5038,Data Scientists
+Excel pivot tables,Microsoft Excel,0.5057,Business Intelligence Analysts
+uncertainty quantification,Mathematics,0.5074,Computer and Information Research Scientists
+OSI Model,software architecture models,0.5079,Network and Computer Systems Administrators
+fixing laptops and printers,repair ICT devices,0.5081,Computer User Support Specialists
+Contentful,conduct content quality assurance,0.5097,Web Developers
+journey mapping,Route,0.5098,Web and Digital Interface Designers
+API and serverless penetration testing,Penetration testing software,0.5138,Penetration Testers
+event tracking validation,Data validation software,0.5149,Web Developers
+A/B testing,develop ICT test suite,0.5155,Web Developers
+"RDBMS modeling, design, replication, propagation, and tuning",Database management systems,0.5158,Database Administrators
+undergrad research on neural networks,deep learning,0.5183,Computer and Information Research Scientists
+WordPress and Elementor,Element management software,0.5195,Web Developers
+EDR,"data extraction, transformation and loading tools",0.5203,Information Security Analysts
+Cisco Certified Internetwork Expert (CCIE),Cisco Webex,0.5243,Computer Network Architects
+file-based exchanges (sFTP),File server software,0.5255,Computer Programmers
+"custom PHP, CSS, and JS",JavaScript,0.5279,Web Developers
+"REST, JSON/XML, stored procedures",RESTful API,0.5281,Computer Programmers
+Academic publications and presentations at leading conferences,prepare presentation material,0.5284,Computer and Information Research Scientists
+Build smart contracts and back end web services,develop with cloud services,0.5294,Blockchain Engineers
+expert testimony in court related to computer analysis,use software for data preservation,0.5295,Digital Forensics Analysts
+did user research + wireframes for a class app,execute ICT user research activities,0.5297,Web and Digital Interface Designers
+cross-browser testing,Web browser software,0.5343,Web Developers
+"COBOL, Access VBA, or Mainframe processes",Common business oriented language COBOL,0.5381,Computer Programmers
+supervised and unsupervised learning,machine learning,0.5382,Data Scientists
+worked with a client to document their workflow,respond to customers' inquiries,0.5396,Computer Systems Analysts
+digital discovery,use software for data preservation,0.5397,Digital Forensics Analysts
+logging bugs in Jira,Atlassian JIRA,0.5422,Software Quality Assurance Analysts and Testers
+matplotlib,NumPy,0.5437,Data Scientists
+DLP,signal processing,0.5476,Information Security Analysts
+stored procedures and functions in Snowflake,Snowflake,0.5482,Data Warehousing Specialists
+Kaggle competitions,sports competition information,0.5483,Data Scientists
+built a REST API with Spring Boot for my final year project,Spring Boot,0.5533,Software Developers
+wireless,Internet of Things,0.5533,Computer Network Architects
+"evaluating contracts, budgets, proposals, and vendor/contractor compliance",ensure compliance with policies,0.5545,Information Technology Project Managers
+Large Language Models,unified modelling language,0.5577,Computer and Information Research Scientists
+manage permissions on file servers,manage digital documents,0.5602,Digital Forensics Analysts
+cutover planning,manage schedule of tasks,0.5612,Computer Network Architects
+"Erwin, ER/Studio",Embarcadero ER/Studio XE,0.5618,Database Architects
+"Full-stack web development (HTML5, CSS, JavaScript)",web programming,0.564,Software Developers
+expert testimony,use software for data preservation,0.567,Digital Forensics Analysts
+"SIEM, EDR, vulnerability management",IBM QRadar SIEM,0.5676,Information Security Engineers
+"enterprise-grade routers, switches, firewalls, and load balancers",ICT networking hardware,0.5689,Computer Network Architects
+basic switch config,ICT networking hardware,0.5702,Computer Network Support Specialists
+"smoke, functional, integration, and regression testing",Functional testing software,0.5733,Software Quality Assurance Analysts and Testers
+high availability,manage findable accessible interoperable and reusable data,0.5735,Computer Systems Engineers/Architects
+logical and physical network diagrams,Diagramming software,0.5739,Computer Network Architects
+"SQL Server, Oracle, PostgreSQL, MongoDB",MongoDB,0.5745,Database Architects
+TryHackMe / HackTheBox,Programming,0.575,Penetration Testers
+"CI/CD pipelines, Agile practices",DevOps,0.577,Software Developers
+Troubleshooting minor desktop issues,Troubleshooting,0.5773,Computer Systems Analysts
+designed the DB schema for our team app,design database scheme,0.5793,Database Architects
+designed a network topology in Packet Tracer,Packet tracing software,0.5796,Computer Network Architects
+"read technical instructions, procedures, manuals and charts",interpret technical requirements,0.5799,Computer User Support Specialists
+data center design,design computer network,0.5803,Computer Systems Engineers/Architects
+"Conceptual, logical, and physical data modeling",data models,0.5808,Database Architects
+Cisco/Brocade networking equipment,procurement of ICT network equipment,0.5813,Network and Computer Systems Administrators
+business continuity strategies,develop company strategies,0.5816,Computer Network Architects
+"Git, including pull requests and code reviews",Git,0.5822,Software Developers
+"Microsoft Excel (lookups, formulas, pivots, macros)",Microsoft Excel,0.5831,Business Intelligence Analysts
+data governance and stewardship,internet governance,0.5833,Business Intelligence Analysts
+"firewalls, access control lists (ACLs)",use access control software,0.5845,Information Security Engineers
+configured pfSense firewall in a lab,implement a firewall,0.5864,Information Security Engineers
+regression,Regression testing software,0.5879,Data Scientists
+Databricks,data warehouse,0.5884,Database Architects
+"firewalls, intrusion detection/prevention systems, SIEM, and vulnerability management tools",Firewall software,0.5905,Information Security Engineers
+program synthesis and probabilistic programming,Event-driven State-machines Programming,0.5919,Computer and Information Research Scientists
+SAN environments,Storage area network SAN software,0.5949,Network and Computer Systems Administrators
+"BI platforms, SQL",Structured query language SQL,0.5959,Computer Systems Analysts
+threat detection,attack vectors,0.596,Information Security Engineers
+Windows 10/11,Microsoft Windows,0.5973,Computer User Support Specialists
+experimental design,Design,0.5977,Statisticians
+network segmentation,customer segmentation,0.5986,Computer Network Architects
+"writing SQL statements to analyze data: joining, filtering, aggregating",Structured query language SQL,0.5988,Business Intelligence Analysts

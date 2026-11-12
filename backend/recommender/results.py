@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 
 from pipeline import DATA_DIR, PROCESSED_DIR
 from pipeline.embeddings import MODEL_NAME
+from recommender.matching import ALIASES_FILE
 
 REPO_DIR = DATA_DIR.parent
 RESULTS_DIR = DATA_DIR / 'results'
@@ -101,6 +102,7 @@ def configuration(params):
         'params': dataclasses.asdict(params) if params else None,
         'model': MODEL_NAME,
         'processed_data': {p.name: normalised_hash(p) for p in sorted(PROCESSED_DIR.glob('*.csv'))},
+        'skill_aliases': normalised_hash(ALIASES_FILE),
     }
     digest = hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
     return {'id': digest[:12], **content}
