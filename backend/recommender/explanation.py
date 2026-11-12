@@ -152,11 +152,22 @@ class ExplanationGenerator:
             )
             skills.extend(p.skill_id for p in r.proximity_paths)
 
+        if c.background_similarity is not None:
+            sentences.append(
+                f'Your interests, studies and experience {similarity_phrase(c.background_similarity)} '
+                f'this role (similarity {quote("background_similarity", c.background_similarity)}).'
+            )
+
         p = self.params
-        sentences.append(
-            f'The score weights coverage {p.coverage_weight:.0%}, similarity {p.similarity_weight:.0%} '
-            f'and proximity {p.proximity_weight:.0%}.'
-        )
+        weights = (f'coverage {p.coverage_weight:.0%}, similarity {p.similarity_weight:.0%} '
+                   f'and proximity {p.proximity_weight:.0%}')
+        if c.background_similarity is None:
+            sentences.append(f'The score weights {weights}.')
+        else:
+            sentences.append(
+                f'Your background counts for {p.background_weight:.0%} of the score; '
+                f'the rest weights {weights}.'
+            )
 
         return Explanation(
             career_id=r.career_id,

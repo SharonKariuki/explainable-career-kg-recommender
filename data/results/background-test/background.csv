@@ -1,0 +1,9 @@
+dataset,pairing,weight,profiles,p@1,r@3,mrr,ndcg@5,mrr_low,mrr_high
+synthetic-test,matched,0.0,360,0.4472,0.7333,0.6199,0.6604,0.5829,0.6548
+synthetic-test,matched,0.4,360,0.6944,0.925,0.8117,0.8489,0.7812,0.8409
+synthetic-test,mismatched,0.0,360,0.4472,0.7333,0.6199,0.6604,0.5829,0.6548
+synthetic-test,mismatched,0.4,360,0.4139,0.6556,0.5715,0.6014,0.5346,0.6123
+noisy-test,matched,0.0,360,0.4333,0.7056,0.5991,0.6358,0.5587,0.639
+noisy-test,matched,0.4,360,0.6028,0.8528,0.7408,0.7889,0.706,0.776
+noisy-test,mismatched,0.0,360,0.4333,0.7056,0.5991,0.6358,0.5587,0.639
+noisy-test,mismatched,0.4,360,0.3833,0.6639,0.5564,0.5895,0.5154,0.5963

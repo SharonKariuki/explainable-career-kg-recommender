@@ -3,11 +3,33 @@ from django.db import models
 
 
 class SkillProfile(models.Model):
-    """The skills a user has declared, in their own words."""
+    """The skills a user has declared, in their own words, and an optional background.
+
+    Interests, field of study and work experience feed the ranking through
+    their similarity to career descriptions (see recommender/engine.py); the
+    education level is shown back to the user but does not change the ranking.
+    """
+
+    EDUCATION_LEVELS = [
+        ('secondary', 'Secondary school'),
+        ('certificate', 'Certificate or diploma'),
+        ('undergraduate', 'Undergraduate degree (in progress)'),
+        ('bachelor', "Bachelor's degree"),
+        ('postgraduate', 'Postgraduate degree'),
+    ]
 
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='skill_profile')
     skills = models.JSONField(default=list)
+    education_level = models.CharField(max_length=20, choices=EDUCATION_LEVELS, blank=True)
+    field_of_study = models.CharField(max_length=200, blank=True)
+    interests = models.TextField(max_length=1000, blank=True)
+    experience = models.TextField(max_length=2000, blank=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def background_text(self):
+        """The free text the ranking compares with career descriptions, or '' when there is none."""
+        parts = [self.interests, f'Studied {self.field_of_study}.' if self.field_of_study else '', self.experience]
+        return ' '.join(p.strip() for p in parts if p and p.strip())
 
     def __str__(self):
         return f'{self.user.username}: {len(self.skills)} skills'

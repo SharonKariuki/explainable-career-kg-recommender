@@ -43,7 +43,8 @@ def test_recommendations_rank_the_saved_profile():
     assert [m['query'] for m in data['matches']] == DATA_SKILLS
     first = data['recommendations'][0]
     assert first['title'] == 'Data Scientists' and first['rank'] == 1 and first['career_code'] == '15-2051.00'
-    assert set(first['components']) == {'coverage', 'profile_similarity', 'graph_proximity'}
+    assert set(first['components']) == {'coverage', 'profile_similarity', 'graph_proximity', 'background_similarity'}
+    assert first['components']['background_similarity'] is None  # no background saved
     assert first['summary'].startswith('Data Scientists is')
     assert len(data['recommendations']) == 5
 
@@ -96,7 +97,8 @@ def test_detail_has_the_explanation_and_skills_gap():
     data = response.data
     assert data['title'] == 'Data Scientists' and data['rank'] == 1
     assert data['explanation'][0] == data['summary']
-    weights = data['weights']
+    assert data['weights']['background'] is None  # no background saved
+    weights = {k: v for k, v in data['weights'].items() if k != 'background'}
     assert sum(weights.values()) == pytest.approx(1)
     assert data['score'] == pytest.approx(sum(weights[k] * data['components'][k] for k in weights))
     assert {c['query'] for c in data['skill_contributions']} <= set(DATA_SKILLS)

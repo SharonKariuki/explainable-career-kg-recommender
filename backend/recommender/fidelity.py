@@ -59,6 +59,8 @@ def check_fidelity(explanation, recommendation):
         'profile_similarity': r.components.profile_similarity,
         'graph_proximity': r.components.graph_proximity,
     }
+    if r.components.background_similarity is not None:
+        actual['background_similarity'] = r.components.background_similarity
     for component, printed in explanation.quoted_components:
         if component not in actual:
             violations.append(f'quotes unknown component {component}')

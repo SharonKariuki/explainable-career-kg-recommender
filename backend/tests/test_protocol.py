@@ -167,7 +167,9 @@ TEST_ONLY = {'open_test_sets', 'test_profiles', 'noisy_test', 'held_out_names', 
              'check_test_set', 'task_test_profiles'}
 ALLOWED = {'evaluation.py': TEST_ONLY, 'evaluate.py': {'open_test_sets', 'test_profiles', 'noisy_test',
                                                     'task_test_profiles'},
-           'task_sets.py': {'check_test_set', 'task_test_profiles'}}
+           'task_sets.py': {'check_test_set', 'task_test_profiles'},
+           # The background-weight report (one test run, after the weight is fixed on validation).
+           'background_eval.py': {'open_test_sets', 'test_profiles', 'noisy_test', 'task_test_profiles'}}
 
 
 def identifiers(path):

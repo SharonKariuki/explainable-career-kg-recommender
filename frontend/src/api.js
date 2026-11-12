@@ -83,7 +83,8 @@ export async function logout() {
 
 export const me = () => request('GET', '/auth/me/')
 export const getProfile = () => request('GET', '/profile/')
-export const saveProfile = (skills) => request('PUT', '/profile/', { skills })
+// Sends only what it is given: { skills }, or the background fields as well.
+export const saveProfile = (changes) => request('PUT', '/profile/', Array.isArray(changes) ? { skills: changes } : changes)
 export const getRecommendations = (top = 10) => request('GET', `/recommendations/?top=${top}`)
 export const getRecommendation = (code) => request('GET', `/recommendations/${encodeURIComponent(code)}/`)
 
