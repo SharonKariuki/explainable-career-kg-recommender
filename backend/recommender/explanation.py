@@ -13,6 +13,13 @@ from dataclasses import dataclass
 from recommender.engine import DEFAULT_PARAMS
 
 SHOWN_CONTRIBUTIONS = 3
+# The proximity sentence says "mainly through" the skills it names only when they carry at
+# least this share of the walk's arrivals at the career; below it, "partly through".
+MAINLY_SHARE = 0.5
+
+
+def proximity_word(paths):
+    return 'mainly' if sum(p.share for p in paths) >= MAINLY_SHARE else 'partly'
 
 
 @dataclass(frozen=True)
@@ -137,15 +144,17 @@ class ExplanationGenerator:
             yours = {s.skill_id for s in contributions}
             listed = {s.skill_id for s in shown}
             own_paths = [p for p in r.proximity_paths if p.skill_id in yours]
+            related_paths = [p for p in r.proximity_paths if p.skill_id not in yours]
             own = [p.skill_label for p in own_paths]
-            related = [p.skill_label for p in r.proximity_paths if p.skill_id not in yours]
+            related = [p.skill_label for p in related_paths]
             links = []
             if own and all(p.skill_id in listed for p in own_paths):
-                links.append('mainly through the skills above')  # already named; don't repeat them
+                links.append(f'{proximity_word(own_paths)} through the skills above')  # already named; don't repeat them
             elif own:
-                links.append(f'mainly through your {join(own)}')
+                links.append(f'{proximity_word(own_paths)} through your {join(own)}')
             if related:
-                links.append(f'{"with further links" if own else "mainly"} through related skills such as {join(related)}')
+                lead = 'with further links' if own else proximity_word(related_paths)
+                links.append(f'{lead} through related skills such as {join(related)}')
             sentences.append(
                 f'In the skills graph the role sits {proximity_phrase(c.graph_proximity)} your profile '
                 f'(proximity {quote("graph_proximity", c.graph_proximity)}), connected {", ".join(links)}.'

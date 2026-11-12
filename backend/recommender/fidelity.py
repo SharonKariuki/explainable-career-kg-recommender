@@ -20,6 +20,7 @@ import re
 from dataclasses import dataclass
 from functools import lru_cache
 
+from recommender.explanation import MAINLY_SHARE
 from recommender.graph import get_graph
 
 QUOTED_QUERY = re.compile(r"your '([^']+)'", re.IGNORECASE)
@@ -66,6 +67,13 @@ def check_fidelity(explanation, recommendation):
             violations.append(f'quotes unknown component {component}')
         elif printed != formatted(component, actual[component]):
             violations.append(f'quotes {component} as {printed}, actual {formatted(component, actual[component])}')
+
+    # "mainly through" is a claim about the share of the walk the named skills carry:
+    # the user's own skills among the paths, or the related ones when none are the user's.
+    own = [p for p in r.proximity_paths if p.skill_id in allowed]
+    named = sum(p.share for p in (own or r.proximity_paths))
+    if 'connected mainly through' in explanation.text and named < MAINLY_SHARE:
+        violations.append(f'says mainly through skills that carry {named:.0%} of the proximity')
 
     queries = {s.query for s in r.skill_contributions}
     for quoted in QUOTED_QUERY.findall(explanation.text):

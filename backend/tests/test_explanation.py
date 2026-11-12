@@ -1,3 +1,5 @@
+import pytest
+
 from recommender.engine import ProximityPath, Recommendation, ScoreComponents, SkillContribution
 from recommender.explanation import ExplanationGenerator, fit_level
 
@@ -49,7 +51,7 @@ def test_low_confidence_matches_are_always_disclosed():
 
 def test_proximity_separates_the_users_skills_from_related_ones():
     mine = contribution('statistics')
-    paths = [ProximityPath('tool:statistics', 'statistics', 0.4), ProximityPath('tool:SAS', 'SAS', 0.1)]
+    paths = [ProximityPath('tool:statistics', 'statistics', 0.6), ProximityPath('tool:SAS', 'SAS', 0.1)]
     text = explain(recommendation([mine], paths)).text
     # statistics was already named, so it is referred to rather than repeated
     assert 'connected mainly through the skills above, with further links through related skills such as SAS' in text
@@ -57,9 +59,22 @@ def test_proximity_separates_the_users_skills_from_related_ones():
 
 def test_proximity_names_the_users_skills_not_already_listed():
     contributions = [contribution(f'Skill{i}', share=0.3 - i * 0.05) for i in range(4)]
-    paths = [ProximityPath('tool:Skill3', 'Skill3', 0.4)]
+    paths = [ProximityPath('tool:Skill3', 'Skill3', 0.6)]
     text = explain(recommendation(contributions, paths)).text
     assert 'connected mainly through your Skill3' in text
+
+
+@pytest.mark.parametrize('own, expected', [(0.5, 'mainly'), (0.49, 'partly'), (0.2, 'partly')])
+def test_mainly_only_when_the_named_skills_carry_half_the_proximity(own, expected):
+    paths = [ProximityPath('tool:statistics', 'statistics', own), ProximityPath('tool:SAS', 'SAS', 0.1)]
+    text = explain(recommendation([contribution('statistics')], paths)).text
+    assert f'connected {expected} through the skills above, with further links through related skills such as SAS' in text
+
+
+def test_related_skills_alone_are_mainly_only_with_half_the_proximity():
+    paths = [ProximityPath('tool:SAS', 'SAS', 0.3), ProximityPath('tool:R', 'R', 0.1)]
+    text = explain(recommendation([contribution('statistics')], paths)).text
+    assert 'connected partly through related skills such as SAS and R' in text
 
 
 def test_careers_without_direct_skills_say_so():

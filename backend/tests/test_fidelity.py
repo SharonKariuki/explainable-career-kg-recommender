@@ -60,6 +60,15 @@ def test_quoting_words_the_user_did_not_declare_fails(case):
     assert not report.passed
 
 
+def test_claiming_mainly_for_skills_that_carry_little_proximity_fails(case):
+    r, x = case  # the named path carries 0.3 of the proximity
+    mainly = tuple(s.replace('connected partly through', 'connected mainly through') for s in x.sentences)
+    assert any('connected mainly through' in s for s in mainly)
+    report = check_fidelity(replace(x, sentences=mainly), r)
+    assert not report.passed
+    assert any('mainly' in v for v in report.violations)
+
+
 def test_skill_words_inside_the_career_title_are_not_violations(case):
     r, x = case
     assert 'Database Administrators' in x.text  # "Database" is also a skill name
