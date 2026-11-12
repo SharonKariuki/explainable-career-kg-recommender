@@ -84,7 +84,7 @@ def completeness(explanation, recommendation):
             and 'profile_similarity' in quoted
             and ('graph_proximity' in quoted or not r.proximity_paths)
         ),
-        'C6_score_weights': 'The score weights coverage' in text,
+        'C6_score_weights': 'weights coverage' in text,
     }
 
 

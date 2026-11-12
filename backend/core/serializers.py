@@ -9,7 +9,7 @@ from google.oauth2 import id_token
 from rest_framework import serializers
 
 from core import services
-from core.models import GoogleAccount, SkillProgress
+from core.models import GoogleAccount, SkillProfile, SkillProgress
 from recommender.matching import SkillMatcher
 
 User = get_user_model()
@@ -37,9 +37,15 @@ MAX_SKILLS = 30
 
 
 class SkillProfileSerializer(serializers.Serializer):
+    """Every field is optional on save: a request changes only the fields it sends."""
+
     skills = serializers.ListField(
-        child=serializers.CharField(max_length=100, allow_blank=True), max_length=MAX_SKILLS,
+        child=serializers.CharField(max_length=100, allow_blank=True), max_length=MAX_SKILLS, required=False,
     )
+    education_level = serializers.ChoiceField(choices=SkillProfile.EDUCATION_LEVELS, allow_blank=True, required=False)
+    field_of_study = serializers.CharField(max_length=200, allow_blank=True, required=False)
+    interests = serializers.CharField(max_length=1000, allow_blank=True, required=False)
+    experience = serializers.CharField(max_length=2000, allow_blank=True, required=False)
     updated_at = serializers.DateTimeField(read_only=True)
 
     def validate_skills(self, value):

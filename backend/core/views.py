@@ -99,7 +99,8 @@ def profile(request):
     if request.method == 'PUT':
         serializer = SkillProfileSerializer(skill_profile, data=request.data)
         serializer.is_valid(raise_exception=True)
-        skill_profile.skills = serializer.validated_data['skills']
+        for field, value in serializer.validated_data.items():
+            setattr(skill_profile, field, value.strip() if isinstance(value, str) else value)
         skill_profile.save()
     return Response(SkillProfileSerializer(skill_profile).data)
 
@@ -107,6 +108,14 @@ def profile(request):
 def declared_skills(user):
     skill_profile = SkillProfile.objects.filter(user=user).first()
     return skill_profile.skills if skill_profile else []
+
+
+def ranked_for(user, top_k=None):
+    """(matches, recommendations) for the user's saved skills and background."""
+    skill_profile = SkillProfile.objects.filter(user=user).first()
+    if skill_profile is None:
+        return services.rank([], top_k=top_k)
+    return services.rank(skill_profile.skills, top_k=top_k, background=skill_profile.background_text())
 
 
 @api_view(['GET'])
@@ -119,7 +128,7 @@ def recommendations(request):
         raise ValidationError({'top': 'Must be between 1 and 50.'})
 
     skills = declared_skills(request.user)
-    matches, ranked = services.rank(skills, top_k=top)
+    matches, ranked = ranked_for(request.user, top_k=top)
     return Response({
         'skills': skills,
         'matches': [services.match_summary(m) for m in matches],
@@ -129,7 +138,7 @@ def recommendations(request):
 
 @api_view(['GET'])
 def recommendation_detail(request, career_code):
-    matches, ranked = services.rank(declared_skills(request.user))
+    matches, ranked = ranked_for(request.user)
     for position, r in enumerate(ranked, 1):
         if services.career_code(r.career_id) == career_code:
             return Response(services.recommendation_detail(r, position, matches))
@@ -145,8 +154,8 @@ def match_info(recommendation, position):
 
 
 def ranking(user):
-    """(matches, {career code: (position, recommendation)}) for the user's saved skills."""
-    matches, ranked = services.rank(declared_skills(user))
+    """(matches, {career code: (position, recommendation)}) for the user's saved skills and background."""
+    matches, ranked = ranked_for(user)
     return matches, {services.career_code(r.career_id): (i, r) for i, r in enumerate(ranked, 1)}
 
 

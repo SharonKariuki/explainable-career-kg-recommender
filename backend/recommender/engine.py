@@ -24,6 +24,14 @@ with every component in 0-1:
   that are well connected to the profile through shared skills and careers,
   even when they do not require the declared skills directly.
 
+When the user also describes their background (career interests, field of
+study, work experience), its SBERT embedding is compared with the same career
+descriptions, and that BackgroundSimilarity is blended in:
+
+    score = (1 - background_weight) * skills score + background_weight * BackgroundSimilarity
+
+A profile without background text is scored exactly as before.
+
 A match below `low_confidence_threshold` keeps its nearest skill node but
 counts at `low_confidence_weight` of its similarity. Every recommendation
 stores its components and the skills behind them, which is what the
@@ -59,6 +67,11 @@ class EngineParams:
     coverage_weight: float = 0.7
     similarity_weight: float = 0.1
     proximity_weight: float = 0.2
+    # Share of the score taken by BackgroundSimilarity when a background is given.
+    # Chosen by `python -m recommender.background_eval` on validation profiles:
+    # the best matched nDCG@5 among weights that cost a misleading background
+    # at most 0.05 MRR.
+    background_weight: float = 0.4
 
 
 DEFAULT_PARAMS = EngineParams()
@@ -69,6 +82,7 @@ class ScoreComponents:
     coverage: float
     profile_similarity: float
     graph_proximity: float
+    background_similarity: float | None = None  # None when the profile has no background text
 
 
 @dataclass(frozen=True)
@@ -107,6 +121,7 @@ class Recommendation:
 class PreparedProfile:
     matches: tuple
     profile_vector: np.ndarray
+    background_vector: np.ndarray | None = None
 
 
 class RecommendationEngine:
@@ -121,21 +136,23 @@ class RecommendationEngine:
         vectors = load_embeddings(texts.values())
         self.career_vectors = {c: vectors[t] for c, t in texts.items()}
 
-    def prepare(self, skills):
+    def prepare(self, skills, background=''):
         """Encode and match a profile once, so it can be scored under many parameter sets."""
         queries = self.matcher.clean(skills)
         if not queries:
             return PreparedProfile(matches=(), profile_vector=None)
         vectors = encode(queries)
         mean = vectors.mean(axis=0)
+        background = ' '.join((background or '').split())
         return PreparedProfile(
             matches=tuple(self.matcher.match_encoded(queries, vectors)),
             profile_vector=mean / np.linalg.norm(mean),
+            background_vector=encode([background])[0] if background else None,
         )
 
-    def rank(self, skills, top_k=10, params=DEFAULT_PARAMS):
-        """Return (matches, recommendations) for a list of declared skills."""
-        return self.score(self.prepare(skills), params, top_k)
+    def rank(self, skills, top_k=10, params=DEFAULT_PARAMS, background=''):
+        """Return (matches, recommendations) for a list of declared skills and optional background text."""
+        return self.score(self.prepare(skills, background), params, top_k)
 
     def score(self, prepared, params=DEFAULT_PARAMS, top_k=None):
         matches = tuple(
@@ -174,19 +191,26 @@ class RecommendationEngine:
                 ),
                 key=lambda c: -c.coverage_share,
             ))
+            background = None
+            if prepared.background_vector is not None:
+                background = max(0.0, float(self.career_vectors[career] @ prepared.background_vector))
             components = ScoreComponents(
                 coverage=sum(c.coverage_share for c in contributions),
                 profile_similarity=max(0.0, float(self.career_vectors[career] @ prepared.profile_vector)),
                 graph_proximity=proximity[career],
+                background_similarity=background,
             )
+            skills_score = (params.coverage_weight * components.coverage
+                            + params.similarity_weight * components.profile_similarity
+                            + params.proximity_weight * components.graph_proximity)
+            if background is not None:
+                skills_score = (1 - params.background_weight) * skills_score + params.background_weight * background
             node = self.kg.node(career)
             recommendations.append(Recommendation(
                 career_id=career,
                 title=node['label'],
                 domain=node['domain'],
-                score=(params.coverage_weight * components.coverage
-                       + params.similarity_weight * components.profile_similarity
-                       + params.proximity_weight * components.graph_proximity),
+                score=skills_score,
                 components=components,
                 skill_contributions=contributions,
                 proximity_paths=self.proximity_paths(career, visits),

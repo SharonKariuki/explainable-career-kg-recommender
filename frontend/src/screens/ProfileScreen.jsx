@@ -5,11 +5,21 @@ import { PageHeader, Progress, Status } from '../components.jsx'
 import { Icon } from '../icons.jsx'
 
 const MAX_SKILLS = 30
+const EDUCATION_LEVELS = [
+  ['', 'Choose one (optional)'],
+  ['secondary', 'Secondary school'],
+  ['certificate', 'Certificate or diploma'],
+  ['undergraduate', 'Undergraduate degree (in progress)'],
+  ['bachelor', "Bachelor's degree"],
+  ['postgraduate', 'Postgraduate degree'],
+]
+const EMPTY_BACKGROUND = { education_level: '', field_of_study: '', interests: '', experience: '' }
 // Wait this long after typing stops before asking for suggestions.
 const SUGGEST_DELAY_MS = 200
 
 export default function ProfileScreen({ onSaved }) {
   const [skills, setSkills] = useState([])
+  const [background, setBackground] = useState(EMPTY_BACKGROUND)
   const [draft, setDraft] = useState('')
   const [status, setStatus] = useState('loading')
   const [error, setError] = useState(null)
@@ -36,7 +46,11 @@ export default function ProfileScreen({ onSaved }) {
     // late load would overwrite skills the user has started adding.
     let current = true
     getProfile()
-      .then((profile) => current && setSkills(profile.skills))
+      .then((profile) => {
+        if (!current) return
+        setSkills(profile.skills)
+        setBackground(Object.fromEntries(Object.keys(EMPTY_BACKGROUND).map((k) => [k, profile[k] ?? ''])))
+      })
       .catch((err) => current && setError(err.message))
       .finally(() => current && setStatus('ready'))
     return () => {
@@ -73,7 +87,7 @@ export default function ProfileScreen({ onSaved }) {
     setStatus('saving')
     setError(null)
     try {
-      const profile = await saveProfile(skills)
+      const profile = await saveProfile({ skills, ...background })
       setSkills(profile.skills)
       onSaved()
     } catch (err) {
@@ -154,6 +168,56 @@ export default function ProfileScreen({ onSaved }) {
         ) : (
           <p className="empty">No skills yet. Add your first one above.</p>
         )}
+      </section>
+
+      <section className="card panel about-you">
+        <div className="ph">
+          <p className="mono">About you (optional)</p>
+        </div>
+        <p className="muted small">
+          What you enjoy, what you study and what you have done. AjiraGuide compares this with each career's
+          description and counts it towards your matches. Leave it empty to be matched on skills alone.
+        </p>
+        <div className="stack">
+          <label>
+            <span>Education level</span>
+            <select className="field" value={background.education_level} onChange={(e) => setBackground({ ...background, education_level: e.target.value })}>
+              {EDUCATION_LEVELS.map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+            </select>
+          </label>
+          <label>
+            <span>Field of study</span>
+            <input
+              className="field"
+              value={background.field_of_study}
+              onChange={(e) => setBackground({ ...background, field_of_study: e.target.value })}
+              placeholder="e.g. Computer Science, Statistics"
+              maxLength={200}
+            />
+          </label>
+          <label>
+            <span>Career interests</span>
+            <textarea
+              className="field"
+              value={background.interests}
+              onChange={(e) => setBackground({ ...background, interests: e.target.value })}
+              placeholder="e.g. I like solving puzzles with data and explaining what I find to others."
+              maxLength={1000}
+              rows={3}
+            />
+          </label>
+          <label>
+            <span>Work or project experience</span>
+            <textarea
+              className="field"
+              value={background.experience}
+              onChange={(e) => setBackground({ ...background, experience: e.target.value })}
+              placeholder="e.g. Built a website for a student club; cleaned survey data in Excel for a class project."
+              maxLength={2000}
+              rows={3}
+            />
+          </label>
+        </div>
       </section>
 
       <div className="actions">
