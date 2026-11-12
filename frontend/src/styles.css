@@ -1078,7 +1078,36 @@ a.row:hover b { text-decoration: underline; }
 .btn.band-ghost, .btn.band-solid { height: 42px; padding: 0 20px; font-size: 13px; }
 .btn.band-ghost { color: #fff; background: rgb(10 20 48 / 0.32); border: 1px solid rgba(255, 255, 255, 0.55); }
 .btn.band-ghost:hover { background: rgb(10 20 48 / 0.5); }
-.btn.band-solid { background: #fff; color: var(--navy); }
+/* The main actions: a white pill with the amber arrow disc and the amber under-glow. */
+.btn.band-solid { background: #fff; color: var(--navy); padding-right: 6px; box-shadow: var(--primary-glow); }
+.arrow-disc {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--amber);
+  color: var(--navy);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5);
+  transition: transform 0.18s ease;
+}
+.arrow-disc .icon { stroke-width: 2.2; }
+.btn.small .arrow-disc { width: 26px; height: 26px; }
+.btn:hover .arrow-disc { transform: translateX(2px); }
+/* Amber marks the match: the student's name on the navy, a spark by the top match, and its score bar. */
+.amber-text { color: var(--amber); }
+.spark {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 8px;
+  border-radius: 50%;
+  vertical-align: 2px;
+  background: var(--amber);
+  box-shadow: 0 0 0 3px rgb(255 180 92 / 0.25), 0 0 10px rgb(255 180 92 / 0.8);
+}
+.t-match .seg-bar i.on { background: var(--amber); box-shadow: inset 0 0 0 1px rgb(184 110 28 / 0.35); }
 .btn.band-solid:hover { background: #e4ecff; }
 .btn.small.band-solid { height: 38px; }
 

@@ -71,6 +71,11 @@ function ScoreBar({ score }) {
   )
 }
 
+// The amber disc that marks a main action, as on the landing site's primary button.
+function ArrowDisc() {
+  return <span className="arrow-disc" aria-hidden="true"><Icon name="forward" size={13} /></span>
+}
+
 export default function DashboardScreen({ user }) {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
@@ -91,7 +96,7 @@ export default function DashboardScreen({ user }) {
   const band = (
     <header className="dash-band">
       <div className="grow">
-        <h1>{hello}, {user.username}.</h1>
+        <h1>{hello}, <span className="amber-text">{user.username}</span>.</h1>
         <p>
           {ready
             ? 'The career that fits your skills best, what else fits, and what to do next.'
@@ -101,7 +106,7 @@ export default function DashboardScreen({ user }) {
       {ready && (
         <div className="band-buttons">
           <a className="btn band-ghost" href="#/assessment">Edit skills</a>
-          <a className="btn band-solid" href="#/recommendations">See matches</a>
+          <a className="btn band-solid" href="#/recommendations">See matches<ArrowDisc /></a>
         </div>
       )}
     </header>
@@ -138,7 +143,7 @@ export default function DashboardScreen({ user }) {
           <div className="tile-head spread">
             <div className="tile-head">
               <i className="tile-icon"><Icon name="graph" /></i>
-              <h2 id="match-label">Your top match</h2>
+              <h2 id="match-label">Your top match<i className="spark" aria-hidden="true" /></h2>
             </div>
             {top && <Pill tone={top.fit === 'strong' ? 'match' : 'neutral'}>{fitLabel(top.fit)}</Pill>}
           </div>
@@ -174,7 +179,7 @@ export default function DashboardScreen({ user }) {
           <p className="mono" id="next-label"><i aria-hidden="true" />Next step</p>
           <h2>{next.title}</h2>
           <p className="hero-sub">{next.text}</p>
-          <a className="btn small band-solid" href={next.action.href}>{next.action.label}</a>
+          <a className="btn small band-solid" href={next.action.href}>{next.action.label}<ArrowDisc /></a>
         </section>
 
         <section className="tile t-more" aria-labelledby="more-label">
