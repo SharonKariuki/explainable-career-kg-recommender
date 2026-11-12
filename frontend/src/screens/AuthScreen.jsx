@@ -59,7 +59,7 @@ function GoogleButton({ text, onCredential, onError }) {
   return <div ref={slot} className="google-btn" />
 }
 
-export default function AuthScreen({ onSignedIn }) {
+export default function AuthScreen({ onSignedIn, notice = null }) {
   const [mode, setMode] = useState('login')
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
@@ -117,6 +117,7 @@ export default function AuthScreen({ onSignedIn }) {
         <p className="subtitle">
           AjiraGuide suggests tech careers from the skills you already have, and explains why.
         </p>
+        {notice && !error && <p className="state" role="status"><Icon name="alert" />{notice}</p>}
         <form onSubmit={submit} className="stack">
           <label>
             Username

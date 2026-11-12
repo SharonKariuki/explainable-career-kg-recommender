@@ -811,3 +811,22 @@ a.row:hover b { text-decoration: underline; }
   .result-head { flex-wrap: wrap; }
   .match-badge { justify-items: start; text-align: left; width: 100%; padding-left: 45px; }
 }
+
+/* Shown while requests wait for the sleeping backend to start. */
+.waking {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: calc(100vw - 32px);
+  margin: 0;
+  padding: 10px 16px;
+  border-radius: var(--r-pill);
+  font-size: 13px;
+}
+.state.error .grow { min-width: 0; }
+.state.error .btn { flex-shrink: 0; }
