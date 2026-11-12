@@ -43,6 +43,14 @@
   /* Pearl sheen and the one warm accent */
   --gradient-accent: linear-gradient(90deg, #eef3ff 0%, #c4d6ff 25%, #96b3ff 50%, #8394ff 75%, #b6a4ff 100%);
   --amber: #ffb45c;     /* fills only, never text on light */
+  --amber-soft: #ffd9a8;
+  /* The landing headline's amber, for a name or phrase on navy only */
+  --gradient-amber: linear-gradient(90deg, #ffd9a8 0%, #ffb45c 55%, #f29a45 100%);
+  /* The landing primary button: a navy bead with a white cap above and an amber reflection below */
+  --bead: radial-gradient(120% 90% at 50% -30%, rgb(255 255 255 / 0.22) 0%, rgb(255 255 255 / 0) 55%),
+          radial-gradient(80% 75% at 50% 140%, rgb(255 180 92 / 0.85) 0%, rgb(255 180 92 / 0) 65%);
+  --bead-light: inset 0 0 16px rgb(255 255 255 / 0.4), inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -1.5px 0 rgb(255 180 92 / 0.95);
+  --bead-glow: 0 10px 30px -12px rgb(255 180 92 / 0.5);
   --navy: #0a1430;
 
   /* Roles, each a dark text on a pale fill */
@@ -478,6 +486,7 @@ input, select { font: inherit; color: inherit; }
   padding: calc(92px + var(--pad-top)) calc(50vw - 50%) 72px;
   color: #fff;
   background:
+    radial-gradient(26% 20% at 76% 80%, rgb(255 180 92 / 0.28), transparent 100%),
     radial-gradient(60% 80% at 92% 12%, var(--panel-glow), transparent 72%),
     linear-gradient(168deg, var(--navy) 0, #111c44 40%, var(--panel-mid) 68%, var(--panel-mist) 88%, transparent 100%);
   /* The wash is diagonal, so its left side would end on a hard edge; the mask fades the whole foot. */
@@ -552,13 +561,15 @@ input, select { font: inherit; color: inherit; }
 .btn.primary, .btn.dark { background: var(--inverse-bg); color: var(--inverse-fg); border: 1px solid var(--inverse-bg); }
 .btn.primary:hover:not(:disabled), .btn.dark:hover:not(:disabled) { background: var(--inverse-hover); }
 /* The primary action: a navy core inside a pearl-sheen ring, with the amber under-glow. */
-.btn.primary:not(:disabled) {
-  border: 1.5px solid transparent;
-  background: linear-gradient(rgba(255, 255, 255, 0.14), transparent 45%) padding-box, linear-gradient(var(--navy), var(--navy)) padding-box, var(--gradient-accent) border-box;
-  box-shadow: var(--primary-glow);
+.btn.primary:not(:disabled), .btn.band-solid {
+  border: 2px solid transparent;
+  background: var(--bead) padding-box, linear-gradient(var(--navy), var(--navy)) padding-box, var(--gradient-accent) border-box;
+  box-shadow: var(--bead-light), var(--bead-glow);
+  color: #fff;
+  transition: box-shadow 0.35s cubic-bezier(0.44, 0, 0.56, 1);
 }
-.btn.primary:hover:not(:disabled) {
-  background: linear-gradient(rgba(255, 255, 255, 0.14), transparent 45%) padding-box, linear-gradient(var(--inverse-hover), var(--inverse-hover)) padding-box, var(--gradient-accent) border-box;
+.btn.primary:hover:not(:disabled), .btn.band-solid:hover {
+  box-shadow: inset 0 0 20px rgb(255 255 255 / 0.55), inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -1.5px 0 rgb(255 180 92), var(--bead-glow);
 }
 .btn.glass { height: 40px; padding: 0 16px; font-size: 13px; font-weight: 500; }
 .btn.small { height: 36px; padding: 0 16px; font-size: 13px; }
@@ -1042,6 +1053,7 @@ a.row:hover b { text-decoration: underline; }
   margin-top: -72px;  /* up behind the top bar, to the top of the page */
   padding-bottom: 12px;
   background:
+    radial-gradient(26% 70px at 76% 470px, rgb(255 180 92 / 0.3), transparent 100%),
     radial-gradient(60% 300px at 92% 40px, var(--panel-glow), transparent 72%),
     linear-gradient(168deg, var(--navy) 0, #111c44 150px, var(--panel-mid) 300px, var(--panel-mist) 450px, transparent 640px);
 }
@@ -1076,10 +1088,33 @@ a.row:hover b { text-decoration: underline; }
 .dash-band p { margin-top: 8px; max-width: 44ch; font-size: 14px; line-height: 1.55; color: #d5ddf5; }
 .band-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn.band-ghost, .btn.band-solid { height: 42px; padding: 0 20px; font-size: 13px; }
-.btn.band-ghost { color: #fff; background: rgb(10 20 48 / 0.32); border: 1px solid rgba(255, 255, 255, 0.55); }
-.btn.band-ghost:hover { background: rgb(10 20 48 / 0.5); }
-/* The main actions: a white pill with the amber arrow disc and the amber under-glow. */
-.btn.band-solid { background: #fff; color: var(--navy); padding-right: 6px; box-shadow: var(--primary-glow); }
+/* The second action: clear glass, as the landing site's secondary button. */
+.btn.band-ghost {
+  position: relative;
+  color: #fff;
+  /* A navy underlay keeps the white label readable where the wash turns pale. */
+  background: linear-gradient(rgb(255 255 255 / 0.1), rgb(255 255 255 / 0.1)), rgb(10 20 48 / 0.34);
+  border: 1px solid transparent;
+  box-shadow: inset 0 0 14px rgb(255 255 255 / 0.16), inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -1px 0 rgb(255 255 255 / 0.08);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+.btn.band-ghost::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  padding: 1px;
+  border-radius: inherit;
+  background: var(--glass-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.btn.band-ghost:hover { background: linear-gradient(rgb(255 255 255 / 0.2), rgb(255 255 255 / 0.2)), rgb(10 20 48 / 0.34); }
+/* The main actions: the navy bead with the amber arrow disc. */
+.btn.band-solid { padding-right: 6px; }
 .arrow-disc {
   flex: none;
   width: 30px;
@@ -1096,7 +1131,15 @@ a.row:hover b { text-decoration: underline; }
 .btn.small .arrow-disc { width: 26px; height: 26px; }
 .btn:hover .arrow-disc { transform: translateX(2px); }
 /* Amber marks the match: the student's name on the navy, a spark by the top match, and its score bar. */
-.amber-text { color: var(--amber); }
+.amber-text, .sheen-text { -webkit-background-clip: text; background-clip: text; color: transparent; }
+.amber-text { background-image: var(--gradient-amber); }
+.page-header h1, .dash-band h1 { width: fit-content; max-width: 100%; }
+.page-header h1, .dash-band h1 {
+  background: linear-gradient(90deg, #ffffff 0%, #eef3ff 30%, #c4d6ff 62%, #a9b8ff 82%, #c9bcff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .spark {
   display: inline-block;
   width: 7px;
@@ -1108,7 +1151,6 @@ a.row:hover b { text-decoration: underline; }
   box-shadow: 0 0 0 3px rgb(255 180 92 / 0.25), 0 0 10px rgb(255 180 92 / 0.8);
 }
 .t-match .seg-bar i.on { background: var(--amber); box-shadow: inset 0 0 0 1px rgb(184 110 28 / 0.35); }
-.btn.band-solid:hover { background: #e4ecff; }
 .btn.small.band-solid { height: 38px; }
 
 .dash { display: grid; gap: var(--section-gap); }
@@ -1184,7 +1226,15 @@ a.tile-tag:hover { background: var(--hover-strong); }
 }
 .match-score { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
 
-.dash-callout { align-content: start; gap: 10px; padding: 20px; }
+.dash-callout {
+  align-content: start;
+  gap: 10px;
+  padding: 20px;
+  background:
+    radial-gradient(90% 116% at 100% 135%, rgb(255 255 255 / 0) 55.5%, rgb(255 217 168 / 0.7) 58.5%, rgb(255 255 255 / 0.85) 60%, rgb(255 255 255 / 0) 64%),
+    radial-gradient(85% 110% at 100% 135%, rgb(59 79 168 / 0.95) 0%, rgb(47 65 146 / 0.8) 34%, rgb(38 53 122 / 0.5) 48%, rgb(38 53 122 / 0) 60%),
+    var(--hero-wash), var(--hero-bg);
+}
 .dash-callout h2 { margin-top: 4px; font-size: 22px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.2; overflow-wrap: anywhere; }
 .dash-callout .hero-sub { font-size: 14px; line-height: 1.55; max-width: 34ch; }
 .dash-callout .btn { justify-self: start; align-self: end; margin-top: 14px; }
