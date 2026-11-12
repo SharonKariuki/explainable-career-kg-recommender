@@ -79,6 +79,19 @@ class SkillProgress(models.Model):
         return f'{self.user.username}: {self.skill_id} {self.status}'
 
 
+class AdminAccess(models.Model):
+    """Carries the admin site's own permissions (see core/roles.py); it has no table."""
+
+    class Meta:
+        managed = False
+        default_permissions = ()
+        permissions = [
+            ('assign_roles', 'Can assign roles and manage staff accounts'),
+            ('view_system_report', 'Can view the system report'),
+            ('view_data_catalogue', 'Can view the careers and skills catalogue'),
+        ]
+
+
 # ---- Recommendation history (the Recommendation, Explanation and Skill Gap entities of the ERD) ----
 
 class RecommendationRun(models.Model):

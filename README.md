@@ -238,3 +238,12 @@ Postgres database; [docs/deployment.md](docs/deployment.md) has the steps,
 including how to create the first administrator. The admin site at
 `<API address>/admin/` manages users, shows the careers and skills, and has a
 system report.
+
+Access to it is by role (`backend/core/roles.py`). An **Admin** manages student
+accounts and their data and reads the report and catalogue. A **Superadmin**
+can also assign roles, edit staff accounts and delete users. A Superadmin sets
+roles on a user's page, or from the command line:
+
+```bash
+python manage.py assign_role <username> superadmin   # or admin, or none
+```

@@ -116,6 +116,12 @@ cd backend
 DB_HOST='<neon host>' DB_NAME='<neon database>' DB_USER='<neon user>' DB_PASSWORD='<neon password>' DB_SSLMODE=require python manage.py createsuperuser
 ```
 
+That account is a Superadmin. To promote an account that already exists, run
+`python manage.py assign_role <username> superadmin` the same way. After that,
+a Superadmin gives other accounts the Admin or Superadmin role from the user's
+page in the admin site; Admins cannot assign roles, edit staff accounts or
+delete users.
+
 ## 7. Final check
 
 Open the Vercel address in a private window, create an account with a
