@@ -28,3 +28,6 @@ data/cache/
 *.swp
 .DS_Store
 Thumbs.db
+
+# Django collectstatic output (built into the container image)
+backend/staticfiles/

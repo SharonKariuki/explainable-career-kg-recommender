@@ -16,3 +16,4 @@ class CoreConfig(AppConfig):
         if serving:
             from core.services import warm_up
             warm_up()
+
