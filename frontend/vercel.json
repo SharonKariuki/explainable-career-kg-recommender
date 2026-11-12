@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://BACKEND_HOST/api/$1"
+      "destination": "https://ajiraguide-api.calmground-63e32c43.southafricanorth.azurecontainerapps.io/api/$1"
     }
   ]
 }
