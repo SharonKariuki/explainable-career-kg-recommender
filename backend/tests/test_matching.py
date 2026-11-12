@@ -36,6 +36,11 @@ def test_blank_and_repeated_skills_are_dropped(matcher):
     assert matcher.match([]) == []
 
 
+def test_repeats_keep_the_first_spelling_in_its_place():
+    assert SkillMatcher.clean(['Python', 'SQL', 'python', 'Git']) == ['Python', 'SQL', 'Git']
+    assert SkillMatcher.clean(['a', 'B', 'A', 'b', 'c']) == ['a', 'B', 'c']
+
+
 def test_every_matchable_label_belongs_to_a_graph_skill(matcher):
     assert len(matcher.texts) == len(matcher.node_ids) == len(matcher.matrix)
     assert all(matcher.kg.node(node)['kind'] == 'skill' for node in set(matcher.node_ids))
