@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AjiraGuide privacy policy</title>
+    <style>
+      :root {
+        --base: #efe8e2;
+        --card: #ffffff;
+        --fg: #111113;
+        --muted: #6b6b73;
+        --line: #ececf0;
+        --gold: #b07a22;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --base: #141416;
+          --card: #1c1c20;
+          --fg: #f2f2f4;
+          --muted: #a6a5ae;
+          --line: #2c2c32;
+          --gold: #e0a03a;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--base);
+        color: var(--fg);
+        font: 16px/1.6 Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 32px auto;
+        padding: 32px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+      }
+      @media (max-width: 760px) {
+        main { margin: 16px; padding: 20px; }
+      }
+      h1 { font-size: 28px; margin: 0 0 4px; }
+      h2 { font-size: 18px; margin: 28px 0 8px; }
+      p, li { color: var(--fg); }
+      .muted { color: var(--muted); }
+      a { color: var(--gold); }
+      ul { padding-left: 20px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy policy</h1>
+      <p class="muted">AjiraGuide · last updated 12 November 2026</p>
+
+      <p>
+        AjiraGuide suggests technology careers from the skills you enter and explains why. It is a final-year
+        student project at Strathmore University. This page explains what it stores about you and why.
+      </p>
+
+      <h2>What we store</h2>
+      <ul>
+        <li><strong>Your account:</strong> a username, your email address, and a securely hashed password if you set one.</li>
+        <li>
+          <strong>If you sign in with Google:</strong> your email address and Google's account identifier, so the same
+          Google account signs you back in. We do not receive your Google password, contacts or any other Google data.
+        </li>
+        <li><strong>What you enter:</strong> your skills, the careers you save and the skills you mark as in progress.</li>
+        <li>
+          <strong>In your browser:</strong> a sign-in token and your light or dark theme choice, so you stay signed in
+          and the page looks the way you left it. There are no advertising or tracking cookies.
+        </li>
+      </ul>
+
+      <h2>How we use it</h2>
+      <p>
+        Only to run AjiraGuide: to sign you in, recommend careers, explain them and show the skills you could build
+        next. We do not sell your information, share it with advertisers or use it for anything else.
+      </p>
+
+      <h2>Where it is kept</h2>
+      <p>
+        The app runs on Microsoft Azure and stores its data in a Neon Postgres database. Connections are encrypted.
+        The site itself is served by Vercel, and fonts load from Google Fonts.
+      </p>
+
+      <h2>Deleting your data</h2>
+      <p>
+        Open <strong>Settings</strong> and choose <strong>Delete account</strong>. Your account, skills, saved careers and
+        progress are removed permanently straight away.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy: open an issue on the
+        <a href="https://github.com/SharonKariuki/explainable-career-kg-recommender/issues">project's GitHub page</a>.
+      </p>
+
+      <p><a href="/">Back to AjiraGuide</a></p>
+    </main>
+  </body>
+</html>
