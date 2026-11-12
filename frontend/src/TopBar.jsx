@@ -3,7 +3,6 @@
 
 import { useEffect, useId, useRef, useState } from 'react'
 
-import { LogoTile } from './components.jsx'
 import { Icon } from './icons.jsx'
 import { menuTarget } from './menu.js'
 
@@ -134,9 +133,11 @@ export function AvatarMenu({ username, links, active, theme, onToggleTheme, onSi
 export function TopBar({ nav, more, active, user, theme, onToggleTheme, onSignOut }) {
   return (
     <header className="topbar glass">
-      <a href="#/dashboard" className="brand">
-        <LogoTile size={36} />
-        <span>AjiraGuide</span>
+      {/* The logo lockup: the A mark, a hairline, and the wordmark. */}
+      <a href="#/dashboard" className="brand" aria-label="AjiraGuide home">
+        <i className="brand-mark" aria-hidden="true" />
+        <i className="brand-rule" aria-hidden="true" />
+        <span className="brand-word" aria-hidden="true">AjiraGuide</span>
       </a>
       <nav className="topnav" aria-label="Main">
         {nav.map((n) => (
