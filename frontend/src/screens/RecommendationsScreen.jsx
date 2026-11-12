@@ -102,7 +102,7 @@ export function MatchCard({ match: r }) {
           <h2><a href={`#/careers/${r.career_code}`}>{r.title}</a></h2>
           <p className="sub">{capitalise(r.domain)}</p>
         </div>
-        <MatchBadge fit={r.fit} score={r.score} />
+        <MatchBadge fit={r.fit} score={r.score} top={r.rank === 1} />
       </div>
       <p className="result-summary">{r.reason}</p>
       {r.matched_skills.length > 0 && (

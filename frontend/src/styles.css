@@ -46,11 +46,6 @@
   --amber-soft: #ffd9a8;
   /* The landing headline's amber, for a name or phrase on navy only */
   --gradient-amber: linear-gradient(90deg, #ffd9a8 0%, #ffb45c 55%, #f29a45 100%);
-  /* The landing primary button: a navy bead with a white cap above and an amber reflection below */
-  --bead: radial-gradient(120% 90% at 50% -30%, rgb(255 255 255 / 0.22) 0%, rgb(255 255 255 / 0) 55%),
-          radial-gradient(80% 75% at 50% 140%, rgb(255 180 92 / 0.85) 0%, rgb(255 180 92 / 0) 65%);
-  --bead-light: inset 0 0 16px rgb(255 255 255 / 0.4), inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -1.5px 0 rgb(255 180 92 / 0.95);
-  --bead-glow: 0 10px 30px -12px rgb(255 180 92 / 0.5);
   --navy: #0a1430;
 
   /* Roles, each a dark text on a pale fill */
@@ -561,15 +556,13 @@ input, select { font: inherit; color: inherit; }
 .btn.primary, .btn.dark { background: var(--inverse-bg); color: var(--inverse-fg); border: 1px solid var(--inverse-bg); }
 .btn.primary:hover:not(:disabled), .btn.dark:hover:not(:disabled) { background: var(--inverse-hover); }
 /* The primary action: a navy core inside a pearl-sheen ring, with the amber under-glow. */
-.btn.primary:not(:disabled), .btn.band-solid {
-  border: 2px solid transparent;
-  background: var(--bead) padding-box, linear-gradient(var(--navy), var(--navy)) padding-box, var(--gradient-accent) border-box;
-  box-shadow: var(--bead-light), var(--bead-glow);
-  color: #fff;
-  transition: box-shadow 0.35s cubic-bezier(0.44, 0, 0.56, 1);
+.btn.primary:not(:disabled) {
+  border: 1.5px solid transparent;
+  background: linear-gradient(rgba(255, 255, 255, 0.14), transparent 45%) padding-box, linear-gradient(var(--navy), var(--navy)) padding-box, var(--gradient-accent) border-box;
+  box-shadow: var(--primary-glow);
 }
-.btn.primary:hover:not(:disabled), .btn.band-solid:hover {
-  box-shadow: inset 0 0 20px rgb(255 255 255 / 0.55), inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -1.5px 0 rgb(255 180 92), var(--bead-glow);
+.btn.primary:hover:not(:disabled) {
+  background: linear-gradient(rgba(255, 255, 255, 0.14), transparent 45%) padding-box, linear-gradient(var(--inverse-hover), var(--inverse-hover)) padding-box, var(--gradient-accent) border-box;
 }
 .btn.glass { height: 40px; padding: 0 16px; font-size: 13px; font-weight: 500; }
 .btn.small { height: 36px; padding: 0 16px; font-size: 13px; }
@@ -1113,8 +1106,9 @@ a.row:hover b { text-decoration: underline; }
   pointer-events: none;
 }
 .btn.band-ghost:hover { background: linear-gradient(rgb(255 255 255 / 0.2), rgb(255 255 255 / 0.2)), rgb(10 20 48 / 0.34); }
-/* The main actions: the navy bead with the amber arrow disc. */
-.btn.band-solid { padding-right: 6px; }
+/* The main actions: a white pill with the amber arrow disc and the amber under-glow. */
+.btn.band-solid { background: #fff; color: var(--navy); padding-right: 6px; box-shadow: var(--primary-glow); }
+.btn.band-solid:hover { background: #e4ecff; }
 .arrow-disc {
   flex: none;
   width: 30px;
@@ -1150,7 +1144,7 @@ a.row:hover b { text-decoration: underline; }
   background: var(--amber);
   box-shadow: 0 0 0 3px rgb(255 180 92 / 0.25), 0 0 10px rgb(255 180 92 / 0.8);
 }
-.t-match .seg-bar i.on { background: var(--amber); box-shadow: inset 0 0 0 1px rgb(184 110 28 / 0.35); }
+.seg-bar.amber i.on { background: var(--amber); box-shadow: inset 0 0 0 1px rgb(184 110 28 / 0.35); }
 .btn.small.band-solid { height: 38px; }
 
 .dash { display: grid; gap: var(--section-gap); }
@@ -1274,4 +1268,88 @@ a.tile-row:hover { transform: translateY(-2px); box-shadow: var(--row-lift); }
   .t-next { grid-column: span 2; }
   .t-more, .t-skills { grid-column: span 3; }
   .match-title { font-size: 32px; }
+}
+
+/* ---- The dashboard's treatment on every other screen ---- */
+
+/* Lists are glass rows with a gap, not lines; rows that are links lift on hover. */
+.list { display: grid; gap: 6px; }
+.list > li { border-top: 0; }
+.list > .row, .list > li > .row, .history-list .history-row, .history-detail > li {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: var(--row-glass);
+  border: 1px solid var(--glass-edge);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5);
+}
+:root[data-theme='dark'] :is(.list > .row, .list > li > .row, .history-list .history-row, .history-detail > li) { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06); }
+.history-list, .history-detail { padding: 12px; }
+.history-detail .history-row { padding: 2px 0 8px; }
+.history-detail .disclosure { margin-left: 44px; }
+a.row, a.history-row { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+a.row:hover, a.history-row:hover { transform: translateY(-2px); box-shadow: var(--row-lift); }
+a.row:hover b, a.history-row:hover strong { text-decoration: none; }
+.panel .list { margin-top: 8px; }
+
+/* Links at the foot or head of a card are small glass pills. */
+.card-links a, .card-foot > a, .panel-foot a, .ph > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 10px 6px 14px;
+  border-radius: var(--r-pill);
+  background: var(--row-glass);
+  border: 1px solid var(--glass-edge);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), var(--shadow-micro);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--fg);
+  text-decoration: none;
+}
+.ph > a { padding-right: 14px; }
+.card-links a:hover, .card-foot > a:hover, .panel-foot a:hover, .ph > a:hover { background: var(--hover-strong); text-decoration: none; }
+:root[data-theme='dark'] :is(.card-links a, .card-foot > a, .panel-foot a, .ph > a) { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08); }
+.ph { align-items: center; }
+.card-links { gap: 8px; }
+
+/* The first card on a page is clearer glass, taking on the wash behind it. */
+.page-header + .card, .page-header + * > .card:first-child, .page-header + * > li:first-child > .card { background: var(--tile-glass); }
+
+/* The match score reads as a bar as well as a number; amber marks the top match. */
+.match-badge-score { display: inline-flex; align-items: center; gap: 8px; }
+
+/* Every primary button carries the landing site's amber arrow disc. */
+.btn.primary:not(:disabled) { padding-right: 8px; }
+.btn.primary:not(:disabled)::after {
+  content: '';
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='none' stroke='%230a1430' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 4 5 5-5 5'/%3E%3C/svg%3E") center / 13px no-repeat,
+    var(--amber);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5);
+  transition: transform 0.18s ease;
+}
+.btn.small.primary:not(:disabled)::after { width: 24px; height: 24px; }
+.btn.primary:hover:not(:disabled)::after { transform: translateX(2px); }
+
+/* Navy cards catch the same wave crest as the dashboard's next step, smaller and fainter so text stays clear. */
+.hero-card:not(.dash-callout) {
+  background:
+    radial-gradient(40% 130% at 100% 160%, rgb(255 255 255 / 0) 55.5%, rgb(255 217 168 / 0.45) 58.5%, rgb(255 255 255 / 0.55) 60%, rgb(255 255 255 / 0) 64%),
+    radial-gradient(38% 124% at 100% 160%, rgb(59 79 168 / 0.9) 0%, rgb(47 65 146 / 0.7) 34%, rgb(38 53 122 / 0.4) 48%, rgb(38 53 122 / 0) 60%),
+    var(--hero-wash), var(--hero-bg);
+}
+
+/* Notices are tinted glass. */
+.notice {
+  position: relative;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--notice-bg) 62%, transparent);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border-color: color-mix(in srgb, var(--notice-line) 70%, transparent);
+  box-shadow: var(--glass-inner);
 }

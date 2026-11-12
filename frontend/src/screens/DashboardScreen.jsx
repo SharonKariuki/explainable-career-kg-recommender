@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { getRecommendations } from '../api.js'
-import { EmptyState, Pill, SkillChip, Status } from '../components.jsx'
+import { EmptyState, Pill, ScoreBar, SkillChip, Status } from '../components.jsx'
 import { capitalise, fitLabel } from '../format.js'
 import { Icon } from '../icons.jsx'
 
@@ -9,8 +9,6 @@ import { Icon } from '../icons.jsx'
 const ADVISED_SKILLS = 3
 // Enough for the top match and the few listed under it.
 const CAREERS = 4
-// Scores run from 0 to 1; the bars show them in tenths.
-const TENTHS = 10
 const LIST_ROWS = 4
 const TOP_SKILLS = 5
 
@@ -59,16 +57,6 @@ function nextStep(skillCount, unsure, top) {
     text: 'Your top match, with the skills it needs that you have not listed.',
     action: { href: `#/roadmap/${top.career_code}`, label: 'Open roadmap' },
   }
-}
-
-// A score as ten segments; any score above zero fills at least one.
-function ScoreBar({ score }) {
-  const filled = score > 0 ? Math.max(1, Math.round(score * TENTHS)) : 0
-  return (
-    <span className="seg-bar" aria-hidden="true">
-      {Array.from({ length: TENTHS }, (_, i) => <i key={i} className={i < filled ? 'on' : ''} />)}
-    </span>
-  )
 }
 
 // The amber disc that marks a main action, as on the landing site's primary button.
@@ -164,7 +152,7 @@ export default function DashboardScreen({ user }) {
               <div className="match-foot">
                 <span className="match-score">
                   <b className="figure small num">{top.score.toFixed(2)}</b>
-                  <ScoreBar score={top.score} />
+                  <ScoreBar score={top.score} tone="amber" />
                   <span className="sub">match score, 0 to 1</span>
                 </span>
                 <a className="tile-tag" href={`#/careers/${top.career_code}`}>See why it fits</a>
