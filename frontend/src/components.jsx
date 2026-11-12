@@ -115,16 +115,6 @@ export function Notice({ icon = 'bulb', title, children, action }) {
   )
 }
 
-export function Kpi({ label, value, note }) {
-  return (
-    <div className="card kpi">
-      <div className="kpi-label">{label}</div>
-      <div className="kpi-value num">{value}</div>
-      <div className="kpi-note">{note}</div>
-    </div>
-  )
-}
-
 // A 0-1 fill. Gold marks progress or what is current; dark is for plain amounts.
 export function Progress({ value, tone = 'dark', label }) {
   const percent = Math.round(Math.max(0, Math.min(1, value)) * 100)
