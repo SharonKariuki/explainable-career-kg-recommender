@@ -11,6 +11,8 @@
     radial-gradient(55% 45% at 98% 4%, rgb(196 201 255 / 0.85), transparent 70%),
     radial-gradient(50% 40% at 62% 106%, rgb(242 211 230 / 0.55), transparent 70%),
     radial-gradient(45% 40% at 2% 98%, rgb(233 238 248 / 1), transparent 70%),
+    radial-gradient(42% 36% at 26% 58%, rgb(196 201 255 / 0.55), transparent 70%),
+    radial-gradient(40% 34% at 80% 64%, rgb(199 219 255 / 0.7), transparent 70%),
     #f5f7fb;
   --base: #f5f7fb;
 
@@ -19,7 +21,15 @@
   --glass-edge: rgba(255, 255, 255, 0.85);
   --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -1px 0 rgba(255, 255, 255, 0.08);
   --glass-shadow: 0 1px 2px rgba(15, 26, 51, 0.05), 0 12px 32px -20px rgba(15, 26, 51, 0.18);
-  --glass-blur: blur(20px) saturate(180%) brightness(1.04);
+  --glass-blur: blur(24px) saturate(190%) brightness(1.05);
+  /* Reading surfaces: clear enough for the washes behind to glow through */
+  --surface-glass: linear-gradient(155deg, rgb(255 255 255 / 0.7), rgb(255 255 255 / 0.44));
+  --row-glass: rgb(255 255 255 / 0.56);
+  /* A 1px ring, bright at the top-left where the light comes from, with a catch-light bottom-right */
+  --glass-rim: linear-gradient(135deg, rgb(255 255 255 / 0.95) 0%, rgb(255 255 255 / 0.3) 28%, rgb(255 255 255 / 0) 50%,
+               rgb(131 148 255 / 0.3) 78%, rgb(255 255 255 / 0.75) 100%);
+  --glass-inner: inset 0 1px 0 rgb(255 255 255 / 0.75), inset 0 -1px 0 rgb(255 255 255 / 0.14), inset 0 0 26px rgb(255 255 255 / 0.22);
+  --shadow-glass: 0 26px 50px -30px rgba(10, 20, 48, 0.38), 0 2px 6px -2px rgba(15, 26, 51, 0.08);
 
   /* Neutrals, navy-tinted */
   --fg: #0f1a33;
@@ -62,7 +72,7 @@
   --r-pill: 999px;
   --r-tabbar: 34px;
   --r-search: 23px;
-  --r-hero: 22px;
+  --r-hero: 26px;
   --r-card: 20px;
   --r-tile: 18px;
   --r-logo: 13px;
@@ -97,7 +107,7 @@
   --panel-mid: #2f4192;
   --panel-mist: #a9bcf2;
   --panel-glow: rgb(92 118 222 / 0.7);
-  --tile-glass: linear-gradient(165deg, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0.84));
+  --tile-glass: linear-gradient(165deg, rgb(255 255 255 / 0.36), rgb(255 255 255 / 0.72));
 
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
@@ -114,6 +124,8 @@
     radial-gradient(60% 50% at 6% 10%, rgb(70 110 210 / 0.30), transparent 70%),
     radial-gradient(55% 45% at 98% 4%, rgb(92 98 220 / 0.26), transparent 70%),
     radial-gradient(45% 40% at 2% 98%, rgb(40 56 100 / 0.35), transparent 70%),
+    radial-gradient(42% 36% at 26% 58%, rgb(60 74 190 / 0.2), transparent 70%),
+    radial-gradient(40% 34% at 80% 64%, rgb(52 92 190 / 0.2), transparent 70%),
     #050506;
   --base: #050506;
 
@@ -121,6 +133,12 @@
   --glass-edge: rgba(255, 255, 255, 0.14);
   --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.14), inset 0 0 0 1px rgb(150 179 255 / 0.04);
   --glass-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 36px -18px rgba(0, 0, 0, 0.7);
+  --surface-glass: linear-gradient(155deg, rgb(255 255 255 / 0.1), rgb(255 255 255 / 0.035));
+  --row-glass: rgb(255 255 255 / 0.045);
+  --glass-rim: linear-gradient(135deg, rgb(255 255 255 / 0.34) 0%, rgb(255 255 255 / 0.1) 28%, rgb(255 255 255 / 0) 50%,
+               rgb(131 148 255 / 0.14) 78%, rgb(255 255 255 / 0.24) 100%);
+  --glass-inner: inset 0 1px 0 rgb(255 255 255 / 0.16), inset 0 -1px 0 rgb(255 255 255 / 0.04), inset 0 0 26px rgb(150 179 255 / 0.05);
+  --shadow-glass: 0 26px 50px -26px rgba(0, 0, 0, 0.85), 0 2px 6px -2px rgba(0, 0, 0, 0.5);
   --glass-fallback: rgba(24, 24, 27, 0.94);
   --hover: rgba(255, 255, 255, 0.08);
   --hover-strong: rgba(255, 255, 255, 0.14);
@@ -152,7 +170,7 @@
   --panel-mid: #1c2a66;
   --panel-mist: #1a2350;
   --panel-glow: rgb(72 98 200 / 0.55);
-  --tile-glass: linear-gradient(165deg, rgb(24 26 36 / 0.5), rgb(18 18 20 / 0.86));
+  --tile-glass: linear-gradient(165deg, rgb(255 255 255 / 0.12), rgb(12 14 22 / 0.6));
 
   --hero-edge: rgba(255, 255, 255, 0.16);
   --shadow-hero: 0 12px 28px rgba(0, 0, 0, 0.55);
@@ -226,25 +244,42 @@ input, select { font: inherit; color: inherit; }
 /* ---- Surfaces ---- */
 
 .glass {
+  position: relative;
   background: var(--glass);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-edge);
-  box-shadow: var(--glass-highlight), var(--glass-shadow);
+  border: 1px solid transparent;
+  box-shadow: var(--glass-inner), var(--glass-shadow);
+}
+/* The specular rim: a gradient ring with its middle masked out, so it never covers content. */
+.glass::before, .card::before, .tile::before, .hero-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: 1;
+  padding: 1px;
+  border-radius: inherit;
+  background: var(--glass-rim);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
 }
 /* Without backdrop blur the gradient alone is too thin to read text on. */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .glass { background: var(--glass-fallback); }
 }
 
-/* Frosted, like the dashboard's tiles. */
+/* Liquid glass, like the dashboard's tiles: tint, blurred backdrop, rim and inner light. */
 .card {
-  background: color-mix(in srgb, var(--card) 88%, transparent);
+  position: relative;
+  background: var(--surface-glass);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-edge);
+  border: 1px solid transparent;
   border-radius: var(--r-hero);
-  box-shadow: var(--glass-shadow);
+  box-shadow: var(--glass-inner), var(--shadow-glass);
 }
 .panel { padding: 14px 16px; }
 .ph { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px; }
@@ -660,8 +695,10 @@ select.field { appearance: auto; }
   background: var(--hero-wash), var(--hero-bg);
   color: #fff;
   border: 1px solid var(--hero-edge);
-  box-shadow: var(--shadow-hero), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-hero), inset 0 1px 0 rgba(255, 255, 255, 0.22), inset 0 0 30px rgb(150 179 255 / 0.1);
+  position: relative;
 }
+.hero-card::before { opacity: 0.55; }
 .hero-card .mono { display: flex; align-items: center; gap: 7px; color: var(--hero-muted); }
 .hero-card .mono i { width: 7px; height: 7px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 8px rgb(255 180 92 / 0.7); }
 .hero-figure { font-size: 34px; font-weight: 600; letter-spacing: -0.035em; line-height: 1.1; }
@@ -987,6 +1024,7 @@ a.row:hover b { text-decoration: underline; }
   backdrop-filter: none;
   color: #fff;
 }
+.topbar:not(.is-stuck)::before { display: none; }
 .topbar:not(.is-stuck) .brand { color: #fff; }
 .topbar:not(.is-stuck) .topnav a { color: rgba(255, 255, 255, 0.82); background: rgba(255, 255, 255, 0.08); }
 .topbar:not(.is-stuck) .topnav a:hover { color: #fff; background: rgba(255, 255, 255, 0.16); }
@@ -1058,12 +1096,13 @@ a.row:hover b { text-decoration: underline; }
   align-content: start;
   min-width: 0;
   padding: 16px 18px;
+  position: relative;
   border-radius: var(--r-hero);
-  background: color-mix(in srgb, var(--card) 88%, transparent);
+  background: var(--surface-glass);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-edge);
-  box-shadow: var(--glass-shadow);
+  border: 1px solid transparent;
+  box-shadow: var(--glass-inner), var(--shadow-glass);
 }
 .tile.glassy { background: var(--tile-glass); }
 .tile-head { display: flex; align-items: center; gap: 12px; }
@@ -1084,13 +1123,15 @@ a.row:hover b { text-decoration: underline; }
   flex: none;
   padding: 6px 14px;
   border-radius: var(--r-pill);
-  background: var(--card);
-  border: 1px solid var(--line);
+  background: var(--row-glass);
+  border: 1px solid var(--glass-edge);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), var(--shadow-micro);
   font-size: 12px;
   font-weight: 500;
   text-decoration: none;
 }
-a.tile-tag:hover { border-color: var(--fg); }
+:root[data-theme='dark'] .tile-tag { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08); }
+a.tile-tag:hover { background: var(--hover-strong); }
 
 .figure { font-size: 34px; font-weight: 500; letter-spacing: -0.035em; line-height: 1.1; }
 .figure.small { font-size: 22px; }
@@ -1125,12 +1166,14 @@ a.tile-tag:hover { border-color: var(--fg); }
   align-items: center;
   gap: 12px;
   padding: 10px 12px;
-  border-radius: 14px;
-  background: var(--card);
-  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--row-glass);
+  border: 1px solid var(--glass-edge);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5);
   color: inherit;
   text-decoration: none;
 }
+:root[data-theme='dark'] .tile-row { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06); }
 .tile-row .row-main { flex: 1; min-width: 0; }
 .tile-row strong { font-size: 13px; }
 a.tile-row { transition: transform 0.18s ease, box-shadow 0.18s ease; }
