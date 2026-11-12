@@ -9,6 +9,7 @@ import AuthScreen from './screens/AuthScreen.jsx'
 import CareerDetailScreen from './screens/CareerDetailScreen.jsx'
 import CareersScreen from './screens/CareersScreen.jsx'
 import DashboardScreen from './screens/DashboardScreen.jsx'
+import HistoryScreen from './screens/HistoryScreen.jsx'
 import ProfileScreen from './screens/ProfileScreen.jsx'
 import RecommendationsScreen from './screens/RecommendationsScreen.jsx'
 import RoadmapScreen from './screens/RoadmapScreen.jsx'
@@ -17,6 +18,7 @@ import SettingsScreen from './screens/SettingsScreen.jsx'
 
 const CAREER_ROUTE = /^\/careers\/([\w.-]+)$/
 const ROADMAP_ROUTE = /^\/roadmap(?:\/([\w.-]+))?$/
+const HISTORY_ROUTE = /^\/history(?:\/(\d+))?$/
 
 // The sidebar (wide screens) and the floating tab bar (phones) share these;
 // on phones the middle one is the round black button.
@@ -31,6 +33,7 @@ const NAV = [
 // Sidebar only; on phones they are reached from the dashboard.
 const MORE_NAV = [
   { path: '/saved', label: 'Saved', icon: 'bookmark' },
+  { path: '/history', label: 'History', icon: 'matches' },
   { path: '/settings', label: 'Settings', icon: 'settings' },
 ]
 
@@ -82,6 +85,7 @@ function App() {
 
   const career = path.match(CAREER_ROUTE)
   const roadmap = path.match(ROADMAP_ROUTE)
+  const historyRoute = path.match(HISTORY_ROUTE)
   let screen
   if (path === '/assessment') screen = <ProfileScreen onSaved={() => navigate('/recommendations')} />
   else if (path === '/recommendations') screen = <RecommendationsScreen />
@@ -89,6 +93,7 @@ function App() {
   else if (career) screen = <CareerDetailScreen key={career[1]} code={career[1]} />
   else if (roadmap) screen = <RoadmapScreen code={roadmap[1]} />
   else if (path === '/saved') screen = <SavedScreen />
+  else if (historyRoute) screen = <HistoryScreen key={historyRoute[1] ?? 'all'} runId={historyRoute[1]} />
   else if (path === '/settings') {
     screen = <SettingsScreen theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
   }

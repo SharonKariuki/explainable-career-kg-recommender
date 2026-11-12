@@ -78,6 +78,7 @@ export default function DashboardScreen({ user, onSignOut, theme, onToggleTheme 
       {/* On phones there is no sidebar, so its theme and sign-out controls live here. */}
       <div className="greet-actions phone-only">
         <IconButton icon="bookmark" label="Saved careers" href="#/saved" />
+        <IconButton icon="matches" label="History of your matches" href="#/history" />
         <IconButton icon="settings" label="Settings" href="#/settings" />
         <ThemeToggle theme={theme} onToggle={onToggleTheme} />
         <IconButton icon="logout" label="Sign out" onClick={onSignOut} />

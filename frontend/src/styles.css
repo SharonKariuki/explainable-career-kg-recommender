@@ -814,3 +814,11 @@ a.row:hover b { text-decoration: underline; }
   .result-head { flex-wrap: wrap; }
   .match-badge { justify-items: start; text-align: left; width: 100%; padding-left: 45px; }
 }
+
+/* ---- History ---- */
+.history-list, .history-detail { padding: 4px 16px; margin: 12px 0; }
+.history-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; color: inherit; text-decoration: none; }
+a.history-row:hover strong { text-decoration: underline; }
+.history-row .rank { width: 32px; color: var(--muted); }
+.history-detail .disclosure { margin: 0 0 12px 44px; }
+.block { display: block; }
