@@ -59,10 +59,11 @@ function GoogleButton({ text, onCredential, onError }) {
   return <div ref={slot} className="google-btn" />
 }
 
-export default function AuthScreen({ onSignedIn }) {
+export default function AuthScreen({ onSignedIn, notice = null }) {
   const [mode, setMode] = useState('login')
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
   const [busy, setBusy] = useState(false)
@@ -80,7 +81,7 @@ export default function AuthScreen({ onSignedIn }) {
     setBusy(true)
     setError(null)
     try {
-      const user = isRegister ? await register(username, password, email) : await login(username, password)
+      const user = isRegister ? await register(username, password, email, name.trim()) : await login(username, password)
       onSignedIn(user)
     } catch (err) {
       setError(err.message)
@@ -117,11 +118,18 @@ export default function AuthScreen({ onSignedIn }) {
         <p className="subtitle">
           AjiraGuide suggests tech careers from the skills you already have, and explains why.
         </p>
+        {notice && !error && <p className="state" role="status"><Icon name="alert" />{notice}</p>}
         <form onSubmit={submit} className="stack">
           <label>
             Username
             <input className="field" value={username} onChange={edit(setUsername)} autoComplete="username" required />
           </label>
+          {isRegister && (
+            <label>
+              <span>Full name <span className="muted">(optional)</span></span>
+              <input className="field" value={name} onChange={edit(setName)} autoComplete="name" maxLength={150} />
+            </label>
+          )}
           {isRegister && (
             <label>
               <span>Email <span className="muted">(optional)</span></span>
@@ -164,6 +172,9 @@ export default function AuthScreen({ onSignedIn }) {
           <button type="button" className="link" onClick={switchMode}>
             {isRegister ? 'Sign in' : 'Create an account'}
           </button>
+        </p>
+        <p className="muted small auth-switch">
+          <a href="/help.html">How AjiraGuide works</a> · <a href="/privacy.html">Privacy</a>
         </p>
       </section>
     </div>

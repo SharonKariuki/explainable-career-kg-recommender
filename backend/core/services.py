@@ -21,9 +21,9 @@ def career_code(career_id):
     return career_id.split(':', 1)[1]
 
 
-def rank(skills, top_k=None):
-    """(matches, recommendations) for a list of declared skills, best first."""
-    return get_engine().rank(skills, top_k=top_k)
+def rank(skills, top_k=None, background=''):
+    """(matches, recommendations) for a list of declared skills and optional background text, best first."""
+    return get_engine().rank(skills, top_k=top_k, background=background)
 
 
 def match_summary(match):
@@ -79,6 +79,8 @@ def recommendation_detail(recommendation, rank_position, matches):
             'coverage': p.coverage_weight,
             'profile_similarity': p.similarity_weight,
             'graph_proximity': p.proximity_weight,
+            # Share of the whole score, used only when the profile has background text.
+            'background': p.background_weight if r.components.background_similarity is not None else None,
         },
         'explanation': list(explanation.sentences),
         'skill_contributions': [with_requirement(asdict(c)) for c in r.skill_contributions],

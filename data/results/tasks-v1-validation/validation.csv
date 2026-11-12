@@ -1,0 +1,13 @@
+dataset,role,system,profiles,p@1,p@3,r@3,mrr,ndcg@3,ndcg@5,candidate_rate,p@1_low,p@1_high,ndcg@5_low,ndcg@5_high
+synthetic-validation,validation,keyword,360,0.2472,0.1667,0.5,0.4247,0.3925,0.4499,1.0,0.2028,0.2917,0.4092,0.4894
+synthetic-validation,validation,sbert_only,360,0.1,0.0796,0.2389,0.2486,0.1789,0.2402,1.0,0.0694,0.1333,0.2063,0.2754
+synthetic-validation,validation,graph_only,360,0.4639,0.2269,0.6806,0.6083,0.5904,0.6369,1.0,0.4111,0.5167,0.594,0.6759
+synthetic-validation,validation,full,360,0.4667,0.2287,0.6861,0.6116,0.5953,0.6387,1.0,0.4139,0.5194,0.5952,0.6787
+noisy-validation,validation,keyword,360,0.1111,0.0833,0.25,0.2306,0.19,0.2282,0.8056,0.0806,0.1444,0.1917,0.2645
+noisy-validation,validation,sbert_only,360,0.1778,0.1222,0.3667,0.3345,0.2868,0.3421,1.0,0.1389,0.2194,0.3025,0.3838
+noisy-validation,validation,graph_only,360,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+noisy-validation,validation,full,360,0.45,0.2315,0.6944,0.604,0.5926,0.6383,1.0,0.4,0.5028,0.5997,0.6779
+hand-v1,development,keyword,30,0.3333,0.2222,0.4667,0.471,0.4115,0.4546,0.8333,0.1667,0.5,0.3239,0.5965
+hand-v1,development,sbert_only,30,0.8,0.3556,0.8167,0.8653,0.7889,0.844,1.0,0.6333,0.9333,0.7502,0.9192
+hand-v1,development,graph_only,30,0.1667,0.1111,0.2667,0.2477,0.2227,0.2403,0.4667,0.0333,0.3333,0.1175,0.3763
+hand-v1,development,full,30,0.5333,0.3333,0.75,0.6703,0.6507,0.6947,1.0,0.3667,0.7,0.574,0.8135

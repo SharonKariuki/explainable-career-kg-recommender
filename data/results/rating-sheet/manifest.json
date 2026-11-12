@@ -1,0 +1,48 @@
+{
+  "run": "rating-sheet",
+  "command": "python -m recommender.rating_kit sheet --run rating-sheet",
+  "started": "2026-11-12T02:55:53+00:00",
+  "git": {
+    "commit": "0db008a1db8f603968cb63900c20d55dd62504c9",
+    "clean": false,
+    "changes": [
+      " M backend/core/serializers.py",
+      " M backend/core/views.py",
+      " M frontend/src/api.js",
+      " M frontend/src/screens/AuthScreen.jsx",
+      " M frontend/src/screens/SettingsScreen.jsx",
+      "?? backend/recommender/rating_kit.py",
+      "?? backend/tests/test_full_name.py",
+      "?? frontend/public/help.html"
+    ]
+  },
+  "finished": "2026-11-12T02:56:17+00:00",
+  "profile_sets": {
+    "explanation-sample": {
+      "role": "development",
+      "profiles": 10,
+      "sha256": "f2e67ed1183bfa0705df293b88cd8d6cb18bc640567c9a51474a2fd02cac9898"
+    }
+  },
+  "configuration": {
+    "id": "c0b9e4737326",
+    "params": {
+      "max_depth": 1,
+      "low_confidence_threshold": 0.6,
+      "low_confidence_weight": 0.5,
+      "coverage_weight": 0.7,
+      "similarity_weight": 0.1,
+      "proximity_weight": 0.2
+    },
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "processed_data": {
+      "esco_occupation_skills.csv": "730a0fd91330a4d0d50c50029e2d579c3ab1acacb300a32ccbc86cc020f68e6f",
+      "esco_occupations.csv": "40d9022063397afb94fdd42b21ab48c437fcebd04407a8cec22b2c657a92a76c",
+      "esco_onet_map.csv": "0f969e55c9bc4a83b169610fc27c38e1ca9de4fd4972a0c8d7535d882f1cefe2",
+      "esco_skills.csv": "8ca13e4006818d6c261ce40ce28fb4ce37678118de1cc1ea0bc6266fe9221579",
+      "occupations.csv": "1e269e3b46ee92fe38f7da2d374c135fcd6bec4a1fccad632a6c1ff7e2b17f5c",
+      "onet_skills.csv": "40739fd1460fd8925a588cf2ba521f8322e9eb003b57afb1e747bae6271cf37d",
+      "onet_tools.csv": "85704841128099482501c5e6c6b966bf1aeed2fd844552864d831dbaafe7eeea"
+    }
+  }
+}

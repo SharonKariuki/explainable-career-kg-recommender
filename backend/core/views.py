@@ -5,8 +5,8 @@ from rest_framework.exceptions import NotFound, ValidationError
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
-from core import services
-from core.models import SavedCareer, SkillProfile, SkillProgress
+from core import history, services
+from core.models import RecommendationRun, SavedCareer, SkillProfile, SkillProgress
 from core.serializers import (
     AccountSerializer, DeleteAccountSerializer, GoogleLoginSerializer, LoginSerializer, PasswordChangeSerializer,
     RegisterSerializer, SkillProfileSerializer, SkillProgressSerializer,
@@ -56,6 +56,7 @@ def logout(request):
 def account(user):
     return {
         'username': user.username,
+        'name': user.first_name,
         'email': user.email,
         'has_password': user.has_usable_password(),
         'google': hasattr(user, 'google_account'),
@@ -69,8 +70,12 @@ def me(request):
     if request.method == 'PATCH':
         serializer = AccountSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user.email = serializer.validated_data['email']
-        user.save(update_fields=['email'])
+        fields = {'email': 'email', 'name': 'first_name'}
+        changed = [fields[k] for k in serializer.validated_data]
+        for key, value in serializer.validated_data.items():
+            setattr(user, fields[key], value.strip())
+        if changed:
+            user.save(update_fields=changed)
     elif request.method == 'DELETE':
         DeleteAccountSerializer(data=request.data, context={'user': user}).is_valid(raise_exception=True)
         user.delete()  # cascades to the token, profile, saved careers and progress
@@ -99,14 +104,26 @@ def profile(request):
     if request.method == 'PUT':
         serializer = SkillProfileSerializer(skill_profile, data=request.data)
         serializer.is_valid(raise_exception=True)
-        skill_profile.skills = serializer.validated_data['skills']
+        for field, value in serializer.validated_data.items():
+            setattr(skill_profile, field, value.strip() if isinstance(value, str) else value)
         skill_profile.save()
+        latest = RecommendationRun.objects.filter(user=request.user).first()
+        if latest is None or (latest.skills, latest.background) != (skill_profile.skills, skill_profile.background_text()):
+            history.snapshot(request.user, skill_profile)
     return Response(SkillProfileSerializer(skill_profile).data)
 
 
 def declared_skills(user):
     skill_profile = SkillProfile.objects.filter(user=user).first()
     return skill_profile.skills if skill_profile else []
+
+
+def ranked_for(user, top_k=None):
+    """(matches, recommendations) for the user's saved skills and background."""
+    skill_profile = SkillProfile.objects.filter(user=user).first()
+    if skill_profile is None:
+        return services.rank([], top_k=top_k)
+    return services.rank(skill_profile.skills, top_k=top_k, background=skill_profile.background_text())
 
 
 @api_view(['GET'])
@@ -119,7 +136,7 @@ def recommendations(request):
         raise ValidationError({'top': 'Must be between 1 and 50.'})
 
     skills = declared_skills(request.user)
-    matches, ranked = services.rank(skills, top_k=top)
+    matches, ranked = ranked_for(request.user, top_k=top)
     return Response({
         'skills': skills,
         'matches': [services.match_summary(m) for m in matches],
@@ -129,7 +146,7 @@ def recommendations(request):
 
 @api_view(['GET'])
 def recommendation_detail(request, career_code):
-    matches, ranked = services.rank(declared_skills(request.user))
+    matches, ranked = ranked_for(request.user)
     for position, r in enumerate(ranked, 1):
         if services.career_code(r.career_id) == career_code:
             return Response(services.recommendation_detail(r, position, matches))
@@ -145,8 +162,8 @@ def match_info(recommendation, position):
 
 
 def ranking(user):
-    """(matches, {career code: (position, recommendation)}) for the user's saved skills."""
-    matches, ranked = services.rank(declared_skills(user))
+    """(matches, {career code: (position, recommendation)}) for the user's saved skills and background."""
+    matches, ranked = ranked_for(user)
     return matches, {services.career_code(r.career_id): (i, r) for i, r in enumerate(ranked, 1)}
 
 
@@ -227,3 +244,22 @@ def progress(request):
             SkillProgress.objects.update_or_create(user=request.user, skill_id=skill_id, defaults={'status': new_status})
     items = SkillProgress.objects.filter(user=request.user).order_by('-updated_at')
     return Response({'skills': [progress_item(p) for p in items if services.skill_label(p.skill_id)]})
+
+
+# ---- Recommendation history ----
+
+@api_view(['GET'])
+def recommendation_history(request):
+    """The user's snapshots, newest first, each marked when its top three changed."""
+    runs = list(RecommendationRun.objects.filter(user=request.user).prefetch_related('recommendations'))
+    return Response({'runs': [history.run_summary(run, runs[i + 1] if i + 1 < len(runs) else None)
+                              for i, run in enumerate(runs)]})
+
+
+@api_view(['GET'])
+def recommendation_history_detail(request, run_id):
+    run = RecommendationRun.objects.filter(user=request.user, id=run_id).first()
+    if run is None:
+        raise NotFound('That snapshot was not found.')
+    previous = RecommendationRun.objects.filter(user=request.user, created_at__lte=run.created_at, id__lt=run.id).first()
+    return Response(history.run_detail(run, previous))

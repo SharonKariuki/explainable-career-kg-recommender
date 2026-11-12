@@ -1,0 +1,18 @@
+{% extends "admin/base_site.html" %}
+{% block breadcrumbs %}<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Home</a> &rsaquo; Careers and skills</div>{% endblock %}
+{% block content %}
+<div id="content-main">
+  <p>
+    These {{ careers|length }} careers and their skills come from O*NET and ESCO. They are read-only here:
+    to change them, edit <code>backend/pipeline/tech_occupations.csv</code> and rebuild the data with
+    the pipeline (<code>python -m pipeline.download</code>, then <code>pipeline.onet</code>, <code>pipeline.esco</code>, <code>pipeline.mapping</code> and <code>pipeline.embeddings</code>),
+    then redeploy.
+  </p>
+  <div class="module">
+    <table style="width: 100%;">
+      <thead><tr><th>O*NET code</th><th>Career</th><th>Domain</th><th>Skills</th><th>Tools</th></tr></thead>
+      {% for c in careers %}<tr><td>{{ c.career_code }}</td><td>{{ c.title }}</td><td>{{ c.domain }}</td><td>{{ c.skill_count }}</td><td>{{ c.tool_count }}</td></tr>{% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

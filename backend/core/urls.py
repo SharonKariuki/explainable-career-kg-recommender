@@ -18,4 +18,6 @@ urlpatterns = [
     path('saved/<str:career_code>/', views.saved_career),
     path('skills/', views.skills),
     path('progress/', views.progress),
+    path('history/', views.recommendation_history),
+    path('history/<int:run_id>/', views.recommendation_history_detail),
 ]

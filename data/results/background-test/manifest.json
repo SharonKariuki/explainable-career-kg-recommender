@@ -1,0 +1,50 @@
+{
+  "run": "background-test",
+  "command": "python -m recommender.background_eval --run background-test --test",
+  "started": "2026-11-12T02:25:56+00:00",
+  "git": {
+    "commit": "3a0de14514084487aaca20a2d68268516b6b029d",
+    "clean": true,
+    "changes": []
+  },
+  "finished": "2026-11-12T02:30:46+00:00",
+  "profile_sets": {
+    "synthetic-test": {
+      "role": "test",
+      "profiles": 360,
+      "sha256": "33925f8531db0cda017f8def0f469cf277bf63378d2b45bfdcb40ce34ffac7f4"
+    },
+    "noisy-test": {
+      "role": "test",
+      "profiles": 360,
+      "sha256": "148718c5811df29f9b833680a9a3db1ebf42a7a08bee64ef53d53eaee3a1f17a"
+    },
+    "tasks-v1-test": {
+      "role": "test",
+      "profiles": 120,
+      "sha256": "319f294d10bb1b2725afa0a28877dc46244185f54338fc11ceea49871174df36"
+    }
+  },
+  "configuration": {
+    "id": "d25ea7600ec3",
+    "params": {
+      "max_depth": 1,
+      "low_confidence_threshold": 0.6,
+      "low_confidence_weight": 0.5,
+      "coverage_weight": 0.7,
+      "similarity_weight": 0.1,
+      "proximity_weight": 0.2,
+      "background_weight": 0.4
+    },
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "processed_data": {
+      "esco_occupation_skills.csv": "730a0fd91330a4d0d50c50029e2d579c3ab1acacb300a32ccbc86cc020f68e6f",
+      "esco_occupations.csv": "40d9022063397afb94fdd42b21ab48c437fcebd04407a8cec22b2c657a92a76c",
+      "esco_onet_map.csv": "0f969e55c9bc4a83b169610fc27c38e1ca9de4fd4972a0c8d7535d882f1cefe2",
+      "esco_skills.csv": "8ca13e4006818d6c261ce40ce28fb4ce37678118de1cc1ea0bc6266fe9221579",
+      "occupations.csv": "1e269e3b46ee92fe38f7da2d374c135fcd6bec4a1fccad632a6c1ff7e2b17f5c",
+      "onet_skills.csv": "40739fd1460fd8925a588cf2ba521f8322e9eb003b57afb1e747bae6271cf37d",
+      "onet_tools.csv": "85704841128099482501c5e6c6b966bf1aeed2fd844552864d831dbaafe7eeea"
+    }
+  }
+}

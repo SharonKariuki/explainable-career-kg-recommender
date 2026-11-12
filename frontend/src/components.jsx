@@ -1,9 +1,9 @@
 // Warm Glass building blocks shared by the screens. Glass is for controls,
 // white cards for reading, and each screen has at most one black hero card.
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { saveCareer, unsaveCareer } from './api.js'
+import { onWaking, saveCareer, unsaveCareer } from './api.js'
 import { fitLabel } from './format.js'
 import { Icon } from './icons.jsx'
 
@@ -180,7 +180,20 @@ export function SkillChip({ skill }) {
   )
 }
 
-export function Status({ loading, error }) {
+// Shown while requests wait for the backend to start (see onWaking in api.js).
+export function WakingNotice() {
+  const [waking, setWaking] = useState(false)
+  useEffect(() => onWaking(setWaking), [])
+  if (!waking) return null
+  return (
+    <p className="waking glass" role="status">
+      <span className="spinner" aria-hidden="true" />
+      AjiraGuide is starting up. This can take up to a minute.
+    </p>
+  )
+}
+
+export function Status({ loading, error, onRetry = () => window.location.reload() }) {
   if (loading) {
     return (
       <p className="state" role="status">
@@ -191,10 +204,11 @@ export function Status({ loading, error }) {
   }
   if (error) {
     return (
-      <p className="state error" role="alert">
+      <div className="state error" role="alert">
         <Icon name="alert" />
-        {error}
-      </p>
+        <span className="grow">{error}</span>
+        <button type="button" className="btn small" onClick={onRetry}>Try again</button>
+      </div>
     )
   }
   return null

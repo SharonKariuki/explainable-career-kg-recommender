@@ -210,14 +210,24 @@ function TechnicalExplanation({ career }) {
         </div>
 
         <h3>Score breakdown</h3>
-        <p className="formula num">
-          score = {w.coverage.toFixed(2)} × coverage + {w.profile_similarity.toFixed(2)} × similarity
-          {' '}+ {w.graph_proximity.toFixed(2)} × proximity = {career.score.toFixed(2)}
-        </p>
+        {w.background == null ? (
+          <p className="formula num">
+            score = {w.coverage.toFixed(2)} × coverage + {w.profile_similarity.toFixed(2)} × similarity
+            {' '}+ {w.graph_proximity.toFixed(2)} × proximity = {career.score.toFixed(2)}
+          </p>
+        ) : (
+          <p className="formula num">
+            score = {(1 - w.background).toFixed(2)} × ({w.coverage.toFixed(2)} × coverage + {w.profile_similarity.toFixed(2)} × similarity
+            {' '}+ {w.graph_proximity.toFixed(2)} × proximity) + {w.background.toFixed(2)} × background = {career.score.toFixed(2)}
+          </p>
+        )}
         <div className="meters stacked">
           <Meter label="Coverage: the share of your listed skills this career uses" value={c.coverage} weight={w.coverage} />
           <Meter label="Similarity: how closely your skills match the O*NET description of the role" value={c.profile_similarity} weight={w.profile_similarity} />
           <Meter label="Proximity: closeness in the skills graph, where the closest career scores 1.00" value={c.graph_proximity} weight={w.graph_proximity} />
+          {w.background != null && (
+            <Meter label="Background: how closely your interests, studies and experience match the role's description" value={c.background_similarity} weight={w.background} />
+          )}
         </div>
 
         <h3>Skills graph</h3>

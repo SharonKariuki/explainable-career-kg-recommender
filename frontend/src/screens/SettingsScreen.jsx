@@ -50,6 +50,24 @@ export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDele
       </section>
 
       <section className="card panel">
+        <div className="ph"><h2>Help</h2></div>
+        <div className="setting-row">
+          <span className="grow">
+            <b>User guide</b>
+            <span className="sub">How to add skills, read your matches and plan with the roadmap.</span>
+          </span>
+          <a className="btn glass" href="/help.html">Open</a>
+        </div>
+        <div className="setting-row">
+          <span className="grow">
+            <b>Privacy policy</b>
+            <span className="sub">What AjiraGuide stores and how to delete it.</span>
+          </span>
+          <a className="btn glass" href="/privacy.html">Open</a>
+        </div>
+      </section>
+
+      <section className="card panel">
         <div className="ph"><h2>Session</h2></div>
         <div className="setting-row">
           <span className="grow">
@@ -67,6 +85,7 @@ export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDele
 
 function AccountPanel({ account, onChange }) {
   const [email, setEmail] = useState(account.email)
+  const [name, setName] = useState(account.name ?? '')
   const [busy, setBusy] = useState(false)
   const [result, setResult] = useState(null)
 
@@ -75,8 +94,8 @@ function AccountPanel({ account, onChange }) {
     setBusy(true)
     setResult(null)
     try {
-      onChange({ ...account, ...(await updateAccount(email.trim())) })
-      setResult({ ok: true, text: 'Email saved.' })
+      onChange({ ...account, ...(await updateAccount({ name: name.trim(), email: email.trim() })) })
+      setResult({ ok: true, text: 'Account details saved.' })
     } catch (err) {
       setResult({ ok: false, text: err.message })
     } finally {
@@ -92,12 +111,26 @@ function AccountPanel({ account, onChange }) {
       <div className="setting-row">
         <span className="av"><Icon name="user" size={16} /></span>
         <span className="grow">
-          <b>{account.username}</b>
+          <b>{account.name || account.username}</b>
+          {account.name && <span className="sub">{account.username}</span>}
           <span className="sub">Member since {joined}</span>
         </span>
         {account.google && <Pill>Google sign-in</Pill>}
       </div>
       <form className="stack" onSubmit={save}>
+        <label>
+          Full name
+          <input
+            className="field"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value)
+              setResult(null)
+            }}
+            autoComplete="name"
+            maxLength={150}
+          />
+        </label>
         <label>
           Email
           <input
@@ -114,8 +147,8 @@ function AccountPanel({ account, onChange }) {
         </label>
         <Message result={result} />
         <div className="actions">
-          <button type="submit" className="btn dark small" disabled={busy || email.trim() === account.email}>
-            {busy ? 'Saving…' : 'Save email'}
+          <button type="submit" className="btn dark small" disabled={busy || (email.trim() === account.email && name.trim() === (account.name ?? ''))}>
+            {busy ? 'Saving…' : 'Save details'}
           </button>
         </div>
       </form>
