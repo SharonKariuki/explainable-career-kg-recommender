@@ -168,6 +168,9 @@ TEST_ONLY = {'open_test_sets', 'test_profiles', 'noisy_test', 'held_out_names', 
 ALLOWED = {'evaluation.py': TEST_ONLY, 'evaluate.py': {'open_test_sets', 'test_profiles', 'noisy_test',
                                                     'task_test_profiles'},
            'task_sets.py': {'check_test_set', 'task_test_profiles'},
+           # Measured Matching gold sets (#157): their loaders call the lock on the test split, nothing more.
+           'mapping_eval.py': {'check_test_set'},
+           'student_eval.py': {'check_test_set'},
            # The background-weight report (one test run, after the weight is fixed on validation).
            'background_eval.py': {'open_test_sets', 'test_profiles', 'noisy_test', 'task_test_profiles'}}
 
