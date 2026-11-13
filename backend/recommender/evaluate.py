@@ -21,6 +21,7 @@ third of own-description cosine and by whether the task names a graph skill.
 
 Usage (from backend/):
     python -m recommender.evaluate --run NAME
+    python -m recommender.evaluate --run NAME --measured-matching   # only the M7 gold test splits (#162)
 """
 
 import random
@@ -166,14 +167,54 @@ def print_graded(table, breakdown=None):
             print(f'{BREAKDOWN_METRIC} by text overlap:\n' + wide[[s for s in SYSTEMS if s in wide]].to_string())
 
 
+def measured_matching_sets(kg):
+    """The mapping_v1 and students_v1 test splits; called only inside main's open_test_sets()."""
+    from recommender import mapping_eval, student_eval
+    return (mapping_eval.load_items('test', node_ids=set(kg.skills())),
+            student_eval.load_profiles('test', career_codes={c.split(':')[1] for c in kg.careers()}))
+
+
+def measured_matching(run, started, items, profiles):
+    """The Measured Matching final read (#162): the gold test splits, read once. Nothing else is
+    read, and no threshold is changed afterwards."""
+    from recommender import mapping_eval, student_report
+    from recommender.engine import get_engine
+
+    engine = get_engine()
+    found = {r['query']: r for r in mapping_eval.readings(engine.matcher, sorted({i['input'] for i in items}))}
+    metrics, counts, by_category = mapping_eval.evaluate(items, found)
+    write_csv(mapping_eval.metrics_frame(metrics), run, 'mapping_metrics.csv')
+    write_csv(mapping_eval.metrics_frame(by_category).rename(columns={'metric': 'category'}), run, 'mapping_by_category.csv')
+    write_csv(pd.DataFrame(found.values()), run, 'mapping_readings.csv')
+    (run / 'mapping_counts.json').write_text(__import__('json').dumps(counts, indent=1), encoding='utf-8')
+    sets, table, summary = student_report.write_report(engine, profiles, run, 'students-v1-test')
+    write_manifest(run, started, {'mapping-v1-test': {'items': counts['items'], 'groups': counts['groups']}, **sets},
+                   {**configuration(DEFAULT_PARAMS), 'margin_threshold': engine.matcher.margin_threshold})
+    pd.set_option('display.width', 160)
+    print(mapping_eval.metrics_frame(metrics).to_string(index=False))
+    print(counts)
+    print(table.to_string(index=False))
+    print(summary)
+
+
 def main(argv=None):
+    if argv is None:
+        argv = sys.argv[1:]
+    # --measured-matching reads only the Measured Matching gold test splits (#162).
+    gold_only = '--measured-matching' in argv
+    argv = [a for a in argv if a != '--measured-matching']
     run = parse_run(__doc__.splitlines()[0], argv)
     started = run_started(__spec__.name, argv)
     kg = get_graph()
     with open_test_sets():  # refuses a dirty working tree; locked again on exit
-        test = test_profiles(kg)
-        held, noisy = noisy_test(kg)
-        graded = {'tasks-v1-test': task_sets.task_test_profiles()} if task_sets.is_frozen() else {}
+        if gold_only:
+            gold = measured_matching_sets(kg)
+        else:
+            test = test_profiles(kg)
+            held, noisy = noisy_test(kg)
+            graded = {'tasks-v1-test': task_sets.task_test_profiles()} if task_sets.is_frozen() else {}
+    if gold_only:
+        return measured_matching(run, started, *gold)
     hand = hand_written_profiles(kg)
     plain, hidden = Systems(kg), Systems(kg, hidden_names=held.values())
 
