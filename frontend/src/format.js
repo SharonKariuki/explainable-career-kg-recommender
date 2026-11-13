@@ -73,3 +73,8 @@ export function filterCareers(careers, show, domain, query) {
       (!q || c.title.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)),
   )
 }
+
+// Whether the typed name or email differs from what the account holds.
+export function accountChanged(account, name, email) {
+  return name.trim() !== (account.name ?? '') || email.trim() !== (account.email ?? '')
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { getProfile, saveProfile, searchSkills } from '../api.js'
+import { AccountForm } from '../AccountForm.jsx'
+import { getProfile, me, saveProfile, searchSkills } from '../api.js'
 import { PageHeader, Progress, Status } from '../components.jsx'
 import { Icon } from '../icons.jsx'
 
@@ -17,8 +18,10 @@ const EMPTY_BACKGROUND = { education_level: '', field_of_study: '', interests: '
 // Wait this long after typing stops before asking for suggestions.
 const SUGGEST_DELAY_MS = 200
 
-export default function ProfileScreen({ onSaved }) {
+// onAccount gets the account when the name or email is saved, so the greeting follows.
+export default function ProfileScreen({ onSaved, onAccount }) {
   const [skills, setSkills] = useState([])
+  const [account, setAccount] = useState(null)
   const [background, setBackground] = useState(EMPTY_BACKGROUND)
   const [draft, setDraft] = useState('')
   const [status, setStatus] = useState('loading')
@@ -45,9 +48,10 @@ export default function ProfileScreen({ onSaved }) {
     // Ignore a response that arrives after this effect was cleaned up, or a
     // late load would overwrite skills the user has started adding.
     let current = true
-    getProfile()
-      .then((profile) => {
+    Promise.all([getProfile(), me()])
+      .then(([profile, details]) => {
         if (!current) return
+        setAccount(details)
         setSkills(profile.skills)
         setBackground(Object.fromEntries(Object.keys(EMPTY_BACKGROUND).map((k) => [k, profile[k] ?? ''])))
       })
@@ -99,7 +103,7 @@ export default function ProfileScreen({ onSaved }) {
   const header = (
     <PageHeader
       title="My profile"
-      subtitle="List the skills you have, in your own words: tools (Python, Excel), topics (statistics) or things you do well (talking to customers). Three or more give better results."
+      subtitle="What AjiraGuide knows about you. List your skills in your own words: tools (Python, Excel), topics (statistics) or things you do well (talking to customers). Three or more give better results."
     />
   )
 
@@ -226,6 +230,8 @@ export default function ProfileScreen({ onSaved }) {
           {status === 'saving' ? 'Saving…' : 'Save and see my careers'}
         </button>
       </div>
+
+      {account && <AccountForm account={account} onChange={(next) => { setAccount(next); onAccount?.(next) }} />}
     </div>
     </>
   )

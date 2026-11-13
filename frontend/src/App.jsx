@@ -122,14 +122,14 @@ function App() {
   let screen
   if (route.redirect) screen = <Status loading />
   else if (name === 'home') screen = <DashboardScreen user={user} />
-  else if (name === 'profile') screen = <ProfileScreen onSaved={() => navigate('/matches')} />
+  else if (name === 'profile') screen = <ProfileScreen onSaved={() => navigate('/matches')} onAccount={setUser} />
   else if (name === 'matches') screen = <RecommendationsScreen />
   else if (name === 'careers') screen = <CareersScreen show={queryOf(address).show} />
   else if (name === 'career') screen = <CareerDetailScreen key={params.code} code={params.code} />
   else if (name === 'plan') screen = <RoadmapScreen code={params.code} />
   else if (name === 'history') screen = <HistoryScreen key={params.runId ?? 'all'} runId={params.runId} />
   else if (name === 'settings') {
-    screen = <SettingsScreen onAccount={setUser} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
+    screen = <SettingsScreen theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
   }
   else screen = <NotFoundScreen />
 
