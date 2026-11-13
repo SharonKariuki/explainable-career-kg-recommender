@@ -75,6 +75,7 @@ export default function CareerDetailScreen({ code, tab = 'overview' }) {
       {tab === 'fit' && (career ? <MatchDetail career={career} /> : <NotLinked />)}
       {tab === 'plan' && (
         <CareerPlan
+          title={profile.title}
           have={career ? career.skill_contributions : []}
           gap={career ? career.skills_gap : profile.requirements}
           matched={Boolean(career)}

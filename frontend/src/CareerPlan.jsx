@@ -8,6 +8,13 @@ import { getProfile, getProgress, saveProfile, setProgress } from './api.js'
 import { Notice, Pill, Progress, Segmented, Status } from './components.jsx'
 import { PLAN_STATUSES, capitalise, sourceNames, statusMap } from './format.js'
 import { Icon } from './icons.jsx'
+import Roadmap from './Roadmap.jsx'
+import { roadmapSections } from './roadmap.js'
+
+const VIEWS = [
+  { value: 'roadmap', label: 'Roadmap' },
+  { value: 'list', label: 'List' },
+]
 
 // One skill with its status control. onStatus(next) and onAdd() are async.
 export function PlanRow({ skill, position, status, busy, onStatus, onAdd }) {
@@ -31,12 +38,13 @@ export function PlanRow({ skill, position, status, busy, onStatus, onAdd }) {
   )
 }
 
-// have: the student's skills this career uses; gap: the skills to build, most important first.
+// title: the career's name; have: the student's skills this career uses; gap: the skills to build, most important first.
 // onProfileChanged runs after a finished skill joins the profile, so the page can reload.
-export default function CareerPlan({ have, gap, matched, onProfileChanged }) {
+export default function CareerPlan({ title, have, gap, matched, onProfileChanged }) {
   const [statuses, setStatuses] = useState(null)
   const [error, setError] = useState(null)
   const [busy, setBusy] = useState(null) // the skill being updated
+  const [view, setView] = useState('roadmap')
 
   useEffect(() => {
     let current = true
@@ -104,6 +112,15 @@ export default function CareerPlan({ have, gap, matched, onProfileChanged }) {
 
       {error && <Status error={error} />}
 
+      <div className="plan-view">
+        <Segmented label="Show the plan as" options={VIEWS} value={view} onChange={setView} />
+      </div>
+
+      {view === 'roadmap' ? (
+        <section className="card panel rm-card" aria-label="Skills roadmap">
+          <Roadmap title={title} sections={roadmapSections(have, gap, statuses)} busy={busy} onStatus={changeStatus} onAdd={addToProfile} />
+        </section>
+      ) : (
       <div className={matched ? 'split-2' : undefined}>
         {matched && (
           <section className="card panel">
@@ -157,6 +174,7 @@ export default function CareerPlan({ have, gap, matched, onProfileChanged }) {
           )}
         </section>
       </div>
+      )}
     </>
   )
 }
