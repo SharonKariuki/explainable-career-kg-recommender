@@ -34,6 +34,10 @@ LOW_CONFIDENCE_THRESHOLD = 0.60
 # C3 calibration (#159, recommender/calibration.py) found no margin that keeps false uncertainty
 # within both targets on the gold development split, so it stays off.
 MARGIN_THRESHOLD = None
+# Similarity under which a reading is flagged `below_threshold`. It equals the ranking's
+# LOW_CONFIDENCE_THRESHOLD, as Measured Matching revision 3 R5 defines the flag. A separate value
+# only affects the uncertainty flag, never the ranking; changing it needs approval (release P1).
+UNCERTAIN_SIMILARITY = LOW_CONFIDENCE_THRESHOLD
 ALIASES_FILE = Path(__file__).with_name('skill_aliases.csv')
 
 
@@ -106,7 +110,7 @@ def name_owners(kg, hidden_names=()):
 
 
 class SkillMatcher:
-    def __init__(self, kg, hidden_names=(), margin_threshold=MARGIN_THRESHOLD):
+    def __init__(self, kg, hidden_names=(), margin_threshold=MARGIN_THRESHOLD, uncertain_similarity=UNCERTAIN_SIMILARITY):
         """`hidden_names` are left out of the index (ignoring case), so evaluation
         can test whether a skill is still recognised from its other names."""
         self.kg = kg
@@ -120,6 +124,7 @@ class SkillMatcher:
         self.matrix = np.stack([vectors[text] for text in self.texts])
         self.owners = name_owners(kg, hidden_names)
         self.margin_threshold = margin_threshold
+        self.uncertain_similarity = uncertain_similarity
 
     @staticmethod
     def clean(skills):
@@ -168,7 +173,7 @@ class SkillMatcher:
             margin = round(float(row[best]) - float(row[j]), 4) + 0.0   # + 0.0: an exact tie reads 0.0
         shared = tuple(n for n in self.owners.get(self.texts[best].casefold(), ()) if n != node_id)
         reasons = []
-        if similarity < LOW_CONFIDENCE_THRESHOLD:
+        if similarity < self.uncertain_similarity:
             reasons.append('below_threshold')
         if self.margin_threshold is not None and margin is not None and margin < self.margin_threshold:
             reasons.append('close_runner_up')
