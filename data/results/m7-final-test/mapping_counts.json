@@ -1,0 +1,10 @@
+{
+ "items": 404,
+ "groups": 308,
+ "unambiguous": 278,
+ "ambiguous": 29,
+ "no_concept": 97,
+ "wrong (W)": 78,
+ "justified shared-name warnings": 5,
+ "unjustified shared-name warnings": 3
+}
