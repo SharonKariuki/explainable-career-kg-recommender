@@ -196,9 +196,15 @@ def test_corpus_is_fixed_and_uses_no_test_set():
 
 
 @pytest.mark.skipif(shutil.which('git') is None, reason='git is needed to read the baseline commit')
-def test_ranking_sources_equal_the_baseline_commit():
+def test_the_approved_baseline_was_generated_from_the_baseline_commit_sources():
+    # Later phases change ranking sources (C2 edits matching.py); whether rankings moved is decided
+    # by the snapshot comparison. What must always hold is the baseline's provenance: the approved
+    # snapshot was generated from exactly the baseline commit's ranking sources.
     try:
         expected = inv.commit_source_hashes(inv.BASELINE_COMMIT)
     except subprocess.CalledProcessError:
         pytest.skip('baseline commit not in this clone')
-    assert inv.worktree_source_hashes() == expected
+    assert inv.approval_state(inv.BACKEND / 'tests' / 'snapshots') == 'approved'
+    document = inv.read_baseline(inv.BACKEND / 'tests' / 'snapshots')
+    assert document['ranking_sources_checked_against_baseline'] is True
+    assert document['ranking_sources'] == expected

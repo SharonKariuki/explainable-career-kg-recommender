@@ -357,10 +357,13 @@ A generated snapshot is always **provisional**. It is adopted only when a review
 | `mapping_v1.json` (gold concept per student phrasing) | `recommender/mapping_eval.py` | Not built. The loader refuses it until it is frozen (`FROZEN`); a development draft can be read with `--allow-unfrozen`; the test split needs `open_test_sets()` |
 | `students_v1.json` (independent profiles with wordings, career grades and sufficiency labels) | `recommender/student_eval.py` | Not built. Same locks |
 
-Until C2, the mapping runner observes the production matcher and computes the following on the evaluation side:
+Since #158 the matcher itself reports, for every reading:
 
-- the runner-up;
-- the margin;
-- the nodes that share the selected name.
+- the runner-up (the best-scoring name of a different node);
+- the margin to it;
+- the other nodes that own the matched name (aliases inherit every owner of their target);
+- `uncertain`, with reasons `below_threshold`, `close_runner_up` (off until the margin threshold is calibrated in C3) and `shared_name`.
 
-Its "flagged" predicate defaults to today's `low_confidence`.
+The selected node is unchanged, and the engine does not read these fields.
+
+The mapping runner's "flagged" predicate is the matcher's `uncertain`. `current_flagged` (`low_confidence` only) is kept so M7 can compare with the behaviour before Measured Matching.

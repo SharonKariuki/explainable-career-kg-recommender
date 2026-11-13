@@ -78,6 +78,25 @@ def test_uncertain_matches_are_flagged_in_the_summary():
             assert s['low_confidence'] == (s['query'] in uncertain)
 
 
+def test_matches_keep_their_contract_and_add_the_reading():
+    client = signed_in()
+    client.put('/api/profile/', {'skills': ['TCP/IP', 'Linear algebra', 'playing guitar']}, format='json')
+    matches = {m['query']: m for m in client.get('/api/recommendations/').data['matches']}
+    for m in matches.values():
+        # the original contract: same keys, same types
+        assert isinstance(m['query'], str) and isinstance(m['skill'], str)
+        assert isinstance(m['similarity'], float) and isinstance(m['low_confidence'], bool)
+        # additive diagnostics (#158)
+        assert isinstance(m['skill_id'], str) and isinstance(m['matched_text'], str)
+        assert set(m['runner_up']) == {'skill_id', 'skill', 'matched_text', 'similarity'}
+        assert isinstance(m['margin'], float) and isinstance(m['shared_with'], list)
+        assert isinstance(m['uncertain'], bool) and isinstance(m['uncertainty_reasons'], list)
+        assert m['uncertain'] == bool(m['uncertainty_reasons'])
+    assert matches['TCP/IP']['runner_up']['skill'] == 'netstat'
+    assert 'shared_name' in matches['Linear algebra']['uncertainty_reasons'] and matches['Linear algebra']['shared_with']
+    assert matches['playing guitar']['uncertainty_reasons'][0] == 'below_threshold'
+
+
 def test_an_empty_profile_has_no_recommendations():
     data = signed_in().get('/api/recommendations/').data
     assert data['matches'] == [] and data['recommendations'] == []

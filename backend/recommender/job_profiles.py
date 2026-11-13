@@ -102,16 +102,17 @@ def run(jobs, profiles, engine=None, params=DEFAULT_PARAMS):
 
 def job_readings(profiles, engine=None):
     """One row per distinct declared skill: selection, runner-up, margin and shared owners.
-    Observed on the evaluation side (mapping_eval.readings); the matcher is unchanged."""
-    from recommender.mapping_eval import name_owners, readings
+    As the matcher reports them (mapping_eval.readings)."""
+    from recommender.mapping_eval import readings
 
     engine = engine or get_engine()
     queries = sorted({s for _, _, skills in profiles for s in skills})
-    rows = readings(engine.matcher, queries, name_owners(engine.kg))
+    rows = readings(engine.matcher, queries)
     frame = pd.DataFrame(rows, columns=['query', 'node_label', 'matched_text', 'similarity', 'low_confidence',
                                         'runner_up_text', 'runner_up_similarity', 'margin', 'shared_with',
-                                        'node_id', 'runner_up_node_id'])
+                                        'uncertain', 'reasons', 'node_id', 'runner_up_node_id'])
     frame['shared_with'] = frame['shared_with'].map(lambda s: '; '.join(s))
+    frame['reasons'] = frame['reasons'].map(lambda s: '; '.join(s))
     return frame.sort_values(['margin', 'query'])
 
 
