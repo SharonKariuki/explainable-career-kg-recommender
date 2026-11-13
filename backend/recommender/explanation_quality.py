@@ -7,7 +7,7 @@ Completeness, each criterion met or not (or not applicable):
   C1  states the fit and the score
   C2  names the strongest declared skills behind Coverage and counts the rest
   C3  uses the user's own words where the matched skill is named differently
-  C4  discloses every low-confidence match
+  C4  discloses every flagged match: low confidence, a close second reading or a shared name (#161)
   C5  covers all three components (Coverage, ProfileSimilarity, GraphProximity)
   C6  says how the score weights the components
 
@@ -20,7 +20,7 @@ Usage (from backend/):
 
 import re
 
-from recommender.explanation import SHOWN_CONTRIBUTIONS
+from recommender.explanation import SHOWN_CONTRIBUTIONS, cautions, is_uncertain, reading_lookup
 
 JARGON = ('idf', 'pagerank', 'cosine', 'embedding', 'vector', 'node', 'edge', 'sbert', 'bfs', 'traversal')
 TARGET_GRADE = 12
@@ -61,24 +61,28 @@ def readability(sentences, names=()):
     }
 
 
-def completeness(explanation, recommendation):
+def completeness(explanation, recommendation, readings=()):
     """{criterion: True / False / None (not applicable)}."""
     text, r = explanation.text, recommendation
     contributions = r.skill_contributions
-    shown = [s for i, s in enumerate(contributions) if i < SHOWN_CONTRIBUTIONS or s.low_confidence]
+    reading = reading_lookup(readings)
+    shown = [s for i, s in enumerate(contributions)
+             if i < SHOWN_CONTRIBUTIONS or s.low_confidence or is_uncertain(reading(s))]
     quoted = dict(explanation.quoted_components)
 
     renamed = [s for s in shown if s.query.casefold() != s.skill_label.casefold()]
-    low = [s for s in contributions if s.low_confidence]
+    # Since #161 C4 covers every flagged contribution: low confidence, a close second reading, or a shared name.
+    flagged = [s for s in contributions if s.low_confidence or is_uncertain(reading(s))]
     return {
-        'C1_fit_and_score': 'match for your skills' in text and 'score' in quoted,
+        'C1_fit_and_score': ('match for your skills' in text or 'for your skills (score' in text) and 'score' in quoted,
         'C2_skills_behind_coverage': (
             all(s.skill_label in text for s in shown)
             and (len(contributions) == len(shown) or f'plus {len(contributions) - len(shown)} more' in text)
         ) if contributions else 'does not directly require' in text,
         'C3_users_own_words': all(f"your '{s.query}'" in text for s in renamed) if renamed else None,
         'C4_uncertain_matches_disclosed': all(
-            f"Your '{s.query}' was only loosely matched" in text for s in low) if low else None,
+            any(c in text for c in cautions(s, reading(s))) and cautions(s, reading(s))
+            for s in flagged) if flagged else None,
         'C5_all_three_components': (
             ('coverage' in quoted or not contributions)
             and 'profile_similarity' in quoted
@@ -88,9 +92,9 @@ def completeness(explanation, recommendation):
     }
 
 
-def score(explanation, recommendation):
+def score(explanation, recommendation, readings=()):
     r = recommendation
-    criteria = completeness(explanation, r)
+    criteria = completeness(explanation, r, readings)
     applicable = [v for v in criteria.values() if v is not None]
     names = [r.title, *(s.skill_label for s in r.skill_contributions), *(s.query for s in r.skill_contributions),
              *(p.skill_label for p in r.proximity_paths)]
@@ -117,6 +121,12 @@ HAND_WRITTEN_PROFILES = (
 )
 
 
+def near_tie_with_top(assessment, ranked, recommendation):
+    """In a near tie with the top career: close_call holds and it scores within epsilon of the top."""
+    e = assessment['evidence']
+    return bool(e['close_call'] and ranked and ranked[0].score - recommendation.score <= e['thresholds']['epsilon'])
+
+
 def main(argv=None):
     import pandas as pd
 
@@ -132,12 +142,20 @@ def main(argv=None):
     validation = validation_profiles(engine.kg)
     sample = [(p.profile_id, p.skills, 'synthetic') for p in validation[::7]]
     sample += [(f'hand-{i}', skills, 'hand-written') for i, skills in enumerate(HAND_WRITTEN_PROFILES)]
+    from recommender import evidence
+    from recommender.fidelity import check_fidelity
     rows = []
     for profile_id, skills, kind in sample:
-        for rank, r in enumerate(engine.rank(skills, top_k=3)[1], 1):
-            x = generator.explain(r)
+        # As the API explains: with the profile's readings, its evidence and the near-tie flag (#161).
+        matches, ranked = engine.rank(skills, top_k=None)
+        assessment = evidence.assess(engine, matches, ranked)
+        for rank, r in enumerate(ranked[:3], 1):
+            near_tie = near_tie_with_top(assessment, ranked, r)
+            x = generator.explain(r, matches, assessment, rank, near_tie)
             rows.append({'profile_id': profile_id, 'kind': kind, 'skills': ' | '.join(skills),
-                         'rank': rank, 'career': r.title, **score(x, r), 'text': x.text})
+                         'rank': rank, 'career': r.title, 'insufficient': assessment['insufficient'],
+                         'near_tie': near_tie, **score(x, r, matches),
+                         'fidelity': check_fidelity(x, r, matches).passed, 'text': x.text})
 
     results = pd.DataFrame(rows)
     out = write_csv(results, run, 'explanation_quality.csv')
@@ -154,6 +172,8 @@ def main(argv=None):
         applicable = results[c].dropna()
         print(f'  {c:32} {applicable.astype(bool).mean():.0%}  (applies to {len(applicable)})')
     print(f'  overall completeness score: mean {results.completeness.mean():.3f}, min {results.completeness.min():.3f}')
+    print(f'  fidelity: {results.fidelity.mean():.0%} pass; insufficient profiles {results.insufficient.mean():.0%} '
+          f'of explanations; near ties {results.near_tie.mean():.0%}')
     print('\nReadability')
     print(f'  Flesch-Kincaid grade: mean {results.fk_grade.mean():.1f}, max {results.fk_grade.max():.1f} '
           f'(target <= {TARGET_GRADE}; {(results.fk_grade <= TARGET_GRADE).mean():.0%} meet it)')
