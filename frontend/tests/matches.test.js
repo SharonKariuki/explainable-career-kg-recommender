@@ -24,7 +24,7 @@ const render = (component, props) => renderToStaticMarkup(createElement(componen
 const text = (html) => html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
 
 function detail(changes = {}) {
-  return render(MatchDetail, { career: { ...fixture.detail, ...changes }, description: 'Analyse data.' })
+  return render(MatchDetail, { career: { ...fixture.detail, ...changes } })
 }
 
 test('a match card shows the label, score and reason without the score components', () => {
@@ -59,7 +59,7 @@ test('uncertain skill readings are named outside the collapsed list', () => {
 test('the career page leads with the match and uses real headings', () => {
   const html = detail()
   assert.match(html, /<section class="hero-card" aria-labelledby="match-heading">/)
-  for (const heading of ['Why it suits you', 'Skills you already have', 'Skills to develop', 'About this career']) {
+  for (const heading of ['Why it suits you', 'Skills you already have', 'Skills to develop']) {
     assert.match(html, new RegExp(`<h2[^>]*>(<i[^>]*></i>)?${heading}</h2>`))
   }
   assert.ok(html.indexOf('Skills you already have') < html.indexOf('How this match was calculated'))

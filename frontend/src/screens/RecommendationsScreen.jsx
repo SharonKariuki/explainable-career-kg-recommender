@@ -111,8 +111,8 @@ export function MatchCard({ match: r }) {
         </ul>
       )}
       <div className="card-links">
-        <a href={`#/careers/${r.career_code}`}>See why it fits<span className="visually-hidden">: {r.title}</span> <Icon name="forward" size={14} /></a>
-        <a href={`#/plan/${r.career_code}`}>Skills roadmap<span className="visually-hidden"> for {r.title}</span> <Icon name="forward" size={14} /></a>
+        <a href={`#/careers/${r.career_code}/fit`}>See why it fits<span className="visually-hidden">: {r.title}</span> <Icon name="forward" size={14} /></a>
+        <a href={`#/careers/${r.career_code}/plan`}>Skills plan<span className="visually-hidden"> for {r.title}</span> <Icon name="forward" size={14} /></a>
       </div>
     </li>
   )

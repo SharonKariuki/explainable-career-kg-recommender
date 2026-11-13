@@ -13,9 +13,9 @@ import CareersScreen from './screens/CareersScreen.jsx'
 import DashboardScreen from './screens/DashboardScreen.jsx'
 import HistoryScreen from './screens/HistoryScreen.jsx'
 import NotFoundScreen from './screens/NotFoundScreen.jsx'
+import PlanScreen from './screens/PlanScreen.jsx'
 import ProfileScreen from './screens/ProfileScreen.jsx'
 import RecommendationsScreen from './screens/RecommendationsScreen.jsx'
-import RoadmapScreen from './screens/RoadmapScreen.jsx'
 import SettingsScreen from './screens/SettingsScreen.jsx'
 
 // The top bar's pills (wide screens) and the floating tab bar (phones) share these.
@@ -125,8 +125,8 @@ function App() {
   else if (name === 'profile') screen = <ProfileScreen onSaved={() => navigate('/matches')} onAccount={setUser} />
   else if (name === 'matches') screen = <RecommendationsScreen />
   else if (name === 'careers') screen = <CareersScreen show={queryOf(address).show} />
-  else if (name === 'career') screen = <CareerDetailScreen key={params.code} code={params.code} />
-  else if (name === 'plan') screen = <RoadmapScreen code={params.code} />
+  else if (name === 'career') screen = <CareerDetailScreen key={params.code} code={params.code} tab={params.tab} />
+  else if (name === 'plan') screen = <PlanScreen />
   else if (name === 'history') screen = <HistoryScreen key={params.runId ?? 'all'} runId={params.runId} />
   else if (name === 'settings') {
     screen = <SettingsScreen theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />

@@ -13,23 +13,22 @@ const { activeLink, landing, queryOf, resolve } = (await runnerImport('./src/rou
 test('every page has an address', () => {
   const pages = {
     '/home': 'home', '/matches': 'matches', '/profile': 'profile', '/careers': 'careers', '/careers/15-2051.00': 'career',
-    '/plan': 'plan', '/plan/15-2051.00': 'plan', '/history': 'history', '/history/7': 'history',
+    '/careers/15-2051.00/fit': 'career', '/careers/15-2051.00/plan': 'career', '/plan': 'plan', '/history': 'history', '/history/7': 'history',
     '/settings': 'settings',
   }
   for (const [address, name] of Object.entries(pages)) assert.equal(resolve(address).name, name, address)
 })
 
 test('an address carries its parameters', () => {
-  assert.deepEqual(resolve('/careers/15-2051.00').params, { code: '15-2051.00' })
-  assert.deepEqual(resolve('/plan/15-1252.00').params, { code: '15-1252.00' })
-  assert.deepEqual(resolve('/plan').params, { code: undefined })
+  assert.deepEqual(resolve('/careers/15-2051.00').params, { code: '15-2051.00', tab: undefined })
+  assert.deepEqual(resolve('/careers/15-2051.00/plan').params, { code: '15-2051.00', tab: 'plan' })
   assert.deepEqual(resolve('/history/12').params, { runId: '12' })
 })
 
 test('old addresses lead to the new ones', () => {
   const moved = {
     '': '/home', '/': '/home', '/dashboard': '/home', '/recommendations': '/matches', '/assessment': '/profile',
-    '/roadmap': '/plan', '/roadmap/15-2051.00': '/plan/15-2051.00', '/saved': '/careers?show=saved',
+    '/roadmap': '/plan', '/roadmap/15-2051.00': '/careers/15-2051.00/plan', '/plan/15-2051.00': '/careers/15-2051.00/plan', '/saved': '/careers?show=saved',
   }
   for (const [old, target] of Object.entries(moved)) {
     assert.equal(resolve(old).redirect, target, old)
@@ -46,7 +45,7 @@ test('a query and a trailing slash do not change the page', () => {
 })
 
 test('an unknown address is not found', () => {
-  for (const address of ['/nope', '/careers/a/b', '/history/abc', '/homes']) {
+  for (const address of ['/nope', '/careers/a/b', '/careers/a/plan/x', '/history/abc', '/homes']) {
     assert.equal(resolve(address).name, 'not-found', address)
   }
 })

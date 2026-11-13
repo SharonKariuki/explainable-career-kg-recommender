@@ -9,8 +9,8 @@ const ROUTES = [
   { name: 'matches', pattern: /^\/matches$/, title: 'Matches' },
   { name: 'profile', pattern: /^\/profile$/, title: 'My profile' },
   { name: 'careers', pattern: /^\/careers$/, title: 'Careers' },
-  { name: 'career', pattern: new RegExp(`^/careers/${CODE}$`), params: ['code'], title: 'Career' },
-  { name: 'plan', pattern: new RegExp(`^/plan(?:/${CODE})?$`), params: ['code'], title: 'My plan' },
+  { name: 'career', pattern: new RegExp(`^/careers/${CODE}(?:/(fit|plan))?$`), params: ['code', 'tab'], title: 'Career' },
+  { name: 'plan', pattern: /^\/plan$/, title: 'My plan' },
   { name: 'history', pattern: /^\/history(?:\/(\d+))?$/, params: ['runId'], title: 'History' },
   { name: 'settings', pattern: /^\/settings$/, title: 'Settings' },
 ]
@@ -21,7 +21,8 @@ const MOVED = [
   [/^\/dashboard$/, '/home'],
   [/^\/recommendations$/, '/matches'],
   [/^\/assessment$/, '/profile'],
-  [/^\/roadmap(\/[\w.-]+)?$/, '/plan$1'],
+  [/^\/roadmap$/, '/plan'],
+  [/^\/(?:roadmap|plan)\/([\w.-]+)$/, '/careers/$1/plan'],
   [/^\/saved$/, '/careers?show=saved'],
 ]
 

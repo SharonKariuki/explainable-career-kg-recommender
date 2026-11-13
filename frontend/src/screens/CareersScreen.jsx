@@ -82,7 +82,7 @@ export default function CareersScreen({ show: requested }) {
               <div className="card-foot">
                 <span className="card-links">
                   <a href={`#/careers/${c.career_code}`}>Details <Icon name="forward" size={14} /></a>
-                  {c.match && <a href={`#/plan/${c.career_code}`}>Plan <Icon name="forward" size={14} /></a>}
+                  {c.match && <a href={`#/careers/${c.career_code}/plan`}>Plan <Icon name="forward" size={14} /></a>}
                 </span>
                 <SaveButton
                   code={c.career_code}

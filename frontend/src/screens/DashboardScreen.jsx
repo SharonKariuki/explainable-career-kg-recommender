@@ -57,7 +57,7 @@ function nextStep(skillCount, unsure, top) {
   return {
     title: `See what to learn for ${top.title}.`,
     text: 'Your top match, with the skills it needs that you have not listed.',
-    action: { href: `#/plan/${top.career_code}`, label: 'Open plan' },
+    action: { href: `#/careers/${top.career_code}/plan`, label: 'Open plan' },
   }
 }
 
@@ -223,7 +223,7 @@ export default function DashboardScreen({ user }) {
                   <ScoreBar score={top.score} tone="amber" />
                   <span className="sub">match score, 0 to 1</span>
                 </span>
-                <a className="tile-tag" href={`#/careers/${top.career_code}`}>See why it fits</a>
+                <a className="tile-tag" href={`#/careers/${top.career_code}/fit`}>See why it fits</a>
               </div>
             </>
           ) : (
