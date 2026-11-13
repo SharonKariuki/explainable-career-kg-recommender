@@ -35,8 +35,8 @@ from recommender.evaluation import check_test_set
 from recommender.results import normalised_hash
 
 MAPPING_FILE = DATA_DIR / 'eval_sets' / 'mapping_v1.json'
-# sha256 (line endings normalised) of the frozen file; None until it is reviewed and frozen.
-FROZEN = {'mapping_v1.json': None}
+# sha256 (line endings normalised) of the frozen file (#159).
+FROZEN = {'mapping_v1.json': '94f1bd301d968edf6913df82dad2d311ca5756483a4b55357808f225ec638d6c'}
 SPLITS = ('development', 'validation', 'test')
 CATEGORIES = ('exact', 'acronym', 'paraphrase', 'everyday', 'ambiguous', 'no_concept')
 LABELS = ('unambiguous', 'ambiguous', 'no_concept')

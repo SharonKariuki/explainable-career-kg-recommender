@@ -1,0 +1,108 @@
+[
+ {
+  "id": "i-1801",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Kubernetes"
+  ],
+  "preferred": "tool:Kubernetes",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1802",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+   "tool:Computer forensic software",
+   "esco:28a0fe16-4e03-4d5e-8f0e-5198309e77a9"
+  ],
+  "preferred": "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+  "confidence": "low",
+  "note": "mobile forensics under computer forensics"
+ },
+ {
+  "id": "i-1803",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft PowerPoint",
+   "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+  ],
+  "preferred": "tool:Microsoft PowerPoint",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1804",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0839eea4-c57b-4c14-b19b-923fbedb5d88",
+   "esco:4fabca9a-7435-4f33-b1da-3cdb00340fdc",
+   "esco:0d282d6e-8cb9-4339-8e7d-cfafed96b5ed"
+  ],
+  "preferred": "esco:0d282d6e-8cb9-4339-8e7d-cfafed96b5ed",
+  "confidence": "low",
+  "note": "vague research"
+ },
+ {
+  "id": "i-1805",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1806",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Node.js"
+  ],
+  "preferred": "tool:Node.js",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1807",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+  "confidence": "low",
+  "note": "no subnetting node"
+ },
+ {
+  "id": "i-1808",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait, not a skill"
+ },
+ {
+  "id": "i-1809",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:501537a7-9d63-491d-ae02-09f04767ff1e"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "read as ethical hacking"
+ },
+ {
+  "id": "i-1810",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": "clear match"
+ }
+]

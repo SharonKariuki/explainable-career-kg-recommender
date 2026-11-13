@@ -1,0 +1,1423 @@
+[
+ {
+  "id": "m-0004",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "tool:Access management software",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "high",
+  "note": "authentication is the core of identity/access management; IAM nodes contain it, SSO/RADIUS are narrower"
+ },
+ {
+  "id": "m-0005",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript",
+   "tool:Document Object Model DOM Scripting",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28"
+  ],
+  "preferred": "tool:JavaScript",
+  "confidence": "high",
+  "note": "client-side scripting: JavaScript/DOM, part of web programming"
+ },
+ {
+  "id": "m-0006",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9",
+   "tool:RESTful API"
+  ],
+  "preferred": "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9",
+  "confidence": "high",
+  "note": "Daraja is a specific REST API; instance of API-use category (amendment 1.1)"
+ },
+ {
+  "id": "m-0008",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7106b5df-e017-4c28-8c40-98814db5b775",
+   "esco:bec4359e-cb92-468f-a997-8fb28e32fba9"
+  ],
+  "preferred": "esco:7106b5df-e017-4c28-8c40-98814db5b775",
+  "shared_owner_marks": {
+   "esco:7106b5df-e017-4c28-8c40-98814db5b775": "valid",
+   "esco:bec4359e-cb92-468f-a997-8fb28e32fba9": "valid"
+  },
+  "confidence": "high",
+  "note": "PRINCE2 node; methodologies node names prince2 and contains it"
+ },
+ {
+  "id": "m-0012",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web browser software",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "high",
+  "note": "using the internet vs internet technologies/protocols (like \"web pages\")"
+ },
+ {
+  "id": "m-0013",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:dba46f87-0831-49cd-a1c7-340a653c0221",
+   "esco:33d49d4f-31ec-473f-9b8a-b555aa5116bb",
+   "esco:0a9acb6b-1139-4be9-b431-3a80a959f2f4"
+  ],
+  "preferred": "esco:dba46f87-0831-49cd-a1c7-340a653c0221",
+  "confidence": "high",
+  "note": "agile/scrum iterative practice"
+ },
+ {
+  "id": "m-0014",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Power BI",
+   "tool:Business intelligence software"
+  ],
+  "preferred": "tool:Microsoft Power BI",
+  "confidence": "high",
+  "note": "Power BI node; BI software category contains it"
+ },
+ {
+  "id": "m-0017",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:670f8eea-f25b-4c3f-97ef-a4729d4c63d6"
+  ],
+  "preferred": "esco:670f8eea-f25b-4c3f-97ef-a4729d4c63d6",
+  "confidence": "high",
+  "note": "smart contract node; Solidity is a narrower tool not named"
+ },
+ {
+  "id": "m-0020",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "esco:09f2f811-a3fb-4de3-a70f-6420a6935575",
+   "tool:Software development tools"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "high",
+  "note": "generic software development: programming"
+ },
+ {
+  "id": "m-0021",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4da4587a-fd0b-4ca2-886c-c42a1562d432"
+  ],
+  "preferred": "esco:4da4587a-fd0b-4ca2-886c-c42a1562d432",
+  "confidence": "high",
+  "note": "virtual private cloud is a cloud network; design cloud networks contains it (amendment 1.1)"
+ },
+ {
+  "id": "m-0022",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Database management software",
+   "esco:9ef0f3a0-9ce2-4ef1-a987-0366b5cb2dbe"
+  ],
+  "preferred": "tool:Database management software",
+  "confidence": "high",
+  "note": "DBeaver is a database management/client tool; category node contains it (amendment 1.1)"
+ },
+ {
+  "id": "m-0031",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "onet:2.C.4.a"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "high",
+  "note": "network topology (network design) vs mathematical topology"
+ },
+ {
+  "id": "m-0032",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:PHP",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28"
+  ],
+  "preferred": "tool:PHP",
+  "confidence": "high",
+  "note": "PHP web development"
+ },
+ {
+  "id": "m-0033",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Security incident management software",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "tool:Security incident management software",
+  "confidence": "high",
+  "note": "security operations centre; SOC is a name of the incident management node"
+ },
+ {
+  "id": "m-0040",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+   "esco:c9e96450-421d-48af-9ee6-d9c50e29afc2",
+   "esco:611ed16b-99bf-4840-9cab-f55d1d286e0a",
+   "esco:fc2f1d4f-a46f-471e-a618-cbd4d0496a53"
+  ],
+  "preferred": "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+  "confidence": "high",
+  "note": "data/system recovery"
+ },
+ {
+  "id": "m-0042",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "onet:2.C.3.a"
+  ],
+  "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+  "confidence": "high",
+  "note": "PC assembly: hardware components and device repair"
+ },
+ {
+  "id": "m-0043",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:897b393f-e7e0-4248-a40d-d77119694e83",
+   "esco:47a49cd6-097d-457a-9f7b-c290c14930d5",
+   "tool:MapReduce big data software"
+  ],
+  "preferred": "esco:897b393f-e7e0-4248-a40d-d77119694e83",
+  "confidence": "high",
+  "note": "distributed big-data processing; Spark/Hadoop are narrower products not named"
+ },
+ {
+  "id": "m-0044",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bf7ea00f-db77-4a95-9b9f-2d12b6d9fcb4",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "esco:545c80e8-7ab2-42fe-af64-242211e94709",
+   "onet:2.B.3.k"
+  ],
+  "preferred": "esco:bf7ea00f-db77-4a95-9b9f-2d12b6d9fcb4",
+  "confidence": "high",
+  "note": "network troubleshooting"
+ },
+ {
+  "id": "m-0047",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Social media sites"
+  ],
+  "preferred": "tool:Social media sites",
+  "confidence": "high",
+  "note": "TikTok is an instance of social media sites (amendment 1.1)"
+ },
+ {
+  "id": "m-0049",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Version control software",
+   "tool:Revision control software",
+   "tool:Source code management SCM software",
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f"
+  ],
+  "preferred": "tool:Version control software",
+  "confidence": "high",
+  "note": "version control"
+ },
+ {
+  "id": "m-0055",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:Web application software",
+   "tool:Web framework software"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "high",
+  "note": "building vs using web apps"
+ },
+ {
+  "id": "m-0056",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:9e84a506-df06-4be3-874a-fa01293e3dd5",
+   "esco:f2d57f41-43b4-4f5b-8100-3df5c21eda50"
+  ],
+  "preferred": "esco:9e84a506-df06-4be3-874a-fa01293e3dd5",
+  "confidence": "low",
+  "note": "bare \"process\": business processes vs data processing; borderline content-free"
+ },
+ {
+  "id": "m-0057",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:IBM Terraform",
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f"
+  ],
+  "preferred": "tool:IBM Terraform",
+  "confidence": "high",
+  "note": "infrastructure as code (Terraform node names it); other IaC products narrower"
+ },
+ {
+  "id": "m-0061",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Concurrency control software",
+   "esco:43ae58b9-5e56-4524-b45a-b422777a0576"
+  ],
+  "preferred": "tool:Concurrency control software",
+  "confidence": "low",
+  "note": "database vs financial transactions; DB reading only loosely covered"
+ },
+ {
+  "id": "m-0064",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:861cc783-6d4c-442e-9081-3a6e389be454",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "small office wireless network setup; no wireless node, network setup nodes arguably contain it"
+ },
+ {
+  "id": "m-0069",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070"
+  ],
+  "preferred": "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+  "confidence": "high",
+  "note": "user support"
+ },
+ {
+  "id": "m-0070",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+   "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+   "tool:Database management systems",
+   "tool:Database software"
+  ],
+  "preferred": "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+  "confidence": "high",
+  "note": "databases"
+ },
+ {
+  "id": "m-0071",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "esco:f0f5bb34-71df-4715-9c9e-03567b76ec8f",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:de0be6e8-644c-4cc9-9c8d-925dd98dda56"
+  ],
+  "preferred": "esco:07dd856d-6141-48a7-a228-918f88494812",
+  "confidence": "high",
+  "note": "wireframing/UX prototyping"
+ },
+ {
+  "id": "m-0073",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL",
+   "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "esco:9cf681c7-89ec-470c-b651-7fe03786f586"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": "SQL queries"
+ },
+ {
+  "id": "m-0074",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:C#",
+   "tool:Microsoft Visual C# .NET"
+  ],
+  "preferred": "tool:C#",
+  "confidence": "high",
+  "note": "C# language"
+ },
+ {
+  "id": "m-0075",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:OpenVAS",
+   "tool:Network and system vulnerability assessment software"
+  ],
+  "preferred": "tool:OpenVAS",
+  "confidence": "high",
+  "note": "OpenVAS scanner; vulnerability assessment category contains it"
+ },
+ {
+  "id": "m-0076",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+   "esco:85f46538-ae70-498a-bfbc-b8ddafe96c7d"
+  ],
+  "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+  "confidence": "high",
+  "note": "software testing; test planning narrower aspect"
+ },
+ {
+  "id": "m-0078",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Transact-SQL",
+   "tool:Microsoft transact-structural query language T-SQL"
+  ],
+  "preferred": "tool:Transact-SQL",
+  "confidence": "high",
+  "note": "T-SQL; SQL Server is a different product"
+ },
+ {
+  "id": "m-0079",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Git",
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+   "tool:Version control software"
+  ],
+  "preferred": "tool:Git",
+  "shared_owner_marks": {
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f": "valid",
+   "tool:Git": "valid"
+  },
+  "confidence": "high",
+  "note": "Git; SCM-tools node names git and is its category"
+ },
+ {
+  "id": "m-0082",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+   "esco:611ed16b-99bf-4840-9cab-f55d1d286e0a",
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+   "tool:Backup and archival software",
+   "esco:47ca0da1-cae5-4395-ae6b-fd97b9ff48d3"
+  ],
+  "preferred": "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+  "confidence": "high",
+  "note": "backups"
+ },
+ {
+  "id": "m-0083",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+  "confidence": "high",
+  "note": "system security; one plausible reading"
+ },
+ {
+  "id": "m-0086",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+   "esco:611ed16b-99bf-4840-9cab-f55d1d286e0a",
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+   "tool:Backup and archival software",
+   "esco:47ca0da1-cae5-4395-ae6b-fd97b9ff48d3"
+  ],
+  "preferred": "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+  "confidence": "high",
+  "note": "backups"
+ },
+ {
+  "id": "m-0087",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:501537a7-9d63-491d-ae02-09f04767ff1e",
+   "esco:2ddb1226-1117-4eb4-ae65-3a2f5a5a3c80",
+   "esco:fe1c2b32-7fe9-4668-affa-07ff658a68cf",
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7"
+  ],
+  "preferred": "esco:501537a7-9d63-491d-ae02-09f04767ff1e",
+  "confidence": "high",
+  "note": "security threats; attack vectors names ICT security threats"
+ },
+ {
+  "id": "m-0088",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web framework software",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:Python"
+  ],
+  "preferred": "tool:Web framework software",
+  "confidence": "high",
+  "note": "Python web framework; Django/Flask are narrower products not named"
+ },
+ {
+  "id": "m-0092",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:501537a7-9d63-491d-ae02-09f04767ff1e",
+   "tool:Anti-phishing software",
+   "esco:a4b2a278-2123-4450-8b43-be01c4f341da"
+  ],
+  "preferred": "esco:501537a7-9d63-491d-ae02-09f04767ff1e",
+  "confidence": "low",
+  "note": "phishing awareness; no awareness node, nearest nodes arguable"
+ },
+ {
+  "id": "m-0094",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Database management systems",
+   "tool:Relational database management system software",
+   "tool:Database management software",
+   "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+   "esco:4463a721-69f3-413d-8321-43e3af13a4f1"
+  ],
+  "preferred": "tool:Database management systems",
+  "shared_owner_marks": {
+   "tool:Database management systems": "valid",
+   "tool:Relational database management system software": "valid"
+  },
+  "confidence": "high",
+  "note": "DBMS; both owners carry the name and express it"
+ },
+ {
+  "id": "m-0101",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free generic IT phrase (amendment 1.3)"
+ },
+ {
+  "id": "m-0102",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+   "esco:9531fe02-1e1f-4a36-95f7-a76a77cd4b8d",
+   "onet:2.A.1.d"
+  ],
+  "preferred": "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+  "confidence": "high",
+  "note": "client communication"
+ },
+ {
+  "id": "m-0109",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95",
+   "tool:Virtual private networking VPN software",
+   "tool:Wide area network WAN software"
+  ],
+  "preferred": "esco:acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95",
+  "confidence": "high",
+  "note": "site-to-site VPN; IPsec is a narrower protocol"
+ },
+ {
+  "id": "m-0112",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "esco:7364cc39-b9c0-449f-9416-57723e2fd9c4",
+   "esco:de0be6e8-644c-4cc9-9c8d-925dd98dda56",
+   "esco:c4b626c1-e71c-44ec-9f88-042766f37fcc"
+  ],
+  "preferred": "esco:07dd856d-6141-48a7-a228-918f88494812",
+  "confidence": "high",
+  "note": "UX design; node names UX"
+ },
+ {
+  "id": "m-0113",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce"
+  ],
+  "preferred": "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce",
+  "confidence": "high",
+  "note": "virtualisation; VMware/Hyper-V are narrower products not named"
+ },
+ {
+  "id": "m-0114",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.2.i",
+   "esco:03b9b491-fc9b-4868-914a-bf7cd47b5041",
+   "esco:b9f16465-56a9-426b-a047-0f9f1f95ec92"
+  ],
+  "preferred": "onet:2.B.2.i",
+  "confidence": "high",
+  "note": "problem solving soft skill (amendment 1.5)"
+ },
+ {
+  "id": "m-0127",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bf7ea00f-db77-4a95-9b9f-2d12b6d9fcb4",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "esco:545c80e8-7ab2-42fe-af64-242211e94709",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"
+  ],
+  "preferred": "esco:bf7ea00f-db77-4a95-9b9f-2d12b6d9fcb4",
+  "confidence": "high",
+  "note": "network troubleshooting"
+ },
+ {
+  "id": "m-0129",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "router configuration; networking hardware names Routers"
+ },
+ {
+  "id": "m-0130",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "AI-driven RPA; only related (AI principles) or a different product (Power Automate) (amendment 1.2)"
+ },
+ {
+  "id": "m-0131",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:VMware",
+   "tool:VMWare Workstation",
+   "tool:VMWare ESX Server",
+   "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce"
+  ],
+  "preferred": "tool:VMware",
+  "confidence": "high",
+  "note": "VMware virtualisation products"
+ },
+ {
+  "id": "m-0132",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ed3f3dba-3a35-4ed5-b113-67f4d10ef4c8",
+   "esco:4fabca9a-7435-4f33-b1da-3cdb00340fdc",
+   "esco:485cdafb-3c7f-4104-ab1c-773e6131a39a",
+   "esco:0d282d6e-8cb9-4339-8e7d-cfafed96b5ed"
+  ],
+  "preferred": "esco:ed3f3dba-3a35-4ed5-b113-67f4d10ef4c8",
+  "confidence": "low",
+  "note": "generic research skill; several research nodes, none clearly best"
+ },
+ {
+  "id": "m-0133",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Shopify e-commerce platform absent; CMS node only related, containment arguable"
+ },
+ {
+  "id": "m-0134",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+   "esco:611ed16b-99bf-4840-9cab-f55d1d286e0a",
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+   "tool:Backup and archival software",
+   "esco:47ca0da1-cae5-4395-ae6b-fd97b9ff48d3"
+  ],
+  "preferred": "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+  "confidence": "high",
+  "note": "backups"
+ },
+ {
+  "id": "m-0135",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+   "esco:d6cdef49-b669-4507-91d1-3f959cf98e47",
+   "esco:ec85cc63-4e24-4631-bf92-8789db2605c0"
+  ],
+  "preferred": "esco:29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+  "confidence": "high",
+  "note": "database administration"
+ },
+ {
+  "id": "m-0136",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "high",
+  "note": "programming"
+ },
+ {
+  "id": "m-0138",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "low",
+  "note": "single-page application; acronym and containment arguable"
+ },
+ {
+  "id": "m-0143",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+   "esco:6b643893-0a1f-4f6c-83a1-e7eef75849b9"
+  ],
+  "preferred": "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+  "confidence": "high",
+  "note": "cloud computing; \"cloud\" carries content"
+ },
+ {
+  "id": "m-0144",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "tool:Help desk software"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "phone help desk support"
+ },
+ {
+  "id": "m-0147",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:8369c2d6-c100-4cf6-bd83-9668d8678433"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "high",
+  "note": "RL is an instance of machine learning (amendment 1.1)"
+ },
+ {
+  "id": "m-0148",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:dad7e408-162f-46a4-8567-db560e19e2fc",
+   "tool:Network and system vulnerability assessment software"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "high",
+  "note": "vulnerability assessment; OpenVAS/Nessus narrower products not named"
+ },
+ {
+  "id": "m-0150",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait/content-free (amendment 1.3, 1.5)"
+ },
+ {
+  "id": "m-0151",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Version control software",
+   "tool:Revision control software",
+   "tool:Source code management SCM software",
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f"
+  ],
+  "preferred": "tool:Version control software",
+  "confidence": "high",
+  "note": "version control"
+ },
+ {
+  "id": "m-0152",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web content management system CMS software"
+  ],
+  "preferred": "tool:Web content management system CMS software",
+  "confidence": "high",
+  "note": "CMS site building; WordPress/Drupal/Sitecore narrower, not named"
+ },
+ {
+  "id": "m-0156",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+   "tool:Continuous integration software",
+   "tool:Deployment software"
+  ],
+  "preferred": "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+  "confidence": "high",
+  "note": "CI/CD pipelines; DevOps names CI/CD; Jenkins narrower"
+ },
+ {
+  "id": "m-0158",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:545c80e8-7ab2-42fe-af64-242211e94709",
+   "tool:Network and component performance analysis software",
+   "esco:ed39edd3-44d0-4a16-9796-bfb99f92baf3"
+  ],
+  "preferred": "esco:545c80e8-7ab2-42fe-af64-242211e94709",
+  "confidence": "high",
+  "note": "network performance analysis"
+ },
+ {
+  "id": "m-0161",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+   "onet:2.A.2.a",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "onet:2.B.4.g"
+  ],
+  "preferred": "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+  "confidence": "high",
+  "note": "analytical thinking vs data or systems analysis"
+ },
+ {
+  "id": "m-0165",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fe1c2b32-7fe9-4668-affa-07ff658a68cf"
+  ],
+  "preferred": "esco:fe1c2b32-7fe9-4668-affa-07ff658a68cf",
+  "confidence": "high",
+  "note": "STRIDE is a threat-modelling method; node names model ICT threats"
+ },
+ {
+  "id": "m-0166",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "a portfolio link, not a skill"
+ },
+ {
+  "id": "m-0167",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+   "esco:27ed854c-15b8-4ba2-90e9-ae888a219703",
+   "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+   "onet:2.B.4.g"
+  ],
+  "preferred": "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+  "confidence": "high",
+  "note": "data, business, systems or general analysis"
+ },
+ {
+  "id": "m-0168",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+   "tool:Project planning software",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "onet:2.B.5.a"
+  ],
+  "preferred": "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+  "confidence": "high",
+  "note": "task scheduling/project planning"
+ },
+ {
+  "id": "m-0169",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9",
+   "tool:RESTful API"
+  ],
+  "preferred": "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9",
+  "confidence": "high",
+  "note": "Flutterwave payment API integration; instance of API use (amendment 1.1)"
+ },
+ {
+  "id": "m-0171",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4"
+  ],
+  "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+  "confidence": "high",
+  "note": "CompTIA A+ is a name of repair ICT devices"
+ },
+ {
+  "id": "m-0173",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b626c1-e71c-44ec-9f88-042766f37fcc",
+   "esco:be0ff6d8-5e61-4021-9c89-e40cf0b75cc6",
+   "esco:7364cc39-b9c0-449f-9416-57723e2fd9c4",
+   "esco:de0be6e8-644c-4cc9-9c8d-925dd98dda56",
+   "esco:07dd856d-6141-48a7-a228-918f88494812"
+  ],
+  "preferred": "esco:c4b626c1-e71c-44ec-9f88-042766f37fcc",
+  "confidence": "high",
+  "note": "usability"
+ },
+ {
+  "id": "m-0175",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+   "esco:f09e70cb-5d8c-4c57-b027-a45127c0bf92",
+   "esco:a56dec32-05ef-45de-a256-ee6741f356db",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+  "confidence": "high",
+  "note": "data protection/privacy"
+ },
+ {
+  "id": "m-0178",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Kubernetes",
+   "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce"
+  ],
+  "preferred": "tool:Kubernetes",
+  "confidence": "high",
+  "note": "container orchestration; virtualisation node names containerization"
+ },
+ {
+  "id": "m-0181",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Active Directory",
+   "tool:Active directory software",
+   "tool:Microsoft Windows Server"
+  ],
+  "preferred": "tool:Microsoft Active Directory",
+  "confidence": "low",
+  "note": "Group Policy is a Windows/AD feature; containment arguable"
+ },
+ {
+  "id": "m-0189",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Traceroute",
+   "esco:bf7ea00f-db77-4a95-9b9f-2d12b6d9fcb4"
+  ],
+  "preferred": "tool:Traceroute",
+  "confidence": "high",
+  "note": "traceroute diagnostic tool"
+ },
+ {
+  "id": "m-0191",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Event log monitor software",
+   "tool:Security incident management software",
+   "tool:Intrusion detection system IDS",
+   "tool:Computer intrusion detection systems",
+   "tool:IBM QRadar SIEM"
+  ],
+  "preferred": "tool:Event log monitor software",
+  "confidence": "high",
+  "note": "security log monitoring/SIEM; Splunk narrower product"
+ },
+ {
+  "id": "m-0192",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+   "esco:c9e96450-421d-48af-9ee6-d9c50e29afc2",
+   "esco:611ed16b-99bf-4840-9cab-f55d1d286e0a"
+  ],
+  "preferred": "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+  "confidence": "high",
+  "note": "file restore from backup"
+ },
+ {
+  "id": "m-0194",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+   "tool:RESTful API",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+  "confidence": "high",
+  "note": "working with APIs; design API node"
+ },
+ {
+  "id": "m-0197",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "tool:Access management software",
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "low",
+  "note": "API authentication; split across identity/access and API nodes, arguable"
+ },
+ {
+  "id": "m-0199",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Bash",
+   "tool:Shell script"
+  ],
+  "preferred": "tool:Bash",
+  "shared_owner_marks": {
+   "onet:2.B.3.e": "not_valid",
+   "tool:Bash": "valid"
+  },
+  "confidence": "high",
+  "note": "Bash shell; generic Programming not intended"
+ },
+ {
+  "id": "m-0200",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "confidence": "high",
+  "note": "data analytics"
+ },
+ {
+  "id": "m-0203",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+   "onet:2.B.3.e"
+  ],
+  "preferred": "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+  "confidence": "high",
+  "note": "OpenCV is a name on Programming; its meaning is image processing"
+ },
+ {
+  "id": "m-0206",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a59708e3-e654-4e37-8b8a-741c3b756eee",
+   "esco:dfb9cec6-3ae3-408a-9d57-c44361bf7aaf"
+  ],
+  "preferred": "esco:a59708e3-e654-4e37-8b8a-741c3b756eee",
+  "confidence": "high",
+  "note": "multimedia systems vs producing multimedia content"
+ },
+ {
+  "id": "m-0207",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "high",
+  "note": "socket/network programming; node names network programming"
+ },
+ {
+  "id": "m-0209",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "high",
+  "note": "REST API development"
+ },
+ {
+  "id": "m-0210",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:React",
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:React",
+  "confidence": "high",
+  "note": "Next.js is a name on React and a JS framework"
+ },
+ {
+  "id": "m-0215",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+   "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+   "tool:Database software"
+  ],
+  "preferred": "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+  "confidence": "high",
+  "note": "using databases"
+ },
+ {
+  "id": "m-0218",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+   "esco:611ed16b-99bf-4840-9cab-f55d1d286e0a",
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+   "tool:Backup and archival software",
+   "esco:47ca0da1-cae5-4395-ae6b-fd97b9ff48d3"
+  ],
+  "preferred": "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+  "confidence": "high",
+  "note": "backups"
+ },
+ {
+  "id": "m-0220",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "tool:Help desk software",
+   "esco:778ca7ad-6c5d-4868-9b96-a7777dca799c"
+  ],
+  "preferred": "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+  "confidence": "high",
+  "note": "help desk support"
+ },
+ {
+  "id": "m-0225",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:AccessData FTK",
+   "tool:Computer forensic software"
+  ],
+  "preferred": "tool:AccessData FTK",
+  "confidence": "high",
+  "note": "FTK forensics; forensic software category contains it"
+ },
+ {
+  "id": "m-0229",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a80fb090-63f4-4b05-83a5-2f090deb7757",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "esco:a80fb090-63f4-4b05-83a5-2f090deb7757",
+  "confidence": "high",
+  "note": "ODK is a data collection system (amendment 1.1)"
+ },
+ {
+  "id": "m-0232",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5"
+  ],
+  "preferred": "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+  "confidence": "high",
+  "note": "work breakdown structure is a project-management technique; WBS Goplan unrelated"
+ },
+ {
+  "id": "m-0236",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a80fb090-63f4-4b05-83a5-2f090deb7757",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "esco:a80fb090-63f4-4b05-83a5-2f090deb7757",
+  "confidence": "high",
+  "note": "KoboToolbox is a data collection system (amendment 1.1)"
+ },
+ {
+  "id": "m-0241",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a4b2a278-2123-4450-8b43-be01c4f341da",
+   "tool:Password management software"
+  ],
+  "preferred": "esco:a4b2a278-2123-4450-8b43-be01c4f341da",
+  "confidence": "high",
+  "note": "personal password/account hygiene; identity management is org admin"
+ },
+ {
+  "id": "m-0243",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Data validation software",
+   "tool:Conformance and validation testing software",
+   "esco:ee3b1553-2dc5-434b-8dcf-4ae3a40b3a48"
+  ],
+  "preferred": "tool:Data validation software",
+  "confidence": "high",
+  "note": "data vs software validation"
+ },
+ {
+  "id": "m-0246",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "tool:Help desk software"
+  ],
+  "preferred": "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+  "confidence": "high",
+  "note": "password-reset user support"
+ },
+ {
+  "id": "m-0250",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c"
+  ],
+  "preferred": "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+  "confidence": "high",
+  "note": "trend/pattern analysis; forecasting is different"
+ },
+ {
+  "id": "m-0252",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:Web framework software"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "high",
+  "note": "backend; ICT system programming names server side programming"
+ },
+ {
+  "id": "m-0253",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+   "tool:Continuous integration software",
+   "tool:Deployment software"
+  ],
+  "preferred": "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+  "confidence": "high",
+  "note": "CI/CD; DevOps names CI/CD"
+ },
+ {
+  "id": "m-0257",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "SPA component frameworks; React/Vue/Angular narrower, not named"
+ },
+ {
+  "id": "m-0261",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "tool:Structured query language SQL",
+   "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+   "tool:Reporting software"
+  ],
+  "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+  "confidence": "high",
+  "note": "querying databases for reports"
+ },
+ {
+  "id": "m-0262",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+   "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+   "tool:Database design software",
+   "esco:84f58e3d-8669-4d83-8c1d-5dd1e73a654f"
+  ],
+  "preferred": "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+  "confidence": "high",
+  "note": "database design"
+ },
+ {
+  "id": "m-0264",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f2d57f41-43b4-4f5b-8100-3df5c21eda50",
+   "esco:9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+   "esco:57231a22-4da7-49c8-97b8-75672feadf1e"
+  ],
+  "preferred": "esco:f2d57f41-43b4-4f5b-8100-3df5c21eda50",
+  "confidence": "high",
+  "note": "process data names handle data"
+ },
+ {
+  "id": "m-0266",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+   "esco:1605025e-a179-421f-8f35-5b07d182a6b2"
+  ],
+  "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "confidence": "high",
+  "note": "cohort analysis is a data/web analytics technique (amendment 1.1)"
+ },
+ {
+  "id": "m-0271",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Defect tracking software",
+   "tool:Issue tracking system software"
+  ],
+  "preferred": "tool:Defect tracking software",
+  "confidence": "high",
+  "note": "bug tracking; Bugzilla narrower product"
+ },
+ {
+  "id": "m-0272",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:0868eef3-2213-4572-9343-74931345a7d3",
+   "tool:Network management software"
+  ],
+  "preferred": "esco:0868eef3-2213-4572-9343-74931345a7d3",
+  "confidence": "high",
+  "note": "network administration; network design is different"
+ },
+ {
+  "id": "m-0273",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Enhanced Interior Gateway Routing Protocol EIGRP",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "tool:Enhanced Interior Gateway Routing Protocol EIGRP",
+  "confidence": "high",
+  "note": "EIGRP routing protocol"
+ },
+ {
+  "id": "m-0276",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9",
+   "tool:RESTful API"
+  ],
+  "preferred": "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9",
+  "confidence": "low",
+  "note": "Stripe payments: integration reading likely but not explicit"
+ },
+ {
+  "id": "m-0277",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+   "tool:RESTful API",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+  "confidence": "high",
+  "note": "working with APIs; design API node"
+ },
+ {
+  "id": "m-0278",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+   "tool:Automated installation software"
+  ],
+  "preferred": "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+  "confidence": "high",
+  "note": "installing/configuring software; one meaning"
+ },
+ {
+  "id": "m-0281",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Portswigger BurP Suite",
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Portswigger BurP Suite",
+  "confidence": "high",
+  "note": "Burp Suite product node; pen-testing node names Burpsuite"
+ },
+ {
+  "id": "m-0283",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "tool:Access management software"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "high",
+  "note": "identity and access management; Tivoli narrower product"
+ },
+ {
+  "id": "m-0286",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "high",
+  "note": "ethical hacking in a careers context; pen-testing node names it"
+ },
+ {
+  "id": "m-0287",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Distributed database management software"
+  ],
+  "preferred": "tool:Distributed database management software",
+  "confidence": "high",
+  "note": "distributed databases; dbShards narrower product"
+ },
+ {
+  "id": "m-0288",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2b7a79e5-84d8-4880-be66-3d9bb05bea17"
+  ],
+  "preferred": "esco:2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+  "confidence": "high",
+  "note": "software design patterns; UI patterns different"
+ },
+ {
+  "id": "m-0292",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "tool:Active directory software",
+   "tool:Microsoft Active Directory",
+   "esco:d1e954cd-d290-4d80-97c0-7969960d2928"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "high",
+  "note": "directory account provisioning"
+ },
+ {
+  "id": "m-0294",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "esco:0868eef3-2213-4572-9343-74931345a7d3",
+   "tool:Command interpreters",
+   "tool:Operating system shells",
+   "tool:Secure shell SSH software"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "high",
+  "note": "CLI server administration; Bash narrower"
+ }
+]

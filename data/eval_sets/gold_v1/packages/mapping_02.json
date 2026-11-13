@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "m-0281",
+  "input": "Burpsuite"
+ },
+ {
+  "id": "m-0282",
+  "input": "managing projects stuff"
+ },
+ {
+  "id": "m-0283",
+  "input": "IAM"
+ },
+ {
+  "id": "m-0284",
+  "input": "logging and tracking support requests"
+ },
+ {
+  "id": "m-0285",
+  "input": "automating software releases"
+ },
+ {
+  "id": "m-0286",
+  "input": "hacking"
+ },
+ {
+  "id": "m-0287",
+  "input": "sharding and replication"
+ },
+ {
+  "id": "m-0288",
+  "input": "structuring code with reusable design solutions"
+ },
+ {
+  "id": "m-0289",
+  "input": "forensics"
+ },
+ {
+  "id": "m-0290",
+  "input": "I own a laptop"
+ },
+ {
+  "id": "m-0291",
+  "input": "stand up comedy"
+ },
+ {
+  "id": "m-0292",
+  "input": "creating and disabling staff logins in a company directory"
+ },
+ {
+  "id": "m-0293",
+  "input": "ethereum dapps"
+ },
+ {
+  "id": "m-0294",
+  "input": "managing servers from the command line"
+ },
+ {
+  "id": "m-0295",
+  "input": "dream job at Safaricom"
+ },
+ {
+  "id": "m-0296",
+  "input": "Webflow"
+ },
+ {
+  "id": "m-0297",
+  "input": "systems stuff"
+ },
+ {
+  "id": "m-0298",
+  "input": "html and css"
+ },
+ {
+  "id": "m-0299",
+  "input": "installing electrical sockets"
+ },
+ {
+  "id": "m-0300",
+  "input": "writing"
+ },
+ {
+  "id": "m-0301",
+  "input": "technical skills"
+ },
+ {
+  "id": "m-0302",
+  "input": "Redis"
+ },
+ {
+  "id": "m-0303",
+  "input": "riding boda boda"
+ },
+ {
+  "id": "m-0304",
+  "input": "digging for hidden patterns in large collections of records"
+ },
+ {
+  "id": "m-0305",
+  "input": "breaking down tech stuff so non-IT people understand"
+ },
+ {
+  "id": "m-0306",
+  "input": "testing"
+ },
+ {
+  "id": "m-0307",
+  "input": "running Microsoft servers for an organisation"
+ },
+ {
+  "id": "m-0308",
+  "input": "CouchDB"
+ },
+ {
+  "id": "m-0309",
+  "input": "building conversational assistants"
+ },
+ {
+  "id": "m-0310",
+  "input": "keeping hackers out of a network"
+ },
+ {
+  "id": "m-0311",
+  "input": "maintaining systems"
+ },
+ {
+  "id": "m-0312",
+  "input": "seo and traffic"
+ },
+ {
+  "id": "m-0313",
+  "input": "ERD diagrams"
+ },
+ {
+  "id": "m-0314",
+  "input": "deep stuff"
+ },
+ {
+  "id": "m-0315",
+  "input": "jQuery"
+ },
+ {
+  "id": "m-0316",
+  "input": "NFT"
+ },
+ {
+  "id": "m-0317",
+  "input": "pen testing"
+ },
+ {
+  "id": "m-0318",
+  "input": "Microsoft 365"
+ },
+ {
+  "id": "m-0319",
+  "input": "making charts from data in excel"
+ },
+ {
+  "id": "m-0320",
+  "input": "LAN"
+ },
+ {
+  "id": "m-0321",
+  "input": "shipping container handling at Mombasa port"
+ },
+ {
+  "id": "m-0322",
+  "input": "CAP theorem"
+ },
+ {
+  "id": "m-0323",
+  "input": "finding weaknesses in a website by trying to break it"
+ },
+ {
+  "id": "m-0324",
+  "input": "speech recognition"
+ },
+ {
+  "id": "m-0325",
+  "input": "Flask"
+ },
+ {
+  "id": "m-0326",
+  "input": "ITIL"
+ },
+ {
+  "id": "m-0327",
+  "input": "HashiCorp Vagrant"
+ },
+ {
+  "id": "m-0328",
+  "input": "cisco labs from class"
+ },
+ {
+  "id": "m-0329",
+  "input": "testing stuff"
+ },
+ {
+  "id": "m-0330",
+  "input": "Java or JavaScript stuff"
+ },
+ {
+  "id": "m-0331",
+  "input": "UI"
+ },
+ {
+  "id": "m-0332",
+  "input": "music sampling and beat making"
+ },
+ {
+  "id": "m-0333",
+  "input": "SolarWinds"
+ },
+ {
+  "id": "m-0334",
+  "input": "encrypting files"
+ },
+ {
+  "id": "m-0335",
+  "input": "BigQuery"
+ },
+ {
+  "id": "m-0336",
+  "input": "stylesheets with variables and nesting compiled to CSS"
+ },
+ {
+  "id": "m-0337",
+  "input": "data analysis stuff"
+ },
+ {
+  "id": "m-0338",
+  "input": "backend"
+ },
+ {
+  "id": "m-0339",
+  "input": "Kenyan citizen, holds national ID"
+ },
+ {
+  "id": "m-0340",
+  "input": "storing data as documents instead of tables"
+ },
+ {
+  "id": "m-0341",
+  "input": "engineering"
+ },
+ {
+  "id": "m-0342",
+  "input": "finding insights"
+ },
+ {
+  "id": "m-0343",
+  "input": "Communication"
+ },
+ {
+  "id": "m-0344",
+  "input": "PostgreSQL"
+ },
+ {
+  "id": "m-0345",
+  "input": "scripting"
+ },
+ {
+  "id": "m-0346",
+  "input": "Nessus"
+ },
+ {
+  "id": "m-0347",
+  "input": "front end"
+ },
+ {
+  "id": "m-0348",
+  "input": "love meeting new people"
+ },
+ {
+  "id": "m-0349",
+  "input": "RAID"
+ },
+ {
+  "id": "m-0350",
+  "input": "protecting websites from injection attacks"
+ },
+ {
+  "id": "m-0351",
+  "input": "compliance"
+ },
+ {
+  "id": "m-0352",
+  "input": "crypto"
+ },
+ {
+  "id": "m-0353",
+  "input": "MS SQL Server"
+ },
+ {
+  "id": "m-0354",
+  "input": "house electrical wiring"
+ },
+ {
+  "id": "m-0355",
+  "input": "online services"
+ },
+ {
+  "id": "m-0356",
+  "input": "insights"
+ },
+ {
+  "id": "m-0357",
+  "input": "AI stuff"
+ },
+ {
+  "id": "m-0358",
+  "input": "networking skills"
+ },
+ {
+  "id": "m-0359",
+  "input": "table making carpentry"
+ },
+ {
+  "id": "m-0360",
+  "input": "writing test plans and cases"
+ },
+ {
+  "id": "m-0361",
+  "input": "knowing the threats facing a corporate network"
+ },
+ {
+  "id": "m-0362",
+  "input": "neural networks with many layers"
+ },
+ {
+  "id": "m-0363",
+  "input": "test cases"
+ },
+ {
+  "id": "m-0364",
+  "input": "Microsoft Access"
+ },
+ {
+  "id": "m-0365",
+  "input": "PoS"
+ },
+ {
+  "id": "m-0366",
+  "input": "virtualization"
+ },
+ {
+  "id": "m-0367",
+  "input": "AngularJS"
+ },
+ {
+  "id": "m-0368",
+  "input": "Teamwork"
+ },
+ {
+  "id": "m-0369",
+  "input": "laying network cables"
+ },
+ {
+  "id": "m-0370",
+  "input": "web pages"
+ },
+ {
+  "id": "m-0371",
+  "input": "protocols"
+ },
+ {
+  "id": "m-0372",
+  "input": "PyTorch"
+ },
+ {
+  "id": "m-0373",
+  "input": "BIOS"
+ },
+ {
+  "id": "m-0374",
+  "input": "inspecting network traffic at packet level"
+ },
+ {
+  "id": "m-0375",
+  "input": "M-Pesa agent shop"
+ },
+ {
+  "id": "m-0376",
+  "input": "computer security"
+ },
+ {
+  "id": "m-0377",
+  "input": "LSTM"
+ },
+ {
+  "id": "m-0378",
+  "input": "repairing computers"
+ },
+ {
+  "id": "m-0379",
+  "input": "auditing"
+ },
+ {
+  "id": "m-0380",
+  "input": "SRS"
+ },
+ {
+  "id": "m-0381",
+  "input": "keeping a team work on schedule"
+ },
+ {
+  "id": "m-0382",
+  "input": "pray five times daily"
+ },
+ {
+  "id": "m-0383",
+  "input": "extracting figures from a database for analysis"
+ },
+ {
+  "id": "m-0384",
+  "input": "vlans on switches"
+ },
+ {
+  "id": "m-0385",
+  "input": "statistics for research"
+ },
+ {
+  "id": "m-0386",
+  "input": "Selenium",
+  "shared_name_owners": [
+   {
+    "id": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+    "label": "tools for ICT test automation"
+   },
+   {
+    "id": "tool:Selenium",
+    "label": "Selenium"
+   }
+  ]
+ },
+ {
+  "id": "m-0387",
+  "input": "admin"
+ },
+ {
+  "id": "m-0388",
+  "input": "KCSE B+"
+ },
+ {
+  "id": "m-0389",
+  "input": "responsive layouts"
+ },
+ {
+  "id": "m-0390",
+  "input": "Calculus",
+  "shared_name_owners": [
+   {
+    "id": "onet:2.A.1.e",
+    "label": "Mathematics"
+   },
+   {
+    "id": "onet:2.C.4.a",
+    "label": "Mathematics"
+   }
+  ]
+ },
+ {
+  "id": "m-0391",
+  "input": "packets"
+ },
+ {
+  "id": "m-0392",
+  "input": "K8s"
+ },
+ {
+  "id": "m-0393",
+  "input": "business analysis",
+  "shared_name_owners": [
+   {
+    "id": "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+    "label": "business analysis"
+   },
+   {
+    "id": "esco:9e84a506-df06-4be3-874a-fa01293e3dd5",
+    "label": "business processes"
+   }
+  ]
+ },
+ {
+  "id": "m-0394",
+  "input": "handling security incidents"
+ },
+ {
+  "id": "m-0395",
+  "input": "web apps"
+ },
+ {
+  "id": "m-0396",
+  "input": "clearing and forwarding at the port"
+ },
+ {
+  "id": "m-0397",
+  "input": "GraphQL"
+ },
+ {
+  "id": "m-0398",
+  "input": "automation"
+ },
+ {
+  "id": "m-0399",
+  "input": "installing a wireless network at work"
+ },
+ {
+  "id": "m-0400",
+  "input": "planning"
+ },
+ {
+  "id": "m-0401",
+  "input": "SaaS",
+  "shared_name_owners": [
+   {
+    "id": "esco:83218cac-3599-417e-93d2-26013cdccd98",
+    "label": "service-oriented modelling"
+   },
+   {
+    "id": "esco:eeca3780-8049-499f-a268-95a7ad26642c",
+    "label": "SaaS (service-oriented modelling)"
+   }
+  ]
+ },
+ {
+  "id": "m-0402",
+  "input": "packaging apps into isolated boxes"
+ },
+ {
+  "id": "m-0403",
+  "input": "ERD"
+ },
+ {
+  "id": "m-0404",
+  "input": "NoSQL"
+ },
+ {
+  "id": "m-0405",
+  "input": "MVC"
+ },
+ {
+  "id": "m-0406",
+  "input": "php and mysql"
+ },
+ {
+  "id": "m-0407",
+  "input": "ledger"
+ },
+ {
+  "id": "m-0408",
+  "input": "have my own laptop and modem"
+ },
+ {
+  "id": "m-0409",
+  "input": "TestRail"
+ },
+ {
+  "id": "m-0410",
+  "input": "waiter serving customers at a hotel"
+ },
+ {
+  "id": "m-0411",
+  "input": "mobile friendly pages"
+ },
+ {
+  "id": "m-0412",
+  "input": "React Native"
+ },
+ {
+  "id": "m-0413",
+  "input": "hackathon winner"
+ },
+ {
+  "id": "m-0414",
+  "input": "playing keyboard piano"
+ },
+ {
+  "id": "m-0415",
+  "input": "Google Docs",
+  "shared_name_owners": [
+   {
+    "id": "esco:81633a44-f1db-4a01-a940-804c6905e330",
+    "label": "use word processing software"
+   },
+   {
+    "id": "tool:Google Docs",
+    "label": "Google Docs"
+   }
+  ]
+ },
+ {
+  "id": "m-0416",
+  "input": "CSS",
+  "shared_name_owners": [
+   {
+    "id": "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794",
+    "label": "style sheet languages"
+   },
+   {
+    "id": "tool:Cascading style sheets CSS",
+    "label": "Cascading style sheets CSS"
+   }
+  ]
+ },
+ {
+  "id": "m-0417",
+  "input": "good with networks"
+ },
+ {
+  "id": "m-0418",
+  "input": "wireless"
+ },
+ {
+  "id": "m-0419",
+  "input": "Microsoft Visio"
+ },
+ {
+  "id": "m-0420",
+  "input": "CRM"
+ },
+ {
+  "id": "m-0421",
+  "input": "finding security holes"
+ },
+ {
+  "id": "m-0422",
+  "input": "software design"
+ },
+ {
+  "id": "m-0423",
+  "input": "records"
+ },
+ {
+  "id": "m-0424",
+  "input": "smart systems"
+ },
+ {
+  "id": "m-0425",
+  "input": "keeping software updated across many computers"
+ },
+ {
+  "id": "m-0426",
+  "input": "making web pages do things when you click"
+ },
+ {
+  "id": "m-0427",
+  "input": "putting apps in docker containers"
+ },
+ {
+  "id": "m-0428",
+  "input": "CCNA"
+ },
+ {
+  "id": "m-0429",
+  "input": "repairing laptops that don't boot"
+ },
+ {
+  "id": "m-0430",
+  "input": "Spring Boot"
+ },
+ {
+  "id": "m-0431",
+  "input": "privacy"
+ },
+ {
+  "id": "m-0432",
+  "input": "GPO management"
+ },
+ {
+  "id": "m-0433",
+  "input": "running a project team"
+ },
+ {
+  "id": "m-0434",
+  "input": "data modelling"
+ },
+ {
+  "id": "m-0435",
+  "input": "digital skills"
+ },
+ {
+  "id": "m-0436",
+  "input": "hacking into things to test them"
+ },
+ {
+  "id": "m-0437",
+  "input": "AI"
+ },
+ {
+  "id": "m-0438",
+  "input": "Seaborn"
+ },
+ {
+  "id": "m-0439",
+  "input": "installation"
+ },
+ {
+  "id": "m-0440",
+  "input": "XSS"
+ },
+ {
+  "id": "m-0441",
+  "input": "planning how data is stored in a database"
+ },
+ {
+  "id": "m-0442",
+  "input": "running name resolution servers"
+ },
+ {
+  "id": "m-0443",
+  "input": "security stuff"
+ },
+ {
+  "id": "m-0444",
+  "input": "PoW"
+ },
+ {
+  "id": "m-0445",
+  "input": "software development"
+ },
+ {
+  "id": "m-0446",
+  "input": "deployment"
+ },
+ {
+  "id": "m-0447",
+  "input": "analysing"
+ },
+ {
+  "id": "m-0448",
+  "input": "Huawei eNSP simulator"
+ },
+ {
+  "id": "m-0449",
+  "input": "Google Sheets",
+  "shared_name_owners": [
+   {
+    "id": "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+    "label": "use spreadsheets software"
+   },
+   {
+    "id": "tool:Google Sheets",
+    "label": "Google Sheets"
+   }
+  ]
+ },
+ {
+  "id": "m-0450",
+  "input": "responsive"
+ },
+ {
+  "id": "m-0451",
+  "input": "routers and routing"
+ },
+ {
+  "id": "m-0452",
+  "input": "Metasploit",
+  "shared_name_owners": [
+   {
+    "id": "tool:Metasploit",
+    "label": "Metasploit"
+   },
+   {
+    "id": "tool:Penetration testing software",
+    "label": "Penetration testing software"
+   }
+  ]
+ },
+ {
+  "id": "m-0453",
+  "input": "dApps"
+ },
+ {
+  "id": "m-0454",
+  "input": "version control"
+ },
+ {
+  "id": "m-0455",
+  "input": "RDBMS"
+ },
+ {
+  "id": "m-0456",
+  "input": "oracle database"
+ },
+ {
+  "id": "m-0457",
+  "input": "Access"
+ },
+ {
+  "id": "m-0458",
+  "input": "DApp"
+ },
+ {
+  "id": "m-0459",
+  "input": "WLAN"
+ },
+ {
+  "id": "m-0460",
+  "input": "choosing and transforming input variables for models"
+ },
+ {
+  "id": "m-0461",
+  "input": "power bi reports"
+ },
+ {
+  "id": "m-0462",
+  "input": "windows server"
+ },
+ {
+  "id": "m-0463",
+  "input": "React"
+ },
+ {
+  "id": "m-0464",
+  "input": "writing code that runs on the web server"
+ },
+ {
+  "id": "m-0465",
+  "input": "writing small scripts to automate chores"
+ },
+ {
+  "id": "m-0466",
+  "input": "mysql databases"
+ },
+ {
+  "id": "m-0467",
+  "input": "C++"
+ },
+ {
+  "id": "m-0468",
+  "input": "data management"
+ },
+ {
+  "id": "m-0469",
+  "input": "building models"
+ },
+ {
+  "id": "m-0470",
+  "input": "packing flour into packets"
+ },
+ {
+  "id": "m-0471",
+  "input": "terminating and testing network cables"
+ },
+ {
+  "id": "m-0472",
+  "input": "STP"
+ },
+ {
+  "id": "m-0473",
+  "input": "connecting computers in a lab with cables"
+ },
+ {
+  "id": "m-0474",
+  "input": "making buttons and forms respond in the browser"
+ },
+ {
+  "id": "m-0475",
+  "input": "technical support"
+ },
+ {
+  "id": "m-0476",
+  "input": "making apis"
+ },
+ {
+  "id": "m-0477",
+  "input": "database design"
+ },
+ {
+  "id": "m-0478",
+  "input": "chrome plating car parts"
+ },
+ {
+  "id": "m-0479",
+  "input": "Cisco IOS"
+ },
+ {
+  "id": "m-0480",
+  "input": "coding in python"
+ },
+ {
+  "id": "m-0481",
+  "input": "CSV files"
+ },
+ {
+  "id": "m-0482",
+  "input": "NLP life coach"
+ },
+ {
+  "id": "m-0483",
+  "input": "ip addressing"
+ },
+ {
+  "id": "m-0484",
+  "input": "translating website names into addresses"
+ },
+ {
+  "id": "m-0485",
+  "input": "taking photos"
+ },
+ {
+  "id": "m-0486",
+  "input": "scripts"
+ },
+ {
+  "id": "m-0487",
+  "input": "100m sprinter"
+ },
+ {
+  "id": "m-0488",
+  "input": "Appium"
+ },
+ {
+  "id": "m-0489",
+  "input": "monitoring"
+ },
+ {
+  "id": "m-0490",
+  "input": "TypeScript"
+ },
+ {
+  "id": "m-0491",
+  "input": "tokens"
+ },
+ {
+  "id": "m-0492",
+  "input": "artificial intelligence techniques"
+ },
+ {
+  "id": "m-0493",
+  "input": "bootstrapping a startup with own money"
+ },
+ {
+  "id": "m-0494",
+  "input": "EC2"
+ },
+ {
+  "id": "m-0495",
+  "input": "browsers"
+ },
+ {
+  "id": "m-0496",
+  "input": "teaching people about phishing"
+ },
+ {
+  "id": "m-0497",
+  "input": "ui ux"
+ },
+ {
+  "id": "m-0498",
+  "input": "sports betting"
+ },
+ {
+  "id": "m-0499",
+  "input": "making charts and dashboards from numbers"
+ },
+ {
+  "id": "m-0500",
+  "input": "ARIMA"
+ },
+ {
+  "id": "m-0501",
+  "input": "computer skills"
+ },
+ {
+  "id": "m-0502",
+  "input": "helping customers with what they need"
+ },
+ {
+  "id": "m-0503",
+  "input": "database sharding"
+ },
+ {
+  "id": "m-0504",
+  "input": "back end stuff"
+ },
+ {
+  "id": "m-0505",
+  "input": "cybersecurity"
+ },
+ {
+  "id": "m-0506",
+  "input": "R"
+ },
+ {
+  "id": "m-0507",
+  "input": "training a model to identify pictures"
+ },
+ {
+  "id": "m-0508",
+  "input": "setting up VMs on VirtualBox"
+ },
+ {
+  "id": "m-0509",
+  "input": "configuring switches on Cisco devices"
+ },
+ {
+  "id": "m-0510",
+  "input": "ruby gemstone cutting"
+ },
+ {
+  "id": "m-0511",
+  "input": "microsoft azure"
+ },
+ {
+  "id": "m-0512",
+  "input": "Python stuff"
+ },
+ {
+  "id": "m-0513",
+  "input": "Mathematics",
+  "shared_name_owners": [
+   {
+    "id": "onet:2.A.1.e",
+    "label": "Mathematics"
+   },
+   {
+    "id": "onet:2.C.4.a",
+    "label": "Mathematics"
+   }
+  ]
+ },
+ {
+  "id": "m-0514",
+  "input": "data warehouse"
+ },
+ {
+  "id": "m-0515",
+  "input": "crimping lan cables"
+ },
+ {
+  "id": "m-0516",
+  "input": "crypto trading"
+ },
+ {
+  "id": "m-0517",
+  "input": "tour guide at Lake Naivasha"
+ },
+ {
+  "id": "m-0518",
+  "input": "TensorFlow"
+ },
+ {
+  "id": "m-0519",
+  "input": "spark plug replacement"
+ },
+ {
+  "id": "m-0520",
+  "input": "network topologies"
+ },
+ {
+  "id": "m-0521",
+  "input": "integrating M-Pesa payments"
+ },
+ {
+  "id": "m-0522",
+  "input": "accessibility"
+ },
+ {
+  "id": "m-0523",
+  "input": "research"
+ },
+ {
+  "id": "m-0524",
+  "input": "fixing dirty data"
+ },
+ {
+  "id": "m-0525",
+  "input": "Docker"
+ },
+ {
+  "id": "m-0526",
+  "input": "ML",
+  "shared_name_owners": [
+   {
+    "id": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+    "label": "machine learning"
+   },
+   {
+    "id": "esco:a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+    "label": "ML (computer programming)"
+   }
+  ]
+ },
+ {
+  "id": "m-0527",
+  "input": "installing software for users"
+ },
+ {
+  "id": "m-0528",
+  "input": "EVM"
+ },
+ {
+  "id": "m-0529",
+  "input": "Muslim"
+ },
+ {
+  "id": "m-0530",
+  "input": "DOM"
+ },
+ {
+  "id": "m-0531",
+  "input": "the search giant cloud platform"
+ },
+ {
+  "id": "m-0532",
+  "input": "wifi"
+ },
+ {
+  "id": "m-0533",
+  "input": "key cutting and lock repair"
+ },
+ {
+  "id": "m-0534",
+  "input": "writing queries to get info out of a database"
+ },
+ {
+  "id": "m-0535",
+  "input": "switching"
+ },
+ {
+  "id": "m-0536",
+  "input": "webpages stuff"
+ },
+ {
+  "id": "m-0537",
+  "input": "CV"
+ },
+ {
+  "id": "m-0538",
+  "input": "designing"
+ },
+ {
+  "id": "m-0539",
+  "input": "Rubik's cube solver"
+ },
+ {
+  "id": "m-0540",
+  "input": "meeting deadlines by planning my time"
+ },
+ {
+  "id": "m-0541",
+  "input": "deep models for images"
+ },
+ {
+  "id": "m-0542",
+  "input": "server side"
+ },
+ {
+  "id": "m-0543",
+  "input": "Sass"
+ },
+ {
+  "id": "m-0544",
+  "input": "CNN"
+ },
+ {
+  "id": "m-0545",
+  "input": "Prophet forecasting"
+ },
+ {
+  "id": "m-0546",
+  "input": "repairing computer hardware"
+ },
+ {
+  "id": "m-0547",
+  "input": "NumPy"
+ },
+ {
+  "id": "m-0548",
+  "input": "PWA"
+ },
+ {
+  "id": "m-0549",
+  "input": "processes"
+ },
+ {
+  "id": "m-0550",
+  "input": "Apache helicopter pilot"
+ },
+ {
+  "id": "m-0551",
+  "input": "watching server and app health with alerts"
+ },
+ {
+  "id": "m-0552",
+  "input": "computers"
+ },
+ {
+  "id": "m-0553",
+  "input": "Scikit-learn"
+ },
+ {
+  "id": "m-0554",
+  "input": "Django"
+ },
+ {
+  "id": "m-0555",
+  "input": "neuro-linguistic programming coach"
+ },
+ {
+  "id": "m-0556",
+  "input": "servers"
+ },
+ {
+  "id": "m-0557",
+  "input": "AJAX"
+ },
+ {
+  "id": "m-0558",
+  "input": "java/javascript"
+ },
+ {
+  "id": "m-0559",
+  "input": "building the part of an app that talks to the database"
+ },
+ {
+  "id": "m-0560",
+  "input": "stats"
+ }
+]

@@ -1,0 +1,597 @@
+[
+ {
+  "group": "am-g062",
+  "input": "integrating systems",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: integration: systems vs testing vs API"
+ },
+ {
+  "group": "am-g062",
+  "input": "integration",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: integration: systems vs testing vs API"
+ },
+ {
+  "group": "am-g063",
+  "input": "mobile apps",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: mobile apps: build vs design vs use"
+ },
+ {
+  "group": "am-g064",
+  "input": "policies",
+  "category": "ambiguous",
+  "domain": "security",
+  "author_note": "Readings: policies: security vs company policies"
+ },
+ {
+  "group": "am-g064",
+  "input": "security policies",
+  "category": "ambiguous",
+  "domain": "security",
+  "author_note": "Readings: policies: security vs company policies"
+ },
+ {
+  "group": "am-g065",
+  "input": "web apps",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: web apps: build vs use vs analytics"
+ },
+ {
+  "group": "am-g065",
+  "input": "webapps stuff",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: web apps: build vs use vs analytics"
+ },
+ {
+  "group": "am-g066",
+  "input": "computer repair",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: computer repair: hardware vs software"
+ },
+ {
+  "group": "am-g066",
+  "input": "fixing computers",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: computer repair: hardware vs software"
+ },
+ {
+  "group": "am-g067",
+  "input": "AI",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: AI: machine learning vs automation vs chatbots"
+ },
+ {
+  "group": "am-g067",
+  "input": "AI stuff",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: AI: machine learning vs automation vs chatbots"
+ },
+ {
+  "group": "am-g068",
+  "input": "switching",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: switching vs routing vs hardware"
+ },
+ {
+  "group": "am-g069",
+  "input": "modelling skills",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: modelling: UML, data, process, ML"
+ },
+ {
+  "group": "am-g070",
+  "input": "tools",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: tools: vague"
+ },
+ {
+  "group": "am-g071",
+  "input": "admin",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: admin: system admin vs office admin"
+ },
+ {
+  "group": "am-g071",
+  "input": "administration",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: admin: system admin vs office admin"
+ },
+ {
+  "group": "am-g072",
+  "input": "git stuff",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: version control: Git vs GitHub vs general"
+ },
+ {
+  "group": "am-g072",
+  "input": "version control",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: version control: Git vs GitHub vs general"
+ },
+ {
+  "group": "am-g073",
+  "input": "installation",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: installation: software vs hardware vs network"
+ },
+ {
+  "group": "am-g074",
+  "input": "analysis skills",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: analysis: wide"
+ },
+ {
+  "group": "am-g075",
+  "input": "programs",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: programs: software vs project programs"
+ },
+ {
+  "group": "am-g076",
+  "input": "cloud security",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: cloud security vs cloud compliance"
+ },
+ {
+  "group": "am-g077",
+  "input": "BI",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: BI: business intelligence vs business analysis"
+ },
+ {
+  "group": "am-g077",
+  "input": "business intelligence stuff",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: BI: business intelligence vs business analysis"
+ },
+ {
+  "group": "am-g078",
+  "input": "network topologies",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: topology: design vs diagramming"
+ },
+ {
+  "group": "am-g078",
+  "input": "topology",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: topology: design vs diagramming"
+ },
+ {
+  "group": "am-g079",
+  "input": "front end",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: front end could be HTML/CSS/JS programming or UI design"
+ },
+ {
+  "group": "am-g079",
+  "input": "frontend things",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: front end could be HTML/CSS/JS programming or UI design"
+ },
+ {
+  "group": "am-g080",
+  "input": "indexing",
+  "category": "ambiguous",
+  "domain": "database",
+  "author_note": "Readings: indexing: database vs search vs SEO"
+ },
+ {
+  "group": "am-g081",
+  "input": "routing",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: routing: network routing vs route command"
+ },
+ {
+  "group": "am-g082",
+  "input": "cloud admin",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: cloud admin vs system admin"
+ },
+ {
+  "group": "am-g083",
+  "input": "smart systems",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: smart systems: AI vs IoT"
+ },
+ {
+  "group": "am-g084",
+  "input": "mining",
+  "category": "ambiguous",
+  "domain": "blockchain",
+  "author_note": "Readings: mining: crypto vs data mining"
+ },
+ {
+  "group": "am-g085",
+  "input": "apps",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: apps: mobile vs web vs desktop"
+ },
+ {
+  "group": "am-g086",
+  "input": "Excel",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: Excel: tool vs spreadsheets skill vs formulas"
+ },
+ {
+  "group": "am-g086",
+  "input": "MS Excel stuff",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: Excel: tool vs spreadsheets skill vs formulas"
+ },
+ {
+  "group": "am-g087",
+  "input": "web development",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: web development: front end or back end"
+ },
+ {
+  "group": "am-g088",
+  "input": "NLP",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: NLP vs text processing"
+ },
+ {
+  "group": "am-g089",
+  "input": "database security",
+  "category": "ambiguous",
+  "domain": "database",
+  "author_note": "Readings: database security vs general security"
+ },
+ {
+  "group": "am-g090",
+  "input": "monitoring",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: monitoring: network vs cloud vs systems"
+ },
+ {
+  "group": "am-g091",
+  "input": "smart contracts",
+  "category": "ambiguous",
+  "domain": "blockchain",
+  "author_note": "Readings: smart contracts: coding vs legal"
+ },
+ {
+  "group": "am-g092",
+  "input": "tokens",
+  "category": "ambiguous",
+  "domain": "blockchain",
+  "author_note": "Readings: tokens: crypto vs authentication"
+ },
+ {
+  "group": "am-g093",
+  "input": "responsive",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: responsive: responsive web design vs responsive systems"
+ },
+ {
+  "group": "am-g093",
+  "input": "responsive layouts",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: responsive: responsive web design vs responsive systems"
+ },
+ {
+  "group": "am-g094",
+  "input": "firewalls",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: firewall: network security vs network device"
+ },
+ {
+  "group": "am-g095",
+  "input": "crypto",
+  "category": "ambiguous",
+  "domain": "blockchain",
+  "author_note": "Readings: crypto: cryptocurrency vs cryptography"
+ },
+ {
+  "group": "am-g096",
+  "input": "online services",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: online services: web, cloud"
+ },
+ {
+  "group": "am-g097",
+  "input": "prediction",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: prediction: ML vs statistics"
+ },
+ {
+  "group": "am-g098",
+  "input": "research",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: research: scientific vs market vs data"
+ },
+ {
+  "group": "am-g099",
+  "input": "hardware",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: hardware: computer vs networking vs embedded"
+ },
+ {
+  "group": "am-g100",
+  "input": "hosting",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: hosting: web server vs cloud"
+ },
+ {
+  "group": "am-g101",
+  "input": "data handling",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: data handling: collect, clean, process, store"
+ },
+ {
+  "group": "am-g102",
+  "input": "building models",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: models: ML vs data vs UML"
+ },
+ {
+  "group": "am-g102",
+  "input": "models",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: models: ML vs data vs UML"
+ },
+ {
+  "group": "am-g103",
+  "input": "data privacy",
+  "category": "ambiguous",
+  "domain": "security",
+  "author_note": "Readings: privacy: data protection law vs technical"
+ },
+ {
+  "group": "am-g103",
+  "input": "privacy",
+  "category": "ambiguous",
+  "domain": "security",
+  "author_note": "Readings: privacy: data protection law vs technical"
+ },
+ {
+  "group": "am-g104",
+  "input": "data management",
+  "category": "ambiguous",
+  "domain": "database",
+  "author_note": "Readings: data management: governance, admin, processing"
+ },
+ {
+  "group": "am-g105",
+  "input": "vision systems",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: computer vision vs image processing"
+ },
+ {
+  "group": "am-g106",
+  "input": "customer service",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: customer support: IT vs general service"
+ },
+ {
+  "group": "am-g106",
+  "input": "customer support",
+  "category": "ambiguous",
+  "domain": "it_support",
+  "author_note": "Readings: customer support: IT vs general service"
+ },
+ {
+  "group": "am-g107",
+  "input": "styling",
+  "category": "ambiguous",
+  "domain": "web_frontend",
+  "author_note": "Readings: styling: CSS vs graphic design"
+ },
+ {
+  "group": "am-g108",
+  "input": "virtual machines",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: virtualization: servers vs desktops"
+ },
+ {
+  "group": "am-g108",
+  "input": "virtualization",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: virtualization: servers vs desktops"
+ },
+ {
+  "group": "am-g109",
+  "input": "training models",
+  "category": "ambiguous",
+  "domain": "ai_ml",
+  "author_note": "Readings: training: ML training vs teaching"
+ },
+ {
+  "group": "am-g110",
+  "input": "back end things",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: backend: server code vs database vs infrastructure"
+ },
+ {
+  "group": "am-g110",
+  "input": "backend",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: backend: server code vs database vs infrastructure"
+ },
+ {
+  "group": "am-g111",
+  "input": "cloud storage",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: cloud storage: Drive vs databases vs backup"
+ },
+ {
+  "group": "am-g112",
+  "input": "data storage",
+  "category": "ambiguous",
+  "domain": "database",
+  "author_note": "Readings: data storage: databases vs cloud vs backup"
+ },
+ {
+  "group": "am-g112",
+  "input": "storing data",
+  "category": "ambiguous",
+  "domain": "database",
+  "author_note": "Readings: data storage: databases vs cloud vs backup"
+ },
+ {
+  "group": "am-g113",
+  "input": "OOP",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: OOP: programming vs modelling (UML)"
+ },
+ {
+  "group": "am-g113",
+  "input": "object oriented",
+  "category": "ambiguous",
+  "domain": "software_backend",
+  "author_note": "Readings: OOP: programming vs modelling (UML)"
+ },
+ {
+  "group": "am-g114",
+  "input": "wifi things",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: wireless: WiFi setup vs mobile telecom"
+ },
+ {
+  "group": "am-g114",
+  "input": "wireless",
+  "category": "ambiguous",
+  "domain": "networking",
+  "author_note": "Readings: wireless: WiFi setup vs mobile telecom"
+ },
+ {
+  "group": "am-g115",
+  "input": "compliance",
+  "category": "ambiguous",
+  "domain": "security",
+  "author_note": "Readings: compliance: ICT legislation vs cloud compliance vs audit"
+ },
+ {
+  "group": "am-g115",
+  "input": "compliance work",
+  "category": "ambiguous",
+  "domain": "security",
+  "author_note": "Readings: compliance: ICT legislation vs cloud compliance vs audit"
+ },
+ {
+  "group": "am-g116",
+  "input": "wallets",
+  "category": "ambiguous",
+  "domain": "blockchain",
+  "author_note": "Readings: wallets: crypto vs payments"
+ },
+ {
+  "group": "am-g117",
+  "input": "operations",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: operations: IT ops vs business ops"
+ },
+ {
+  "group": "am-g118",
+  "input": "pen testing",
+  "category": "ambiguous",
+  "domain": "security",
+  "author_note": "Readings: pen testing: tools vs knowledge"
+ },
+ {
+  "group": "am-g119",
+  "input": "stakeholders",
+  "category": "ambiguous",
+  "domain": "project_qa",
+  "author_note": "Readings: stakeholders: management vs requirements"
+ },
+ {
+  "group": "am-g120",
+  "input": "design",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: design: UI, software, database, graphic"
+ },
+ {
+  "group": "am-g120",
+  "input": "designing",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: design: UI, software, database, graphic"
+ },
+ {
+  "group": "am-g121",
+  "input": "office tools",
+  "category": "ambiguous",
+  "domain": "general",
+  "author_note": "Readings: office tools: Word, Excel, others"
+ },
+ {
+  "group": "am-g122",
+  "input": "analytics",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: analytics: web, data, business"
+ },
+ {
+  "group": "am-g122",
+  "input": "analytics stuff",
+  "category": "ambiguous",
+  "domain": "data_analytics",
+  "author_note": "Readings: analytics: web, data, business"
+ },
+ {
+  "group": "am-g123",
+  "input": "DevOps",
+  "category": "ambiguous",
+  "domain": "cloud_infrastructure",
+  "author_note": "Readings: DevOps: dev vs ops vs tools"
+ }
+]

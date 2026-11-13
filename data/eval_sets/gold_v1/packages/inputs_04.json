@@ -1,0 +1,1242 @@
+[
+ {
+  "id": "i-0901",
+  "input": "windows os installation"
+ },
+ {
+  "id": "i-0902",
+  "input": "wireshark packet analysis"
+ },
+ {
+  "id": "i-0903",
+  "input": "py for data"
+ },
+ {
+  "id": "i-0904",
+  "input": "Ethereum Web3.js"
+ },
+ {
+  "id": "i-0905",
+  "input": "Jira and Confluence"
+ },
+ {
+  "id": "i-0906",
+  "input": "experimental design"
+ },
+ {
+  "id": "i-0907",
+  "input": "fixing office wifi and network points"
+ },
+ {
+  "id": "i-0908",
+  "input": "SSRS"
+ },
+ {
+  "id": "i-0909",
+  "input": "DAX"
+ },
+ {
+  "id": "i-0910",
+  "input": "HTML"
+ },
+ {
+  "id": "i-0911",
+  "input": "sparql queries"
+ },
+ {
+  "id": "i-0912",
+  "input": "bgp"
+ },
+ {
+  "id": "i-0913",
+  "input": "test plans and test cases"
+ },
+ {
+  "id": "i-0914",
+  "input": "Canva"
+ },
+ {
+  "id": "i-0915",
+  "input": "making posters in canva"
+ },
+ {
+  "id": "i-0916",
+  "input": "learning Jupyter Notebook"
+ },
+ {
+  "id": "i-0917",
+  "input": "nmap scanning"
+ },
+ {
+  "id": "i-0918",
+  "input": "adobe photoshop"
+ },
+ {
+  "id": "i-0919",
+  "input": "colour palettes and type pairing"
+ },
+ {
+  "id": "i-0920",
+  "input": "mikrotik routers"
+ },
+ {
+  "id": "i-0921",
+  "input": "NLP"
+ },
+ {
+  "id": "i-0922",
+  "input": "machine learning with scikit-learn"
+ },
+ {
+  "id": "i-0923",
+  "input": "business analysis",
+  "shared_name_owners": [
+   {
+    "id": "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+    "label": "business analysis"
+   },
+   {
+    "id": "esco:9e84a506-df06-4be3-874a-fa01293e3dd5",
+    "label": "business processes"
+   }
+  ]
+ },
+ {
+  "id": "i-0924",
+  "input": "analysis of data"
+ },
+ {
+  "id": "i-0925",
+  "input": "kali linux usage"
+ },
+ {
+  "id": "i-0926",
+  "input": "Nmap",
+  "shared_name_owners": [
+   {
+    "id": "tool:Nmap",
+    "label": "Nmap"
+   },
+   {
+    "id": "tool:Penetration testing software",
+    "label": "Penetration testing software"
+   }
+  ]
+ },
+ {
+  "id": "i-0927",
+  "input": "honest"
+ },
+ {
+  "id": "i-0928",
+  "input": "web application firewall"
+ },
+ {
+  "id": "i-0929",
+  "input": "react (frontend)"
+ },
+ {
+  "id": "i-0930",
+  "input": "website design"
+ },
+ {
+  "id": "i-0931",
+  "input": "some test plans and test cases"
+ },
+ {
+  "id": "i-0932",
+  "input": "smart contracts"
+ },
+ {
+  "id": "i-0933",
+  "input": "system stuff"
+ },
+ {
+  "id": "i-0934",
+  "input": "building on Ethereum"
+ },
+ {
+  "id": "i-0935",
+  "input": "Qualys"
+ },
+ {
+  "id": "i-0936",
+  "input": "delegating"
+ },
+ {
+  "id": "i-0937",
+  "input": "bitcoin core node"
+ },
+ {
+  "id": "i-0938",
+  "input": "user interviews"
+ },
+ {
+  "id": "i-0939",
+  "input": "Intune"
+ },
+ {
+  "id": "i-0940",
+  "input": "internet stuff"
+ },
+ {
+  "id": "i-0941",
+  "input": "ANOVA"
+ },
+ {
+  "id": "i-0942",
+  "input": "react js"
+ },
+ {
+  "id": "i-0943",
+  "input": "vulnerability assessment"
+ },
+ {
+  "id": "i-0944",
+  "input": "SLA and ticket escalation handling"
+ },
+ {
+  "id": "i-0945",
+  "input": "openvas scans"
+ },
+ {
+  "id": "i-0946",
+  "input": "coding"
+ },
+ {
+  "id": "i-0947",
+  "input": "PMP / PRINCE2 training"
+ },
+ {
+  "id": "i-0948",
+  "input": "jira software"
+ },
+ {
+  "id": "i-0949",
+  "input": "reports in power bi"
+ },
+ {
+  "id": "i-0950",
+  "input": "some vlan and trunking"
+ },
+ {
+  "id": "i-0951",
+  "input": "Active Directory GPO"
+ },
+ {
+  "id": "i-0952",
+  "input": "computer science"
+ },
+ {
+  "id": "i-0953",
+  "input": "MySQL database"
+ },
+ {
+  "id": "i-0954",
+  "input": "c plus plus"
+ },
+ {
+  "id": "i-0955",
+  "input": "TensorFlow"
+ },
+ {
+  "id": "i-0956",
+  "input": "writing SQL"
+ },
+ {
+  "id": "i-0957",
+  "input": "information tech"
+ },
+ {
+  "id": "i-0958",
+  "input": "using github"
+ },
+ {
+  "id": "i-0959",
+  "input": "resetting user accounts in ad"
+ },
+ {
+  "id": "i-0960",
+  "input": "chainalysis reactor"
+ },
+ {
+  "id": "i-0961",
+  "input": "springboot"
+ },
+ {
+  "id": "i-0962",
+  "input": "STP/RSTP"
+ },
+ {
+  "id": "i-0963",
+  "input": "IPsec VPN"
+ },
+ {
+  "id": "i-0964",
+  "input": "SIEM"
+ },
+ {
+  "id": "i-0965",
+  "input": "laptop repair and upgrades"
+ },
+ {
+  "id": "i-0966",
+  "input": "politeness"
+ },
+ {
+  "id": "i-0967",
+  "input": "intro to PC hardware repair"
+ },
+ {
+  "id": "i-0968",
+  "input": "Android Studio"
+ },
+ {
+  "id": "i-0969",
+  "input": "stakeholder communication"
+ },
+ {
+  "id": "i-0970",
+  "input": "intro to writing SQL (joins, aggregates)"
+ },
+ {
+  "id": "i-0971",
+  "input": "competitive programming"
+ },
+ {
+  "id": "i-0972",
+  "input": "ms word"
+ },
+ {
+  "id": "i-0973",
+  "input": "requirements elicitation"
+ },
+ {
+  "id": "i-0974",
+  "input": "vlan configuration"
+ },
+ {
+  "id": "i-0975",
+  "input": "intro to encryption algorithms"
+ },
+ {
+  "id": "i-0976",
+  "input": "intro to manual testing"
+ },
+ {
+  "id": "i-0977",
+  "input": "cross validation and confusion matrix"
+ },
+ {
+  "id": "i-0978",
+  "input": "freshdesk ticketing"
+ },
+ {
+  "id": "i-0979",
+  "input": "SPSS"
+ },
+ {
+  "id": "i-0980",
+  "input": "Office suite"
+ },
+ {
+  "id": "i-0981",
+  "input": "zap proxy"
+ },
+ {
+  "id": "i-0982",
+  "input": "excel formulas"
+ },
+ {
+  "id": "i-0983",
+  "input": "backup/restore of databases"
+ },
+ {
+  "id": "i-0984",
+  "input": "nodejs"
+ },
+ {
+  "id": "i-0985",
+  "input": "metasploit framework"
+ },
+ {
+  "id": "i-0986",
+  "input": "basic C# programming"
+ },
+ {
+  "id": "i-0987",
+  "input": "database backup and recovery"
+ },
+ {
+  "id": "i-0988",
+  "input": "sklearn models"
+ },
+ {
+  "id": "i-0989",
+  "input": "js programming"
+ },
+ {
+  "id": "i-0990",
+  "input": "Metasploit",
+  "shared_name_owners": [
+   {
+    "id": "tool:Metasploit",
+    "label": "Metasploit"
+   },
+   {
+    "id": "tool:Penetration testing software",
+    "label": "Penetration testing software"
+   }
+  ]
+ },
+ {
+  "id": "i-0991",
+  "input": "fixing laptops"
+ },
+ {
+  "id": "i-0992",
+  "input": "excel spreadsheet work"
+ },
+ {
+  "id": "i-0993",
+  "input": "DAX measures"
+ },
+ {
+  "id": "i-0994",
+  "input": "IR handling"
+ },
+ {
+  "id": "i-0995",
+  "input": "RL (Q-learning, policy gradients)"
+ },
+ {
+  "id": "i-0996",
+  "input": "database replication"
+ },
+ {
+  "id": "i-0997",
+  "input": "hypothesis testing"
+ },
+ {
+  "id": "i-0998",
+  "input": "IP subnetting"
+ },
+ {
+  "id": "i-0999",
+  "input": "figma prototyping"
+ },
+ {
+  "id": "i-1000",
+  "input": "vagrant boxes"
+ },
+ {
+  "id": "i-1001",
+  "input": "mysql database work"
+ },
+ {
+  "id": "i-1002",
+  "input": "designing systems"
+ },
+ {
+  "id": "i-1003",
+  "input": "tech things"
+ },
+ {
+  "id": "i-1004",
+  "input": "db design"
+ },
+ {
+  "id": "i-1005",
+  "input": "RabbitMQ message queues"
+ },
+ {
+  "id": "i-1006",
+  "input": "ETL development"
+ },
+ {
+  "id": "i-1007",
+  "input": "core Java"
+ },
+ {
+  "id": "i-1008",
+  "input": "raspberry pi boards"
+ },
+ {
+  "id": "i-1009",
+  "input": "tools"
+ },
+ {
+  "id": "i-1010",
+  "input": "programming skills"
+ },
+ {
+  "id": "i-1011",
+  "input": "power bi reports"
+ },
+ {
+  "id": "i-1012",
+  "input": "some c#"
+ },
+ {
+  "id": "i-1013",
+  "input": "SSMS"
+ },
+ {
+  "id": "i-1014",
+  "input": "PKI and TLS certificates"
+ },
+ {
+  "id": "i-1015",
+  "input": "speed typing"
+ },
+ {
+  "id": "i-1016",
+  "input": "project stuff"
+ },
+ {
+  "id": "i-1017",
+  "input": "figures"
+ },
+ {
+  "id": "i-1018",
+  "input": "uploading to github"
+ },
+ {
+  "id": "i-1019",
+  "input": "intro to HTML5"
+ },
+ {
+  "id": "i-1020",
+  "input": "Ubuntu server"
+ },
+ {
+  "id": "i-1021",
+  "input": "GraphQL"
+ },
+ {
+  "id": "i-1022",
+  "input": "ms visio diagrams"
+ },
+ {
+  "id": "i-1023",
+  "input": "python coding"
+ },
+ {
+  "id": "i-1024",
+  "input": "documentation and user manuals"
+ },
+ {
+  "id": "i-1025",
+  "input": "basic ERD design"
+ },
+ {
+  "id": "i-1026",
+  "input": "canva designs"
+ },
+ {
+  "id": "i-1027",
+  "input": "KPI reporting"
+ },
+ {
+  "id": "i-1028",
+  "input": "django framework"
+ },
+ {
+  "id": "i-1029",
+  "input": "kaggle projects"
+ },
+ {
+  "id": "i-1030",
+  "input": "thinks critically"
+ },
+ {
+  "id": "i-1031",
+  "input": "Django REST Framework"
+ },
+ {
+  "id": "i-1032",
+  "input": "accuracy"
+ },
+ {
+  "id": "i-1033",
+  "input": "Chainalysis"
+ },
+ {
+  "id": "i-1034",
+  "input": "system designing"
+ },
+ {
+  "id": "i-1035",
+  "input": "ER modelling"
+ },
+ {
+  "id": "i-1036",
+  "input": "Truffle"
+ },
+ {
+  "id": "i-1037",
+  "input": "database design"
+ },
+ {
+  "id": "i-1038",
+  "input": "excel spreadsheets"
+ },
+ {
+  "id": "i-1039",
+  "input": "some clickable prototypes"
+ },
+ {
+  "id": "i-1040",
+  "input": "computer knowledge"
+ },
+ {
+  "id": "i-1041",
+  "input": "data warehouse design"
+ },
+ {
+  "id": "i-1042",
+  "input": "interpersonal skills"
+ },
+ {
+  "id": "i-1043",
+  "input": "systems things"
+ },
+ {
+  "id": "i-1044",
+  "input": "Gantt charts"
+ },
+ {
+  "id": "i-1045",
+  "input": "IT helpdesk"
+ },
+ {
+  "id": "i-1046",
+  "input": "Ansible"
+ },
+ {
+  "id": "i-1047",
+  "input": "disk imaging"
+ },
+ {
+  "id": "i-1048",
+  "input": "star schema"
+ },
+ {
+  "id": "i-1049",
+  "input": "redis cache"
+ },
+ {
+  "id": "i-1050",
+  "input": "querying with sql"
+ },
+ {
+  "id": "i-1051",
+  "input": "php coding"
+ },
+ {
+  "id": "i-1052",
+  "input": "designs"
+ },
+ {
+  "id": "i-1053",
+  "input": "computer stuff"
+ },
+ {
+  "id": "i-1054",
+  "input": "extracting data from phones for investigations"
+ },
+ {
+  "id": "i-1055",
+  "input": "java script coding"
+ },
+ {
+  "id": "i-1056",
+  "input": "BMC remedy tickets"
+ },
+ {
+  "id": "i-1057",
+  "input": "packet capture"
+ },
+ {
+  "id": "i-1058",
+  "input": "Linux commands"
+ },
+ {
+  "id": "i-1059",
+  "input": "arduino uno"
+ },
+ {
+  "id": "i-1060",
+  "input": "games"
+ },
+ {
+  "id": "i-1061",
+  "input": "lift-and-shift migration"
+ },
+ {
+  "id": "i-1062",
+  "input": "user interface things"
+ },
+ {
+  "id": "i-1063",
+  "input": "UML (class, sequence diagrams)"
+ },
+ {
+  "id": "i-1064",
+  "input": "JS for DOM scripting"
+ },
+ {
+  "id": "i-1065",
+  "input": "UAT coordination"
+ },
+ {
+  "id": "i-1066",
+  "input": "beginner c sharp"
+ },
+ {
+  "id": "i-1067",
+  "input": "networking"
+ },
+ {
+  "id": "i-1068",
+  "input": "it help"
+ },
+ {
+  "id": "i-1069",
+  "input": "testing software"
+ },
+ {
+  "id": "i-1070",
+  "input": "wifi"
+ },
+ {
+  "id": "i-1071",
+  "input": "cleaning infected computers"
+ },
+ {
+  "id": "i-1072",
+  "input": "coding in c++"
+ },
+ {
+  "id": "i-1073",
+  "input": "oracle dbms"
+ },
+ {
+  "id": "i-1074",
+  "input": "UI design in Figma"
+ },
+ {
+  "id": "i-1075",
+  "input": "IT admin"
+ },
+ {
+  "id": "i-1076",
+  "input": "assembling and repairing desktops"
+ },
+ {
+  "id": "i-1077",
+  "input": "tableau dashboards"
+ },
+ {
+  "id": "i-1078",
+  "input": "polite"
+ },
+ {
+  "id": "i-1079",
+  "input": "docker containers"
+ },
+ {
+  "id": "i-1080",
+  "input": "windows 10 install"
+ },
+ {
+  "id": "i-1081",
+  "input": "Bitcoin Core"
+ },
+ {
+  "id": "i-1082",
+  "input": "ASA firewalls"
+ },
+ {
+  "id": "i-1083",
+  "input": "firewall"
+ },
+ {
+  "id": "i-1084",
+  "input": "Hadoop"
+ },
+ {
+  "id": "i-1085",
+  "input": "quick learner"
+ },
+ {
+  "id": "i-1086",
+  "input": "microservices"
+ },
+ {
+  "id": "i-1087",
+  "input": "cloud"
+ },
+ {
+  "id": "i-1088",
+  "input": "ICT"
+ },
+ {
+  "id": "i-1089",
+  "input": "TS typed JavaScript"
+ },
+ {
+  "id": "i-1090",
+  "input": "manages time well"
+ },
+ {
+  "id": "i-1091",
+  "input": "Remedy ticketing"
+ },
+ {
+  "id": "i-1092",
+  "input": "back end"
+ },
+ {
+  "id": "i-1093",
+  "input": "SDN and SD-WAN"
+ },
+ {
+  "id": "i-1094",
+  "input": "leadership"
+ },
+ {
+  "id": "i-1095",
+  "input": "owasp top ten vulnerabilities"
+ },
+ {
+  "id": "i-1096",
+  "input": "system things"
+ },
+ {
+  "id": "i-1097",
+  "input": "tailwindcss"
+ },
+ {
+  "id": "i-1098",
+  "input": "decision maker"
+ },
+ {
+  "id": "i-1099",
+  "input": "basic writing SQL (joins, aggregates)"
+ },
+ {
+  "id": "i-1100",
+  "input": "reading and reviewing research papers"
+ },
+ {
+  "id": "i-1101",
+  "input": "R (tidyverse)"
+ },
+ {
+  "id": "i-1102",
+  "input": "good listener"
+ },
+ {
+  "id": "i-1103",
+  "input": "digital evidence handling"
+ },
+ {
+  "id": "i-1104",
+  "input": "public key infrastructure"
+ },
+ {
+  "id": "i-1105",
+  "input": "sql coding"
+ },
+ {
+  "id": "i-1106",
+  "input": "graphql api"
+ },
+ {
+  "id": "i-1107",
+  "input": "stakeholder management"
+ },
+ {
+  "id": "i-1108",
+  "input": "digital"
+ },
+ {
+  "id": "i-1109",
+  "input": "Python (basic)"
+ },
+ {
+  "id": "i-1110",
+  "input": "Illustrator vector graphics"
+ },
+ {
+  "id": "i-1111",
+  "input": "databases"
+ },
+ {
+  "id": "i-1112",
+  "input": "optimising slow queries"
+ },
+ {
+  "id": "i-1113",
+  "input": "Keras"
+ },
+ {
+  "id": "i-1114",
+  "input": "NLTK"
+ },
+ {
+  "id": "i-1115",
+  "input": "project tools"
+ },
+ {
+  "id": "i-1116",
+  "input": "testing apis"
+ },
+ {
+  "id": "i-1117",
+  "input": "writing test cases"
+ },
+ {
+  "id": "i-1118",
+  "input": "html basics"
+ },
+ {
+  "id": "i-1119",
+  "input": "web3.js ethereum"
+ },
+ {
+  "id": "i-1120",
+  "input": "Bayesian modelling"
+ },
+ {
+  "id": "i-1121",
+  "input": "data protection and privacy compliance"
+ },
+ {
+  "id": "i-1122",
+  "input": "bootstrap framework"
+ },
+ {
+  "id": "i-1123",
+  "input": "Trello"
+ },
+ {
+  "id": "i-1124",
+  "input": "spark"
+ },
+ {
+  "id": "i-1125",
+  "input": "Postman API testing"
+ },
+ {
+  "id": "i-1126",
+  "input": "selenium web driver"
+ },
+ {
+  "id": "i-1127",
+  "input": "password things"
+ },
+ {
+  "id": "i-1128",
+  "input": "google looker studio reports"
+ },
+ {
+  "id": "i-1129",
+  "input": "php/mysql"
+ },
+ {
+  "id": "i-1130",
+  "input": "it help desk work"
+ },
+ {
+  "id": "i-1131",
+  "input": "designing websites"
+ },
+ {
+  "id": "i-1132",
+  "input": "arduino boards"
+ },
+ {
+  "id": "i-1133",
+  "input": "Microsoft Azure"
+ },
+ {
+  "id": "i-1134",
+  "input": "azure vnets and VMs"
+ },
+ {
+  "id": "i-1135",
+  "input": "ggplot"
+ },
+ {
+  "id": "i-1136",
+  "input": "softwares"
+ },
+ {
+  "id": "i-1137",
+  "input": "network segmentation and zero trust design"
+ },
+ {
+  "id": "i-1138",
+  "input": "server backups"
+ },
+ {
+  "id": "i-1139",
+  "input": "migrating data between databases"
+ },
+ {
+  "id": "i-1140",
+  "input": "design"
+ },
+ {
+  "id": "i-1141",
+  "input": "problem solver"
+ },
+ {
+  "id": "i-1142",
+  "input": "Crystal Reports"
+ },
+ {
+  "id": "i-1143",
+  "input": "writing HTML"
+ },
+ {
+  "id": "i-1144",
+  "input": "presenting to clients"
+ },
+ {
+  "id": "i-1145",
+  "input": "Cybersecurity"
+ },
+ {
+  "id": "i-1146",
+  "input": "designing end-to-end systems"
+ },
+ {
+  "id": "i-1147",
+  "input": "Amazon Web Services"
+ },
+ {
+  "id": "i-1148",
+  "input": "container orchestration with Kubernetes"
+ },
+ {
+  "id": "i-1149",
+  "input": "data analytics",
+  "shared_name_owners": [
+   {
+    "id": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+    "label": "data analytics"
+   },
+   {
+    "id": "esco:c5e8abde-d2ba-4e8e-a65e-720b71180666",
+    "label": "unstructured data"
+   }
+  ]
+ },
+ {
+  "id": "i-1150",
+  "input": "figma design"
+ },
+ {
+  "id": "i-1151",
+  "input": "data stuff"
+ },
+ {
+  "id": "i-1152",
+  "input": "analytical skills"
+ },
+ {
+  "id": "i-1153",
+  "input": "ReactJS development"
+ },
+ {
+  "id": "i-1154",
+  "input": "encryption algorithms"
+ },
+ {
+  "id": "i-1155",
+  "input": "Git and GitHub"
+ },
+ {
+  "id": "i-1156",
+  "input": "JWT authentication"
+ },
+ {
+  "id": "i-1157",
+  "input": "designing data models"
+ },
+ {
+  "id": "i-1158",
+  "input": "next js (React framework)"
+ },
+ {
+  "id": "i-1159",
+  "input": "SQL (basic queries)"
+ },
+ {
+  "id": "i-1160",
+  "input": "websites"
+ },
+ {
+  "id": "i-1161",
+  "input": "creating indexes for performance"
+ },
+ {
+  "id": "i-1162",
+  "input": "online"
+ },
+ {
+  "id": "i-1163",
+  "input": "axios and fetch for api calls"
+ },
+ {
+  "id": "i-1164",
+  "input": "data visualisation with matplotlib"
+ },
+ {
+  "id": "i-1165",
+  "input": "configuring network printers"
+ },
+ {
+  "id": "i-1166",
+  "input": "artificial intelligence"
+ },
+ {
+  "id": "i-1167",
+  "input": "IT things"
+ },
+ {
+  "id": "i-1168",
+  "input": "CCNA-level networking"
+ },
+ {
+  "id": "i-1169",
+  "input": "some IP addressing and subnetting"
+ },
+ {
+  "id": "i-1170",
+  "input": "aws cloud"
+ },
+ {
+  "id": "i-1171",
+  "input": "vue 3 composition api"
+ },
+ {
+  "id": "i-1172",
+  "input": "escalating tickets within SLA"
+ },
+ {
+  "id": "i-1173",
+  "input": "basic typography and colour theory"
+ },
+ {
+  "id": "i-1174",
+  "input": "digital things"
+ },
+ {
+  "id": "i-1175",
+  "input": "how-to guides for users"
+ },
+ {
+  "id": "i-1176",
+  "input": "nginx config"
+ },
+ {
+  "id": "i-1177",
+  "input": "capture the flag (HackTheBox/TryHackMe)"
+ },
+ {
+  "id": "i-1178",
+  "input": "autopsy forensic browser"
+ },
+ {
+  "id": "i-1179",
+  "input": "malware analysis"
+ },
+ {
+  "id": "i-1180",
+  "input": "Three.js"
+ },
+ {
+  "id": "i-1181",
+  "input": "scrum agile"
+ },
+ {
+  "id": "i-1182",
+  "input": "pays attention to detail"
+ },
+ {
+  "id": "i-1183",
+  "input": "okta identity"
+ },
+ {
+  "id": "i-1184",
+  "input": "honesty"
+ },
+ {
+  "id": "i-1185",
+  "input": "git repositories"
+ },
+ {
+  "id": "i-1186",
+  "input": "virtualization"
+ },
+ {
+  "id": "i-1187",
+  "input": "remote desktop support"
+ },
+ {
+  "id": "i-1188",
+  "input": "Cobalt Strike"
+ },
+ {
+  "id": "i-1189",
+  "input": "communicating well"
+ },
+ {
+  "id": "i-1190",
+  "input": "clickable prototypes"
+ },
+ {
+  "id": "i-1191",
+  "input": "communication"
+ },
+ {
+  "id": "i-1192",
+  "input": "patient"
+ },
+ {
+  "id": "i-1193",
+  "input": "vlan config"
+ },
+ {
+  "id": "i-1194",
+  "input": "uml design"
+ },
+ {
+  "id": "i-1195",
+  "input": "programming in python"
+ },
+ {
+  "id": "i-1196",
+  "input": "VMware ESXi"
+ },
+ {
+  "id": "i-1197",
+  "input": "Daraja API (STK push)"
+ },
+ {
+  "id": "i-1198",
+  "input": "visuals"
+ },
+ {
+  "id": "i-1199",
+  "input": "SAS programming"
+ },
+ {
+  "id": "i-1200",
+  "input": "writing code"
+ }
+]

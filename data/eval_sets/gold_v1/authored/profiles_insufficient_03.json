@@ -1,0 +1,1121 @@
+[
+ {
+  "key": "pi-241",
+  "family": "frontend",
+  "wordings": [
+   [
+    "React"
+   ],
+   [
+    "react js"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "frontend; single item"
+ },
+ {
+  "key": "pi-242",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Figma",
+    "hardworking"
+   ],
+   [
+    "figma design",
+    "hard working"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single item plus filler"
+ },
+ {
+  "key": "pi-243",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Tailwind CSS"
+   ],
+   [
+    "tailwindcss"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-244",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Angular"
+   ],
+   [
+    "angular framework"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-245",
+  "family": "backend",
+  "wordings": [
+   [
+    "Django"
+   ],
+   [
+    "django framework"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "backend; single"
+ },
+ {
+  "key": "pi-246",
+  "family": "backend",
+  "wordings": [
+   [
+    "Laravel",
+    "passionate"
+   ],
+   [
+    "laravel framework",
+    "passion for coding"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single item plus filler"
+ },
+ {
+  "key": "pi-247",
+  "family": "backend",
+  "wordings": [
+   [
+    "Spring Boot"
+   ],
+   [
+    "springboot"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-248",
+  "family": "backend",
+  "wordings": [
+   [
+    "Flask"
+   ],
+   [
+    "flask python framework"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-249",
+  "family": "data",
+  "wordings": [
+   [
+    "Tableau"
+   ],
+   [
+    "tableau software"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "data; single"
+ },
+ {
+  "key": "pi-250",
+  "family": "data",
+  "wordings": [
+   [
+    "TensorFlow",
+    "team player"
+   ],
+   [
+    "tensorflow library",
+    "works in teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-251",
+  "family": "data",
+  "wordings": [
+   [
+    "Apache Spark"
+   ],
+   [
+    "spark"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-252",
+  "family": "data",
+  "wordings": [
+   [
+    "Power BI"
+   ],
+   [
+    "microsoft power bi"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-253",
+  "family": "networking",
+  "wordings": [
+   [
+    "OSPF"
+   ],
+   [
+    "ospf routing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "networking; single"
+ },
+ {
+  "key": "pi-254",
+  "family": "networking",
+  "wordings": [
+   [
+    "Cisco Packet Tracer",
+    "fast learner"
+   ],
+   [
+    "packet tracer",
+    "learns quickly"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-255",
+  "family": "networking",
+  "wordings": [
+   [
+    "VLANs"
+   ],
+   [
+    "vlan configuration"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-256",
+  "family": "networking",
+  "wordings": [
+   [
+    "MikroTik"
+   ],
+   [
+    "mikrotik routers"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-257",
+  "family": "security",
+  "wordings": [
+   [
+    "Burp Suite"
+   ],
+   [
+    "burpsuite"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "security; single"
+ },
+ {
+  "key": "pi-258",
+  "family": "security",
+  "wordings": [
+   [
+    "Nmap"
+   ],
+   [
+    "nmap scanning"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-259",
+  "family": "security",
+  "wordings": [
+   [
+    "Metasploit",
+    "hardworking"
+   ],
+   [
+    "metasploit framework",
+    "hard working"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-260",
+  "family": "security",
+  "wordings": [
+   [
+    "Splunk"
+   ],
+   [
+    "splunk siem"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-261",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Zendesk"
+   ],
+   [
+    "zendesk ticketing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "user support; single"
+ },
+ {
+  "key": "pi-262",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Active Directory"
+   ],
+   [
+    "AD administration"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-263",
+  "family": "user_support",
+  "wordings": [
+   [
+    "ServiceNow",
+    "good communication"
+   ],
+   [
+    "service now",
+    "communicates well"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-264",
+  "family": "user_support",
+  "wordings": [
+   [
+    "TeamViewer"
+   ],
+   [
+    "team viewer remote support"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-265",
+  "family": "database",
+  "wordings": [
+   [
+    "PostgreSQL"
+   ],
+   [
+    "postgres"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "database; single"
+ },
+ {
+  "key": "pi-266",
+  "family": "database",
+  "wordings": [
+   [
+    "MongoDB",
+    "detail oriented"
+   ],
+   [
+    "mongo db",
+    "pays attention to detail"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-267",
+  "family": "database",
+  "wordings": [
+   [
+    "PL/SQL"
+   ],
+   [
+    "plsql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-268",
+  "family": "database",
+  "wordings": [
+   [
+    "Redis"
+   ],
+   [
+    "redis cache"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-269",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Kubernetes"
+   ],
+   [
+    "k8s"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "architecture; single"
+ },
+ {
+  "key": "pi-270",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Terraform"
+   ],
+   [
+    "terraform iac"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-271",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Microservices",
+    "leadership"
+   ],
+   [
+    "microservice architecture",
+    "leader"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-272",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Docker"
+   ],
+   [
+    "docker containers"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-273",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Selenium"
+   ],
+   [
+    "selenium webdriver"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "project_qa; single"
+ },
+ {
+  "key": "pi-274",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Jira"
+   ],
+   [
+    "jira tickets"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-275",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Postman",
+    "hardworking"
+   ],
+   [
+    "postman api testing",
+    "hard worker"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-276",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "JUnit"
+   ],
+   [
+    "junit tests"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-277",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Solidity"
+   ],
+   [
+    "solidity smart contracts"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "beginner/blockchain; single (rubric example)"
+ },
+ {
+  "key": "pi-278",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Flutter"
+   ],
+   [
+    "flutter dart"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-279",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Kotlin"
+   ],
+   [
+    "kotlin programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-280",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Arduino"
+   ],
+   [
+    "arduino boards"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-281",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Unity",
+    "passionate"
+   ],
+   [
+    "unity game engine",
+    "passion"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-282",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Raspberry Pi"
+   ],
+   [
+    "raspberry pi boards"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-283",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Swift"
+   ],
+   [
+    "swift ios"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-284",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Blender"
+   ],
+   [
+    "blender 3d"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-285",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Rust"
+   ],
+   [
+    "rust programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-286",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Wordpress"
+   ],
+   [
+    "wordpress sites"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-287",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Go language",
+    "hardworking"
+   ],
+   [
+    "golang",
+    "hard working"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-288",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Ansible"
+   ],
+   [
+    "ansible playbooks"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "mixed aim; single"
+ },
+ {
+  "key": "pi-289",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Daraja API"
+   ],
+   [
+    "safaricom daraja api"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single, local context"
+ },
+ {
+  "key": "pi-290",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Jenkins"
+   ],
+   [
+    "jenkins ci"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-291",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Firebase"
+   ],
+   [
+    "firebase backend"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-292",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Bootstrap"
+   ],
+   [
+    "bootstrap css framework"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-293",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Vue.js"
+   ],
+   [
+    "vuejs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-294",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Ubuntu server",
+    "fast learner"
+   ],
+   [
+    "ubuntu server admin",
+    "quick learner"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ },
+ {
+  "key": "pi-295",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Wireshark"
+   ],
+   [
+    "wireshark packet analysis"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-296",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "GraphQL"
+   ],
+   [
+    "graphql api"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-297",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Hadoop"
+   ],
+   [
+    "apache hadoop"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-298",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Prolog"
+   ],
+   [
+    "prolog language"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-299",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Photoshop"
+   ],
+   [
+    "adobe photoshop"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5"
+  ],
+  "author_note": "single"
+ },
+ {
+  "key": "pi-300",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Scrum",
+    "teamwork"
+   ],
+   [
+    "scrum agile",
+    "team work"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I5",
+   "I2"
+  ],
+  "author_note": "single plus filler"
+ }
+]

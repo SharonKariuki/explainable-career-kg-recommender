@@ -1,0 +1,1402 @@
+[
+ {
+  "pair": "cp-001",
+  "a": "tool:Ansible software",
+  "a_label": "Ansible software",
+  "b": "tool:Red Hat Ansible Engine",
+  "b_label": "Red Hat Ansible Engine"
+ },
+ {
+  "pair": "cp-002",
+  "a": "tool:Zoom",
+  "a_label": "Zoom",
+  "b": "tool:Google Meet",
+  "b_label": "Google Meet"
+ },
+ {
+  "pair": "cp-003",
+  "a": "esco:eeca3780-8049-499f-a268-95a7ad26642c",
+  "a_label": "SaaS (service-oriented modelling)",
+  "b": "esco:83218cac-3599-417e-93d2-26013cdccd98",
+  "b_label": "service-oriented modelling"
+ },
+ {
+  "pair": "cp-004",
+  "a": "tool:pandas",
+  "a_label": "pandas",
+  "b": "tool:Apple Keynote",
+  "b_label": "Apple Keynote"
+ },
+ {
+  "pair": "cp-005",
+  "a": "tool:Amazon Web Services AWS software",
+  "a_label": "Amazon Web Services AWS software",
+  "b": "tool:Amazon Elastic Compute Cloud EC2",
+  "b_label": "Amazon Elastic Compute Cloud EC2"
+ },
+ {
+  "pair": "cp-006",
+  "a": "tool:Apache Subversion SVN",
+  "a_label": "Apache Subversion SVN",
+  "b": "tool:Git",
+  "b_label": "Git"
+ },
+ {
+  "pair": "cp-007",
+  "a": "tool:Snort",
+  "a_label": "Snort",
+  "b": "tool:Wireshark",
+  "b_label": "Wireshark"
+ },
+ {
+  "pair": "cp-008",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+  "b_label": "customer service"
+ },
+ {
+  "pair": "cp-009",
+  "a": "tool:Microsoft Visual Studio",
+  "a_label": "Microsoft Visual Studio",
+  "b": "tool:Microsoft Visual Studio.NET",
+  "b_label": "Microsoft Visual Studio.NET"
+ },
+ {
+  "pair": "cp-010",
+  "a": "tool:Linux",
+  "a_label": "Linux",
+  "b": "tool:Kali Linux",
+  "b_label": "Kali Linux"
+ },
+ {
+  "pair": "cp-011",
+  "a": "tool:Linux",
+  "a_label": "Linux",
+  "b": "tool:UNIX",
+  "b_label": "UNIX"
+ },
+ {
+  "pair": "cp-012",
+  "a": "tool:NoSQL",
+  "a_label": "NoSQL",
+  "b": "tool:Redis",
+  "b_label": "Redis"
+ },
+ {
+  "pair": "cp-013",
+  "a": "tool:Cisco Webex",
+  "a_label": "Cisco Webex",
+  "b": "tool:Zoom",
+  "b_label": "Zoom"
+ },
+ {
+  "pair": "cp-014",
+  "a": "esco:976455eb-5bbe-4493-ae64-ed16c3b009ea",
+  "a_label": "mobile operating systems",
+  "b": "tool:Google Android",
+  "b_label": "Google Android"
+ },
+ {
+  "pair": "cp-015",
+  "a": "esco:5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+  "a_label": "use object-oriented programming",
+  "b": "tool:Oracle Java",
+  "b_label": "Oracle Java"
+ },
+ {
+  "pair": "cp-016",
+  "a": "tool:Microsoft PowerPoint",
+  "a_label": "Microsoft PowerPoint",
+  "b": "tool:Apple Keynote",
+  "b_label": "Apple Keynote"
+ },
+ {
+  "pair": "cp-017",
+  "a": "tool:Adobe Creative Cloud software",
+  "a_label": "Adobe Creative Cloud software",
+  "b": "tool:Adobe Photoshop",
+  "b_label": "Adobe Photoshop"
+ },
+ {
+  "pair": "cp-018",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:Django",
+  "b_label": "Django"
+ },
+ {
+  "pair": "cp-019",
+  "a": "esco:bb99af26-71ff-4dca-bde7-1eb1f6194426",
+  "a_label": "SAP R3",
+  "b": "tool:SAP ERP",
+  "b_label": "SAP ERP"
+ },
+ {
+  "pair": "cp-020",
+  "a": "tool:WordPress",
+  "a_label": "WordPress",
+  "b": "tool:Cisco Systems CiscoWorks",
+  "b_label": "Cisco Systems CiscoWorks"
+ },
+ {
+  "pair": "cp-021",
+  "a": "tool:MySQL",
+  "a_label": "MySQL",
+  "b": "tool:PostgreSQL",
+  "b_label": "PostgreSQL"
+ },
+ {
+  "pair": "cp-022",
+  "a": "onet:2.B.5.a",
+  "a_label": "Time Management",
+  "b": "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+  "b_label": "manage schedule of tasks"
+ },
+ {
+  "pair": "cp-023",
+  "a": "tool:JavaScript",
+  "a_label": "JavaScript",
+  "b": "tool:Node.js",
+  "b_label": "Node.js"
+ },
+ {
+  "pair": "cp-024",
+  "a": "tool:Microsoft Word",
+  "a_label": "Microsoft Word",
+  "b": "tool:Google Docs",
+  "b_label": "Google Docs"
+ },
+ {
+  "pair": "cp-025",
+  "a": "tool:Selenium",
+  "a_label": "Selenium",
+  "b": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "b_label": "tools for ICT test automation"
+ },
+ {
+  "pair": "cp-026",
+  "a": "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+  "a_label": "operating systems",
+  "b": "tool:Microsoft Windows",
+  "b_label": "Microsoft Windows"
+ },
+ {
+  "pair": "cp-027",
+  "a": "tool:Nmap",
+  "a_label": "Nmap",
+  "b": "tool:Penetration testing software",
+  "b_label": "Penetration testing software"
+ },
+ {
+  "pair": "cp-028",
+  "a": "tool:MySQL",
+  "a_label": "MySQL",
+  "b": "tool:Structured query language SQL",
+  "b_label": "Structured query language SQL"
+ },
+ {
+  "pair": "cp-029",
+  "a": "esco:0d7826c4-6060-4161-803c-152edf1d9730",
+  "a_label": "develop gambling games",
+  "b": "tool:Git",
+  "b_label": "Git"
+ },
+ {
+  "pair": "cp-030",
+  "a": "tool:Tcpdump",
+  "a_label": "Tcpdump",
+  "b": "tool:Microsoft Publisher",
+  "b_label": "Microsoft Publisher"
+ },
+ {
+  "pair": "cp-031",
+  "a": "tool:PyTorch",
+  "a_label": "PyTorch",
+  "b": "tool:TensorFlow",
+  "b_label": "TensorFlow"
+ },
+ {
+  "pair": "cp-032",
+  "a": "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+  "a_label": "manage budgets",
+  "b": "tool:Python",
+  "b_label": "Python"
+ },
+ {
+  "pair": "cp-033",
+  "a": "tool:React",
+  "a_label": "React",
+  "b": "tool:React Redux",
+  "b_label": "React Redux"
+ },
+ {
+  "pair": "cp-034",
+  "a": "onet:2.A.1.d",
+  "a_label": "Speaking",
+  "b": "tool:MongoDB",
+  "b_label": "MongoDB"
+ },
+ {
+  "pair": "cp-035",
+  "a": "tool:Slack",
+  "a_label": "Slack",
+  "b": "tool:Oracle Database",
+  "b_label": "Oracle Database"
+ },
+ {
+  "pair": "cp-036",
+  "a": "tool:Hypertext markup language HTML",
+  "a_label": "Hypertext markup language HTML",
+  "b": "tool:Cascading style sheets CSS",
+  "b_label": "Cascading style sheets CSS"
+ },
+ {
+  "pair": "cp-037",
+  "a": "onet:2.A.1.b",
+  "a_label": "Active Listening",
+  "b": "tool:Kubernetes",
+  "b_label": "Kubernetes"
+ },
+ {
+  "pair": "cp-038",
+  "a": "esco:d39a5880-7d0a-4573-9f70-a75ff875bf83",
+  "a_label": "provide lesson materials",
+  "b": "tool:Docker",
+  "b_label": "Docker"
+ },
+ {
+  "pair": "cp-039",
+  "a": "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+  "a_label": "use scripting programming",
+  "b": "tool:Python",
+  "b_label": "Python"
+ },
+ {
+  "pair": "cp-040",
+  "a": "esco:81633a44-f1db-4a01-a940-804c6905e330",
+  "a_label": "use word processing software",
+  "b": "tool:Google Docs",
+  "b_label": "Google Docs"
+ },
+ {
+  "pair": "cp-041",
+  "a": "esco:c881ddd2-9c0e-4743-bd24-36be650493dd",
+  "a_label": "manage several projects",
+  "b": "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+  "b_label": "perform project management"
+ },
+ {
+  "pair": "cp-042",
+  "a": "esco:6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+  "a_label": "risk management",
+  "b": "tool:Adobe Photoshop",
+  "b_label": "Adobe Photoshop"
+ },
+ {
+  "pair": "cp-043",
+  "a": "tool:Microsoft Excel",
+  "a_label": "Microsoft Excel",
+  "b": "tool:Google Sheets",
+  "b_label": "Google Sheets"
+ },
+ {
+  "pair": "cp-044",
+  "a": "tool:Microsoft Excel",
+  "a_label": "Microsoft Excel",
+  "b": "tool:Microsoft Visual Basic for Applications VBA",
+  "b_label": "Microsoft Visual Basic for Applications VBA"
+ },
+ {
+  "pair": "cp-045",
+  "a": "esco:85038d57-1fdd-40de-b908-2c005545a8c3",
+  "a_label": "SketchBook Pro",
+  "b": "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+  "b_label": "graphics editor software"
+ },
+ {
+  "pair": "cp-046",
+  "a": "esco:0af062de-eb43-41e9-9b96-249e2cd22d26",
+  "a_label": "use markup languages",
+  "b": "tool:Hypertext markup language HTML",
+  "b_label": "Hypertext markup language HTML"
+ },
+ {
+  "pair": "cp-047",
+  "a": "tool:Microsoft SQL Server",
+  "a_label": "Microsoft SQL Server",
+  "b": "tool:Microsoft SQL Server Reporting Services SSRS",
+  "b_label": "Microsoft SQL Server Reporting Services SSRS"
+ },
+ {
+  "pair": "cp-048",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:Adobe Photoshop",
+  "b_label": "Adobe Photoshop"
+ },
+ {
+  "pair": "cp-049",
+  "a": "tool:TensorFlow",
+  "a_label": "TensorFlow",
+  "b": "tool:Keras",
+  "b_label": "Keras"
+ },
+ {
+  "pair": "cp-050",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:Jupyter Notebook",
+  "b_label": "Jupyter Notebook"
+ },
+ {
+  "pair": "cp-051",
+  "a": "tool:Docker",
+  "a_label": "Docker",
+  "b": "tool:Kubernetes",
+  "b_label": "Kubernetes"
+ },
+ {
+  "pair": "cp-052",
+  "a": "tool:Microsoft Excel",
+  "a_label": "Microsoft Excel",
+  "b": "tool:Metasploit",
+  "b_label": "Metasploit"
+ },
+ {
+  "pair": "cp-053",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:pandas",
+  "b_label": "pandas"
+ },
+ {
+  "pair": "cp-054",
+  "a": "tool:Apple Keynote",
+  "a_label": "Apple Keynote",
+  "b": "tool:Apache Hadoop",
+  "b_label": "Apache Hadoop"
+ },
+ {
+  "pair": "cp-055",
+  "a": "tool:Wireshark",
+  "a_label": "Wireshark",
+  "b": "tool:Microsoft PowerPoint",
+  "b_label": "Microsoft PowerPoint"
+ },
+ {
+  "pair": "cp-056",
+  "a": "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+  "a_label": "cloud technologies",
+  "b": "tool:Amazon Web Services AWS software",
+  "b_label": "Amazon Web Services AWS software"
+ },
+ {
+  "pair": "cp-057",
+  "a": "esco:0e361e34-c563-4892-b9d3-873a6a4fef8a",
+  "a_label": "digital game genres",
+  "b": "tool:MySQL",
+  "b_label": "MySQL"
+ },
+ {
+  "pair": "cp-058",
+  "a": "esco:976455eb-5bbe-4493-ae64-ed16c3b009ea",
+  "a_label": "mobile operating systems",
+  "b": "tool:Apple iOS",
+  "b_label": "Apple iOS"
+ },
+ {
+  "pair": "cp-059",
+  "a": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "a_label": "Cisco",
+  "b": "tool:Cisco Webex",
+  "b_label": "Cisco Webex"
+ },
+ {
+  "pair": "cp-060",
+  "a": "tool:Microsoft Windows",
+  "a_label": "Microsoft Windows",
+  "b": "tool:Microsoft Windows XP",
+  "b_label": "Microsoft Windows XP"
+ },
+ {
+  "pair": "cp-061",
+  "a": "tool:Git",
+  "a_label": "Git",
+  "b": "tool:Adobe Illustrator",
+  "b_label": "Adobe Illustrator"
+ },
+ {
+  "pair": "cp-062",
+  "a": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "a_label": "machine learning",
+  "b": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+  "b_label": "deep learning"
+ },
+ {
+  "pair": "cp-063",
+  "a": "tool:Red Hat Enterprise Linux",
+  "a_label": "Red Hat Enterprise Linux",
+  "b": "tool:Microsoft PowerPoint",
+  "b_label": "Microsoft PowerPoint"
+ },
+ {
+  "pair": "cp-064",
+  "a": "esco:7106b5df-e017-4c28-8c40-98814db5b775",
+  "a_label": "Prince2 project management",
+  "b": "esco:bec4359e-cb92-468f-a997-8fb28e32fba9",
+  "b_label": "ICT project management methodologies"
+ },
+ {
+  "pair": "cp-065",
+  "a": "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+  "a_label": "use spreadsheets software",
+  "b": "tool:Google Sheets",
+  "b_label": "Google Sheets"
+ },
+ {
+  "pair": "cp-066",
+  "a": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "a_label": "statistics",
+  "b": "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+  "b_label": "apply statistical analysis techniques"
+ },
+ {
+  "pair": "cp-067",
+  "a": "tool:Linux",
+  "a_label": "Linux",
+  "b": "tool:Google Ads",
+  "b_label": "Google Ads"
+ },
+ {
+  "pair": "cp-068",
+  "a": "tool:Sun Microsystems Java",
+  "a_label": "Sun Microsystems Java",
+  "b": "tool:Oracle Java",
+  "b_label": "Oracle Java"
+ },
+ {
+  "pair": "cp-069",
+  "a": "tool:Git",
+  "a_label": "Git",
+  "b": "tool:GitHub",
+  "b_label": "GitHub"
+ },
+ {
+  "pair": "cp-070",
+  "a": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+  "a_label": "use query languages",
+  "b": "tool:Structured query language SQL",
+  "b_label": "Structured query language SQL"
+ },
+ {
+  "pair": "cp-071",
+  "a": "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+  "a_label": "use spreadsheets software",
+  "b": "tool:Microsoft Excel",
+  "b_label": "Microsoft Excel"
+ },
+ {
+  "pair": "cp-072",
+  "a": "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+  "a_label": "customer service",
+  "b": "tool:Docker",
+  "b_label": "Docker"
+ },
+ {
+  "pair": "cp-073",
+  "a": "tool:Microsoft Active Directory",
+  "a_label": "Microsoft Active Directory",
+  "b": "tool:Microsoft Windows Server",
+  "b_label": "Microsoft Windows Server"
+ },
+ {
+  "pair": "cp-074",
+  "a": "tool:Microsoft Power Platform software",
+  "a_label": "Microsoft Power Platform software",
+  "b": "tool:Microsoft Power BI",
+  "b_label": "Microsoft Power BI"
+ },
+ {
+  "pair": "cp-075",
+  "a": "onet:2.B.3.k",
+  "a_label": "Troubleshooting",
+  "b": "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+  "b_label": "perform ICT troubleshooting"
+ },
+ {
+  "pair": "cp-076",
+  "a": "tool:PHP",
+  "a_label": "PHP",
+  "b": "tool:MySQL",
+  "b_label": "MySQL"
+ },
+ {
+  "pair": "cp-077",
+  "a": "tool:Atlassian JIRA",
+  "a_label": "Atlassian JIRA",
+  "b": "esco:0a9acb6b-1139-4be9-b431-3a80a959f2f4",
+  "b_label": "Agile project management"
+ },
+ {
+  "pair": "cp-078",
+  "a": "tool:Microsoft Teams",
+  "a_label": "Microsoft Teams",
+  "b": "tool:Tcpdump",
+  "b_label": "Tcpdump"
+ },
+ {
+  "pair": "cp-079",
+  "a": "tool:Wireshark",
+  "a_label": "Wireshark",
+  "b": "tool:Nmap",
+  "b_label": "Nmap"
+ },
+ {
+  "pair": "cp-080",
+  "a": "tool:Microsoft Windows",
+  "a_label": "Microsoft Windows",
+  "b": "tool:Microsoft Windows Server",
+  "b_label": "Microsoft Windows Server"
+ },
+ {
+  "pair": "cp-081",
+  "a": "tool:Microsoft Office software",
+  "a_label": "Microsoft Office software",
+  "b": "tool:Microsoft Word",
+  "b_label": "Microsoft Word"
+ },
+ {
+  "pair": "cp-082",
+  "a": "tool:Microsoft PowerPoint",
+  "a_label": "Microsoft PowerPoint",
+  "b": "tool:Google Slides",
+  "b_label": "Google Slides"
+ },
+ {
+  "pair": "cp-083",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:Flask",
+  "b_label": "Flask"
+ },
+ {
+  "pair": "cp-084",
+  "a": "tool:Microsoft Visual Basic",
+  "a_label": "Microsoft Visual Basic",
+  "b": "tool:Microsoft Visual Basic.NET",
+  "b_label": "Microsoft Visual Basic.NET"
+ },
+ {
+  "pair": "cp-085",
+  "a": "tool:Docker",
+  "a_label": "Docker",
+  "b": "tool:Jenkins CI",
+  "b_label": "Jenkins CI"
+ },
+ {
+  "pair": "cp-086",
+  "a": "tool:Git",
+  "a_label": "Git",
+  "b": "tool:Jenkins CI",
+  "b_label": "Jenkins CI"
+ },
+ {
+  "pair": "cp-087",
+  "a": "tool:Docker",
+  "a_label": "Docker",
+  "b": "tool:Microsoft Outlook",
+  "b_label": "Microsoft Outlook"
+ },
+ {
+  "pair": "cp-088",
+  "a": "tool:Microsoft OneNote",
+  "a_label": "Microsoft OneNote",
+  "b": "tool:Metasploit",
+  "b_label": "Metasploit"
+ },
+ {
+  "pair": "cp-089",
+  "a": "esco:1c2978b8-bb0d-4249-9c23-877571a4dffa",
+  "a_label": "cloud security and compliance",
+  "b": "esco:c13fb093-5ffb-491a-b8b7-fa2d42a57e2e",
+  "b_label": "implement cloud security and compliance"
+ },
+ {
+  "pair": "cp-090",
+  "a": "tool:Google Meet",
+  "a_label": "Google Meet",
+  "b": "tool:Microsoft Teams",
+  "b_label": "Microsoft Teams"
+ },
+ {
+  "pair": "cp-091",
+  "a": "tool:Wireshark",
+  "a_label": "Wireshark",
+  "b": "tool:Tcpdump",
+  "b_label": "Tcpdump"
+ },
+ {
+  "pair": "cp-092",
+  "a": "esco:496932f1-0b6b-4f73-9432-d95c7ddcd43b",
+  "a_label": "recruit employees",
+  "b": "tool:JavaScript",
+  "b_label": "JavaScript"
+ },
+ {
+  "pair": "cp-093",
+  "a": "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+  "a_label": "project management",
+  "b": "esco:0a9acb6b-1139-4be9-b431-3a80a959f2f4",
+  "b_label": "Agile project management"
+ },
+ {
+  "pair": "cp-094",
+  "a": "tool:Google Workspace software",
+  "a_label": "Google Workspace software",
+  "b": "tool:Google Docs",
+  "b_label": "Google Docs"
+ },
+ {
+  "pair": "cp-095",
+  "a": "tool:Microsoft Word",
+  "a_label": "Microsoft Word",
+  "b": "tool:Kubernetes",
+  "b_label": "Kubernetes"
+ },
+ {
+  "pair": "cp-096",
+  "a": "tool:Google Sheets",
+  "a_label": "Google Sheets",
+  "b": "tool:Wireshark",
+  "b_label": "Wireshark"
+ },
+ {
+  "pair": "cp-097",
+  "a": "tool:GitHub",
+  "a_label": "GitHub",
+  "b": "tool:GitLab",
+  "b_label": "GitLab"
+ },
+ {
+  "pair": "cp-098",
+  "a": "tool:Microsoft Office software",
+  "a_label": "Microsoft Office software",
+  "b": "tool:Microsoft Outlook",
+  "b_label": "Microsoft Outlook"
+ },
+ {
+  "pair": "cp-099",
+  "a": "tool:Oracle PL/SQL",
+  "a_label": "Oracle PL/SQL",
+  "b": "tool:Google Classroom",
+  "b_label": "Google Classroom"
+ },
+ {
+  "pair": "cp-100",
+  "a": "tool:Cascading style sheets CSS",
+  "a_label": "Cascading style sheets CSS",
+  "b": "tool:Bootstrap",
+  "b_label": "Bootstrap"
+ },
+ {
+  "pair": "cp-101",
+  "a": "tool:Google Docs",
+  "a_label": "Google Docs",
+  "b": "tool:Snort",
+  "b_label": "Snort"
+ },
+ {
+  "pair": "cp-102",
+  "a": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "a_label": "data analytics",
+  "b": "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+  "b_label": "perform data analysis"
+ },
+ {
+  "pair": "cp-103",
+  "a": "esco:1605025e-a179-421f-8f35-5b07d182a6b2",
+  "a_label": "web analytics",
+  "b": "tool:Google Analytics",
+  "b_label": "Google Analytics"
+ },
+ {
+  "pair": "cp-104",
+  "a": "tool:Microsoft Excel",
+  "a_label": "Microsoft Excel",
+  "b": "tool:Git",
+  "b_label": "Git"
+ },
+ {
+  "pair": "cp-105",
+  "a": "tool:Database management systems",
+  "a_label": "Database management systems",
+  "b": "tool:Relational database management system software",
+  "b_label": "Relational database management system software"
+ },
+ {
+  "pair": "cp-106",
+  "a": "tool:pandas",
+  "a_label": "pandas",
+  "b": "tool:NumPy",
+  "b_label": "NumPy"
+ },
+ {
+  "pair": "cp-107",
+  "a": "tool:JavaScript",
+  "a_label": "JavaScript",
+  "b": "tool:Cisco Webex",
+  "b_label": "Cisco Webex"
+ },
+ {
+  "pair": "cp-108",
+  "a": "onet:2.B.3.e",
+  "a_label": "Programming",
+  "b": "tool:Python",
+  "b_label": "Python"
+ },
+ {
+  "pair": "cp-109",
+  "a": "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+  "a_label": "use scripting programming",
+  "b": "tool:Bash",
+  "b_label": "Bash"
+ },
+ {
+  "pair": "cp-110",
+  "a": "tool:Microsoft Office software",
+  "a_label": "Microsoft Office software",
+  "b": "tool:Microsoft PowerPoint",
+  "b_label": "Microsoft PowerPoint"
+ },
+ {
+  "pair": "cp-111",
+  "a": "tool:Linux",
+  "a_label": "Linux",
+  "b": "tool:Bash",
+  "b_label": "Bash"
+ },
+ {
+  "pair": "cp-112",
+  "a": "tool:NoSQL",
+  "a_label": "NoSQL",
+  "b": "tool:MongoDB",
+  "b_label": "MongoDB"
+ },
+ {
+  "pair": "cp-113",
+  "a": "tool:Zoom",
+  "a_label": "Zoom",
+  "b": "tool:Microsoft Teams",
+  "b_label": "Microsoft Teams"
+ },
+ {
+  "pair": "cp-114",
+  "a": "tool:Postman",
+  "a_label": "Postman",
+  "b": "tool:Adobe After Effects",
+  "b_label": "Adobe After Effects"
+ },
+ {
+  "pair": "cp-115",
+  "a": "tool:JavaScript",
+  "a_label": "JavaScript",
+  "b": "tool:TypeScript",
+  "b_label": "TypeScript"
+ },
+ {
+  "pair": "cp-116",
+  "a": "tool:Oracle Database",
+  "a_label": "Oracle Database",
+  "b": "esco:de9f85ba-e77f-48fd-8c66-f5ebaf32d655",
+  "b_label": "Oracle Relational Database"
+ },
+ {
+  "pair": "cp-117",
+  "a": "tool:Adobe Photoshop",
+  "a_label": "Adobe Photoshop",
+  "b": "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+  "b_label": "graphics editor software"
+ },
+ {
+  "pair": "cp-118",
+  "a": "tool:Microsoft Windows",
+  "a_label": "Microsoft Windows",
+  "b": "tool:Microsoft PowerShell",
+  "b_label": "Microsoft PowerShell"
+ },
+ {
+  "pair": "cp-119",
+  "a": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "a_label": "machine learning",
+  "b": "esco:8369c2d6-c100-4cf6-bd83-9668d8678433",
+  "b_label": "utilise machine learning"
+ },
+ {
+  "pair": "cp-120",
+  "a": "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb",
+  "a_label": "use presentation software",
+  "b": "tool:Microsoft PowerPoint",
+  "b_label": "Microsoft PowerPoint"
+ },
+ {
+  "pair": "cp-121",
+  "a": "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+  "a_label": "operating systems",
+  "b": "tool:Linux",
+  "b_label": "Linux"
+ },
+ {
+  "pair": "cp-122",
+  "a": "tool:Cisco IOS",
+  "a_label": "Cisco IOS",
+  "b": "tool:Moodle",
+  "b_label": "Moodle"
+ },
+ {
+  "pair": "cp-123",
+  "a": "esco:0ee7b0d6-db98-4785-9948-f2ef415d155a",
+  "a_label": "write research proposals",
+  "b": "tool:Node.js",
+  "b_label": "Node.js"
+ },
+ {
+  "pair": "cp-124",
+  "a": "esco:925463a7-d51f-4d5b-9f79-4d28cf30acde",
+  "a_label": "integrated development environment software",
+  "b": "tool:Eclipse IDE",
+  "b_label": "Eclipse IDE"
+ },
+ {
+  "pair": "cp-125",
+  "a": "tool:Kubernetes",
+  "a_label": "Kubernetes",
+  "b": "tool:Adobe InDesign",
+  "b_label": "Adobe InDesign"
+ },
+ {
+  "pair": "cp-126",
+  "a": "tool:Wireshark",
+  "a_label": "Wireshark",
+  "b": "tool:Microsoft Project",
+  "b_label": "Microsoft Project"
+ },
+ {
+  "pair": "cp-127",
+  "a": "tool:Adobe Acrobat",
+  "a_label": "Adobe Acrobat",
+  "b": "tool:Kali Linux",
+  "b_label": "Kali Linux"
+ },
+ {
+  "pair": "cp-128",
+  "a": "tool:Database management systems",
+  "a_label": "Database management systems",
+  "b": "tool:MySQL",
+  "b_label": "MySQL"
+ },
+ {
+  "pair": "cp-129",
+  "a": "tool:Ansible software",
+  "a_label": "Ansible software",
+  "b": "tool:Puppet",
+  "b_label": "Puppet"
+ },
+ {
+  "pair": "cp-130",
+  "a": "tool:JavaScript",
+  "a_label": "JavaScript",
+  "b": "tool:jQuery",
+  "b_label": "jQuery"
+ },
+ {
+  "pair": "cp-131",
+  "a": "esco:a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+  "a_label": "ML (computer programming)",
+  "b": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "b_label": "machine learning"
+ },
+ {
+  "pair": "cp-132",
+  "a": "tool:Linux",
+  "a_label": "Linux",
+  "b": "tool:Red Hat Enterprise Linux",
+  "b_label": "Red Hat Enterprise Linux"
+ },
+ {
+  "pair": "cp-133",
+  "a": "tool:MySQL",
+  "a_label": "MySQL",
+  "b": "tool:Figma",
+  "b_label": "Figma"
+ },
+ {
+  "pair": "cp-134",
+  "a": "tool:Linux",
+  "a_label": "Linux",
+  "b": "tool:Ubuntu",
+  "b_label": "Ubuntu"
+ },
+ {
+  "pair": "cp-135",
+  "a": "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+  "a_label": "tools for software configuration management",
+  "b": "tool:Git",
+  "b_label": "Git"
+ },
+ {
+  "pair": "cp-136",
+  "a": "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+  "a_label": "ICT network routing",
+  "b": "tool:Open Shortest Path First OSPF",
+  "b_label": "Open Shortest Path First OSPF"
+ },
+ {
+  "pair": "cp-137",
+  "a": "tool:PostgreSQL",
+  "a_label": "PostgreSQL",
+  "b": "tool:Microsoft SQL Server",
+  "b_label": "Microsoft SQL Server"
+ },
+ {
+  "pair": "cp-138",
+  "a": "tool:Nmap",
+  "a_label": "Nmap",
+  "b": "tool:Metasploit",
+  "b_label": "Metasploit"
+ },
+ {
+  "pair": "cp-139",
+  "a": "tool:Amazon Web Services AWS software",
+  "a_label": "Amazon Web Services AWS software",
+  "b": "tool:Amazon Simple Storage Service S3",
+  "b_label": "Amazon Simple Storage Service S3"
+ },
+ {
+  "pair": "cp-140",
+  "a": "tool:pandas",
+  "a_label": "pandas",
+  "b": "tool:Scikit-learn",
+  "b_label": "Scikit-learn"
+ },
+ {
+  "pair": "cp-141",
+  "a": "tool:Oracle Java",
+  "a_label": "Oracle Java",
+  "b": "tool:Spring Boot",
+  "b_label": "Spring Boot"
+ },
+ {
+  "pair": "cp-142",
+  "a": "tool:JavaScript",
+  "a_label": "JavaScript",
+  "b": "tool:React",
+  "b_label": "React"
+ },
+ {
+  "pair": "cp-143",
+  "a": "esco:81633a44-f1db-4a01-a940-804c6905e330",
+  "a_label": "use word processing software",
+  "b": "tool:Microsoft Word",
+  "b_label": "Microsoft Word"
+ },
+ {
+  "pair": "cp-144",
+  "a": "tool:Django",
+  "a_label": "Django",
+  "b": "tool:SAP ERP",
+  "b_label": "SAP ERP"
+ },
+ {
+  "pair": "cp-145",
+  "a": "esco:339ac029-066a-4985-9f9d-b3d7c8fea0bb",
+  "a_label": "manage staff",
+  "b": "tool:Linux",
+  "b_label": "Linux"
+ },
+ {
+  "pair": "cp-146",
+  "a": "tool:Transact-SQL",
+  "a_label": "Transact-SQL",
+  "b": "tool:Microsoft transact-structural query language T-SQL",
+  "b_label": "Microsoft transact-structural query language T-SQL"
+ },
+ {
+  "pair": "cp-147",
+  "a": "tool:Microsoft Power BI",
+  "a_label": "Microsoft Power BI",
+  "b": "tool:Tableau",
+  "b_label": "Tableau"
+ },
+ {
+  "pair": "cp-148",
+  "a": "tool:Google Drive",
+  "a_label": "Google Drive",
+  "b": "tool:Red Hat Enterprise Linux",
+  "b_label": "Red Hat Enterprise Linux"
+ },
+ {
+  "pair": "cp-149",
+  "a": "tool:Firewall software",
+  "a_label": "Firewall software",
+  "b": "tool:Palo Alto Networks Next-Generation Security Platform",
+  "b_label": "Palo Alto Networks Next-Generation Security Platform"
+ },
+ {
+  "pair": "cp-150",
+  "a": "tool:Google Gmail",
+  "a_label": "Google Gmail",
+  "b": "tool:Microsoft Outlook",
+  "b_label": "Microsoft Outlook"
+ },
+ {
+  "pair": "cp-151",
+  "a": "tool:Docker",
+  "a_label": "Docker",
+  "b": "tool:Zoom",
+  "b_label": "Zoom"
+ },
+ {
+  "pair": "cp-152",
+  "a": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "a_label": "design computer network",
+  "b": "tool:Cisco IOS",
+  "b_label": "Cisco IOS"
+ },
+ {
+  "pair": "cp-153",
+  "a": "onet:2.A.2.a",
+  "a_label": "Critical Thinking",
+  "b": "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+  "b_label": "think analytically"
+ },
+ {
+  "pair": "cp-154",
+  "a": "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+  "a_label": "customer service",
+  "b": "onet:2.C.1.e",
+  "b_label": "Customer and Personal Service"
+ },
+ {
+  "pair": "cp-155",
+  "a": "tool:Microsoft Azure DevOps Services",
+  "a_label": "Microsoft Azure DevOps Services",
+  "b": "tool:Git",
+  "b_label": "Git"
+ },
+ {
+  "pair": "cp-156",
+  "a": "esco:925463a7-d51f-4d5b-9f79-4d28cf30acde",
+  "a_label": "integrated development environment software",
+  "b": "tool:Microsoft Visual Studio",
+  "b_label": "Microsoft Visual Studio"
+ },
+ {
+  "pair": "cp-157",
+  "a": "tool:Microsoft Hyper-V Server",
+  "a_label": "Microsoft Hyper-V Server",
+  "b": "tool:VMware",
+  "b_label": "VMware"
+ },
+ {
+  "pair": "cp-158",
+  "a": "esco:42c3287f-5e50-4559-a2d1-2000c70e0aab",
+  "a_label": "Pentaho Data Integration",
+  "b": "tool:Pentaho Kettle",
+  "b_label": "Pentaho Kettle"
+ },
+ {
+  "pair": "cp-159",
+  "a": "tool:Microsoft Excel",
+  "a_label": "Microsoft Excel",
+  "b": "tool:Microsoft Power BI",
+  "b_label": "Microsoft Power BI"
+ },
+ {
+  "pair": "cp-160",
+  "a": "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+  "a_label": "assist customers",
+  "b": "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+  "b_label": "communicate with customers"
+ },
+ {
+  "pair": "cp-161",
+  "a": "esco:daa52226-7795-48ff-aa3e-ad3189d9aa61",
+  "a_label": "tabulate survey results",
+  "b": "tool:Cisco IOS",
+  "b_label": "Cisco IOS"
+ },
+ {
+  "pair": "cp-162",
+  "a": "onet:2.B.3.e",
+  "a_label": "Programming",
+  "b": "tool:JavaScript",
+  "b_label": "JavaScript"
+ },
+ {
+  "pair": "cp-163",
+  "a": "onet:2.A.1.e",
+  "a_label": "Mathematics",
+  "b": "onet:2.C.4.a",
+  "b_label": "Mathematics"
+ },
+ {
+  "pair": "cp-164",
+  "a": "tool:Cisco IOS",
+  "a_label": "Cisco IOS",
+  "b": "tool:Open Shortest Path First OSPF",
+  "b_label": "Open Shortest Path First OSPF"
+ },
+ {
+  "pair": "cp-165",
+  "a": "tool:Oracle Java Enterprise Edition EE",
+  "a_label": "Oracle Java Enterprise Edition EE",
+  "b": "tool:Oracle Java 2 Platform Enterprise Edition J2EE",
+  "b_label": "Oracle Java 2 Platform Enterprise Edition J2EE"
+ },
+ {
+  "pair": "cp-166",
+  "a": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "a_label": "Cisco",
+  "b": "tool:Cisco Systems CiscoWorks",
+  "b_label": "Cisco Systems CiscoWorks"
+ },
+ {
+  "pair": "cp-167",
+  "a": "tool:Microsoft Access",
+  "a_label": "Microsoft Access",
+  "b": "tool:Adobe After Effects",
+  "b_label": "Adobe After Effects"
+ },
+ {
+  "pair": "cp-168",
+  "a": "onet:2.C.8.b",
+  "a_label": "Law and Government",
+  "b": "tool:TensorFlow",
+  "b_label": "TensorFlow"
+ },
+ {
+  "pair": "cp-169",
+  "a": "tool:Nagios",
+  "a_label": "Nagios",
+  "b": "tool:Adobe Photoshop",
+  "b_label": "Adobe Photoshop"
+ },
+ {
+  "pair": "cp-170",
+  "a": "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+  "a_label": "computer forensics",
+  "b": "tool:Wireshark",
+  "b_label": "Wireshark"
+ },
+ {
+  "pair": "cp-171",
+  "a": "esco:fe39d4db-4cb5-4299-bb9f-896c8fd6ab13",
+  "a_label": "perform market research",
+  "b": "tool:Wireshark",
+  "b_label": "Wireshark"
+ },
+ {
+  "pair": "cp-172",
+  "a": "tool:Mozilla Firefox",
+  "a_label": "Mozilla Firefox",
+  "b": "tool:Ansible software",
+  "b_label": "Ansible software"
+ },
+ {
+  "pair": "cp-173",
+  "a": "tool:PostgreSQL",
+  "a_label": "PostgreSQL",
+  "b": "tool:Google Meet",
+  "b_label": "Google Meet"
+ },
+ {
+  "pair": "cp-174",
+  "a": "tool:React",
+  "a_label": "React",
+  "b": "tool:Nmap",
+  "b_label": "Nmap"
+ },
+ {
+  "pair": "cp-175",
+  "a": "tool:Microsoft Office software",
+  "a_label": "Microsoft Office software",
+  "b": "tool:Microsoft Excel",
+  "b_label": "Microsoft Excel"
+ },
+ {
+  "pair": "cp-176",
+  "a": "tool:Metasploit",
+  "a_label": "Metasploit",
+  "b": "tool:Penetration testing software",
+  "b_label": "Penetration testing software"
+ },
+ {
+  "pair": "cp-177",
+  "a": "tool:Amazon Web Services AWS software",
+  "a_label": "Amazon Web Services AWS software",
+  "b": "tool:Docker",
+  "b_label": "Docker"
+ },
+ {
+  "pair": "cp-178",
+  "a": "tool:Open Shortest Path First OSPF",
+  "a_label": "Open Shortest Path First OSPF",
+  "b": "tool:Open source routing protocols OSPF",
+  "b_label": "Open source routing protocols OSPF"
+ },
+ {
+  "pair": "cp-179",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:NumPy",
+  "b_label": "NumPy"
+ },
+ {
+  "pair": "cp-180",
+  "a": "tool:Atlassian JIRA",
+  "a_label": "Atlassian JIRA",
+  "b": "tool:Atlassian Confluence",
+  "b_label": "Atlassian Confluence"
+ },
+ {
+  "pair": "cp-181",
+  "a": "esco:ea1bf5e5-e7f0-4d2c-a415-1c39c00512b1",
+  "a_label": "document management",
+  "b": "esco:b769f524-0f25-44d7-8538-5c46710a040e",
+  "b_label": "manage digital documents"
+ },
+ {
+  "pair": "cp-182",
+  "a": "tool:Google Workspace software",
+  "a_label": "Google Workspace software",
+  "b": "tool:Google Gmail",
+  "b_label": "Google Gmail"
+ },
+ {
+  "pair": "cp-183",
+  "a": "tool:Cascading style sheets CSS",
+  "a_label": "Cascading style sheets CSS",
+  "b": "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794",
+  "b_label": "style sheet languages"
+ },
+ {
+  "pair": "cp-184",
+  "a": "tool:Django",
+  "a_label": "Django",
+  "b": "tool:Flask",
+  "b_label": "Flask"
+ },
+ {
+  "pair": "cp-185",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:TensorFlow",
+  "b_label": "TensorFlow"
+ },
+ {
+  "pair": "cp-186",
+  "a": "esco:25f0ea33-b4a2-4f31-b7b4-7d20e827b180",
+  "a_label": "data mining",
+  "b": "esco:4216e465-7baa-4884-a241-54b197bb9278",
+  "b_label": "perform data mining"
+ },
+ {
+  "pair": "cp-187",
+  "a": "tool:Atlassian Bitbucket",
+  "a_label": "Atlassian Bitbucket",
+  "b": "tool:GitHub",
+  "b_label": "GitHub"
+ },
+ {
+  "pair": "cp-188",
+  "a": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "a_label": "Cisco",
+  "b": "tool:Cisco IOS",
+  "b_label": "Cisco IOS"
+ },
+ {
+  "pair": "cp-189",
+  "a": "tool:React",
+  "a_label": "React",
+  "b": "tool:React Native",
+  "b_label": "React Native"
+ },
+ {
+  "pair": "cp-190",
+  "a": "tool:Microsoft Visual C# .NET",
+  "a_label": "Microsoft Visual C# .NET",
+  "b": "tool:C#",
+  "b_label": "C#"
+ },
+ {
+  "pair": "cp-191",
+  "a": "tool:Microsoft Word",
+  "a_label": "Microsoft Word",
+  "b": "tool:Microsoft Outlook",
+  "b_label": "Microsoft Outlook"
+ },
+ {
+  "pair": "cp-192",
+  "a": "tool:Oracle Database",
+  "a_label": "Oracle Database",
+  "b": "tool:Oracle PL/SQL",
+  "b_label": "Oracle PL/SQL"
+ },
+ {
+  "pair": "cp-193",
+  "a": "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+  "a_label": "database",
+  "b": "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+  "b_label": "use databases"
+ },
+ {
+  "pair": "cp-194",
+  "a": "tool:C#",
+  "a_label": "C#",
+  "b": "tool:Microsoft .NET Framework",
+  "b_label": "Microsoft .NET Framework"
+ },
+ {
+  "pair": "cp-195",
+  "a": "esco:a57a54b6-2f2e-43e4-9621-b52f4a63cb08",
+  "a_label": "LDAP",
+  "b": "esco:d1e954cd-d290-4d80-97c0-7969960d2928",
+  "b_label": "distributed directory information services"
+ },
+ {
+  "pair": "cp-196",
+  "a": "tool:Microsoft PowerShell",
+  "a_label": "Microsoft PowerShell",
+  "b": "tool:Microsoft Windows PowerShell",
+  "b_label": "Microsoft Windows PowerShell"
+ },
+ {
+  "pair": "cp-197",
+  "a": "tool:Python",
+  "a_label": "Python",
+  "b": "tool:Microsoft Visio",
+  "b_label": "Microsoft Visio"
+ },
+ {
+  "pair": "cp-198",
+  "a": "tool:Git",
+  "a_label": "Git",
+  "b": "tool:GitLab",
+  "b_label": "GitLab"
+ },
+ {
+  "pair": "cp-199",
+  "a": "esco:237db40b-4600-47c0-837f-4a2c4f3014ab",
+  "a_label": "project management principles",
+  "b": "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+  "b_label": "project management"
+ },
+ {
+  "pair": "cp-200",
+  "a": "tool:Microsoft Azure software",
+  "a_label": "Microsoft Azure software",
+  "b": "tool:Microsoft Azure Data Factory",
+  "b_label": "Microsoft Azure Data Factory"
+ }
+]
