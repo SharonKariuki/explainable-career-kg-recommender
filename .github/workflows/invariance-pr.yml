@@ -44,10 +44,12 @@ env:
   BASELINE_DIR: backend/tests/snapshots
   MODEL_NAME: sentence-transformers/all-MiniLM-L6-v2
   HF_HUB_VERSION: "1.33.0"
-  # One thread and fixed CPU kernels, so floats do not depend on the runner's core count or CPU model.
+  # One thread and fixed CPU code paths (torch, MKL in reproducibility mode, oneDNN, OpenBLAS), so floats
+  # do not depend on the runner's core count or CPU model: GitHub runners vary in CPU.
   PINNED_ENV: >-
     -e OMP_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1
     -e ATEN_CPU_CAPABILITY=avx2 -e OPENBLAS_CORETYPE=Haswell
+    -e MKL_CBWR=AVX2,STRICT -e ONEDNN_MAX_CPU_ISA=AVX2 -e DNNL_MAX_CPU_ISA=AVX2
     -e HF_HOME=/hf -e HF_HUB_OFFLINE=1 -e TRANSFORMERS_OFFLINE=1 -e HF_HUB_DISABLE_TELEMETRY=1
 
 jobs:
@@ -124,10 +126,11 @@ jobs:
         run: |
           mkdir -p provisional
           docker run --rm --network none -v "$PWD:/repo" -v venv:/venv -v "$RUNNER_TEMP/hf:/hf" $PINNED_ENV \
-            -e GIT_COMMIT="${{ github.sha }}" -w /repo/backend "$IMAGE" \
+            -e GIT_COMMIT="${{ github.event.pull_request.head.sha || github.sha }}" -w /repo/backend "$IMAGE" \
             /venv/bin/python -m recommender.invariance generate --out /repo/provisional \
               --expected-sources /repo/expected_sources.json \
-              --base-image-digest "${{ steps.bootstrap.outputs.base_digest }}" --commit "${{ github.sha }}"
+              --base-image-digest "${{ steps.bootstrap.outputs.base_digest }}" \
+              --commit "${{ github.event.pull_request.head.sha || github.sha }}"
           cp "$RUNNER_TEMP/provision.json" provisional/model_provision.json
           cp expected_sources.json provisional/expected_sources_739956a.json
 
@@ -135,7 +138,8 @@ jobs:
         if: steps.baseline.outputs.approved != 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: provisional-ranking-baseline-${{ github.sha }}
+          # Attempt number keeps re-runs (used to check reproducibility across runners) from colliding.
+          name: provisional-ranking-baseline-${{ github.event.pull_request.head.sha || github.sha }}-attempt${{ github.run_attempt }}
           path: provisional/
           retention-days: 30
 

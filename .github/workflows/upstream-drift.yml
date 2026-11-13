@@ -85,6 +85,7 @@ jobs:
           docker run --rm -v "$PWD/data/eval_sets:/app/data/eval_sets:ro" \
             -e OMP_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1 \
             -e ATEN_CPU_CAPABILITY=avx2 -e OPENBLAS_CORETYPE=Haswell -e HF_HUB_OFFLINE=1 \
+            -e MKL_CBWR=AVX2,STRICT -e ONEDNN_MAX_CPU_ISA=AVX2 -e DNNL_MAX_CPU_ISA=AVX2 \
             -e BASE_IMAGE_DIGEST="${{ steps.base.outputs.platform_digest }}" \
             "ajiraguide-drift:${{ github.run_id }}" sh -c "python -m recommender.invariance drift \
               --baseline $BASELINE_DIR --resolved-base-digest '${{ steps.base.outputs.platform_digest }}' \

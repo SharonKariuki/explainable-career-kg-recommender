@@ -61,6 +61,11 @@ ENVIRONMENT_FIELDS = ('base_image_digest', 'python', 'machine', 'packages_sha256
 # Fields whose change, in the scheduled job, is upstream drift.
 DRIFT_FIELDS = ('base_image_digest', 'packages_sha256', 'model_revision', 'model_files', 'embedding_probe_sha256')
 DRIFT_FLOAT_TOLERANCE = 1e-9
+# Environment variables that decide how floating-point work is split and which CPU code paths
+# torch, MKL, oneDNN and OpenBLAS take. GitHub runners vary in CPU model, so these are fixed
+# by the workflows and recorded here.
+NUMERIC_ENV = ('OMP_NUM_THREADS', 'MKL_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'ATEN_CPU_CAPABILITY',
+               'OPENBLAS_CORETYPE', 'MKL_CBWR', 'ONEDNN_MAX_CPU_ISA', 'DNNL_MAX_CPU_ISA')
 
 # Profiles beyond the generated sets: the six evaluated students with their wordings, the
 # constructed evidence cases, and profiles with background text (the 40% background path).
@@ -272,9 +277,7 @@ def fingerprint(rows, base_image_digest=None):
         'machine': platform.machine(),
         'os': platform.platform(),
         'cpu': cpu_info(),
-        'threads': {'torch': torch.get_num_threads(),
-                    **{k: os.environ.get(k) for k in ('OMP_NUM_THREADS', 'MKL_NUM_THREADS', 'OPENBLAS_NUM_THREADS',
-                                                      'ATEN_CPU_CAPABILITY', 'OPENBLAS_CORETYPE')}},
+        'threads': {'torch': torch.get_num_threads(), **{k: os.environ.get(k) for k in NUMERIC_ENV}},
         'packages_sha256': _sha256('\n'.join(pkgs).encode()),
         'packages': pkgs,
         'model_name': MODEL_NAME,
@@ -451,14 +454,15 @@ def cmd_generate(args):
             print(f'Ranking sources differ from baseline commit {BASELINE_COMMIT[:7]}: {differing}', file=sys.stderr)
             return 7
     rows, held = corpus()
-    fp = fingerprint(rows, args.base_image_digest)
     profiles = snapshot_profiles(rows, held)
+    fp = fingerprint(rows, args.base_image_digest)   # after the snapshot, so the embedding cache exists and is hashed
     document = {
         'format': FORMAT,
         'status': 'provisional',
         'note': (f'Generated automatically; unapproved. It becomes the baseline only when a reviewer adds '
                  f'{APPROVAL_FILE} naming this snapshot by content sha256.'),
         'baseline_commit': BASELINE_COMMIT,
+        # The branch head, not GitHub's synthetic PR merge commit (the workflow passes the head SHA).
         'generated_from_commit': os.environ.get('GIT_COMMIT') or args.commit or 'unknown',
         'generated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
         'ranking_sources': sources,
@@ -489,6 +493,9 @@ def cmd_check(args):
               'reported.', file=sys.stderr)
         for field, (b, c) in mismatch.items():
             print(f'  {field}: baseline {str(b)[:120]} | here {str(c)[:120]}', file=sys.stderr)
+        for field in ('cpu', 'threads'):   # context: runners differ in CPU model
+            print(f'  {field} (not compared): baseline {baseline["fingerprint"].get(field)} | here {current_fp.get(field)}',
+                  file=sys.stderr)
         return 3
     categorical, floats = compare_records(baseline['profiles'], snapshot_profiles(rows, held), tolerance=0.0)
     if categorical or floats:
