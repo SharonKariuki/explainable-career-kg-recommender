@@ -145,3 +145,29 @@ def test_served_explanations_pass_the_fidelity_check():
     for item, r in zip(served, ranked):
         assert item['title'] == r.title
         assert check_fidelity(ExplanationGenerator().explain(r), r).passed
+
+
+def test_evidence_is_additive_and_the_same_for_every_top_and_the_detail():
+    client = signed_in()
+    client.put('/api/profile/', {'skills': DATA_SKILLS + ['TCP/IP']}, format='json')
+    first = client.get('/api/recommendations/?top=1').data
+    assert isinstance(first['insufficient'], bool) and first['evidence']['version'] == 'evidence-v1'
+    assert {'supported_concepts', 'supported_weight', 'best_supported_career', 'meaningful_concepts',
+            'close_call', 'reasons', 'advice', 'thresholds'} <= set(first['evidence'])
+    for top in (5, 10, 24, 50):
+        data = client.get(f'/api/recommendations/?top={top}').data
+        assert (data['insufficient'], data['evidence']) == (first['insufficient'], first['evidence'])
+    code = first['recommendations'][0]['career_code']
+    detail = client.get(f'/api/recommendations/{code}/').data
+    assert (detail['insufficient'], detail['evidence']) == (first['insufficient'], first['evidence'])
+    for c in detail['skill_contributions']:
+        assert isinstance(c['uncertain'], bool) and isinstance(c['uncertainty_reasons'], list)
+        assert c['runner_up_skill'] is None or isinstance(c['runner_up_skill'], str)
+
+
+def test_a_thin_profile_is_insufficient_and_says_why():
+    client = signed_in()
+    client.put('/api/profile/', {'skills': ['Python', 'SQL']}, format='json')
+    data = client.get('/api/recommendations/').data
+    assert data['insufficient'] is True and data['evidence']['reasons'] and data['evidence']['advice']
+    assert data['recommendations']                                  # the ranking is still shown
