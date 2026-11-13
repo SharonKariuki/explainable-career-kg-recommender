@@ -15,6 +15,7 @@ Commands (from backend/):
     python -m recommender.invariance drift --baseline DIR --resolved-base-digest D --resolved-model-revision R
                                            [--simulate-drift]
     python -m recommender.invariance sources [--commit SHA]
+    python -m recommender.invariance repro [--out FILE]   # CPU, probe and snapshot hash, to compare runners
 
 Exit codes: 0 pass; 2 no approved baseline; 3 environment mismatch; 4 ranking changed;
 5 upstream drift (the drift command); 6 inconsistent resolution; 7 baseline sources differ.
@@ -277,7 +278,8 @@ def fingerprint(rows, base_image_digest=None):
         'machine': platform.machine(),
         'os': platform.platform(),
         'cpu': cpu_info(),
-        'threads': {'torch': torch.get_num_threads(), **{k: os.environ.get(k) for k in NUMERIC_ENV}},
+        'threads': {'torch': torch.get_num_threads(), 'mkldnn_enabled': torch.backends.mkldnn.enabled,
+                    **{k: os.environ.get(k) for k in NUMERIC_ENV}},
         'packages_sha256': _sha256('\n'.join(pkgs).encode()),
         'packages': pkgs,
         'model_name': MODEL_NAME,
@@ -294,11 +296,19 @@ def fingerprint(rows, base_image_digest=None):
 
 
 def pin_threads():
-    """One thread everywhere: the snapshot must not depend on how work is split across cores."""
+    """Fix the harness's arithmetic so the snapshot does not depend on the machine.
+
+    One thread everywhere, so results do not depend on how work is split across cores; and
+    oneDNN off, so torch's matrix work goes through MKL, which the workflows put in its
+    compatible (CPU-independent) mode alongside torch's generic kernels. GitHub runners mix
+    AMD and Intel CPUs, and the optimised paths differ between them in the last bits. This
+    applies to the snapshot harness only; the application is unchanged.
+    """
     for name in ('OMP_NUM_THREADS', 'MKL_NUM_THREADS', 'OPENBLAS_NUM_THREADS'):
         os.environ.setdefault(name, '1')
     import torch
     torch.set_num_threads(1)
+    torch.backends.mkldnn.enabled = False
 
 
 # ---- Baseline files ----
@@ -538,6 +548,23 @@ def cmd_drift(args):
     return code
 
 
+def cmd_repro(args):
+    """Print this machine's CPU, embedding probe and snapshot hash, to compare runners. Writes no baseline."""
+    pin_threads()
+    rows, held = corpus()
+    profiles = snapshot_profiles(rows, held)
+    fp = fingerprint(rows, args.base_image_digest)
+    result = {'cpu': fp['cpu'], 'threads': fp['threads'], 'embedding_probe_sha256': fp['embedding_probe_sha256'],
+              'profiles_sha256': _sha256(canonical_json(profiles).encode()), 'profiles': len(profiles),
+              'packages_sha256': fp['packages_sha256'], 'model_revision': fp['model_revision'],
+              'base_image_digest': fp['base_image_digest']}
+    text = json.dumps(result, indent=1)
+    if args.out:
+        Path(args.out).write_text(text, encoding='utf-8')
+    print(text)
+    return 0
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = parser.add_subparsers(dest='command', required=True)
@@ -548,8 +575,10 @@ def main(argv=None):
     d = sub.add_parser('drift'); d.add_argument('--baseline', required=True)
     d.add_argument('--resolved-base-digest', required=True); d.add_argument('--resolved-model-revision', required=True)
     d.add_argument('--simulate-drift', action='store_true'); d.add_argument('--report')
+    r = sub.add_parser('repro'); r.add_argument('--out'); r.add_argument('--base-image-digest')
     args = parser.parse_args(argv)
-    return {'sources': cmd_sources, 'generate': cmd_generate, 'check': cmd_check, 'drift': cmd_drift}[args.command](args)
+    return {'sources': cmd_sources, 'generate': cmd_generate, 'check': cmd_check, 'drift': cmd_drift,
+            'repro': cmd_repro}[args.command](args)
 
 
 if __name__ == '__main__':
