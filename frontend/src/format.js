@@ -6,6 +6,12 @@ export function sourceNames(sources) {
   return sources.map((s) => SOURCES[s] || s).join(', ')
 }
 
+// The fit level to show: the API's `fit_shown` keeps 'strong' or 'good' only when enough of the
+// student's specific skills support the career (release safety rule); older responses lack it.
+export function shownFit(item) {
+  return item?.fit_shown ?? item?.fit
+}
+
 // The API's fit level ('strong', 'good', 'possible'); its thresholds stay in the backend.
 export function fitLabel(fit) {
   return `${capitalise(fit)} match`

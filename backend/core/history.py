@@ -11,7 +11,8 @@ from django.db import transaction
 from core import services
 from core.models import Recommendation, RecommendationExplanation, RecommendationRun, SkillGap
 from recommender.engine import DEFAULT_PARAMS
-from recommender.explanation import ExplanationGenerator, fit_level, requirement_of
+from recommender import presentation
+from recommender.explanation import ExplanationGenerator, requirement_of
 from recommender.skills_gap import get_skills_gap
 
 SNAPSHOT_SIZE = 10
@@ -31,11 +32,15 @@ def snapshot(user, profile):
                                            params=dataclasses.asdict(DEFAULT_PARAMS))
     explainer = ExplanationGenerator()
     for position, r in enumerate(ranked, 1):
+        # Store the label and wording the student was shown, which the release safety rule limits
+        # when few specific skills support the career (recommender.presentation).
+        shown = presentation.shown_fit(services.kg(), matches, r)
         stored = Recommendation.objects.create(
             run=run, rank=position, career_code=services.career_code(r.career_id), title=r.title, domain=r.domain,
-            score=r.score, fit=fit_level(r.score), components=dataclasses.asdict(r.components),
+            score=r.score, fit=shown[0], components=dataclasses.asdict(r.components),
         )
-        RecommendationExplanation.objects.create(recommendation=stored, sentences=list(explainer.explain(r).sentences))
+        RecommendationExplanation.objects.create(
+            recommendation=stored, sentences=list(explainer.explain(r, matches, rank=position, display=shown).sentences))
         SkillGap.objects.bulk_create(
             SkillGap(recommendation=stored, position=i, skill_id=g.skill_id, label=g.label,
                      requirement=requirement_of(g)[1])

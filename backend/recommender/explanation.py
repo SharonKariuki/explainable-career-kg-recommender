@@ -115,6 +115,14 @@ def name(contribution):
     return f"{contribution.skill_label} (your '{contribution.query}')"
 
 
+def limited_evidence_sentence(support):
+    """Why a career the score rates highly is shown only as a possible match (release safety rule)."""
+    count = {0: 'None', 1: 'Only one'}.get(support, f'Only {support}')
+    return (f'{count} of your skills {"points" if support == 1 else "point"} specifically to this career, so treat it '
+            'as a possible direction rather than a firm match; adding the tools, methods or tasks you have used '
+            'would make this clearer.')
+
+
 NEAR_TIE = ('Several careers fit your skills about equally, so compare them rather than relying on '
             'their order.')
 
@@ -159,9 +167,11 @@ class ExplanationGenerator:
     def __init__(self, params=DEFAULT_PARAMS):
         self.params = params
 
-    def explain(self, recommendation, readings=(), assessment=None, rank=None, near_tie=False):
+    def explain(self, recommendation, readings=(), assessment=None, rank=None, near_tie=False, display=None):
         """`readings`: the profile's SkillMatch readings; `assessment`: evidence.assess() output;
-        `rank`: the career's position; `near_tie`: it scores within epsilon of the top career."""
+        `rank`: the career's position; `near_tie`: it scores within epsilon of the top career;
+        `display`: (fit_shown, specific support) from recommender.presentation, when the fit label
+        is limited by how much specific evidence supports the career."""
         r = recommendation
         c = r.components
         sentences, skills, quoted = [], [], []
@@ -180,7 +190,8 @@ class ExplanationGenerator:
                    else 'your profile has too little specific information to judge fit')
             sentences.append(f'{r.title} {where} for your skills (score {quote("score", r.score)}), but {why}.')
         else:
-            sentences.append(f'{r.title} is {fit(r.score)} match for your skills (score {quote("score", r.score)}).')
+            label = f'a {display[0]}' if display else fit(r.score)
+            sentences.append(f'{r.title} is {label} match for your skills (score {quote("score", r.score)}).')
 
         # The strongest contributions, plus any uncertain match so it is never hidden.
         contributions = r.skill_contributions
@@ -242,6 +253,9 @@ class ExplanationGenerator:
                 f'Your background counts for {p.background_weight:.0%} of the score; '
                 f'the rest weights {weights}.'
             )
+
+        if display and display[0] != fit_level(r.score):
+            sentences.append(limited_evidence_sentence(display[1]))
 
         if insufficient and assessment['evidence'].get('advice'):
             sentences.append(assessment['evidence']['advice'])

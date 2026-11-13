@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { getProgress, getRecommendations, getSaved } from '../api.js'
 import { EmptyState, Pill, Progress, ScoreBar, SkillChip, Status } from '../components.jsx'
-import { capitalise, displayName, fitLabel, planCounts } from '../format.js'
+import { capitalise, displayName, fitLabel, planCounts, shownFit } from '../format.js'
 import { Icon } from '../icons.jsx'
 
 // The skills screen advises three or more skills for better results.
@@ -201,7 +201,7 @@ export default function DashboardScreen({ user }) {
               <i className="tile-icon"><Icon name="graph" /></i>
               <h2 id="match-label">Your top match<i className="spark" aria-hidden="true" /></h2>
             </div>
-            {top && <Pill tone={top.fit === 'strong' ? 'match' : 'neutral'}>{fitLabel(top.fit)}</Pill>}
+            {top && <Pill tone={shownFit(top) === 'strong' ? 'match' : 'neutral'}>{fitLabel(shownFit(top))}</Pill>}
           </div>
           {top ? (
             <>
@@ -257,7 +257,7 @@ export default function DashboardScreen({ user }) {
                       <span className="sub">{capitalise(r.domain)}</span>
                     </span>
                     <ScoreBar score={r.score} />
-                    <Pill tone={r.fit === 'strong' ? 'match' : 'neutral'}>{fitLabel(r.fit)}</Pill>
+                    <Pill tone={shownFit(r) === 'strong' ? 'match' : 'neutral'}>{fitLabel(shownFit(r))}</Pill>
                   </a>
                 </li>
               ))}

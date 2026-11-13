@@ -126,15 +126,38 @@ def name_owners(kg, hidden_names=(), candidate=False):
     return {name: tuple(sorted(nodes)) for name, nodes in owners.items() if name not in hidden}
 
 
+# Generic terms with several distinct readings in computing careers (the annotation rubric's own
+# examples: "networking", "design", "testing", "web pages", plus general usage). Written without
+# looking at validation or test items. A reading of exactly one of these, ignoring case,
+# punctuation and filler words, can be flagged `ambiguous_term` (student-ready release; off by
+# default because it changes what counts as uncertain).
+AMBIGUOUS_TERMS = frozenset((
+    'networking', 'networks', 'network', 'design', 'designing', 'testing', 'tests', 'analysis', 'analytics',
+    'security', 'support', 'web', 'websites', 'web pages', 'webpages', 'web design', 'cloud', 'data', 'systems',
+    'system', 'development', 'computers', 'computer', 'it', 'ict', 'technology', 'software', 'apps',
+    'applications', 'programming', 'coding', 'databases', 'database', 'hacking', 'admin', 'administration',
+    'research', 'management', 'modelling', 'modeling', 'reports', 'reporting', 'dashboards', 'automation',
+    'scripting', 'maintenance', 'documentation', 'configuration', 'installation', 'servers', 'hardware',
+    'internet', 'online', 'digital',
+))
+
+
+def is_ambiguous_term(query):
+    words = [w.strip('.,;:!?()') for w in query.casefold().split()]
+    words = [w for w in words if w and w not in FILLER_WORDS]
+    return ' '.join(words) in AMBIGUOUS_TERMS
+
+
 class SkillMatcher:
     def __init__(self, kg, hidden_names=(), margin_threshold=MARGIN_THRESHOLD, uncertain_similarity=UNCERTAIN_SIMILARITY,
-                 candidate=False):
+                 candidate=False, ambiguous_terms=False):
         """`hidden_names` are left out of the index (ignoring case), so evaluation
         can test whether a skill is still recognised from its other names. `candidate` turns on the
         unapproved mapping candidate (release P3: extra aliases, filler words dropped); it is off in
         production because it changes rankings."""
         self.kg = kg
         self.candidate = candidate
+        self.ambiguous_terms = ambiguous_terms
         labels = matcher_names(kg, candidate)
         hidden = {name.casefold() for name in hidden_names}
         labels = labels[~labels['label'].str.casefold().isin(hidden)]
@@ -179,11 +202,11 @@ class SkillMatcher:
                 matched_text=self.texts[best],
                 similarity=similarity,
                 low_confidence=similarity < LOW_CONFIDENCE_THRESHOLD,
-                **self._reading(row, best, node_id, similarity),
+                **self._reading(row, best, node_id, similarity, query),
             ))
         return matches
 
-    def _reading(self, row, best, node_id, similarity):
+    def _reading(self, row, best, node_id, similarity, query=''):
         """Runner-up, margin, shared owners and uncertainty for one selection; the selection itself
         (argmax above) is not affected."""
         others = np.where(self._node_array != node_id, row, -np.inf)
@@ -200,6 +223,8 @@ class SkillMatcher:
         reasons = []
         if similarity < self.uncertain_similarity:
             reasons.append('below_threshold')
+        if self.ambiguous_terms and is_ambiguous_term(query):
+            reasons.append('ambiguous_term')
         if self.margin_threshold is not None and margin is not None and margin < self.margin_threshold:
             reasons.append('close_runner_up')
         if shared:

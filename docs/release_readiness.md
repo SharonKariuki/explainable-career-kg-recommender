@@ -2,7 +2,36 @@
 
 **Branch:** `feat/release-readiness`, from `main` at `9403ea0`. It has local commits only.
 
-**Status: AjiraGuide is not ready for student-facing release.** §4 lists the gates that are still open. Nothing here changes the approved Measured Matching (M7) protocol, its targets or its locked test results. The M7 test splits were read once, and they are not used again.
+**Status (updated 13 November 2026, see §0): safe for a controlled, supervised pilot; not ready for general student release.** §4 lists the gates that are still open. Nothing here changes the approved Measured Matching (M7) protocol, its targets or its locked test results. The M7 test splits were read once, and they are not used again.
+
+## 0. Student-ready round (13 November 2026)
+
+| # | Work | Evidence | Result |
+|---|---|---|---|
+| 1 | Reproducible image (#173) | The cache is built with the gate's arithmetic, `wheel` is removed, and the build fails on any package difference (PR #175). Drift on `main` (43422358521): **no drift**, 77 packages as locked, 0 ranking differences. The dry run fails as required | **Pass**, #173 closed. The cache-hash anomaly is tracked in #176 |
+| 2 | Ambiguous skill names | An `ambiguous_term` flag for generic one-word skills (off by default). Validation: M7 0.158 → 0.143; ambiguous recall 4/31 → 14/31; M6 on C\* 0.140 → 0.158 | **Needs your decision.** Fewer confident errors, but slightly more false flags, and it changes the approved flag definition |
+| 3 | Evidence safety rule (`recommender/presentation.py`, **on**) | A strong or good label needs at least 2 confident, specific skills (required by 10 careers or fewer). Validation: exposure of human-insufficient profiles to a strong or good label **0.093 (U 0.142 ≤ 0.15): Pass**, down from about 0.70. Cost: 48% of confident labels on sufficient profiles are kept | **Done.** The API adds `fit_shown` and `evidence_support`; `fit` and rankings are unchanged (snapshot `b0f2952e` with the same cache) |
+| 4 | Human label review | Guide, adjudication log, approval form (`docs/validation/`), and `pipeline.review_kit` | **Needs reviewers** |
+| 5 | Student study | Protocol, information sheet, consent form, session script, results template (`docs/validation/`) | **Needs ethics approval and students** |
+| 6 | Browser journey | `tests/test_browser_journey.py` (Playwright, Chromium, desktop and 390-pixel mobile): sign-up, empty profile, invalid input, a thin profile shown as possible, a specific profile, the explanation, skills plan, history, an API error, and account deletion with refused sign-in | **Pass**, with no uncaught page errors |
+| 7 | Checks | Backend 449 passed, 5 xfailed (browser tests included). Frontend 57 tests, oxlint clean, Vite build. Invariance gate and drift on `main` pass | **Pass** |
+
+### Release checklist
+
+| Gate | Status |
+|---|---|
+| Ranking reproducible in production (AC1, #173) | **Pass** |
+| Strong or good labels limited to adequate evidence (S1) | **Pass** on validation |
+| Explanations: fidelity, disclosure, readability (AC13) | Pass (M7); new wording passes fidelity |
+| Browser journey, desktop and mobile | **Pass** |
+| False uncertainty within target (AC4) | **Inconclusive** (M7) |
+| Ambiguous-term flag adopted | Awaiting decision |
+| Evidence sufficiency as a classifier (AC9, AC10) | **Not met**; replaced for students by the S1 safety rule |
+| Gold labels reviewed by humans (Q2) | **Open:** needs reviewers |
+| Student study criteria | **Open:** needs ethics approval and students |
+| Confidently incorrect mappings | About 14–16% of validation items; a known limitation |
+
+**Verdict.** AjiraGuide is safe for a **controlled pilot**: supervised, with consenting students, clearly labelled as guidance, and run alongside the study. It is **not ready for general student release** until human label review and the student study pass their pre-registered criteria.
 
 ## 1. Work done, in priority order
 

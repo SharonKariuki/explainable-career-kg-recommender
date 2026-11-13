@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { getHistory, getHistoryRun } from '../api.js'
 import { Disclosure, EmptyState, PageHeader, Pill, Status } from '../components.jsx'
-import { capitalise, movement, when } from '../format.js'
+import { capitalise, movement, when, shownFit } from '../format.js'
 import { Icon } from '../icons.jsx'
 
 const BACK = { href: '#/history', label: 'All snapshots' }
@@ -48,7 +48,7 @@ export function RunDetail({ run }) {
                 <span className="num rank">#{r.rank}</span>
                 <span className="grow">
                   <a href={`#/careers/${r.career_code}`}><strong>{r.title}</strong></a>
-                  <span className="muted small block">{capitalise(r.domain)} · {capitalise(r.fit)} match · score {r.score.toFixed(2)}</span>
+                  <span className="muted small block">{capitalise(r.domain)} · {capitalise(shownFit(r))} match · score {r.score.toFixed(2)}</span>
                 </span>
                 {move && <Pill tone={move.tone}>{move.label}</Pill>}
               </div>
