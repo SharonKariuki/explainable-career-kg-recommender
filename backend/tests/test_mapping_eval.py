@@ -14,8 +14,9 @@ def item(id, label, acceptable, split='development', category='paraphrase', **ex
 
 
 def reading(node, sim=0.9, low=False, runner_up='Z', margin=0.2, reasons=None):
+    reasons = reasons if reasons is not None else (['below_threshold'] if low else [])
     return {'node_id': node, 'similarity': sim, 'low_confidence': low, 'runner_up_node_id': runner_up,
-            'margin': margin, 'reasons': reasons if reasons is not None else (['below_threshold'] if low else [])}
+            'margin': margin, 'reasons': reasons, 'uncertain': bool(reasons)}
 
 
 # Hand-built split; every expected value below is worked out by hand.
@@ -67,9 +68,16 @@ def test_metric_arithmetic_on_a_hand_built_split():
     assert counts['items'] == 9 and counts['wrong (W)'] == 2
 
 
-def test_default_flag_is_todays_low_confidence():
-    metrics, counts, _ = me.evaluate(ITEMS, READINGS)
-    assert counts['justified shared-name warnings'] == 0                  # shared_name is not a flag before C2
+def test_default_flag_is_the_matchers_uncertainty():
+    metrics, counts, _ = me.evaluate(ITEMS, READINGS)                      # default: reading['uncertain'] (#158)
+    assert counts['justified shared-name warnings'] == 1                  # s1's shared-name warning is justified
+    assert p(metrics, 'M6 false uncertainty (all, C)') == round(2 / 3, 4)
+    assert p(metrics, 'M6 false uncertainty (gate, C*)') == 0.5
+
+
+def test_current_behaviour_flags_only_low_confidence():
+    metrics, counts, _ = me.evaluate(ITEMS, READINGS, flagged=me.current_flagged)
+    assert counts['justified shared-name warnings'] == 0                  # shared_name was not a flag before #158
     assert p(metrics, 'M6 false uncertainty (all, C)') == round(1 / 3, 4)
     assert metrics['M7 confidently incorrect (primary)'].p == metrics['M7 current behaviour (primary)'].p
 
@@ -131,9 +139,9 @@ def engine():
 
 
 def test_readings_report_runner_up_margin_and_alias_owners(engine):
-    owners = me.name_owners(engine.kg)
+    owners = engine.matcher.owners
     assert len(owners['linear algebra']) == 2 and len(owners['cypress']) == 2   # every owner of an alias target
-    found = {r['query']: r for r in me.readings(engine.matcher, ['routing', 'Linear algebra', 'Python'], owners)}
+    found = {r['query']: r for r in me.readings(engine.matcher, ['routing', 'Linear algebra', 'Python'])}
     production = {m.query: m.node_id for m in engine.matcher.match(['routing', 'Linear algebra', 'Python'])}
     for q, r in found.items():
         assert r['node_id'] == production[q]                        # selection is the production matcher's

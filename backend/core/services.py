@@ -27,11 +27,25 @@ def rank(skills, top_k=None, background=''):
 
 
 def match_summary(match):
+    """How one declared skill was read. The first four keys are the original contract; the rest
+    (Measured Matching, #158) are additive diagnostics and do not affect the ranking."""
+    m = match
+    runner_up = None if m.runner_up_node_id is None else {
+        'skill_id': m.runner_up_node_id, 'skill': m.runner_up_label,
+        'matched_text': m.runner_up_text, 'similarity': m.runner_up_similarity,
+    }
     return {
-        'query': match.query,
-        'skill': match.node_label,
-        'similarity': match.similarity,
-        'low_confidence': match.low_confidence,
+        'query': m.query,
+        'skill': m.node_label,
+        'similarity': m.similarity,
+        'low_confidence': m.low_confidence,
+        'skill_id': m.node_id,
+        'matched_text': m.matched_text,
+        'runner_up': runner_up,
+        'margin': m.margin,
+        'shared_with': list(m.shared_with),
+        'uncertain': m.uncertain,
+        'uncertainty_reasons': list(m.uncertainty_reasons),
     }
 
 

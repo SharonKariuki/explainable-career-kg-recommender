@@ -44,3 +44,72 @@ def test_repeats_keep_the_first_spelling_in_its_place():
 def test_every_matchable_label_belongs_to_a_graph_skill(matcher):
     assert len(matcher.texts) == len(matcher.node_ids) == len(matcher.matrix)
     assert all(matcher.kg.node(node)['kind'] == 'skill' for node in set(matcher.node_ids))
+
+
+# ---- How each skill was read (Measured Matching, #158) ----
+
+def read(matcher, query):
+    [m] = matcher.match([query])
+    return m
+
+
+def test_runner_up_is_a_different_node_and_margin_is_the_gap(matcher):
+    for m in matcher.match(['routing', 'TCP/IP', 'Python', 'Git', 'talking to customers']):
+        assert m.runner_up_node_id and m.runner_up_node_id != m.node_id
+        assert m.runner_up_label == matcher.kg.node(m.runner_up_node_id)['label']
+        assert m.margin >= 0 and m.margin == pytest.approx(m.similarity - m.runner_up_similarity, abs=2e-4)
+
+
+@pytest.mark.parametrize('query, selected', [
+    ('AWK', None), ('CSS', None), ('css', None),                          # graph names owned by two nodes (any case)
+    ('Linear algebra', 'onet:2.A.1.e'), ('Calculus', 'onet:2.A.1.e'),     # aliases whose target name has two owners
+    ('Cypress', 'tool:Selenium'), ('Playwright', 'tool:Selenium'),
+])
+def test_shared_names_are_flagged_without_changing_the_selection(matcher, query, selected):
+    m = read(matcher, query)
+    assert 'shared_name' in m.uncertainty_reasons and m.uncertain
+    assert m.shared_with and m.node_id not in m.shared_with
+    assert set(m.shared_with) | {m.node_id} == set(matcher.owners[m.matched_text.casefold()])
+    if selected:
+        assert m.node_id == selected                      # the node chosen before #158
+
+
+def test_alias_collisions_keep_every_owner(matcher):
+    for alias in ('linear algebra', 'calculus', 'cypress', 'playwright'):
+        assert len(matcher.owners[alias]) == 2
+
+
+def test_a_confident_no_concept_input_is_reported_with_its_near_tie(matcher):
+    m = read(matcher, 'TCP/IP')            # the graph has no TCP/IP concept; ipconfig wins narrowly
+    assert m.node_label == 'ipconfig' and m.similarity >= LOW_CONFIDENCE_THRESHOLD and not m.low_confidence
+    assert m.runner_up_label == 'netstat' and m.margin < 0.02
+    assert 'close_runner_up' not in m.uncertainty_reasons          # the margin rule is off until C3 calibrates it
+    calibrated = SkillMatcher(matcher.kg, margin_threshold=0.03)
+    assert 'close_runner_up' in read(calibrated, 'TCP/IP').uncertainty_reasons
+
+
+def test_a_clear_wrong_winner_is_not_caught_by_the_margin_rule():
+    calibrated = SkillMatcher(get_graph(), margin_threshold=0.03)
+    m = read(calibrated, 'routing')        # Route wins by 0.05 over ICT networking hardware: a clear winner
+    assert m.node_label == 'Route' and m.margin > 0.03
+    assert not m.uncertain and m.uncertainty_reasons == ()
+
+
+def test_related_but_distinct_concepts_are_separate_and_confident(matcher):
+    python, pandas = matcher.match(['Python', 'pandas'])
+    assert python.node_id != pandas.node_id
+    assert not python.uncertain and not pandas.uncertain
+
+
+def test_a_weak_match_is_uncertain_below_threshold(matcher):
+    m = read(matcher, 'playing guitar')
+    assert m.low_confidence and m.uncertainty_reasons[0] == 'below_threshold' and m.uncertain
+
+
+def test_uncertainty_never_feeds_the_ranking():
+    from recommender.engine import RecommendationEngine
+    kg = get_graph()
+    skills = ['Git', 'Selenium', 'TCP/IP', 'routing', 'Linear algebra', 'Python']
+    plain = RecommendationEngine(kg, SkillMatcher(kg)).rank(skills, top_k=None)[1]
+    flagged = RecommendationEngine(kg, SkillMatcher(kg, margin_threshold=0.5)).rank(skills, top_k=None)[1]
+    assert [(r.career_id, r.score, r.components) for r in plain] == [(r.career_id, r.score, r.components) for r in flagged]

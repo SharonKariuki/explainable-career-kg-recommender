@@ -1,11 +1,11 @@
 """Skill-mapping evaluation against the gold mapping set (Measured Matching C1, #157).
 
 Measures whether each student phrasing was read as the right concept, separately from any
-career result. The production matcher selects the concept; this module only observes it:
-the runner-up (the best-scoring name of a different node), the margin to it, and the nodes
-that share the selected name are computed here, on the evaluation side, from the matcher's
-own index. Which readings count as flagged is a parameter. Until C2 adds uncertainty to the
-matcher, the default is today's behaviour: a reading is flagged when it is `low_confidence`.
+career result. The readings come from the production matcher, which since #158 reports the
+runner-up (the best-scoring name of a different node), the margin to it, the other nodes
+that own the matched name, and its uncertainty reasons. Which readings count as flagged is a
+parameter: by default the matcher's `uncertain`; `current_flagged` (low_confidence only) is
+the behaviour before Measured Matching, kept for comparison.
 
 Metrics (plan revision 3 R5, revision 4 C1, revision 6 C3), each a Kish-Wilson proportion
 with the item's `group` as cluster:
@@ -27,7 +27,6 @@ import json
 import sys
 from collections import defaultdict
 
-import numpy as np
 import pandas as pd
 
 from pipeline import DATA_DIR
@@ -106,56 +105,29 @@ def load_items(split, path=MAPPING_FILE, allow_unfrozen=False, node_ids=None):
     return [i for i in items if i['split'] == split]
 
 
-# ---- Readings (evaluation side; the production matcher is unchanged) ----
+# ---- Readings (from the production matcher) ----
 
-def name_owners(kg):
-    """casefold(name) -> sorted node ids owning it, keeping every owner of an alias target."""
-    from recommender.matching import graph_skill_names, skill_aliases
+def readings(matcher, queries):
+    """One reading per cleaned query, as the production matcher reports it: the selection, and
+    since #158 its runner-up, margin, shared owners and uncertainty reasons."""
+    return [{
+        'query': m.query, 'node_id': m.node_id, 'node_label': m.node_label, 'matched_text': m.matched_text,
+        'similarity': m.similarity, 'low_confidence': m.low_confidence,
+        'runner_up_node_id': m.runner_up_node_id, 'runner_up_text': m.runner_up_text,
+        'runner_up_similarity': m.runner_up_similarity, 'margin': m.margin,
+        'shared_with': list(m.shared_with), 'uncertain': m.uncertain, 'reasons': list(m.uncertainty_reasons),
+    } for m in matcher.match(queries)]
 
-    names = graph_skill_names(kg)
-    owners = defaultdict(set)
-    for node, label in zip(names['node_id'], names['label']):
-        owners[label.casefold()].add(node)
-    for alias, target in zip(*skill_aliases()[['alias', 'target']].T.values):
-        owners[alias.casefold()] |= owners.get(target.casefold(), set())
-    return {k: tuple(sorted(v)) for k, v in owners.items()}
 
-
-def readings(matcher, queries, owners=None):
-    """One reading per cleaned query: the matcher's selection plus runner-up, margin and shared owners.
-
-    The selection comes from `matcher.match`, exactly as in production. The runner-up is the
-    best-scoring index name of any other node, computed from the same scores.
-    """
-    from pipeline.embeddings import encode
-
-    matches = matcher.match(queries)
-    if not matches:
-        return []
-    vectors = encode([m.query for m in matches])
-    scores = vectors @ matcher.matrix.T
-    ids = np.array(matcher.node_ids)
-    out = []
-    for m, row in zip(matches, scores):
-        if ids[int(row.argmax())] != m.node_id:
-            raise AssertionError(f'evaluation-side argmax disagrees with the matcher for {m.query!r}')
-        other = np.where(ids != m.node_id, row, -np.inf)
-        j = int(other.argmax())
-        shared = [n for n in (owners or {}).get(m.matched_text.casefold(), ()) if n != m.node_id]
-        reasons = ['below_threshold'] if m.low_confidence else []
-        out.append({
-            'query': m.query, 'node_id': m.node_id, 'node_label': m.node_label, 'matched_text': m.matched_text,
-            'similarity': m.similarity, 'low_confidence': m.low_confidence,
-            'runner_up_node_id': str(ids[j]), 'runner_up_text': matcher.texts[j],
-            'runner_up_similarity': round(float(row[j]), 4),
-            'margin': round(m.similarity - float(row[j]), 4) + 0.0,   # + 0.0: an exact tie reads 0.0, not -0.0
-            'shared_with': shared, 'reasons': reasons,
-        })
-    return out
+def uncertain_flagged(reading):
+    """The flag every mapping metric uses: the matcher's `uncertain` (below_threshold,
+    close_runner_up once calibrated, shared_name)."""
+    return bool(reading['uncertain'])
 
 
 def current_flagged(reading):
-    """Today's behaviour, the default until C2: only low-confidence readings are flagged."""
+    """Behaviour before Measured Matching: only low-confidence readings were flagged. Kept for M7's
+    comparison with the current system."""
     return bool(reading['low_confidence'])
 
 
@@ -169,7 +141,7 @@ def _proportion(rows, positive, include):
     return kish_wilson(by_group)
 
 
-def evaluate(items, readings_by_input, flagged=current_flagged, delta=None):
+def evaluate(items, readings_by_input, flagged=uncertain_flagged, delta=None):
     """All mapping metrics for one split. `readings_by_input` maps an item's input to its reading."""
     rows = [(item, readings_by_input[item['input']]) for item in items]
     ok = lambda i, r: r['node_id'] in i['acceptable']
@@ -234,13 +206,14 @@ def main(argv=None):
     started = run_started(__spec__.name, argv if argv is not None else sys.argv[1:])
     engine = get_engine()
     items = load_items(args.split, allow_unfrozen=args.allow_unfrozen, node_ids=set(engine.kg.skills()))
-    found = {r['query']: r for r in readings(engine.matcher, sorted({i['input'] for i in items}), name_owners(engine.kg))}
+    found = {r['query']: r for r in readings(engine.matcher, sorted({i['input'] for i in items}))}
     metrics, counts, by_category = evaluate(items, found, delta=args.delta)
     write_csv(metrics_frame(metrics), folder, 'mapping_metrics.csv')
     write_csv(metrics_frame(by_category).rename(columns={'metric': 'category'}), folder, 'mapping_by_category.csv')
     write_csv(pd.DataFrame(found.values()), folder, 'mapping_readings.csv')
     write_manifest(folder, started, {f'mapping-v1-{args.split}': {'items': counts['items'], 'groups': counts['groups']}},
-                   {**configuration(None), 'flagged': 'low_confidence (current behaviour)', 'delta': args.delta})
+                   {**configuration(None), 'flagged': 'matcher uncertain',
+                    'margin_threshold': engine.matcher.margin_threshold, 'delta': args.delta})
     print(metrics_frame(metrics).to_string(index=False))
     print(json.dumps(counts, indent=1))
     return 0
