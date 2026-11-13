@@ -517,6 +517,16 @@ def cmd_check(args):
     return 0
 
 
+def package_inventory(baseline_packages, installed_packages):
+    """The installed distributions beside the baseline's, and how they differ by name and version."""
+    base = dict(p.split('==', 1) for p in baseline_packages)
+    here = dict(p.split('==', 1) for p in installed_packages)
+    return {'installed': sorted(installed_packages),
+            'only_installed': sorted(f'{n}=={v}' for n, v in here.items() if n not in base),
+            'only_baseline': sorted(f'{n}=={v}' for n, v in base.items() if n not in here),
+            'version_differs': sorted(f'{n}: {base[n]} -> {here[n]}' for n in here if n in base and base[n] != here[n])}
+
+
 def cmd_drift(args):
     state = approval_state(args.baseline)
     if state != 'approved':
@@ -539,6 +549,10 @@ def cmd_drift(args):
               'resolved': {'base_image_digest': args.resolved_base_digest, 'model_revision': args.resolved_model_revision},
               'downloaded': {f: current_fp.get(f) for f in DRIFT_FIELDS},
               'differences': {f: v for f, v in environment_differences(baseline_fp, current_fp, DRIFT_FIELDS).items()},
+              # Diagnostics (#173): they explain a difference but do not decide the status.
+              'inventory': package_inventory(baseline_fp.get('packages') or [], current_fp.get('packages') or []),
+              'embedding_cache': {'baseline_sha256': baseline_fp.get('embedding_cache_sha256'),
+                                  'installed_sha256': current_fp.get('embedding_cache_sha256')},
               'ranking': {'categorical': [list(map(str, d)) for d in categorical],
                           'float_beyond_1e-9': [list(map(str, d)) for d in floats]}}
     if args.report:

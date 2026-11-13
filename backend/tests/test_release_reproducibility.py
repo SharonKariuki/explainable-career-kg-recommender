@@ -48,3 +48,16 @@ def test_the_lock_is_the_approved_baseline_lock():
 def test_the_application_loads_the_approved_model_revision():
     document = inv.read_baseline(BACKEND / 'tests' / 'snapshots')
     assert embeddings.MODEL_REVISION == document['fingerprint']['model_revision']
+
+
+def test_the_image_builds_its_embedding_cache_with_the_gates_portable_arithmetic():
+    """The cache baked at build time must equal the one the gate computes (#173); this step's
+    environment and pin_threads() must match the invariance workflow's settings."""
+    dockerfile = (BACKEND / 'Dockerfile').read_text(encoding='utf-8')
+    step = next(block for block in dockerfile.split('\nRUN ') if 'warm_up()' in block)
+    gate = (BACKEND.parent / '.github' / 'workflows' / 'invariance-pr.yml').read_text(encoding='utf-8')
+    for setting in ('OMP_NUM_THREADS=1', 'MKL_NUM_THREADS=1', 'OPENBLAS_NUM_THREADS=1',
+                    'ATEN_CPU_CAPABILITY=default', 'MKL_CBWR=COMPATIBLE', 'OPENBLAS_CORETYPE=Haswell'):
+        assert setting in step and setting in gate, setting
+    assert step.index('pin_threads()') < step.index('warm_up()')
+    assert 'ENV ATEN_CPU_CAPABILITY' not in dockerfile          # build step only; the server is unchanged
