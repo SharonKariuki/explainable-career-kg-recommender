@@ -8,12 +8,12 @@ import { fileURLToPath } from 'node:url'
 import { runnerImport } from 'vite'
 
 const root = fileURLToPath(new URL('..', import.meta.url))
-const { activeLink, landing, resolve } = (await runnerImport('./src/routes.js', { root, logLevel: 'error' })).module
+const { activeLink, landing, queryOf, resolve } = (await runnerImport('./src/routes.js', { root, logLevel: 'error' })).module
 
 test('every page has an address', () => {
   const pages = {
     '/home': 'home', '/matches': 'matches', '/profile': 'profile', '/careers': 'careers', '/careers/15-2051.00': 'career',
-    '/plan': 'plan', '/plan/15-2051.00': 'plan', '/saved': 'saved', '/history': 'history', '/history/7': 'history',
+    '/plan': 'plan', '/plan/15-2051.00': 'plan', '/history': 'history', '/history/7': 'history',
     '/settings': 'settings',
   }
   for (const [address, name] of Object.entries(pages)) assert.equal(resolve(address).name, name, address)
@@ -29,7 +29,7 @@ test('an address carries its parameters', () => {
 test('old addresses lead to the new ones', () => {
   const moved = {
     '': '/home', '/': '/home', '/dashboard': '/home', '/recommendations': '/matches', '/assessment': '/profile',
-    '/roadmap': '/plan', '/roadmap/15-2051.00': '/plan/15-2051.00',
+    '/roadmap': '/plan', '/roadmap/15-2051.00': '/plan/15-2051.00', '/saved': '/careers?show=saved',
   }
   for (const [old, target] of Object.entries(moved)) {
     assert.equal(resolve(old).redirect, target, old)
@@ -41,6 +41,8 @@ test('a query and a trailing slash do not change the page', () => {
   assert.equal(resolve('/careers?show=saved').name, 'careers')
   assert.equal(resolve('/matches/').name, 'matches')
   assert.equal(resolve('/roadmap?x=1').redirect, '/plan?x=1')
+  assert.deepEqual(queryOf('/careers?show=saved'), { show: 'saved' })
+  assert.deepEqual(queryOf('/careers'), {})
 })
 
 test('an unknown address is not found', () => {

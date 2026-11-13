@@ -55,6 +55,7 @@ test('the saved tile lists the latest three careers with their match', () => {
   assert.match(html, /Your match #1/)
   assert.match(html, /Not linked to your skills yet/)
   assert.doesNotMatch(html, /Career 4/)
+  assert.match(html, /href="#\/careers\?show=saved"/)
 })
 
 test('an empty saved tile points to the careers list', () => {

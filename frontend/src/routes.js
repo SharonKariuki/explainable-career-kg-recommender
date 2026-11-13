@@ -11,7 +11,6 @@ const ROUTES = [
   { name: 'careers', pattern: /^\/careers$/, title: 'Careers' },
   { name: 'career', pattern: new RegExp(`^/careers/${CODE}$`), params: ['code'], title: 'Career' },
   { name: 'plan', pattern: new RegExp(`^/plan(?:/${CODE})?$`), params: ['code'], title: 'My plan' },
-  { name: 'saved', pattern: /^\/saved$/, title: 'Saved careers' },
   { name: 'history', pattern: /^\/history(?:\/(\d+))?$/, params: ['runId'], title: 'History' },
   { name: 'settings', pattern: /^\/settings$/, title: 'Settings' },
 ]
@@ -23,11 +22,17 @@ const MOVED = [
   [/^\/recommendations$/, '/matches'],
   [/^\/assessment$/, '/profile'],
   [/^\/roadmap(\/[\w.-]+)?$/, '/plan$1'],
+  [/^\/saved$/, '/careers?show=saved'],
 ]
 
 // The path of a hash address, without its query: '/careers?show=saved' gives '/careers'.
 export function pathOf(address) {
   return address.split('?')[0].replace(/(.)\/$/, '$1')
+}
+
+// The query of a hash address as an object: '/careers?show=saved' gives { show: 'saved' }.
+export function queryOf(address) {
+  return Object.fromEntries(new URLSearchParams(address.split('?')[1] ?? ''))
 }
 
 // { name, params, title } for a page, { redirect } for a moved address, or
@@ -36,7 +41,7 @@ export function resolve(address) {
   const path = pathOf(address)
   const query = address.slice(address.split('?')[0].length)
   for (const [old, target] of MOVED) {
-    if (old.test(path)) return { redirect: path.replace(old, target) + query }
+    if (old.test(path)) return { redirect: path.replace(old, target) + (target.includes('?') ? '' : query) }
   }
   for (const route of ROUTES) {
     const found = path.match(route.pattern)

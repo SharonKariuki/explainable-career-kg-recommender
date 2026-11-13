@@ -4,7 +4,7 @@ import { SIGNED_OUT_EVENT, getToken, logout, me } from './api.js'
 import { Status, ThemeToggle, WakingNotice } from './components.jsx'
 import { Icon } from './icons.jsx'
 import { currentPath, navigate, redirect, useRoute } from './router.js'
-import { activeLink, landing, resolve } from './routes.js'
+import { activeLink, landing, queryOf, resolve } from './routes.js'
 import { useTheme } from './theme.js'
 import { TopBar } from './TopBar.jsx'
 import AuthScreen from './screens/AuthScreen.jsx'
@@ -16,7 +16,6 @@ import NotFoundScreen from './screens/NotFoundScreen.jsx'
 import ProfileScreen from './screens/ProfileScreen.jsx'
 import RecommendationsScreen from './screens/RecommendationsScreen.jsx'
 import RoadmapScreen from './screens/RoadmapScreen.jsx'
-import SavedScreen from './screens/SavedScreen.jsx'
 import SettingsScreen from './screens/SettingsScreen.jsx'
 
 // The top bar's pills (wide screens) and the floating tab bar (phones) share these.
@@ -30,7 +29,6 @@ const NAV = [
 // Reached from the avatar menu, at every width.
 const MORE_NAV = [
   { path: '/profile', label: 'My profile', icon: 'user' },
-  { path: '/saved', label: 'Saved', icon: 'bookmark' },
   { path: '/history', label: 'History', icon: 'matches' },
   { path: '/settings', label: 'Settings', icon: 'settings' },
 ]
@@ -126,10 +124,9 @@ function App() {
   else if (name === 'home') screen = <DashboardScreen user={user} />
   else if (name === 'profile') screen = <ProfileScreen onSaved={() => navigate('/matches')} />
   else if (name === 'matches') screen = <RecommendationsScreen />
-  else if (name === 'careers') screen = <CareersScreen />
+  else if (name === 'careers') screen = <CareersScreen show={queryOf(address).show} />
   else if (name === 'career') screen = <CareerDetailScreen key={params.code} code={params.code} />
   else if (name === 'plan') screen = <RoadmapScreen code={params.code} />
-  else if (name === 'saved') screen = <SavedScreen />
   else if (name === 'history') screen = <HistoryScreen key={params.runId ?? 'all'} runId={params.runId} />
   else if (name === 'settings') {
     screen = <SettingsScreen onAccount={setUser} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />

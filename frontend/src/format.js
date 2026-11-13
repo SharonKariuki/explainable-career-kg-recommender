@@ -57,3 +57,19 @@ export function planCounts(progress) {
   const done = progress.filter((p) => p.status === 'done').length
   return { learning: progress.length - done, done }
 }
+
+// The careers list's filter named in an address (?show=saved), or 'all' when it names none.
+export function showFilter(value) {
+  return ['matched', 'saved'].includes(value) ? value : 'all'
+}
+
+// Careers under the chosen filter and domain whose title or description contains the query.
+export function filterCareers(careers, show, domain, query) {
+  const q = query.trim().toLowerCase()
+  return careers.filter(
+    (c) =>
+      (show === 'all' || (show === 'matched' ? c.match : c.saved)) &&
+      (domain === 'all' || c.domain === domain) &&
+      (!q || c.title.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)),
+  )
+}

@@ -109,7 +109,7 @@ export function SavedTile({ saved }) {
           <h2 id="saved-label">Saved careers</h2>
           <p className="sub num">{saved.length ? `${plural(saved.length, 'career')} saved` : 'Careers you want to come back to'}</p>
         </div>
-        <a className="tile-tag" href="#/saved">See all</a>
+        <a className="tile-tag" href="#/careers?show=saved">See all</a>
       </div>
       {saved.length ? (
         <ul className="tile-list">
