@@ -1,0 +1,17 @@
+metric,n,clusters,positives,p,icc,design_effect,n_eff,low,high,reliability
+M1 exact concept accuracy,274,221,175,0.6387,0.4708,1.1821,231.7812,0.575,0.6978,reliable
+M2 top-two accuracy,274,221,199,0.7263,0.3384,1.1309,242.2841,0.6669,0.7786,reliable
+M3 ambiguous recall,31,23,13,0.4194,0.2581,1.1332,27.3556,0.2558,0.6027,counts only
+M3 share of flags on ambiguous,157,136,13,0.0828,1.0,1.2675,123.8643,0.0459,0.1448,reliable
+M4 no-concept recall,94,68,62,0.6596,0.0683,1.0378,90.5783,0.5573,0.7489,reliable
+M4 no-concept precision,157,136,62,0.3949,1.0,1.2675,123.8643,0.3132,0.4829,reliable
+M4 false-positive rate (C*),171,148,32,0.1871,0.2899,1.078,158.6276,0.1341,0.255,reliable
+M4 high-similarity no-concept,94,68,13,0.1383,0.8411,1.4653,64.1501,0.0742,0.2433,reliable
+M5 wrong-mapping recall,99,82,46,0.4646,0.0639,1.0219,96.8754,0.3686,0.5634,reliable
+"M6 false uncertainty (gate, C*)",171,148,32,0.1871,0.2899,1.078,158.6276,0.1341,0.255,reliable
+"M6 false uncertainty (all, C)",175,152,36,0.2057,0.3389,1.0891,160.6853,0.1504,0.2747,reliable
+M7 confidently incorrect (primary),399,310,87,0.218,0.0798,1.0356,385.2836,0.1797,0.2619,reliable
+M7 confidently incorrect (conditional),201,157,87,0.4328,0.079,1.0346,194.2829,0.3651,0.5031,reliable
+M7 current behaviour (primary),399,310,67,0.1679,0.3987,1.1778,338.7533,0.1319,0.2114,reliable
+M5 close-candidate recall,37,33,37,1.0,0.0,1.0,37.0,0.9059,1.0,exploratory
+M5 clear-winner recall,34,34,1,0.0294,0.0,1.0,34.0,0.0052,0.1492,exploratory

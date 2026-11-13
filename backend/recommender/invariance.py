@@ -229,20 +229,19 @@ def cpu_info():
 
 
 def model_snapshot_dir():
-    """The snapshot directory, and revision, that SentenceTransformer(MODEL_NAME) loads from.
+    """The snapshot directory, and revision, that the application's model loads from.
 
     The loaded model only reports its repository name, so the snapshot is found the way the
-    hub resolves it for the loader: through refs/main in the cache (`try_to_load_from_cache`).
-    The offline-provisioning check showed this is what selects the files: pointing refs/main
-    at a decoy snapshot changes the embeddings, and pointing it back restores them exactly.
+    hub resolves it for the loader (`try_to_load_from_cache`), at the revision the application
+    pins (pipeline.embeddings.MODEL_REVISION). Before the pin the loader followed refs/main.
     """
     from huggingface_hub import try_to_load_from_cache
-    from pipeline.embeddings import MODEL_NAME, get_model
+    from pipeline.embeddings import MODEL_NAME, MODEL_REVISION, get_model
 
     get_model()   # load first, exactly as the application does
-    resolved = try_to_load_from_cache(MODEL_NAME, 'config.json')
+    resolved = try_to_load_from_cache(MODEL_NAME, 'config.json', revision=MODEL_REVISION)
     if not isinstance(resolved, str):
-        raise RuntimeError(f'{MODEL_NAME} is not resolvable from the local cache (refs/main missing?)')
+        raise RuntimeError(f'{MODEL_NAME} at {MODEL_REVISION} is not in the local cache')
     path = Path(resolved).parent
     if path.parent.name != 'snapshots':
         raise RuntimeError(f'model resolved outside a Hugging Face snapshot directory: {path}')

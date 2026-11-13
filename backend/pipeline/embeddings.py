@@ -14,6 +14,9 @@ import pandas as pd
 from pipeline import DATA_DIR, PROCESSED_DIR
 
 MODEL_NAME = 'sentence-transformers/all-MiniLM-L6-v2'
+# The approved model revision (the ranking-invariance baseline's fingerprint). Pinned so a new
+# upload to the model's main branch cannot change embeddings, and so rankings, unannounced.
+MODEL_REVISION = '1110a243fdf4706b3f48f1d95db1a4f5529b4d41'
 CACHE_FILE = DATA_DIR / 'cache' / 'skill_embeddings.npz'
 
 
@@ -45,7 +48,7 @@ def skill_labels():
 def get_model():
     from sentence_transformers import SentenceTransformer
 
-    return SentenceTransformer(MODEL_NAME)
+    return SentenceTransformer(MODEL_NAME, revision=MODEL_REVISION)
 
 
 def encode(texts):

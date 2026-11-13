@@ -12,11 +12,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app/backend
 
-# CPU-only PyTorch first: the default wheel bundles GPU libraries the server
-# never uses and adds several GB to the image.
-COPY backend/requirements.txt .
-RUN pip install --no-cache-dir torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu \
-    && pip install --no-cache-dir -r requirements.txt
+# Every package, transitive ones included, comes from the approved lock (the same file and
+# command the ranking-invariance gate uses), so a rebuild cannot pick up newer versions that
+# change rankings. torch is the CPU-only wheel: the default one bundles unused GPU libraries.
+COPY backend/tests/snapshots/requirements_lock_v1.txt requirements.lock
+RUN pip install --no-cache-dir --no-deps -r requirements.lock \
+        --extra-index-url https://download.pytorch.org/whl/cpu
 
 COPY data/processed /app/data/processed
 COPY backend/ .

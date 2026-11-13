@@ -26,15 +26,23 @@ F_UNAMB = 0.15
 GRID = tuple(round(0.001 * k, 3) for k in range(0, 101))   # 0.000 .. 0.100
 
 
-def flagged_at(delta):
-    """The matcher's flag with close_runner_up set at δ, recomputed from a reading."""
+TAU_GRID = tuple(round(0.40 + 0.01 * k, 2) for k in range(0, 21))   # 0.40 .. 0.60 (release P1)
+
+
+def flagged_at(delta, tau=None):
+    """The matcher's flag with close_runner_up set at δ (and, when given, below_threshold at τ),
+    recomputed from a reading."""
     def flagged(r):
-        return bool(reasons_at(r, delta))
+        return bool(reasons_at(r, delta, tau))
     return flagged
 
 
-def reasons_at(r, delta):
-    reasons = [x for x in r['reasons'] if x != 'close_runner_up']
+def reasons_at(r, delta, tau=None):
+    """A reading's reasons with close_runner_up at δ; with τ, below_threshold is recomputed too."""
+    drop = {'close_runner_up'} | ({'below_threshold'} if tau is not None else set())
+    reasons = [x for x in r['reasons'] if x not in drop]
+    if tau is not None and r['similarity'] < tau:
+        reasons.insert(0, 'below_threshold')
     if delta and r['margin'] is not None and r['margin'] < delta:
         reasons.append('close_runner_up')
     return reasons
@@ -50,14 +58,14 @@ def clean_inputs(kg):
     return sorted(seen.values())
 
 
-def clean_false_uncertainty(clean, readings, delta, exclude_shared_only=True):
+def clean_false_uncertainty(clean, readings, delta, exclude_shared_only=True, tau=None):
     """M6-clean: share of correct clean readings that are flagged; each text is its own cluster."""
     units = {}
     for text, node in clean:
         r = readings[text]
         if r['node_id'] != node:
             continue
-        reasons = reasons_at(r, delta)
+        reasons = reasons_at(r, delta, tau)
         if exclude_shared_only and reasons == ['shared_name']:
             reasons = []
         units[text] = [bool(reasons)]
@@ -81,6 +89,30 @@ def curve(items, item_readings, clean, clean_readings, grid=GRID):
     return pd.DataFrame(rows)
 
 
+def joint_curve(items, item_readings, clean, clean_readings, taus=TAU_GRID, deltas=GRID[::5]):
+    """Release P1: the flag's similarity threshold τ and δ together, on development only."""
+    rows = []
+    for tau in taus:
+        for delta in deltas:
+            metrics, _, _ = me.evaluate(items, item_readings, flagged=flagged_at(delta, tau), delta=delta or None)
+            clean_excl = clean_false_uncertainty(clean, clean_readings, delta, tau=tau)
+            gate = metrics['M6 false uncertainty (gate, C*)']
+            rows.append({'tau': tau, 'delta': delta, 'F_clean': clean_excl.p, 'F_unamb': gate.p,
+                         'F_unamb_U': gate.high, 'M3': metrics['M3 ambiguous recall'].p,
+                         'M4': metrics['M4 no-concept recall'].p, 'M5': metrics['M5 wrong-mapping recall'].p,
+                         'M7 primary': metrics['M7 confidently incorrect (primary)'].p})
+    return pd.DataFrame(rows)
+
+
+def choose_joint(frame):
+    """Fixed before the run: among (τ, δ) meeting both targets, the lowest confidently-incorrect rate
+    (M7 primary); ties go to the larger τ (closer to the approved 0.60), then the smaller δ."""
+    ok = frame[(frame.F_clean <= F_CLEAN) & (frame.F_unamb <= F_UNAMB)]
+    if not len(ok):
+        return None
+    return ok.sort_values(['M7 primary', 'tau', 'delta'], ascending=[True, False, True]).iloc[0]
+
+
 def choose(frame):
     ok = frame[(frame.F_clean <= F_CLEAN) & (frame.F_unamb <= F_UNAMB)]
     return float(ok.delta.max()) if len(ok) else 0.0
@@ -92,6 +124,7 @@ def main(argv=None):
 
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--run', required=True)
+    parser.add_argument('--joint', action='store_true', help='also search the flag similarity threshold (release P1)')
     args = parser.parse_args(argv)
     folder = parse_run(__doc__.splitlines()[0], ['--run', args.run])
     started = run_started(__spec__.name, argv if argv is not None else sys.argv[1:])
@@ -100,6 +133,18 @@ def main(argv=None):
     item_readings = {r['query']: r for r in me.readings(engine.matcher, sorted({i['input'] for i in items}))}
     clean = clean_inputs(engine.kg)
     clean_readings = {r['query']: r for r in me.readings(engine.matcher, [t for t, _ in clean])}
+    if args.joint:
+        frame = joint_curve(items, item_readings, clean, clean_readings)
+        best = choose_joint(frame)
+        chosen = None if best is None else {'tau': float(best.tau), 'delta': float(best.delta)}
+        write_csv(frame.round(4), folder, 'tau_delta_grid.csv')
+        write_manifest(folder, started, {'mapping-v1-development': {'items': len(items)},
+                                         'synthetic-validation clean inputs': {'texts': len(clean)}},
+                       {**configuration(None), 'F_clean': F_CLEAN, 'F_unamb': F_UNAMB, 'chosen': chosen})
+        ok = frame[(frame.F_clean <= F_CLEAN) & (frame.F_unamb <= F_UNAMB)]
+        print(ok.sort_values('M7 primary').head(12).round(4).to_string(index=False))
+        print(json.dumps({'chosen': chosen, 'feasible settings': len(ok)}))
+        return 0
     frame = curve(items, item_readings, clean, clean_readings)
     chosen = choose(frame)
     write_csv(frame.round(4), folder, 'delta_curve.csv')

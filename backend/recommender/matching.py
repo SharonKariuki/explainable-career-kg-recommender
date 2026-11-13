@@ -34,11 +34,32 @@ LOW_CONFIDENCE_THRESHOLD = 0.60
 # C3 calibration (#159, recommender/calibration.py) found no margin that keeps false uncertainty
 # within both targets on the gold development split, so it stays off.
 MARGIN_THRESHOLD = None
+# Similarity under which a reading is flagged `below_threshold`. It equals the ranking's
+# LOW_CONFIDENCE_THRESHOLD, as Measured Matching revision 3 R5 defines the flag. A separate value
+# only affects the uncertainty flag, never the ranking; changing it needs approval (release P1).
+UNCERTAIN_SIMILARITY = LOW_CONFIDENCE_THRESHOLD
 ALIASES_FILE = Path(__file__).with_name('skill_aliases.csv')
 
 
-def skill_aliases(path=ALIASES_FILE):
-    return pd.read_csv(path, comment='#', dtype=str)
+CANDIDATE_ALIASES_FILE = Path(__file__).with_name('skill_aliases_candidate.csv')
+# Casual filler words a candidate matcher drops before encoding ("data analysis stuff").
+FILLER_WORDS = ('stuff', 'things', 'thing')
+
+
+def skill_aliases(path=ALIASES_FILE, candidate=False):
+    """The approved aliases; with `candidate`, also the unapproved candidate list (release P3)."""
+    aliases = pd.read_csv(path, comment='#', dtype=str)
+    if candidate:
+        extra = pd.read_csv(CANDIDATE_ALIASES_FILE, comment='#', dtype=str)
+        aliases = pd.concat([aliases, extra[~extra['alias'].str.casefold().isin(aliases['alias'].str.casefold())]],
+                            ignore_index=True)
+    return aliases
+
+
+def without_filler(text):
+    """'data analysis stuff' -> 'data analysis'; a text that is only filler is kept as it is."""
+    kept = [w for w in text.split() if w.casefold().strip('.,') not in FILLER_WORDS]
+    return ' '.join(kept) if kept else text
 
 
 @dataclass(frozen=True)
@@ -73,12 +94,12 @@ def graph_skill_names(kg):
     return labels.drop_duplicates(['node_id', 'label'])[['node_id', 'label']].reset_index(drop=True)
 
 
-def matcher_names(kg):
+def matcher_names(kg, candidate=False):
     """The graph's names plus skill_aliases.csv. Only the matcher uses the aliases:
     evaluation profiles are written from the graph's own names, so the sets do not change."""
     labels = graph_skill_names(kg)
     owner = labels.drop_duplicates('label').set_index('label')['node_id']
-    aliases = skill_aliases()
+    aliases = skill_aliases(candidate=True) if candidate else skill_aliases()
     unknown = sorted(set(aliases['target']) - set(owner.index))
     if unknown:
         raise ValueError(f'skill_aliases.csv names skills the graph does not have: {", ".join(unknown)}')
@@ -86,7 +107,7 @@ def matcher_names(kg):
     return pd.concat([labels, aliases]).drop_duplicates(['node_id', 'label']).reset_index(drop=True)
 
 
-def name_owners(kg, hidden_names=()):
+def name_owners(kg, hidden_names=(), candidate=False):
     """casefold(name) -> sorted ids of every node that owns the name.
 
     Built before any collapse: a graph name keeps all its owners, and an alias gets every
@@ -99,18 +120,22 @@ def name_owners(kg, hidden_names=()):
     names = graph_skill_names(kg)
     for node, label in zip(names['node_id'], names['label']):
         owners.setdefault(label.casefold(), set()).add(node)
-    aliases = skill_aliases()
+    aliases = skill_aliases(candidate=True) if candidate else skill_aliases()
     for alias, target in zip(aliases['alias'], aliases['target']):
         owners.setdefault(alias.casefold(), set()).update(owners.get(target.casefold(), set()))
     return {name: tuple(sorted(nodes)) for name, nodes in owners.items() if name not in hidden}
 
 
 class SkillMatcher:
-    def __init__(self, kg, hidden_names=(), margin_threshold=MARGIN_THRESHOLD):
+    def __init__(self, kg, hidden_names=(), margin_threshold=MARGIN_THRESHOLD, uncertain_similarity=UNCERTAIN_SIMILARITY,
+                 candidate=False):
         """`hidden_names` are left out of the index (ignoring case), so evaluation
-        can test whether a skill is still recognised from its other names."""
+        can test whether a skill is still recognised from its other names. `candidate` turns on the
+        unapproved mapping candidate (release P3: extra aliases, filler words dropped); it is off in
+        production because it changes rankings."""
         self.kg = kg
-        labels = matcher_names(kg)
+        self.candidate = candidate
+        labels = matcher_names(kg, candidate)
         hidden = {name.casefold() for name in hidden_names}
         labels = labels[~labels['label'].str.casefold().isin(hidden)]
         self.texts = labels['label'].tolist()
@@ -118,8 +143,9 @@ class SkillMatcher:
         self._node_array = np.array(self.node_ids)
         vectors = load_embeddings(self.texts)
         self.matrix = np.stack([vectors[text] for text in self.texts])
-        self.owners = name_owners(kg, hidden_names)
+        self.owners = name_owners(kg, hidden_names, candidate)
         self.margin_threshold = margin_threshold
+        self.uncertain_similarity = uncertain_similarity
 
     @staticmethod
     def clean(skills):
@@ -129,10 +155,14 @@ class SkillMatcher:
             distinct.setdefault(q.casefold(), q)
         return list(distinct.values())
 
+    def encode_queries(self, queries):
+        """Embeddings for cleaned queries: the text itself, or for the candidate without filler words."""
+        return encode([without_filler(q) for q in queries] if self.candidate else queries)
+
     def match(self, skills):
         """One SkillMatch per distinct non-empty skill, in the order given."""
         queries = self.clean(skills)
-        return self.match_encoded(queries, encode(queries)) if queries else []
+        return self.match_encoded(queries, self.encode_queries(queries)) if queries else []
 
     def match_encoded(self, queries, vectors):
         """Match already-cleaned queries whose embeddings the caller has computed."""
@@ -168,7 +198,7 @@ class SkillMatcher:
             margin = round(float(row[best]) - float(row[j]), 4) + 0.0   # + 0.0: an exact tie reads 0.0
         shared = tuple(n for n in self.owners.get(self.texts[best].casefold(), ()) if n != node_id)
         reasons = []
-        if similarity < LOW_CONFIDENCE_THRESHOLD:
+        if similarity < self.uncertain_similarity:
             reasons.append('below_threshold')
         if self.margin_threshold is not None and margin is not None and margin < self.margin_threshold:
             reasons.append('close_runner_up')

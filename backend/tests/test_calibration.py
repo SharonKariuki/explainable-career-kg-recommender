@@ -27,3 +27,24 @@ def test_choose_takes_the_largest_delta_meeting_both_targets():
                           'F_unamb': [0.05, 0.10, 0.14, 0.12]})
     assert cal.choose(frame) == 0.02
     assert cal.choose(frame.assign(F_clean=0.9)) == 0.0
+
+
+def test_tau_recomputes_below_threshold_and_keeps_other_reasons():
+    reading = {'node_id': 'A', 'margin': 0.5, 'reasons': ['below_threshold', 'shared_name'], 'similarity': 0.57}
+    assert cal.reasons_at(reading, 0.0) == ['below_threshold', 'shared_name']          # τ not given: as read
+    assert cal.reasons_at(reading, 0.0, tau=0.55) == ['shared_name']                  # 0.57 is not below 0.55
+    assert cal.reasons_at(reading, 0.0, tau=0.60) == ['below_threshold', 'shared_name']
+
+
+def test_choose_joint_minimises_confidently_incorrect_within_both_targets():
+    frame = pd.DataFrame({'tau': [0.6, 0.55, 0.5, 0.5], 'delta': [0.0, 0.01, 0.02, 0.0],
+                          'F_clean': [0.0, 0.01, 0.02, 0.09], 'F_unamb': [0.16, 0.12, 0.08, 0.05],
+                          'M7 primary': [0.10, 0.11, 0.12, 0.05]})
+    best = cal.choose_joint(frame)
+    assert (best.tau, best.delta) == (0.55, 0.01)        # the 0.05 row breaks F_clean; the first breaks F_unamb
+    assert cal.choose_joint(frame.assign(F_unamb=0.9)) is None
+
+
+def test_the_flag_threshold_defaults_to_the_ranking_threshold():
+    from recommender import matching
+    assert matching.UNCERTAIN_SIMILARITY == matching.LOW_CONFIDENCE_THRESHOLD
