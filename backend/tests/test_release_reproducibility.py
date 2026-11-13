@@ -61,3 +61,11 @@ def test_the_image_builds_its_embedding_cache_with_the_gates_portable_arithmetic
         assert setting in step and setting in gate, setting
     assert step.index('pin_threads()') < step.index('warm_up()')
     assert 'ENV ATEN_CPU_CAPABILITY' not in dockerfile          # build step only; the server is unchanged
+
+
+def test_the_image_removes_packages_the_lock_does_not_list_and_checks_its_inventory():
+    """The base image ships `wheel`, which the lock does not list (drift run 43417955162, #173)."""
+    dockerfile = (BACKEND / 'Dockerfile').read_text(encoding='utf-8')
+    assert 'pip uninstall --yes wheel' in dockerfile
+    assert 'installed packages differ from the approved lock' in dockerfile
+    assert dockerfile.index('pip uninstall --yes wheel') < dockerfile.index('warm_up()')

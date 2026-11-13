@@ -18,6 +18,15 @@ WORKDIR /app/backend
 COPY backend/tests/snapshots/requirements_lock_v1.txt requirements.lock
 RUN pip install --no-cache-dir --no-deps -r requirements.lock \
         --extra-index-url https://download.pytorch.org/whl/cpu
+# The base image also ships `wheel`, which the lock does not list (upstream-drift run
+# 43417955162, #173). Nothing installed needs it outside optional extras, so it is removed,
+# and the build stops if the installed packages are not exactly the approved lock.
+RUN pip uninstall --yes wheel \
+    && python -c "import sys; from importlib import metadata; \
+installed = sorted(f'{d.metadata[\"Name\"].lower()}=={d.version}' for d in metadata.distributions() if d.metadata['Name']); \
+locked = sorted(l.strip().lower() for l in open('requirements.lock') if l.strip()); \
+extra, missing = sorted(set(installed) - set(locked)), sorted(set(locked) - set(installed)); \
+sys.exit(f'installed packages differ from the approved lock: extra {extra}, missing {missing}' if extra or missing else 0)"
 
 COPY data/processed /app/data/processed
 COPY backend/ .
