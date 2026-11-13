@@ -9,6 +9,11 @@ class CoreConfig(AppConfig):
     name = 'core'
 
     def ready(self):
+        from django.db.models.signals import post_migrate
+
+        from core.roles import sync_roles
+        post_migrate.connect(sync_roles, sender=self)  # keep the admin roles as core/roles.py defines them
+
         # Load the recommender when the development server starts serving, not
         # for every manage.py command. runserver's autoreloader runs the
         # project twice; only the serving process has RUN_MAIN set.
