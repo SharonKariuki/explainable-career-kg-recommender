@@ -119,11 +119,11 @@ def declared_skills(user):
 
 
 def ranked_for(user, top_k=None):
-    """(matches, recommendations) for the user's saved skills and background."""
+    """(matches, recommendations, evidence assessment) for the user's saved skills and background."""
     skill_profile = SkillProfile.objects.filter(user=user).first()
     if skill_profile is None:
-        return services.rank([], top_k=top_k)
-    return services.rank(skill_profile.skills, top_k=top_k, background=skill_profile.background_text())
+        return services.rank_with_evidence([], top_k=top_k)
+    return services.rank_with_evidence(skill_profile.skills, top_k=top_k, background=skill_profile.background_text())
 
 
 @api_view(['GET'])
@@ -136,20 +136,21 @@ def recommendations(request):
         raise ValidationError({'top': 'Must be between 1 and 50.'})
 
     skills = declared_skills(request.user)
-    matches, ranked = ranked_for(request.user, top_k=top)
+    matches, ranked, assessment = ranked_for(request.user, top_k=top)
     return Response({
         'skills': skills,
         'matches': [services.match_summary(m) for m in matches],
         'recommendations': [services.recommendation_summary(r, i) for i, r in enumerate(ranked, 1)],
+        **assessment,
     })
 
 
 @api_view(['GET'])
 def recommendation_detail(request, career_code):
-    matches, ranked = ranked_for(request.user)
+    matches, ranked, assessment = ranked_for(request.user)
     for position, r in enumerate(ranked, 1):
         if services.career_code(r.career_id) == career_code:
-            return Response(services.recommendation_detail(r, position, matches))
+            return Response({**services.recommendation_detail(r, position, matches), **assessment})
     raise NotFound('That career is not among your recommendations.')
 
 
@@ -163,7 +164,7 @@ def match_info(recommendation, position):
 
 def ranking(user):
     """(matches, {career code: (position, recommendation)}) for the user's saved skills and background."""
-    matches, ranked = ranked_for(user)
+    matches, ranked, _ = ranked_for(user)
     return matches, {services.career_code(r.career_id): (i, r) for i, r in enumerate(ranked, 1)}
 
 

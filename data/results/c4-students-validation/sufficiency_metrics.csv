@@ -1,0 +1,17 @@
+metric,value,n,clusters,positives,p,icc,design_effect,n_eff,low,high,reliability
+borderline_profiles,13.0,,,,,,,,,,
+AC9 insufficient recall,,236.0,118.0,236.0,1.0,0.0,1.0,236.0,0.984,1.0,reliable
+AC10 false insufficient,,270.0,135.0,260.0,0.963,0.5871,1.5871,170.1262,0.9229,0.9826,reliable
+AC9 with borderline as insufficient,,262.0,131.0,259.0,0.9885,0.6649,1.6649,157.3622,0.9568,0.997,reliable
+AC10 with borderline as sufficient,,296.0,148.0,283.0,0.9561,0.5999,1.5999,185.0126,0.9161,0.9775,reliable
+subgroup I1,,74.0,37.0,74.0,1.0,0.0,1.0,74.0,0.9507,1.0,reliable
+subgroup I2,,64.0,32.0,64.0,1.0,0.0,1.0,64.0,0.9434,1.0,reliable
+subgroup I3,,52.0,26.0,52.0,1.0,0.0,1.0,52.0,0.9312,1.0,exploratory
+subgroup I4,,56.0,28.0,56.0,1.0,0.0,1.0,56.0,0.9358,1.0,exploratory
+subgroup I5,,64.0,32.0,64.0,1.0,0.0,1.0,64.0,0.9434,1.0,reliable
+"subgroup B1 (borderline, share flagged)",,24.0,12.0,21.0,0.875,0.6452,1.6452,14.5882,0.6268,0.9669,counts only
+"subgroup mixed family, human sufficient (false insufficient)",,30.0,15.0,29.0,0.9667,0.0,1.0,30.0,0.8333,0.9941,exploratory
+M8a contamination,,532.0,266.0,19.0,0.0357,0.2922,1.2922,411.71,0.0217,0.0584,reliable
+M8b decision flips,,532.0,266.0,2.0,0.0038,0.0,1.0,532.0,0.001,0.0136,reliable
+M8c wrong but meaningful (count),19.0,,,,,,,,,,
+profiles without any relevant career (not in career metrics),36.0,,,,,,,,,,

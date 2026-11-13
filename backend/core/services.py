@@ -7,6 +7,7 @@ that, ranking a profile takes well under a second.
 
 from dataclasses import asdict
 
+from recommender import evidence
 from recommender.engine import DEFAULT_PARAMS, get_engine
 from recommender.explanation import ExplanationGenerator, fit_level, requirement_level, requirement_of
 from recommender.skills_gap import get_skills_gap
@@ -24,6 +25,15 @@ def career_code(career_id):
 def rank(skills, top_k=None, background=''):
     """(matches, recommendations) for a list of declared skills and optional background text, best first."""
     return get_engine().rank(skills, top_k=top_k, background=background)
+
+
+def rank_with_evidence(skills, top_k=None, background=''):
+    """(matches, recommendations, assessment). The evidence is computed on the complete
+    ranking before it is cut to top_k, so it is the same for every top_k (#160)."""
+    engine = get_engine()
+    matches, ranked = engine.rank(skills, top_k=None, background=background)
+    assessment = evidence.assess(engine, matches, ranked)
+    return matches, (ranked[:top_k] if top_k else ranked), assessment
 
 
 def match_summary(match):
@@ -84,6 +94,17 @@ def with_requirement(item):
     return {**item, 'requirement': requirement_level(item['edge_weight'] if weight is None else weight)[1]}
 
 
+def contribution_detail(contribution, matches):
+    """A skill contribution as the detail endpoint shows it, with how its skill was read (#160)."""
+    reading = next((m for m in matches if m.query == contribution.query and m.node_id == contribution.skill_id), None)
+    return {
+        **with_requirement(asdict(contribution)),
+        'uncertain': bool(reading and reading.uncertain),
+        'uncertainty_reasons': list(reading.uncertainty_reasons) if reading else [],
+        'runner_up_skill': reading.runner_up_label if reading else None,
+    }
+
+
 def recommendation_detail(recommendation, rank_position, matches):
     r = recommendation
     explanation = ExplanationGenerator().explain(r)
@@ -98,7 +119,7 @@ def recommendation_detail(recommendation, rank_position, matches):
             'background': p.background_weight if r.components.background_similarity is not None else None,
         },
         'explanation': list(explanation.sentences),
-        'skill_contributions': [with_requirement(asdict(c)) for c in r.skill_contributions],
+        'skill_contributions': [contribution_detail(c, matches) for c in r.skill_contributions],
         'proximity_paths': [asdict(p) for p in r.proximity_paths],
         'skills_gap': [with_requirement(asdict(g)) for g in get_skills_gap().gaps(r, matches)],
     }
