@@ -395,6 +395,29 @@ No δ meets both. At δ = 0, F_unamb is already 0.1575, from `below_threshold` a
 
 `narrow_concept` stays off (Q4): Phase 1 has no detector for it.
 
+### Evidence sufficiency (#160)
+
+`recommender/evidence.py` implements the plan's rule, revision 4 §C6:
+
+- Meaningful concepts are confident readings with `concept_weight >= w_min`.
+- Support is counted within the best-supported career.
+- `insufficient` holds when that career has fewer than `G_min` supported concepts or less than `W_min` supported weight.
+
+`services.rank_with_evidence` computes the evidence on the full ranking before cutting to `top`. The recommendations and detail endpoints report `insufficient` and `evidence` additively; the ranking is unchanged.
+
+**Thresholds.** `python -m recommender.evidence_calibration --run NAME` searches only settings within the Q19 constraints, on the development split. It chose `w_min 1.5891, cap 3.2, W_min 3.5, G_min 2`, but **no setting met the targets on development**: every setting marks about 97% of human-sufficient profiles insufficient.
+
+The cause is structural. Under `w_min > ln(24)/2`, only rare skills that are core to their career count as meaningful. The specific skills real students list (Cisco IOS, Wireshark, pandas, CSS, Selenium) weigh 0.1 to 1.2.
+
+**Validation read** (`python -m recommender.student_report --run NAME --split validation`, `data/results/c4-students-validation`):
+
+| Gate | Result | Target | Outcome |
+|---|---|---|---|
+| AC9 insufficient recall | 1.000 (0.984 to 1.000) | L ≥ 0.80 | Pass |
+| AC10 false insufficient | 0.963 (0.923 to 0.983) | U ≤ 0.10 | **Fail** |
+
+Because AC10 fails, the explanation wording for insufficient profiles is off by default (`EXPLAIN_INSUFFICIENT_EVIDENCE`, #161). Revising the rule is a decision for after Phase 1.
+
 Since #158 the matcher itself reports, for every reading:
 
 - the runner-up (the best-scoring name of a different node);

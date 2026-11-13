@@ -72,7 +72,10 @@ def report(units, profiles):
     insufficient_of = lambda skills: cache[(lookup[tuple(skills)][0], tuple(skills))]['insufficient']
     ranked_of = lambda skills: cache[(lookup[tuple(skills)][0], tuple(skills))]['ranked']
 
-    rows = se.career_rows(profiles, ranked_of)
+    # Career metrics need at least one relevant career; profiles graded 0 everywhere (soft skills only,
+    # for example) are left out of them and counted.
+    graded = [p for p in profiles if p['relevant']]
+    rows = se.career_rows(graded, ranked_of)
     careers = se.summarise_careers(rows)
     gates = se.sufficiency(profiles, insufficient_of)
     reasons = {code: subgroup(units, lambda p, c=code: p['sufficiency'] == 'insufficient' and c in p['reasons'])
@@ -83,6 +86,7 @@ def report(units, profiles):
     m8 = se.evidence_contamination([{'profile': u['profile']['id'], 'support': u['support'],
                                      'gold_wrong': u['gold_wrong'], 'insufficient': u['insufficient'],
                                      'insufficient_without_wrong': u['insufficient_without_wrong']} for u in units])
+    m8['profiles without any relevant career (not in career metrics)'] = len(profiles) - len(graded)
     return careers, se.wording_agreement(rows), gates, reasons, m8, rows
 
 
