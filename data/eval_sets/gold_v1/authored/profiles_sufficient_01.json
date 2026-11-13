@@ -1,0 +1,2390 @@
+[
+ {
+  "key": "ps-001",
+  "family": "frontend",
+  "wordings": [
+   [
+    "ReactJS components and hooks",
+    "javascript",
+    "Vue.js",
+    "consuming rest apis with fetch/axios",
+    "git",
+    "industrial attachment experience"
+   ],
+   [
+    "3-month attachment",
+    "web stuff",
+    "javaScript (ES6)",
+    "Git and GitHub",
+    "React.js",
+    "connecting to APIs"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-002",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Cascading Style Sheets, flexbox/grid",
+    "Bootstrap 5",
+    "VueJS",
+    "html and markup",
+    "industrial attachment experience",
+    "problem-solving"
+   ],
+   [
+    "Vue.js",
+    "bootstrap framework",
+    "problem solving",
+    "CSS3",
+    "internship experience",
+    "HTML5"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-003",
+  "family": "frontend",
+  "wordings": [
+   [
+    "npm and Vite tooling",
+    "HTML5",
+    "ReactJS components and hooks"
+   ],
+   [
+    "npm/webpack build tools",
+    "html and markup",
+    "react.js"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-004",
+  "family": "frontend",
+  "wordings": [
+   [
+    "vite, npm",
+    "nextjs server side rendering",
+    "responsive web design",
+    "TS typed JavaScript",
+    "communication skills",
+    "problem solving",
+    "Git and GitHub"
+   ],
+   [
+    "tools",
+    "version control (Git)",
+    "typescript",
+    "web stuff",
+    "solving problems",
+    "design",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-005",
+  "family": "frontend",
+  "wordings": [
+   [
+    "IA and site maps",
+    "colour palettes and type pairing",
+    "web accessibility (WCAG)",
+    "HTML (web pages)",
+    "Adobe Illustrator",
+    "manages time well",
+    "industrial attachment experience",
+    "self-learner"
+   ],
+   [
+    "internship experience",
+    "sitemaps and navigation structure",
+    "accessibility, ARIA labels",
+    "Illustrator vector graphics",
+    "HTML5",
+    "visual design principles (colour, type, layout)",
+    "time management",
+    "research skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-006",
+  "family": "frontend",
+  "wordings": [
+   [
+    "wireframing",
+    "UI design in Figma",
+    "testing designs with real users"
+   ],
+   [
+    "figma mockups",
+    "making wireframes (Balsamiq)",
+    "usability test sessions"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-007",
+  "family": "frontend",
+  "wordings": [
+   [
+    "TS typed JavaScript",
+    "react (frontend)",
+    "vue 3 composition api",
+    "manages time well",
+    "teamwork",
+    "bilingual (English/Kiswahili)"
+   ],
+   [
+    "fluent in English and Swahili",
+    "team player",
+    "Vue.js",
+    "time management",
+    "coding",
+    "web stuff"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-008",
+  "family": "frontend",
+  "wordings": [
+   [
+    "JavaScript (ES6)",
+    "HTML (web pages)",
+    "tailwindcss utility classes",
+    "3-month attachment"
+   ],
+   [
+    "coding",
+    "web stuff",
+    "styling",
+    "industrial attachment experience"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-009",
+  "family": "frontend",
+  "wordings": [
+   [
+    "TS typed JavaScript",
+    "Next.js",
+    "tailwindcss utility classes"
+   ],
+   [
+    "coding",
+    "next js (React framework)",
+    "styling"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-010",
+  "family": "frontend",
+  "wordings": [
+   [
+    "accessibility, ARIA labels",
+    "react (frontend)",
+    "tailwind css",
+    "meeting deadlines",
+    "team player"
+   ],
+   [
+    "web stuff",
+    "styling",
+    "manages time well",
+    "works well in teams",
+    "making websites accessible"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-011",
+  "family": "frontend",
+  "wordings": [
+   [
+    "html and markup",
+    "Figma",
+    "testing designs with real users",
+    "wireframes and low-fi sketches",
+    "UX research",
+    "can research and learn quickly",
+    "English and Kiswahili"
+   ],
+   [
+    "web stuff",
+    "UI design in Figma",
+    "usability test sessions",
+    "making wireframes (Balsamiq)",
+    "research",
+    "self-learner",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-012",
+  "family": "frontend",
+  "wordings": [
+   [
+    "wireframes and low-fi sketches",
+    "Cascading Style Sheets, flexbox/grid",
+    "prototype building",
+    "adobe Illustrator",
+    "adobe xd",
+    "fluent in English and Swahili"
+   ],
+   [
+    "wireframing",
+    "css styling",
+    "clickable prototypes",
+    "Illustrator vector graphics",
+    "XD for app screens",
+    "English and Kiswahili"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-013",
+  "family": "frontend",
+  "wordings": [
+   [
+    "accessibility, ARIA labels",
+    "mobile-first layouts",
+    "javaScript (ES6)",
+    "python"
+   ],
+   [
+    "web accessibility (wcag)",
+    "making sites work on phones and desktop",
+    "javascript",
+    "python programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-014",
+  "family": "frontend",
+  "wordings": [
+   [
+    "NextJS server side rendering",
+    "vite, npm",
+    "vue.js",
+    "React.js",
+    "internship experience"
+   ],
+   [
+    "next js (React framework)",
+    "npm/webpack build tools",
+    "vue 3 composition api",
+    "react (frontend)",
+    "industrial attachment experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-015",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Vue.js",
+    "css styling",
+    "redux toolkit"
+   ],
+   [
+    "VueJS",
+    "Cascading Style Sheets, flexbox/grid",
+    "Redux state management"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-016",
+  "family": "frontend",
+  "wordings": [
+   [
+    "css styling",
+    "typescript",
+    "accessibility, ARIA labels",
+    "mobile-first layouts",
+    "react.js",
+    "3-month attachment"
+   ],
+   [
+    "web stuff",
+    "coding",
+    "making websites accessible",
+    "internship experience",
+    "Cascading Style Sheets, flexbox/grid",
+    "design"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-017",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Cascading Style Sheets, flexbox/grid",
+    "adobe xd",
+    "wireframing",
+    "team player",
+    "fluent in English and Swahili"
+   ],
+   [
+    "CSS3",
+    "XD for app screens",
+    "making wireframes (Balsamiq)",
+    "works well in teams",
+    "bilingual (english/kiswahili)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-018",
+  "family": "frontend",
+  "wordings": [
+   [
+    "persona and user journey maps",
+    "html and markup",
+    "XD for app screens",
+    "good communicator"
+   ],
+   [
+    "user personas",
+    "HTML5",
+    "adobe xd",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-019",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Next.js",
+    "vue 3 composition api",
+    "JS for DOM scripting",
+    "web accessibility (WCAG)",
+    "3-month attachment"
+   ],
+   [
+    "javascript",
+    "industrial attachment experience",
+    "making websites accessible",
+    "Vue.js",
+    "next js (React framework)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-020",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Cascading Style Sheets, flexbox/grid",
+    "npm and Vite tooling",
+    "responsive web design",
+    "git"
+   ],
+   [
+    "CSS3",
+    "vite, npm",
+    "mobile-first layouts",
+    "Git and GitHub"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-021",
+  "family": "frontend",
+  "wordings": [
+   [
+    "redux state management",
+    "HTML5",
+    "good communicator"
+   ],
+   [
+    "state mgmt with Redux",
+    "html and markup",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-022",
+  "family": "frontend",
+  "wordings": [
+   [
+    "vue 3 composition api",
+    "JS for DOM scripting",
+    "works well in teams",
+    "Python",
+    "industrial attachment experience"
+   ],
+   [
+    "vueJS",
+    "JavaScript (ES6)",
+    "teamwork",
+    "python programming",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-023",
+  "family": "frontend",
+  "wordings": [
+   [
+    "css styling",
+    "UX research",
+    "user personas",
+    "works well in teams",
+    "presentation skills"
+   ],
+   [
+    "CSS3",
+    "user interviews, usability studies",
+    "journey mapping",
+    "team player",
+    "public speaking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-024",
+  "family": "frontend",
+  "wordings": [
+   [
+    "sitemaps and navigation structure",
+    "Figma",
+    "typography and colour theory",
+    "usability testing",
+    "illustrator for icons and logos",
+    "can research and learn quickly"
+   ],
+   [
+    "information architecture",
+    "figma mockups",
+    "colour palettes and type pairing",
+    "usability test sessions",
+    "Illustrator vector graphics",
+    "research skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-025",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Tailwind for styling",
+    "TS typed JavaScript",
+    "JavaScript (ES6)",
+    "solving problems"
+   ],
+   [
+    "tailwindcss utility classes",
+    "TypeScript",
+    "javascript",
+    "problem-solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-026",
+  "family": "frontend",
+  "wordings": [
+   [
+    "wordpress themes",
+    "mobile-first layouts",
+    "state mgmt with Redux",
+    "time management",
+    "Python (basic)"
+   ],
+   [
+    "redux toolkit",
+    "manages time well",
+    "web stuff",
+    "python programming",
+    "design"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-027",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Cascading Style Sheets, flexbox/grid",
+    "making sites work on phones and desktop",
+    "Vue.js",
+    "python programming"
+   ],
+   [
+    "web stuff",
+    "design",
+    "css styling",
+    "Python (basic)"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-028",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Vue.js",
+    "WordPress site building",
+    "consuming REST APIs with fetch/axios",
+    "Cascading Style Sheets, flexbox/grid",
+    "manages time well"
+   ],
+   [
+    "vue 3 composition api",
+    "meeting deadlines",
+    "axios and fetch for api calls",
+    "WP websites for small businesses",
+    "css styling"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / software developer (frontend)"
+ },
+ {
+  "key": "ps-029",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Adobe Illustrator",
+    "sitemaps and navigation structure",
+    "XD for app screens",
+    "design systems",
+    "presentation skills"
+   ],
+   [
+    "UI design system / style guide",
+    "adobe xd",
+    "presenting to clients",
+    "illustrator for icons and logos",
+    "information architecture"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-030",
+  "family": "frontend",
+  "wordings": [
+   [
+    "sitemaps and navigation structure",
+    "Adobe Illustrator",
+    "HTML (web pages)",
+    "clickable prototypes",
+    "user interviews, usability studies",
+    "works well in teams"
+   ],
+   [
+    "Illustrator vector graphics",
+    "teamwork",
+    "information architecture",
+    "user research and interviews",
+    "interactive prototyping",
+    "HTML5"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web and digital interface designer"
+ },
+ {
+  "key": "ps-031",
+  "family": "backend",
+  "wordings": [
+   [
+    "Node.js",
+    "express.js",
+    "mongodb and mongoose",
+    "graphql apis",
+    "TypeScript"
+   ],
+   [
+    "backend",
+    "expressjs REST endpoints",
+    "databases",
+    "graphql",
+    "TS typed JavaScript"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-032",
+  "family": "backend",
+  "wordings": [
+   [
+    "caching with Redis",
+    "Docker",
+    "Django",
+    "internship experience"
+   ],
+   [
+    "backend",
+    "devops",
+    "Django (Python web framework)",
+    "industrial attachment experience"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / programmer (Python backend)"
+ },
+ {
+  "key": "ps-033",
+  "family": "backend",
+  "wordings": [
+   [
+    "springboot",
+    "object-oriented programming in Java",
+    "C# programming",
+    "problem-solving",
+    "teamwork"
+   ],
+   [
+    "solving problems",
+    "team player",
+    "core Java",
+    "Spring Boot",
+    "c sharp"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / computer programmer (Java/.NET)"
+ },
+ {
+  "key": "ps-034",
+  "family": "backend",
+  "wordings": [
+   [
+    "M-Pesa Daraja API integration",
+    "JWT authentication",
+    "mySQL",
+    "git"
+   ],
+   [
+    "Mpesa API integration",
+    "jwt auth and role-based access",
+    "MySQL database admin",
+    "version control (Git)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / programmer (PHP)"
+ },
+ {
+  "key": "ps-035",
+  "family": "backend",
+  "wordings": [
+   [
+    "Node.js",
+    "solidity smart contracts",
+    "junit tests",
+    "Ethereum",
+    "self-learner",
+    "communication skills"
+   ],
+   [
+    "nodejs",
+    "ethereum dapps",
+    "writing smart contracts in Solidity",
+    "verbal and written communication",
+    "research skills",
+    "writing unit tests"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "blockchain engineer"
+ },
+ {
+  "key": "ps-036",
+  "family": "backend",
+  "wordings": [
+   [
+    "TypeScript",
+    "jwt auth and role-based access",
+    "solving problems"
+   ],
+   [
+    "TS typed JavaScript",
+    "JWT authentication",
+    "problem solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-037",
+  "family": "backend",
+  "wordings": [
+   [
+    "caching with Redis",
+    "Docker",
+    "token auth (JWT)",
+    "writing unit tests",
+    "sql basics",
+    "industrial attachment experience",
+    "teamwork"
+   ],
+   [
+    "redis",
+    "docker containers",
+    "JWT authentication",
+    "junit tests",
+    "SQL (basic queries)",
+    "internship experience",
+    "works well in teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / programmer (Python backend)"
+ },
+ {
+  "key": "ps-038",
+  "family": "backend",
+  "wordings": [
+   [
+    "core Java",
+    "mysql server",
+    "RESTful services",
+    ".NET Core and C#",
+    "verbal and written communication"
+   ],
+   [
+    "object-oriented programming in Java",
+    "mysql database admin",
+    "REST API design",
+    "ASP.NET Core",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / computer programmer (Java/.NET)"
+ },
+ {
+  "key": "ps-039",
+  "family": "backend",
+  "wordings": [
+   [
+    "cascading Style Sheets, flexbox/grid",
+    "HTML5",
+    "JWT authentication",
+    "php/mysql",
+    "sql basics"
+   ],
+   [
+    "CSS3",
+    "HTML (web pages)",
+    "jwt auth and role-based access",
+    "PHP backend dev",
+    "SQL (basic queries)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / programmer (PHP)"
+ },
+ {
+  "key": "ps-040",
+  "family": "backend",
+  "wordings": [
+   [
+    "building on Ethereum",
+    "JavaScript (ES6)",
+    "Web3.js/ethers.js",
+    "version control (Git)"
+   ],
+   [
+    "ethers.js wallet integration",
+    "Git and GitHub",
+    "ethereum",
+    "JS for DOM scripting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "blockchain engineer"
+ },
+ {
+  "key": "ps-041",
+  "family": "backend",
+  "wordings": [
+   [
+    "token auth (JWT)",
+    "NodeJS",
+    "linux basics",
+    "industrial attachment experience",
+    "works well in teams"
+   ],
+   [
+    "JWT authentication",
+    "node (server side JS)",
+    "Ubuntu",
+    "3-month attachment",
+    "teamwork"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-042",
+  "family": "backend",
+  "wordings": [
+   [
+    "jwt auth and role-based access",
+    "Flask",
+    "python programming"
+   ],
+   [
+    "token auth (JWT)",
+    "Python Flask microservices",
+    "Python"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / programmer (Python backend)"
+ },
+ {
+  "key": "ps-043",
+  "family": "backend",
+  "wordings": [
+   [
+    "object-oriented programming in Java",
+    "SQL Server",
+    "docker containers",
+    "JWT authentication",
+    "communication skills",
+    "Git and GitHub"
+   ],
+   [
+    "verbal and written communication",
+    "MS SQL Server",
+    "dockerizing apps",
+    "version control (Git)",
+    "token auth (JWT)",
+    "Java OOP"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / computer programmer (Java/.NET)"
+ },
+ {
+  "key": "ps-044",
+  "family": "backend",
+  "wordings": [
+   [
+    "Cascading Style Sheets, flexbox/grid",
+    "Mpesa API integration",
+    "HTML5",
+    "verbal and written communication"
+   ],
+   [
+    "communication skills",
+    "HTML (web pages)",
+    "M-Pesa Daraja API integration",
+    "CSS3"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / programmer (PHP)"
+ },
+ {
+  "key": "ps-045",
+  "family": "backend",
+  "wordings": [
+   [
+    "permissioned blockchain (Fabric)",
+    "javascript",
+    "ethers.js wallet integration",
+    "unit testing with Jest/JUnit",
+    "solidity smart contracts",
+    "version control (git)",
+    "python programming"
+   ],
+   [
+    "blockchain",
+    "JS for DOM scripting",
+    "web3js",
+    "testing",
+    "Solidity",
+    "git and GitHub",
+    "python"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "blockchain engineer"
+ },
+ {
+  "key": "ps-046",
+  "family": "backend",
+  "wordings": [
+   [
+    "MongoDB",
+    "jwt auth and role-based access",
+    "REST API design"
+   ],
+   [
+    "databases",
+    "security",
+    "APIs"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-047",
+  "family": "backend",
+  "wordings": [
+   [
+    "RESTful services",
+    "Django (Python web framework)",
+    "Django REST Framework",
+    "postgres",
+    "linux basics"
+   ],
+   [
+    "Django",
+    "PostgreSQL",
+    "DRF APIs",
+    "designing RESTful endpoints",
+    "ubuntu"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / programmer (Python backend)"
+ },
+ {
+  "key": "ps-048",
+  "family": "backend",
+  "wordings": [
+   [
+    "docker containers",
+    "SQL Server",
+    "building microservices",
+    "ASP.NET Core",
+    "C++"
+   ],
+   [
+    "backend",
+    ".NET Core and C#",
+    "C/C++",
+    "databases",
+    "devops"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / computer programmer (Java/.NET)"
+ },
+ {
+  "key": "ps-049",
+  "family": "backend",
+  "wordings": [
+   [
+    "JS for DOM scripting",
+    "CSS3",
+    "Daraja API (STK push)",
+    "good communicator",
+    "problem-solving"
+   ],
+   [
+    "javascript",
+    "problem solving",
+    "verbal and written communication",
+    "mpesa api integration",
+    "css styling"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / programmer (PHP)"
+ },
+ {
+  "key": "ps-050",
+  "family": "backend",
+  "wordings": [
+   [
+    "writing unit tests",
+    "Solidity",
+    "JS for DOM scripting",
+    "Ethereum",
+    "git and GitHub",
+    "python programming"
+   ],
+   [
+    "testing",
+    "Python",
+    "version control (Git)",
+    "coding",
+    "blockchain",
+    "ethereum dapps"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "blockchain engineer"
+ },
+ {
+  "key": "ps-051",
+  "family": "backend",
+  "wordings": [
+   [
+    "Docker",
+    "typescript",
+    "token auth (JWT)",
+    "JS for DOM scripting",
+    "Ubuntu",
+    "Git and GitHub"
+   ],
+   [
+    "docker containers",
+    "TS typed JavaScript",
+    "jwt auth and role-based access",
+    "JavaScript (ES6)",
+    "linux basics",
+    "version control (Git)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-052",
+  "family": "backend",
+  "wordings": [
+   [
+    "redis",
+    "writing unit tests",
+    "message queues (RabbitMQ/Kafka)",
+    "SQL",
+    "Git and GitHub",
+    "python programming"
+   ],
+   [
+    "python (basic)",
+    "backend",
+    "testing",
+    "async messaging with queues",
+    "version control (Git)",
+    "sql basics"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / programmer (Python backend)"
+ },
+ {
+  "key": "ps-053",
+  "family": "backend",
+  "wordings": [
+   [
+    "dockerizing apps",
+    "token auth (JWT)",
+    "mysql server",
+    "c sharp",
+    "team player"
+   ],
+   [
+    "docker containers",
+    "teamwork",
+    "security",
+    "coding",
+    "mySQL database admin"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / computer programmer (Java/.NET)"
+ },
+ {
+  "key": "ps-054",
+  "family": "backend",
+  "wordings": [
+   [
+    "HTML5",
+    "wordpress themes",
+    "M-Pesa Daraja API integration"
+   ],
+   [
+    "API stuff",
+    "html and markup",
+    "web stuff"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / programmer (PHP)"
+ },
+ {
+  "key": "ps-055",
+  "family": "backend",
+  "wordings": [
+   [
+    "junit tests",
+    "writing smart contracts in Solidity",
+    "Node.js",
+    "solving problems",
+    "Git and GitHub",
+    "teamwork"
+   ],
+   [
+    "works well in teams",
+    "writing unit tests",
+    "problem solving",
+    "Solidity",
+    "version control (Git)",
+    "NodeJS"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "blockchain engineer"
+ },
+ {
+  "key": "ps-056",
+  "family": "backend",
+  "wordings": [
+   [
+    "graphql apis",
+    "jwt auth and role-based access",
+    "TS typed JavaScript",
+    "sql basics",
+    "internship experience",
+    "version control (Git)"
+   ],
+   [
+    "APIs",
+    "git",
+    "security",
+    "coding",
+    "SQL (basic queries)",
+    "3-month attachment"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-057",
+  "family": "backend",
+  "wordings": [
+   [
+    "microservices",
+    "RabbitMQ message queues",
+    "Django (Python web framework)",
+    "postgres",
+    "JWT authentication",
+    "Linux",
+    "internship experience"
+   ],
+   [
+    "building microservices",
+    "async messaging with queues",
+    "Django",
+    "postgres admin",
+    "token auth (jwt)",
+    "linux basics",
+    "3-month attachment"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / programmer (Python backend)"
+ },
+ {
+  "key": "ps-058",
+  "family": "backend",
+  "wordings": [
+   [
+    "writing unit tests",
+    "mysql server",
+    "docker",
+    "building microservices",
+    ".NET Core and C#",
+    "SQL"
+   ],
+   [
+    "unit testing with Jest/JUnit",
+    "SQL (basic queries)",
+    "MySQL",
+    "ASP.NET Core",
+    "dockerizing apps",
+    "microservices"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer / computer programmer (Java/.NET)"
+ },
+ {
+  "key": "ps-059",
+  "family": "backend",
+  "wordings": [
+   [
+    "javaScript (ES6)",
+    "HTML (web pages)",
+    "CSS3"
+   ],
+   [
+    "Cascading Style Sheets, flexbox/grid",
+    "HTML5",
+    "JS for DOM scripting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer / programmer (PHP)"
+ },
+ {
+  "key": "ps-060",
+  "family": "backend",
+  "wordings": [
+   [
+    "building on Ethereum",
+    "hardhat testing for contracts",
+    "hyperledger"
+   ],
+   [
+    "ethereum dapps",
+    "hardhat/truffle",
+    "permissioned blockchain (Fabric)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "blockchain engineer"
+ },
+ {
+  "key": "ps-061",
+  "family": "data",
+  "wordings": [
+   [
+    "seaborn plots",
+    "kaggle projects",
+    "verbal and written communication",
+    "problem solving",
+    "SQL (basic queries)"
+   ],
+   [
+    "problem-solving",
+    "charts",
+    "communication skills",
+    "data stuff",
+    "SQL"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-062",
+  "family": "data",
+  "wordings": [
+   [
+    "cleaning messy datasets",
+    "time-series modelling",
+    "Pandas and NumPy",
+    "TF/Keras"
+   ],
+   [
+    "data cleaning and wrangling",
+    "forecasting with arima",
+    "data analysis",
+    "AI"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-063",
+  "family": "data",
+  "wordings": [
+   [
+    "NLTK / spaCy text processing",
+    "writing research papers (LaTeX)",
+    "algorithm design",
+    "teamwork",
+    "python (basic)",
+    "presentation skills"
+   ],
+   [
+    "reading and reviewing research papers",
+    "presenting to clients",
+    "algorithms and complexity analysis",
+    "natural language processing",
+    "Python",
+    "works well in teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer and information research scientist"
+ },
+ {
+  "key": "ps-064",
+  "family": "data",
+  "wordings": [
+   [
+    "Bayesian modelling",
+    "linear and logistic regression",
+    "spss",
+    "prob and stats theory",
+    "works well in teams",
+    "presenting to clients",
+    "Microsoft Office suite"
+   ],
+   [
+    "regression modelling",
+    "presentation skills",
+    "MS Office",
+    "teamwork",
+    "probability distributions",
+    "bayesian statistics",
+    "SPSS"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-065",
+  "family": "data",
+  "wordings": [
+   [
+    "stata",
+    "time series forecasting",
+    "Python"
+   ],
+   [
+    "Stata",
+    "forecasting with ARIMA",
+    "python programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-066",
+  "family": "data",
+  "wordings": [
+   [
+    "dashboard design",
+    "requirements for reports",
+    "SQL queries and joins",
+    "DAX measures",
+    "SQL (basic queries)"
+   ],
+   [
+    "KPI dashboards",
+    "SQL",
+    "translating business questions into reports",
+    "complex SQL queries",
+    "DAX and Power Query"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-067",
+  "family": "data",
+  "wordings": [
+   [
+    "SQL queries and joins",
+    "DAX formulas",
+    "Looker Studio",
+    "3-month attachment"
+   ],
+   [
+    "complex SQL queries",
+    "DAX and Power Query",
+    "Looker Studio reports",
+    "industrial attachment experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-068",
+  "family": "data",
+  "wordings": [
+   [
+    "Kaggle competitions",
+    "scikit-learn",
+    "cross validation and confusion matrix"
+   ],
+   [
+    "kaggle projects",
+    "sklearn models",
+    "model evaluation (cross-validation, ROC)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-069",
+  "family": "data",
+  "wordings": [
+   [
+    "data preprocessing",
+    "Jupyter Notebook",
+    "forecasting with ARIMA",
+    "scikit-learn"
+   ],
+   [
+    "cleaning messy datasets",
+    "jupyter notebooks",
+    "time-series modelling",
+    "machine learning with scikit-learn"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-070",
+  "family": "data",
+  "wordings": [
+   [
+    "computer vision",
+    "pytorch models",
+    "NLTK / spaCy text processing",
+    "supervised learning",
+    "presenting to clients",
+    "good communicator",
+    "version control (Git)"
+   ],
+   [
+    "image classification with CNNs",
+    "PyTorch",
+    "NLP (text classification)",
+    "machine learning",
+    "presentation skills",
+    "verbal and written communication",
+    "git and GitHub"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer and information research scientist"
+ },
+ {
+  "key": "ps-071",
+  "family": "data",
+  "wordings": [
+   [
+    "ANOVA and post-hoc tests",
+    "Stata for econometrics",
+    "statistics for health data",
+    "experimental design",
+    "bayesian inference",
+    "microsoft excel",
+    "good communicator"
+   ],
+   [
+    "Stata",
+    "verbal and written communication",
+    "biostat (clinical data)",
+    "Bayesian modelling",
+    "design of experiments",
+    "MS Excel",
+    "ANOVA"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-072",
+  "family": "data",
+  "wordings": [
+   [
+    "statistics for health data",
+    "designing household surveys",
+    "R (tidyverse)",
+    "linear and logistic regression",
+    "stata",
+    "good communicator",
+    "Python"
+   ],
+   [
+    "biostat (clinical data)",
+    "sample design and survey methods",
+    "R and RStudio",
+    "regression analysis",
+    "Stata",
+    "verbal and written communication",
+    "python programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-073",
+  "family": "data",
+  "wordings": [
+   [
+    "Excel pivot tables",
+    "dashboard design",
+    "DAX formulas",
+    "Excel"
+   ],
+   [
+    "Excel",
+    "reports",
+    "data analysis",
+    "microsoft excel"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-074",
+  "family": "data",
+  "wordings": [
+   [
+    "google data studio",
+    "dashboard design",
+    "SQL queries and joins"
+   ],
+   [
+    "looker studio",
+    "KPI dashboards",
+    "writing SQL (joins, aggregates)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-075",
+  "family": "data",
+  "wordings": [
+   [
+    "feature engineering",
+    "pandas dataframes",
+    "supervised learning",
+    "Kaggle competitions",
+    "can research and learn quickly",
+    "Python (basic)"
+   ],
+   [
+    "python programming",
+    "data analysis",
+    "pandas",
+    "machine learning",
+    "data stuff",
+    "self-learner"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-076",
+  "family": "data",
+  "wordings": [
+   [
+    "time-series modelling",
+    "model evaluation (cross-validation, ROC)",
+    "NLP (text classification)",
+    "tensorflow and keras",
+    "Python (basic)",
+    "problem-solving"
+   ],
+   [
+    "forecasting with ARIMA",
+    "machine learning",
+    "AI",
+    "tensorflow",
+    "python programming",
+    "problem solving"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-077",
+  "family": "data",
+  "wordings": [
+   [
+    "NLP (text classification)",
+    "RL (Q-learning, policy gradients)",
+    "machine learning"
+   ],
+   [
+    "natural language processing",
+    "reinforcement learning agents",
+    "ML models (classification, regression)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer and information research scientist"
+ },
+ {
+  "key": "ps-078",
+  "family": "data",
+  "wordings": [
+   [
+    "spss",
+    "regression modelling",
+    "good communicator"
+   ],
+   [
+    "SPSS",
+    "regression analysis",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-079",
+  "family": "data",
+  "wordings": [
+   [
+    "spss",
+    "DOE and A/B test design",
+    "regression modelling",
+    "Excel",
+    "teamwork"
+   ],
+   [
+    "experimental design",
+    "SPSS",
+    "regression analysis",
+    "MS Excel",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-080",
+  "family": "data",
+  "wordings": [
+   [
+    "PowerBI dashboards",
+    "advanced Excel (pivots, lookups)",
+    "KPI dashboards",
+    "gathering BI reporting requirements",
+    "presenting to clients"
+   ],
+   [
+    "Excel pivot tables",
+    "translating business questions into reports",
+    "Power BI",
+    "public speaking",
+    "dashboard design"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-081",
+  "family": "data",
+  "wordings": [
+   [
+    "google data studio",
+    "Tableau Public",
+    "writing SQL (joins, aggregates)",
+    "teamwork"
+   ],
+   [
+    "Looker Studio",
+    "databases",
+    "works well in teams",
+    "dashboards"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-082",
+  "family": "data",
+  "wordings": [
+   [
+    "TF/Keras",
+    "pandas",
+    "communication skills",
+    "excel"
+   ],
+   [
+    "tensorflow",
+    "Pandas and NumPy",
+    "good communicator",
+    "MS Excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-083",
+  "family": "data",
+  "wordings": [
+   [
+    "model evaluation (cross-validation, ROC)",
+    "jupyter notebooks",
+    "matplotlib and seaborn",
+    "python programming",
+    "solving problems"
+   ],
+   [
+    "evaluating ML models",
+    "problem-solving",
+    "data visualisation with matplotlib",
+    "Python",
+    "jupyter notebook"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-084",
+  "family": "data",
+  "wordings": [
+   [
+    "tensorflow and keras",
+    "neural networks (CNN, LSTM)",
+    "RL (Q-learning, policy gradients)",
+    "reading and reviewing research papers",
+    "algorithms and complexity analysis",
+    "team player"
+   ],
+   [
+    "AI",
+    "deep learning",
+    "reinforcement learning agents",
+    "research",
+    "computer science",
+    "works well in teams"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer and information research scientist"
+ },
+ {
+  "key": "ps-085",
+  "family": "data",
+  "wordings": [
+   [
+    "statistics for health data",
+    "time series forecasting",
+    "R and RStudio",
+    "experimental design"
+   ],
+   [
+    "statistics",
+    "R (tidyverse)",
+    "data analysis",
+    "design of experiments"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-086",
+  "family": "data",
+  "wordings": [
+   [
+    "design of experiments",
+    "ANOVA and post-hoc tests",
+    "hypothesis testing",
+    "sample design and survey methods",
+    "Python (basic)"
+   ],
+   [
+    "experimental design",
+    "analysis of variance",
+    "statistical hypothesis tests",
+    "survey sampling design",
+    "python"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician"
+ },
+ {
+  "key": "ps-087",
+  "family": "data",
+  "wordings": [
+   [
+    "google data studio",
+    "writing SQL (joins, aggregates)",
+    "performance reporting",
+    "DAX and Power Query",
+    "3-month attachment",
+    "works well in teams"
+   ],
+   [
+    "industrial attachment experience",
+    "SQL queries and joins",
+    "DAX formulas",
+    "team player",
+    "Looker Studio reports",
+    "KPI reporting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-088",
+  "family": "data",
+  "wordings": [
+   [
+    "Power BI",
+    "building dashboards",
+    "Tableau",
+    "business KPI reports",
+    "google data studio",
+    "sql basics",
+    "solving problems",
+    "3-month attachment"
+   ],
+   [
+    "Microsoft Power BI",
+    "reports",
+    "Tableau Public",
+    "KPI reporting",
+    "dashboards",
+    "SQL",
+    "problem-solving",
+    "industrial attachment experience"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "business intelligence analyst"
+ },
+ {
+  "key": "ps-089",
+  "family": "data",
+  "wordings": [
+   [
+    "seaborn plots",
+    "natural language processing",
+    "forecasting with ARIMA",
+    "research skills",
+    "team player"
+   ],
+   [
+    "data analysis",
+    "AI",
+    "self-learner",
+    "works well in teams",
+    "charts"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-090",
+  "family": "data",
+  "wordings": [
+   [
+    "data visualisation with matplotlib",
+    "Jupyter/Colab",
+    "evaluating ML models",
+    "TF/Keras",
+    "self-learner",
+    "microsoft excel",
+    "teamwork"
+   ],
+   [
+    "matplotlib and seaborn",
+    "Jupyter Notebook",
+    "cross validation and confusion matrix",
+    "TensorFlow",
+    "can research and learn quickly",
+    "MS Excel",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist"
+ },
+ {
+  "key": "ps-091",
+  "family": "networking",
+  "wordings": [
+   [
+    "cisco router config",
+    "Zabbix",
+    "MikroTik RouterOS",
+    "3-month attachment",
+    "manages time well"
+   ],
+   [
+    "configuring Cisco routers and switches",
+    "monitoring",
+    "networking",
+    "internship experience",
+    "meeting deadlines"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-092",
+  "family": "networking",
+  "wordings": [
+   [
+    "DNS, DHCP server config",
+    "VLSM subnetting",
+    "MikroTik RouterOS",
+    "WLAN and access point deployment",
+    "STP/RSTP"
+   ],
+   [
+    "setting up DHCP/DNS",
+    "subnetting (IPv4/VLSM)",
+    "Mikrotik hotspot and queue config",
+    "wireless LAN setup",
+    "Spanning Tree Protocol"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-093",
+  "family": "networking",
+  "wordings": [
+   [
+    "mikrotik hotspot and queue config",
+    "Linux system administration",
+    "backup & disaster recovery routines",
+    "team player"
+   ],
+   [
+    "backup and restore administration",
+    "teamwork",
+    "MikroTik RouterOS",
+    "linux sysadmin"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-094",
+  "family": "networking",
+  "wordings": [
+   [
+    "CCNA-level networking",
+    "monitoring with Nagios",
+    "DNS, DHCP server config",
+    "Packet Tracer labs",
+    "Microsoft Office suite",
+    "works well in teams"
+   ],
+   [
+    "CCNA coursework",
+    "cisco Packet Tracer",
+    "setting up DHCP/DNS",
+    "network monitoring (Zabbix/Nagios)",
+    "teamwork",
+    "MS Office"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-095",
+  "family": "networking",
+  "wordings": [
+   [
+    "DNS, DHCP server config",
+    "monitoring with Nagios",
+    "VLSM subnetting",
+    "team player"
+   ],
+   [
+    "DHCP and DNS services",
+    "network monitoring (Zabbix/Nagios)",
+    "subnetting (IPv4/VLSM)",
+    "teamwork"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-096",
+  "family": "networking",
+  "wordings": [
+   [
+    "DNS, DHCP server config",
+    "cisco router config",
+    "VMware ESXi",
+    "bash and cron automation",
+    "managing Windows Server",
+    "teamwork",
+    "linux",
+    "python programming"
+   ],
+   [
+    "networking",
+    "virtualization",
+    "windows server 2019",
+    "works well in teams",
+    "linux basics",
+    "scripting",
+    "Python (basic)",
+    "DHCP and DNS services"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-097",
+  "family": "networking",
+  "wordings": [
+   [
+    "Wi-Fi and LAN troubleshooting for users",
+    "network monitoring (Zabbix/Nagios)",
+    "MikroTik RouterOS",
+    "Spanning Tree Protocol",
+    "communication skills"
+   ],
+   [
+    "networking",
+    "monitoring",
+    "mikrotik routers",
+    "spanning-tree config",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-098",
+  "family": "networking",
+  "wordings": [
+   [
+    "spanning-tree config",
+    "Cisco Packet Tracer",
+    "DNS, DHCP server config"
+   ],
+   [
+    "packet tracer simulations",
+    "setting up DHCP/DNS",
+    "STP/RSTP"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-099",
+  "family": "networking",
+  "wordings": [
+   [
+    "windows server 2019",
+    "shell scripts",
+    "VLSM subnetting",
+    "AD and Group Policy"
+   ],
+   [
+    "Windows Server administration",
+    "IP addressing and subnetting",
+    "Active Directory",
+    "bash and cron automation"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-100",
+  "family": "networking",
+  "wordings": [
+   [
+    "Wireshark",
+    "fixing office wifi and network points",
+    "team player"
+   ],
+   [
+    "wireshark traffic capture",
+    "Wi-Fi and LAN troubleshooting for users",
+    "teamwork"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ }
+]

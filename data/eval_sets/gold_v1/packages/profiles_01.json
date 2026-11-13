@@ -1,0 +1,1937 @@
+[
+ {
+  "id": "s-0001",
+  "wordings": [
+   [
+    "mysql server",
+    "Oracle DB and PL/SQL",
+    "database backup and recovery",
+    "sql basics",
+    "Excel",
+    "problem-solving"
+   ],
+   [
+    "databases",
+    "oracle 19c",
+    "backups",
+    "SQL",
+    "microsoft excel",
+    "solving problems"
+   ]
+  ]
+ },
+ {
+  "id": "s-0002",
+  "wordings": [
+   [
+    "database",
+    "data",
+    "systems",
+    "IT"
+   ],
+   [
+    "databases",
+    "data stuff",
+    "system things",
+    "information tech"
+   ]
+  ]
+ },
+ {
+  "id": "s-0003",
+  "wordings": [
+   [
+    "computers",
+    "coding",
+    "Windows"
+   ],
+   [
+    "pc knowledge",
+    "programming",
+    "windows"
+   ]
+  ]
+ },
+ {
+  "id": "s-0004",
+  "wordings": [
+   [
+    "SQL Server",
+    "SSMS",
+    "reporting"
+   ],
+   [
+    "ms sql server",
+    "sql server mgt studio",
+    "making reports"
+   ]
+  ]
+ },
+ {
+  "id": "s-0005",
+  "wordings": [
+   [
+    "communication",
+    "teamwork",
+    "leadership",
+    "problem solving"
+   ],
+   [
+    "communicates well",
+    "team player",
+    "leader",
+    "problem solver"
+   ]
+  ]
+ },
+ {
+  "id": "s-0006",
+  "wordings": [
+   [
+    "hardening Linux/Windows servers",
+    "applied cryptography",
+    "endpoint protection tools",
+    "Linux",
+    "works well in teams"
+   ],
+   [
+    "system hardening",
+    "cryptography (AES, RSA)",
+    "endpoint security (EDR)",
+    "Ubuntu",
+    "teamwork"
+   ]
+  ]
+ },
+ {
+  "id": "s-0007",
+  "wordings": [
+   [
+    "prince2 foundation",
+    "MS Project",
+    "project budgeting",
+    "project timelines and gantt",
+    "Microsoft Office suite",
+    "MS Excel",
+    "teamwork"
+   ],
+   [
+    "word, excel, powerpoint",
+    "team player",
+    "budgeting",
+    "certifications",
+    "project tools",
+    "Excel",
+    "gantt scheduling"
+   ]
+  ]
+ },
+ {
+  "id": "s-0008",
+  "wordings": [
+   [
+    "creativity",
+    "problem solving"
+   ],
+   [
+    "creative",
+    "problem solver"
+   ]
+  ]
+ },
+ {
+  "id": "s-0009",
+  "wordings": [
+   [
+    "web",
+    "coding",
+    "interfaces",
+    "tech stuff"
+   ],
+   [
+    "websites",
+    "programming",
+    "user interface things",
+    "tech things"
+   ]
+  ]
+ },
+ {
+  "id": "s-0010",
+  "wordings": [
+   [
+    "digital skills",
+    "computers",
+    "online",
+    "IT"
+   ],
+   [
+    "digital stuff",
+    "pc skills",
+    "the internet",
+    "info tech"
+   ]
+  ]
+ },
+ {
+  "id": "s-0011",
+  "wordings": [
+   [
+    "cisco router config",
+    "Zabbix",
+    "MikroTik RouterOS",
+    "3-month attachment",
+    "manages time well"
+   ],
+   [
+    "configuring Cisco routers and switches",
+    "monitoring",
+    "networking",
+    "internship experience",
+    "meeting deadlines"
+   ]
+  ]
+ },
+ {
+  "id": "s-0012",
+  "wordings": [
+   [
+    "Android Studio",
+    "Kotlin",
+    "Firebase",
+    "teamwork"
+   ],
+   [
+    "android studio",
+    "kotlin",
+    "firebase",
+    "working in a team"
+   ]
+  ]
+ },
+ {
+  "id": "s-0013",
+  "wordings": [
+   [
+    "Apache Airflow",
+    "entity relationship diagrams",
+    "problem solving",
+    "SQL (basic queries)"
+   ],
+   [
+    "airflow dags",
+    "ERD design",
+    "solving problems",
+    "SQL"
+   ]
+  ]
+ },
+ {
+  "id": "s-0014",
+  "wordings": [
+   [
+    "stata",
+    "time series forecasting",
+    "Python"
+   ],
+   [
+    "Stata",
+    "forecasting with ARIMA",
+    "python programming"
+   ]
+  ]
+ },
+ {
+  "id": "s-0015",
+  "wordings": [
+   [
+    "css styling",
+    "typescript",
+    "accessibility, ARIA labels",
+    "mobile-first layouts",
+    "react.js",
+    "3-month attachment"
+   ],
+   [
+    "web stuff",
+    "coding",
+    "making websites accessible",
+    "internship experience",
+    "Cascading Style Sheets, flexbox/grid",
+    "design"
+   ]
+  ]
+ },
+ {
+  "id": "s-0016",
+  "wordings": [
+   [
+    "wireshark traffic capture",
+    "Cisco IOS",
+    "VLANs",
+    "network monitoring (Zabbix/Nagios)",
+    "fixing office wifi and network points",
+    "problem solving"
+   ],
+   [
+    "packet analysis with Wireshark",
+    "cisco router config",
+    "VLAN configuration on switches",
+    "Zabbix",
+    "Wi-Fi and LAN troubleshooting for users",
+    "problem-solving"
+   ]
+  ]
+ },
+ {
+  "id": "s-0017",
+  "wordings": [
+   [
+    "printer and scanner setup",
+    "SLA tracking",
+    "Windows 10/11 troubleshooting",
+    "O365 user setup",
+    "ITIL service management",
+    "solving problems"
+   ],
+   [
+    "Microsoft 365 administration",
+    "ITIL foundations",
+    "escalating tickets within SLA",
+    "configuring network printers",
+    "problem solving",
+    "fixing Windows errors"
+   ]
+  ]
+ },
+ {
+  "id": "s-0018",
+  "wordings": [
+   [
+    "VLANs"
+   ],
+   [
+    "vlan configuration"
+   ]
+  ]
+ },
+ {
+  "id": "s-0019",
+  "wordings": [
+   [
+    "Excel",
+    "Word",
+    "PowerPoint"
+   ],
+   [
+    "ms excel",
+    "ms word",
+    "ms powerpoint"
+   ]
+  ]
+ },
+ {
+  "id": "s-0020",
+  "wordings": [
+   [
+    "FTK Imager",
+    "Laravel",
+    "Informatica",
+    "Nmap"
+   ],
+   [
+    "FTK imager disk imaging",
+    "laravel php",
+    "informatica powercenter",
+    "nmap scanning"
+   ]
+  ]
+ },
+ {
+  "id": "s-0021",
+  "wordings": [
+   [
+    "firewall rules (pfSense/Fortinet)",
+    "Splunk SIEM",
+    "log analysis",
+    "communication skills",
+    "Python (basic)",
+    "linux basics"
+   ],
+   [
+    "analysis",
+    "verbal and written communication",
+    "pfSense firewall",
+    "Python",
+    "security stuff",
+    "linux"
+   ]
+  ]
+ },
+ {
+  "id": "s-0022",
+  "wordings": [
+   [
+    "Blockchain",
+    "cryptocurrency",
+    "Solidity"
+   ],
+   [
+    "blockchain tech",
+    "crypto",
+    "solidity"
+   ]
+  ]
+ },
+ {
+  "id": "s-0023",
+  "wordings": [
+   [
+    "css styling",
+    "UX research",
+    "user personas",
+    "works well in teams",
+    "presentation skills"
+   ],
+   [
+    "CSS3",
+    "user interviews, usability studies",
+    "journey mapping",
+    "team player",
+    "public speaking"
+   ]
+  ]
+ },
+ {
+  "id": "s-0024",
+  "wordings": [
+   [
+    "basic UI design in Figma",
+    "intro to wireframes and low-fi sketches",
+    "git",
+    "bilingual (English/Kiswahili)"
+   ],
+   [
+    "learning figma mockups",
+    "learning making wireframes (Balsamiq)",
+    "Git and GitHub",
+    "english and kiswahili"
+   ]
+  ]
+ },
+ {
+  "id": "s-0025",
+  "wordings": [
+   [
+    "fixing office wifi and network points",
+    "documentation and user manuals",
+    "Microsoft 365 administration",
+    "problem-solving"
+   ],
+   [
+    "troubleshooting connectivity",
+    "how-to guides for users",
+    "office 365 admin (mailboxes, licences)",
+    "solving problems"
+   ]
+  ]
+ },
+ {
+  "id": "s-0026",
+  "wordings": [
+   [
+    "malware analysis",
+    "autopsy",
+    "communication skills",
+    "problem solving"
+   ],
+   [
+    "forensics tools",
+    "solving problems",
+    "good communicator",
+    "cyber stuff"
+   ]
+  ]
+ },
+ {
+  "id": "s-0027",
+  "wordings": [
+   [
+    "ITIL service management",
+    "Wi-Fi and LAN troubleshooting for users",
+    "android and ios device support",
+    "problem solving",
+    "MS Office"
+   ],
+   [
+    "ITIL foundations",
+    "mobile device troubleshooting",
+    "word, excel, powerpoint",
+    "troubleshooting connectivity",
+    "solving problems"
+   ]
+  ]
+ },
+ {
+  "id": "s-0028",
+  "wordings": [
+   [
+    "regression modelling",
+    "beginner R and RStudio",
+    "basic prob and stats theory",
+    "Excel",
+    "manages time well"
+   ],
+   [
+    "statistics",
+    "data analysis",
+    "some probability theory",
+    "microsoft excel",
+    "time management"
+   ]
+  ]
+ },
+ {
+  "id": "s-0029",
+  "wordings": [
+   [
+    "Web design",
+    "WordPress",
+    "Canva"
+   ],
+   [
+    "designing websites",
+    "wordpress",
+    "canva"
+   ]
+  ]
+ },
+ {
+  "id": "s-0030",
+  "wordings": [
+   [
+    "Burp Suite",
+    "exploit development basics",
+    "metasploit framework",
+    "python programming",
+    "self-learner",
+    "team player"
+   ],
+   [
+    "web security",
+    "writing simple exploits",
+    "hacking",
+    "Python",
+    "research skills",
+    "teamwork"
+   ]
+  ]
+ },
+ {
+  "id": "s-0031",
+  "wordings": [
+   [
+    "AI",
+    "tech",
+    "data",
+    "robots"
+   ],
+   [
+    "artificial intelligence",
+    "technology",
+    "datasets",
+    "robotics"
+   ]
+  ]
+ },
+ {
+  "id": "s-0032",
+  "wordings": [
+   [
+    "IT",
+    "support",
+    "systems",
+    "computers"
+   ],
+   [
+    "information technology",
+    "helping",
+    "system things",
+    "computer things"
+   ]
+  ]
+ },
+ {
+  "id": "s-0033",
+  "wordings": [
+   [
+    "Autopsy",
+    "PyTorch",
+    "GraphQL",
+    "Cisco Packet Tracer"
+   ],
+   [
+    "autopsy forensic tool",
+    "pytorch",
+    "graphql APIs",
+    "packet tracer labs"
+   ]
+  ]
+ },
+ {
+  "id": "s-0034",
+  "wordings": [
+   [
+    "object-oriented programming in Java",
+    "SQL Server",
+    "docker containers",
+    "JWT authentication",
+    "communication skills",
+    "Git and GitHub"
+   ],
+   [
+    "verbal and written communication",
+    "MS SQL Server",
+    "dockerizing apps",
+    "version control (Git)",
+    "token auth (JWT)",
+    "Java OOP"
+   ]
+  ]
+ },
+ {
+  "id": "s-0035",
+  "wordings": [
+   [
+    "Dynamics 365 CRM",
+    "YARA rules",
+    "Arduino",
+    "Matplotlib"
+   ],
+   [
+    "MS dynamics CRM",
+    "yara malware rules",
+    "arduino uno",
+    "matplotlib charts"
+   ]
+  ]
+ },
+ {
+  "id": "s-0036",
+  "wordings": [
+   [
+    "Node.js",
+    "express.js",
+    "mongodb and mongoose",
+    "graphql apis",
+    "TypeScript"
+   ],
+   [
+    "backend",
+    "expressjs REST endpoints",
+    "databases",
+    "graphql",
+    "TS typed JavaScript"
+   ]
+  ]
+ },
+ {
+  "id": "s-0037",
+  "wordings": [
+   [
+    "selenium test scripts",
+    "Cypress",
+    "Postman collections"
+   ],
+   [
+    "selenium automation",
+    "Cypress end-to-end testing",
+    "testing apis in postman"
+   ]
+  ]
+ },
+ {
+  "id": "s-0038",
+  "wordings": [
+   [
+    "VMware and Hyper-V virtualisation",
+    "monitoring with Nagios",
+    "setting up DHCP/DNS",
+    "problem-solving",
+    "linux basics"
+   ],
+   [
+    "virtualization",
+    "monitoring",
+    "networking",
+    "problem solving",
+    "Ubuntu"
+   ]
+  ]
+ },
+ {
+  "id": "s-0039",
+  "wordings": [
+   [
+    "CSS",
+    "CSS styling",
+    "styling with CSS"
+   ],
+   [
+    "css",
+    "css styles",
+    "styling websites with css"
+   ]
+  ]
+ },
+ {
+  "id": "s-0040",
+  "wordings": [
+   [
+    "analytical thinking",
+    "communication"
+   ],
+   [
+    "analytical",
+    "good communicator"
+   ]
+  ]
+ },
+ {
+  "id": "s-0041",
+  "wordings": [
+   [
+    "time management",
+    "communication",
+    "adaptability"
+   ],
+   [
+    "manages time well",
+    "communicates well",
+    "adapts easily"
+   ]
+  ]
+ },
+ {
+  "id": "s-0042",
+  "wordings": [
+   [
+    "servers",
+    "logic",
+    "coding",
+    "websites"
+   ],
+   [
+    "servers",
+    "logical stuff",
+    "programs",
+    "web"
+   ]
+  ]
+ },
+ {
+  "id": "s-0043",
+  "wordings": [
+   [
+    "computers",
+    "MS Office"
+   ],
+   [
+    "computer skills",
+    "microsoft office"
+   ]
+  ]
+ },
+ {
+  "id": "s-0044",
+  "wordings": [
+   [
+    "security",
+    "data",
+    "software",
+    "IT"
+   ],
+   [
+    "safety",
+    "datasets",
+    "programs",
+    "info tech"
+   ]
+  ]
+ },
+ {
+  "id": "s-0045",
+  "wordings": [
+   [
+    "organization",
+    "leadership",
+    "time management"
+   ],
+   [
+    "organised",
+    "leadership",
+    "time management"
+   ]
+  ]
+ },
+ {
+  "id": "s-0046",
+  "wordings": [
+   [
+    "IDS/IPS",
+    "log analysis",
+    "Nessus/OpenVAS scans",
+    "pfSense firewall",
+    "3-month attachment"
+   ],
+   [
+    "snort ids",
+    "analysing logs for intrusions",
+    "vulnerability assessment",
+    "firewall rules (pfSense/Fortinet)",
+    "internship experience"
+   ]
+  ]
+ },
+ {
+  "id": "s-0047",
+  "wordings": [
+   [
+    "information systems",
+    "data",
+    "storage",
+    "IT"
+   ],
+   [
+    "info systems",
+    "datasets",
+    "storing",
+    "IT stuff"
+   ]
+  ]
+ },
+ {
+  "id": "s-0048",
+  "wordings": [
+   [
+    "quality",
+    "software",
+    "IT",
+    "checking"
+   ],
+   [
+    "quality stuff",
+    "programs",
+    "information tech",
+    "checking things"
+   ]
+  ]
+ },
+ {
+  "id": "s-0049",
+  "wordings": [
+   [
+    "programming",
+    "computers",
+    "MS Word"
+   ],
+   [
+    "coding",
+    "pc skills",
+    "word"
+   ]
+  ]
+ },
+ {
+  "id": "s-0050",
+  "wordings": [
+   [
+    "scikit-learn",
+    "feature engineering",
+    "Tableau",
+    "SQL window functions"
+   ],
+   [
+    "sklearn",
+    "feature engineering",
+    "tableau",
+    "window functions sql"
+   ]
+  ]
+ },
+ {
+  "id": "s-0051",
+  "wordings": [
+   [
+    "logical thinking",
+    "problem solving"
+   ],
+   [
+    "logical",
+    "problem-solving skills"
+   ]
+  ]
+ },
+ {
+  "id": "s-0052",
+  "wordings": [
+   [
+    "Raspberry Pi"
+   ],
+   [
+    "raspberry pi boards"
+   ]
+  ]
+ },
+ {
+  "id": "s-0053",
+  "wordings": [
+   [
+    "Computer repair",
+    "hardware",
+    "networking",
+    "M-Pesa Daraja API"
+   ],
+   [
+    "pc repair",
+    "hardware maintenance",
+    "basic networking",
+    "daraja api mpesa integration"
+   ]
+  ]
+ },
+ {
+  "id": "s-0054",
+  "wordings": [
+   [
+    "data visualisation with matplotlib",
+    "Jupyter/Colab",
+    "evaluating ML models",
+    "TF/Keras",
+    "self-learner",
+    "microsoft excel",
+    "teamwork"
+   ],
+   [
+    "matplotlib and seaborn",
+    "Jupyter Notebook",
+    "cross validation and confusion matrix",
+    "TensorFlow",
+    "can research and learn quickly",
+    "MS Excel",
+    "team player"
+   ]
+  ]
+ },
+ {
+  "id": "s-0055",
+  "wordings": [
+   [
+    "Helpdesk",
+    "help desk",
+    "IT helpdesk",
+    "helpdesk support"
+   ],
+   [
+    "helpdesk",
+    "it help desk work",
+    "help desk support",
+    "supporting users on helpdesk"
+   ]
+  ]
+ },
+ {
+  "id": "s-0056",
+  "wordings": [
+   [
+    "redis",
+    "writing unit tests",
+    "message queues (RabbitMQ/Kafka)",
+    "SQL",
+    "Git and GitHub",
+    "python programming"
+   ],
+   [
+    "python (basic)",
+    "backend",
+    "testing",
+    "async messaging with queues",
+    "version control (Git)",
+    "sql basics"
+   ]
+  ]
+ },
+ {
+  "id": "s-0057",
+  "wordings": [
+   [
+    "Wi-Fi and LAN troubleshooting for users",
+    "cleaning infected computers",
+    "helpdesk tickets",
+    "password resets and account unlocks",
+    "teamwork"
+   ],
+   [
+    "user accounts",
+    "team player",
+    "logging and resolving tickets",
+    "networking",
+    "virus and malware removal"
+   ]
+  ]
+ },
+ {
+  "id": "s-0058",
+  "wordings": [
+   [
+    "coding",
+    "MS Office"
+   ],
+   [
+    "programming",
+    "microsoft office"
+   ]
+  ]
+ },
+ {
+  "id": "s-0059",
+  "wordings": [
+   [
+    "Python",
+    "Python programming",
+    "coding in Python",
+    "python scripts"
+   ],
+   [
+    "python",
+    "python coding",
+    "python language",
+    "py scripts"
+   ]
+  ]
+ },
+ {
+  "id": "s-0060",
+  "wordings": [
+   [
+    "Firebase"
+   ],
+   [
+    "firebase backend"
+   ]
+  ]
+ },
+ {
+  "id": "s-0061",
+  "wordings": [
+   [
+    "Scrum (sprint planning, standups)",
+    "project scheduling in ms project",
+    "managing stakeholders"
+   ],
+   [
+    "running sprints and retrospectives",
+    "MS Project",
+    "stakeholder management"
+   ]
+  ]
+ },
+ {
+  "id": "s-0062",
+  "wordings": [
+   [
+    "data warehouse design",
+    "postgres",
+    "git"
+   ],
+   [
+    "data warehousing",
+    "PostgreSQL",
+    "Git and GitHub"
+   ]
+  ]
+ },
+ {
+  "id": "s-0063",
+  "wordings": [
+   [
+    "Selenium"
+   ],
+   [
+    "selenium webdriver"
+   ]
+  ]
+ },
+ {
+  "id": "s-0064",
+  "wordings": [
+   [
+    "feature engineering",
+    "pandas dataframes",
+    "supervised learning",
+    "Kaggle competitions",
+    "can research and learn quickly",
+    "Python (basic)"
+   ],
+   [
+    "python programming",
+    "data analysis",
+    "pandas",
+    "machine learning",
+    "data stuff",
+    "self-learner"
+   ]
+  ]
+ },
+ {
+  "id": "s-0065",
+  "wordings": [
+   [
+    "caching with Redis",
+    "Docker",
+    "token auth (JWT)",
+    "writing unit tests",
+    "sql basics",
+    "industrial attachment experience",
+    "teamwork"
+   ],
+   [
+    "redis",
+    "docker containers",
+    "JWT authentication",
+    "junit tests",
+    "SQL (basic queries)",
+    "internship experience",
+    "works well in teams"
+   ]
+  ]
+ },
+ {
+  "id": "s-0066",
+  "wordings": [
+   [
+    "web vulnerabilities (XSS, SQLi, CSRF)",
+    "capture the flag (HackTheBox/TryHackMe)",
+    "Kali Linux",
+    "linux basics",
+    "problem solving"
+   ],
+   [
+    "owasp top ten vulnerabilities",
+    "TryHackMe and HTB",
+    "pentesting with kali",
+    "Linux",
+    "solving problems"
+   ]
+  ]
+ },
+ {
+  "id": "s-0067",
+  "wordings": [
+   [
+    "identity and access management",
+    "designing segmented secure networks",
+    "endpoint security (EDR)",
+    "Ubuntu",
+    "works well in teams"
+   ],
+   [
+    "access control",
+    "antivirus and edr management",
+    "network security",
+    "team player",
+    "Linux"
+   ]
+  ]
+ },
+ {
+  "id": "s-0068",
+  "wordings": [
+   [
+    "Office 365 admin (mailboxes, licences)",
+    "PC hardware repair",
+    "Windows 10/11 troubleshooting",
+    "documentation and user manuals",
+    "printer and scanner setup"
+   ],
+   [
+    "IT admin",
+    "laptop repair and upgrades",
+    "fixing computers",
+    "documentation",
+    "printer troubleshooting"
+   ]
+  ]
+ },
+ {
+  "id": "s-0069",
+  "wordings": [
+   [
+    "curiosity",
+    "creativity",
+    "fast learner"
+   ],
+   [
+    "curious",
+    "creative",
+    "learns quickly"
+   ]
+  ]
+ },
+ {
+  "id": "s-0070",
+  "wordings": [
+   [
+    "Node.js",
+    "solidity smart contracts",
+    "junit tests",
+    "Ethereum",
+    "self-learner",
+    "communication skills"
+   ],
+   [
+    "nodejs",
+    "ethereum dapps",
+    "writing smart contracts in Solidity",
+    "verbal and written communication",
+    "research skills",
+    "writing unit tests"
+   ]
+  ]
+ },
+ {
+  "id": "s-0071",
+  "wordings": [
+   [
+    "PyTorch",
+    "transformers",
+    "Hugging Face",
+    "NLP"
+   ],
+   [
+    "pytorch",
+    "transformer models",
+    "hugging face",
+    "natural language processing"
+   ]
+  ]
+ },
+ {
+  "id": "s-0072",
+  "wordings": [
+   [
+    "Terraform",
+    "AWS EC2",
+    "Kubernetes",
+    "Docker"
+   ],
+   [
+    "terraform",
+    "ec2 instances",
+    "k8s",
+    "docker containers"
+   ]
+  ]
+ },
+ {
+  "id": "s-0073",
+  "wordings": [
+   [
+    "Volatility memory forensics",
+    "Redshift",
+    "Django REST",
+    "Zeplin"
+   ],
+   [
+    "volatility framework",
+    "amazon redshift",
+    "DRF",
+    "zeplin handoff"
+   ]
+  ]
+ },
+ {
+  "id": "s-0074",
+  "wordings": [
+   [
+    "VPN setup (OpenVPN)",
+    "MPLS WAN design",
+    "network capacity planning",
+    "presenting to clients"
+   ],
+   [
+    "presentation skills",
+    "bandwidth capacity planning",
+    "site-to-site VPN",
+    "MPLS"
+   ]
+  ]
+ },
+ {
+  "id": "s-0075",
+  "wordings": [
+   [
+    "stored procs",
+    "backup/restore of databases",
+    "Oracle Database",
+    "database migration"
+   ],
+   [
+    "T-SQL / PL/SQL procedures",
+    "point-in-time recovery",
+    "Oracle DB and PL/SQL",
+    "migrating data between databases"
+   ]
+  ]
+ },
+ {
+  "id": "s-0076",
+  "wordings": [
+   [
+    "DNS, DHCP server config",
+    "monitoring with Nagios",
+    "VLSM subnetting",
+    "team player"
+   ],
+   [
+    "DHCP and DNS services",
+    "network monitoring (Zabbix/Nagios)",
+    "subnetting (IPv4/VLSM)",
+    "teamwork"
+   ]
+  ]
+ },
+ {
+  "id": "s-0077",
+  "wordings": [
+   [
+    "apps",
+    "websites",
+    "games",
+    "tech"
+   ],
+   [
+    "applications",
+    "web sites",
+    "gaming",
+    "technology"
+   ]
+  ]
+ },
+ {
+  "id": "s-0078",
+  "wordings": [
+   [
+    "escalating tickets within SLA",
+    "setting up smartphones for staff",
+    "fixing Windows errors",
+    "resetting user accounts in ad",
+    "problem solving"
+   ],
+   [
+    "Windows 10/11 troubleshooting",
+    "password resets and account unlocks",
+    "SLA tracking",
+    "problem-solving",
+    "Android and iOS device support"
+   ]
+  ]
+ },
+ {
+  "id": "s-0079",
+  "wordings": [
+   [
+    "MySQL",
+    "database design",
+    "PHP"
+   ],
+   [
+    "mysql",
+    "designing databases",
+    "php"
+   ]
+  ]
+ },
+ {
+  "id": "s-0080",
+  "wordings": [
+   [
+    "windows server 2019",
+    "shell scripts",
+    "VLSM subnetting",
+    "AD and Group Policy"
+   ],
+   [
+    "Windows Server administration",
+    "IP addressing and subnetting",
+    "Active Directory",
+    "bash and cron automation"
+   ]
+  ]
+ },
+ {
+  "id": "s-0081",
+  "wordings": [
+   [
+    "Database design",
+    "designing databases",
+    "database designing",
+    "db design"
+   ],
+   [
+    "database design",
+    "designing a database",
+    "db designing",
+    "making databases"
+   ]
+  ]
+ },
+ {
+  "id": "s-0082",
+  "wordings": [
+   [
+    "ICT",
+    "computers",
+    "technology",
+    "systems"
+   ],
+   [
+    "ICT stuff",
+    "pcs",
+    "tech",
+    "system things"
+   ]
+  ]
+ },
+ {
+  "id": "s-0083",
+  "wordings": [
+   [
+    "NLTK / spaCy text processing",
+    "writing research papers (LaTeX)",
+    "algorithm design",
+    "teamwork",
+    "python (basic)",
+    "presentation skills"
+   ],
+   [
+    "reading and reviewing research papers",
+    "presenting to clients",
+    "algorithms and complexity analysis",
+    "natural language processing",
+    "Python",
+    "works well in teams"
+   ]
+  ]
+ },
+ {
+  "id": "s-0084",
+  "wordings": [
+   [
+    "Networking",
+    "Cisco",
+    "routers"
+   ],
+   [
+    "computer networks",
+    "cisco devices",
+    "router config"
+   ]
+  ]
+ },
+ {
+  "id": "s-0085",
+  "wordings": [
+   [
+    "HAProxy and Nginx load balancing",
+    "bgp",
+    "network design (LAN/WAN)",
+    "Linux",
+    "solving problems"
+   ],
+   [
+    "networking",
+    "routing",
+    "infrastructure",
+    "problem solving",
+    "Ubuntu"
+   ]
+  ]
+ },
+ {
+  "id": "s-0086",
+  "wordings": [
+   [
+    "Spanning Tree Protocol",
+    "VLANs",
+    "OSPF and EIGRP routing",
+    "3-month attachment"
+   ],
+   [
+    "STP/RSTP",
+    "VLAN configuration on switches",
+    "OSPF routing",
+    "internship experience"
+   ]
+  ]
+ },
+ {
+  "id": "s-0087",
+  "wordings": [
+   [
+    "Wireshark",
+    "Nmap",
+    "Splunk",
+    "incident response"
+   ],
+   [
+    "wireshark",
+    "nmap scans",
+    "splunk",
+    "IR handling"
+   ]
+  ]
+ },
+ {
+  "id": "s-0088",
+  "wordings": [
+   [
+    "basic matplotlib and seaborn",
+    "Jupyter/Colab",
+    "Linux"
+   ],
+   [
+    "learning seaborn plots",
+    "learning Jupyter Notebook",
+    "Ubuntu"
+   ]
+  ]
+ },
+ {
+  "id": "s-0089",
+  "wordings": [
+   [
+    "leadership",
+    "communication"
+   ],
+   [
+    "leader",
+    "communication skills"
+   ]
+  ]
+ },
+ {
+  "id": "s-0090",
+  "wordings": [
+   [
+    "Windows",
+    "MS Office",
+    "computers"
+   ],
+   [
+    "windows os",
+    "ms office package",
+    "computer literacy"
+   ]
+  ]
+ },
+ {
+  "id": "s-0091",
+  "wordings": [
+   [
+    "Kali Linux",
+    "Nessus",
+    "Figma",
+    "Adobe XD",
+    "user research"
+   ],
+   [
+    "kali",
+    "nessus scans",
+    "figma",
+    "xd",
+    "user interviews"
+   ]
+  ]
+ },
+ {
+  "id": "s-0092",
+  "wordings": [
+   [
+    "Linux",
+    "Linux OS",
+    "ubuntu",
+    "Linux commands"
+   ],
+   [
+    "linux",
+    "linux operating system",
+    "ubuntu linux",
+    "linux command line"
+   ]
+  ]
+ },
+ {
+  "id": "s-0093",
+  "wordings": [
+   [
+    "iso 27001 controls",
+    "CIS benchmarks hardening",
+    "handling security incidents",
+    "Nessus/OpenVAS scans",
+    "solving problems"
+   ],
+   [
+    "ISO/IEC 27001 compliance",
+    "hardening Linux/Windows servers",
+    "problem solving",
+    "vulnerability scanning (Nessus)",
+    "IR playbooks"
+   ]
+  ]
+ },
+ {
+  "id": "s-0094",
+  "wordings": [
+   [
+    "React"
+   ],
+   [
+    "react js"
+   ]
+  ]
+ },
+ {
+  "id": "s-0095",
+  "wordings": [
+   [
+    "tech",
+    "innovation",
+    "digital",
+    "computers"
+   ],
+   [
+    "technology",
+    "innovating",
+    "digital stuff",
+    "pcs"
+   ]
+  ]
+ },
+ {
+  "id": "s-0096",
+  "wordings": [
+   [
+    "Splunk"
+   ],
+   [
+    "splunk siem"
+   ]
+  ]
+ },
+ {
+  "id": "s-0097",
+  "wordings": [
+   [
+    "critical thinking",
+    "time management"
+   ],
+   [
+    "thinks critically",
+    "good time management"
+   ]
+  ]
+ },
+ {
+  "id": "s-0098",
+  "wordings": [
+   [
+    "tensorflow and keras",
+    "neural networks (CNN, LSTM)",
+    "RL (Q-learning, policy gradients)",
+    "reading and reviewing research papers",
+    "algorithms and complexity analysis",
+    "team player"
+   ],
+   [
+    "AI",
+    "deep learning",
+    "reinforcement learning agents",
+    "research",
+    "computer science",
+    "works well in teams"
+   ]
+  ]
+ },
+ {
+  "id": "s-0099",
+  "wordings": [
+   [
+    "teamwork",
+    "time management"
+   ],
+   [
+    "working in teams",
+    "time management"
+   ]
+  ]
+ },
+ {
+  "id": "s-0100",
+  "wordings": [
+   [
+    "Java",
+    "Java programming",
+    "coding in Java",
+    "java language"
+   ],
+   [
+    "java",
+    "java coding",
+    "programming with java",
+    "java programs"
+   ]
+  ]
+ },
+ {
+  "id": "s-0101",
+  "wordings": [
+   [
+    "designing resilient systems",
+    "MPLS WAN design",
+    "zero-trust network design",
+    "public speaking",
+    "Ubuntu"
+   ],
+   [
+    "infrastructure",
+    "WAN stuff",
+    "network security",
+    "presentation skills",
+    "linux"
+   ]
+  ]
+ },
+ {
+  "id": "s-0102",
+  "wordings": [
+   [
+    "systems",
+    "cloud",
+    "design",
+    "tech"
+   ],
+   [
+    "systems stuff",
+    "the cloud",
+    "designs",
+    "technology"
+   ]
+  ]
+ },
+ {
+  "id": "s-0103",
+  "wordings": [
+   [
+    "data",
+    "tables",
+    "information",
+    "software"
+   ],
+   [
+    "data things",
+    "tables stuff",
+    "info",
+    "programs"
+   ]
+  ]
+ },
+ {
+  "id": "s-0104",
+  "wordings": [
+   [
+    "Excel",
+    "MS Office",
+    "computers"
+   ],
+   [
+    "microsoft excel",
+    "ms word and powerpoint",
+    "computer skills"
+   ]
+  ]
+ },
+ {
+  "id": "s-0105",
+  "wordings": [
+   [
+    "prince2 foundation",
+    "Jira and Confluence",
+    "cost estimation"
+   ],
+   [
+    "certifications",
+    "project tools",
+    "budgeting"
+   ]
+  ]
+ },
+ {
+  "id": "s-0106",
+  "wordings": [
+   [
+    "designing end-to-end systems",
+    "AWS (EC2, S3, VPC)",
+    "azure vnets and VMs",
+    "docker",
+    "cloud migration planning",
+    "git"
+   ],
+   [
+    "AWS cloud architecture",
+    "git and GitHub",
+    "lift-and-shift migration",
+    "systems architecture design",
+    "Azure solutions",
+    "dockerizing apps"
+   ]
+  ]
+ },
+ {
+  "id": "s-0107",
+  "wordings": [
+   [
+    "Zendesk"
+   ],
+   [
+    "zendesk ticketing"
+   ]
+  ]
+ },
+ {
+  "id": "s-0108",
+  "wordings": [
+   [
+    "laptop repair and upgrades",
+    "Windows 10/11 troubleshooting",
+    "remote support (TeamViewer/AnyDesk)",
+    "student club leadership",
+    "MS Office",
+    "good communicator"
+   ],
+   [
+    "PC hardware repair",
+    "troubleshooting windows",
+    "remote desktop support",
+    "led a class project team",
+    "word, excel, powerpoint",
+    "communication skills"
+   ]
+  ]
+ },
+ {
+  "id": "s-0109",
+  "wordings": [
+   [
+    "charts",
+    "numbers",
+    "analysis",
+    "computers"
+   ],
+   [
+    "graphs",
+    "figures",
+    "analyzing",
+    "pcs"
+   ]
+  ]
+ },
+ {
+  "id": "s-0110",
+  "wordings": [
+   [
+    "Swift"
+   ],
+   [
+    "swift ios"
+   ]
+  ]
+ },
+ {
+  "id": "s-0111",
+  "wordings": [
+   [
+    "Java",
+    "teamwork",
+    "communication",
+    "Eclipse"
+   ],
+   [
+    "java",
+    "team work",
+    "good communication",
+    "eclipse ide"
+   ]
+  ]
+ },
+ {
+  "id": "s-0112",
+  "wordings": [
+   [
+    "Terraform"
+   ],
+   [
+    "terraform iac"
+   ]
+  ]
+ },
+ {
+  "id": "s-0113",
+  "wordings": [
+   [
+    "teamwork",
+    "communication"
+   ],
+   [
+    "works in teams",
+    "communicates"
+   ]
+  ]
+ },
+ {
+  "id": "s-0114",
+  "wordings": [
+   [
+    "PRINCE2",
+    "Cisco IOS XE",
+    "scikit-learn",
+    "Svelte"
+   ],
+   [
+    "prince 2 certified",
+    "IOS-XE routers",
+    "sklearn",
+    "sveltekit"
+   ]
+  ]
+ },
+ {
+  "id": "s-0115",
+  "wordings": [
+   [
+    "SQL performance tuning",
+    "Postgres admin",
+    "DB access control",
+    "solving problems",
+    "Linux"
+   ],
+   [
+    "problem solving",
+    "ubuntu",
+    "postgres",
+    "granting privileges and roles",
+    "query tuning and execution plans"
+   ]
+  ]
+ }
+]

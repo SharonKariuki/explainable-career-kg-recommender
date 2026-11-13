@@ -1,0 +1,429 @@
+[
+ {
+  "group": "ea-g127",
+  "input": "soc",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: security operations centre; catalogue has this name (-> Security incident management software); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g128",
+  "input": "MFA",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: multi-factor authentication; no catalogue name"
+ },
+ {
+  "group": "ea-g128",
+  "input": "2FA",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: multi-factor authentication; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g129",
+  "input": "GDPR",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: EU data protection regulation, may be read as data privacy; no catalogue name"
+ },
+ {
+  "group": "ea-g129",
+  "input": "gdpr",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: EU data protection regulation, may be read as data privacy; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g130",
+  "input": "IDS",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: intrusion detection systems; no catalogue name"
+ },
+ {
+  "group": "ea-g131",
+  "input": "DDoS",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: distributed denial of service attacks; no catalogue name"
+ },
+ {
+  "group": "ea-g132",
+  "input": "CISSP",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: CISSP security certification; catalogue has this name (-> information security strategy)"
+ },
+ {
+  "group": "ea-g133",
+  "input": "CEH",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: Certified Ethical Hacker; catalogue has this name (-> Penetration testing software)"
+ },
+ {
+  "group": "ea-g134",
+  "input": "OS",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: operating systems; no catalogue name"
+ },
+ {
+  "group": "ea-g134",
+  "input": "os",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: operating systems; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g135",
+  "input": "PC",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: personal computer hardware/setup; no catalogue name"
+ },
+ {
+  "group": "ea-g135",
+  "input": "pc",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: personal computer hardware/setup; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g136",
+  "input": "Wi-Fi",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: wireless networking setup; no catalogue name"
+ },
+ {
+  "group": "ea-g136",
+  "input": "wifi",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: wireless networking setup; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g137",
+  "input": "BIOS",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: BIOS/firmware setup; no catalogue name"
+ },
+ {
+  "group": "ea-g138",
+  "input": "ITIL",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: IT service management framework; no catalogue name"
+ },
+ {
+  "group": "ea-g139",
+  "input": "M365",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: Microsoft 365; catalogue has this name (-> Microsoft Office software)"
+ },
+ {
+  "group": "ea-g140",
+  "input": "CompTIA A+",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "Abbreviation: CompTIA A+ certification; catalogue has this name (-> repair ICT devices)"
+ },
+ {
+  "group": "ea-g141",
+  "input": "DBMS",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: database management systems; catalogue has this name (-> Database management systems)"
+ },
+ {
+  "group": "ea-g141",
+  "input": "dbms",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: database management systems; catalogue has this name (-> Database management systems); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g142",
+  "input": "RDBMS",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: relational DBMS; no catalogue name"
+ },
+ {
+  "group": "ea-g142",
+  "input": "rdbms",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: relational DBMS; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g143",
+  "input": "PL/SQL",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: Oracle PL/SQL; no catalogue name"
+ },
+ {
+  "group": "ea-g143",
+  "input": "plsql",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: Oracle PL/SQL; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g144",
+  "input": "DBA",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: database administration; no catalogue name"
+ },
+ {
+  "group": "ea-g145",
+  "input": "MSSQL",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: Microsoft SQL Server; catalogue has this name (-> Microsoft SQL Server)"
+ },
+ {
+  "group": "ea-g146",
+  "input": "T-SQL",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "Abbreviation: Transact-SQL; catalogue has this name (-> Microsoft SQL Server)"
+ },
+ {
+  "group": "ea-g147",
+  "input": "AWS",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: Amazon Web Services; no catalogue name"
+ },
+ {
+  "group": "ea-g147",
+  "input": "aws",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: Amazon Web Services; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g148",
+  "input": "CI/CD",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: continuous integration/delivery pipelines; catalogue has this name (-> DevOps)"
+ },
+ {
+  "group": "ea-g148",
+  "input": "CICD",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: continuous integration/delivery pipelines; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g149",
+  "input": "K8s",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: Kubernetes; catalogue has this name (-> Kubernetes)"
+ },
+ {
+  "group": "ea-g149",
+  "input": "k8s",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: Kubernetes; catalogue has this name (-> Kubernetes); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g150",
+  "input": "SaaS",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: software as a service; catalogue has this name (-> service-oriented modelling)"
+ },
+ {
+  "group": "ea-g151",
+  "input": "GCP",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: Google Cloud Platform; catalogue has this name (-> Google Cloud software)"
+ },
+ {
+  "group": "ea-g152",
+  "input": "EC2",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: AWS EC2; catalogue has this name (-> Amazon Web Services AWS software)"
+ },
+ {
+  "group": "ea-g153",
+  "input": "IAM",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: identity and access management; no catalogue name"
+ },
+ {
+  "group": "ea-g154",
+  "input": "IaC",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "Abbreviation: infrastructure as code; no catalogue name"
+ },
+ {
+  "group": "ea-g155",
+  "input": "QA",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: quality assurance / software testing; no catalogue name"
+ },
+ {
+  "group": "ea-g155",
+  "input": "qa",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: quality assurance / software testing; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g156",
+  "input": "UAT",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: user acceptance testing; no catalogue name"
+ },
+ {
+  "group": "ea-g157",
+  "input": "BDD",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: behaviour-driven development; no catalogue name"
+ },
+ {
+  "group": "ea-g158",
+  "input": "PMP",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: PMP certification; catalogue has this name (-> ICT project management)"
+ },
+ {
+  "group": "ea-g159",
+  "input": "UML",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: unified modelling language; catalogue has this name (-> unified modelling language)"
+ },
+ {
+  "group": "ea-g160",
+  "input": "WBS",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: work breakdown structure; no catalogue name"
+ },
+ {
+  "group": "ea-g161",
+  "input": "MVP",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: minimum viable product; no catalogue name"
+ },
+ {
+  "group": "ea-g162",
+  "input": "JIRA",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "Abbreviation: Atlassian JIRA; no catalogue name"
+ },
+ {
+  "group": "ea-g163",
+  "input": "DApp",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "Abbreviation: decentralised application; no catalogue name"
+ },
+ {
+  "group": "ea-g163",
+  "input": "dapp",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "Abbreviation: decentralised application; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g164",
+  "input": "DeFi",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "Abbreviation: decentralised finance; no catalogue name"
+ },
+ {
+  "group": "ea-g165",
+  "input": "NFT",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "Abbreviation: non-fungible tokens; no catalogue name"
+ },
+ {
+  "group": "ea-g166",
+  "input": "PoW",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "Abbreviation: proof of work; catalogue has this name (-> blockchain consensus mechanisms)"
+ },
+ {
+  "group": "ea-g167",
+  "input": "EVM",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "Abbreviation: Ethereum virtual machine; no catalogue name"
+ },
+ {
+  "group": "ea-g168",
+  "input": "ERP",
+  "category": "acronym",
+  "domain": "general",
+  "author_note": "Abbreviation: enterprise resource planning systems; no catalogue name"
+ },
+ {
+  "group": "ea-g168",
+  "input": "erp",
+  "category": "acronym",
+  "domain": "general",
+  "author_note": "Abbreviation: enterprise resource planning systems; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g169",
+  "input": "CRM",
+  "category": "acronym",
+  "domain": "general",
+  "author_note": "Abbreviation: customer relationship management; no catalogue name"
+ },
+ {
+  "group": "ea-g170",
+  "input": "HR",
+  "category": "acronym",
+  "domain": "general",
+  "author_note": "Abbreviation: human resources (not a skill); no catalogue name"
+ },
+ {
+  "group": "ea-g171",
+  "input": "GIS",
+  "category": "acronym",
+  "domain": "general",
+  "author_note": "Abbreviation: geographic information systems; no catalogue name"
+ },
+ {
+  "group": "ea-g172",
+  "input": "RPA",
+  "category": "acronym",
+  "domain": "general",
+  "author_note": "Abbreviation: robotic process automation; no catalogue name"
+ },
+ {
+  "group": "ea-g173",
+  "input": "IoT",
+  "category": "acronym",
+  "domain": "general",
+  "author_note": "Abbreviation: Internet of Things; catalogue has this name (-> Internet of Things)"
+ }
+]

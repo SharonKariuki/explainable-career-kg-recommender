@@ -1,0 +1,1190 @@
+[
+ {
+  "id": "i-0008",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data analysis software",
+   "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700"
+  ],
+  "preferred": "tool:Data analysis software",
+  "confidence": "high",
+  "note": "ydata-profiling is an automated data-profiling/EDA library: an instance of data analysis software (amendment rule 1)"
+ },
+ {
+  "id": "i-0010",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "TDD is a development practice; unit/automated testing nodes are a related component, no methodology node contains it (rule 2); arguable"
+ },
+ {
+  "id": "i-0031",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "generic computer-use phrase with no specific capability (amendment 1 rule 3); Computers and Electronics is technical domain knowledge, not basic digital literacy"
+ },
+ {
+  "id": "i-0036",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-0067",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "high",
+  "note": "Cucumber is a BDD test automation tool: instance of tools for ICT test automation (rule 1)"
+ },
+ {
+  "id": "i-0106",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-0111",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "generic computer-use phrase with no specific capability (amendment 1 rule 3); Computers and Electronics is technical domain knowledge, not basic digital literacy"
+ },
+ {
+  "id": "i-0115",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "web design is one discipline; front-end website design and UI design express it (visual vs build are facets, not different meanings)"
+ },
+ {
+  "id": "i-0134",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "esco:0868eef3-2213-4572-9343-74931345a7d3"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "low",
+  "note": "server administration is the evident meaning; \"things\" makes it vague"
+ },
+ {
+  "id": "i-0142",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "tool:Virtual local area network management software"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "high",
+  "note": "segmenting networks (subnets/VLANs) is a network design activity; design computer network contains it, VLAN tools implement it"
+ },
+ {
+  "id": "i-0155",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "tool:Medical procedure coding software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "CPT: Certified Penetration Tester vs Current Procedural Terminology codes; obscure acronym"
+ },
+ {
+  "id": "i-0168",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "confidence": "high",
+  "note": "analytics in a computing skills box = data analytics; web analytics is a narrower subtype"
+ },
+ {
+  "id": "i-0175",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "not a capability, only says the student did projects; carry out project activities is a literal but uninformative match"
+ },
+ {
+  "id": "i-0186",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web browser software"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "high",
+  "note": "using the internet = browsing; web browser software expresses it"
+ },
+ {
+  "id": "i-0188",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "low",
+  "note": "Kaggle competitions signal applied ML/data science; platform not a node, so mapping to ML is an inference"
+ },
+ {
+  "id": "i-0189",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web browser software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "high",
+  "note": "using/browsing the internet (web browser) vs internet networking technology; two concrete readings, like the guide example \"web pages\""
+ },
+ {
+  "id": "i-0200",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "\"helping\" alone is an attitude with no object; Service Orientation is not named by it; arguable"
+ },
+ {
+  "id": "i-0223",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web browser software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "high",
+  "note": "using/browsing the internet (web browser) vs internet networking technology; two concrete readings, like the guide example \"web pages\""
+ },
+ {
+  "id": "i-0242",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40"
+  ],
+  "preferred": "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40",
+  "confidence": "low",
+  "note": "SLA tracking is tracking service-level metrics, arguably an instance of KPI tracking"
+ },
+ {
+  "id": "i-0259",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "low",
+  "note": "CTF = capture-the-flag security competitions: offensive security testing practice; activity, mapping is an inference"
+ },
+ {
+  "id": "i-0263",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "TryHackMe/HackTheBox are ethical-hacking labs (Penetration testing software names Ethical hacking); platforms, mapping is an inference"
+ },
+ {
+  "id": "i-0264",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+   "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea"
+  ],
+  "preferred": "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+  "confidence": "low",
+  "note": "malware sample analysis is reverse engineering / forensics work; no malware-analysis node, containment arguable"
+ },
+ {
+  "id": "i-0275",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337",
+   "onet:2.A.1.d",
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "high",
+  "note": "interpersonal skill with no node naming it; Social Perceptiveness, communication and coordination each partly fit, none clearly best"
+ },
+ {
+  "id": "i-0282",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40",
+   "esco:c544a9f3-5945-4b54-afed-de0697852817",
+   "esco:ed39edd3-44d0-4a16-9796-bfb99f92baf3",
+   "tool:Reporting software",
+   "esco:918f5211-b99f-4b29-9a34-6e475583ef55"
+  ],
+  "preferred": "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40",
+  "confidence": "high",
+  "note": "business/KPI performance reporting vs ICT system performance analysis vs work reports: clearly different readings"
+ },
+ {
+  "id": "i-0283",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "spanning-tree is switch configuration (\"Switching and routing\" on networking hardware); protocol-level containment arguable (cf. TCP/IP)"
+ },
+ {
+  "id": "i-0287",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web browser software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "high",
+  "note": "using/browsing the internet (web browser) vs internet networking technology; two concrete readings, like the guide example \"web pages\""
+ },
+ {
+  "id": "i-0292",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+   "esco:a8797f21-1af0-4c5e-98ca-bf1442929363",
+   "esco:0e0c9c11-b39e-43cf-ba95-2fe646f5de64",
+   "esco:0ee94c0a-3716-494a-95a2-dcbab9e58be2"
+  ],
+  "preferred": "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+  "confidence": "high",
+  "note": "gathering reporting requirements: one meaning, an instance of business/user requirements gathering"
+ },
+ {
+  "id": "i-0350",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "tool:Selenium"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "shared_owner_marks": {
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f": "valid",
+   "tool:Selenium": "valid"
+  },
+  "confidence": "high",
+  "note": "Cypress is a browser test automation tool: instance of tools for ICT test automation; the Selenium node carries Cypress as a name, so it expresses it"
+ },
+ {
+  "id": "i-0370",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "tool:Access management software"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "high",
+  "note": "user account administration: identity/access management nodes; one meaning"
+ },
+ {
+  "id": "i-0399",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "high",
+  "note": "designing ICT systems; design information system (design ICT system) expresses it, software architecture as the software-system facet"
+ },
+ {
+  "id": "i-0401",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+   "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea"
+  ],
+  "preferred": "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+  "confidence": "low",
+  "note": "malware analysis is reverse engineering / forensics work; no malware-analysis node, containment arguable"
+ },
+ {
+  "id": "i-0406",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "\"accurate\" is a trait; attention to detail (on Critical Thinking) is close but not named; arguable"
+ },
+ {
+  "id": "i-0417",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "tool:Help desk software",
+   "tool:ServiceNow",
+   "tool:BMC Software Remedy IT Service Management Suite"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "low",
+  "note": "IT service: user support vs ITSM tooling; \"stuff\" makes it vague, near content-free"
+ },
+ {
+  "id": "i-0425",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "web design is one discipline; front-end website design and UI design express it (visual vs build are facets, not different meanings)"
+ },
+ {
+  "id": "i-0445",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "\"projects\" is not a capability; it says the student did projects, not what skill"
+ },
+ {
+  "id": "i-0474",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "tool:Virtual local area network management software"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "high",
+  "note": "network segmentation is a network design activity; design computer network contains it, VLAN tools implement it"
+ },
+ {
+  "id": "i-0475",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+   "esco:020918ef-4b55-47c1-8430-ab7b8f6a7377"
+  ],
+  "preferred": "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+  "confidence": "high",
+  "note": "moving data: ongoing ETL/pipelines vs one-off data migration; two concrete readings"
+ },
+ {
+  "id": "i-0507",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "high",
+  "note": "Gherkin feature files are BDD automated test specifications: test automation tools / test suite development"
+ },
+ {
+  "id": "i-0515",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "low",
+  "note": "Kaggle signals applied ML/data science practice; platform not a node, mapping is an inference"
+ },
+ {
+  "id": "i-0517",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "high",
+  "note": "Gherkin is the BDD test specification language used by test automation tools; instance of test automation (rule 1)"
+ },
+ {
+  "id": "i-0540",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+   "esco:339ac029-066a-4985-9f9d-b3d7c8fea0bb",
+   "onet:2.B.5.d"
+  ],
+  "preferred": "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+  "confidence": "low",
+  "note": "delegating = assigning tasks (name on manage schedule of tasks); not named exactly, arguable"
+ },
+ {
+  "id": "i-0554",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+   "onet:2.B.5.a"
+  ],
+  "preferred": "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+  "confidence": "low",
+  "note": "being organised = organisational skill (apply organisational techniques); trait/skill line arguable"
+ },
+ {
+  "id": "i-0587",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:54924a2c-daca-40d3-9716-4b38ceb04f38",
+   "onet:2.B.3.e"
+  ],
+  "preferred": "esco:54924a2c-daca-40d3-9716-4b38ceb04f38",
+  "confidence": "low",
+  "note": "LeetCode = algorithm/coding problem practice; platform, mapping is an inference"
+ },
+ {
+  "id": "i-0591",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "cyber security competitions signal cyber security practice; activity, mapping is an inference"
+ },
+ {
+  "id": "i-0595",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "low",
+  "note": "data capturing = data entry in Kenyan usage; collection reading also plausible"
+ },
+ {
+  "id": "i-0602",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "security in a computing context = cyber/information security; \"stuff\" makes it vague"
+ },
+ {
+  "id": "i-0606",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "low",
+  "note": "data capture = data entry in Kenyan usage; collection reading also plausible"
+ },
+ {
+  "id": "i-0626",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337",
+   "onet:2.A.1.d",
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "high",
+  "note": "interpersonal skill with no node naming it; Social Perceptiveness, communication and coordination each partly fit, none clearly best"
+ },
+ {
+  "id": "i-0650",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+   "esco:8744f28f-59a9-45af-8ef6-6944cb5a1473",
+   "esco:fe1c2b32-7fe9-4668-affa-07ff658a68cf",
+   "esco:1dd23dba-dd00-45ab-abf4-642902538317"
+  ],
+  "preferred": "esco:6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+  "confidence": "high",
+  "note": "single word: business/project risk management vs ICT security risk; several concrete readings (rule 4)"
+ },
+ {
+  "id": "i-0700",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:484df271-bb52-49f1-8f50-f19624bf4df2",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:484df271-bb52-49f1-8f50-f19624bf4df2",
+  "confidence": "low",
+  "note": "building UI component libraries (Storybook not in catalogue); containment arguable"
+ },
+ {
+  "id": "i-0705",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "\"pcs\" names an object, not a capability; could hint at PC hardware but too vague"
+ },
+ {
+  "id": "i-0758",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-0767",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "generic computer-use phrase with no specific capability (amendment 1 rule 3); Computers and Electronics is technical domain knowledge, not basic digital literacy"
+ },
+ {
+  "id": "i-0827",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-0834",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+  ],
+  "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+  "confidence": "high",
+  "note": "computer hardware knowledge; hardware components node expresses it"
+ },
+ {
+  "id": "i-0840",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+   "tool:Web application software",
+   "onet:2.B.3.e"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "high",
+  "note": "apps: mobile apps vs web applications; different nodes per reading"
+ },
+ {
+  "id": "i-0886",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "not a capability, only says the student did projects; carry out project activities is a literal but uninformative match"
+ },
+ {
+  "id": "i-0889",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "esco:0868eef3-2213-4572-9343-74931345a7d3"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "high",
+  "note": "working with servers = server administration/maintenance; web/file server software are kinds of server, not different meanings"
+ },
+ {
+  "id": "i-0899",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7364cc39-b9c0-449f-9416-57723e2fd9c4",
+   "esco:a4c2aa71-086f-4a46-b481-2619673c9dfe"
+  ],
+  "preferred": "esco:7364cc39-b9c0-449f-9416-57723e2fd9c4",
+  "confidence": "high",
+  "note": "journey mapping is a user-centred design method: instance of UCD methodologies (rule 1)"
+ },
+ {
+  "id": "i-0962",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "STP/RSTP are switching protocols (\"Switching and routing\" on networking hardware); containment arguable (cf. TCP/IP)"
+ },
+ {
+  "id": "i-1002",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "high",
+  "note": "designing ICT systems; design information system (design ICT system) expresses it, software architecture as the software-system facet"
+ },
+ {
+  "id": "i-1016",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free phrase (amendment rule 3); no interpretable capability"
+ },
+ {
+  "id": "i-1029",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "low",
+  "note": "Kaggle projects signal applied ML/data science; platform not a node, mapping is an inference"
+ },
+ {
+  "id": "i-1032",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "accuracy is a quality of work; attention to detail (on Critical Thinking) is close but not named; arguable"
+ },
+ {
+  "id": "i-1034",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "high",
+  "note": "designing ICT systems; design information system (design ICT system) expresses it, software architecture as the software-system facet"
+ },
+ {
+  "id": "i-1070",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Wi-Fi/wireless networking: no wireless node; networking hardware and protocols nodes are related (cf. TCP/IP example, amendment rule 2); arguable"
+ },
+ {
+  "id": "i-1107",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+   "esco:dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1"
+  ],
+  "preferred": "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+  "confidence": "low",
+  "note": "stakeholder management; only negotiate/collaborate with stakeholders, which is narrower; arguable"
+ },
+ {
+  "id": "i-1115",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Project planning software",
+   "tool:Project portfolio management PPM software",
+   "tool:Microsoft Project"
+  ],
+  "preferred": "tool:Project planning software",
+  "confidence": "high",
+  "note": "project management tools; project planning software expresses it"
+ },
+ {
+  "id": "i-1146",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "high",
+  "note": "designing ICT systems; design information system (design ICT system) expresses it, software architecture as the software-system facet"
+ },
+ {
+  "id": "i-1244",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "high",
+  "note": "Cucumber/Gherkin BDD test automation: instance of tools for ICT test automation (rule 1)"
+ },
+ {
+  "id": "i-1307",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "\"datasets\" names an object, not a capability; create/manage data sets are possible but unsupported"
+ },
+ {
+  "id": "i-1311",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+  ],
+  "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+  "confidence": "high",
+  "note": "exploratory testing is a manual testing technique; execute software tests (Manual testing) contains it"
+ },
+ {
+  "id": "i-1333",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Diagramming software",
+   "esco:901105f8-3a08-453e-b1dc-23619e317fd3"
+  ],
+  "preferred": "tool:Diagramming software",
+  "confidence": "high",
+  "note": "making diagrams; diagramming software expresses it, flowcharts as a kind"
+ },
+ {
+  "id": "i-1382",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e",
+   "esco:385479b7-5da5-4367-9763-0d15b41bb65b",
+   "esco:327d15c8-29ff-4ad4-a4fe-6536d777a45f"
+  ],
+  "preferred": "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e",
+  "confidence": "high",
+  "note": "writing documentation; technical/user documentation nodes are facets of one meaning"
+ },
+ {
+  "id": "i-1396",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Wi-Fi/wireless networking: no wireless node; networking hardware and protocols nodes are related (cf. TCP/IP example, amendment rule 2); arguable"
+ },
+ {
+  "id": "i-1412",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "web design is one discipline; front-end website design and UI design express it (visual vs build are facets, not different meanings)"
+ },
+ {
+  "id": "i-1426",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-1429",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "low",
+  "note": "capturing data = data entry in Kenyan usage; collection reading also plausible"
+ },
+ {
+  "id": "i-1443",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Graphical user interface GUI design software",
+   "esco:a71577b2-7550-4222-88ee-dcbd2d881516"
+  ],
+  "preferred": "tool:Graphical user interface GUI design software",
+  "confidence": "low",
+  "note": "Sketch the UI design app: instance of GUI design software; drawing-sketches reading also plausible"
+ },
+ {
+  "id": "i-1476",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.f",
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3"
+  ],
+  "preferred": "onet:2.B.1.f",
+  "confidence": "low",
+  "note": "assisting people ~ Service Orientation / assist customers; soft-skill node not named exactly"
+ },
+ {
+  "id": "i-1480",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "generic computer-use phrase with no specific capability (amendment 1 rule 3); Computers and Electronics is technical domain knowledge, not basic digital literacy"
+ },
+ {
+  "id": "i-1501",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337",
+   "onet:2.A.1.d",
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "high",
+  "note": "interpersonal skill with no node naming it; Social Perceptiveness, communication and coordination each partly fit, none clearly best"
+ },
+ {
+  "id": "i-1508",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+  ],
+  "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+  "confidence": "low",
+  "note": "computer hardware; \"stuff\" makes it vague"
+ },
+ {
+  "id": "i-1516",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "esco:81633a44-f1db-4a01-a940-804c6905e330",
+   "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+   "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "high",
+  "note": "computer (software) packages = office productivity suite in Kenyan usage"
+ },
+ {
+  "id": "i-1540",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-1573",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b"
+  ],
+  "preferred": "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+  "confidence": "high",
+  "note": "leadership soft skill; leadership principles names it (rule 5)"
+ },
+ {
+  "id": "i-1589",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-1622",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Wi-Fi/wireless networking: no wireless node; networking hardware and protocols nodes are related (cf. TCP/IP example, amendment rule 2); arguable"
+ },
+ {
+  "id": "i-1623",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "esco:81633a44-f1db-4a01-a940-804c6905e330",
+   "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+   "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "high",
+  "note": "computer packages = office productivity suite in Kenyan usage"
+ },
+ {
+  "id": "i-1647",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+   "onet:2.B.5.a"
+  ],
+  "preferred": "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+  "confidence": "high",
+  "note": "organisation as a soft skill; apply organisational techniques names it (rule 5)"
+ },
+ {
+  "id": "i-1648",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+   "esco:5898d99a-62a4-4e10-a2e3-0d815ce44248"
+  ],
+  "preferred": "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+  "confidence": "high",
+  "note": "hardening is a system-security management activity; manage system security contains it"
+ },
+ {
+  "id": "i-1657",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "tool:Data visualization software"
+  ],
+  "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+  "confidence": "high",
+  "note": "making graphs/charts = data visualisation"
+ },
+ {
+  "id": "i-1659",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-1677",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "printer/scanner setup is an ICT support task; provide ICT support contains it"
+ },
+ {
+  "id": "i-1682",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Git",
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f"
+  ],
+  "preferred": "tool:Git",
+  "shared_owner_marks": {
+   "tool:Git": "valid",
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f": "valid"
+  },
+  "confidence": "high",
+  "note": "Git; version control is software configuration management, and that category node contains Git (rule 1)"
+ },
+ {
+  "id": "i-1700",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.1.e"
+  ],
+  "preferred": "onet:2.A.1.e",
+  "confidence": "low",
+  "note": "numbers ~ numeracy (named on Mathematics); very terse"
+ },
+ {
+  "id": "i-1704",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "printer/scanner setup is an ICT support task; provide ICT support contains it"
+ },
+ {
+  "id": "i-1731",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b"
+  ],
+  "preferred": "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+  "confidence": "high",
+  "note": "leader = leadership soft skill; leadership principles names it (rule 5)"
+ },
+ {
+  "id": "i-1733",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.l",
+   "onet:2.B.3.k"
+  ],
+  "preferred": "onet:2.B.3.l",
+  "confidence": "low",
+  "note": "fixing things = repairing/troubleshooting; \"things\" makes it vague"
+ },
+ {
+  "id": "i-1735",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": "general computer networking; per amendment 1 rule 4 \"networking\" has several concrete node readings (hardware/switching, design, routing, protocols)"
+ },
+ {
+  "id": "i-1737",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Wi-Fi/wireless networking: no wireless node; networking hardware and protocols nodes are related (cf. TCP/IP example, amendment rule 2); arguable"
+ },
+ {
+  "id": "i-1739",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+   "onet:2.B.5.a"
+  ],
+  "preferred": "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+  "confidence": "low",
+  "note": "being organized = organisational skill (apply organisational techniques); trait/skill line arguable"
+ },
+ {
+  "id": "i-1752",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+   "tool:Diagramming software",
+   "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba"
+  ],
+  "preferred": "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+  "confidence": "high",
+  "note": "system design diagrams (e.g. UML) for software design"
+ },
+ {
+  "id": "i-1761",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "configuring network printers is an ICT support/configuration task"
+ },
+ {
+  "id": "i-1763",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f049d050-12da-4e40-813a-2b5eb6df6b51",
+   "tool:Web browser software"
+  ],
+  "preferred": "esco:f049d050-12da-4e40-813a-2b5eb6df6b51",
+  "confidence": "low",
+  "note": "Internet of Things vs generic internet use; near content-free"
+ },
+ {
+  "id": "i-1769",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "web design is one discipline; front-end website design and UI design express it (visual vs build are facets, not different meanings)"
+ },
+ {
+  "id": "i-1805",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "web design is one discipline; front-end website design and UI design express it (visual vs build are facets, not different meanings)"
+ }
+]

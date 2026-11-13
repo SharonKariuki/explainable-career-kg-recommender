@@ -1,0 +1,254 @@
+{
+ "mapping": {
+  "round 1": {
+   "missing": 0,
+   "development": {
+    "n": 241,
+    "class raw agreement": 0.8796680497925311,
+    "class kappa": 0.7236457097667062,
+    "both unambiguous": 160,
+    "acceptable Jaccard (mean, both unambiguous)": 0.793229166666667,
+    "preferred exact agreement (both unambiguous)": 0.88125,
+    "freeze class": true,
+    "freeze acceptable": true
+   },
+   "test": {
+    "n": 428,
+    "class raw agreement": 0.9158878504672897,
+    "class kappa": 0.8238360925637976,
+    "both unambiguous": 273,
+    "acceptable Jaccard (mean, both unambiguous)": 0.7740537240537241,
+    "preferred exact agreement (both unambiguous)": 0.8901098901098901,
+    "freeze class": true,
+    "freeze acceptable": true
+   },
+   "validation": {
+    "n": 430,
+    "class raw agreement": 0.9046511627906977,
+    "class kappa": 0.8086046486380859,
+    "both unambiguous": 266,
+    "acceptable Jaccard (mean, both unambiguous)": 0.7723057644110275,
+    "preferred exact agreement (both unambiguous)": 0.8082706766917294,
+    "freeze class": true,
+    "freeze acceptable": true
+   }
+  },
+  "round 2": {
+   "missing": 0,
+   "development": {
+    "n": 241,
+    "class raw agreement": 0.8796680497925311,
+    "class kappa": 0.7236457097667062,
+    "both unambiguous": 160,
+    "acceptable Jaccard (mean, both unambiguous)": 0.793229166666667,
+    "preferred exact agreement (both unambiguous)": 0.88125,
+    "freeze class": true,
+    "freeze acceptable": true
+   },
+   "test": {
+    "n": 428,
+    "class raw agreement": 0.9158878504672897,
+    "class kappa": 0.8238360925637976,
+    "both unambiguous": 273,
+    "acceptable Jaccard (mean, both unambiguous)": 0.7740537240537241,
+    "preferred exact agreement (both unambiguous)": 0.8901098901098901,
+    "freeze class": true,
+    "freeze acceptable": true
+   },
+   "validation": {
+    "n": 430,
+    "class raw agreement": 0.9046511627906977,
+    "class kappa": 0.8086046486380859,
+    "both unambiguous": 266,
+    "acceptable Jaccard (mean, both unambiguous)": 0.7723057644110275,
+    "preferred exact agreement (both unambiguous)": 0.8082706766917294,
+    "freeze class": true,
+    "freeze acceptable": true
+   }
+  }
+ },
+ "inputs": {
+  "round 1": {
+   "missing": 0,
+   "all": {
+    "n": 1810,
+    "class raw agreement": 0.8541436464088398,
+    "class kappa": 0.514390243902439,
+    "both unambiguous": 1386,
+    "acceptable Jaccard (mean, both unambiguous)": 0.7665584415584414,
+    "preferred exact agreement (both unambiguous)": 0.8773448773448773,
+    "freeze class": false,
+    "freeze acceptable": true
+   }
+  },
+  "round 2": {
+   "missing": 0,
+   "all": {
+    "n": 1810,
+    "class raw agreement": 0.9419889502762431,
+    "class kappa": 0.7782188893790128,
+    "both unambiguous": 1497,
+    "acceptable Jaccard (mean, both unambiguous)": 0.7577042974838561,
+    "preferred exact agreement (both unambiguous)": 0.87374749498998,
+    "freeze class": true,
+    "freeze acceptable": true
+   }
+  }
+ },
+ "profiles": {
+  "round 1": {
+   "missing": 0,
+   "development": {
+    "sufficiency": {
+     "n": 150,
+     "confusion (rows A, columns B)": {
+      "sufficient": {
+       "sufficient": 75,
+       "borderline": 1,
+       "insufficient": 0
+      },
+      "borderline": {
+       "sufficient": 1,
+       "borderline": 9,
+       "insufficient": 0
+      },
+      "insufficient": {
+       "sufficient": 0,
+       "borderline": 1,
+       "insufficient": 63
+      }
+     },
+     "3-class raw agreement": 0.98,
+     "3-class kappa": 0.9642346208869814,
+     "borderline rate A": 0.06666666666666667,
+     "borderline rate B": 0.07333333333333333,
+     "borderline rate either": 0.08,
+     "B->S raw agreement": 0.9933333333333333,
+     "B->S kappa": 0.9863462588749317,
+     "B->I raw agreement": 0.9866666666666667,
+     "B->I kappa": 0.9733285917496445,
+     "restricted n": 138,
+     "restricted excluded pairs": {
+      "B-B": 9,
+      "B-I": 1,
+      "B-S": 2
+     },
+     "restricted kappa": 1.0,
+     "freeze": true
+    },
+    "grades": {
+     "profiles": 150,
+     "pairs": 3600,
+     "quadratic weighted kappa": 0.921994813126607,
+     "exact grade agreement": 0.9472222222222222,
+     "grade-3 Jaccard (mean)": 0.9333333333333333,
+     "profiles with both grade-3 sets empty": 69,
+     "grade-3 Jaccard (mean, excluding both empty)": 0.8765432098765432,
+     "freeze": true
+    }
+   },
+   "test": {
+    "sufficiency": {
+     "n": 261,
+     "confusion (rows A, columns B)": {
+      "sufficient": {
+       "sufficient": 133,
+       "borderline": 1,
+       "insufficient": 0
+      },
+      "borderline": {
+       "sufficient": 0,
+       "borderline": 14,
+       "insufficient": 0
+      },
+      "insufficient": {
+       "sufficient": 0,
+       "borderline": 3,
+       "insufficient": 110
+      }
+     },
+     "3-class raw agreement": 0.9846743295019157,
+     "3-class kappa": 0.9722465906372119,
+     "borderline rate A": 0.05363984674329502,
+     "borderline rate B": 0.06896551724137931,
+     "borderline rate either": 0.06896551724137931,
+     "B->S raw agreement": 0.9885057471264368,
+     "B->S kappa": 0.9765168101250638,
+     "B->I raw agreement": 0.9961685823754789,
+     "B->I kappa": 0.9923332256264136,
+     "restricted n": 243,
+     "restricted excluded pairs": {
+      "B-B": 14,
+      "B-I": 3,
+      "B-S": 1
+     },
+     "restricted kappa": 1.0,
+     "freeze": true
+    },
+    "grades": {
+     "profiles": 261,
+     "pairs": 6264,
+     "quadratic weighted kappa": 0.9264830604817863,
+     "exact grade agreement": 0.9529054916985952,
+     "grade-3 Jaccard (mean)": 0.9003831417624522,
+     "profiles with both grade-3 sets empty": 121,
+     "grade-3 Jaccard (mean, excluding both empty)": 0.8142857142857143,
+     "freeze": true
+    }
+   },
+   "validation": {
+    "sufficiency": {
+     "n": 268,
+     "confusion (rows A, columns B)": {
+      "sufficient": {
+       "sufficient": 131,
+       "borderline": 4,
+       "insufficient": 0
+      },
+      "borderline": {
+       "sufficient": 2,
+       "borderline": 12,
+       "insufficient": 1
+      },
+      "insufficient": {
+       "sufficient": 0,
+       "borderline": 0,
+       "insufficient": 118
+      }
+     },
+     "3-class raw agreement": 0.9738805970149254,
+     "3-class kappa": 0.9526107055346452,
+     "borderline rate A": 0.055970149253731345,
+     "borderline rate B": 0.05970149253731343,
+     "borderline rate either": 0.0708955223880597,
+     "B->S raw agreement": 0.996268656716418,
+     "B->S kappa": 0.9924362158500791,
+     "B->I raw agreement": 0.9776119402985075,
+     "B->I kappa": 0.9552263741159436,
+     "restricted n": 249,
+     "restricted excluded pairs": {
+      "B-B": 12,
+      "B-I": 1,
+      "B-S": 6
+     },
+     "restricted kappa": 1.0,
+     "freeze": true
+    },
+    "grades": {
+     "profiles": 268,
+     "pairs": 6432,
+     "quadratic weighted kappa": 0.9226444034452612,
+     "exact grade agreement": 0.9504042288557214,
+     "grade-3 Jaccard (mean)": 0.9197761194029851,
+     "profiles with both grade-3 sets empty": 128,
+     "grade-3 Jaccard (mean, excluding both empty)": 0.8464285714285714,
+     "freeze": true
+    }
+   }
+  }
+ },
+ "pairs": {
+  "n": 200,
+  "kappa (report only)": 0.8792513584222179
+ }
+}

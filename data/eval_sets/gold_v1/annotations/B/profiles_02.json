@@ -1,0 +1,1692 @@
+[
+ {
+  "id": "s-0116",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3",
+   "I4"
+  ],
+  "grades": {
+   "15-1299.08": 1,
+   "15-1244.00": 1,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0117",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-1231.00": 2,
+   "15-1244.00": 1,
+   "15-1243.00": 1,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1242.00",
+   "15-1231.00"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0118",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1255.00": 3,
+   "15-1254.00": 2
+  },
+  "plausible_careers": [
+   "15-1255.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0119",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1255.00": 3,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1255.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0120",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1",
+   "I4"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1251.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0121",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.09": 3,
+   "15-1211.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.09"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0122",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-1243.00": 2,
+   "15-1243.01": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-1242.00",
+   "15-1243.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0123",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1",
+   "I4"
+  ],
+  "grades": {
+   "15-1251.00": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0124",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0125",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-2051.01": 1,
+   "15-2051.00": 1,
+   "15-2041.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0126",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 2,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0127",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2041.00": 3,
+   "15-2051.00": 2,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2041.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0128",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1212.00": 1,
+   "15-2051.00": 1,
+   "15-1253.00": 1,
+   "15-1255.00": 1,
+   "15-1299.08": 1,
+   "15-1299.04": 1
+  },
+  "plausible_careers": [],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0129",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1243.01": 3,
+   "15-1243.00": 2,
+   "15-1242.00": 2,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-1243.01",
+   "15-1243.00",
+   "15-1242.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0130",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1232.00": 2,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0131",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1",
+   "I4"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0132",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.06": 3,
+   "15-1212.00": 2,
+   "15-1299.04": 1
+  },
+  "plausible_careers": [
+   "15-1299.06"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0133",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1255.00": 2,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0134",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1299.07": 2,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0135",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0136",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0137",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1252.00": 1,
+   "15-1255.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0138",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0139",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 2,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0140",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2051.00": 3,
+   "15-2041.00": 1,
+   "15-1221.00": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0141",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1251.00": 2,
+   "15-1254.00": 2
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0142",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1231.00": 3,
+   "15-1244.00": 2,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1231.00",
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0143",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 1,
+   "15-1212.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0144",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1231.00": 3,
+   "15-1244.00": 2,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1231.00",
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0145",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1231.00": 2,
+   "15-2051.01": 2,
+   "15-2051.00": 1,
+   "15-1244.00": 1,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1231.00",
+   "15-2051.01"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0146",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1232.00": 2,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0147",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0148",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0149",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0150",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1231.00": 3,
+   "15-1241.00": 2,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1231.00",
+   "15-1241.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0151",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1231.00": 2,
+   "15-1232.00": 2,
+   "15-1244.00": 2,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1231.00",
+   "15-1232.00",
+   "15-1244.00"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0152",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1251.00": 2,
+   "15-1254.00": 2,
+   "15-1299.05": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0153",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2051.01": 3,
+   "15-2051.00": 1,
+   "15-1211.00": 1
+  },
+  "plausible_careers": [
+   "15-2051.01"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0154",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1231.00": 3,
+   "15-1244.00": 1,
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1231.00"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0155",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1241.00": 1,
+   "15-1299.08": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0156",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.04": 2,
+   "15-1212.00": 2,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.04",
+   "15-1212.00"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0157",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1251.00": 1,
+   "15-1242.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0158",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1253.00": 2
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0159",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1",
+   "I4"
+  ],
+  "grades": {
+   "15-1244.00": 1,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0160",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1231.00": 3,
+   "15-1244.00": 2,
+   "15-1232.00": 1,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0161",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.07": 3,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.07"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0162",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1",
+   "I4"
+  ],
+  "grades": {
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0163",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1255.00": 1,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0164",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2051.01": 3,
+   "15-2051.00": 1,
+   "15-1211.00": 1
+  },
+  "plausible_careers": [
+   "15-2051.01"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0165",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1212.00": 3,
+   "15-1299.04": 1,
+   "15-1299.05": 1,
+   "15-1299.06": 1
+  },
+  "plausible_careers": [
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0166",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0167",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1255.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0168",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1231.00": 2,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0169",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0170",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0171",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1212.00": 1,
+   "15-1242.00": 1,
+   "15-1253.00": 1,
+   "15-1221.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0172",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1243.01": 3,
+   "15-1243.00": 2,
+   "15-1242.00": 2,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-1243.01",
+   "15-1243.00",
+   "15-1242.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0173",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1254.00": 2,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0174",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0175",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0176",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0177",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1299.07": 1,
+   "15-1212.00": 1,
+   "15-2051.01": 1,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0178",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-2051.01": 2
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0179",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1221.00": 3,
+   "15-2051.00": 2
+  },
+  "plausible_careers": [
+   "15-1221.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0180",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1",
+   "I4"
+  ],
+  "grades": {
+   "15-1212.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0181",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0182",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3",
+   "I4"
+  ],
+  "grades": {
+   "15-1255.00": 2,
+   "15-1254.00": 2
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0183",
+  "sufficiency": "borderline",
+  "reasons": [],
+  "grades": {
+   "15-1212.00": 2,
+   "15-1299.05": 2,
+   "15-1231.00": 1,
+   "15-1232.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0184",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0185",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1242.00": 2,
+   "15-1243.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0186",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1242.00": 1,
+   "15-1243.00": 1,
+   "15-1243.01": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0187",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1299.04": 2,
+   "15-1212.00": 2,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0188",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1242.00": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0189",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0190",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-2051.01": 2,
+   "15-2051.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0191",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0192",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0193",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2041.00": 3,
+   "15-2051.00": 2,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2041.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0194",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1252.00": 2,
+   "15-1254.00": 2,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0195",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1254.00": 2,
+   "15-1251.00": 1,
+   "15-1242.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0196",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0197",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-1243.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1242.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0198",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1299.09": 1,
+   "15-1211.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0199",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0200",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5",
+   "I2"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0201",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1251.00": 2,
+   "15-1254.00": 1,
+   "15-1242.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0202",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1243.01": 3,
+   "15-1243.00": 1,
+   "15-2051.00": 1
+  },
+  "plausible_careers": [
+   "15-1243.01"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0203",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 2,
+   "15-1231.00": 2,
+   "15-1299.05": 1,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0204",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1211.00": 1,
+   "15-1299.08": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0205",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0206",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.04": 3,
+   "15-1212.00": 2
+  },
+  "plausible_careers": [
+   "15-1299.04"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0207",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {
+   "15-1299.09": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0208",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1231.00": 2,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0209",
+  "sufficiency": "borderline",
+  "reasons": [],
+  "grades": {
+   "15-2051.00": 2,
+   "15-2051.01": 2,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0210",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1254.00": 1,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0211",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1255.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0212",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1231.00": 2,
+   "15-1241.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0213",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1232.00": 1,
+   "15-1231.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0214",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.08": 3,
+   "15-1241.00": 2,
+   "15-1244.00": 2
+  },
+  "plausible_careers": [
+   "15-1299.08"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0215",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1231.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0216",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1241.00": 3,
+   "15-1231.00": 2,
+   "15-1299.05": 2,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1241.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0217",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1252.00": 2
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0218",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1243.01": 3,
+   "15-1243.00": 2,
+   "15-2051.00": 1
+  },
+  "plausible_careers": [
+   "15-1243.01"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0219",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0220",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1231.00": 2
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0221",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0222",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1254.00": 2,
+   "15-1251.00": 1,
+   "15-1299.08": 1
+  },
+  "plausible_careers": [
+   "15-1252.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0223",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.04": 3,
+   "15-1212.00": 2
+  },
+  "plausible_careers": [
+   "15-1299.04"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0224",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1",
+   "I4"
+  ],
+  "grades": {
+   "15-1251.00": 1
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0225",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-1243.00": 2,
+   "15-1243.01": 1
+  },
+  "plausible_careers": [
+   "15-1242.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0226",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1253.00": 2
+  },
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0227",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1255.00": 3,
+   "15-1254.00": 2
+  },
+  "plausible_careers": [
+   "15-1255.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0228",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2041.00": 3,
+   "15-2051.00": 2,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2041.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0229",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "low",
+  "note": "see sufficiency/reasons"
+ },
+ {
+  "id": "s-0230",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.06": 3,
+   "15-1212.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.06"
+  ],
+  "confidence": "high",
+  "note": "see sufficiency/reasons"
+ }
+]

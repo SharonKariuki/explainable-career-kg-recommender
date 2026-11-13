@@ -1,0 +1,12 @@
+{
+ "inputs adjudicated": 65,
+ "inputs agreed": 941,
+ "inputs agreed (union of acceptable sets)": 762,
+ "inputs dropped: no confident adjudication": 42,
+ "mapping adjudicated": 393,
+ "mapping agreed": 634,
+ "mapping dropped: no confident adjudication": 72,
+ "profiles adjudicated": 93,
+ "profiles agreed": 582,
+ "profiles dropped": 4
+}

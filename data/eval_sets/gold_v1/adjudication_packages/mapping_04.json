@@ -1,0 +1,2776 @@
+[
+ {
+  "id": "m-0822",
+  "input": "dashboard work",
+  "annotation_1": {
+   "id": "m-0822",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "tool:Data visualization software",
+    "tool:Business intelligence software"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "high",
+   "note": "dashboards name on data visualisation node"
+  },
+  "annotation_2": {
+   "id": "m-0822",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0823",
+  "input": "installing windows",
+  "annotation_1": {
+   "id": "m-0823",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Microsoft Windows",
+    "tool:Microsoft Windows Sysprep",
+    "tool:Microsoft Windows Pre-installation Environment",
+    "esco:0868eef3-2213-4572-9343-74931345a7d3"
+   ],
+   "preferred": "tool:Microsoft Windows",
+   "confidence": "low",
+   "note": "OS installation; no install node"
+  },
+  "annotation_2": {
+   "id": "m-0823",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Microsoft Windows",
+    "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272"
+   ],
+   "preferred": "tool:Microsoft Windows",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0831",
+  "input": "Gatsby",
+  "annotation_1": {
+   "id": "m-0831",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "Gatsby not in catalogue"
+  },
+  "annotation_2": {
+   "id": "m-0831",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:JavaScript framework software"
+   ],
+   "preferred": "tool:JavaScript framework software",
+   "confidence": "low",
+   "note": "Gatsby has no node"
+  }
+ },
+ {
+  "id": "m-0833",
+  "input": "keys",
+  "annotation_1": {
+   "id": "m-0833",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:e5beeff8-7c98-490a-ae2c-16fbb6a87305",
+    "tool:Cryptographic key management software"
+   ],
+   "preferred": "esco:e5beeff8-7c98-490a-ae2c-16fbb6a87305",
+   "confidence": "low",
+   "note": "cryptographic keys vs keyboard vs music keys"
+  },
+  "annotation_2": {
+   "id": "m-0833",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:e5beeff8-7c98-490a-ae2c-16fbb6a87305",
+    "tool:Cryptographic key management software",
+    "esco:d32db06e-bd06-4415-a7ab-1b0ee68caa9a"
+   ],
+   "preferred": "esco:e5beeff8-7c98-490a-ae2c-16fbb6a87305",
+   "confidence": "low",
+   "note": "keys vague"
+  }
+ },
+ {
+  "id": "m-0843",
+  "input": "problem solving",
+  "annotation_1": {
+   "id": "m-0843",
+   "label": "unambiguous",
+   "acceptable": [
+    "onet:2.B.2.i",
+    "esco:03b9b491-fc9b-4868-914a-bf7cd47b5041"
+   ],
+   "preferred": "onet:2.B.2.i",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0843",
+   "label": "unambiguous",
+   "acceptable": [
+    "onet:2.B.2.i",
+    "onet:2.B.3.k"
+   ],
+   "preferred": "onet:2.B.2.i",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0844",
+  "input": "drawing graphs from spreadsheet numbers",
+  "annotation_1": {
+   "id": "m-0844",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+    "tool:Data visualization software"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "high",
+   "note": "charting spreadsheet data"
+  },
+  "annotation_2": {
+   "id": "m-0844",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+    "tool:Microsoft Excel"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "low",
+   "note": "charts from spreadsheets"
+  }
+ },
+ {
+  "id": "m-0846",
+  "input": "automated checks for individual functions",
+  "annotation_1": {
+   "id": "m-0846",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "tool:Unit testing software",
+    "esco:6a322874-e32f-4cd8-9683-badce67a7f73"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "high",
+   "note": "unit testing paraphrase"
+  },
+  "annotation_2": {
+   "id": "m-0846",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "tool:Unit testing software"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0851",
+  "input": "Hardhat",
+  "annotation_1": {
+   "id": "m-0851",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Solidity",
+    "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8"
+   ],
+   "preferred": "tool:Solidity",
+   "confidence": "high",
+   "note": "Hardhat is a name on Solidity"
+  },
+  "annotation_2": {
+   "id": "m-0851",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Solidity"
+   ],
+   "preferred": "tool:Solidity",
+   "confidence": "low",
+   "note": "Hardhat is a Solidity dev tool"
+  }
+ },
+ {
+  "id": "m-0852",
+  "input": "presentations",
+  "annotation_1": {
+   "id": "m-0852",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c55caed2-de9e-4a25-819e-a0b0e83fba1b",
+    "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb",
+    "esco:1ba59ce0-7fec-434b-8d5c-9b275250a26c",
+    "onet:2.A.1.d"
+   ],
+   "preferred": "esco:c55caed2-de9e-4a25-819e-a0b0e83fba1b",
+   "confidence": "low",
+   "note": "giving vs making slide presentations"
+  },
+  "annotation_2": {
+   "id": "m-0852",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:c55caed2-de9e-4a25-819e-a0b0e83fba1b",
+    "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb",
+    "esco:d0f2f8a7-d935-4a6d-8e54-dcc3e5e2cbeb"
+   ],
+   "preferred": "esco:c55caed2-de9e-4a25-819e-a0b0e83fba1b",
+   "confidence": "low",
+   "note": "giving vs making presentations"
+  }
+ },
+ {
+  "id": "m-0856",
+  "input": "Playwright",
+  "annotation_1": {
+   "id": "m-0856",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Microsoft Playwright",
+    "tool:Selenium",
+    "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f"
+   ],
+   "preferred": "tool:Microsoft Playwright",
+   "shared_owner_marks": {
+    "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f": "valid",
+    "tool:Selenium": "valid"
+   },
+   "confidence": "high",
+   "note": "Playwright has its own node; also a name on Selenium"
+  },
+  "annotation_2": {
+   "id": "m-0856",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Microsoft Playwright",
+    "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f"
+   ],
+   "preferred": "tool:Microsoft Playwright",
+   "shared_owner_marks": {
+    "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f": "valid",
+    "tool:Selenium": "not_valid"
+   },
+   "confidence": "low",
+   "note": "Playwright has own node"
+  }
+ },
+ {
+  "id": "m-0857",
+  "input": "making graphs and charts",
+  "annotation_1": {
+   "id": "m-0857",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "tool:Data visualization software"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0857",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "esco:348b74cd-49ce-4844-8bdf-ec188b497213",
+    "esco:1973c966-f236-40c9-b2d4-5d71a89019be"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0859",
+  "input": "queries",
+  "annotation_1": {
+   "id": "m-0859",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+    "esco:cace7a77-38b7-4cdf-8171-e17692bef5f6"
+   ],
+   "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "confidence": "low",
+   "note": "database queries vs customer inquiries"
+  },
+  "annotation_2": {
+   "id": "m-0859",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+    "esco:9cf681c7-89ec-470c-b651-7fe03786f586",
+    "tool:Structured query language SQL"
+   ],
+   "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "confidence": "low",
+   "note": "queries vague"
+  }
+ },
+ {
+  "id": "m-0861",
+  "input": "animations on sites",
+  "annotation_1": {
+   "id": "m-0861",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+    "tool:Cascading style sheets CSS"
+   ],
+   "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "confidence": "low",
+   "note": "web animation as front-end work; no animation node"
+  },
+  "annotation_2": {
+   "id": "m-0861",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "web animation not in catalogue"
+  }
+ },
+ {
+  "id": "m-0866",
+  "input": "scanning systems for known weaknesses",
+  "annotation_1": {
+   "id": "m-0866",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Network and system vulnerability assessment software",
+    "esco:dad7e408-162f-46a4-8567-db560e19e2fc",
+    "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+   ],
+   "preferred": "tool:Network and system vulnerability assessment software",
+   "confidence": "high",
+   "note": "vulnerability scanning"
+  },
+  "annotation_2": {
+   "id": "m-0866",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:dad7e408-162f-46a4-8567-db560e19e2fc",
+    "tool:Network and system vulnerability assessment software",
+    "tool:Tenable Nessus"
+   ],
+   "preferred": "esco:dad7e408-162f-46a4-8567-db560e19e2fc",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0867",
+  "input": "helping people with their computer problems",
+  "annotation_1": {
+   "id": "m-0867",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+    "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+    "esco:744442ac-c157-4350-8be0-ce454df4f5c5"
+   ],
+   "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "confidence": "high",
+   "note": "IT support"
+  },
+  "annotation_2": {
+   "id": "m-0867",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+    "esco:744442ac-c157-4350-8be0-ce454df4f5c5"
+   ],
+   "preferred": "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "confidence": "low",
+   "note": "user support"
+  }
+ },
+ {
+  "id": "m-0868",
+  "input": "encrypted tunnels between sites",
+  "annotation_1": {
+   "id": "m-0868",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95",
+    "tool:Virtual private networking VPN software",
+    "tool:Internet Protocol Security IPSEC"
+   ],
+   "preferred": "esco:acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95",
+   "confidence": "high",
+   "note": "site-to-site VPN"
+  },
+  "annotation_2": {
+   "id": "m-0868",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95",
+    "tool:Virtual private networking VPN software"
+   ],
+   "preferred": "esco:acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0869",
+  "input": "stakeholders",
+  "annotation_1": {
+   "id": "m-0869",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b"
+   ],
+   "preferred": "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+   "confidence": "low",
+   "note": "stakeholder management implied"
+  },
+  "annotation_2": {
+   "id": "m-0869",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "noun, not a skill"
+  }
+ },
+ {
+  "id": "m-0870",
+  "input": "VLAN",
+  "annotation_1": {
+   "id": "m-0870",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Virtual local area network management software"
+   ],
+   "preferred": "tool:Virtual local area network management software",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0870",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+   ],
+   "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "confidence": "low",
+   "note": "VLAN is a switching feature"
+  }
+ },
+ {
+  "id": "m-0874",
+  "input": "subnetting",
+  "annotation_1": {
+   "id": "m-0874",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+    "tool:Network address management software"
+   ],
+   "preferred": "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+   "confidence": "low",
+   "note": "IP subnetting; no specific node"
+  },
+  "annotation_2": {
+   "id": "m-0874",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+    "esco:b9aad733-959a-4178-984f-53e4bd05b420"
+   ],
+   "preferred": "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "confidence": "low",
+   "note": "IP addressing"
+  }
+ },
+ {
+  "id": "m-0875",
+  "input": "writing up how a system works",
+  "annotation_1": {
+   "id": "m-0875",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e"
+   ],
+   "preferred": "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e",
+   "confidence": "high",
+   "note": "technical documentation"
+  },
+  "annotation_2": {
+   "id": "m-0875",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:941364b9-1375-4add-9889-d67bae99bc8c",
+    "esco:385479b7-5da5-4367-9763-0d15b41bb65b",
+    "onet:2.A.1.c"
+   ],
+   "preferred": "esco:941364b9-1375-4add-9889-d67bae99bc8c",
+   "confidence": "low",
+   "note": "system documentation"
+  }
+ },
+ {
+  "id": "m-0876",
+  "input": "architecture",
+  "annotation_1": {
+   "id": "m-0876",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+    "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+    "esco:ee3c1d54-f46a-43c7-a0f9-0ba3648164d0",
+    "esco:11430d93-c835-48ed-8e70-285fa69c9ae6"
+   ],
+   "preferred": "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+   "confidence": "low",
+   "note": "software vs enterprise vs cloud vs building architecture"
+  },
+  "annotation_2": {
+   "id": "m-0876",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+    "esco:1bba98a7-92b9-450b-9235-e0c905f8f3c4",
+    "esco:d0c6d77e-cb25-4770-bf77-2073fc5f7523",
+    "tool:Network architecture design software"
+   ],
+   "preferred": "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+   "confidence": "low",
+   "note": "architecture vague"
+  }
+ },
+ {
+  "id": "m-0878",
+  "input": "TDD testing",
+  "annotation_1": {
+   "id": "m-0878",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "esco:6a322874-e32f-4cd8-9683-badce67a7f73"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "low",
+   "note": "test-driven development; no TDD node"
+  },
+  "annotation_2": {
+   "id": "m-0878",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "tool:Unit testing software",
+    "esco:dba46f87-0831-49cd-a1c7-340a653c0221"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "low",
+   "note": "TDD"
+  }
+ },
+ {
+  "id": "m-0879",
+  "input": "models",
+  "annotation_1": {
+   "id": "m-0879",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+    "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc"
+   ],
+   "preferred": "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+   "confidence": "low",
+   "note": "data vs ML vs architecture models"
+  },
+  "annotation_2": {
+   "id": "m-0879",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+    "esco:5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+    "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+   ],
+   "preferred": "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+   "confidence": "low",
+   "note": "models vague"
+  }
+ },
+ {
+  "id": "m-0883",
+  "input": "recording and following up software defects",
+  "annotation_1": {
+   "id": "m-0883",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Defect tracking software",
+    "tool:Issue tracking system software",
+    "esco:561c2525-5bd8-4d86-8f45-820f4be7db93"
+   ],
+   "preferred": "tool:Defect tracking software",
+   "confidence": "high",
+   "note": "bug tracking"
+  },
+  "annotation_2": {
+   "id": "m-0883",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Defect tracking software",
+    "tool:Issue tracking system software"
+   ],
+   "preferred": "tool:Defect tracking software",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0886",
+  "input": "maintenance",
+  "annotation_1": {
+   "id": "m-0886",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:fbbcb9ab-4b95-4e57-a756-30d08b7da7a5",
+    "onet:2.B.3.j",
+    "esco:c927ec6e-9082-4b22-afd3-0c4e219eaf73"
+   ],
+   "preferred": "esco:fbbcb9ab-4b95-4e57-a756-30d08b7da7a5",
+   "confidence": "low",
+   "note": "system vs equipment maintenance"
+  },
+  "annotation_2": {
+   "id": "m-0886",
+   "label": "ambiguous",
+   "acceptable": [
+    "onet:2.B.3.j",
+    "esco:c927ec6e-9082-4b22-afd3-0c4e219eaf73"
+   ],
+   "preferred": "onet:2.B.3.j",
+   "confidence": "low",
+   "note": "maintenance vague"
+  }
+ },
+ {
+  "id": "m-0887",
+  "input": "setting up a firewall",
+  "annotation_1": {
+   "id": "m-0887",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+    "tool:Firewall software",
+    "esco:054f26ab-cfdc-4077-883c-1c4c9e9b310a"
+   ],
+   "preferred": "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0887",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+    "tool:Firewall software"
+   ],
+   "preferred": "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0890",
+  "input": "PDI",
+  "annotation_1": {
+   "id": "m-0890",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:42c3287f-5e50-4559-a2d1-2000c70e0aab"
+   ],
+   "preferred": "esco:42c3287f-5e50-4559-a2d1-2000c70e0aab",
+   "confidence": "low",
+   "note": "PDI name on Pentaho Data Integration; acronym could mean other things"
+  },
+  "annotation_2": {
+   "id": "m-0890",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:42c3287f-5e50-4559-a2d1-2000c70e0aab",
+    "tool:Pentaho Kettle"
+   ],
+   "preferred": "esco:42c3287f-5e50-4559-a2d1-2000c70e0aab",
+   "confidence": "high",
+   "note": "Pentaho Data Integration"
+  }
+ },
+ {
+  "id": "m-0891",
+  "input": "checking an app for defects before release",
+  "annotation_1": {
+   "id": "m-0891",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+    "esco:85f46538-ae70-498a-bfbc-b8ddafe96c7d",
+    "esco:ce354460-500e-4eaa-8e95-8f243fcea3db"
+   ],
+   "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+   "confidence": "high",
+   "note": "software testing"
+  },
+  "annotation_2": {
+   "id": "m-0891",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+    "tool:System testing software",
+    "esco:85f46538-ae70-498a-bfbc-b8ddafe96c7d"
+   ],
+   "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0893",
+  "input": "fixing computers remotely",
+  "annotation_1": {
+   "id": "m-0893",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Remote desktop control software",
+    "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+    "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+    "tool:Remote access software"
+   ],
+   "preferred": "tool:Remote desktop control software",
+   "confidence": "high",
+   "note": "remote IT support"
+  },
+  "annotation_2": {
+   "id": "m-0893",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+    "tool:Remote control software",
+    "tool:Remote desktop control software",
+    "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"
+   ],
+   "preferred": "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "confidence": "low",
+   "note": "remote troubleshooting"
+  }
+ },
+ {
+  "id": "m-0894",
+  "input": "prediction",
+  "annotation_1": {
+   "id": "m-0894",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+    "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71"
+   ],
+   "preferred": "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "confidence": "low",
+   "note": "predictive modelling"
+  },
+  "annotation_2": {
+   "id": "m-0894",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+    "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+    "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+   ],
+   "preferred": "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "confidence": "low",
+   "note": "prediction vague"
+  }
+ },
+ {
+  "id": "m-0895",
+  "input": "computer vision for photos",
+  "annotation_1": {
+   "id": "m-0895",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+    "esco:ecc4552a-92c5-4222-b18d-faf5ac841080"
+   ],
+   "preferred": "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+   "confidence": "low",
+   "note": "computer vision; nearest image processing"
+  },
+  "annotation_2": {
+   "id": "m-0895",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "computer vision not in catalogue"
+  }
+ },
+ {
+  "id": "m-0897",
+  "input": "responding to security breaches",
+  "annotation_1": {
+   "id": "m-0897",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Security incident management software",
+    "esco:440d5784-52a5-4729-8b04-29f978bd896d"
+   ],
+   "preferred": "tool:Security incident management software",
+   "confidence": "high",
+   "note": "incident response"
+  },
+  "annotation_2": {
+   "id": "m-0897",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Security incident management software",
+    "esco:5898d99a-62a4-4e10-a2e3-0d815ce44248"
+   ],
+   "preferred": "tool:Security incident management software",
+   "confidence": "low",
+   "note": "incident response"
+  }
+ },
+ {
+  "id": "m-0898",
+  "input": "CISSP",
+  "annotation_1": {
+   "id": "m-0898",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:11eebd42-44ab-401d-8a2c-bdb9fc9beb50",
+    "esco:8088750d-8388-4170-a76f-48354c469c44"
+   ],
+   "preferred": "esco:11eebd42-44ab-401d-8a2c-bdb9fc9beb50",
+   "confidence": "high",
+   "note": "CISSP name on information security strategy"
+  },
+  "annotation_2": {
+   "id": "m-0898",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:11eebd42-44ab-401d-8a2c-bdb9fc9beb50"
+   ],
+   "preferred": "esco:11eebd42-44ab-401d-8a2c-bdb9fc9beb50",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0900",
+  "input": "github actions pipelines",
+  "annotation_1": {
+   "id": "m-0900",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+    "tool:GitHub",
+    "tool:Continuous integration software"
+   ],
+   "preferred": "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+   "confidence": "high",
+   "note": "GitHub Actions name on DevOps"
+  },
+  "annotation_2": {
+   "id": "m-0900",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+    "tool:GitHub"
+   ],
+   "preferred": "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0901",
+  "input": "Help desk",
+  "annotation_1": {
+   "id": "m-0901",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Help desk software",
+    "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+    "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be"
+   ],
+   "preferred": "tool:Help desk software",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0901",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Help desk software",
+    "esco:118efbcd-8fc5-4668-81d1-c383a0d16070"
+   ],
+   "preferred": "tool:Help desk software",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0904",
+  "input": "fixing computers that won't turn on",
+  "annotation_1": {
+   "id": "m-0904",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+    "esco:744442ac-c157-4350-8be0-ce454df4f5c5"
+   ],
+   "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "confidence": "high",
+   "note": "hardware troubleshooting/repair"
+  },
+  "annotation_2": {
+   "id": "m-0904",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+    "esco:4b51e76e-9e8a-455f-a289-5b48246345c4"
+   ],
+   "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "confidence": "low",
+   "note": "hardware repair"
+  }
+ },
+ {
+  "id": "m-0909",
+  "input": "computer networking",
+  "annotation_1": {
+   "id": "m-0909",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+    "tool:Network management software"
+   ],
+   "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0909",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+    "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+    "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+   ],
+   "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "confidence": "low",
+   "note": "computer networking"
+  }
+ },
+ {
+  "id": "m-0911",
+  "input": "HR",
+  "annotation_1": {
+   "id": "m-0911",
+   "label": "unambiguous",
+   "acceptable": [
+    "onet:2.C.1.f"
+   ],
+   "preferred": "onet:2.C.1.f",
+   "confidence": "low",
+   "note": "human resources"
+  },
+  "annotation_2": {
+   "id": "m-0911",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "high",
+   "note": "not computing"
+  }
+ },
+ {
+  "id": "m-0915",
+  "input": "FortiGate firewall",
+  "annotation_1": {
+   "id": "m-0915",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Firewall software",
+    "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c"
+   ],
+   "preferred": "tool:Firewall software",
+   "confidence": "high",
+   "note": "FortiGate not named; firewall skill"
+  },
+  "annotation_2": {
+   "id": "m-0915",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Firewall software",
+    "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+    "esco:054f26ab-cfdc-4077-883c-1c4c9e9b310a"
+   ],
+   "preferred": "tool:Firewall software",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0918",
+  "input": "setting up Windows on new machines",
+  "annotation_1": {
+   "id": "m-0918",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Microsoft Windows",
+    "tool:Microsoft Windows Sysprep",
+    "tool:Microsoft Windows Pre-installation Environment",
+    "esco:0868eef3-2213-4572-9343-74931345a7d3"
+   ],
+   "preferred": "tool:Microsoft Windows",
+   "confidence": "low",
+   "note": "Windows installation/imaging"
+  },
+  "annotation_2": {
+   "id": "m-0918",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Microsoft Windows",
+    "tool:Microsoft Windows Sysprep"
+   ],
+   "preferred": "tool:Microsoft Windows",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0920",
+  "input": "stepping through code to track down errors",
+  "annotation_1": {
+   "id": "m-0920",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:6014921e-1d25-4039-adc2-04852d61880e",
+    "tool:Debugging software"
+   ],
+   "preferred": "esco:6014921e-1d25-4039-adc2-04852d61880e",
+   "confidence": "high",
+   "note": "debugging"
+  },
+  "annotation_2": {
+   "id": "m-0920",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Debugging software",
+    "esco:6014921e-1d25-4039-adc2-04852d61880e",
+    "tool:Symbolic debugger software"
+   ],
+   "preferred": "tool:Debugging software",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0921",
+  "input": "fixing computers",
+  "annotation_1": {
+   "id": "m-0921",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+    "esco:744442ac-c157-4350-8be0-ce454df4f5c5"
+   ],
+   "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0921",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+    "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+    "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"
+   ],
+   "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "confidence": "low",
+   "note": "hardware or software repair"
+  }
+ },
+ {
+  "id": "m-0925",
+  "input": "writing queries",
+  "annotation_1": {
+   "id": "m-0925",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+    "tool:Structured query language SQL"
+   ],
+   "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0925",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+    "esco:9cf681c7-89ec-470c-b651-7fe03786f586",
+    "tool:Structured query language SQL"
+   ],
+   "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "confidence": "low",
+   "note": "queries vague"
+  }
+ },
+ {
+  "id": "m-0926",
+  "input": "IaC",
+  "annotation_1": {
+   "id": "m-0926",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:IBM Terraform"
+   ],
+   "preferred": "tool:IBM Terraform",
+   "confidence": "low",
+   "note": "Infrastructure as code is a name on Terraform"
+  },
+  "annotation_2": {
+   "id": "m-0926",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:IBM Terraform",
+    "tool:Ansible software",
+    "tool:Puppet"
+   ],
+   "preferred": "tool:IBM Terraform",
+   "confidence": "low",
+   "note": "infrastructure as code; Terraform carries the name"
+  }
+ },
+ {
+  "id": "m-0932",
+  "input": "looking for trends in company data",
+  "annotation_1": {
+   "id": "m-0932",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+    "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378"
+   ],
+   "preferred": "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0932",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+    "esco:06670261-ea6b-4b52-a915-c7d4ff837f74"
+   ],
+   "preferred": "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0933",
+  "input": "decentralised apps",
+  "annotation_1": {
+   "id": "m-0933",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8"
+   ],
+   "preferred": "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8",
+   "confidence": "high",
+   "note": "dApps"
+  },
+  "annotation_2": {
+   "id": "m-0933",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8",
+    "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc"
+   ],
+   "preferred": "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0935",
+  "input": "tidying up messy data",
+  "annotation_1": {
+   "id": "m-0935",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8"
+   ],
+   "preferred": "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+   "confidence": "high",
+   "note": "data cleansing"
+  },
+  "annotation_2": {
+   "id": "m-0935",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700"
+   ],
+   "preferred": "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700",
+   "confidence": "low",
+   "note": "data cleaning; closest data quality node"
+  }
+ },
+ {
+  "id": "m-0936",
+  "input": "containers",
+  "annotation_1": {
+   "id": "m-0936",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Docker",
+    "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce",
+    "tool:Kubernetes"
+   ],
+   "preferred": "tool:Docker",
+   "confidence": "low",
+   "note": "containerisation most likely"
+  },
+  "annotation_2": {
+   "id": "m-0936",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Docker",
+    "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce"
+   ],
+   "preferred": "tool:Docker",
+   "confidence": "low",
+   "note": "containers"
+  }
+ },
+ {
+  "id": "m-0941",
+  "input": "good with spreadsheets",
+  "annotation_1": {
+   "id": "m-0941",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:1973c966-f236-40c9-b2d4-5d71a89019be"
+   ],
+   "preferred": "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0941",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+    "tool:Microsoft Excel"
+   ],
+   "preferred": "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0943",
+  "input": "making logos and posters",
+  "annotation_1": {
+   "id": "m-0943",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+    "tool:Logo design software",
+    "esco:a71577b2-7550-4222-88ee-dcbd2d881516"
+   ],
+   "preferred": "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+   "confidence": "high",
+   "note": "graphic design"
+  },
+  "annotation_2": {
+   "id": "m-0943",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+    "tool:Logo design software",
+    "tool:Adobe Photoshop"
+   ],
+   "preferred": "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+   "confidence": "low",
+   "note": "graphic design"
+  }
+ },
+ {
+  "id": "m-0945",
+  "input": "websites",
+  "annotation_1": {
+   "id": "m-0945",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+    "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+    "esco:c1f29568-f2bb-49d2-b6c2-28748bd1629b"
+   ],
+   "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "confidence": "low",
+   "note": "building vs designing vs managing websites"
+  },
+  "annotation_2": {
+   "id": "m-0945",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+    "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+    "esco:c1f29568-f2bb-49d2-b6c2-28748bd1629b"
+   ],
+   "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "confidence": "low",
+   "note": "building, designing or managing websites"
+  }
+ },
+ {
+  "id": "m-0946",
+  "input": "TCP/IP",
+  "annotation_1": {
+   "id": "m-0946",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "no node for the TCP/IP suite itself (guide example)"
+  },
+  "annotation_2": {
+   "id": "m-0946",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b",
+    "esco:b9aad733-959a-4178-984f-53e4bd05b420"
+   ],
+   "preferred": "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b",
+   "confidence": "low",
+   "note": "TCP/IP only covered by communication protocols node"
+  }
+ },
+ {
+  "id": "m-0948",
+  "input": "hardware",
+  "annotation_1": {
+   "id": "m-0948",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+    "onet:2.C.3.a"
+   ],
+   "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "confidence": "low",
+   "note": "generic computer hardware"
+  },
+  "annotation_2": {
+   "id": "m-0948",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+    "esco:e043aeeb-78f5-4049-afbf-12bba52225bc",
+    "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+   ],
+   "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "confidence": "low",
+   "note": "hardware"
+  }
+ },
+ {
+  "id": "m-0954",
+  "input": "Routers",
+  "annotation_1": {
+   "id": "m-0954",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+    "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+   ],
+   "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "confidence": "high",
+   "note": "routers name on networking hardware"
+  },
+  "annotation_2": {
+   "id": "m-0954",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+   ],
+   "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0957",
+  "input": "protecting company systems from attacks",
+  "annotation_1": {
+   "id": "m-0957",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:8088750d-8388-4170-a76f-48354c469c44",
+    "esco:5898d99a-62a4-4e10-a2e3-0d815ce44248",
+    "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+   ],
+   "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "confidence": "high",
+   "note": "cyber defence"
+  },
+  "annotation_2": {
+   "id": "m-0957",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:8088750d-8388-4170-a76f-48354c469c44",
+    "esco:5898d99a-62a4-4e10-a2e3-0d815ce44248"
+   ],
+   "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "confidence": "low",
+   "note": "cyber security"
+  }
+ },
+ {
+  "id": "m-0958",
+  "input": "showing colleagues how to do their jobs",
+  "annotation_1": {
+   "id": "m-0958",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:e54ff029-1ce9-447d-a5b2-eb7283a23e6e",
+    "esco:d54a1355-05c8-45eb-9c42-267d2cfcdf44",
+    "esco:0cc9c234-f817-4f4c-908a-4d28fe3b0f4a"
+   ],
+   "preferred": "esco:e54ff029-1ce9-447d-a5b2-eb7283a23e6e",
+   "confidence": "high",
+   "note": "training colleagues"
+  },
+  "annotation_2": {
+   "id": "m-0958",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:e54ff029-1ce9-447d-a5b2-eb7283a23e6e",
+    "onet:2.B.1.e"
+   ],
+   "preferred": "esco:e54ff029-1ce9-447d-a5b2-eb7283a23e6e",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0963",
+  "input": "data",
+  "annotation_1": {
+   "id": "m-0963",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+    "esco:9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+    "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+   ],
+   "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "confidence": "low",
+   "note": "too vague: analysis, management or entry"
+  },
+  "annotation_2": {
+   "id": "m-0963",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+    "esco:f2d57f41-43b4-4f5b-8100-3df5c21eda50"
+   ],
+   "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+   "confidence": "low",
+   "note": "data vague"
+  }
+ },
+ {
+  "id": "m-0977",
+  "input": "finding patterns in sales numbers",
+  "annotation_1": {
+   "id": "m-0977",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+    "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+   ],
+   "preferred": "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0977",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+    "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+    "esco:25f0ea33-b4a2-4f31-b7b4-7d20e827b180"
+   ],
+   "preferred": "esco:06670261-ea6b-4b52-a915-c7d4ff837f74",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0979",
+  "input": "Svelte",
+  "annotation_1": {
+   "id": "m-0979",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "Svelte not in catalogue"
+  },
+  "annotation_2": {
+   "id": "m-0979",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:JavaScript framework software"
+   ],
+   "preferred": "tool:JavaScript framework software",
+   "confidence": "low",
+   "note": "Svelte has no node"
+  }
+ },
+ {
+  "id": "m-0982",
+  "input": "printer setup",
+  "annotation_1": {
+   "id": "m-0982",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+    "esco:ed8de897-adbe-4f0e-b4d2-534953e64c72"
+   ],
+   "preferred": "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+   "confidence": "low",
+   "note": "peripheral setup; no printer node"
+  },
+  "annotation_2": {
+   "id": "m-0982",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "device setup, no fitting node"
+  }
+ },
+ {
+  "id": "m-0988",
+  "input": "CRUD",
+  "annotation_1": {
+   "id": "m-0988",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Data manipulation language DML",
+    "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+    "esco:75f839c2-fd9a-4ad3-8921-6e734608568d"
+   ],
+   "preferred": "tool:Data manipulation language DML",
+   "confidence": "low",
+   "note": "basic database operations"
+  },
+  "annotation_2": {
+   "id": "m-0988",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+    "tool:RESTful API"
+   ],
+   "preferred": "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+   "confidence": "low",
+   "note": "CRUD could be database ops or API"
+  }
+ },
+ {
+  "id": "m-0989",
+  "input": "TDD",
+  "annotation_1": {
+   "id": "m-0989",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "esco:6a322874-e32f-4cd8-9683-badce67a7f73"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "low",
+   "note": "test-driven development; no TDD node"
+  },
+  "annotation_2": {
+   "id": "m-0989",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "tool:Unit testing software",
+    "esco:dba46f87-0831-49cd-a1c7-340a653c0221"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "low",
+   "note": "TDD"
+  }
+ },
+ {
+  "id": "m-0991",
+  "input": "modelling",
+  "annotation_1": {
+   "id": "m-0991",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+    "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+    "esco:38d49d88-9069-467b-b29e-3cae739bdd4d"
+   ],
+   "preferred": "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+   "confidence": "low",
+   "note": "data/OO/process/ML modelling or fashion"
+  },
+  "annotation_2": {
+   "id": "m-0991",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+    "esco:5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+    "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+   ],
+   "preferred": "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+   "confidence": "low",
+   "note": "modelling vague"
+  }
+ },
+ {
+  "id": "m-0992",
+  "input": "writing unit tests",
+  "annotation_1": {
+   "id": "m-0992",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "tool:Unit testing software"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-0992",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "tool:Unit testing software",
+    "esco:6a322874-e32f-4cd8-9683-badce67a7f73"
+   ],
+   "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-0996",
+  "input": "mapping out how data entities relate",
+  "annotation_1": {
+   "id": "m-0996",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:84f58e3d-8669-4d83-8c1d-5dd1e73a654f"
+   ],
+   "preferred": "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+   "confidence": "high",
+   "note": "ER/data modelling"
+  },
+  "annotation_2": {
+   "id": "m-0996",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+    "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5"
+   ],
+   "preferred": "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+   "confidence": "low",
+   "note": "data modelling"
+  }
+ },
+ {
+  "id": "m-0999",
+  "input": "building blogs",
+  "annotation_1": {
+   "id": "m-0999",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Web content management system CMS software",
+    "tool:WordPress"
+   ],
+   "preferred": "tool:Web content management system CMS software",
+   "confidence": "low",
+   "note": "blog sites via CMS"
+  },
+  "annotation_2": {
+   "id": "m-0999",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:WordPress",
+    "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+    "tool:Web content management system CMS software"
+   ],
+   "preferred": "tool:WordPress",
+   "confidence": "low",
+   "note": "blogs"
+  }
+ },
+ {
+  "id": "m-1000",
+  "input": "Microsoft Intune",
+  "annotation_1": {
+   "id": "m-1000",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "Intune not named; MDM is the category"
+  },
+  "annotation_2": {
+   "id": "m-1000",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3"
+   ],
+   "preferred": "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3",
+   "confidence": "low",
+   "note": "Intune has no own node; MDM"
+  }
+ },
+ {
+  "id": "m-1001",
+  "input": "computer repair",
+  "annotation_1": {
+   "id": "m-1001",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:b4877620-c375-45f3-a678-2ddb4dae6a29"
+   ],
+   "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1001",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+    "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+    "onet:2.B.3.l"
+   ],
+   "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1006",
+  "input": "reinstalling operating systems",
+  "annotation_1": {
+   "id": "m-1006",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+    "esco:0868eef3-2213-4572-9343-74931345a7d3"
+   ],
+   "preferred": "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+   "confidence": "low",
+   "note": "OS installation; no install node"
+  },
+  "annotation_2": {
+   "id": "m-1006",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272"
+   ],
+   "preferred": "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1007",
+  "input": "planning and tracking a software project",
+  "annotation_1": {
+   "id": "m-1007",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:3c76296d-4bbd-44ba-8eaa-95bf275f79b7",
+    "esco:94dd823c-148e-4614-a6e8-99249b16357d",
+    "tool:Project planning software"
+   ],
+   "preferred": "esco:3c76296d-4bbd-44ba-8eaa-95bf275f79b7",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1007",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:3c76296d-4bbd-44ba-8eaa-95bf275f79b7",
+    "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+    "tool:Project planning software"
+   ],
+   "preferred": "esco:3c76296d-4bbd-44ba-8eaa-95bf275f79b7",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1009",
+  "input": "modelling skills",
+  "annotation_1": {
+   "id": "m-1009",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+    "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb"
+   ],
+   "preferred": "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+   "confidence": "low",
+   "note": "which modelling unclear"
+  },
+  "annotation_2": {
+   "id": "m-1009",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+    "esco:5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+   ],
+   "preferred": "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+   "confidence": "low",
+   "note": "modelling vague"
+  }
+ },
+ {
+  "id": "m-1012",
+  "input": "dealing with customers",
+  "annotation_1": {
+   "id": "m-1012",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+    "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+    "onet:2.C.1.e"
+   ],
+   "preferred": "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1012",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+    "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+    "onet:2.C.1.e"
+   ],
+   "preferred": "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+   "confidence": "low",
+   "note": "customer service"
+  }
+ },
+ {
+  "id": "m-1015",
+  "input": "SOAP web services",
+  "annotation_1": {
+   "id": "m-1015",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Web service definition language WDSL",
+    "esco:83218cac-3599-417e-93d2-26013cdccd98"
+   ],
+   "preferred": "tool:Web service definition language WDSL",
+   "confidence": "low",
+   "note": "SOAP/WSDL web services"
+  },
+  "annotation_2": {
+   "id": "m-1015",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "SOAP not in catalogue"
+  }
+ },
+ {
+  "id": "m-1018",
+  "input": "compliance work",
+  "annotation_1": {
+   "id": "m-1018",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:3d3ee5c3-4286-457f-9f76-1704011f7e11",
+    "esco:06358891-8424-43c5-891e-d40f226bef40",
+    "esco:bda0d115-f315-453e-99dc-f8b0e5862db3"
+   ],
+   "preferred": "esco:3d3ee5c3-4286-457f-9f76-1704011f7e11",
+   "confidence": "low",
+   "note": "legal vs IT security vs policy compliance"
+  },
+  "annotation_2": {
+   "id": "m-1018",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:1dae8445-12e5-423a-bb26-824010e299b9",
+    "esco:3ff589b7-68df-4ea5-ae41-b395bdb2378f",
+    "esco:06358891-8424-43c5-891e-d40f226bef40",
+    "esco:1c2978b8-bb0d-4249-9c23-877571a4dffa"
+   ],
+   "preferred": "esco:1dae8445-12e5-423a-bb26-824010e299b9",
+   "confidence": "low",
+   "note": "compliance vague"
+  }
+ },
+ {
+  "id": "m-1019",
+  "input": "knowledge graphs",
+  "annotation_1": {
+   "id": "m-1019",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:99207709-d076-4cce-ba38-e90d3bb28806",
+    "esco:5da8018b-ae85-4cde-ad93-0394369018f3",
+    "tool:Neo4j"
+   ],
+   "preferred": "esco:99207709-d076-4cce-ba38-e90d3bb28806",
+   "confidence": "low",
+   "note": "semantic/graph data; no knowledge-graph node"
+  },
+  "annotation_2": {
+   "id": "m-1019",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "knowledge graphs not in catalogue"
+  }
+ },
+ {
+  "id": "m-1020",
+  "input": "modeling stuff",
+  "annotation_1": {
+   "id": "m-1020",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+    "esco:5be3d306-6cf1-4b49-aa1d-01651dd4ba4c"
+   ],
+   "preferred": "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+   "confidence": "low",
+   "note": "which modelling unclear"
+  },
+  "annotation_2": {
+   "id": "m-1020",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+    "esco:5be3d306-6cf1-4b49-aa1d-01651dd4ba4c",
+    "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+    "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+   ],
+   "preferred": "esco:98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+   "confidence": "low",
+   "note": "modelling vague"
+  }
+ },
+ {
+  "id": "m-1024",
+  "input": "looking after a company database and its backups",
+  "annotation_1": {
+   "id": "m-1024",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+    "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+    "esco:ab67fbfb-0ca7-4345-8bf6-af8f59480212"
+   ],
+   "preferred": "esco:29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+   "confidence": "high",
+   "note": "database administration and backups"
+  },
+  "annotation_2": {
+   "id": "m-1024",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+    "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+    "esco:ab67fbfb-0ca7-4345-8bf6-af8f59480212",
+    "esco:d6cdef49-b669-4507-91d1-3f959cf98e47"
+   ],
+   "preferred": "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+   "confidence": "low",
+   "note": "database administration"
+  }
+ },
+ {
+  "id": "m-1025",
+  "input": "PC",
+  "annotation_1": {
+   "id": "m-1025",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "too vague"
+  },
+  "annotation_2": {
+   "id": "m-1025",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+    "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+    "onet:2.C.3.a"
+   ],
+   "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "confidence": "low",
+   "note": "PC vague"
+  }
+ },
+ {
+  "id": "m-1029",
+  "input": "wireless network setup for an office",
+  "annotation_1": {
+   "id": "m-1029",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+   ],
+   "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "confidence": "low",
+   "note": "wireless network setup; no WiFi node"
+  },
+  "annotation_2": {
+   "id": "m-1029",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "no wireless node"
+  }
+ },
+ {
+  "id": "m-1032",
+  "input": "UI components that update when data changes",
+  "annotation_1": {
+   "id": "m-1032",
+   "label": "ambiguous",
+   "acceptable": [
+    "tool:React",
+    "tool:Vue.js",
+    "tool:Google Angular",
+    "tool:JavaScript framework software"
+   ],
+   "preferred": "tool:React",
+   "confidence": "low",
+   "note": "reactive UI frameworks; several products"
+  },
+  "annotation_2": {
+   "id": "m-1032",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:JavaScript framework software",
+    "tool:React",
+    "tool:Vue.js",
+    "tool:Google Angular"
+   ],
+   "preferred": "tool:JavaScript framework software",
+   "confidence": "low",
+   "note": "reactive UI frameworks"
+  }
+ },
+ {
+  "id": "m-1034",
+  "input": "requirements work",
+  "annotation_1": {
+   "id": "m-1034",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+    "esco:d9e5349e-8791-49c2-8ba4-839fdd1606c2",
+    "esco:ca73ac82-867a-4afa-9732-834aebe896ff"
+   ],
+   "preferred": "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+   "confidence": "low",
+   "note": "business vs technical vs user requirements"
+  },
+  "annotation_2": {
+   "id": "m-1034",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:d9e5349e-8791-49c2-8ba4-839fdd1606c2",
+    "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+    "esco:a8797f21-1af0-4c5e-98ca-bf1442929363"
+   ],
+   "preferred": "esco:d9e5349e-8791-49c2-8ba4-839fdd1606c2",
+   "confidence": "low",
+   "note": "requirements gathering"
+  }
+ },
+ {
+  "id": "m-1036",
+  "input": "computer hardware",
+  "annotation_1": {
+   "id": "m-1036",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+    "onet:2.C.3.a",
+    "esco:e043aeeb-78f5-4049-afbf-12bba52225bc"
+   ],
+   "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1036",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+    "esco:e043aeeb-78f5-4049-afbf-12bba52225bc",
+    "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+   ],
+   "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1037",
+  "input": "access control",
+  "annotation_1": {
+   "id": "m-1037",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+    "tool:Access management software"
+   ],
+   "preferred": "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1037",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+    "esco:a56dec32-05ef-45de-a256-ee6741f356db",
+    "tool:Access management software"
+   ],
+   "preferred": "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1040",
+  "input": "testing my code",
+  "annotation_1": {
+   "id": "m-1040",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899"
+   ],
+   "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1040",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+    "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+    "tool:Unit testing software"
+   ],
+   "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1041",
+  "input": "photoshop type design",
+  "annotation_1": {
+   "id": "m-1041",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Adobe Photoshop",
+    "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+    "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+   ],
+   "preferred": "tool:Adobe Photoshop",
+   "confidence": "high",
+   "note": "Photoshop-style graphic design"
+  },
+  "annotation_2": {
+   "id": "m-1041",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Adobe Photoshop",
+    "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+   ],
+   "preferred": "tool:Adobe Photoshop",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1042",
+  "input": "visual reports of business figures",
+  "annotation_1": {
+   "id": "m-1042",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "tool:Business intelligence software",
+    "esco:143769cb-b61e-47d8-a61e-eedfbec1016c"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "high",
+   "note": "BI dashboards"
+  },
+  "annotation_2": {
+   "id": "m-1042",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "tool:Reporting software",
+    "esco:143769cb-b61e-47d8-a61e-eedfbec1016c"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1043",
+  "input": "finding out what the client wants",
+  "annotation_1": {
+   "id": "m-1043",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:0e0c9c11-b39e-43cf-ba95-2fe646f5de64",
+    "esco:68698869-c13c-4563-adc7-118b7644f45d",
+    "esco:a8797f21-1af0-4c5e-98ca-bf1442929363"
+   ],
+   "preferred": "esco:0e0c9c11-b39e-43cf-ba95-2fe646f5de64",
+   "confidence": "high",
+   "note": "client requirements"
+  },
+  "annotation_2": {
+   "id": "m-1043",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:a8797f21-1af0-4c5e-98ca-bf1442929363",
+    "esco:9531fe02-1e1f-4a36-95f7-a76a77cd4b8d",
+    "esco:b04f377b-ee80-4b38-aca1-19d266a23b17"
+   ],
+   "preferred": "esco:a8797f21-1af0-4c5e-98ca-bf1442929363",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1045",
+  "input": "laying out screens before building them",
+  "annotation_1": {
+   "id": "m-1045",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:f0f5bb34-71df-4715-9c9e-03567b76ec8f",
+    "esco:07dd856d-6141-48a7-a228-918f88494812"
+   ],
+   "preferred": "esco:f0f5bb34-71df-4715-9c9e-03567b76ec8f",
+   "confidence": "high",
+   "note": "wireframing"
+  },
+  "annotation_2": {
+   "id": "m-1045",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:07dd856d-6141-48a7-a228-918f88494812",
+    "esco:f0f5bb34-71df-4715-9c9e-03567b76ec8f",
+    "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+   ],
+   "preferred": "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "confidence": "low",
+   "note": "wireframing"
+  }
+ },
+ {
+  "id": "m-1048",
+  "input": "finding bottlenecks in network speed",
+  "annotation_1": {
+   "id": "m-1048",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:545c80e8-7ab2-42fe-af64-242211e94709",
+    "esco:da042121-959d-451b-b4d0-3bbf07c1bc67"
+   ],
+   "preferred": "esco:545c80e8-7ab2-42fe-af64-242211e94709",
+   "confidence": "high",
+   "note": "network performance analysis"
+  },
+  "annotation_2": {
+   "id": "m-1048",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:ed39edd3-44d0-4a16-9796-bfb99f92baf3",
+    "tool:Network traffic flow monitoring and analysis software"
+   ],
+   "preferred": "esco:ed39edd3-44d0-4a16-9796-bfb99f92baf3",
+   "confidence": "low",
+   "note": "network performance"
+  }
+ },
+ {
+  "id": "m-1049",
+  "input": "dashboards",
+  "annotation_1": {
+   "id": "m-1049",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+    "tool:Data visualization software"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1049",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+   ],
+   "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1052",
+  "input": "fixing missing and wrong values in data",
+  "annotation_1": {
+   "id": "m-1052",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8"
+   ],
+   "preferred": "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1052",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700"
+   ],
+   "preferred": "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700",
+   "confidence": "low",
+   "note": "data cleaning; closest data quality node"
+  }
+ },
+ {
+  "id": "m-1054",
+  "input": "releases",
+  "annotation_1": {
+   "id": "m-1054",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "too vague; release management not expressed"
+  },
+  "annotation_2": {
+   "id": "m-1054",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:1d86f05e-e9cc-40ce-99d8-2b21cc71b16b",
+    "tool:Deployment software"
+   ],
+   "preferred": "esco:1d86f05e-e9cc-40ce-99d8-2b21cc71b16b",
+   "confidence": "low",
+   "note": "releases vague"
+  }
+ },
+ {
+  "id": "m-1059",
+  "input": "setting up servers with code instead of clicking",
+  "annotation_1": {
+   "id": "m-1059",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:IBM Terraform",
+    "tool:Ansible software",
+    "tool:Puppet",
+    "tool:Chef"
+   ],
+   "preferred": "tool:IBM Terraform",
+   "confidence": "high",
+   "note": "infrastructure as code"
+  },
+  "annotation_2": {
+   "id": "m-1059",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:IBM Terraform",
+    "tool:Ansible software",
+    "tool:Puppet"
+   ],
+   "preferred": "tool:IBM Terraform",
+   "confidence": "low",
+   "note": "infrastructure as code"
+  }
+ },
+ {
+  "id": "m-1060",
+  "input": "UI/UX",
+  "annotation_1": {
+   "id": "m-1060",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:07dd856d-6141-48a7-a228-918f88494812",
+    "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+    "esco:1019423b-3368-4f83-b24f-19e5fa23e816"
+   ],
+   "preferred": "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "confidence": "high",
+   "note": "UI/UX name"
+  },
+  "annotation_2": {
+   "id": "m-1060",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:07dd856d-6141-48a7-a228-918f88494812",
+    "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+   ],
+   "preferred": "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1062",
+  "input": "making websites look nice",
+  "annotation_1": {
+   "id": "m-1062",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+    "tool:Cascading style sheets CSS"
+   ],
+   "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "confidence": "low",
+   "note": "visual web design"
+  },
+  "annotation_2": {
+   "id": "m-1062",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+    "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb"
+   ],
+   "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "confidence": "low",
+   "note": "visual web design"
+  }
+ },
+ {
+  "id": "m-1072",
+  "input": "AI data",
+  "annotation_1": {
+   "id": "m-1072",
+   "label": "ambiguous",
+   "acceptable": [
+    "esco:906323f4-00c4-4c3b-ab5a-8af77be3456e",
+    "esco:e465a154-93f7-4973-9ce1-31659fe16dd2",
+    "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+   ],
+   "preferred": "esco:906323f4-00c4-4c3b-ab5a-8af77be3456e",
+   "confidence": "low",
+   "note": "vague: AI training data vs AI generally"
+  },
+  "annotation_2": {
+   "id": "m-1072",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "too vague"
+  }
+ },
+ {
+  "id": "m-1081",
+  "input": "teaching a computer to recognise images",
+  "annotation_1": {
+   "id": "m-1081",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+    "esco:8369c2d6-c100-4cf6-bd83-9668d8678433",
+    "esco:945b8655-5577-4c3a-946a-842d4527afa8"
+   ],
+   "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+   "confidence": "high",
+   "note": "image recognition ML"
+  },
+  "annotation_2": {
+   "id": "m-1081",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+    "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+   ],
+   "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+   "confidence": "low",
+   "note": "image recognition"
+  }
+ },
+ {
+  "id": "m-1083",
+  "input": "setting up wifi for an office",
+  "annotation_1": {
+   "id": "m-1083",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+   ],
+   "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "confidence": "low",
+   "note": "office WiFi setup; no WiFi node"
+  },
+  "annotation_2": {
+   "id": "m-1083",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "no wireless node"
+  }
+ },
+ {
+  "id": "m-1084",
+  "input": "cloud",
+  "annotation_1": {
+   "id": "m-1084",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:bd14968e-e409-45af-b362-3495ed7b10e0"
+   ],
+   "preferred": "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+   "confidence": "low",
+   "note": "generic cloud computing"
+  },
+  "annotation_2": {
+   "id": "m-1084",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+    "esco:d3286405-49f8-4e8a-8046-a4376b4e7963"
+   ],
+   "preferred": "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+   "confidence": "low",
+   "note": "cloud generic"
+  }
+ },
+ {
+  "id": "m-1085",
+  "input": "cleaning messy datasets",
+  "annotation_1": {
+   "id": "m-1085",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8"
+   ],
+   "preferred": "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+   "confidence": "high",
+   "note": "direct match"
+  },
+  "annotation_2": {
+   "id": "m-1085",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700"
+   ],
+   "preferred": "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700",
+   "confidence": "low",
+   "note": "data cleaning; closest data quality node"
+  }
+ },
+ {
+  "id": "m-1091",
+  "input": "wifi things",
+  "annotation_1": {
+   "id": "m-1091",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+    "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+   ],
+   "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "confidence": "low",
+   "note": "vague wireless networking"
+  },
+  "annotation_2": {
+   "id": "m-1091",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "low",
+   "note": "no wireless node"
+  }
+ },
+ {
+  "id": "m-1093",
+  "input": "simulating attacks to find holes",
+  "annotation_1": {
+   "id": "m-1093",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Penetration testing software",
+    "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+   ],
+   "preferred": "tool:Penetration testing software",
+   "confidence": "high",
+   "note": "penetration testing"
+  },
+  "annotation_2": {
+   "id": "m-1093",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Penetration testing software",
+    "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+    "esco:501537a7-9d63-491d-ae02-09f04767ff1e"
+   ],
+   "preferred": "tool:Penetration testing software",
+   "confidence": "high",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1094",
+  "input": "pulling reports out of tables with queries",
+  "annotation_1": {
+   "id": "m-1094",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+    "tool:Structured query language SQL",
+    "tool:Reporting software"
+   ],
+   "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "confidence": "high",
+   "note": "SQL reporting"
+  },
+  "annotation_2": {
+   "id": "m-1094",
+   "label": "unambiguous",
+   "acceptable": [
+    "tool:Structured query language SQL",
+    "tool:Reporting software"
+   ],
+   "preferred": "tool:Structured query language SQL",
+   "confidence": "low",
+   "note": "clear single meaning"
+  }
+ },
+ {
+  "id": "m-1095",
+  "input": "C languages",
+  "annotation_1": {
+   "id": "m-1095",
+   "label": "ambiguous",
+   "acceptable": [
+    "tool:C",
+    "tool:C++",
+    "tool:C#"
+   ],
+   "preferred": "tool:C",
+   "confidence": "low",
+   "note": "C-family languages"
+  },
+  "annotation_2": {
+   "id": "m-1095",
+   "label": "ambiguous",
+   "acceptable": [
+    "tool:C",
+    "tool:C++",
+    "tool:C#",
+    "tool:Objective C"
+   ],
+   "preferred": "tool:C",
+   "confidence": "high",
+   "note": "several C-family languages"
+  }
+ },
+ {
+  "id": "m-1099",
+  "input": "class teacher at primary school",
+  "annotation_1": {
+   "id": "m-1099",
+   "label": "unambiguous",
+   "acceptable": [
+    "esco:4cd85845-f31c-4306-994d-e12d45114d83",
+    "onet:2.B.1.e"
+   ],
+   "preferred": "esco:4cd85845-f31c-4306-994d-e12d45114d83",
+   "confidence": "low",
+   "note": "teaching job; teaching node"
+  },
+  "annotation_2": {
+   "id": "m-1099",
+   "label": "no_concept",
+   "acceptable": [],
+   "preferred": null,
+   "confidence": "high",
+   "note": "job"
+  }
+ }
+]

@@ -1,0 +1,108 @@
+[
+ {
+  "id": "i-1801",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Kubernetes"
+  ],
+  "preferred": "tool:Kubernetes",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1802",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+   "tool:Computer forensic software",
+   "tool:Google Android"
+  ],
+  "preferred": "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+  "confidence": "low",
+  "note": "Android forensics: forensics of Android devices"
+ },
+ {
+  "id": "i-1803",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft PowerPoint",
+   "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+  ],
+  "preferred": "tool:Microsoft PowerPoint",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1804",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:ed3f3dba-3a35-4ed5-b113-67f4d10ef4c8",
+   "esco:8770350e-746f-4adb-9556-18ca68104be6",
+   "esco:a4c2aa71-086f-4a46-b481-2619673c9dfe"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "research skills vague"
+ },
+ {
+  "id": "i-1805",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "onet:2.C.3.c"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "web design: front-end vs UX vs visual"
+ },
+ {
+  "id": "i-1806",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Node.js"
+  ],
+  "preferred": "tool:Node.js",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1807",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b9aad733-959a-4178-984f-53e4bd05b420"
+  ],
+  "preferred": "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1808",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait"
+ },
+ {
+  "id": "i-1809",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1810",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": ""
+ }
+]

@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "i-1201",
+  "input": "password resets and account unlocks"
+ },
+ {
+  "id": "i-1202",
+  "input": "Autopsy and Sleuth Kit"
+ },
+ {
+  "id": "i-1203",
+  "input": "risk registers"
+ },
+ {
+  "id": "i-1204",
+  "input": "data cleaning and wrangling"
+ },
+ {
+  "id": "i-1205",
+  "input": "M-Pesa Daraja API integration"
+ },
+ {
+  "id": "i-1206",
+  "input": "penetration testing"
+ },
+ {
+  "id": "i-1207",
+  "input": "React framework"
+ },
+ {
+  "id": "i-1208",
+  "input": "self-learner"
+ },
+ {
+  "id": "i-1209",
+  "input": "some mobile device troubleshooting"
+ },
+ {
+  "id": "i-1210",
+  "input": "mongo database"
+ },
+ {
+  "id": "i-1211",
+  "input": "basic kali linux tools"
+ },
+ {
+  "id": "i-1212",
+  "input": "integrity"
+ },
+ {
+  "id": "i-1213",
+  "input": "windows server 2019"
+ },
+ {
+  "id": "i-1214",
+  "input": "Zabbix"
+ },
+ {
+  "id": "i-1215",
+  "input": "keras neural nets"
+ },
+ {
+  "id": "i-1216",
+  "input": "formulas in excel"
+ },
+ {
+  "id": "i-1217",
+  "input": "writing simple exploits"
+ },
+ {
+  "id": "i-1218",
+  "input": "computer data entry"
+ },
+ {
+  "id": "i-1219",
+  "input": "tailwindcss utility classes"
+ },
+ {
+  "id": "i-1220",
+  "input": "teamwork"
+ },
+ {
+  "id": "i-1221",
+  "input": "survey sampling design"
+ },
+ {
+  "id": "i-1222",
+  "input": "Troubleshooting"
+ },
+ {
+  "id": "i-1223",
+  "input": "dockerizing apps"
+ },
+ {
+  "id": "i-1224",
+  "input": "Jira"
+ },
+ {
+  "id": "i-1225",
+  "input": "passion for coding"
+ },
+ {
+  "id": "i-1226",
+  "input": "LAN and WAN topology design"
+ },
+ {
+  "id": "i-1227",
+  "input": "passion"
+ },
+ {
+  "id": "i-1228",
+  "input": "internet browsing"
+ },
+ {
+  "id": "i-1229",
+  "input": "oracle database work"
+ },
+ {
+  "id": "i-1230",
+  "input": "learning setting up smartphones for staff"
+ },
+ {
+  "id": "i-1231",
+  "input": "making html pages"
+ },
+ {
+  "id": "i-1232",
+  "input": "Stata for econometrics"
+ },
+ {
+  "id": "i-1233",
+  "input": "Raspberry Pi"
+ },
+ {
+  "id": "i-1234",
+  "input": "ssrs reports"
+ },
+ {
+  "id": "i-1235",
+  "input": "stats"
+ },
+ {
+  "id": "i-1236",
+  "input": "gathering BI reporting requirements"
+ },
+ {
+  "id": "i-1237",
+  "input": "fact and dimension tables"
+ },
+ {
+  "id": "i-1238",
+  "input": "API and systems integration"
+ },
+ {
+  "id": "i-1239",
+  "input": "vite, npm"
+ },
+ {
+  "id": "i-1240",
+  "input": "web vulnerabilities (XSS, SQLi, CSRF)"
+ },
+ {
+  "id": "i-1241",
+  "input": "eMASS"
+ },
+ {
+  "id": "i-1242",
+  "input": "learns fast"
+ },
+ {
+  "id": "i-1243",
+  "input": "creating apps"
+ },
+ {
+  "id": "i-1244",
+  "input": "cucumber/gherkin"
+ },
+ {
+  "id": "i-1245",
+  "input": "managing stakeholders"
+ },
+ {
+  "id": "i-1246",
+  "input": "reporting"
+ },
+ {
+  "id": "i-1247",
+  "input": "basic clickable prototypes"
+ },
+ {
+  "id": "i-1248",
+  "input": "ospf"
+ },
+ {
+  "id": "i-1249",
+  "input": "web"
+ },
+ {
+  "id": "i-1250",
+  "input": "C"
+ },
+ {
+  "id": "i-1251",
+  "input": "redux toolkit"
+ },
+ {
+  "id": "i-1252",
+  "input": "routers"
+ },
+ {
+  "id": "i-1253",
+  "input": "version control"
+ },
+ {
+  "id": "i-1254",
+  "input": "android and ios device support"
+ },
+ {
+  "id": "i-1255",
+  "input": "intro to defect logging in jira"
+ },
+ {
+  "id": "i-1256",
+  "input": "ticketing systems helpdesk"
+ },
+ {
+  "id": "i-1257",
+  "input": "project risk management"
+ },
+ {
+  "id": "i-1258",
+  "input": "UML diagrams"
+ },
+ {
+  "id": "i-1259",
+  "input": "Git version control"
+ },
+ {
+  "id": "i-1260",
+  "input": "data analytic work"
+ },
+ {
+  "id": "i-1261",
+  "input": "customer service"
+ },
+ {
+  "id": "i-1262",
+  "input": "simulating networks in packet tracer"
+ },
+ {
+  "id": "i-1263",
+  "input": "hardening Linux/Windows servers"
+ },
+ {
+  "id": "i-1264",
+  "input": "ms packages"
+ },
+ {
+  "id": "i-1265",
+  "input": "DPA 2019 and GDPR"
+ },
+ {
+  "id": "i-1266",
+  "input": "SQL",
+  "shared_name_owners": [
+   {
+    "id": "tool:Database management systems",
+    "label": "Database management systems"
+   },
+   {
+    "id": "tool:Structured query language SQL",
+    "label": "Structured query language SQL"
+   }
+  ]
+ },
+ {
+  "id": "i-1267",
+  "input": "appium mobile tests"
+ },
+ {
+  "id": "i-1268",
+  "input": "training staff on Office and email"
+ },
+ {
+  "id": "i-1269",
+  "input": "cisco router config"
+ },
+ {
+  "id": "i-1270",
+  "input": "prototype building"
+ },
+ {
+  "id": "i-1271",
+  "input": "problem-solving"
+ },
+ {
+  "id": "i-1272",
+  "input": "business KPI reports"
+ },
+ {
+  "id": "i-1273",
+  "input": "encryption"
+ },
+ {
+  "id": "i-1274",
+  "input": "pandas dataframes"
+ },
+ {
+  "id": "i-1275",
+  "input": "Python Flask microservices"
+ },
+ {
+  "id": "i-1276",
+  "input": "vulnerability scanning (Nessus)"
+ },
+ {
+  "id": "i-1277",
+  "input": "Data entry"
+ },
+ {
+  "id": "i-1278",
+  "input": "mikrotik hotspot and queue config"
+ },
+ {
+  "id": "i-1279",
+  "input": "gathering user requirements"
+ },
+ {
+  "id": "i-1280",
+  "input": "cyber things"
+ },
+ {
+  "id": "i-1281",
+  "input": "TF/Keras"
+ },
+ {
+  "id": "i-1282",
+  "input": "flutter apps"
+ },
+ {
+  "id": "i-1283",
+  "input": "computer vision"
+ },
+ {
+  "id": "i-1284",
+  "input": "good communicator"
+ },
+ {
+  "id": "i-1285",
+  "input": "Prolog"
+ },
+ {
+  "id": "i-1286",
+  "input": "cisco equipment"
+ },
+ {
+  "id": "i-1287",
+  "input": "troubleshooting windows"
+ },
+ {
+  "id": "i-1288",
+  "input": "Django"
+ },
+ {
+  "id": "i-1289",
+  "input": "redis caching"
+ },
+ {
+  "id": "i-1290",
+  "input": "Pandas profiling"
+ },
+ {
+  "id": "i-1291",
+  "input": "systems stuff"
+ },
+ {
+  "id": "i-1292",
+  "input": "database indexes"
+ },
+ {
+  "id": "i-1293",
+  "input": "info"
+ },
+ {
+  "id": "i-1294",
+  "input": "removing malware from PCs"
+ },
+ {
+  "id": "i-1295",
+  "input": "nextjs"
+ },
+ {
+  "id": "i-1296",
+  "input": "learning SPSS"
+ },
+ {
+  "id": "i-1297",
+  "input": "bash",
+  "shared_name_owners": [
+   {
+    "id": "onet:2.B.3.e",
+    "label": "Programming"
+   },
+   {
+    "id": "tool:Bash",
+    "label": "Bash"
+   }
+  ]
+ },
+ {
+  "id": "i-1298",
+  "input": "MikroTik RouterOS"
+ },
+ {
+  "id": "i-1299",
+  "input": "help people"
+ },
+ {
+  "id": "i-1300",
+  "input": "jira tickets"
+ },
+ {
+  "id": "i-1301",
+  "input": "exploit development basics"
+ },
+ {
+  "id": "i-1302",
+  "input": "PHP backend dev"
+ },
+ {
+  "id": "i-1303",
+  "input": "server admin"
+ },
+ {
+  "id": "i-1304",
+  "input": "matplotlib and seaborn"
+ },
+ {
+  "id": "i-1305",
+  "input": "basic prob and stats theory"
+ },
+ {
+  "id": "i-1306",
+  "input": "entity relationship diagrams"
+ },
+ {
+  "id": "i-1307",
+  "input": "datasets"
+ },
+ {
+  "id": "i-1308",
+  "input": "Blender"
+ },
+ {
+  "id": "i-1309",
+  "input": "selenium test automation"
+ },
+ {
+  "id": "i-1310",
+  "input": "UI design"
+ },
+ {
+  "id": "i-1311",
+  "input": "exploratory testing"
+ },
+ {
+  "id": "i-1312",
+  "input": "TeamViewer"
+ },
+ {
+  "id": "i-1313",
+  "input": "elastic search"
+ },
+ {
+  "id": "i-1314",
+  "input": "wireless LAN setup"
+ },
+ {
+  "id": "i-1315",
+  "input": "sql statements"
+ },
+ {
+  "id": "i-1316",
+  "input": "Firebase"
+ },
+ {
+  "id": "i-1317",
+  "input": "punctuality"
+ },
+ {
+  "id": "i-1318",
+  "input": "Tailwind for styling"
+ },
+ {
+  "id": "i-1319",
+  "input": "machine things"
+ },
+ {
+  "id": "i-1320",
+  "input": "process flow diagrams"
+ },
+ {
+  "id": "i-1321",
+  "input": "scripting"
+ },
+ {
+  "id": "i-1322",
+  "input": "selenium tests"
+ },
+ {
+  "id": "i-1323",
+  "input": "user personas"
+ },
+ {
+  "id": "i-1324",
+  "input": "coding php"
+ },
+ {
+  "id": "i-1325",
+  "input": "listening"
+ },
+ {
+  "id": "i-1326",
+  "input": "swift ios"
+ },
+ {
+  "id": "i-1327",
+  "input": "pen testing"
+ },
+ {
+  "id": "i-1328",
+  "input": "managing"
+ },
+ {
+  "id": "i-1329",
+  "input": "some adobe xd"
+ },
+ {
+  "id": "i-1330",
+  "input": "database migration"
+ },
+ {
+  "id": "i-1331",
+  "input": "IT support"
+ },
+ {
+  "id": "i-1332",
+  "input": "Agile"
+ },
+ {
+  "id": "i-1333",
+  "input": "diagrams"
+ },
+ {
+  "id": "i-1334",
+  "input": "algorithm design"
+ },
+ {
+  "id": "i-1335",
+  "input": "Helpdesk ticketing"
+ },
+ {
+  "id": "i-1336",
+  "input": "MS Office"
+ },
+ {
+  "id": "i-1337",
+  "input": "helpdesk tickets"
+ },
+ {
+  "id": "i-1338",
+  "input": "protection"
+ },
+ {
+  "id": "i-1339",
+  "input": "token auth (JWT)"
+ },
+ {
+  "id": "i-1340",
+  "input": "Computer repair"
+ },
+ {
+  "id": "i-1341",
+  "input": "backup & disaster recovery routines"
+ },
+ {
+  "id": "i-1342",
+  "input": "passion for tech"
+ },
+ {
+  "id": "i-1343",
+  "input": "learning seaborn plots"
+ },
+ {
+  "id": "i-1344",
+  "input": "MS Access"
+ },
+ {
+  "id": "i-1345",
+  "input": "UI design system / style guide"
+ },
+ {
+  "id": "i-1346",
+  "input": "postgres"
+ },
+ {
+  "id": "i-1347",
+  "input": "images"
+ },
+ {
+  "id": "i-1348",
+  "input": "spss stats"
+ },
+ {
+  "id": "i-1349",
+  "input": "yara malware rules"
+ },
+ {
+  "id": "i-1350",
+  "input": "linux command line"
+ },
+ {
+  "id": "i-1351",
+  "input": "web dev"
+ },
+ {
+  "id": "i-1352",
+  "input": "tables"
+ },
+ {
+  "id": "i-1353",
+  "input": "sveltekit"
+ },
+ {
+  "id": "i-1354",
+  "input": "mlflow tracking"
+ },
+ {
+  "id": "i-1355",
+  "input": "bootstrap css framework"
+ },
+ {
+  "id": "i-1356",
+  "input": "writing tests first"
+ },
+ {
+  "id": "i-1357",
+  "input": "elk"
+ },
+ {
+  "id": "i-1358",
+  "input": "data transformation with dbt"
+ },
+ {
+  "id": "i-1359",
+  "input": "making websites accessible"
+ },
+ {
+  "id": "i-1360",
+  "input": "ITIL service management"
+ },
+ {
+  "id": "i-1361",
+  "input": "app development"
+ },
+ {
+  "id": "i-1362",
+  "input": "supporting users on helpdesk"
+ },
+ {
+  "id": "i-1363",
+  "input": "ansible playbooks"
+ },
+ {
+  "id": "i-1364",
+  "input": "Helpdesk"
+ },
+ {
+  "id": "i-1365",
+  "input": "ISO/IEC 27001 compliance"
+ },
+ {
+  "id": "i-1366",
+  "input": "py scripts"
+ },
+ {
+  "id": "i-1367",
+  "input": "gantt"
+ },
+ {
+  "id": "i-1368",
+  "input": "user interviews, usability studies"
+ },
+ {
+  "id": "i-1369",
+  "input": "Windows"
+ },
+ {
+  "id": "i-1370",
+  "input": "confidentiality"
+ },
+ {
+  "id": "i-1371",
+  "input": "IT security"
+ },
+ {
+  "id": "i-1372",
+  "input": "solidity dev"
+ },
+ {
+  "id": "i-1373",
+  "input": "Zendesk"
+ },
+ {
+  "id": "i-1374",
+  "input": "html and markup"
+ },
+ {
+  "id": "i-1375",
+  "input": "web3js"
+ },
+ {
+  "id": "i-1376",
+  "input": "UML"
+ },
+ {
+  "id": "i-1377",
+  "input": "being a hacker"
+ },
+ {
+  "id": "i-1378",
+  "input": "AWS (EC2, S3, VPC)"
+ },
+ {
+  "id": "i-1379",
+  "input": "Microsoft 365 admin"
+ },
+ {
+  "id": "i-1380",
+  "input": "AD and Group Policy"
+ },
+ {
+  "id": "i-1381",
+  "input": "my sql"
+ },
+ {
+  "id": "i-1382",
+  "input": "documentation"
+ },
+ {
+  "id": "i-1383",
+  "input": "workflow orchestration with Airflow"
+ },
+ {
+  "id": "i-1384",
+  "input": "Mongo"
+ },
+ {
+  "id": "i-1385",
+  "input": "c++ language"
+ },
+ {
+  "id": "i-1386",
+  "input": "deep learning"
+ },
+ {
+  "id": "i-1387",
+  "input": "nmap scans"
+ },
+ {
+  "id": "i-1388",
+  "input": "python language"
+ },
+ {
+  "id": "i-1389",
+  "input": "autopsy"
+ },
+ {
+  "id": "i-1390",
+  "input": "analytical"
+ },
+ {
+  "id": "i-1391",
+  "input": "infrastructure"
+ },
+ {
+  "id": "i-1392",
+  "input": "System design"
+ },
+ {
+  "id": "i-1393",
+  "input": "records"
+ },
+ {
+  "id": "i-1394",
+  "input": "basics of testing APIs in Postman"
+ },
+ {
+  "id": "i-1395",
+  "input": "some testing APIs in Postman"
+ },
+ {
+  "id": "i-1396",
+  "input": "wifi things"
+ },
+ {
+  "id": "i-1397",
+  "input": "training"
+ },
+ {
+  "id": "i-1398",
+  "input": "ubuntu shell scripts"
+ },
+ {
+  "id": "i-1399",
+  "input": "database designing"
+ },
+ {
+  "id": "i-1400",
+  "input": "C# programming"
+ },
+ {
+  "id": "i-1401",
+  "input": "sql server mgt studio"
+ },
+ {
+  "id": "i-1402",
+  "input": "laravel framework"
+ },
+ {
+  "id": "i-1403",
+  "input": "reinforcement learning agents"
+ },
+ {
+  "id": "i-1404",
+  "input": "basic T-SQL / PL/SQL procedures"
+ },
+ {
+  "id": "i-1405",
+  "input": "helpdesk support"
+ },
+ {
+  "id": "i-1406",
+  "input": "subnetting (IPv4/VLSM)"
+ },
+ {
+  "id": "i-1407",
+  "input": "mysql queries"
+ },
+ {
+  "id": "i-1408",
+  "input": "systems work"
+ },
+ {
+  "id": "i-1409",
+  "input": "performance testing with JMeter"
+ },
+ {
+  "id": "i-1410",
+  "input": "repairing things"
+ },
+ {
+  "id": "i-1411",
+  "input": "C++ programming"
+ },
+ {
+  "id": "i-1412",
+  "input": "making web designs"
+ },
+ {
+  "id": "i-1413",
+  "input": "creativity"
+ },
+ {
+  "id": "i-1414",
+  "input": "packet tracer"
+ },
+ {
+  "id": "i-1415",
+  "input": "protecting things"
+ },
+ {
+  "id": "i-1416",
+  "input": "agile development"
+ },
+ {
+  "id": "i-1417",
+  "input": "RESTful services"
+ },
+ {
+  "id": "i-1418",
+  "input": "Software testing"
+ },
+ {
+  "id": "i-1419",
+  "input": "ethereum dapps"
+ },
+ {
+  "id": "i-1420",
+  "input": "communicator"
+ },
+ {
+  "id": "i-1421",
+  "input": "designing RESTful endpoints"
+ },
+ {
+  "id": "i-1422",
+  "input": "comp sci"
+ },
+ {
+  "id": "i-1423",
+  "input": "analysis of variance"
+ },
+ {
+  "id": "i-1424",
+  "input": "Visio"
+ },
+ {
+  "id": "i-1425",
+  "input": "Axure RP"
+ },
+ {
+  "id": "i-1426",
+  "input": "computer networking"
+ },
+ {
+  "id": "i-1427",
+  "input": "browsing the internet"
+ },
+ {
+  "id": "i-1428",
+  "input": "c plus plus coding"
+ },
+ {
+  "id": "i-1429",
+  "input": "capturing data"
+ },
+ {
+  "id": "i-1430",
+  "input": "help desk"
+ },
+ {
+  "id": "i-1431",
+  "input": "express.js"
+ },
+ {
+  "id": "i-1432",
+  "input": "python3"
+ },
+ {
+  "id": "i-1433",
+  "input": "YARA rules"
+ },
+ {
+  "id": "i-1434",
+  "input": "SQL queries and joins"
+ },
+ {
+  "id": "i-1435",
+  "input": "node.js server side"
+ },
+ {
+  "id": "i-1436",
+  "input": "confidence"
+ },
+ {
+  "id": "i-1437",
+  "input": "CI/CD pipelines"
+ },
+ {
+  "id": "i-1438",
+  "input": "Flutter"
+ },
+ {
+  "id": "i-1439",
+  "input": "responsive web design"
+ },
+ {
+  "id": "i-1440",
+  "input": "intro to Postman collections"
+ },
+ {
+  "id": "i-1441",
+  "input": "web security"
+ },
+ {
+  "id": "i-1442",
+  "input": "access"
+ },
+ {
+  "id": "i-1443",
+  "input": "Sketch"
+ },
+ {
+  "id": "i-1444",
+  "input": "Storybook"
+ },
+ {
+  "id": "i-1445",
+  "input": "repairs"
+ },
+ {
+  "id": "i-1446",
+  "input": "network security"
+ },
+ {
+  "id": "i-1447",
+  "input": "IAM policies, MFA"
+ },
+ {
+  "id": "i-1448",
+  "input": "consuming REST APIs with fetch/axios"
+ },
+ {
+  "id": "i-1449",
+  "input": "building websites"
+ },
+ {
+  "id": "i-1450",
+  "input": "python pandas"
+ },
+ {
+  "id": "i-1451",
+  "input": "oracle 19c"
+ },
+ {
+  "id": "i-1452",
+  "input": "spreadsheets in excel"
+ },
+ {
+  "id": "i-1453",
+  "input": "developing web sites"
+ },
+ {
+  "id": "i-1454",
+  "input": "Django REST"
+ },
+ {
+  "id": "i-1455",
+  "input": "installing Windows/Ubuntu"
+ },
+ {
+  "id": "i-1456",
+  "input": "BPMN"
+ },
+ {
+  "id": "i-1457",
+  "input": "py coding"
+ },
+ {
+  "id": "i-1458",
+  "input": "selenium webdriver"
+ },
+ {
+  "id": "i-1459",
+  "input": "user research and interviews"
+ },
+ {
+  "id": "i-1460",
+  "input": "verbal and written communication"
+ },
+ {
+  "id": "i-1461",
+  "input": "window functions sql"
+ },
+ {
+  "id": "i-1462",
+  "input": "eager to learn"
+ },
+ {
+  "id": "i-1463",
+  "input": "message queues (RabbitMQ/Kafka)"
+ },
+ {
+  "id": "i-1464",
+  "input": "R and RStudio"
+ },
+ {
+  "id": "i-1465",
+  "input": "help desk support"
+ },
+ {
+  "id": "i-1466",
+  "input": "ec2 instances"
+ },
+ {
+  "id": "i-1467",
+  "input": "github"
+ },
+ {
+  "id": "i-1468",
+  "input": "Java programming"
+ },
+ {
+  "id": "i-1469",
+  "input": "identity and access management"
+ },
+ {
+  "id": "i-1470",
+  "input": "graphql APIs"
+ },
+ {
+  "id": "i-1471",
+  "input": "Project management"
+ },
+ {
+  "id": "i-1472",
+  "input": "SQL injection testing"
+ },
+ {
+  "id": "i-1473",
+  "input": "time-series modelling"
+ },
+ {
+  "id": "i-1474",
+  "input": "translating business questions into reports"
+ },
+ {
+  "id": "i-1475",
+  "input": "robots"
+ },
+ {
+  "id": "i-1476",
+  "input": "assisting people"
+ },
+ {
+  "id": "i-1477",
+  "input": "bayesian statistics"
+ },
+ {
+  "id": "i-1478",
+  "input": "CSS3"
+ },
+ {
+  "id": "i-1479",
+  "input": "computer programming"
+ },
+ {
+  "id": "i-1480",
+  "input": "pc skills"
+ },
+ {
+  "id": "i-1481",
+  "input": "leading groups"
+ },
+ {
+  "id": "i-1482",
+  "input": "WP websites for small businesses"
+ },
+ {
+  "id": "i-1483",
+  "input": "selenium automation"
+ },
+ {
+  "id": "i-1484",
+  "input": "meraki dashboard"
+ },
+ {
+  "id": "i-1485",
+  "input": "powerbi"
+ },
+ {
+  "id": "i-1486",
+  "input": "structure"
+ },
+ {
+  "id": "i-1487",
+  "input": "buffer overflow exploitation"
+ },
+ {
+  "id": "i-1488",
+  "input": "intro to wireframes and low-fi sketches"
+ },
+ {
+  "id": "i-1489",
+  "input": "IOS-XE routers"
+ },
+ {
+  "id": "i-1490",
+  "input": "Tailwind CSS"
+ },
+ {
+  "id": "i-1491",
+  "input": "excel skills"
+ },
+ {
+  "id": "i-1492",
+  "input": "node js"
+ },
+ {
+  "id": "i-1493",
+  "input": "Scrum"
+ },
+ {
+  "id": "i-1494",
+  "input": "planning"
+ },
+ {
+  "id": "i-1495",
+  "input": "meeting deadlines"
+ },
+ {
+  "id": "i-1496",
+  "input": "Cascading Style Sheets, flexbox/grid"
+ },
+ {
+  "id": "i-1497",
+  "input": "Microsoft Office suite"
+ },
+ {
+  "id": "i-1498",
+  "input": "cost estimation"
+ },
+ {
+  "id": "i-1499",
+  "input": "agile/scrum"
+ },
+ {
+  "id": "i-1500",
+  "input": "styling with CSS"
+ }
+]

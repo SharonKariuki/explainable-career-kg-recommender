@@ -1,0 +1,821 @@
+[
+ {
+  "group": "pe-g001",
+  "input": "moving traffic between subnets",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: routing: moving packets between networks (ICT network routing); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g001",
+  "input": "getting packets from one network to another",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: routing: moving packets between networks (ICT network routing); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g002",
+  "input": "handing out IP addresses automatically",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: DHCP / automatic address assignment; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g002",
+  "input": "setting up an automatic IP lease server",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: DHCP / automatic address assignment; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g003",
+  "input": "translating website names into addresses",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: DNS name resolution; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g003",
+  "input": "running name resolution servers",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: DNS name resolution; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g004",
+  "input": "wireless network setup for an office",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: wireless LAN setup; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g004",
+  "input": "configuring access points and wifi coverage",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: wireless LAN setup; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g005",
+  "input": "encrypted tunnels between sites",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: VPN; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g005",
+  "input": "connecting branch offices securely over the internet",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: VPN; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g006",
+  "input": "terminating and testing network cables",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: cabling"
+ },
+ {
+  "group": "pe-g007",
+  "input": "inspecting network traffic at packet level",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: packet capture/analysis"
+ },
+ {
+  "group": "pe-g008",
+  "input": "diagnosing why links and connections fail",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: network troubleshooting"
+ },
+ {
+  "group": "pe-g009",
+  "input": "planning a campus network layout",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: network design"
+ },
+ {
+  "group": "pe-g010",
+  "input": "configuring switches on Cisco devices",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: switch configuration on Cisco gear"
+ },
+ {
+  "group": "pe-g011",
+  "input": "link-state route exchange between routers",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: OSPF-like dynamic routing; narrower tool beside general routing"
+ },
+ {
+  "group": "pe-g012",
+  "input": "making pages adapt to phone and desktop screens",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: responsive design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g012",
+  "input": "layouts that resize to the screen",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: responsive design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g013",
+  "input": "styling web pages with stylesheets",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: CSS; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g013",
+  "input": "controlling fonts and colours of a page in code",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: CSS; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g014",
+  "input": "adding interactivity to web pages with scripts",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: JavaScript; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g014",
+  "input": "making buttons and forms respond in the browser",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: JavaScript; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g015",
+  "input": "building single-page apps from components",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: frontend frameworks (React etc); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g015",
+  "input": "UI components that update when data changes",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: frontend frameworks (React etc); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g016",
+  "input": "making sites usable with screen readers",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: accessibility; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g016",
+  "input": "designing pages for people with disabilities",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: accessibility; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g017",
+  "input": "checking pages look the same in Chrome and Firefox",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: cross-browser testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g017",
+  "input": "testing a site across different browsers",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: cross-browser testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g018",
+  "input": "sketching app screens and user flows before coding",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: wireframing / UX design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g018",
+  "input": "laying out screens before building them",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: wireframing / UX design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g019",
+  "input": "marking up page structure with tags",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: HTML"
+ },
+ {
+  "group": "pe-g020",
+  "input": "typed superset of JavaScript",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: TypeScript"
+ },
+ {
+  "group": "pe-g021",
+  "input": "building a site on a content management platform",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: CMS sites"
+ },
+ {
+  "group": "pe-g022",
+  "input": "stylesheets with variables and nesting compiled to CSS",
+  "category": "paraphrase",
+  "domain": "web_frontend",
+  "author_note": "paraphrase: CSS preprocessors"
+ },
+ {
+  "group": "pe-g023",
+  "input": "building REST APIs",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: REST APIs; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g023",
+  "input": "creating endpoints that return JSON to clients",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: REST APIs; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g024",
+  "input": "writing unit tests",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: unit testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g024",
+  "input": "automated checks for individual functions",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: unit testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g025",
+  "input": "designing classes and inheritance",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: object-oriented programming; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g025",
+  "input": "modelling things as objects in code",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: object-oriented programming; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g026",
+  "input": "writing code that runs on the web server",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: server-side web programming; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g026",
+  "input": "server side scripting for websites",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: server-side web programming; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g027",
+  "input": "tracking code changes over time",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: version control (Git); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g027",
+  "input": "keeping history of source files and branches",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: version control (Git); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g028",
+  "input": "finding and fixing faults in programs",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: debugging; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g028",
+  "input": "stepping through code to track down errors",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: debugging; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g029",
+  "input": "structuring code with reusable design solutions",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: design patterns/architecture"
+ },
+ {
+  "group": "pe-g030",
+  "input": "writing small scripts to automate chores",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: scripting automation"
+ },
+ {
+  "group": "pe-g031",
+  "input": "building apps for Android phones",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: Android development"
+ },
+ {
+  "group": "pe-g032",
+  "input": "splitting an application into small independent services",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: microservices"
+ },
+ {
+  "group": "pe-g033",
+  "input": "reading teammates code and giving feedback",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: code review"
+ },
+ {
+  "group": "pe-g034",
+  "input": "building websites with a Python framework",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: Python web framework (near Python)"
+ },
+ {
+  "group": "pe-g035",
+  "input": "securing an API with tokens and login",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: API authentication"
+ },
+ {
+  "group": "pe-g037",
+  "input": "cleaning messy datasets",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: data cleaning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g037",
+  "input": "fixing missing and wrong values in data",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: data cleaning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g038",
+  "input": "making charts and dashboards from numbers",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: data visualization; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g038",
+  "input": "visual reports of business figures",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: data visualization; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g039",
+  "input": "statistical analysis of survey results",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: statistics; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g039",
+  "input": "testing hypotheses with sample data",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: statistics; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g040",
+  "input": "pulling reports out of tables with queries",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: SQL querying for analysis; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g040",
+  "input": "extracting figures from a database for analysis",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: SQL querying for analysis; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g041",
+  "input": "number crunching with formulas and pivot tables",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: Excel / spreadsheets; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g041",
+  "input": "working with grids of cells and formulas",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: Excel / spreadsheets; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g042",
+  "input": "extract transform load pipelines",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: ETL; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g042",
+  "input": "moving data between systems into a warehouse",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: ETL; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g043",
+  "input": "spotting patterns in sales figures over time",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: trend analysis"
+ },
+ {
+  "group": "pe-g044",
+  "input": "manipulating tables of data in Python code",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: pandas / dataframes (near Python)"
+ },
+ {
+  "group": "pe-g045",
+  "input": "processing huge datasets on clusters of machines",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: big data processing"
+ },
+ {
+  "group": "pe-g046",
+  "input": "predicting future numbers from past data",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: forecasting"
+ },
+ {
+  "group": "pe-g047",
+  "input": "building management reports from company data",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: business intelligence reporting"
+ },
+ {
+  "group": "pe-g048",
+  "input": "digging for hidden patterns in large collections of records",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: data mining"
+ },
+ {
+  "group": "pe-g049",
+  "input": "training models to predict outcomes",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: machine learning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g049",
+  "input": "teaching computers to learn from examples",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: machine learning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g050",
+  "input": "neural networks with many layers",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: deep learning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g050",
+  "input": "deep models for images",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: deep learning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g051",
+  "input": "getting computers to understand human language",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: NLP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g051",
+  "input": "analysing text and speech with software",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: NLP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g052",
+  "input": "open source library for building neural networks",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: ML libraries (TensorFlow/PyTorch)"
+ },
+ {
+  "group": "pe-g053",
+  "input": "building conversational assistants",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: chatbots"
+ },
+ {
+  "group": "pe-g054",
+  "input": "choosing and transforming input variables for models",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: feature engineering"
+ },
+ {
+  "group": "pe-g055",
+  "input": "artificial intelligence techniques",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: AI general"
+ },
+ {
+  "group": "pe-g056",
+  "input": "configuring firewalls",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: firewalls; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g056",
+  "input": "setting rules to block unwanted network traffic",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: firewalls; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g057",
+  "input": "breaking into systems with permission to test them",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: penetration testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g057",
+  "input": "simulating attacks to find holes",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: penetration testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g058",
+  "input": "scrambling information so only key holders can read it",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: cryptography; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g058",
+  "input": "using ciphers to protect data",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: cryptography; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g059",
+  "input": "handling a hacked system and containing the damage",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: incident response; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g059",
+  "input": "responding to security breaches",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: incident response; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g060",
+  "input": "removing viruses from systems",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: malware protection; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g060",
+  "input": "defending machines against malicious software",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: malware protection; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g061",
+  "input": "managing who is allowed to use what",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: access control / IAM; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g061",
+  "input": "controlling user permissions and identities",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: access control / IAM; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g062",
+  "input": "checking servers for unpatched flaws",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: vulnerability scanning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g062",
+  "input": "scanning systems for known weaknesses",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: vulnerability scanning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g063",
+  "input": "following privacy laws when handling data",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: data protection compliance; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g063",
+  "input": "complying with data protection rules",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: data protection compliance; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g064",
+  "input": "watching logs for suspicious activity",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: log monitoring / SIEM"
+ },
+ {
+  "group": "pe-g065",
+  "input": "protecting websites from injection attacks",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: web app security"
+ },
+ {
+  "group": "pe-g066",
+  "input": "judging how likely and how bad security threats are",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: risk assessment"
+ },
+ {
+  "group": "pe-g067",
+  "input": "recovering evidence from seized computers",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: digital forensics"
+ },
+ {
+  "group": "pe-g068",
+  "input": "replacing broken laptop parts",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: hardware repair; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g068",
+  "input": "repairing computer hardware",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: hardware repair; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g069",
+  "input": "setting up Windows on new machines",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: OS installation; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g069",
+  "input": "reinstalling operating systems",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: OS installation; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g070",
+  "input": "helping users with computer problems over the phone",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: help desk; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g070",
+  "input": "remote assistance for staff",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: help desk; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g071",
+  "input": "creating and disabling staff logins in a company directory",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: Active Directory / user accounts; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g071",
+  "input": "managing user accounts centrally",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: Active Directory / user accounts; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g072",
+  "input": "making copies of files in case of loss",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: backup and recovery; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g072",
+  "input": "restoring data after a failure",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: backup and recovery; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g073",
+  "input": "logging and tracking support requests",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: ticketing"
+ },
+ {
+  "group": "pe-g074",
+  "input": "managing servers from the command line",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: Linux administration"
+ },
+ {
+  "group": "pe-g075",
+  "input": "running Microsoft servers for an organisation",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: Windows server"
+ },
+ {
+  "group": "pe-g076",
+  "input": "keeping software updated across many computers",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: patch management"
+ },
+ {
+  "group": "pe-g077",
+  "input": "writing step by step guides for end users",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: user documentation"
+ },
+ {
+  "group": "pe-g078",
+  "input": "putting a computer together from parts",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: PC assembly"
+ }
+]

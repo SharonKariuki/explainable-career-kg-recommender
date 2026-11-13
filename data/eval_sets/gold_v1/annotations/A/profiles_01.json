@@ -1,0 +1,1834 @@
+[
+ {
+  "id": "s-0001",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-1243.00": 2,
+   "15-1243.01": 1,
+   "15-1251.00": 1,
+   "15-2051.01": 1,
+   "15-1211.00": 1
+  },
+  "plausible_careers": [
+   "15-1242.00",
+   "15-1243.00"
+  ],
+  "confidence": "high",
+  "note": "Oracle/PL/SQL, MySQL and backup-recovery point to database administration"
+ },
+ {
+  "id": "s-0002",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1242.00": 1,
+   "15-1243.00": 1
+  },
+  "plausible_careers": [
+   "15-1242.00",
+   "15-1243.00"
+  ],
+  "confidence": "high",
+  "note": "only vague words (database, data, systems, IT)"
+ },
+ {
+  "id": "s-0003",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1232.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "generic computer, coding and Windows only"
+ },
+ {
+  "id": "s-0004",
+  "sufficiency": "borderline",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-2051.01": 2,
+   "15-1243.00": 1,
+   "15-1243.01": 1
+  },
+  "plausible_careers": [
+   "15-1242.00",
+   "15-2051.01"
+  ],
+  "confidence": "low",
+  "note": "SQL Server and SSMS largely one capability; reporting is vague"
+ },
+ {
+  "id": "s-0005",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0006",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.05": 3,
+   "15-1212.00": 3,
+   "15-1244.00": 1,
+   "15-1299.04": 1,
+   "15-1299.06": 1
+  },
+  "plausible_careers": [
+   "15-1299.05",
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "hardening, cryptography and EDR point to security engineering/analysis"
+ },
+ {
+  "id": "s-0007",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.09": 3,
+   "15-1211.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.09"
+  ],
+  "confidence": "high",
+  "note": "PRINCE2, MS Project, budgeting and Gantt scheduling: IT project management"
+ },
+ {
+  "id": "s-0008",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0009",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4",
+   "I1"
+  ],
+  "grades": {
+   "15-1254.00": 1,
+   "15-1255.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00",
+   "15-1255.00"
+  ],
+  "confidence": "high",
+  "note": "vague web/coding/interface words"
+ },
+ {
+  "id": "s-0010",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4",
+   "I1"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "generic digital literacy only"
+ },
+ {
+  "id": "s-0011",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1231.00": 3,
+   "15-1241.00": 2
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00",
+   "15-1241.00"
+  ],
+  "confidence": "high",
+  "note": "Cisco router config, MikroTik and Zabbix: network admin/support"
+ },
+ {
+  "id": "s-0012",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1251.00": 2,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "Android Studio, Kotlin, Firebase: mobile app development"
+ },
+ {
+  "id": "s-0013",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1243.01": 3,
+   "15-1243.00": 2,
+   "15-1242.00": 1,
+   "15-2051.00": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-1243.01",
+   "15-1243.00"
+  ],
+  "confidence": "low",
+  "note": "Airflow pipelines and ERD design point to data engineering/database design"
+ },
+ {
+  "id": "s-0014",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2041.00": 3,
+   "15-2051.00": 2,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2041.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "Stata and ARIMA forecasting: statistics"
+ },
+ {
+  "id": "s-0015",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1255.00": 2,
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00",
+   "15-1255.00"
+  ],
+  "confidence": "high",
+  "note": "React, TypeScript, CSS, accessibility: front-end web development"
+ },
+ {
+  "id": "s-0016",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1231.00": 3,
+   "15-1241.00": 2,
+   "15-1212.00": 1,
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00",
+   "15-1241.00"
+  ],
+  "confidence": "high",
+  "note": "Cisco IOS, VLANs, Wireshark, Zabbix: networking admin/support"
+ },
+ {
+  "id": "s-0017",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 2,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "ITIL, SLA tickets, O365 setup, Windows and printers: user support"
+ },
+ {
+  "id": "s-0018",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1244.00": 1,
+   "15-1231.00": 1,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00",
+   "15-1241.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (VLANs)"
+ },
+ {
+  "id": "s-0019",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "office suite only"
+ },
+ {
+  "id": "s-0020",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1299.06": 1,
+   "15-1254.00": 1,
+   "15-1243.01": 1,
+   "15-1299.04": 1,
+   "15-1212.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.06",
+   "15-1254.00",
+   "15-1243.01",
+   "15-1299.04",
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "one forensics, one web, one ETL and one scanning tool"
+ },
+ {
+  "id": "s-0021",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1212.00": 3,
+   "15-1299.05": 2,
+   "15-1244.00": 1,
+   "15-1299.04": 1,
+   "15-1299.06": 1
+  },
+  "plausible_careers": [
+   "15-1212.00",
+   "15-1299.05"
+  ],
+  "confidence": "high",
+  "note": "firewalls, Splunk SIEM and log analysis: security analyst"
+ },
+ {
+  "id": "s-0022",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.07": 3,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.07"
+  ],
+  "confidence": "low",
+  "note": "blockchain domain plus Solidity; crypto partly restates blockchain"
+ },
+ {
+  "id": "s-0023",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1255.00": 3,
+   "15-1254.00": 2
+  },
+  "plausible_careers": [
+   "15-1255.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "UX research, personas, journey mapping plus CSS: UX/interface design"
+ },
+ {
+  "id": "s-0024",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1255.00": 3,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1255.00"
+  ],
+  "confidence": "low",
+  "note": "beginner Figma and wireframing point to UI design"
+ },
+ {
+  "id": "s-0025",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 2,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "Wi-Fi fixing, M365 admin, user documentation: user support"
+ },
+ {
+  "id": "s-0026",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.06": 3,
+   "15-1212.00": 2,
+   "15-1299.05": 1,
+   "15-1299.04": 1
+  },
+  "plausible_careers": [
+   "15-1299.06",
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "malware analysis and Autopsy: digital forensics"
+ },
+ {
+  "id": "s-0027",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 2
+  },
+  "plausible_careers": [
+   "15-1232.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "ITIL, LAN/Wi-Fi and mobile device support: user support"
+ },
+ {
+  "id": "s-0028",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2041.00": 3,
+   "15-2051.00": 2,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2041.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "regression, R, probability and statistics: statistician"
+ },
+ {
+  "id": "s-0029",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1255.00": 3,
+   "15-1254.00": 2
+  },
+  "plausible_careers": [
+   "15-1255.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "web design, WordPress, Canva: web design"
+ },
+ {
+  "id": "s-0030",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.04": 3,
+   "15-1212.00": 2,
+   "15-1299.05": 1
+  },
+  "plausible_careers": [
+   "15-1299.04",
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "Burp Suite, Metasploit, exploit development: penetration testing"
+ },
+ {
+  "id": "s-0031",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1221.00": 1,
+   "15-2051.00": 1
+  },
+  "plausible_careers": [
+   "15-1221.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "vague AI/data/robots words"
+ },
+ {
+  "id": "s-0032",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4",
+   "I1"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "vague IT/support words"
+ },
+ {
+  "id": "s-0033",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1299.06": 1,
+   "15-1221.00": 1,
+   "15-2051.00": 1,
+   "15-1252.00": 1,
+   "15-1254.00": 1,
+   "15-1231.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.06",
+   "15-1221.00",
+   "15-2051.00",
+   "15-1252.00",
+   "15-1254.00",
+   "15-1231.00",
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "one forensics, one AI, one API, one networking-lab tool"
+ },
+ {
+  "id": "s-0034",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1251.00": 2,
+   "15-1254.00": 2,
+   "15-1253.00": 1,
+   "15-1242.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1251.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "Java OOP, Docker, JWT, SQL Server, Git: backend software development"
+ },
+ {
+  "id": "s-0035",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1211.00": 1,
+   "15-1212.00": 1,
+   "15-1299.06": 1,
+   "15-1252.00": 1,
+   "15-2051.00": 1
+  },
+  "plausible_careers": [
+   "15-1211.00",
+   "15-1212.00",
+   "15-1299.06",
+   "15-1252.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "CRM, YARA, Arduino, Matplotlib: one item per area"
+ },
+ {
+  "id": "s-0036",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1252.00": 3,
+   "15-1251.00": 2,
+   "15-1242.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00",
+   "15-1252.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "Node/Express, MongoDB, GraphQL, TypeScript: backend web development"
+ },
+ {
+  "id": "s-0037",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1253.00": 3,
+   "15-1252.00": 1,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "Selenium, Cypress, Postman: test automation"
+ },
+ {
+  "id": "s-0038",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1231.00": 2,
+   "15-1299.08": 1,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "virtualisation, Nagios, DHCP/DNS, Linux: systems administration"
+ },
+ {
+  "id": "s-0039",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1254.00": 1,
+   "15-1255.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00",
+   "15-1255.00"
+  ],
+  "confidence": "high",
+  "note": "all inputs restate CSS"
+ },
+ {
+  "id": "s-0040",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0041",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0042",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4",
+   "I1"
+  ],
+  "grades": {
+   "15-1254.00": 1,
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00",
+   "15-1252.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "vague servers/logic/coding/websites"
+ },
+ {
+  "id": "s-0043",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "generic computer and office skills"
+ },
+ {
+  "id": "s-0044",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "vague security/data/software/IT words"
+ },
+ {
+  "id": "s-0045",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0046",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1212.00": 3,
+   "15-1299.05": 2,
+   "15-1299.04": 1,
+   "15-1299.06": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1212.00",
+   "15-1299.05"
+  ],
+  "confidence": "high",
+  "note": "IDS/IPS, vulnerability scans, log analysis, pfSense: security analyst"
+ },
+ {
+  "id": "s-0047",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1242.00": 1
+  },
+  "plausible_careers": [
+   "15-1242.00"
+  ],
+  "confidence": "high",
+  "note": "vague information systems/data/storage words"
+ },
+ {
+  "id": "s-0048",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1253.00": 1
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "vague quality/software/checking words"
+ },
+ {
+  "id": "s-0049",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "generic programming and office skills"
+ },
+ {
+  "id": "s-0050",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2051.00": 3,
+   "15-2051.01": 2,
+   "15-2041.00": 1
+  },
+  "plausible_careers": [
+   "15-2051.00",
+   "15-2051.01"
+  ],
+  "confidence": "high",
+  "note": "scikit-learn, feature engineering, Tableau, SQL window functions: data science"
+ },
+ {
+  "id": "s-0051",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0052",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1299.08": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1299.08"
+  ],
+  "confidence": "high",
+  "note": "single specific item (Raspberry Pi)"
+ },
+ {
+  "id": "s-0053",
+  "sufficiency": "borderline",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 2,
+   "15-1252.00": 1,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00",
+   "15-1231.00"
+  ],
+  "confidence": "low",
+  "note": "PC repair and hardware largely one capability; networking basic; Daraja API off-area"
+ },
+ {
+  "id": "s-0054",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2051.00": 3,
+   "15-1221.00": 2,
+   "15-2041.00": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2051.00",
+   "15-1221.00"
+  ],
+  "confidence": "high",
+  "note": "TensorFlow/Keras, model evaluation, matplotlib, Jupyter: data science/ML"
+ },
+ {
+  "id": "s-0055",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1232.00": 2,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "all inputs restate helpdesk"
+ },
+ {
+  "id": "s-0056",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1251.00": 2,
+   "15-1254.00": 2,
+   "15-1253.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1251.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "Redis, message queues, unit tests, Python, SQL: backend development"
+ },
+ {
+  "id": "s-0057",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 2
+  },
+  "plausible_careers": [
+   "15-1232.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "tickets, password resets, malware removal, LAN/Wi-Fi: user support"
+ },
+ {
+  "id": "s-0058",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "generic coding and office skills"
+ },
+ {
+  "id": "s-0059",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3",
+   "I1"
+  ],
+  "grades": {
+   "15-1251.00": 1,
+   "15-1252.00": 1,
+   "15-2051.00": 1
+  },
+  "plausible_careers": [
+   "15-1251.00",
+   "15-1252.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "all inputs restate Python"
+ },
+ {
+  "id": "s-0060",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (Firebase)"
+ },
+ {
+  "id": "s-0061",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.09": 3
+  },
+  "plausible_careers": [
+   "15-1299.09"
+  ],
+  "confidence": "high",
+  "note": "Scrum, MS Project, stakeholder management: IT project management"
+ },
+ {
+  "id": "s-0062",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1243.01": 3,
+   "15-1243.00": 2,
+   "15-1242.00": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-1243.01",
+   "15-1243.00"
+  ],
+  "confidence": "high",
+  "note": "data warehouse design and PostgreSQL: data warehousing"
+ },
+ {
+  "id": "s-0063",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1253.00": 1
+  },
+  "plausible_careers": [
+   "15-1253.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (Selenium)"
+ },
+ {
+  "id": "s-0064",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2051.00": 3,
+   "15-2041.00": 1,
+   "15-1221.00": 1,
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "pandas, feature engineering, supervised learning, Kaggle: data science"
+ },
+ {
+  "id": "s-0065",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1252.00": 3,
+   "15-1254.00": 2,
+   "15-1251.00": 2,
+   "15-1253.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1254.00",
+   "15-1251.00"
+  ],
+  "confidence": "high",
+  "note": "Redis caching, Docker, JWT, unit tests: backend development"
+ },
+ {
+  "id": "s-0066",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.04": 3,
+   "15-1212.00": 2,
+   "15-1299.05": 1
+  },
+  "plausible_careers": [
+   "15-1299.04",
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "OWASP web vulnerabilities, CTFs, Kali: penetration testing"
+ },
+ {
+  "id": "s-0067",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.05": 3,
+   "15-1212.00": 3,
+   "15-1241.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.05",
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "IAM, segmented secure networks, EDR: security engineering"
+ },
+ {
+  "id": "s-0068",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "O365 admin, PC repair, Windows troubleshooting, printers: user support"
+ },
+ {
+  "id": "s-0069",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0070",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.07": 3,
+   "15-1252.00": 2,
+   "15-1254.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.07",
+   "15-1252.00"
+  ],
+  "confidence": "high",
+  "note": "Solidity smart contracts, Ethereum dapps, Node.js: blockchain engineering"
+ },
+ {
+  "id": "s-0071",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1221.00": 3,
+   "15-2051.00": 3
+  },
+  "plausible_careers": [
+   "15-1221.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "PyTorch, transformers, Hugging Face, NLP: AI research/data science"
+ },
+ {
+  "id": "s-0072",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.08": 3,
+   "15-1244.00": 2,
+   "15-1241.00": 1,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.08",
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "Terraform, AWS EC2, Kubernetes, Docker: cloud/systems engineering"
+ },
+ {
+  "id": "s-0073",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1299.06": 1,
+   "15-1243.01": 1,
+   "15-1254.00": 1,
+   "15-1252.00": 1,
+   "15-1255.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.06",
+   "15-1243.01",
+   "15-1254.00",
+   "15-1252.00",
+   "15-1255.00"
+  ],
+  "confidence": "high",
+  "note": "one forensics, one warehouse, one web framework, one design-handoff tool"
+ },
+ {
+  "id": "s-0074",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1241.00": 3,
+   "15-1244.00": 2,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1241.00",
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "MPLS WAN design, VPNs, capacity planning: network architecture"
+ },
+ {
+  "id": "s-0075",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-1243.00": 2,
+   "15-1243.01": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1242.00",
+   "15-1243.00"
+  ],
+  "confidence": "high",
+  "note": "Oracle, stored procedures, backup/restore, migration: database administration"
+ },
+ {
+  "id": "s-0076",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1231.00": 3,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "DNS/DHCP, Nagios monitoring, VLSM subnetting: network admin/support"
+ },
+ {
+  "id": "s-0077",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-1252.00": 1,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "vague apps/websites/games words"
+ },
+ {
+  "id": "s-0078",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "SLA tickets, AD resets, Windows and mobile support: user support"
+ },
+ {
+  "id": "s-0079",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1254.00": 3,
+   "15-1242.00": 2,
+   "15-1243.00": 2,
+   "15-1252.00": 1,
+   "15-1251.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00",
+   "15-1242.00",
+   "15-1243.00"
+  ],
+  "confidence": "low",
+  "note": "PHP and MySQL with database design: web dev with database side"
+ },
+ {
+  "id": "s-0080",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1231.00": 2,
+   "15-1241.00": 1,
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00"
+  ],
+  "confidence": "high",
+  "note": "Windows Server, AD/GPO, subnetting, shell scripting: systems administration"
+ },
+ {
+  "id": "s-0081",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1243.00": 1,
+   "15-1242.00": 1
+  },
+  "plausible_careers": [
+   "15-1243.00",
+   "15-1242.00"
+  ],
+  "confidence": "high",
+  "note": "all inputs restate database design"
+ },
+ {
+  "id": "s-0082",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4",
+   "I1"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "vague ICT/computers/systems words"
+ },
+ {
+  "id": "s-0083",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1221.00": 3,
+   "15-2051.00": 2
+  },
+  "plausible_careers": [
+   "15-1221.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "NLP with NLTK/spaCy, research papers, algorithm design: research scientist"
+ },
+ {
+  "id": "s-0084",
+  "sufficiency": "borderline",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 2,
+   "15-1231.00": 2,
+   "15-1241.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00"
+  ],
+  "confidence": "low",
+  "note": "Cisco and router config overlap heavily; networking generic"
+ },
+ {
+  "id": "s-0085",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1241.00": 3,
+   "15-1244.00": 2,
+   "15-1299.08": 1,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1241.00",
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "BGP, LAN/WAN design, load balancing: network architecture"
+ },
+ {
+  "id": "s-0086",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1244.00": 3,
+   "15-1231.00": 3,
+   "15-1241.00": 2
+  },
+  "plausible_careers": [
+   "15-1244.00",
+   "15-1231.00",
+   "15-1241.00"
+  ],
+  "confidence": "high",
+  "note": "STP, VLANs, OSPF/EIGRP: network admin/support"
+ },
+ {
+  "id": "s-0087",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1212.00": 3,
+   "15-1299.05": 1,
+   "15-1299.04": 1,
+   "15-1299.06": 1
+  },
+  "plausible_careers": [
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "Wireshark, Nmap, Splunk, incident response: security analyst"
+ },
+ {
+  "id": "s-0088",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-2051.00": 3,
+   "15-2051.01": 2,
+   "15-2041.00": 1
+  },
+  "plausible_careers": [
+   "15-2051.00",
+   "15-2051.01"
+  ],
+  "confidence": "low",
+  "note": "beginner matplotlib/seaborn and Jupyter: data analysis"
+ },
+ {
+  "id": "s-0089",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0090",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "Windows, office and computer literacy only"
+ },
+ {
+  "id": "s-0091",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1255.00": 3,
+   "15-1299.04": 2,
+   "15-1212.00": 2,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1255.00",
+   "15-1299.04",
+   "15-1212.00"
+  ],
+  "confidence": "low",
+  "note": "two areas: UX (Figma, XD, user research) and security testing (Kali, Nessus)"
+ },
+ {
+  "id": "s-0092",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3"
+  ],
+  "grades": {
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "all inputs restate Linux"
+ },
+ {
+  "id": "s-0093",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1212.00": 3,
+   "15-1299.05": 2,
+   "15-1299.04": 1
+  },
+  "plausible_careers": [
+   "15-1212.00",
+   "15-1299.05"
+  ],
+  "confidence": "high",
+  "note": "ISO 27001, CIS hardening, vulnerability scans, IR: security analyst"
+ },
+ {
+  "id": "s-0094",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (React)"
+ },
+ {
+  "id": "s-0095",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "vague tech/innovation/digital words"
+ },
+ {
+  "id": "s-0096",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1212.00": 1
+  },
+  "plausible_careers": [
+   "15-1212.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (Splunk)"
+ },
+ {
+  "id": "s-0097",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0098",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1221.00": 3,
+   "15-2051.00": 2
+  },
+  "plausible_careers": [
+   "15-1221.00",
+   "15-2051.00"
+  ],
+  "confidence": "high",
+  "note": "deep learning, RL, research papers, algorithms: AI research"
+ },
+ {
+  "id": "s-0099",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0100",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I3",
+   "I1"
+  ],
+  "grades": {
+   "15-1251.00": 1,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1251.00",
+   "15-1252.00"
+  ],
+  "confidence": "high",
+  "note": "all inputs restate Java"
+ },
+ {
+  "id": "s-0101",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1241.00": 3,
+   "15-1299.08": 2,
+   "15-1299.05": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1241.00",
+   "15-1299.08"
+  ],
+  "confidence": "high",
+  "note": "MPLS WAN, zero-trust network design, resilient systems: network architecture"
+ },
+ {
+  "id": "s-0102",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "vague systems/cloud/design words"
+ },
+ {
+  "id": "s-0103",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "vague data/tables/software words"
+ },
+ {
+  "id": "s-0104",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "office suite and computer skills only"
+ },
+ {
+  "id": "s-0105",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.09": 3
+  },
+  "plausible_careers": [
+   "15-1299.09"
+  ],
+  "confidence": "high",
+  "note": "PRINCE2, Jira/Confluence, cost estimation: IT project management"
+ },
+ {
+  "id": "s-0106",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1299.08": 3,
+   "15-1241.00": 2,
+   "15-1244.00": 1,
+   "15-1211.00": 1,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.08",
+   "15-1241.00"
+  ],
+  "confidence": "high",
+  "note": "AWS/Azure architecture, cloud migration, Docker: cloud systems architecture"
+ },
+ {
+  "id": "s-0107",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1232.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (Zendesk)"
+ },
+ {
+  "id": "s-0108",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1232.00": 3,
+   "15-1231.00": 1
+  },
+  "plausible_careers": [
+   "15-1232.00"
+  ],
+  "confidence": "high",
+  "note": "laptop repair, Windows troubleshooting, remote support: user support"
+ },
+ {
+  "id": "s-0109",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I4"
+  ],
+  "grades": {
+   "15-2051.01": 1
+  },
+  "plausible_careers": [
+   "15-2051.01"
+  ],
+  "confidence": "high",
+  "note": "vague charts/numbers/analysis words"
+ },
+ {
+  "id": "s-0110",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1252.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (Swift)"
+ },
+ {
+  "id": "s-0111",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I1"
+  ],
+  "grades": {
+   "15-1251.00": 1,
+   "15-1252.00": 1
+  },
+  "plausible_careers": [
+   "15-1251.00",
+   "15-1252.00"
+  ],
+  "confidence": "low",
+  "note": "Java plus its IDE is one generic capability, rest soft skills"
+ },
+ {
+  "id": "s-0112",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I5"
+  ],
+  "grades": {
+   "15-1299.08": 1,
+   "15-1244.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.08",
+   "15-1244.00"
+  ],
+  "confidence": "high",
+  "note": "single specific item (Terraform)"
+ },
+ {
+  "id": "s-0113",
+  "sufficiency": "insufficient",
+  "reasons": [
+   "I2"
+  ],
+  "grades": {},
+  "plausible_careers": [],
+  "confidence": "high",
+  "note": "soft skills only"
+ },
+ {
+  "id": "s-0114",
+  "sufficiency": "borderline",
+  "reasons": [
+   "B1"
+  ],
+  "grades": {
+   "15-1299.09": 1,
+   "15-1244.00": 1,
+   "15-1231.00": 1,
+   "15-2051.00": 1,
+   "15-1254.00": 1
+  },
+  "plausible_careers": [
+   "15-1299.09",
+   "15-1244.00",
+   "15-1231.00",
+   "15-2051.00",
+   "15-1254.00"
+  ],
+  "confidence": "high",
+  "note": "PRINCE2, IOS-XE, sklearn, Svelte: one item per area"
+ },
+ {
+  "id": "s-0115",
+  "sufficiency": "sufficient",
+  "reasons": [],
+  "grades": {
+   "15-1242.00": 3,
+   "15-1243.00": 2,
+   "15-1243.01": 1
+  },
+  "plausible_careers": [
+   "15-1242.00",
+   "15-1243.00"
+  ],
+  "confidence": "high",
+  "note": "query tuning, Postgres admin, roles/privileges: database administration"
+ }
+]

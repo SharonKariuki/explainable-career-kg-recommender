@@ -350,19 +350,57 @@ A generated snapshot is always **provisional**. It is adopted only when a review
 - Report-only non-proportions use a cluster bootstrap: 10,000 resamples, seed 7, no design effect.
 - A gate is **Pass** only when the whole 95% interval meets the target, and **Fail** only when the whole interval misses it. Otherwise it is **Inconclusive**. It is **Not assessable** below an effective n of 60 or with fewer than 30 clusters.
 
-### Planned sets for Measured Matching (not yet built)
+### Gold sets for Measured Matching (frozen 2026-11-13, #159)
 
-| Set | Runner | Status |
-|---|---|---|
-| `mapping_v1.json` (gold concept per student phrasing) | `recommender/mapping_eval.py` | Not built. The loader refuses it until it is frozen (`FROZEN`); a development draft can be read with `--allow-unfrozen`; the test split needs `open_test_sets()` |
-| `students_v1.json` (independent profiles with wordings, career grades and sufficiency labels) | `recommender/student_eval.py` | Not built. Same locks |
+| Set | Runner | sha256 (line endings normalised) | Size |
+|---|---|---|---|
+| `mapping_v1.json` (gold concept per student phrasing) | `recommender/mapping_eval.py` | `94f1bd301d968edf6913df82dad2d311ca5756483a4b55357808f225ec638d6c` | 1,027 items: development 224, validation 399, test 404 |
+| `students_v1.json` (profiles with two wordings, career grades, sufficiency, M8 input labels) | `recommender/student_eval.py` | `49d0f88e26ff491bccff1df5e47bc6f3e557fe939208422d7ca8f47cdee7082a` | 675 profiles: development 149, validation 266, test 260 |
+
+Both are rebuilt from `data/eval_sets/gold_v1/` with `python -m pipeline.gold_sets build`, and a test checks that the rebuild matches the frozen hashes. The test splits need `open_test_sets()`.
+
+**How they were made.** All roles were performed by AI model instances working only from a text-only node catalogue (`gold_v1/catalogue/`). None of them saw AjiraGuide output or each other's labels.
+
+- **Authors** (Claude Sonnet) wrote the inputs and profiles with their intent notes (`authored/`).
+- **Splits** were assigned by seeded, stratified allocation (`assembled.json`, seed 159) before any label existed. Each mapping group stays within one split.
+- **Annotator A** (Claude Opus) and **annotator B** (Claude Sonnet) labelled every item independently (`annotations/`).
+- **Adjudication:** a third Opus instance decided every disagreement (`adjudication/`). Low-confidence decisions were dropped and counted (`build_counts.json`).
+- **Human review (Q2) is still outstanding.** Results on these sets are provisional until a human reviews the labels.
+
+**Agreement** (`gold_v1/agreement.json`, before adjudication):
+
+| Labels | Development | Validation | Test | Freeze |
+|---|---|---|---|---|
+| Sufficiency, 3-class κ / raw | 0.96 / 0.98 | 0.95 / 0.97 | 0.97 / 0.99 | yes, all splits; min κ with borderline resolved each way ≥ 0.955 |
+| Career grades, quadratic κ / grade-3 Jaccard | 0.92 / 0.93 | 0.92 / 0.92 | 0.93 / 0.90 | yes |
+| Mapping class κ / acceptable Jaccard | 0.72 / 0.79 | 0.81 / 0.77 | 0.82 / 0.77 | yes |
+| Student inputs (M8) class κ / acceptable Jaccard | round 1: 0.51 / 0.77, which did not freeze; round 2: **0.78** / 0.76 | | | yes, after amendment 1 and a blind re-label |
+| Concept pairs κ (report only) | 0.88 | | | — |
+
+**Rubric amendment 1** (2026-11-13, in `ANNOTATION_GUIDE.md`) clarifies how to label products the catalogue lacks. It came out of the plan's failure procedure: the 264 student inputs whose class disagreed were re-labelled blind.
+
+**Adjudication rules:**
+
+- Profile grades one level apart take the lower grade, and reason codes take the union.
+- For student inputs where class and owner marks agree, the acceptable sets are combined (union).
+- Every `mapping_v1` disagreement was adjudicated.
+
+**Coverage shortfall.** Annotators labelled most items written as "ambiguous" as unambiguous. Only 31 validation and 29 test items carry the `ambiguous` label, against a planned 90, so M3 (AC6) is counts-only.
+
+### Calibration on development (#159)
+
+`python -m recommender.calibration --run NAME` scans δ from 0 to 0.100. It keeps the largest δ with F_clean ≤ 0.05 (M6-clean-excl on synthetic validation) and F_unamb ≤ 0.15 (M6 on C\* of the gold development split).
+
+No δ meets both. At δ = 0, F_unamb is already 0.1575, from `below_threshold` and shared-name flags on correct readings. So `close_runner_up` stays off: `MARGIN_THRESHOLD = None`.
+
+`narrow_concept` stays off (Q4): Phase 1 has no detector for it.
 
 Since #158 the matcher itself reports, for every reading:
 
 - the runner-up (the best-scoring name of a different node);
 - the margin to it;
 - the other nodes that own the matched name (aliases inherit every owner of their target);
-- `uncertain`, with reasons `below_threshold`, `close_runner_up` (off until the margin threshold is calibrated in C3) and `shared_name`.
+- `uncertain`, with reasons `below_threshold`, `close_runner_up` (off: C3 calibration found no margin meeting both targets) and `shared_name`.
 
 The selected node is unchanged, and the engine does not read these fields.
 

@@ -1,0 +1,195 @@
+{
+ "mathematics": [
+  "onet:2.A.1.e",
+  "onet:2.C.4.a"
+ ],
+ "ada": [
+  "onet:2.B.3.e",
+  "tool:Ada"
+ ],
+ "bash": [
+  "onet:2.B.3.e",
+  "tool:Bash"
+ ],
+ "git": [
+  "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+  "tool:Git"
+ ],
+ "google docs": [
+  "esco:81633a44-f1db-4a01-a940-804c6905e330",
+  "tool:Google Docs"
+ ],
+ "sap erp": [
+  "esco:bb99af26-71ff-4dca-bde7-1eb1f6194426",
+  "tool:SAP ERP"
+ ],
+ "selenium": [
+  "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "tool:Selenium"
+ ],
+ "metasploit": [
+  "tool:Metasploit",
+  "tool:Penetration testing software"
+ ],
+ "pentaho kettle": [
+  "esco:42c3287f-5e50-4559-a2d1-2000c70e0aab",
+  "tool:Pentaho Kettle"
+ ],
+ "c shell": [
+  "onet:2.B.3.e",
+  "tool:C shell"
+ ],
+ "cloveretl": [
+  "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+  "tool:CloverETL"
+ ],
+ "awk": [
+  "onet:2.B.3.e",
+  "tool:AWK"
+ ],
+ "google sheets": [
+  "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+  "tool:Google Sheets"
+ ],
+ "google slides": [
+  "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb",
+  "tool:Google Slides"
+ ],
+ "nmap": [
+  "tool:Nmap",
+  "tool:Penetration testing software"
+ ],
+ "clarizen": [
+  "esco:fdf15b35-9028-4acb-bfd2-43f00a015cd9",
+  "tool:Clarizen"
+ ],
+ "zoho projects": [
+  "esco:fdf15b35-9028-4acb-bfd2-43f00a015cd9",
+  "tool:Zoho Projects"
+ ],
+ "css": [
+  "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794",
+  "tool:Cascading style sheets CSS"
+ ],
+ "sparql": [
+  "esco:5da8018b-ae85-4cde-ad93-0394369018f3",
+  "esco:99207709-d076-4cce-ba38-e90d3bb28806"
+ ],
+ "sql": [
+  "tool:Database management systems",
+  "tool:Structured query language SQL"
+ ],
+ "analyse economic trends": [
+  "esco:5f302d63-048e-451c-b150-97c124a5a26b",
+  "esco:f2a34d6b-131a-4b8f-a110-898b9c91d18f"
+ ],
+ "assist customers": [
+  "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+  "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3"
+ ],
+ "business analysis": [
+  "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+  "esco:9e84a506-df06-4be3-874a-fa01293e3dd5"
+ ],
+ "cloud security and compliance": [
+  "esco:1c2978b8-bb0d-4249-9c23-877571a4dffa",
+  "esco:c13fb093-5ffb-491a-b8b7-fa2d42a57e2e"
+ ],
+ "data analytics": [
+  "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "esco:c5e8abde-d2ba-4e8e-a65e-720b71180666"
+ ],
+ "gather data": [
+  "esco:0d6714c6-720e-4985-9791-5ab85d28da79",
+  "esco:57231a22-4da7-49c8-97b8-75672feadf1e"
+ ],
+ "process data": [
+  "esco:57231a22-4da7-49c8-97b8-75672feadf1e",
+  "esco:f2d57f41-43b4-4f5b-8100-3df5c21eda50"
+ ],
+ "supply chain management": [
+  "esco:020b3c27-bae1-4b85-9d6f-eccee0f5ed99",
+  "esco:96d549bb-3e62-4c45-92a7-f114df089581",
+  "esco:f929c89e-c363-4132-a918-e021d57b307c"
+ ],
+ "ml": [
+  "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "esco:a4d336a6-9ffd-402a-91cc-f359716ba4e0"
+ ],
+ "saas": [
+  "esco:83218cac-3599-417e-93d2-26013cdccd98",
+  "esco:eeca3780-8049-499f-a268-95a7ad26642c"
+ ],
+ "adobe photoshop elements": [
+  "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+  "tool:Adobe Photoshop"
+ ],
+ "cascading style sheets": [
+  "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794",
+  "tool:Cascading style sheets CSS"
+ ],
+ "cognos data manager": [
+  "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+  "tool:IBM InfoSphere DataStage"
+ ],
+ "informix extended parallel server": [
+  "tool:Database management systems",
+  "tool:IBM Informix"
+ ],
+ "prince2": [
+  "esco:7106b5df-e017-4c28-8c40-98814db5b775",
+  "esco:bec4359e-cb92-468f-a997-8fb28e32fba9"
+ ],
+ "powercenter informatica": [
+  "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+  "tool:Informatica PowerCenter"
+ ],
+ "rdb": [
+  "esco:de9f85ba-e77f-48fd-8c66-f5ebaf32d655",
+  "tool:Database management systems"
+ ],
+ "autodesk sketchbook pro": [
+  "esco:85038d57-1fdd-40de-b908-2c005545a8c3",
+  "esco:a71577b2-7550-4222-88ee-dcbd2d881516"
+ ],
+ "manage supply chain": [
+  "esco:020b3c27-bae1-4b85-9d6f-eccee0f5ed99",
+  "esco:96d549bb-3e62-4c45-92a7-f114df089581"
+ ],
+ "protect data": [
+  "esco:86d2e2ea-1ba2-4aa6-b465-8a1f9abc81b8",
+  "esco:e5beeff8-7c98-490a-ae2c-16fbb6a87305"
+ ],
+ "help customers": [
+  "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+  "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3"
+ ],
+ "dbms": [
+  "tool:Database management systems",
+  "tool:Relational database management system software"
+ ],
+ "manage projects": [
+  "esco:c881ddd2-9c0e-4743-bd24-36be650493dd",
+  "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68"
+ ],
+ "principles of project management": [
+  "esco:237db40b-4600-47c0-837f-4a2c4f3014ab",
+  "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388"
+ ],
+ "linear algebra": [
+  "onet:2.A.1.e",
+  "onet:2.C.4.a"
+ ],
+ "calculus": [
+  "onet:2.A.1.e",
+  "onet:2.C.4.a"
+ ],
+ "cypress": [
+  "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "tool:Selenium"
+ ],
+ "playwright": [
+  "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "tool:Selenium"
+ ]
+}

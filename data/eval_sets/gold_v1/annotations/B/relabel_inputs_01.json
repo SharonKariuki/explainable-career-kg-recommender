@@ -1,0 +1,1984 @@
+[
+ {
+  "id": "i-0008",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0010",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0031",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0036",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-0041",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "database normalisation"
+ },
+ {
+  "id": "i-0042",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8"
+  ],
+  "preferred": "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+  "confidence": "high",
+  "note": "data cleaning"
+ },
+ {
+  "id": "i-0049",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-0060",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "database normalisation"
+ },
+ {
+  "id": "i-0064",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0067",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0081",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "cross-platform mobile framework, instance of mobile device software frameworks"
+ },
+ {
+  "id": "i-0083",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794",
+   "tool:Cascading style sheets CSS"
+  ],
+  "preferred": "tool:Cascading style sheets CSS",
+  "confidence": "low",
+  "note": "styling in a web context read as CSS"
+ },
+ {
+  "id": "i-0092",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-0106",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-0108",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "hacking read as ethical hacking / penetration testing"
+ },
+ {
+  "id": "i-0111",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0115",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "tool:Hypertext markup language HTML",
+   "tool:Cascading style sheets CSS",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "visual/UI design vs building pages; several readings"
+ },
+ {
+  "id": "i-0133",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "hacking read as ethical hacking / penetration testing"
+ },
+ {
+  "id": "i-0134",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web server software",
+   "tool:File server software",
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "low",
+  "note": "servers: web, file or server administration readings"
+ },
+ {
+  "id": "i-0137",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "JavaScript framework, instance of category node"
+ },
+ {
+  "id": "i-0142",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "network segmentation not expressed by any node; VLAN or routing nodes are related only"
+ },
+ {
+  "id": "i-0154",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "payment REST API, arguable instance of RESTful API"
+ },
+ {
+  "id": "i-0155",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0160",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+   "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+   "tool:Database software"
+  ],
+  "preferred": "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+  "confidence": "low",
+  "note": "creating databases"
+ },
+ {
+  "id": "i-0167",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Business software applications",
+   "tool:Web application software"
+  ],
+  "preferred": "tool:Business software applications",
+  "confidence": "low",
+  "note": "applications: business software or web apps"
+ },
+ {
+  "id": "i-0168",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:1605025e-a179-421f-8f35-5b07d182a6b2",
+   "tool:Google Analytics"
+  ],
+  "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "confidence": "low",
+  "note": "data vs web analytics"
+ },
+ {
+  "id": "i-0170",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "payment REST API, arguable instance of RESTful API"
+ },
+ {
+  "id": "i-0171",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "back end read as server-side programming"
+ },
+ {
+  "id": "i-0172",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "typing speed is not in the catalogue"
+ },
+ {
+  "id": "i-0175",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-0176",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "database normalisation"
+ },
+ {
+  "id": "i-0179",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0181",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0186",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic internet use, no node for basic internet literacy"
+ },
+ {
+  "id": "i-0188",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0189",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic internet use, no node for basic internet literacy"
+ },
+ {
+  "id": "i-0190",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-0192",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Intrusion detection system IDS",
+   "tool:Security incident management software"
+  ],
+  "preferred": "tool:Intrusion detection system IDS",
+  "confidence": "low",
+  "note": "open-source SIEM/HIDS"
+ },
+ {
+  "id": "i-0194",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "esco:945b8655-5577-4c3a-946a-842d4527afa8"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "low",
+  "note": "OpenCV is an alias of Programming; image processing library"
+ },
+ {
+  "id": "i-0200",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-0210",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "typing speed is not in the catalogue"
+ },
+ {
+  "id": "i-0215",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Software development tools",
+   "tool:Business software applications",
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "tool:Software development tools",
+  "confidence": "low",
+  "note": "software: development vs using packages"
+ },
+ {
+  "id": "i-0221",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "Web3 oracle network, arguable instance of blockchain platforms"
+ },
+ {
+  "id": "i-0223",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic internet use, no node for basic internet literacy"
+ },
+ {
+  "id": "i-0225",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "payment REST API, arguable instance of RESTful API"
+ },
+ {
+  "id": "i-0229",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "back end read as server-side programming"
+ },
+ {
+  "id": "i-0242",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0247",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "cross-platform mobile framework, instance of mobile device software frameworks"
+ },
+ {
+  "id": "i-0252",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3c4c3fa1-d638-42df-8e98-2a38021da6f9",
+   "esco:28a0fe16-4e03-4d5e-8f0e-5198309e77a9"
+  ],
+  "preferred": "esco:3c4c3fa1-d638-42df-8e98-2a38021da6f9",
+  "confidence": "high",
+  "note": "chain of custody alias of data preservation node"
+ },
+ {
+  "id": "i-0255",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:cdd8b6b2-2fd9-453c-8d62-8a1dc6efcd49",
+   "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+   "onet:2.B.4.g"
+  ],
+  "preferred": "esco:cdd8b6b2-2fd9-453c-8d62-8a1dc6efcd49",
+  "confidence": "low",
+  "note": "systems: theory, operating systems or analysis"
+ },
+ {
+  "id": "i-0259",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0263",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0264",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0273",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.2.b"
+  ],
+  "preferred": "onet:2.A.2.b",
+  "confidence": "high",
+  "note": "Willingness to learn alias of Active Learning"
+ },
+ {
+  "id": "i-0275",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "onet:2.A.1.d",
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "interpersonal skills: several soft-skill nodes"
+ },
+ {
+  "id": "i-0277",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Virtual local area network management software"
+  ],
+  "preferred": "tool:Virtual local area network management software",
+  "confidence": "low",
+  "note": "VLAN technology; nearest node is VLAN management software"
+ },
+ {
+  "id": "i-0282",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:918f5211-b99f-4b29-9a34-6e475583ef55",
+   "tool:Reporting software",
+   "esco:ed39edd3-44d0-4a16-9796-bfb99f92baf3"
+  ],
+  "preferred": "esco:918f5211-b99f-4b29-9a34-6e475583ef55",
+  "confidence": "low",
+  "note": "performance reporting several readings"
+ },
+ {
+  "id": "i-0283",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0287",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic internet use, no node for basic internet literacy"
+ },
+ {
+  "id": "i-0292",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0e0c9c11-b39e-43cf-ba95-2fe646f5de64",
+   "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+   "esco:0ee94c0a-3716-494a-95a2-dcbab9e58be2"
+  ],
+  "preferred": "esco:0e0c9c11-b39e-43cf-ba95-2fe646f5de64",
+  "confidence": "low",
+  "note": "requirements gathering for reports"
+ },
+ {
+  "id": "i-0322",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0324",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a56dec32-05ef-45de-a256-ee6741f356db",
+   "esco:f09e70cb-5d8c-4c57-b027-a45127c0bf92"
+  ],
+  "preferred": "esco:a56dec32-05ef-45de-a256-ee6741f356db",
+  "confidence": "low",
+  "note": "trait phrased, confidentiality node exists"
+ },
+ {
+  "id": "i-0325",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+   "tool:Google Android",
+   "tool:Apple iOS",
+   "tool:React Native"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "mobile apps"
+ },
+ {
+  "id": "i-0327",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "JavaScript framework, instance of category node"
+ },
+ {
+  "id": "i-0341",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "typing speed is not in the catalogue"
+ },
+ {
+  "id": "i-0349",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Automated installation software"
+  ],
+  "preferred": "tool:Automated installation software",
+  "confidence": "low",
+  "note": "installing software"
+ },
+ {
+  "id": "i-0353",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:NoSQL"
+  ],
+  "preferred": "tool:NoSQL",
+  "confidence": "low",
+  "note": "Firebase listed as NoSQL alias"
+ },
+ {
+  "id": "i-0357",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Django",
+   "tool:RESTful API"
+  ],
+  "preferred": "tool:Django",
+  "confidence": "low",
+  "note": "Django REST Framework"
+ },
+ {
+  "id": "i-0362",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.l",
+   "onet:2.B.3.k",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"
+  ],
+  "preferred": "onet:2.B.3.l",
+  "confidence": "high",
+  "note": "computer repair"
+ },
+ {
+  "id": "i-0366",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-0367",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.a"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "empathy ~ social perceptiveness"
+ },
+ {
+  "id": "i-0370",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Access management software",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2"
+  ],
+  "preferred": "tool:Access management software",
+  "confidence": "low",
+  "note": "user accounts"
+ },
+ {
+  "id": "i-0394",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea"
+  ],
+  "preferred": "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+  "confidence": "high",
+  "note": "project budgeting"
+ },
+ {
+  "id": "i-0399",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "system design: software, information or network"
+ },
+ {
+  "id": "i-0400",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "APIs generic"
+ },
+ {
+  "id": "i-0401",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0406",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-0417",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:BMC Software Remedy IT Service Management Suite",
+   "tool:ServiceNow",
+   "tool:Help desk software"
+  ],
+  "preferred": "tool:BMC Software Remedy IT Service Management Suite",
+  "confidence": "low",
+  "note": "IT service tools"
+ },
+ {
+  "id": "i-0425",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "tool:Hypertext markup language HTML",
+   "tool:Cascading style sheets CSS",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "visual/UI design vs building pages; several readings"
+ },
+ {
+  "id": "i-0435",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+  ],
+  "preferred": "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+  "confidence": "low",
+  "note": "hardware platform / embedded"
+ },
+ {
+  "id": "i-0438",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "database normalisation"
+ },
+ {
+  "id": "i-0445",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-0456",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "typing speed is not in the catalogue"
+ },
+ {
+  "id": "i-0464",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Automated installation software",
+   "tool:Remote install server software"
+  ],
+  "preferred": "tool:Automated installation software",
+  "confidence": "low",
+  "note": "OS deployment/imaging"
+ },
+ {
+  "id": "i-0471",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "Web3 oracle network, arguable instance of blockchain platforms"
+ },
+ {
+  "id": "i-0473",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "JavaScript framework, instance of category node"
+ },
+ {
+  "id": "i-0474",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "network segmentation not expressed by any node; VLAN or routing nodes are related only"
+ },
+ {
+  "id": "i-0475",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:020918ef-4b55-47c1-8430-ab7b8f6a7377"
+  ],
+  "preferred": "esco:020918ef-4b55-47c1-8430-ab7b8f6a7377",
+  "confidence": "low",
+  "note": "data moving read as migration"
+ },
+ {
+  "id": "i-0480",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.C.3.c",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e"
+  ],
+  "preferred": "onet:2.C.3.c",
+  "confidence": "low",
+  "note": "design: several readings"
+ },
+ {
+  "id": "i-0481",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "database normalisation"
+ },
+ {
+  "id": "i-0486",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Android",
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "tool:Google Android",
+  "confidence": "high",
+  "note": "android apps"
+ },
+ {
+  "id": "i-0487",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Event log monitor software",
+   "tool:Splunk Enterprise"
+  ],
+  "preferred": "tool:Event log monitor software",
+  "confidence": "low",
+  "note": "log analysis"
+ },
+ {
+  "id": "i-0495",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "hacking read as ethical hacking / penetration testing"
+ },
+ {
+  "id": "i-0497",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Password management software",
+   "tool:Password cracker software"
+  ],
+  "preferred": "tool:Password management software",
+  "confidence": "low",
+  "note": "managing vs cracking passwords"
+ },
+ {
+  "id": "i-0500",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86"
+  ],
+  "preferred": "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+  "confidence": "low",
+  "note": "management/leadership several readings"
+ },
+ {
+  "id": "i-0507",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0509",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "esco:ed1d8bd4-cd2a-4c64-b665-56d70651026c"
+  ],
+  "preferred": "esco:07dd856d-6141-48a7-a228-918f88494812",
+  "confidence": "low",
+  "note": "interactive prototyping"
+ },
+ {
+  "id": "i-0515",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0517",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0521",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "onet:2.B.3.k"
+  ],
+  "preferred": "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+  "confidence": "low",
+  "note": "mobile troubleshooting"
+ },
+ {
+  "id": "i-0524",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "cross-platform mobile framework, instance of mobile device software frameworks"
+ },
+ {
+  "id": "i-0537",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e"
+  ],
+  "preferred": "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+  "confidence": "low",
+  "note": "systems architecture design"
+ },
+ {
+  "id": "i-0540",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "management soft skill not named by a node"
+ },
+ {
+  "id": "i-0546",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "low",
+  "note": "DOE/A-B testing within statistics (hypothesis testing)"
+ },
+ {
+  "id": "i-0548",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "cryptocurrency platform"
+ },
+ {
+  "id": "i-0554",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-0567",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "payment REST API, arguable instance of RESTful API"
+ },
+ {
+  "id": "i-0570",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "typing speed is not in the catalogue"
+ },
+ {
+  "id": "i-0582",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0584",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Access management software",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "tool:Password management software"
+  ],
+  "preferred": "tool:Access management software",
+  "confidence": "low",
+  "note": "account administration"
+ },
+ {
+  "id": "i-0587",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0591",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0595",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79",
+   "tool:Data entry software"
+  ],
+  "preferred": "esco:0d6714c6-720e-4985-9791-5ab85d28da79",
+  "confidence": "low",
+  "note": "data capture: collection vs entry"
+ },
+ {
+  "id": "i-0599",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+   "esco:27ed854c-15b8-4ba2-90e9-ae888a219703"
+  ],
+  "preferred": "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+  "confidence": "low",
+  "note": "gap analysis"
+ },
+ {
+  "id": "i-0600",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0602",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+   "esco:11eebd42-44ab-401d-8a2c-bdb9fc9beb50"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "security several readings"
+ },
+ {
+  "id": "i-0606",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79",
+   "tool:Data entry software"
+  ],
+  "preferred": "esco:0d6714c6-720e-4985-9791-5ab85d28da79",
+  "confidence": "low",
+  "note": "data capture: collection vs entry"
+ },
+ {
+  "id": "i-0626",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "onet:2.A.1.d",
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "interpersonal skills: several soft-skill nodes"
+ },
+ {
+  "id": "i-0630",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "back end read as server-side programming"
+ },
+ {
+  "id": "i-0631",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web framework software",
+   "tool:PHP"
+  ],
+  "preferred": "tool:Web framework software",
+  "confidence": "low",
+  "note": "PHP web framework, instance of category"
+ },
+ {
+  "id": "i-0647",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "back end read as server-side programming"
+ },
+ {
+  "id": "i-0650",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+   "esco:8744f28f-59a9-45af-8ef6-6944cb5a1473"
+  ],
+  "preferred": "esco:6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+  "confidence": "low",
+  "note": "generic risk read as risk management"
+ },
+ {
+  "id": "i-0653",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0660",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "hacking read as ethical hacking / penetration testing"
+ },
+ {
+  "id": "i-0661",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software",
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "low",
+  "note": "JS 3D library; containment in framework category arguable"
+ },
+ {
+  "id": "i-0671",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0700",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "UI component workshop tool not in catalogue"
+ },
+ {
+  "id": "i-0705",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0716",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5"
+  ],
+  "preferred": "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+  "confidence": "low",
+  "note": "IT support"
+ },
+ {
+  "id": "i-0731",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Software development tools",
+   "tool:Business software applications",
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "tool:Software development tools",
+  "confidence": "low",
+  "note": "software: development vs using packages"
+ },
+ {
+  "id": "i-0733",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "MikroTik router, instance of networking hardware"
+ },
+ {
+  "id": "i-0758",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-0760",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless LAN/AP deployment, access points as networking devices"
+ },
+ {
+  "id": "i-0767",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0820",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Management information systems MIS",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272"
+  ],
+  "preferred": "tool:Management information systems MIS",
+  "confidence": "low",
+  "note": "systems/info systems: several readings"
+ },
+ {
+  "id": "i-0822",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "tool:Data visualization software"
+  ],
+  "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+  "confidence": "low",
+  "note": "charts"
+ },
+ {
+  "id": "i-0827",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-0834",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+  "confidence": "low",
+  "note": "hardware several readings"
+ },
+ {
+  "id": "i-0840",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+   "tool:Web application software"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "apps: mobile or web"
+ },
+ {
+  "id": "i-0843",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2fb8480e-de3c-462b-b169-e8bbb344da68"
+  ],
+  "preferred": "esco:2fb8480e-de3c-462b-b169-e8bbb344da68",
+  "confidence": "low",
+  "note": "innovation"
+ },
+ {
+  "id": "i-0847",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0855",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "security knowledge in computing context"
+ },
+ {
+  "id": "i-0882",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-0886",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-0889",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web server software",
+   "tool:File server software",
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "low",
+  "note": "servers: web, file or server administration readings"
+ },
+ {
+  "id": "i-0899",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0914",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+  "confidence": "low",
+  "note": "design tool, instance of graphics editor software"
+ },
+ {
+  "id": "i-0937",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "cryptocurrency platform"
+ },
+ {
+  "id": "i-0939",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3"
+  ],
+  "preferred": "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3",
+  "confidence": "high",
+  "note": "Intune is MDM"
+ },
+ {
+  "id": "i-0962",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-0969",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.1.d"
+  ],
+  "preferred": "onet:2.A.1.d",
+  "confidence": "low",
+  "note": "communication"
+ },
+ {
+  "id": "i-1002",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "system design: software, information or network"
+ },
+ {
+  "id": "i-1003",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-1016",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-1029",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1032",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-1034",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "system design: software, information or network"
+ },
+ {
+  "id": "i-1053",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-1062",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "UI"
+ },
+ {
+  "id": "i-1070",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic Wi-Fi/wireless; no wireless node, networking hardware only related"
+ },
+ {
+  "id": "i-1081",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "cryptocurrency platform"
+ },
+ {
+  "id": "i-1088",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-1092",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "back end read as server-side programming"
+ },
+ {
+  "id": "i-1093",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Wide area network WAN software"
+  ],
+  "preferred": "tool:Wide area network WAN software",
+  "confidence": "low",
+  "note": "SD-WAN arguably WAN software; SDN not covered"
+ },
+ {
+  "id": "i-1097",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cascading style sheets CSS",
+   "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794"
+  ],
+  "preferred": "tool:Cascading style sheets CSS",
+  "confidence": "low",
+  "note": "CSS utility framework, treated as CSS styling"
+ },
+ {
+  "id": "i-1107",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "management soft skill not named by a node"
+ },
+ {
+  "id": "i-1114",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fff0e2cd-d0bd-4b02-9daf-158b79d9688a"
+  ],
+  "preferred": "esco:fff0e2cd-d0bd-4b02-9daf-158b79d9688a",
+  "confidence": "low",
+  "note": "NLP library"
+ },
+ {
+  "id": "i-1115",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Project planning software",
+   "tool:Microsoft Project"
+  ],
+  "preferred": "tool:Project planning software",
+  "confidence": "low",
+  "note": "project tools: planning software or other tools"
+ },
+ {
+  "id": "i-1135",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "plotting library, instance of visualization software"
+ },
+ {
+  "id": "i-1146",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "system design: software, information or network"
+ },
+ {
+  "id": "i-1167",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-1180",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software",
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "low",
+  "note": "JS 3D library; containment in framework category arguable"
+ },
+ {
+  "id": "i-1188",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "red-team tool, instance of penetration testing software"
+ },
+ {
+  "id": "i-1198",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+  "confidence": "low",
+  "note": "visuals several readings"
+ },
+ {
+  "id": "i-1201",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Access management software",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "tool:Password management software"
+  ],
+  "preferred": "tool:Access management software",
+  "confidence": "low",
+  "note": "account administration"
+ },
+ {
+  "id": "i-1205",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "payment REST API, arguable instance of RESTful API"
+ },
+ {
+  "id": "i-1212",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-1233",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+  ],
+  "preferred": "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+  "confidence": "low",
+  "note": "hardware platform / embedded"
+ },
+ {
+  "id": "i-1244",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1264",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "high",
+  "note": "MS packages read as Microsoft Office"
+ },
+ {
+  "id": "i-1265",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+   "esco:7814e88f-c133-4c3b-b27f-857afa145d42"
+  ],
+  "preferred": "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+  "confidence": "high",
+  "note": "data protection law"
+ },
+ {
+  "id": "i-1268",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:418a56a2-7cfc-4b6d-8cf5-5c2add99a849",
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "esco:418a56a2-7cfc-4b6d-8cf5-5c2add99a849",
+  "confidence": "low",
+  "note": "training on office tools"
+ },
+ {
+  "id": "i-1278",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "MikroTik router, instance of networking hardware"
+ },
+ {
+  "id": "i-1280",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "cyber read as cyber security"
+ },
+ {
+  "id": "i-1282",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "cross-platform mobile framework, instance of mobile device software frameworks"
+ },
+ {
+  "id": "i-1291",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Management information systems MIS",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272"
+  ],
+  "preferred": "tool:Management information systems MIS",
+  "confidence": "low",
+  "note": "systems/info systems: several readings"
+ },
+ {
+  "id": "i-1298",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "MikroTik router, instance of networking hardware"
+ },
+ {
+  "id": "i-1307",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-1308",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:3D graphics software"
+  ],
+  "preferred": "tool:3D graphics software",
+  "confidence": "high",
+  "note": "Blender 3D"
+ },
+ {
+  "id": "i-1311",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1314",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless LAN/AP deployment, access points as networking devices"
+ },
+ {
+  "id": "i-1315",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL",
+   "esco:9cf681c7-89ec-470c-b651-7fe03786f586"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": "SQL"
+ },
+ {
+  "id": "i-1317",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-1319",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague to interpret as a capability"
+ },
+ {
+  "id": "i-1328",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86"
+  ],
+  "preferred": "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+  "confidence": "low",
+  "note": "management/leadership several readings"
+ },
+ {
+  "id": "i-1331",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5"
+  ],
+  "preferred": "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+  "confidence": "low",
+  "note": "IT support"
+ },
+ {
+  "id": "i-1333",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Diagramming software",
+   "esco:901105f8-3a08-453e-b1dc-23619e317fd3",
+   "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3"
+  ],
+  "preferred": "tool:Diagramming software",
+  "confidence": "low",
+  "note": "diagrams: several kinds"
+ },
+ {
+  "id": "i-1338",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+   "esco:11eebd42-44ab-401d-8a2c-bdb9fc9beb50"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "security several readings"
+ },
+ {
+  "id": "i-1343",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "plotting library, instance of visualization software"
+ },
+ {
+  "id": "i-1347",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+   "esco:a71577b2-7550-4222-88ee-dcbd2d881516"
+  ],
+  "preferred": "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+  "confidence": "low",
+  "note": "images several readings"
+ }
+]
