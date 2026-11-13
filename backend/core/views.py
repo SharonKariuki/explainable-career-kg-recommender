@@ -140,7 +140,8 @@ def recommendations(request):
     return Response({
         'skills': skills,
         'matches': [services.match_summary(m) for m in matches],
-        'recommendations': [services.recommendation_summary(r, i) for i, r in enumerate(ranked, 1)],
+        'recommendations': [services.recommendation_summary(r, i, matches, assessment, ranked)
+                            for i, r in enumerate(ranked, 1)],
         **assessment,
     })
 
@@ -150,7 +151,7 @@ def recommendation_detail(request, career_code):
     matches, ranked, assessment = ranked_for(request.user)
     for position, r in enumerate(ranked, 1):
         if services.career_code(r.career_id) == career_code:
-            return Response({**services.recommendation_detail(r, position, matches), **assessment})
+            return Response({**services.recommendation_detail(r, position, matches, assessment, ranked), **assessment})
     raise NotFound('That career is not among your recommendations.')
 
 

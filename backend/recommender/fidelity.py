@@ -10,7 +10,11 @@ in code. An explanation passes when:
    contribution; and
 4. its text names no skill from the knowledge graph other than those
    (a check on the words themselves, independent of what the generator
-   says it mentioned).
+   says it mentioned); and
+5. a skill's runner-up reading is named only inside that contribution's
+   caution sentence, and only when the reading really has that runner-up
+   and is uncertain (Measured Matching, #161). Pass the profile's readings;
+   without them no runner-up name is permitted anywhere.
 
 Usage (from backend/):
     python -m recommender.fidelity          # check a batch of explanations
@@ -20,7 +24,7 @@ import re
 from dataclasses import dataclass
 from functools import lru_cache
 
-from recommender.explanation import MAINLY_SHARE
+from recommender.explanation import MAINLY_SHARE, close_runner_up_sentence, reading_lookup
 from recommender.graph import get_graph
 
 QUOTED_QUERY = re.compile(r"your '([^']+)'", re.IGNORECASE)
@@ -44,9 +48,10 @@ def formatted(component, value):
     return f'{value:.0%}' if component == 'coverage' else f'{value:.2f}'
 
 
-def check_fidelity(explanation, recommendation):
+def check_fidelity(explanation, recommendation, readings=()):
     violations = []
     r = recommendation
+    reading = reading_lookup(readings)
 
     allowed = {s.skill_id: s for s in r.skill_contributions}
     paths = {p.skill_id: p for p in r.proximity_paths}
@@ -88,6 +93,13 @@ def check_fidelity(explanation, recommendation):
     permitted += [paths[s].skill_label for s in explanation.mentioned_skill_ids if s in paths]
     permitted += [s.query for s in r.skill_contributions if s.skill_id in explanation.mentioned_skill_ids]
     remaining = explanation.text
+    # A runner-up may be named only in its own contribution's caution sentence, for a reading
+    # that is flagged close_runner_up; such a sentence is removed whole, so a runner-up name
+    # anywhere else is left in the text and reported as a stray skill.
+    for s in r.skill_contributions:
+        m = reading(s)
+        if m and 'close_runner_up' in m.uncertainty_reasons and m.runner_up_label:
+            remaining = remaining.replace(close_runner_up_sentence(s, m), ' ')
     for phrase in sorted(set(permitted), key=len, reverse=True):
         remaining = re.sub(r'(?<!\w)' + re.escape(phrase) + r'(?!\w)', ' ', remaining, flags=re.IGNORECASE)
     for stray in sorted(set(m.group(1) for m in skill_label_pattern().finditer(remaining))):

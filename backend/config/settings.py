@@ -63,6 +63,12 @@ REST_FRAMEWORK = {
 # OAuth client id from Google Cloud Console; Google sign-in is off while it is blank.
 GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID', '')
 
+# Measured Matching (#161): whether explanations replace the fit label with "too little specific
+# information" when the evidence rule finds a profile insufficient. Off until the rule is revised:
+# on the students_v1 development split it marks most human-sufficient profiles insufficient. The
+# `insufficient` and `evidence` API fields are reported either way.
+EXPLAIN_INSUFFICIENT_EVIDENCE = os.environ.get('EXPLAIN_INSUFFICIENT_EVIDENCE', 'false').lower() == 'true'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # serves the admin's CSS and JS in production

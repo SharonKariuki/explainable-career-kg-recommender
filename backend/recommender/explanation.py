@@ -6,6 +6,13 @@ value, the skills the GraphProximity random walk arrived through, and the
 weighted sum that gives the score. Nothing else is consulted, so each claim
 can be traced back to the score (see fidelity.py). Alongside the text, an
 Explanation records the skills it names and the component values it quotes.
+
+Measured Matching (#161) adds disclosures, never ranking changes. Given the profile's skill
+readings and its evidence assessment, an explanation also says when a skill's reading is
+uncertain (a close second reading, or a name shared by several skills), when the profile has too
+little specific evidence to judge fit (the first sentence then gives the rank instead of a fit
+label), and when the career is in a near tie with the top one. It never calls a weak match a
+strong or good one, and never says a student is ready or qualified for a job.
 """
 
 from dataclasses import dataclass
@@ -108,25 +115,77 @@ def name(contribution):
     return f"{contribution.skill_label} (your '{contribution.query}')"
 
 
+NEAR_TIE = ('Several careers fit your skills about equally, so compare them rather than relying on '
+            'their order.')
+
+
+def reading_lookup(readings):
+    """contribution -> the SkillMatch it came from (same query and node), or None."""
+    by_key = {(m.query, m.node_id): m for m in readings}
+    return lambda contribution: by_key.get((contribution.query, contribution.skill_id))
+
+
+def is_uncertain(match):
+    return bool(match and match.uncertain)
+
+
+def close_runner_up_sentence(contribution, match):
+    return (f"Your '{contribution.query}' was read as {contribution.skill_label}, but it is almost as close to "
+            f'{match.runner_up_label}, so treat that part with caution.')
+
+
+def shared_name_sentence(contribution):
+    return (f"Your '{contribution.query}' matches the name of more than one skill here; it was read as "
+            f'{contribution.skill_label}, so treat that part with caution.')
+
+
+def cautions(contribution, match):
+    """The caution sentences for one shown contribution: a low-confidence match, a close second
+    reading, or a shared name. A low-confidence match says so whatever else applies."""
+    s, out = contribution, []
+    if s.low_confidence:
+        out.append(f"Your '{s.query}' was only loosely matched to {s.skill_label} "
+                   f'(similarity {s.match_similarity:.2f}), so treat that part with caution.')
+        return out
+    reasons = match.uncertainty_reasons if match else ()
+    if 'close_runner_up' in reasons and match.runner_up_label:
+        out.append(close_runner_up_sentence(s, match))
+    elif 'shared_name' in reasons:
+        out.append(shared_name_sentence(s))
+    return out
+
+
 class ExplanationGenerator:
     def __init__(self, params=DEFAULT_PARAMS):
         self.params = params
 
-    def explain(self, recommendation):
+    def explain(self, recommendation, readings=(), assessment=None, rank=None, near_tie=False):
+        """`readings`: the profile's SkillMatch readings; `assessment`: evidence.assess() output;
+        `rank`: the career's position; `near_tie`: it scores within epsilon of the top career."""
         r = recommendation
         c = r.components
         sentences, skills, quoted = [], [], []
+        reading = reading_lookup(readings)
 
         def quote(component, value, percent=False):
             text = f'{value:.0%}' if percent else f'{value:.2f}'
             quoted.append((component, text))
             return text
 
-        sentences.append(f'{r.title} is {fit(r.score)} match for your skills (score {quote("score", r.score)}).')
+        insufficient = bool(assessment and assessment['insufficient'])
+        if insufficient:
+            where = f'ranks {rank}' if rank else 'is ranked'
+            why = ('your skills point to several different areas, so this ranking cannot judge fit with confidence'
+                   if assessment['evidence']['reasons'][:1] == ['skills_spread_across_areas']
+                   else 'your profile has too little specific information to judge fit')
+            sentences.append(f'{r.title} {where} for your skills (score {quote("score", r.score)}), but {why}.')
+        else:
+            sentences.append(f'{r.title} is {fit(r.score)} match for your skills (score {quote("score", r.score)}).')
 
         # The strongest contributions, plus any uncertain match so it is never hidden.
         contributions = r.skill_contributions
-        shown = [s for i, s in enumerate(contributions) if i < SHOWN_CONTRIBUTIONS or s.low_confidence]
+        flagged = lambda s: s.low_confidence or is_uncertain(reading(s))
+        shown = [s for i, s in enumerate(contributions) if i < SHOWN_CONTRIBUTIONS or flagged(s)]
         if shown:
             more = len(contributions) - len(shown)
             tail = f', plus {more} more of your skills' if more else ''
@@ -134,11 +193,7 @@ class ExplanationGenerator:
             sentences.append(f'Together they cover {quote("coverage", c.coverage, percent=True)} of your profile.')
             skills.extend(s.skill_id for s in shown)
             for s in shown:
-                if s.low_confidence:
-                    sentences.append(
-                        f"Your '{s.query}' was only loosely matched to {s.skill_label} "
-                        f'(similarity {s.match_similarity:.2f}), so treat that part with caution.'
-                    )
+                sentences.extend(cautions(s, reading(s)))
         else:
             sentences.append('The role does not directly require any of the skills you listed.')
 
@@ -174,6 +229,9 @@ class ExplanationGenerator:
                 f'this role (similarity {quote("background_similarity", c.background_similarity)}).'
             )
 
+        if near_tie:
+            sentences.append(NEAR_TIE)
+
         p = self.params
         weights = (f'coverage {p.coverage_weight:.0%}, similarity {p.similarity_weight:.0%} '
                    f'and proximity {p.proximity_weight:.0%}')
@@ -184,6 +242,9 @@ class ExplanationGenerator:
                 f'Your background counts for {p.background_weight:.0%} of the score; '
                 f'the rest weights {weights}.'
             )
+
+        if insufficient and assessment['evidence'].get('advice'):
+            sentences.append(assessment['evidence']['advice'])
 
         return Explanation(
             career_id=r.career_id,
