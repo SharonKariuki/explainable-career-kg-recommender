@@ -7,7 +7,7 @@ that, ranking a profile takes well under a second.
 
 from dataclasses import asdict
 
-from recommender import evidence
+from recommender import evidence, presentation
 from recommender.engine import DEFAULT_PARAMS, get_engine
 from recommender.explanation import ExplanationGenerator, fit_level, requirement_level, requirement_of
 from recommender.skills_gap import get_skills_gap
@@ -67,7 +67,8 @@ def explain(recommendation, rank_position, matches=(), assessment=None, ranked=(
     near_tie = bool(assessment and ranked and near_tie_with_top(assessment, ranked, recommendation))
     # The insufficient-evidence wording is shown only when enabled (see settings.EXPLAIN_INSUFFICIENT_EVIDENCE).
     shown = assessment if settings.EXPLAIN_INSUFFICIENT_EVIDENCE else None
-    return ExplanationGenerator().explain(recommendation, matches, shown, rank_position, near_tie)
+    fit = presentation.shown_fit(get_engine().kg, matches, recommendation) if matches else None
+    return ExplanationGenerator().explain(recommendation, matches, shown, rank_position, near_tie, display=fit)
 
 
 def recommendation_summary(recommendation, rank_position, matches=(), assessment=None, ranked=()):
@@ -82,6 +83,9 @@ def recommendation_summary(recommendation, rank_position, matches=(), assessment
         'components': asdict(r.components),
         'summary': explanation.sentences[0],
         'fit': fit_level(r.score),
+        # The label to show: strong or good only when enough specific skills support it (release safety rule).
+        **dict(zip(('fit_shown', 'evidence_support'),
+                   presentation.shown_fit(get_engine().kg, matches, r) if matches else (fit_level(r.score), 0))),
         'reason': explanation.reason,
         'matched_skills': [matched_skill(c) for c in r.skill_contributions],
     }

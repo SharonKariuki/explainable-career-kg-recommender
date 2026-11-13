@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { getRecommendations } from '../api.js'
 import { Disclosure, EmptyState, FilterChips, IconButton, MatchBadge, Notice, PageHeader, Pill, SearchField, SkillChip, Status } from '../components.jsx'
-import { capitalise, domainOptions, filterRecommendations } from '../format.js'
+import { capitalise, domainOptions, filterRecommendations, shownFit } from '../format.js'
 import { Icon } from '../icons.jsx'
 
 export default function RecommendationsScreen() {
@@ -102,7 +102,7 @@ export function MatchCard({ match: r }) {
           <h2><a href={`#/careers/${r.career_code}`}>{r.title}</a></h2>
           <p className="sub">{capitalise(r.domain)}</p>
         </div>
-        <MatchBadge fit={r.fit} score={r.score} top={r.rank === 1} />
+        <MatchBadge fit={shownFit(r)} score={r.score} top={r.rank === 1} />
       </div>
       <p className="result-summary">{r.reason}</p>
       {r.matched_skills.length > 0 && (

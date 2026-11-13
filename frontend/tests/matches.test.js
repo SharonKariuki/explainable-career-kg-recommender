@@ -96,3 +96,20 @@ test('an uncertain skill stays visible outside the technical section', () => {
   const visible = text(html.slice(0, html.indexOf('<details class="disclosure technical"')))
   assert.match(visible, new RegExp(`Unsure match for your “${skills[0].query}”`))
 })
+
+test('a match card shows the evidence-limited label when the API limits it', () => {
+  const match = { ...fixture.recommendations[0], fit: 'strong', fit_shown: 'possible' }
+  const html = text(render(MatchCard, { match }))
+  assert.match(html, /Possible match/)
+  assert.doesNotMatch(html, /Strong match/)
+})
+
+test('a match card falls back to the fit label for responses without fit_shown', () => {
+  const match = { ...fixture.recommendations[0], fit: 'good' }
+  delete match.fit_shown
+  assert.match(text(render(MatchCard, { match })), /Good match/)
+})
+
+test('the career page headline uses the shown label', () => {
+  assert.match(text(detail({ fit: 'strong', fit_shown: 'possible' })), /Possible match/)
+})

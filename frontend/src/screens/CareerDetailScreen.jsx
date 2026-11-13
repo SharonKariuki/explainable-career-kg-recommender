@@ -4,7 +4,7 @@ import { getCareer, getRecommendation } from '../api.js'
 import CareerGraph from '../CareerGraph.jsx'
 import CareerPlan from '../CareerPlan.jsx'
 import { Disclosure, Meter, Notice, PageHeader, Pill, SaveButton, Status } from '../components.jsx'
-import { CAREER_TABS, capitalise, fitLabel, sourceNames } from '../format.js'
+import { CAREER_TABS, capitalise, fitLabel, sourceNames, shownFit } from '../format.js'
 import { Icon } from '../icons.jsx'
 
 // The skills to develop shown before "show more"; the rest keep their order.
@@ -106,7 +106,7 @@ export function MatchDetail({ career }) {
     <>
       <section className="hero-card" aria-labelledby="match-heading">
         <h2 className="mono" id="match-heading"><i aria-hidden="true" />Why it suits you</h2>
-        <p className="hero-figure">{fitLabel(career.fit)}</p>
+        <p className="hero-figure">{fitLabel(shownFit(career))}</p>
         <p className="hero-sub num">Match score {career.score.toFixed(2)} on a 0 to 1 scale · #{career.rank} of your matches</p>
         <p className="hero-reason">{career.reason}</p>
       </section>
@@ -298,7 +298,7 @@ function Overview({ profile, career }) {
   return (
     <>
       {career ? (
-        <Notice icon="graph" title={`${fitLabel(career.fit)} · #${career.rank} of your matches`} action={{ href: `#/careers/${profile.career_code}/fit`, label: 'Why it fits' }}>
+        <Notice icon="graph" title={`${fitLabel(shownFit(career))} · #${career.rank} of your matches`} action={{ href: `#/careers/${profile.career_code}/fit`, label: 'Why it fits' }}>
           {career.reason}
         </Notice>
       ) : (
