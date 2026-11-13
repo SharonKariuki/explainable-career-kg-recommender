@@ -1,0 +1,521 @@
+profile,wording,human,insufficient,supported_concepts,meaningful_concepts,reasons
+s-0001,0,sufficient,True,0,0,skills_too_general
+s-0001,1,sufficient,True,0,0,skills_too_general
+s-0003,0,insufficient,True,0,0,skills_too_general
+s-0003,1,insufficient,True,0,0,skills_too_general
+s-0008,0,insufficient,True,0,0,skills_too_general
+s-0008,1,insufficient,True,0,0,skills_too_general
+s-0015,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0015,1,sufficient,True,1,1,few_specific_skills
+s-0022,0,sufficient,False,3,3,
+s-0022,1,sufficient,False,2,2,
+s-0024,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0024,1,sufficient,True,0,0,skills_too_general
+s-0025,0,sufficient,True,0,0,skills_too_general
+s-0025,1,sufficient,True,0,0,skills_too_general
+s-0026,0,sufficient,True,0,0,skills_too_general
+s-0026,1,sufficient,True,1,1,few_specific_skills
+s-0031,0,insufficient,True,0,0,skills_too_general
+s-0031,1,insufficient,True,1,1,few_specific_skills
+s-0032,0,insufficient,True,1,1,few_specific_skills
+s-0032,1,insufficient,True,1,1,few_specific_skills
+s-0034,0,sufficient,True,0,0,skills_too_general
+s-0034,1,sufficient,True,0,0,skills_too_general
+s-0035,0,borderline,True,0,0,skills_too_general inputs_unclear
+s-0035,1,borderline,True,0,0,skills_too_general inputs_unclear
+s-0042,0,insufficient,True,1,1,few_specific_skills
+s-0042,1,insufficient,True,1,2,skills_spread_across_areas
+s-0043,0,insufficient,True,0,0,skills_too_general
+s-0043,1,insufficient,True,0,0,skills_too_general
+s-0047,0,insufficient,True,0,0,skills_too_general
+s-0047,1,insufficient,True,1,1,few_specific_skills
+s-0054,0,sufficient,True,0,0,skills_too_general
+s-0054,1,sufficient,True,1,1,few_specific_skills
+s-0057,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0057,1,sufficient,True,0,0,skills_too_general
+s-0058,0,insufficient,True,0,0,skills_too_general
+s-0058,1,insufficient,True,0,0,skills_too_general
+s-0063,0,insufficient,True,0,0,inputs_unclear
+s-0063,1,insufficient,True,0,0,inputs_unclear
+s-0064,0,sufficient,True,1,1,few_specific_skills
+s-0064,1,sufficient,True,1,1,few_specific_skills
+s-0065,0,sufficient,True,0,0,skills_too_general
+s-0065,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0067,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0067,1,sufficient,True,0,0,skills_too_general
+s-0070,0,sufficient,False,2,2,
+s-0070,1,sufficient,False,2,2,
+s-0071,0,sufficient,False,2,2,
+s-0071,1,sufficient,False,2,2,
+s-0073,0,borderline,True,0,0,skills_too_general
+s-0073,1,borderline,True,0,0,skills_too_general
+s-0079,0,sufficient,True,0,0,skills_too_general
+s-0079,1,sufficient,True,0,0,skills_too_general
+s-0081,0,insufficient,True,0,0,skills_too_general
+s-0081,1,insufficient,True,0,0,skills_too_general
+s-0083,0,sufficient,True,1,1,few_specific_skills
+s-0083,1,sufficient,True,1,1,few_specific_skills
+s-0084,0,borderline,True,0,0,skills_too_general
+s-0084,1,borderline,True,1,1,few_specific_skills
+s-0086,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0086,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0087,0,sufficient,True,0,0,skills_too_general
+s-0087,1,sufficient,True,0,0,skills_too_general
+s-0089,0,insufficient,True,0,0,skills_too_general
+s-0089,1,insufficient,True,0,0,skills_too_general
+s-0090,0,insufficient,True,0,0,skills_too_general
+s-0090,1,insufficient,True,0,0,skills_too_general
+s-0091,0,sufficient,False,2,5,
+s-0091,1,sufficient,False,2,3,
+s-0093,0,sufficient,True,1,1,few_specific_skills
+s-0093,1,sufficient,True,1,1,few_specific_skills inputs_unclear
+s-0095,0,insufficient,True,0,0,skills_too_general
+s-0095,1,insufficient,True,0,0,skills_too_general
+s-0096,0,insufficient,True,0,0,skills_too_general
+s-0096,1,insufficient,True,0,0,skills_too_general
+s-0099,0,insufficient,True,0,0,skills_too_general
+s-0099,1,insufficient,True,0,0,skills_too_general
+s-0102,0,insufficient,True,0,0,skills_too_general
+s-0102,1,insufficient,True,0,0,skills_too_general
+s-0103,0,insufficient,True,1,1,few_specific_skills
+s-0103,1,insufficient,True,0,0,skills_too_general
+s-0104,0,insufficient,True,0,0,skills_too_general
+s-0104,1,insufficient,True,0,0,skills_too_general
+s-0108,0,sufficient,True,0,0,skills_too_general
+s-0108,1,sufficient,True,0,0,skills_too_general
+s-0110,0,insufficient,True,0,0,skills_too_general
+s-0110,1,insufficient,True,0,0,skills_too_general
+s-0113,0,insufficient,True,0,0,skills_too_general
+s-0113,1,insufficient,True,0,0,skills_too_general
+s-0114,0,borderline,True,1,1,few_specific_skills
+s-0114,1,borderline,True,0,0,inputs_unclear
+s-0118,0,sufficient,True,1,1,few_specific_skills
+s-0118,1,sufficient,True,1,1,few_specific_skills
+s-0119,0,sufficient,True,1,1,few_specific_skills
+s-0119,1,sufficient,True,1,1,few_specific_skills
+s-0121,0,sufficient,True,0,0,skills_too_general
+s-0121,1,sufficient,True,0,0,skills_too_general
+s-0122,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0122,1,sufficient,True,0,0,skills_too_general
+s-0124,0,insufficient,True,0,0,skills_too_general
+s-0124,1,insufficient,True,0,0,skills_too_general
+s-0129,0,sufficient,True,0,0,skills_too_general
+s-0129,1,sufficient,True,0,0,skills_too_general
+s-0130,0,sufficient,True,0,0,skills_too_general
+s-0130,1,sufficient,True,0,0,skills_too_general
+s-0131,0,insufficient,True,0,0,skills_too_general
+s-0131,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0132,0,sufficient,True,0,0,skills_too_general
+s-0132,1,sufficient,True,0,0,skills_too_general
+s-0142,0,sufficient,True,0,0,skills_too_general
+s-0142,1,sufficient,True,0,0,skills_too_general
+s-0147,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0147,1,sufficient,True,1,2,skills_spread_across_areas
+s-0149,0,insufficient,True,0,0,skills_too_general
+s-0149,1,insufficient,True,0,0,skills_too_general
+s-0151,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0151,1,sufficient,True,0,0,skills_too_general
+s-0155,0,insufficient,True,0,0,skills_too_general
+s-0155,1,insufficient,True,0,0,skills_too_general
+s-0158,0,insufficient,True,0,0,skills_too_general
+s-0158,1,insufficient,True,0,0,skills_too_general
+s-0160,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0160,1,sufficient,True,0,0,skills_too_general
+s-0161,0,sufficient,False,3,3,
+s-0161,1,sufficient,False,3,3,
+s-0162,0,insufficient,True,0,0,skills_too_general
+s-0162,1,insufficient,True,0,0,skills_too_general
+s-0164,0,sufficient,True,0,0,skills_too_general
+s-0164,1,sufficient,True,0,0,skills_too_general
+s-0166,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0166,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0169,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0169,1,sufficient,True,0,0,skills_too_general
+s-0175,0,insufficient,True,0,0,skills_too_general
+s-0175,1,insufficient,True,0,0,skills_too_general
+s-0176,0,sufficient,True,1,1,few_specific_skills
+s-0176,1,sufficient,True,1,1,few_specific_skills
+s-0178,0,insufficient,True,0,0,skills_too_general
+s-0178,1,insufficient,True,0,0,skills_too_general
+s-0180,0,insufficient,True,0,0,skills_too_general
+s-0180,1,insufficient,True,0,0,skills_too_general
+s-0182,0,insufficient,True,1,1,few_specific_skills
+s-0182,1,insufficient,True,1,1,few_specific_skills
+s-0183,0,borderline,True,1,1,few_specific_skills
+s-0183,1,borderline,True,0,0,skills_too_general
+s-0185,0,insufficient,True,0,0,skills_too_general
+s-0185,1,insufficient,True,0,0,skills_too_general
+s-0186,0,insufficient,True,0,0,skills_too_general
+s-0186,1,insufficient,True,0,0,skills_too_general
+s-0188,0,insufficient,True,0,0,skills_too_general
+s-0188,1,insufficient,True,0,0,skills_too_general
+s-0195,0,sufficient,True,0,0,skills_too_general
+s-0195,1,sufficient,True,0,0,skills_too_general
+s-0197,0,sufficient,True,0,0,skills_too_general
+s-0197,1,sufficient,True,0,0,skills_too_general
+s-0201,0,sufficient,True,0,0,skills_too_general
+s-0201,1,sufficient,True,0,0,skills_too_general
+s-0204,0,insufficient,True,0,0,skills_too_general
+s-0204,1,insufficient,True,0,0,skills_too_general
+s-0205,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0205,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0206,0,sufficient,True,0,0,skills_too_general
+s-0206,1,sufficient,True,1,1,few_specific_skills
+s-0207,0,insufficient,True,0,0,skills_too_general
+s-0207,1,insufficient,True,0,0,skills_too_general
+s-0211,0,sufficient,True,0,0,inputs_unclear
+s-0211,1,sufficient,True,1,1,few_specific_skills
+s-0214,0,sufficient,True,1,1,few_specific_skills
+s-0214,1,sufficient,True,0,0,skills_too_general
+s-0215,0,insufficient,True,0,0,skills_too_general
+s-0215,1,insufficient,True,0,0,skills_too_general
+s-0219,0,insufficient,True,0,0,skills_too_general
+s-0219,1,insufficient,True,0,0,skills_too_general
+s-0221,0,insufficient,True,0,0,skills_too_general
+s-0221,1,insufficient,True,0,0,skills_too_general
+s-0222,0,sufficient,True,0,0,skills_too_general
+s-0222,1,sufficient,True,0,0,skills_too_general
+s-0225,0,sufficient,True,0,0,skills_too_general
+s-0225,1,sufficient,True,0,0,skills_too_general
+s-0227,0,sufficient,True,1,1,few_specific_skills
+s-0227,1,sufficient,True,1,1,few_specific_skills inputs_unclear
+s-0230,0,sufficient,True,1,1,few_specific_skills
+s-0230,1,sufficient,True,1,1,few_specific_skills
+s-0232,0,insufficient,True,0,0,skills_too_general
+s-0232,1,insufficient,True,0,0,inputs_unclear
+s-0235,0,insufficient,True,1,1,few_specific_skills
+s-0235,1,insufficient,True,1,1,few_specific_skills
+s-0243,0,insufficient,True,0,0,skills_too_general
+s-0243,1,insufficient,True,0,0,skills_too_general
+s-0247,0,sufficient,True,1,1,few_specific_skills
+s-0247,1,sufficient,False,2,2,
+s-0249,0,insufficient,True,0,0,skills_too_general
+s-0249,1,insufficient,True,1,1,few_specific_skills
+s-0250,0,sufficient,True,0,0,skills_too_general
+s-0250,1,sufficient,True,0,0,skills_too_general
+s-0254,0,insufficient,True,0,0,skills_too_general
+s-0254,1,insufficient,True,0,0,skills_too_general
+s-0256,0,insufficient,True,0,0,skills_too_general
+s-0256,1,insufficient,True,0,0,skills_too_general
+s-0257,0,borderline,True,1,1,few_specific_skills
+s-0257,1,borderline,True,1,1,few_specific_skills
+s-0260,0,insufficient,True,0,0,skills_too_general
+s-0260,1,insufficient,True,0,0,skills_too_general
+s-0265,0,insufficient,True,0,0,skills_too_general
+s-0265,1,insufficient,True,0,0,skills_too_general
+s-0269,0,sufficient,True,1,1,few_specific_skills
+s-0269,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0270,0,insufficient,True,0,0,skills_too_general
+s-0270,1,insufficient,True,0,0,skills_too_general
+s-0271,0,insufficient,True,0,0,skills_too_general
+s-0271,1,insufficient,True,0,0,skills_too_general
+s-0273,0,insufficient,True,0,0,skills_too_general
+s-0273,1,insufficient,True,0,0,skills_too_general
+s-0274,0,insufficient,True,0,0,inputs_unclear
+s-0274,1,insufficient,True,0,0,inputs_unclear
+s-0275,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0275,1,sufficient,True,0,0,skills_too_general
+s-0276,0,sufficient,True,1,1,few_specific_skills
+s-0276,1,sufficient,True,0,0,skills_too_general
+s-0279,0,sufficient,True,1,1,few_specific_skills
+s-0279,1,sufficient,True,0,0,skills_too_general
+s-0281,0,insufficient,True,1,1,few_specific_skills
+s-0281,1,insufficient,True,1,1,few_specific_skills
+s-0283,0,insufficient,True,0,0,skills_too_general
+s-0283,1,insufficient,True,0,0,skills_too_general
+s-0290,0,insufficient,True,0,0,skills_too_general
+s-0290,1,insufficient,True,0,0,skills_too_general
+s-0296,0,insufficient,True,0,0,skills_too_general
+s-0296,1,insufficient,True,0,0,skills_too_general
+s-0297,0,insufficient,True,0,0,skills_too_general
+s-0297,1,insufficient,True,1,1,few_specific_skills
+s-0298,0,sufficient,True,1,1,few_specific_skills
+s-0298,1,sufficient,True,1,1,few_specific_skills
+s-0300,0,insufficient,True,0,0,skills_too_general
+s-0300,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0304,0,insufficient,True,0,0,skills_too_general
+s-0304,1,insufficient,True,0,0,skills_too_general
+s-0312,0,sufficient,True,0,0,skills_too_general
+s-0312,1,sufficient,True,1,1,few_specific_skills
+s-0317,0,insufficient,True,1,1,few_specific_skills
+s-0317,1,insufficient,True,0,0,skills_too_general
+s-0318,0,sufficient,True,1,1,few_specific_skills
+s-0318,1,sufficient,True,1,1,few_specific_skills
+s-0323,0,sufficient,True,0,0,skills_too_general
+s-0323,1,sufficient,True,0,0,skills_too_general
+s-0328,0,insufficient,True,0,0,skills_too_general
+s-0328,1,insufficient,True,0,0,skills_too_general
+s-0336,0,insufficient,True,1,1,few_specific_skills
+s-0336,1,insufficient,True,0,0,skills_too_general
+s-0340,0,sufficient,True,1,1,few_specific_skills
+s-0340,1,sufficient,True,0,0,skills_too_general
+s-0343,0,sufficient,True,0,0,skills_too_general
+s-0343,1,sufficient,True,0,0,skills_too_general
+s-0348,0,insufficient,True,0,0,skills_too_general
+s-0348,1,insufficient,True,0,0,skills_too_general
+s-0350,0,sufficient,True,0,0,skills_too_general
+s-0350,1,sufficient,True,0,0,skills_too_general
+s-0352,0,insufficient,True,0,0,skills_too_general
+s-0352,1,insufficient,True,0,0,skills_too_general
+s-0353,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0353,1,sufficient,True,0,0,skills_too_general
+s-0355,0,insufficient,True,0,0,skills_too_general
+s-0355,1,insufficient,True,0,0,skills_too_general
+s-0358,0,insufficient,True,0,0,skills_too_general
+s-0358,1,insufficient,True,0,0,skills_too_general
+s-0363,0,insufficient,True,0,0,skills_too_general
+s-0363,1,insufficient,True,0,0,skills_too_general
+s-0365,0,insufficient,True,0,0,skills_too_general
+s-0365,1,insufficient,True,0,0,skills_too_general
+s-0372,0,sufficient,True,1,1,few_specific_skills
+s-0372,1,sufficient,False,2,2,
+s-0375,0,sufficient,True,1,1,few_specific_skills
+s-0375,1,sufficient,True,0,0,skills_too_general
+s-0376,0,sufficient,True,0,0,skills_too_general
+s-0376,1,sufficient,True,0,0,skills_too_general
+s-0377,0,insufficient,True,0,0,skills_too_general
+s-0377,1,insufficient,True,0,0,skills_too_general
+s-0382,0,borderline,True,0,0,skills_too_general
+s-0382,1,borderline,True,0,0,skills_too_general
+s-0383,0,insufficient,True,1,1,few_specific_skills
+s-0383,1,insufficient,True,1,1,few_specific_skills
+s-0384,0,sufficient,True,0,0,skills_too_general
+s-0384,1,sufficient,True,1,1,few_specific_skills
+s-0385,0,insufficient,True,0,0,skills_too_general
+s-0385,1,insufficient,True,0,0,skills_too_general
+s-0391,0,insufficient,True,1,1,few_specific_skills
+s-0391,1,insufficient,True,1,1,few_specific_skills
+s-0392,0,sufficient,True,0,0,skills_too_general
+s-0392,1,sufficient,True,1,1,few_specific_skills
+s-0397,0,borderline,True,1,4,skills_spread_across_areas
+s-0397,1,borderline,True,1,3,skills_spread_across_areas
+s-0398,0,sufficient,True,0,0,skills_too_general
+s-0398,1,sufficient,True,0,0,skills_too_general
+s-0400,0,borderline,True,1,1,few_specific_skills
+s-0400,1,borderline,True,0,0,skills_too_general
+s-0401,0,insufficient,True,0,0,skills_too_general
+s-0401,1,insufficient,True,0,0,skills_too_general
+s-0407,0,insufficient,True,0,0,skills_too_general
+s-0407,1,insufficient,True,0,0,skills_too_general
+s-0411,0,insufficient,True,0,0,skills_too_general
+s-0411,1,insufficient,True,0,0,skills_too_general
+s-0414,0,sufficient,True,0,0,skills_too_general
+s-0414,1,sufficient,True,0,0,skills_too_general
+s-0419,0,sufficient,True,1,1,few_specific_skills inputs_unclear
+s-0419,1,sufficient,True,0,0,inputs_unclear
+s-0420,0,sufficient,True,0,0,skills_too_general
+s-0420,1,sufficient,True,0,0,skills_too_general
+s-0422,0,insufficient,True,0,0,skills_too_general
+s-0422,1,insufficient,True,0,0,skills_too_general
+s-0426,0,insufficient,True,0,0,skills_too_general
+s-0426,1,insufficient,True,0,0,skills_too_general
+s-0428,0,sufficient,True,0,0,skills_too_general
+s-0428,1,sufficient,True,1,1,few_specific_skills
+s-0431,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0431,1,sufficient,True,0,0,inputs_unclear
+s-0433,0,sufficient,True,0,0,skills_too_general
+s-0433,1,sufficient,True,0,0,skills_too_general
+s-0436,0,insufficient,True,0,0,skills_too_general
+s-0436,1,insufficient,True,0,0,skills_too_general
+s-0438,0,sufficient,True,0,0,skills_too_general
+s-0438,1,sufficient,True,0,0,skills_too_general
+s-0439,0,sufficient,True,0,0,inputs_unclear
+s-0439,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0441,0,insufficient,True,0,0,skills_too_general
+s-0441,1,insufficient,True,0,0,skills_too_general
+s-0442,0,sufficient,True,1,1,few_specific_skills
+s-0442,1,sufficient,True,1,1,few_specific_skills
+s-0443,0,insufficient,True,0,0,skills_too_general
+s-0443,1,insufficient,True,0,0,skills_too_general
+s-0444,0,sufficient,True,0,0,skills_too_general
+s-0444,1,sufficient,True,0,0,skills_too_general
+s-0445,0,sufficient,False,2,4,
+s-0445,1,sufficient,True,1,2,skills_spread_across_areas
+s-0450,0,sufficient,True,0,0,skills_too_general
+s-0450,1,sufficient,True,0,0,skills_too_general
+s-0451,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0451,1,sufficient,True,0,0,skills_too_general
+s-0454,0,sufficient,True,1,1,few_specific_skills
+s-0454,1,sufficient,True,1,1,few_specific_skills
+s-0455,0,insufficient,True,0,0,skills_too_general
+s-0455,1,insufficient,True,0,0,skills_too_general
+s-0458,0,insufficient,True,0,0,skills_too_general
+s-0458,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0461,0,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0461,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0469,0,insufficient,True,0,0,skills_too_general
+s-0469,1,insufficient,True,0,0,skills_too_general
+s-0470,0,sufficient,True,0,0,skills_too_general
+s-0470,1,sufficient,True,0,0,skills_too_general
+s-0471,0,insufficient,True,0,0,skills_too_general
+s-0471,1,insufficient,True,0,0,skills_too_general
+s-0473,0,sufficient,True,1,1,few_specific_skills
+s-0473,1,sufficient,True,1,2,skills_spread_across_areas inputs_unclear
+s-0476,0,sufficient,True,0,0,skills_too_general
+s-0476,1,sufficient,True,0,0,skills_too_general
+s-0477,0,sufficient,True,0,0,skills_too_general
+s-0477,1,sufficient,True,0,0,skills_too_general
+s-0478,0,sufficient,True,0,0,skills_too_general
+s-0478,1,sufficient,True,0,0,skills_too_general
+s-0482,0,sufficient,True,0,0,skills_too_general
+s-0482,1,sufficient,True,0,0,skills_too_general
+s-0484,0,sufficient,True,1,1,few_specific_skills
+s-0484,1,sufficient,False,2,2,
+s-0485,0,sufficient,True,1,1,few_specific_skills
+s-0485,1,sufficient,True,1,1,few_specific_skills
+s-0486,0,insufficient,True,0,0,skills_too_general
+s-0486,1,insufficient,True,0,0,skills_too_general
+s-0488,0,insufficient,True,0,0,skills_too_general
+s-0488,1,insufficient,True,0,0,skills_too_general
+s-0492,0,sufficient,False,2,2,
+s-0492,1,sufficient,False,2,2,
+s-0496,0,insufficient,True,0,0,skills_too_general
+s-0496,1,insufficient,True,0,0,skills_too_general
+s-0503,0,sufficient,True,0,0,skills_too_general
+s-0503,1,sufficient,True,0,0,skills_too_general
+s-0507,0,sufficient,True,0,0,skills_too_general
+s-0507,1,sufficient,True,0,0,skills_too_general
+s-0510,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0510,1,sufficient,True,0,0,skills_too_general
+s-0512,0,sufficient,True,0,0,skills_too_general
+s-0512,1,sufficient,True,0,0,skills_too_general
+s-0514,0,sufficient,True,0,0,skills_too_general
+s-0514,1,sufficient,True,0,0,skills_too_general
+s-0516,0,sufficient,True,0,0,skills_too_general
+s-0516,1,sufficient,True,0,0,skills_too_general
+s-0518,0,insufficient,True,0,0,skills_too_general
+s-0518,1,insufficient,True,0,0,skills_too_general
+s-0520,0,sufficient,True,0,0,skills_too_general
+s-0520,1,sufficient,True,1,1,few_specific_skills
+s-0523,0,borderline,True,1,1,few_specific_skills
+s-0523,1,borderline,True,1,1,few_specific_skills inputs_unclear
+s-0524,0,insufficient,True,0,0,skills_too_general
+s-0524,1,insufficient,True,0,0,skills_too_general
+s-0525,0,insufficient,True,0,0,skills_too_general
+s-0525,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0526,0,insufficient,True,0,0,skills_too_general
+s-0526,1,insufficient,True,0,0,skills_too_general
+s-0528,0,borderline,True,0,0,skills_too_general
+s-0528,1,borderline,True,0,0,skills_too_general
+s-0533,0,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0533,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0534,0,insufficient,True,0,0,skills_too_general
+s-0534,1,insufficient,True,1,1,few_specific_skills
+s-0536,0,sufficient,True,0,0,skills_too_general
+s-0536,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0537,0,sufficient,True,0,0,skills_too_general
+s-0537,1,sufficient,True,0,0,skills_too_general
+s-0539,0,borderline,True,0,0,skills_too_general
+s-0539,1,borderline,True,0,0,skills_too_general
+s-0540,0,insufficient,True,0,0,skills_too_general
+s-0540,1,insufficient,True,1,1,few_specific_skills
+s-0544,0,insufficient,True,1,1,few_specific_skills
+s-0544,1,insufficient,True,1,1,few_specific_skills
+s-0547,0,insufficient,True,0,0,skills_too_general
+s-0547,1,insufficient,True,0,0,skills_too_general
+s-0553,0,sufficient,True,0,0,skills_too_general
+s-0553,1,sufficient,True,0,0,skills_too_general
+s-0554,0,sufficient,True,0,0,skills_too_general
+s-0554,1,sufficient,True,0,0,skills_too_general
+s-0556,0,insufficient,True,0,0,inputs_unclear
+s-0556,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0561,0,sufficient,True,1,1,few_specific_skills
+s-0561,1,sufficient,True,1,1,few_specific_skills
+s-0563,0,sufficient,True,1,1,few_specific_skills
+s-0563,1,sufficient,True,0,0,skills_too_general
+s-0566,0,insufficient,True,0,0,skills_too_general
+s-0566,1,insufficient,True,0,0,skills_too_general
+s-0569,0,sufficient,True,0,0,skills_too_general
+s-0569,1,sufficient,True,0,0,skills_too_general
+s-0571,0,insufficient,True,0,0,skills_too_general
+s-0571,1,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0573,0,borderline,True,1,1,few_specific_skills
+s-0573,1,borderline,True,1,1,few_specific_skills
+s-0574,0,insufficient,True,0,0,skills_too_general
+s-0574,1,insufficient,True,0,0,skills_too_general
+s-0577,0,sufficient,True,0,0,skills_too_general
+s-0577,1,sufficient,True,0,0,skills_too_general
+s-0579,0,sufficient,True,1,1,few_specific_skills
+s-0579,1,sufficient,True,0,0,skills_too_general
+s-0580,0,sufficient,True,0,0,skills_too_general
+s-0580,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0584,0,borderline,True,0,0,skills_too_general
+s-0584,1,borderline,True,0,0,skills_too_general
+s-0586,0,sufficient,True,0,0,skills_too_general
+s-0586,1,sufficient,True,0,0,skills_too_general
+s-0587,0,sufficient,True,0,0,skills_too_general
+s-0587,1,sufficient,True,0,0,skills_too_general
+s-0590,0,insufficient,True,1,1,few_specific_skills
+s-0590,1,insufficient,True,1,1,few_specific_skills
+s-0592,0,insufficient,True,0,0,skills_too_general
+s-0592,1,insufficient,True,0,0,skills_too_general
+s-0593,0,sufficient,True,0,0,skills_too_general
+s-0593,1,sufficient,True,0,0,skills_too_general
+s-0597,0,sufficient,True,0,0,skills_too_general
+s-0597,1,sufficient,True,1,1,few_specific_skills
+s-0599,0,insufficient,True,0,0,skills_too_general
+s-0599,1,insufficient,True,0,0,skills_too_general
+s-0600,0,insufficient,True,0,0,skills_too_general
+s-0600,1,insufficient,True,0,0,skills_too_general
+s-0601,0,sufficient,True,1,2,skills_spread_across_areas
+s-0601,1,sufficient,True,0,0,skills_too_general
+s-0603,0,insufficient,True,0,0,skills_too_general
+s-0603,1,insufficient,True,0,0,skills_too_general
+s-0605,0,sufficient,True,0,0,skills_too_general
+s-0605,1,sufficient,True,0,0,skills_too_general
+s-0606,0,sufficient,True,0,0,skills_too_general
+s-0606,1,sufficient,True,1,1,few_specific_skills
+s-0611,0,sufficient,True,0,0,skills_too_general
+s-0611,1,sufficient,True,0,0,skills_too_general
+s-0612,0,sufficient,True,1,1,few_specific_skills inputs_unclear
+s-0612,1,sufficient,True,1,1,few_specific_skills
+s-0614,0,sufficient,True,0,0,skills_too_general
+s-0614,1,sufficient,True,0,0,skills_too_general
+s-0615,0,insufficient,True,1,2,skills_spread_across_areas
+s-0615,1,insufficient,True,1,1,few_specific_skills
+s-0617,0,sufficient,True,0,0,skills_too_general
+s-0617,1,sufficient,True,0,0,skills_too_general
+s-0618,0,sufficient,True,0,0,skills_too_general
+s-0618,1,sufficient,True,0,0,skills_too_general
+s-0620,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0620,1,sufficient,True,0,0,skills_too_general
+s-0621,0,insufficient,True,1,1,few_specific_skills
+s-0621,1,insufficient,True,1,1,few_specific_skills
+s-0625,0,insufficient,True,0,0,skills_too_general
+s-0625,1,insufficient,True,0,0,inputs_unclear
+s-0626,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0626,1,sufficient,True,1,1,few_specific_skills
+s-0628,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0628,1,sufficient,True,0,0,skills_too_general
+s-0631,0,insufficient,True,1,1,few_specific_skills
+s-0631,1,insufficient,True,1,1,few_specific_skills
+s-0632,0,sufficient,True,0,0,skills_too_general
+s-0632,1,sufficient,True,0,0,skills_too_general
+s-0636,0,sufficient,True,1,1,few_specific_skills
+s-0636,1,sufficient,True,0,0,skills_too_general
+s-0637,0,sufficient,True,0,0,skills_too_general
+s-0637,1,sufficient,True,0,0,skills_too_general
+s-0638,0,sufficient,True,1,1,few_specific_skills
+s-0638,1,sufficient,True,1,1,few_specific_skills
+s-0641,0,sufficient,True,0,0,skills_too_general
+s-0641,1,sufficient,True,0,0,skills_too_general
+s-0650,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0650,1,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0653,0,insufficient,True,0,0,skills_too_general
+s-0653,1,insufficient,True,0,0,skills_too_general
+s-0656,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0656,1,sufficient,True,1,1,few_specific_skills
+s-0659,0,sufficient,True,0,0,skills_too_general
+s-0659,1,sufficient,True,0,0,skills_too_general
+s-0662,0,insufficient,True,0,0,skills_too_general
+s-0662,1,insufficient,True,0,0,skills_too_general
+s-0663,0,insufficient,True,1,1,few_specific_skills
+s-0663,1,insufficient,True,1,1,few_specific_skills
+s-0664,0,insufficient,True,0,0,skills_too_general
+s-0664,1,insufficient,True,0,0,skills_too_general
+s-0666,0,sufficient,True,0,0,skills_too_general
+s-0666,1,sufficient,True,0,0,skills_too_general
+s-0667,0,insufficient,True,0,0,skills_too_general inputs_unclear
+s-0667,1,insufficient,True,0,0,skills_too_general
+s-0675,0,sufficient,True,0,0,skills_too_general inputs_unclear
+s-0675,1,sufficient,True,1,1,few_specific_skills

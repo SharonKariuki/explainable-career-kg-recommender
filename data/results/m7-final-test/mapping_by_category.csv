@@ -1,0 +1,7 @@
+category,n,clusters,positives,p,icc,design_effect,n_eff,low,high,reliability
+exact,48,44,47,0.9792,1.0,1.1667,41.1429,0.8798,0.9967,exploratory
+acronym,39,34,26,0.6667,1.0,1.2564,31.0408,0.4908,0.8058,exploratory
+paraphrase,67,45,36,0.5373,0.0095,1.0062,66.5845,0.4188,0.6517,reliable
+everyday,59,43,39,0.661,0.4539,1.2462,47.3439,0.5187,0.7792,exploratory
+ambiguous,55,43,48,0.8727,0.0,1.0,55.0,0.7598,0.937,exploratory
+no_concept,10,8,4,0.4,1.0,1.4,7.1429,0.1432,0.7268,counts only
