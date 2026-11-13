@@ -11,14 +11,15 @@ rule (recommender.evidence, production thresholds) is applied to that ranking. R
 - M8 evidence contamination: gold-wrong selections (student_inputs labels) inside the best-supported
   career's support, and decision flips when they are removed.
 
-The test split is read only inside open_test_sets(), which needs a clean working tree.
+This command reads the development or validation split. The test split is read once, by the final
+evaluation (recommender.evaluate), which opens the test sets under its clean-tree lock and calls
+write_report.
 
 Usage (from backend/):
-    python -m recommender.student_report --run NAME --split validation|test
+    python -m recommender.student_report --run NAME --split development|validation
 """
 
 import argparse
-import contextlib
 import json
 import sys
 from collections import defaultdict
@@ -90,23 +91,9 @@ def report(units, profiles):
     return careers, se.wording_agreement(rows), gates, reasons, m8, rows
 
 
-def main(argv=None):
-    from recommender.engine import get_engine
-    from recommender.evaluation import open_test_sets
-    from recommender.graph import get_graph
-    from recommender.results import configuration, parse_run, run_started, write_csv, write_manifest
-
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument('--run', required=True)
-    parser.add_argument('--split', choices=('development', 'validation', 'test'), required=True)
-    args = parser.parse_args(argv)
-    folder = parse_run(__doc__.splitlines()[0], ['--run', args.run])
-    started = run_started(__spec__.name, argv if argv is not None else sys.argv[1:])
-    codes = {c.split(':')[1] for c in get_graph().careers()}
-    opened = open_test_sets() if args.split == 'test' else contextlib.nullcontext()
-    with opened:
-        profiles = se.load_profiles(args.split, career_codes=codes)
-    engine = get_engine()
+def write_report(engine, profiles, folder, set_name):
+    """Compute and write every result for one loaded split; returns the printable summary."""
+    from recommender.results import write_csv
     units = read_split(engine, profiles)
     careers, agreement, gates, reasons, m8, rows = report(units, profiles)
 
@@ -127,9 +114,25 @@ def main(argv=None):
                            for k, r in careers.items()},
                'wording agreement': vars(agreement) if hasattr(agreement, '__dict__') else agreement}
     (folder / 'careers.json').write_text(json.dumps(summary, indent=1, default=str), encoding='utf-8')
-    write_manifest(folder, started, {f'students-v1-{args.split}': {'profiles': len(profiles), 'units': len(units)}},
-                   {**configuration(None), 'evidence_thresholds': vars(ev.DEFAULT_PARAMS)})
-    print(pd.DataFrame(table).round(4).to_string(index=False))
+    return {set_name: {'profiles': len(profiles), 'units': len(units)}}, pd.DataFrame(table).round(4), summary
+
+
+def main(argv=None):
+    from recommender.engine import get_engine
+    from recommender.graph import get_graph
+    from recommender.results import configuration, parse_run, run_started, write_manifest
+
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument('--run', required=True)
+    parser.add_argument('--split', choices=('development', 'validation'), required=True)
+    args = parser.parse_args(argv)
+    folder = parse_run(__doc__.splitlines()[0], ['--run', args.run])
+    started = run_started(__spec__.name, argv if argv is not None else sys.argv[1:])
+    codes = {c.split(':')[1] for c in get_graph().careers()}
+    profiles = se.load_profiles(args.split, career_codes=codes)
+    sets, table, summary = write_report(get_engine(), profiles, folder, f'students-v1-{args.split}')
+    write_manifest(folder, started, sets, {**configuration(None), 'evidence_thresholds': vars(ev.DEFAULT_PARAMS)})
+    print(table.to_string(index=False))
     print(json.dumps(summary, indent=1, default=str)[:3000])
     return 0
 
