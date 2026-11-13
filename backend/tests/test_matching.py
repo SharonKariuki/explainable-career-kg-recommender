@@ -131,3 +131,21 @@ def test_the_production_matcher_does_not_use_the_candidate(matcher):
     production = set(skill_aliases()['alias'].str.casefold())
     assert 'oop' not in production and 'oop' in set(skill_aliases(candidate=True)['alias'].str.casefold())
     assert 'oop' not in {t.casefold() for t in get_engine().matcher.texts}
+
+
+# ---- Ambiguous-term flag (student-ready): unapproved, off in production ----
+
+def test_ambiguous_terms_are_recognised_ignoring_case_punctuation_and_filler():
+    from recommender.matching import is_ambiguous_term
+    assert is_ambiguous_term('Networking') and is_ambiguous_term('web pages stuff') and is_ambiguous_term('IT.')
+    assert not is_ambiguous_term('network routing') and not is_ambiguous_term('Python')
+
+
+def test_the_ambiguous_term_flag_is_off_in_production(matcher):
+    from recommender.engine import get_engine
+
+    assert get_engine().matcher.ambiguous_terms is False
+    assert 'ambiguous_term' not in matcher.match(['networking'])[0].uncertainty_reasons
+    flagged = SkillMatcher(get_graph(), ambiguous_terms=True).match(['networking', 'network routing'])
+    assert 'ambiguous_term' in flagged[0].uncertainty_reasons and flagged[0].uncertain
+    assert 'ambiguous_term' not in flagged[1].uncertainty_reasons
