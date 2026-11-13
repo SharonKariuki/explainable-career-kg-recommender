@@ -82,13 +82,15 @@ jobs:
         id: drift
         run: |
           set +e
-          docker run --rm -v "$PWD/data/eval_sets:/app/data/eval_sets:ro" \
+          # The approved baseline is mounted read-only from the checkout: the image's working
+          # directory is /app/backend, so a repository-relative path does not resolve inside it.
+          docker run --rm -v "$PWD/data/eval_sets:/app/data/eval_sets:ro" -v "$PWD/$BASELINE_DIR:/baseline:ro" \
             -e OMP_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1 \
             -e ATEN_CPU_CAPABILITY=default -e OPENBLAS_CORETYPE=Haswell -e HF_HUB_OFFLINE=1 \
             -e MKL_CBWR=COMPATIBLE \
             -e BASE_IMAGE_DIGEST="${{ steps.base.outputs.platform_digest }}" \
             "ajiraguide-drift:${{ github.run_id }}" sh -c "python -m recommender.invariance drift \
-              --baseline $BASELINE_DIR --resolved-base-digest '${{ steps.base.outputs.platform_digest }}' \
+              --baseline /baseline --resolved-base-digest '${{ steps.base.outputs.platform_digest }}' \
               --resolved-model-revision '${{ steps.model.outputs.revision }}' --report /tmp/drift.json \
               ${{ inputs.simulate_drift && '--simulate-drift' || '' }}; code=\$?; cat /tmp/drift.json; exit \$code" \
             > drift-report.json
