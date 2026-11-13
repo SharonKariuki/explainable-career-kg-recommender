@@ -201,6 +201,7 @@ def main(argv=None):
     parser.add_argument('--split', choices=SPLITS, required=True)
     parser.add_argument('--allow-unfrozen', action='store_true')
     parser.add_argument('--delta', type=float)
+    parser.add_argument('--candidate', action='store_true', help='evaluate the unapproved mapping candidate (release P3)')
     parser.add_argument('--tau', type=float, help='flag similarity threshold to evaluate (release P1); '
                                                   'with it, close_runner_up is recomputed at --delta')
     args = parser.parse_args(argv)
@@ -208,7 +209,11 @@ def main(argv=None):
     started = run_started(__spec__.name, argv if argv is not None else sys.argv[1:])
     engine = get_engine()
     items = load_items(args.split, allow_unfrozen=args.allow_unfrozen, node_ids=set(engine.kg.skills()))
-    found = {r['query']: r for r in readings(engine.matcher, sorted({i['input'] for i in items}))}
+    matcher = engine.matcher
+    if args.candidate:
+        from recommender.matching import SkillMatcher
+        matcher = SkillMatcher(engine.kg, candidate=True)
+    found = {r['query']: r for r in readings(matcher, sorted({i['input'] for i in items}))}
     if args.tau is not None:
         from recommender.calibration import flagged_at
         metrics, counts, by_category = evaluate(items, found, flagged=flagged_at(args.delta or 0.0, args.tau),
@@ -220,7 +225,8 @@ def main(argv=None):
     write_csv(pd.DataFrame(found.values()), folder, 'mapping_readings.csv')
     write_manifest(folder, started, {f'mapping-v1-{args.split}': {'items': counts['items'], 'groups': counts['groups']}},
                    {**configuration(None), 'flagged': 'matcher uncertain',
-                    'margin_threshold': engine.matcher.margin_threshold, 'delta': args.delta, 'tau': args.tau})
+                    'margin_threshold': engine.matcher.margin_threshold, 'delta': args.delta, 'tau': args.tau,
+                    'mapping_candidate': args.candidate})
     print(metrics_frame(metrics).to_string(index=False))
     print(json.dumps(counts, indent=1))
     return 0

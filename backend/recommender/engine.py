@@ -142,7 +142,7 @@ class RecommendationEngine:
         queries = self.matcher.clean(skills)
         if not queries:
             return PreparedProfile(matches=(), profile_vector=None)
-        vectors = encode(queries)
+        vectors = self.matcher.encode_queries(queries)
         mean = vectors.mean(axis=0)
         background = ' '.join((background or '').split())
         return PreparedProfile(

@@ -113,3 +113,21 @@ def test_uncertainty_never_feeds_the_ranking():
     plain = RecommendationEngine(kg, SkillMatcher(kg)).rank(skills, top_k=None)[1]
     flagged = RecommendationEngine(kg, SkillMatcher(kg, margin_threshold=0.5)).rank(skills, top_k=None)[1]
     assert [(r.career_id, r.score, r.components) for r in plain] == [(r.career_id, r.score, r.components) for r in flagged]
+
+
+# ---- Mapping candidate (release P3): unapproved, off in production ----
+
+def test_filler_words_are_dropped_only_by_the_candidate():
+    from recommender.matching import without_filler
+    assert without_filler('data analysis stuff') == 'data analysis'
+    assert without_filler('Networking things') == 'Networking'
+    assert without_filler('stuff') == 'stuff'                       # nothing else left: keep the text
+
+
+def test_the_production_matcher_does_not_use_the_candidate(matcher):
+    from recommender.engine import get_engine
+    from recommender.matching import skill_aliases
+    assert get_engine().matcher.candidate is False and matcher.candidate is False
+    production = set(skill_aliases()['alias'].str.casefold())
+    assert 'oop' not in production and 'oop' in set(skill_aliases(candidate=True)['alias'].str.casefold())
+    assert 'oop' not in {t.casefold() for t in get_engine().matcher.texts}

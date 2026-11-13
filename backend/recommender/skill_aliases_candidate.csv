@@ -1,0 +1,60 @@
+alias,target
+# CANDIDATE aliases (release readiness P3). Loaded only by SkillMatcher(candidate=True); the
+# production matcher does not use this file. Adopting it changes rankings, so it needs a new
+# approved ranking-invariance baseline. Written from general student usage and the gold
+# development split's errors only: no validation or test item was consulted, and the test
+# examples listed in the M7 report (T-SQL, DSA, RDBMS, Security+, DBA, DBeaver) are deliberately absent.
+# Programming and web
+OOP,use object-oriented programming
+Object oriented programming,use object-oriented programming
+Object-oriented programming,use object-oriented programming
+Svelte,JavaScript framework software
+SvelteKit,JavaScript framework software
+Alpine.js,JavaScript framework software
+Gatsby,JavaScript framework software
+Laravel,Web framework software
+Express.js,Web framework software
+Flask,Web framework software
+HTML tags,use markup languages
+Unit tests,develop automated software tests
+Writing tests,develop automated software tests
+Debugging,ICT debugging tools
+Fixing bugs,ICT debugging tools
+Microservices,Microservices Architecture
+Wireframe,create website wireframe
+# Data and AI
+Data analysis,perform data analysis
+Analysing data,perform data analysis
+Data analytics,data analytics
+Data cleaning,perform data cleansing
+Cleaning data,perform data cleansing
+ARIMA,carry out statistical forecasts
+Time series forecasting,carry out statistical forecasts
+Training models,utilise machine learning
+NLP,natural language processing
+Text analytics,natural language processing
+SQLite,Relational database management software
+QGIS,Geographic information system GIS software
+GIS,Geographic information system GIS software
+# Infrastructure, networks, security
+VLAN,Virtual local area network management software
+VLANs,Virtual local area network management software
+OpenStack,cloud technologies
+Intune,mobile device management
+Microsoft Intune,mobile device management
+MDM,mobile device management
+Release automation,DevOps
+Threat modelling,identify ICT security risks
+STRIDE,identify ICT security risks
+Data privacy,data protection
+# Blockchain
+Solana,blockchain platforms
+Polygon,blockchain platforms
+Blockchain,principles of distributed ledger technology
+# Work and communication
+Project management,project management
+Requirements gathering,identify customer requirements
+Kiswahili,speak different languages
+Swahili,speak different languages
+TikTok,Social media sites
+Social media,Social media sites
