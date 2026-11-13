@@ -1,7 +1,10 @@
 # The AjiraGuide API as one container. Build from the repository root, since
 # the engine reads data/processed/ beside backend/:
 #   docker build -f backend/Dockerfile -t ajiraguide-api .
-FROM python:3.11-slim
+# PYTHON_IMAGE lets the upstream-drift check build from an exact base-image digest;
+# without the build argument the image is built exactly as before.
+ARG PYTHON_IMAGE=python:3.11-slim
+FROM ${PYTHON_IMAGE}
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \

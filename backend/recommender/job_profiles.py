@@ -21,8 +21,10 @@ it checks were fixed. Run it with --check.
 
     python -m recommender.job_profiles --run NAME [--check]
 
-writes job_profiles.csv (one row per profile), job_summary.csv (per variant)
-and job_unmatched.csv (declared skills that matched nothing closely).
+writes job_profiles.csv (one row per profile), job_summary.csv (per variant),
+job_unmatched.csv (declared skills that matched nothing closely) and job_readings.csv
+(every distinct declared skill with its selected concept, runner-up, margin and the other
+nodes sharing the matched name, so confident near-ties are visible too).
 """
 
 import json
@@ -98,6 +100,21 @@ def run(jobs, profiles, engine=None, params=DEFAULT_PARAMS):
     return rows, summary.round(3).reset_index(), unmatched
 
 
+def job_readings(profiles, engine=None):
+    """One row per distinct declared skill: selection, runner-up, margin and shared owners.
+    Observed on the evaluation side (mapping_eval.readings); the matcher is unchanged."""
+    from recommender.mapping_eval import name_owners, readings
+
+    engine = engine or get_engine()
+    queries = sorted({s for _, _, skills in profiles for s in skills})
+    rows = readings(engine.matcher, queries, name_owners(engine.kg))
+    frame = pd.DataFrame(rows, columns=['query', 'node_label', 'matched_text', 'similarity', 'low_confidence',
+                                        'runner_up_text', 'runner_up_similarity', 'margin', 'shared_with',
+                                        'node_id', 'runner_up_node_id'])
+    frame['shared_with'] = frame['shared_with'].map(lambda s: '; '.join(s))
+    return frame.sort_values(['margin', 'query'])
+
+
 def main(argv=None):
     args = sys.argv[1:] if argv is None else list(argv)
     check = '--check' in args
@@ -109,6 +126,7 @@ def main(argv=None):
     write_csv(rows, folder, 'job_profiles.csv')
     write_csv(summary, folder, 'job_summary.csv')
     write_csv(unmatched.sort_values('similarity'), folder, 'job_unmatched.csv')
+    write_csv(job_readings(profiles), folder, 'job_readings.csv')
     name = 'job-check' if check else 'job-profiles'
     write_manifest(folder, started, describe_sets({name: profiles}, roles={name: 'check' if check else 'development'}),
                    configuration(DEFAULT_PARAMS))

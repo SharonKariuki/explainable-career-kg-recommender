@@ -1,0 +1,118 @@
+# Upstream drift detection (Measured Matching C1, #157; plan revision 6, C5 Job 2).
+#
+# Question: has anything upstream changed since the approved baseline? Unlike the PR job, this
+# job pins nothing. It resolves python:3.11-slim from the registry and the model revision from the
+# Hugging Face API, builds the production image from exactly that digest with no build cache, lets
+# the build download the model fresh into an empty HF_HOME, and records what was actually used.
+# Any fingerprint change fails the job so a person acknowledges it; the snapshot comparison shows
+# whether rankings moved. The baseline only changes through an approved PR.
+#
+# Dry run: run manually with simulate_drift=true. The command alters the baseline fingerprint it
+# compares against, so the job must fail with an upstream-drift status.
+
+name: Upstream drift
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Mondays 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      simulate_drift:
+        description: Compare against a deliberately altered baseline fingerprint (must fail)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+env:
+  BASELINE_DIR: backend/tests/snapshots
+  MODEL_NAME: sentence-transformers/all-MiniLM-L6-v2
+  HF_HUB_VERSION: "1.33.0"
+
+jobs:
+  upstream-drift:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Resolve the base image from the registry (no local image)
+        id: base
+        run: |
+          docker image rm -f python:3.11-slim 2>/dev/null || true
+          docker buildx imagetools inspect python:3.11-slim --format '{{json .Manifest}}' > "$RUNNER_TEMP/manifest.json"
+          python - "$RUNNER_TEMP/manifest.json" >> "$GITHUB_OUTPUT" <<'EOF'
+          import json, sys
+          m = json.load(open(sys.argv[1]))
+          amd64 = next(x['digest'] for x in m['manifests'] if x['platform']['os'] == 'linux' and x['platform']['architecture'] == 'amd64')
+          print(f"list_digest={m['digest']}")
+          print(f"platform_digest={amd64}")
+          EOF
+
+      - name: Resolve the model revision from the Hugging Face API (empty cache)
+        id: model
+        env:
+          HF_HOME: ${{ runner.temp }}/hf-empty
+          HF_HUB_OFFLINE: "0"
+        run: |
+          pip install --quiet "huggingface_hub==$HF_HUB_VERSION"
+          echo "revision=$(python -c "from huggingface_hub import HfApi; print(HfApi().model_info('$MODEL_NAME').sha)")" >> "$GITHUB_OUTPUT"
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build the production image from the resolved digest, with no cache
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: backend/Dockerfile
+          build-args: PYTHON_IMAGE=python:3.11-slim@${{ steps.base.outputs.platform_digest }}
+          no-cache: true
+          pull: true
+          push: false
+          load: true
+          tags: ajiraguide-drift:${{ github.run_id }}
+          # No cache-from / cache-to: a cached layer could hide a new base image or model download.
+
+      - name: Fingerprint the fresh image, compare with the baseline, report one status
+        id: drift
+        run: |
+          set +e
+          docker run --rm -v "$PWD/data/eval_sets:/app/data/eval_sets:ro" \
+            -e OMP_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1 \
+            -e ATEN_CPU_CAPABILITY=avx2 -e OPENBLAS_CORETYPE=Haswell -e HF_HUB_OFFLINE=1 \
+            -e BASE_IMAGE_DIGEST="${{ steps.base.outputs.platform_digest }}" \
+            "ajiraguide-drift:${{ github.run_id }}" sh -c "python -m recommender.invariance drift \
+              --baseline $BASELINE_DIR --resolved-base-digest '${{ steps.base.outputs.platform_digest }}' \
+              --resolved-model-revision '${{ steps.model.outputs.revision }}' --report /tmp/drift.json \
+              ${{ inputs.simulate_drift && '--simulate-drift' || '' }}; code=\$?; cat /tmp/drift.json; exit \$code" \
+            > drift-report.json
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Upstream drift"
+            echo "- Resolved base image: \`${{ steps.base.outputs.platform_digest }}\` (list \`${{ steps.base.outputs.list_digest }}\`)"
+            echo "- Resolved model revision: \`${{ steps.model.outputs.revision }}\`"
+            echo "- Simulated drift: ${{ inputs.simulate_drift || false }}"
+            echo "- Exit code: $code"
+            echo '```json'; tail -c 6000 drift-report.json; echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 0
+
+      - name: Upload the drift report and resolved fingerprint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: upstream-drift-${{ github.run_id }}
+          path: drift-report.json
+          retention-days: 90
+
+      - name: Fail on drift, inconsistency or a missing baseline
+        if: steps.drift.outputs.code != '0'
+        run: |
+          echo "::error::Upstream drift job exit code ${{ steps.drift.outputs.code }} (5 drift, 6 inconsistent resolution, 2 no approved baseline, 4 ranking changed). See the job summary and the drift report artifact."
+          exit 1

@@ -1,0 +1,154 @@
+# Ranking invariance for pull requests (Measured Matching C1, #157; plan revision 6, C5 Job 1).
+#
+# Question: did this code change move the ranking? The environment is pinned to the approved
+# baseline and never resolved fresh: base image by digest, Python packages from the baseline's
+# exact lock, and the SBERT model at the baseline revision, loaded offline. The check itself runs
+# with --network none. This job deliberately cannot see upstream drift; upstream-drift.yml does.
+#
+# With no approved baseline in backend/tests/snapshots, the job generates a PROVISIONAL baseline
+# in the same pinned way, uploads it for review, and fails closed. It never adopts one itself.
+
+name: Ranking invariance (PR)
+
+on:
+  pull_request:
+    paths:
+      - backend/**
+      - data/processed/**
+      - data/eval_sets/**
+      - .dockerignore
+      - .github/workflows/invariance-pr.yml
+      - .github/workflows/upstream-drift.yml
+      - .github/scripts/**
+  push:
+    branches: [main]
+    paths:
+      - backend/**
+      - data/processed/**
+      - data/eval_sets/**
+      - .dockerignore
+      - .github/workflows/invariance-pr.yml
+      - .github/workflows/upstream-drift.yml
+      - .github/scripts/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: invariance-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  BASELINE_COMMIT: 739956a37ef3f3a8b2c0032d359979d770bb4d66
+  BASELINE_DIR: backend/tests/snapshots
+  MODEL_NAME: sentence-transformers/all-MiniLM-L6-v2
+  HF_HUB_VERSION: "1.33.0"
+  # One thread and fixed CPU kernels, so floats do not depend on the runner's core count or CPU model.
+  PINNED_ENV: >-
+    -e OMP_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1
+    -e ATEN_CPU_CAPABILITY=avx2 -e OPENBLAS_CORETYPE=Haswell
+    -e HF_HOME=/hf -e HF_HUB_OFFLINE=1 -e TRANSFORMERS_OFFLINE=1 -e HF_HUB_DISABLE_TELEMETRY=1
+
+jobs:
+  invariance-pr:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the baseline commit's sources are read with git show
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Read the baseline
+        id: baseline
+        run: python .github/scripts/baseline_info.py "$BASELINE_DIR" | tee -a "$GITHUB_OUTPUT"
+
+      - name: Pin the base image and model (approved baseline)
+        if: steps.baseline.outputs.approved == 'true'
+        id: approved
+        run: |
+          echo "base_digest=${{ steps.baseline.outputs.base_image_digest }}" >> "$GITHUB_OUTPUT"
+          echo "model_revision=${{ steps.baseline.outputs.model_revision }}" >> "$GITHUB_OUTPUT"
+
+      - name: Resolve the pins for a provisional baseline (no approved baseline yet)
+        if: steps.baseline.outputs.approved != 'true'
+        id: bootstrap
+        run: |
+          pip install --quiet "huggingface_hub==$HF_HUB_VERSION"
+          digest=$(docker buildx imagetools inspect python:3.11-slim --format '{{json .Manifest}}' | python -c "
+          import json, sys
+          m = json.load(sys.stdin)
+          print(next(x['digest'] for x in m['manifests'] if x['platform']['os'] == 'linux' and x['platform']['architecture'] == 'amd64'))")
+          revision=$(HF_HUB_OFFLINE=0 python -c "from huggingface_hub import HfApi; print(HfApi().model_info('$MODEL_NAME').sha)")
+          echo "base_digest=$digest" >> "$GITHUB_OUTPUT"
+          echo "model_revision=$revision" >> "$GITHUB_OUTPUT"
+
+      - name: Provision the model offline (download the revision, write refs/main, verify sha256)
+        run: |
+          pip install --quiet "huggingface_hub==$HF_HUB_VERSION"
+          rev="${{ steps.approved.outputs.model_revision || steps.bootstrap.outputs.model_revision }}"
+          if [ "${{ steps.baseline.outputs.approved }}" = "true" ]; then
+            python .github/scripts/provision_model.py --hf-home "$RUNNER_TEMP/hf" --baseline "$BASELINE_DIR" --report "$RUNNER_TEMP/provision.json"
+          else
+            python .github/scripts/provision_model.py --hf-home "$RUNNER_TEMP/hf" --revision "$rev" --report "$RUNNER_TEMP/provision.json"
+          fi
+
+      - name: Build the pinned Python environment
+        run: |
+          image="python:3.11-slim@${{ steps.approved.outputs.base_digest || steps.bootstrap.outputs.base_digest }}"
+          echo "IMAGE=$image" >> "$GITHUB_ENV"
+          docker volume create venv
+          if [ "${{ steps.baseline.outputs.approved }}" = "true" ]; then
+            install="/venv/bin/pip install --no-cache-dir --no-deps -r /repo/$BASELINE_DIR/requirements_lock_v1.txt --extra-index-url https://download.pytorch.org/whl/cpu"
+          else
+            install="/venv/bin/pip install --no-cache-dir torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu && /venv/bin/pip install --no-cache-dir -r /repo/backend/requirements.txt"
+          fi
+          docker run --rm -v "$PWD:/repo" -v venv:/venv "$image" sh -c "python -m venv /venv && $install"
+
+      - name: Check the ranking sources against the baseline commit
+        run: |
+          PYTHONPATH=backend python -m recommender.invariance sources --commit "$BASELINE_COMMIT" > "$RUNNER_TEMP/expected_sources.json"
+          PYTHONPATH=backend python -m recommender.invariance sources > "$RUNNER_TEMP/current_sources.json"
+          if ! cmp -s "$RUNNER_TEMP/expected_sources.json" "$RUNNER_TEMP/current_sources.json"; then
+            echo "Ranking sources differ from $BASELINE_COMMIT. Allowed in later phases (the snapshot decides), not for a provisional baseline."
+            echo "SOURCES_CHANGED=true" >> "$GITHUB_ENV"
+          fi
+          cp "$RUNNER_TEMP/expected_sources.json" expected_sources.json
+
+      - name: Generate a provisional baseline (no approved baseline yet)
+        if: steps.baseline.outputs.approved != 'true'
+        run: |
+          mkdir -p provisional
+          docker run --rm --network none -v "$PWD:/repo" -v venv:/venv -v "$RUNNER_TEMP/hf:/hf" $PINNED_ENV \
+            -e GIT_COMMIT="${{ github.sha }}" -w /repo/backend "$IMAGE" \
+            /venv/bin/python -m recommender.invariance generate --out /repo/provisional \
+              --expected-sources /repo/expected_sources.json \
+              --base-image-digest "${{ steps.bootstrap.outputs.base_digest }}" --commit "${{ github.sha }}"
+          cp "$RUNNER_TEMP/provision.json" provisional/model_provision.json
+          cp expected_sources.json provisional/expected_sources_739956a.json
+
+      - name: Upload the provisional baseline for review
+        if: steps.baseline.outputs.approved != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: provisional-ranking-baseline-${{ github.sha }}
+          path: provisional/
+          retention-days: 30
+
+      - name: Fail closed without an approved baseline
+        if: steps.baseline.outputs.approved != 'true'
+        run: |
+          echo "::error::No approved ranking baseline (status: ${{ steps.baseline.outputs.status }}). A provisional baseline was uploaded as an artifact for review; it is not adopted automatically."
+          exit 1
+
+      - name: Check ranking invariance (offline, no network)
+        if: steps.baseline.outputs.approved == 'true'
+        run: |
+          docker run --rm --network none -v "$PWD:/repo" -v venv:/venv -v "$RUNNER_TEMP/hf:/hf" $PINNED_ENV \
+            -w /repo/backend "$IMAGE" \
+            /venv/bin/python -m recommender.invariance check --baseline "/repo/$BASELINE_DIR" \
+              --base-image-digest "${{ steps.approved.outputs.base_digest }}"

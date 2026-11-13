@@ -299,3 +299,68 @@ Built by `python -m recommender.task_sets nominate` and `build`
 | Reviewed and approved by | _to be recorded_ |
 | Approval date | _to be recorded_ |
 | Frozen file and sha256 | _to be recorded_ |
+
+## Measured Matching (#157)
+
+Measured Matching adds uncertainty and evidence information without changing any ranking. Three
+mechanisms keep that claim checkable.
+
+### Ranking invariance
+
+`python -m recommender.invariance` records the ranking for a fixed corpus. The corpus is:
+
+- synthetic and noisy validation;
+- hand-v1;
+- the job-skill development set;
+- the six evaluated student profiles with their wordings;
+- constructed cases;
+- profiles with background text.
+
+No test set is included. For each profile the record holds:
+
+- the concept each skill was read as, and `low_confidence`;
+- the full career order, with score, coverage, similarity, proximity, background similarity and `fit`;
+- the skills behind coverage.
+
+Floats are kept exactly, as `repr`.
+
+The record carries provenance:
+
+- the hashes of the ranking sources, checked against `739956a` when the baseline is generated;
+- the corpus hash;
+- the model revision and file hashes;
+- an embedding probe;
+- the package set;
+- the base-image digest.
+
+Two workflows use it:
+
+| Workflow | Purpose | Environment | Comparison |
+|---|---|---|---|
+| `invariance-pr.yml` | Did this change move the ranking? | Pinned to the approved baseline: base-image digest, the baseline's exact package lock, the model at the baseline revision loaded offline (download plus `refs/main`), `--network none` | Categorical fields exact, floats exact. A fingerprint mismatch is an "environment mismatch", not a ranking result |
+| `upstream-drift.yml` | Has anything upstream changed? | Weekly and manual; fresh registry and Hugging Face resolution; cache-free build | Resolved and downloaded fingerprints against the baseline; snapshot within 1e-9; one status |
+
+A generated snapshot is always **provisional**. It is adopted only when a reviewer adds `approval_v1.json` naming it by content sha256 (`backend/tests/snapshots/README.md`). Without an approved baseline, both workflows fail closed.
+
+### Intervals and outcomes
+
+`recommender/eval_stats.py` implements the plan's C3 method:
+
+- Gated quantities are pooled binary proportions. Their interval is a Wilson interval on the Kish effective sample size, with an ANOVA intra-cluster correlation truncated to [0, 1].
+- Report-only non-proportions use a cluster bootstrap: 10,000 resamples, seed 7, no design effect.
+- A gate is **Pass** only when the whole 95% interval meets the target, and **Fail** only when the whole interval misses it. Otherwise it is **Inconclusive**. It is **Not assessable** below an effective n of 60 or with fewer than 30 clusters.
+
+### Planned sets for Measured Matching (not yet built)
+
+| Set | Runner | Status |
+|---|---|---|
+| `mapping_v1.json` (gold concept per student phrasing) | `recommender/mapping_eval.py` | Not built. The loader refuses it until it is frozen (`FROZEN`); a development draft can be read with `--allow-unfrozen`; the test split needs `open_test_sets()` |
+| `students_v1.json` (independent profiles with wordings, career grades and sufficiency labels) | `recommender/student_eval.py` | Not built. Same locks |
+
+Until C2, the mapping runner observes the production matcher and computes the following on the evaluation side:
+
+- the runner-up;
+- the margin;
+- the nodes that share the selected name.
+
+Its "flagged" predicate defaults to today's `low_confidence`.
