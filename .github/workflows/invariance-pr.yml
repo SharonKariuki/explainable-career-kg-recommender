@@ -44,12 +44,12 @@ env:
   BASELINE_DIR: backend/tests/snapshots
   MODEL_NAME: sentence-transformers/all-MiniLM-L6-v2
   HF_HUB_VERSION: "1.33.0"
-  # One thread and fixed CPU code paths (torch, MKL in reproducibility mode, oneDNN, OpenBLAS), so floats
-  # do not depend on the runner's core count or CPU model: GitHub runners vary in CPU.
+  # Portable arithmetic: one thread, torch's generic (non-SIMD-specialised) kernels, MKL in its
+  # CPU-independent compatible mode, oneDNN off (in the harness) and one OpenBLAS kernel, so floats
+  # are the same on the AMD and Intel CPUs GitHub runners mix.
   PINNED_ENV: >-
     -e OMP_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1
-    -e ATEN_CPU_CAPABILITY=avx2 -e OPENBLAS_CORETYPE=Haswell
-    -e MKL_CBWR=AVX2,STRICT -e ONEDNN_MAX_CPU_ISA=AVX2 -e DNNL_MAX_CPU_ISA=AVX2
+    -e ATEN_CPU_CAPABILITY=default -e OPENBLAS_CORETYPE=Haswell -e MKL_CBWR=COMPATIBLE
     -e HF_HOME=/hf -e HF_HUB_OFFLINE=1 -e TRANSFORMERS_OFFLINE=1 -e HF_HUB_DISABLE_TELEMETRY=1
 
 jobs:

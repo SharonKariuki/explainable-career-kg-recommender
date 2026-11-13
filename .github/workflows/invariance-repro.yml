@@ -1,0 +1,95 @@
+# TEMPORARY (#164): does the ranking snapshot reproduce bit for bit on the different CPUs GitHub
+# runners use? Eight parallel jobs build the pinned environment (base digest, the approved package
+# lock, the baseline model offline) and run `invariance repro` with --network none; a final job
+# compares their embedding probes and snapshot hashes. It fails if any two differ, and also if
+# every job landed on one CPU model (then nothing about portability was shown). Removed before merge.
+
+name: Invariance reproducibility (temporary)
+
+on:
+  pull_request:
+    paths:
+      - backend/**
+      - .github/workflows/invariance-repro.yml
+      - .github/workflows/invariance-pr.yml
+
+permissions:
+  contents: read
+
+env:
+  BASE_IMAGE: python:3.11-slim@sha256:b701198cb708b68d9413ca67d6311bd97c9389a2c5fe4da0511fc652642366cd
+  BASE_DIGEST: sha256:b701198cb708b68d9413ca67d6311bd97c9389a2c5fe4da0511fc652642366cd
+  MODEL_REVISION: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+  LOCK_COMMIT: 9733c5f   # main, holding the approved package lock
+  HF_HUB_VERSION: "1.33.0"
+  NUMERIC_ENV: >-
+    -e OMP_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1
+    -e ATEN_CPU_CAPABILITY=default -e OPENBLAS_CORETYPE=Haswell -e MKL_CBWR=COMPATIBLE
+    -e HF_HOME=/hf -e HF_HUB_OFFLINE=1 -e TRANSFORMERS_OFFLINE=1 -e HF_HUB_DISABLE_TELEMETRY=1
+
+jobs:
+  repro:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [1, 2, 3, 4, 5, 6, 7, 8]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Provision the baseline model offline
+        run: |
+          pip install --quiet "huggingface_hub==$HF_HUB_VERSION"
+          python .github/scripts/provision_model.py --hf-home "$RUNNER_TEMP/hf" --revision "$MODEL_REVISION" > /dev/null
+
+      - name: Build the pinned environment from the approved lock
+        run: |
+          git show "$LOCK_COMMIT:backend/tests/snapshots/requirements_lock_v1.txt" > lock.txt
+          docker volume create venv
+          docker run --rm -v "$PWD:/repo" -v venv:/venv "$BASE_IMAGE" sh -c \
+            "python -m venv /venv && /venv/bin/pip install --no-cache-dir --no-deps -r /repo/lock.txt --extra-index-url https://download.pytorch.org/whl/cpu"
+
+      - name: Snapshot this runner (offline, no network)
+        run: |
+          docker run --rm --network none -v "$PWD:/repo" -v venv:/venv -v "$RUNNER_TEMP/hf:/hf" $NUMERIC_ENV \
+            -w /repo/backend "$BASE_IMAGE" \
+            /venv/bin/python -m recommender.invariance repro --out /repo/repro.json --base-image-digest "$BASE_DIGEST"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: repro-${{ matrix.runner }}
+          path: repro.json
+
+  compare:
+    needs: repro
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: repro-*
+          path: repro
+
+      - name: Compare runners
+        run: |
+          python - <<'EOF'
+          import glob, json, sys
+          runs = [json.load(open(p)) for p in sorted(glob.glob('repro/*/repro.json'))]
+          cpus = {r['cpu'].get('model') for r in runs}
+          print(f'{len(runs)} runners, {len(cpus)} CPU models')
+          for r in runs:
+              print(f"  {r['cpu'].get('model'):45} avx512={r['cpu'].get('avx512f')} probe={r['embedding_probe_sha256'][:16]} profiles={r['profiles_sha256'][:16]}")
+          probes = {r['embedding_probe_sha256'] for r in runs}
+          snapshots = {r['profiles_sha256'] for r in runs}
+          if len(probes) > 1 or len(snapshots) > 1:
+              print(f'NOT REPRODUCIBLE: {len(probes)} distinct probes, {len(snapshots)} distinct snapshots'); sys.exit(1)
+          if len(cpus) < 2:
+              print('INCONCLUSIVE: every runner had the same CPU model; re-run to sample another'); sys.exit(1)
+          print('REPRODUCIBLE across CPU models:', sorted(cpus))
+          EOF
