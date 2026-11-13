@@ -187,7 +187,8 @@ def measured_matching(run, started, items, profiles):
     write_csv(mapping_eval.metrics_frame(by_category).rename(columns={'metric': 'category'}), run, 'mapping_by_category.csv')
     write_csv(pd.DataFrame(found.values()), run, 'mapping_readings.csv')
     (run / 'mapping_counts.json').write_text(__import__('json').dumps(counts, indent=1), encoding='utf-8')
-    sets, table, summary = student_report.write_report(engine, profiles, run, 'students-v1-test')
+    sets, table, summary = student_report.write_report(engine, profiles, run, 'students-v1-test',
+                                                       baseline=KeywordBaseline(engine.kg))
     write_manifest(run, started, {'mapping-v1-test': {'items': counts['items'], 'groups': counts['groups']}, **sets},
                    {**configuration(DEFAULT_PARAMS), 'margin_threshold': engine.matcher.margin_threshold})
     pd.set_option('display.width', 160)

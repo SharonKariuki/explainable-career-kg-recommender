@@ -52,6 +52,7 @@ def read_split(engine, profiles):
             # M8b: the same ranking, with gold-wrong selections removed from the evidence only.
             without = ev.assess(engine, [m for m in matches if m.node_id not in wrong], ranked)
             units.append({'profile': p, 'wording': w, 'ranked': [r.career_id for r in ranked],
+                          'matches': matches, 'ranked_full': ranked,
                           'insufficient': assessment['insufficient'], 'evidence': assessment['evidence'],
                           'support': assessment['evidence']['supporting_skills'], 'gold_wrong': sorted(wrong),
                           'insufficient_without_wrong': without['insufficient']})
@@ -91,11 +92,65 @@ def report(units, profiles):
     return careers, se.wording_agreement(rows), gates, reasons, m8, rows
 
 
-def write_report(engine, profiles, folder, set_name):
-    """Compute and write every result for one loaded split; returns the printable summary."""
+def approved_groups():
+    """AC15: concept groups from pairs both annotators labelled same_capability, kept only as cliques."""
+    import itertools
+    import networkx as nx
+    from pipeline.gold_sets import GOLD, read_json
+    label = {}
+    for who in ('A', 'B'):
+        for r in read_json(GOLD / 'annotations' / who / 'pairs_01.json'):
+            label.setdefault(r['pair'], []).append(r['relationship'])
+    pairs = {p['pair']: (p['a'], p['b']) for p in read_json(GOLD / 'assembled.json')['pairs']}
+    graph = nx.Graph([pairs[k] for k, v in label.items() if v == ['same_capability', 'same_capability']])
+    groups = []
+    for component in nx.connected_components(graph):
+        if all(graph.has_edge(a, b) for a, b in itertools.combinations(component, 2)):
+            groups.append(frozenset(component))
+    return groups
+
+
+def grouping_sensitivity(engine, units, groups):
+    """Share of units whose `insufficient` changes when each approved group counts once (its
+    heaviest matched member), and agreement with the human label with and without grouping."""
+    raw = ev.raw_weights(engine)
+    member = {n: g for g in groups for n in g}
+    changed, agree_plain, agree_grouped, n = 0, 0, 0, 0
+    for u in units:
+        matches, ranked = u['matches'], u['ranked_full']
+        keep, seen = [], {}
+        for m in sorted(matches, key=lambda m: -raw[m.node_id]):
+            g = member.get(m.node_id)
+            if g is None or g not in seen:
+                keep.append(m)
+                if g is not None:
+                    seen[g] = m.node_id
+        grouped = ev.assess(engine, keep, ranked)['insufficient']
+        changed += grouped != u['insufficient']
+        human = u['profile']['sufficiency']
+        if human != 'borderline':
+            n += 1
+            agree_plain += u['insufficient'] == (human == 'insufficient')
+            agree_grouped += grouped == (human == 'insufficient')
+    return {'approved groups': len(groups), 'units': len(units), 'insufficient changed': changed / len(units),
+            'agreement with human (no grouping)': agree_plain / n, 'agreement with human (grouping)': agree_grouped / n}
+
+
+def write_report(engine, profiles, folder, set_name, baseline=None):
+    """Compute and write every result for one loaded split; returns the printable summary.
+    With a keyword `baseline`, its career metrics are reported beside the engine's (AC16)."""
     from recommender.results import write_csv
     units = read_split(engine, profiles)
     careers, agreement, gates, reasons, m8, rows = report(units, profiles)
+    by_family = se.summarise_careers(rows, by='family')
+    keyword = None
+    if baseline is not None:
+        graded = [p for p in profiles if p['relevant']]
+        keyword = se.summarise_careers(se.career_rows(
+            graded, lambda skills: [r.career_id for r in baseline.rank(list(skills), top_k=None)[1]]))
+    sensitivity = grouping_sensitivity(engine, units, approved_groups())
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / 'grouping_sensitivity.json').write_text(json.dumps(sensitivity, indent=1), encoding='utf-8')
 
     def flat(name, est):
         return {'metric': name, **(vars(est) if hasattr(est, 'p') else {'value': est})}
@@ -110,9 +165,12 @@ def write_report(engine, profiles, folder, set_name):
                              'meaningful_concepts': u['evidence']['meaningful_concepts'],
                              'reasons': ' '.join(u['evidence']['reasons'])} for u in units]),
               folder, 'sufficiency_units.csv')
-    summary = {'careers': {k: {m: (v if not hasattr(v, '__dict__') else vars(v)) for m, v in r.items()}
-                           for k, r in careers.items()},
-               'wording agreement': vars(agreement) if hasattr(agreement, '__dict__') else agreement}
+    as_dict = lambda table: {k: {m: (v if not hasattr(v, '__dict__') else vars(v)) for m, v in r.items()}
+                             for k, r in table.items()}
+    summary = {'careers': as_dict(careers), 'careers by family (exploratory)': as_dict(by_family),
+               'keyword baseline careers': as_dict(keyword) if keyword else None,
+               'wording agreement': vars(agreement) if hasattr(agreement, '__dict__') else agreement,
+               'grouping sensitivity (AC15, exploratory)': sensitivity}
     (folder / 'careers.json').write_text(json.dumps(summary, indent=1, default=str), encoding='utf-8')
     return {set_name: {'profiles': len(profiles), 'units': len(units)}}, pd.DataFrame(table).round(4), summary
 
