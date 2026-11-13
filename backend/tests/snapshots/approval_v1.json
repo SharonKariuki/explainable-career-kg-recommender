@@ -1,0 +1,19 @@
+{
+  "status": "approved",
+  "approved_by": "Sharon Kariuki",
+  "approved_on": "2026-11-13",
+  "snapshot_sha256": "fe40c0d40a9222aa22f633afa61d5a5ee5a0ebba588787f44148cfc0d192b05d",
+  "generated_by": "GitHub Actions run 43378433446 (Ranking invariance (PR), PR #167), artifact provisional-ranking-baseline-6d246dcad22c2a59689eecb117166095c44a4649-attempt1",
+  "verified": [
+    "content sha256 recomputed from the decompressed snapshot",
+    "16 ranking-source hashes equal baseline commit 739956a37ef3f3a8b2c0032d359979d770bb4d66",
+    "model 1110a243fdf4706b3f48f1d95db1a4f5529b4d41: 11 file hashes verified at provisioning; model.safetensors equals the published LFS sha256",
+    "base image python:3.11-slim@sha256:b701198cb708b68d9413ca67d6311bd97c9389a2c5fe4da0511fc652642366cd; --network none; portable arithmetic (one thread, ATEN_CPU_CAPABILITY=default, MKL_CBWR=COMPATIBLE, oneDNN off, OpenBLAS Haswell)",
+    "snapshot reproduced bit for bit on 16 runners across 4 CPU models (AMD EPYC 7763, 9V45, 9V74; Intel Xeon 6975P-C): profiles sha256 b2e0842fe64ee90e135a96c85c1210860013eef9d347109d6d3b6473a5e0af4c, embedding probe 58435f499b4a2450..."
+  ],
+  "known_limitations": [
+    "rankings are only comparable inside this pinned environment; Windows runs differ (shared-name ties for Git and Selenium)",
+    "the harness's portable arithmetic differs from the production image's default arithmetic in the last bits; the gate checks code changes under a fixed numeric regime",
+    "Intel Xeon Platinum 8573C (the CPU of the failing main run) was not among the 16 sampled runners; another Intel AVX-512 model was"
+  ]
+}
