@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { SIGNED_OUT_EVENT, getToken, logout, me } from './api.js'
 import { Status, ThemeToggle, WakingNotice } from './components.jsx'
@@ -17,6 +17,7 @@ import PlanScreen from './screens/PlanScreen.jsx'
 import ProfileScreen from './screens/ProfileScreen.jsx'
 import RecommendationsScreen from './screens/RecommendationsScreen.jsx'
 import SettingsScreen from './screens/SettingsScreen.jsx'
+import WelcomeScreen from './screens/WelcomeScreen.jsx'
 
 // The top bar's pills (wide screens) and the floating tab bar (phones) share these.
 const NAV = [
@@ -87,13 +88,17 @@ function App() {
     navigate('/')
   }
 
-  function signedIn(account) {
+  // The page a signed-out visitor asked for, kept while they move between the sign-in forms.
+  const asked = useRef(null)
+
+  function signedIn(account, isNew) {
     setSignedOutNotice(null)
     setUser(account)
     // Signing in returns only the username; fetch the rest (the name) for the greeting.
     me().then(setUser).catch(() => {})
-    // Open the address that was asked for before signing in, if it is a real page.
-    navigate(landing(currentPath()))
+    // A new account is welcomed; otherwise open the page that was asked for, or home.
+    navigate(isNew ? '/welcome' : landing(currentPath(), asked.current))
+    asked.current = null
   }
 
   // A moved address is swapped for its new one, so Back does not return to it.
@@ -102,9 +107,17 @@ function App() {
   }, [route.redirect])
 
   const hasUser = Boolean(user)
+  const needsAccount = Boolean(route.name) && route.name !== 'not-found' && !route.open
   useEffect(() => {
-    document.title = hasUser && route.title ? `${route.title} · AjiraGuide` : 'AjiraGuide'
-  }, [hasUser, route.title])
+    // Already signed in: the forms have nothing to offer. The address bar is read afresh,
+    // because signing in moves on before this component hears of the new address.
+    if (hasUser && route.open && resolve(currentPath()).open) redirect('/home')
+    else if (!hasUser && needsAccount) asked.current = address
+  }, [hasUser, route.open, needsAccount, address])
+
+  useEffect(() => {
+    document.title = (hasUser || route.open) && route.title ? `${route.title} · AjiraGuide` : 'AjiraGuide'
+  }, [hasUser, route.open, route.title])
 
   if (checking) return <main className="auth"><WakingNotice /><Status loading /></main>
   if (startupError) return <main className="auth"><Status error={startupError} /></main>
@@ -113,14 +126,15 @@ function App() {
       <main className="auth">
         <WakingNotice />
         <ThemeToggle theme={theme} onToggle={toggleTheme} className="auth-theme" />
-        <AuthScreen onSignedIn={signedIn} notice={signedOutNotice} />
+        <AuthScreen mode={route.name === 'signup' ? 'register' : 'login'} onSignedIn={signedIn} notice={signedOutNotice} />
       </main>
     )
   }
 
   const { name, params } = route
   let screen
-  if (route.redirect) screen = <Status loading />
+  if (route.redirect || route.open) screen = <Status loading />
+  else if (name === 'welcome') screen = <WelcomeScreen user={user} />
   else if (name === 'home') screen = <DashboardScreen user={user} />
   else if (name === 'profile') screen = <ProfileScreen onSaved={() => navigate('/matches')} onAccount={setUser} />
   else if (name === 'matches') screen = <RecommendationsScreen />

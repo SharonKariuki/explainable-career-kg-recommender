@@ -14,7 +14,7 @@ test('every page has an address', () => {
   const pages = {
     '/home': 'home', '/matches': 'matches', '/profile': 'profile', '/careers': 'careers', '/careers/15-2051.00': 'career',
     '/careers/15-2051.00/fit': 'career', '/careers/15-2051.00/plan': 'career', '/plan': 'plan', '/history': 'history', '/history/7': 'history',
-    '/settings': 'settings',
+    '/settings': 'settings', '/signin': 'signin', '/signup': 'signup', '/welcome': 'welcome',
   }
   for (const [address, name] of Object.entries(pages)) assert.equal(resolve(address).name, name, address)
 })
@@ -55,6 +55,15 @@ test('signing in opens the address that was asked for, or home', () => {
   assert.equal(landing('/'), '/home')
   assert.equal(landing('/recommendations'), '/matches')
   assert.equal(landing('/nope'), '/home')
+  assert.equal(landing('/signin'), '/home')
+  assert.equal(landing('/signup', '/careers/15-2051.00/plan'), '/careers/15-2051.00/plan')
+  assert.equal(landing('/history', '/careers'), '/history')
+})
+
+test('only the sign-in forms are open to visitors', () => {
+  assert.equal(resolve('/signin').open, true)
+  assert.equal(resolve('/signup').open, true)
+  for (const address of ['/home', '/welcome', '/profile', '/careers/15-2051.00']) assert.equal(resolve(address).open, false, address)
 })
 
 test('a page marks the link it belongs under', () => {

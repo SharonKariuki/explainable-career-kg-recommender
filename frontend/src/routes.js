@@ -3,8 +3,12 @@
 
 const CODE = '([\\w.-]+)'
 
-// pattern groups become params, named in order by `params`.
+// pattern groups become params, named in order by `params`. `open` pages are for visitors
+// who have not signed in; every other page needs an account.
 const ROUTES = [
+  { name: 'signin', pattern: /^\/signin$/, title: 'Sign in', open: true },
+  { name: 'signup', pattern: /^\/signup$/, title: 'Create your account', open: true },
+  { name: 'welcome', pattern: /^\/welcome$/, title: 'Welcome' },
   { name: 'home', pattern: /^\/home$/, title: 'Home' },
   { name: 'matches', pattern: /^\/matches$/, title: 'Matches' },
   { name: 'profile', pattern: /^\/profile$/, title: 'My profile' },
@@ -48,16 +52,17 @@ export function resolve(address) {
     const found = path.match(route.pattern)
     if (!found) continue
     const params = Object.fromEntries((route.params ?? []).map((key, i) => [key, found[i + 1]]))
-    return { name: route.name, params, title: route.title }
+    return { name: route.name, params, title: route.title, open: Boolean(route.open) }
   }
   return { name: 'not-found', params: {}, title: 'Page not found' }
 }
 
-// Where to go after signing in: the address that was asked for if it is a real page, or home.
-export function landing(address) {
+// Where to go after signing in: the address in the bar if it is a page that needs an account,
+// or else the one remembered from before the sign-in form was opened, or home.
+export function landing(address, remembered = null) {
   const route = resolve(address)
   if (route.redirect) return route.redirect
-  return route.name === 'not-found' ? '/home' : address
+  return route.name === 'not-found' || route.open ? remembered ?? '/home' : address
 }
 
 // The link in `links` ([{ path }]) that the address belongs under, or null.
