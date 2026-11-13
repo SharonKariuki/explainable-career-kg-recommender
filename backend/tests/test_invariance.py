@@ -208,3 +208,24 @@ def test_the_approved_baseline_was_generated_from_the_baseline_commit_sources():
     document = inv.read_baseline(inv.BACKEND / 'tests' / 'snapshots')
     assert document['ranking_sources_checked_against_baseline'] is True
     assert document['ranking_sources'] == expected
+
+
+# ---- Drift diagnostics (#173): what the fresh image has installed, and its embedding cache ----
+
+def test_package_inventory_lists_what_differs_from_the_baseline():
+    inventory = inv.package_inventory(['numpy==2.4.6', 'pip==24.0', 'torch==2.14.0+cpu'],
+                                      ['numpy==2.4.6', 'pip==24.0', 'torch==2.15.0+cpu', 'wheel==0.45.1'])
+    assert inventory['only_installed'] == ['wheel==0.45.1']
+    assert inventory['only_baseline'] == []
+    assert inventory['version_differs'] == ['torch: 2.14.0+cpu -> 2.15.0+cpu']
+    assert inventory['installed'] == ['numpy==2.4.6', 'pip==24.0', 'torch==2.15.0+cpu', 'wheel==0.45.1']
+
+
+def test_the_drift_report_carries_the_inventory_and_cache_without_changing_the_status(tmp_path, cli, small_profiles):
+    write(tmp_path, small_profiles, fp={**FP, 'embedding_cache_sha256': 'b' * 64})
+    cli['fp'] = {**FP, 'packages': ['numpy==2.4.6', 'wheel==0.45.1'], 'embedding_cache_sha256': 'c' * 64}
+    assert drift(tmp_path) == 0                     # packages_sha256 is unchanged in FP, so no drift is declared
+    report = json.loads((tmp_path / 'report.json').read_text())
+    assert report['status'] == 'no drift'
+    assert report['inventory']['only_installed'] == ['wheel==0.45.1']
+    assert report['embedding_cache'] == {'baseline_sha256': 'b' * 64, 'installed_sha256': 'c' * 64}

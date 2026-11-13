@@ -106,7 +106,50 @@ The M7 test splits are spent, and examples from them appear in the M7 report. A 
 
 **What can be offered now, clearly as a pilot under supervision:** the ranking with its explanations and the per-skill uncertainty disclosures, with evidence sufficiency hidden. Calling it student-ready requires the open gates above.
 
-## 5. Reproducing
+## 5. Upstream-drift investigation (#173)
+
+The drift run on the merged release branch (43412084468) still failed with "upstream drift (ranking changed)".
+
+**What matched the approved baseline:** the base image digest, the model revision and files, and the embedding probe.
+
+**What differed:** `packages_sha256`, 4 categorical ranking differences, and at least 20 float differences beyond 1e-9. The report caps that list at 20, and the values differ by about 1e-8.
+
+**Correction:** the M8 PR description and issue comment said no ranking score changed. That was wrong: I read a field the report does not have, and the floats do differ.
+
+### How the two jobs build their environments
+
+| | PR gate (`invariance-pr`) | Drift job (`upstream-drift`) |
+|---|---|---|
+| Packages | A fresh virtual environment with exactly the 77 locked packages | The production image: the base image's system Python, plus the lock installed `--no-deps` |
+| Embedding cache (`data/cache`, git-ignored) | Computed at run time, after `pin_threads()`, under the portable arithmetic settings | Baked at image build time by `warm_up()`, before this change with default threads and kernels and without `pin_threads()` |
+| Comparison | Exact | Pass or fail on the fields in `DRIFT_FIELDS` (base image, package hash, model revision, model files, probe), plus the ranking within 1e-9 |
+
+### Each remaining difference
+
+1. **Ranking: 4 categorical differences and 20 or more float differences.**
+   - **Cause: the embedding cache.** The image's cache was computed with different arithmetic from the gate's.
+   - **Evidence:** reproduced on one machine with everything else held fixed.
+     - The cache built the old way differs from the gate's in every one of its 5,025 vectors, by up to 2.6e-7.
+     - Taking the snapshot with each cache in turn gives exactly the drift job's pattern: 4 categorical differences, all near-tied shared names such as "ERP systems" and "Mathematics", with the career order following, plus 20 or more float differences.
+     - The drift job's own differences were "ERP systems" and "Selenium", which is the same class.
+   - **Fix (this branch):** the image now builds the cache under the gate's settings, with `pin_threads()`, for that build step only. Built that way on this machine, the cache is byte-identical to the one the gate path produces (`74872679…`).
+   - **Side effect:** the production image's cached vectors change in their last bits, towards the approved baseline. Ranking logic is unchanged. A few near-tied shared-name readings may resolve to the other owner, as the baseline does.
+   - **Not fixed:** the running server still encodes the student's own skills with default arithmetic. This is the M7 C1 limitation: the gate checks code under a fixed numeric regime.
+2. **Package hash.**
+   - **Evidence:** the build log shows pip installed 74 locked packages and found the other 3 (`packaging==26.3`, `pip==24.0`, `setuptools==79.0.1`) already in the base image at exactly the locked versions. So every locked package is present at its locked version.
+   - **Cause:** the remaining difference must be distributions the base image ships that the lock does not list. This is not yet confirmed, because the report recorded only the hash.
+   - **Change (this branch):** the drift report now records the image's full inventory and compares it with the baseline's (`only_installed`, `only_baseline`, `version_differs`). It also records both embedding-cache hashes. These are diagnostics only: the pass/fail fields and the 1e-9 tolerance are unchanged.
+   - **Next step:** the next drift run will name the extra packages. Whether to remove them from the image or to fingerprint only the locked set is a decision to make once they are known. This branch does neither.
+
+**Status of #173:** open. Its remaining criterion, a drift run with no package drift, needs:
+
+1. this branch merged;
+2. a drift run that shows the inventory;
+3. the package decision above.
+
+Correction to §1 (P0): the byte-identical local snapshots (`b0f2952e…`) all used the same pre-existing cache, which had been built with default arithmetic. With a freshly built portable cache the local snapshot is `0b352247…`. Snapshots are only comparable when they use the same cache.
+
+## 6. Reproducing
 
 All commands run from `backend/`:
 
