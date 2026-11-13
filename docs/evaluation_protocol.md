@@ -418,6 +418,27 @@ The cause is structural. Under `w_min > ln(24)/2`, only rare skills that are cor
 
 Because AC10 fails, the explanation wording for insufficient profiles is off by default (`EXPLAIN_INSUFFICIENT_EVIDENCE`, #161). Revising the rule is a decision for after Phase 1.
 
+### Explanation disclosures (#161)
+
+Given the profile's readings and its evidence, an explanation adds the following, and nothing that would change the ranking:
+
+- **A caution sentence for each flagged contribution:**
+  - a loose match (existing wording);
+  - a close second reading, which names the runner-up;
+  - a name shared by several skills.
+- **The insufficient first sentence (Q6).** It replaces the fit label with the rank and "too little specific information to judge fit", or "points to several different areas", followed by the evidence advice. It is shown only when `EXPLAIN_INSUFFICIENT_EVIDENCE` is on, which it is not by default (see #160). The `fit` field is unchanged.
+- **A near-tie sentence** when `close_call` holds and the career scores within ε of the top career.
+
+**Fidelity rules.** A runner-up name may appear only inside its own caution sentence, and only for a reading flagged `close_runner_up`. `explanation_quality` criterion C4 now covers every flagged contribution. No wording claims job readiness, and a test checks this.
+
+**Run** `c5-explanation-quality`: 186 explanations, with the insufficient wording on, as the strictest case.
+
+| Measure | Result | Target |
+|---|---|---|
+| Fidelity | 100% | 100% |
+| C4 disclosure | 100% (21 applicable) | 100% |
+| Mean Flesch-Kincaid grade | 9.9 (98% at grade 12 or below) | ≤ 12 |
+
 Since #158 the matcher itself reports, for every reading:
 
 - the runner-up (the best-scoring name of a different node);
