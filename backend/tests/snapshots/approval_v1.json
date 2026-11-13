@@ -1,0 +1,19 @@
+{
+  "status": "approved",
+  "approved_by": "Sharon Kariuki",
+  "approved_on": "2026-11-13",
+  "snapshot_sha256": "ee7b9e1ba8fc5480c20cbd4230ceebb8d81a4d87f83b5bcb94d706b0e501d67c",
+  "generated_by": "GitHub Actions run 43370868382 (Ranking invariance (PR), PR #163), artifact provisional-ranking-baseline-0eb91029632485da56f4958f1a7e30c16f8b04ad",
+  "verified": [
+    "content sha256 recomputed from the decompressed snapshot",
+    "16 ranking-source hashes equal baseline commit 739956a37ef3f3a8b2c0032d359979d770bb4d66 (computed in CI and locally)",
+    "model 1110a243fdf4706b3f48f1d95db1a4f5529b4d41: 11 file hashes equal the offline-provisioning verification; model.safetensors equals the published LFS sha256",
+    "base image python:3.11-slim@sha256:b701198cb708b68d9413ca67d6311bd97c9389a2c5fe4da0511fc652642366cd; generated with --network none, one thread, forced CPU kernels",
+    "corpus 951 profiles, sha256 24b0d5091655667da8c0d53f372a3aa73c61856915501e96125786cdf7ad7891, no test set"
+  ],
+  "known_limitations": [
+    "generated_from_commit records the PR merge commit 0eb9102; its tree d6e9209 is identical to branch head 4e2c7cb",
+    "embedding_cache_sha256 is null (computed before the cache is built); not a compared field",
+    "rankings differ from Windows runs (floats up to 1.9e-7; shared-name ties for Git and Selenium resolve differently); comparisons are valid only in this pinned Linux environment"
+  ]
+}
