@@ -71,7 +71,7 @@ Gate figures are from the single test read (`data/results/m7-final-test`). Valid
 | AC12 | E1 to E11, fixture and calibrated thresholds; E9 invariance | — | All pass | **Pass** |
 | AC13 | Explanations | — | Fidelity 100%; C4 disclosure 100%; no fit label when insufficient (when enabled); mean grade 9.9 | **Pass** |
 | AC14 | Annotation reliability | — | Every frozen split meets its condition (student inputs after the re-label) | **Met** (AI annotators) |
-| AC17 | CI coverage and drift | — | The PR gate runs on every recommender, data or image change. The drift job was run manually; see §7 | See §7 |
+| AC17 | CI coverage and drift | — | The PR gate passed on every change. The drift dry run fails as "upstream drift" (after a fix in this PR). The real run reports package drift; see §7 | **Pass** (a and b) |
 | AC18 | Mixed profiles: E10 and E11 | — | Pass in AC12 | **Pass** |
 
 Report-only results on the test split:
@@ -113,7 +113,10 @@ Against the behaviour before Measured Matching, confidently incorrect readings f
 ## 7. CI
 
 - **PR job (AC17a):** `invariance-pr` passed on every M7 PR and on `main` after each merge.
-- **Drift job (AC17b):** run manually on `main` (`upstream-drift`, runs 43400955788 and 43400964745). Its results are recorded in the PR for this report. Until it runs, AC17b is assessed only by its unit tests and the configuration review.
+- **Drift job (AC17b):** the job had never run, being weekly and created during C1. Its first manual run exposed a bug: the baseline path did not resolve inside the image, so the job failed closed with "no approved baseline". This PR mounts the approved baseline read-only. Two runs on this branch followed:
+  - **Dry run** (`simulate_drift=true`, run 43401734308): fails with "upstream drift" as required. **AC17b: Pass.**
+  - **Normal run** (run 43401726905): fails with **"upstream drift (ranking changed)"**. The base image digest and the model revision equal the baseline; only `packages_sha256` differs.
+- **What the drift finding means:** a fresh production build resolves newer Python packages, because `requirements.txt` is not pinned, and rankings move with them. The C1 plan amendment predicted this. The PR gate is unaffected, because it installs from the approved lock file. Pinning production installs to the lock (Q18) is recommended.
 
 ## 8. Limitations
 
@@ -134,7 +137,7 @@ Against the behaviour before Measured Matching, confidently incorrect readings f
 1. **Revise the evidence rule.** For example, base it on requirement-weighted support within one career rather than the IDF floor. Validate it on fresh development data, then a new held-out split.
 2. **Reduce false uncertainty on correct readings.** Revisit the 0.60 similarity threshold, and break shared-name ties deterministically (the C1 decision deferred to after Phase 1). Then re-run δ calibration.
 3. **Human review of the gold labels (Q2)**, and a larger ambiguous-input set if AC6 is still wanted.
-4. **Pin the model revision and base image in production (Q18).**
+4. **Pin production installs (Q18).** Install Python packages from the approved lock file and pin the model revision and base image. The drift job already shows that unpinned packages change rankings.
 
 ## 11. Reproducing
 
