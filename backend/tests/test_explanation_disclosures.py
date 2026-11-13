@@ -126,13 +126,19 @@ def test_no_explanation_claims_job_readiness(engine, skills):
         assert check_fidelity(explain(r, matches, assessment, rank), r, matches).passed
 
 
-def test_the_api_explains_with_the_readings_and_evidence(django_user_model):
+def api_client(username):
     from rest_framework.test import APIClient
     client = APIClient()
-    token = client.post('/api/auth/register/', {'username': 'c5', 'password': 'career-guide-2026'},
+    token = client.post('/api/auth/register/', {'username': username, 'password': 'career-guide-2026'},
                         format='json').data['token']
     client.credentials(HTTP_AUTHORIZATION=f'Token {token}')
     client.put('/api/profile/', {'skills': ['Python', 'SQL']}, format='json')
+    return client
+
+
+def test_the_api_shows_the_insufficient_wording_only_when_enabled(db, settings):
+    settings.EXPLAIN_INSUFFICIENT_EVIDENCE = True
+    client = api_client('c5-on')
     data = client.get('/api/recommendations/?top=3').data
     assert data['insufficient'] is True
     first = data['recommendations'][0]
@@ -140,3 +146,11 @@ def test_the_api_explains_with_the_readings_and_evidence(django_user_model):
     assert first['fit'] in ('strong', 'good', 'possible')                 # the fit field itself is unchanged
     detail = client.get(f"/api/recommendations/{first['career_code']}/").data
     assert detail['explanation'][0] == first['summary']
+
+
+def test_by_default_the_api_reports_evidence_but_keeps_the_fit_wording(db):
+    client = api_client('c5-off')
+    data = client.get('/api/recommendations/?top=3').data
+    assert data['insufficient'] is True and data['evidence']['reasons']    # still reported
+    first = data['recommendations'][0]
+    assert ' match for your skills (score ' in first['summary'] and 'too little' not in first['summary']

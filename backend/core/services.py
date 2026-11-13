@@ -61,9 +61,13 @@ def match_summary(match):
 
 def explain(recommendation, rank_position, matches=(), assessment=None, ranked=()):
     """The explanation the API shows: with the readings, evidence and near-tie disclosures (#161)."""
+    from django.conf import settings
+
     from recommender.explanation_quality import near_tie_with_top
     near_tie = bool(assessment and ranked and near_tie_with_top(assessment, ranked, recommendation))
-    return ExplanationGenerator().explain(recommendation, matches, assessment, rank_position, near_tie)
+    # The insufficient-evidence wording is shown only when enabled (see settings.EXPLAIN_INSUFFICIENT_EVIDENCE).
+    shown = assessment if settings.EXPLAIN_INSUFFICIENT_EVIDENCE else None
+    return ExplanationGenerator().explain(recommendation, matches, shown, rank_position, near_tie)
 
 
 def recommendation_summary(recommendation, rank_position, matches=(), assessment=None, ranked=()):
