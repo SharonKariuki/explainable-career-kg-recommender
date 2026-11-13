@@ -92,6 +92,8 @@ function App() {
   function signedIn(account) {
     setSignedOutNotice(null)
     setUser(account)
+    // Signing in returns only the username; fetch the rest (the name) for the greeting.
+    me().then(setUser).catch(() => {})
     // Open the address that was asked for before signing in, if it is a real page.
     navigate(landing(currentPath()))
   }
@@ -130,7 +132,7 @@ function App() {
   else if (name === 'saved') screen = <SavedScreen />
   else if (name === 'history') screen = <HistoryScreen key={params.runId ?? 'all'} runId={params.runId} />
   else if (name === 'settings') {
-    screen = <SettingsScreen theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
+    screen = <SettingsScreen onAccount={setUser} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
   }
   else screen = <NotFoundScreen />
 

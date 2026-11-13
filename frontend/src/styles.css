@@ -1161,6 +1161,7 @@ select.field { appearance: auto; }
 .dash > :nth-child(2) { animation-delay: 0.06s; }
 .dash > :nth-child(3) { animation-delay: 0.12s; }
 .dash > :nth-child(4) { animation-delay: 0.18s; }
+.dash > :nth-child(n + 5) { animation-delay: 0.24s; }
 @keyframes tile-in { from { opacity: 0; transform: translateY(14px); } }
 
 /* Frosted tiles for reading; the top match is clearer glass that takes on the wash behind it. */
@@ -1275,7 +1276,7 @@ a.tile-row:hover { transform: translateY(-2px); box-shadow: var(--row-lift); }
   .dash { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .t-match { grid-column: span 4; }
   .t-next { grid-column: span 2; }
-  .t-more, .t-skills { grid-column: span 3; }
+  .t-more, .t-skills, .t-plan, .t-saved { grid-column: span 3; }
   .match-title { font-size: 32px; }
 }
 

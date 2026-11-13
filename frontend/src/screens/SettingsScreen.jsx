@@ -14,7 +14,7 @@ function Message({ result }) {
   )
 }
 
-export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDeleted }) {
+export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDeleted, onAccount }) {
   const [account, setAccount] = useState(null)
   const [error, setError] = useState(null)
 
@@ -36,7 +36,8 @@ export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDele
     <>
     {header}
     <div className="narrow-page">
-      <AccountPanel account={account} onChange={setAccount} />
+      {/* The app keeps the account too, so a changed name shows in the greeting at once. */}
+      <AccountPanel account={account} onChange={(next) => { setAccount(next); onAccount?.(next) }} />
       <PasswordPanel hasPassword={account.has_password} onChanged={() => setAccount({ ...account, has_password: true })} />
 
       <section className="card panel">

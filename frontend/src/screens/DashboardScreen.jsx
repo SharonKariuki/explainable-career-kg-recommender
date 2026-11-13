@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import { getRecommendations } from '../api.js'
-import { EmptyState, Pill, ScoreBar, SkillChip, Status } from '../components.jsx'
-import { capitalise, fitLabel } from '../format.js'
+import { getProgress, getRecommendations, getSaved } from '../api.js'
+import { EmptyState, Pill, Progress, ScoreBar, SkillChip, Status } from '../components.jsx'
+import { capitalise, displayName, fitLabel, planCounts } from '../format.js'
 import { Icon } from '../icons.jsx'
 
 // The skills screen advises three or more skills for better results.
@@ -11,6 +11,8 @@ const ADVISED_SKILLS = 3
 const CAREERS = 4
 const LIST_ROWS = 4
 const TOP_SKILLS = 5
+const SAVED_ROWS = 3
+const PLAN_CHIPS = 6
 
 function greeting(hour) {
   if (hour < 12) return 'Good morning'
@@ -55,13 +57,79 @@ function nextStep(skillCount, unsure, top) {
   return {
     title: `See what to learn for ${top.title}.`,
     text: 'Your top match, with the skills it needs that you have not listed.',
-    action: { href: `#/plan/${top.career_code}`, label: 'Open roadmap' },
+    action: { href: `#/plan/${top.career_code}`, label: 'Open plan' },
   }
 }
 
 // The amber disc that marks a main action, as on the landing site's primary button.
 function ArrowDisc() {
   return <span className="arrow-disc" aria-hidden="true"><Icon name="forward" size={13} /></span>
+}
+
+// Skills marked on any career's plan: how many are under way and how many are finished.
+export function PlanTile({ progress }) {
+  const { learning, done } = planCounts(progress)
+  return (
+    <section className="tile t-plan" aria-labelledby="plan-label">
+      <div className="tile-head spread">
+        <div>
+          <h2 id="plan-label">My plan</h2>
+          <p className="sub num">
+            {progress.length ? `${learning} learning · ${done} done` : 'Skills you are building towards a career'}
+          </p>
+        </div>
+        <a className="tile-tag" href="#/plan">Open plan</a>
+      </div>
+      {progress.length ? (
+        <>
+          <Progress value={done / progress.length} tone="amber" label={`${done} of ${plural(progress.length, 'skill')} in your plan done`} />
+          <ul className="chips">
+            {progress.slice(0, PLAN_CHIPS).map((p) => (
+              <li key={p.skill_id} className="chip tag">
+                {p.status === 'done' && <Icon name="check" size={13} />}
+                {p.label}
+                <span className="visually-hidden">{p.status === 'done' ? ' (done)' : ' (learning)'}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <p className="muted small">Mark a skill as learning or done on a career's plan and it will show here.</p>
+      )}
+    </section>
+  )
+}
+
+// The careers saved most recently, each with the user's match where there is one.
+export function SavedTile({ saved }) {
+  return (
+    <section className="tile t-saved" aria-labelledby="saved-label">
+      <div className="tile-head spread">
+        <div>
+          <h2 id="saved-label">Saved careers</h2>
+          <p className="sub num">{saved.length ? `${plural(saved.length, 'career')} saved` : 'Careers you want to come back to'}</p>
+        </div>
+        <a className="tile-tag" href="#/saved">See all</a>
+      </div>
+      {saved.length ? (
+        <ul className="tile-list">
+          {saved.slice(0, SAVED_ROWS).map((c) => (
+            <li key={c.career_code}>
+              <a className="tile-row" href={`#/careers/${c.career_code}`}>
+                <span className="av"><Icon name="bookmark" size={16} /></span>
+                <span className="row-main">
+                  <b>{c.title}</b>
+                  <span className="sub">{c.match ? `Your match #${c.match.rank}` : 'Not linked to your skills yet'}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="muted small">Nothing saved yet. <a href="#/careers">Browse careers</a> and save the ones you like.</p>
+      )}
+    </section>
+  )
 }
 
 export default function DashboardScreen({ user }) {
@@ -71,8 +139,8 @@ export default function DashboardScreen({ user }) {
 
   useEffect(() => {
     let current = true
-    getRecommendations(CAREERS)
-      .then((result) => current && setData(result))
+    Promise.all([getRecommendations(CAREERS), getSaved(), getProgress()])
+      .then(([result, saved, progress]) => current && setData({ ...result, saved: saved.careers, progress: progress.skills }))
       .catch((err) => current && setError(err.message))
     return () => {
       current = false
@@ -84,7 +152,7 @@ export default function DashboardScreen({ user }) {
   const band = (
     <header className="dash-band">
       <div className="grow">
-        <h1>{hello}, <span className="amber-text">{user.username}</span>.</h1>
+        <h1>{hello}, <span className="amber-text">{displayName(user)}</span>.</h1>
         <p>
           {ready
             ? 'The career that fits your skills best, what else fits, and what to do next.'
@@ -174,7 +242,7 @@ export default function DashboardScreen({ user }) {
           <div className="tile-head spread">
             <div>
               <h2 id="more-label">What else fits</h2>
-              <p className="sub">Your next matches; scores run from 0 to 1</p>
+              <p className="sub">Your next matches, by how well they fit</p>
             </div>
             <a className="tile-tag" href="#/matches">See all</a>
           </div>
@@ -189,7 +257,7 @@ export default function DashboardScreen({ user }) {
                       <span className="sub">{capitalise(r.domain)}</span>
                     </span>
                     <ScoreBar score={r.score} />
-                    <strong className="num">{r.score.toFixed(2)}</strong>
+                    <Pill tone={r.fit === 'strong' ? 'match' : 'neutral'}>{fitLabel(r.fit)}</Pill>
                   </a>
                 </li>
               ))}
@@ -224,6 +292,9 @@ export default function DashboardScreen({ user }) {
             ))}
           </ul>
         </section>
+
+        <PlanTile progress={data.progress} />
+        <SavedTile saved={data.saved} />
       </div>
     </div>
   )

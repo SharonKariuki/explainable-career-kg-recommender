@@ -46,3 +46,14 @@ export function movement(rank, previousRank) {
   const moved = previousRank - rank
   return moved > 0 ? { label: `Up ${moved}`, tone: 'ok' } : { label: `Down ${-moved}`, tone: 'warn' }
 }
+
+// What to call the user: their first name when they gave one, or their username.
+export function displayName(user) {
+  return (user.name ?? '').trim().split(/\s+/)[0] || user.username
+}
+
+// Roadmap progress ([{ status }]) counted by status; skills still to do are not stored.
+export function planCounts(progress) {
+  const done = progress.filter((p) => p.status === 'done').length
+  return { learning: progress.length - done, done }
+}
