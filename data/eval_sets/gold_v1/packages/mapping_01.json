@@ -1,0 +1,1162 @@
+[
+ {
+  "id": "m-0001",
+  "input": "SSL"
+ },
+ {
+  "id": "m-0002",
+  "input": "oil pipeline welding"
+ },
+ {
+  "id": "m-0003",
+  "input": "MLOps"
+ },
+ {
+  "id": "m-0004",
+  "input": "authentication"
+ },
+ {
+  "id": "m-0005",
+  "input": "adding interactivity to web pages with scripts"
+ },
+ {
+  "id": "m-0006",
+  "input": "daraja api"
+ },
+ {
+  "id": "m-0007",
+  "input": "WordPress"
+ },
+ {
+  "id": "m-0008",
+  "input": "PRINCE2",
+  "shared_name_owners": [
+   {
+    "id": "esco:7106b5df-e017-4c28-8c40-98814db5b775",
+    "label": "Prince2 project management"
+   },
+   {
+    "id": "esco:bec4359e-cb92-468f-a997-8fb28e32fba9",
+    "label": "ICT project management methodologies"
+   }
+  ]
+ },
+ {
+  "id": "m-0009",
+  "input": "Vyper"
+ },
+ {
+  "id": "m-0010",
+  "input": "beadwork and crafts"
+ },
+ {
+  "id": "m-0011",
+  "input": "handling a hacked system and containing the damage"
+ },
+ {
+  "id": "m-0012",
+  "input": "internet"
+ },
+ {
+  "id": "m-0013",
+  "input": "iterative development with daily standups"
+ },
+ {
+  "id": "m-0014",
+  "input": "Microsoft Power BI"
+ },
+ {
+  "id": "m-0015",
+  "input": "Dean's list"
+ },
+ {
+  "id": "m-0016",
+  "input": "Vagrant"
+ },
+ {
+  "id": "m-0017",
+  "input": "writing smart contracts"
+ },
+ {
+  "id": "m-0018",
+  "input": "MSSQL"
+ },
+ {
+  "id": "m-0019",
+  "input": "safety"
+ },
+ {
+  "id": "m-0020",
+  "input": "developing software"
+ },
+ {
+  "id": "m-0021",
+  "input": "VPC"
+ },
+ {
+  "id": "m-0022",
+  "input": "DBeaver"
+ },
+ {
+  "id": "m-0023",
+  "input": "VirtualBox"
+ },
+ {
+  "id": "m-0024",
+  "input": "Time management"
+ },
+ {
+  "id": "m-0025",
+  "input": "CAPM"
+ },
+ {
+  "id": "m-0026",
+  "input": "ERP"
+ },
+ {
+  "id": "m-0027",
+  "input": "project management"
+ },
+ {
+  "id": "m-0028",
+  "input": "fixing peoples laptops"
+ },
+ {
+  "id": "m-0029",
+  "input": "quality"
+ },
+ {
+  "id": "m-0030",
+  "input": "composing songs"
+ },
+ {
+  "id": "m-0031",
+  "input": "topology"
+ },
+ {
+  "id": "m-0032",
+  "input": "php websites"
+ },
+ {
+  "id": "m-0033",
+  "input": "SOC"
+ },
+ {
+  "id": "m-0034",
+  "input": "gRPC"
+ },
+ {
+  "id": "m-0035",
+  "input": "VoIP"
+ },
+ {
+  "id": "m-0036",
+  "input": "ethical hacker in training"
+ },
+ {
+  "id": "m-0037",
+  "input": "data lakes on S3"
+ },
+ {
+  "id": "m-0038",
+  "input": "supporting people"
+ },
+ {
+  "id": "m-0039",
+  "input": "chain link fence installation"
+ },
+ {
+  "id": "m-0040",
+  "input": "restoring data after a failure"
+ },
+ {
+  "id": "m-0041",
+  "input": "using ChatGPT"
+ },
+ {
+  "id": "m-0042",
+  "input": "putting a computer together from parts"
+ },
+ {
+  "id": "m-0043",
+  "input": "processing huge datasets on clusters of machines"
+ },
+ {
+  "id": "m-0044",
+  "input": "diagnosing why links and connections fail"
+ },
+ {
+  "id": "m-0045",
+  "input": "cold wallet storage"
+ },
+ {
+  "id": "m-0046",
+  "input": "bots"
+ },
+ {
+  "id": "m-0047",
+  "input": "TikTok"
+ },
+ {
+  "id": "m-0048",
+  "input": "Cyber security"
+ },
+ {
+  "id": "m-0049",
+  "input": "keeping history of source files and branches"
+ },
+ {
+  "id": "m-0050",
+  "input": "antivirus installs"
+ },
+ {
+  "id": "m-0051",
+  "input": "Python"
+ },
+ {
+  "id": "m-0052",
+  "input": "ServiceNow"
+ },
+ {
+  "id": "m-0053",
+  "input": "Bachelor of IT, 3rd year"
+ },
+ {
+  "id": "m-0054",
+  "input": "WAN"
+ },
+ {
+  "id": "m-0055",
+  "input": "webapps stuff"
+ },
+ {
+  "id": "m-0056",
+  "input": "process"
+ },
+ {
+  "id": "m-0057",
+  "input": "describing infrastructure in config files"
+ },
+ {
+  "id": "m-0058",
+  "input": "honesty"
+ },
+ {
+  "id": "m-0059",
+  "input": "nosql stuff"
+ },
+ {
+  "id": "m-0060",
+  "input": "CCNP Enterprise"
+ },
+ {
+  "id": "m-0061",
+  "input": "transactions"
+ },
+ {
+  "id": "m-0062",
+  "input": "Ansible"
+ },
+ {
+  "id": "m-0063",
+  "input": "getting computers to understand human language"
+ },
+ {
+  "id": "m-0064",
+  "input": "I can set up wifi for a small office"
+ },
+ {
+  "id": "m-0065",
+  "input": "KCPE 380 marks"
+ },
+ {
+  "id": "m-0066",
+  "input": "police clearance"
+ },
+ {
+  "id": "m-0067",
+  "input": "working well with a team on a group project"
+ },
+ {
+  "id": "m-0068",
+  "input": "RNN"
+ },
+ {
+  "id": "m-0069",
+  "input": "user support"
+ },
+ {
+  "id": "m-0070",
+  "input": "databases"
+ },
+ {
+  "id": "m-0071",
+  "input": "sketching app screens and user flows before coding"
+ },
+ {
+  "id": "m-0072",
+  "input": "attending networking events with alumni"
+ },
+ {
+  "id": "m-0073",
+  "input": "sql queries"
+ },
+ {
+  "id": "m-0074",
+  "input": "C Sharp"
+ },
+ {
+  "id": "m-0075",
+  "input": "OpenVAS"
+ },
+ {
+  "id": "m-0076",
+  "input": "checking that software works before release"
+ },
+ {
+  "id": "m-0077",
+  "input": "Christian Union member"
+ },
+ {
+  "id": "m-0078",
+  "input": "T-SQL"
+ },
+ {
+  "id": "m-0079",
+  "input": "Git",
+  "shared_name_owners": [
+   {
+    "id": "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+    "label": "tools for software configuration management"
+   },
+   {
+    "id": "tool:Git",
+    "label": "Git"
+   }
+  ]
+ },
+ {
+  "id": "m-0080",
+  "input": "Amazon cloud platform"
+ },
+ {
+  "id": "m-0081",
+  "input": "good wifi at home"
+ },
+ {
+  "id": "m-0082",
+  "input": "backup"
+ },
+ {
+  "id": "m-0083",
+  "input": "protecting systems"
+ },
+ {
+  "id": "m-0084",
+  "input": "firewalls"
+ },
+ {
+  "id": "m-0085",
+  "input": "Kotlin"
+ },
+ {
+  "id": "m-0086",
+  "input": "backing up data"
+ },
+ {
+  "id": "m-0087",
+  "input": "threats"
+ },
+ {
+  "id": "m-0088",
+  "input": "building websites with a Python framework"
+ },
+ {
+  "id": "m-0089",
+  "input": "working in a team"
+ },
+ {
+  "id": "m-0090",
+  "input": "love cooking"
+ },
+ {
+  "id": "m-0091",
+  "input": "replacing ram and hard disks"
+ },
+ {
+  "id": "m-0092",
+  "input": "spotting scam emails"
+ },
+ {
+  "id": "m-0093",
+  "input": "chemistry lab flask handling"
+ },
+ {
+  "id": "m-0094",
+  "input": "DBMS",
+  "shared_name_owners": [
+   {
+    "id": "tool:Database management systems",
+    "label": "Database management systems"
+   },
+   {
+    "id": "tool:Relational database management system software",
+    "label": "Relational database management system software"
+   }
+  ]
+ },
+ {
+  "id": "m-0095",
+  "input": "fixing bugs in code"
+ },
+ {
+  "id": "m-0096",
+  "input": "tools"
+ },
+ {
+  "id": "m-0097",
+  "input": "blockchain"
+ },
+ {
+  "id": "m-0098",
+  "input": "electronics"
+ },
+ {
+  "id": "m-0099",
+  "input": "JSON"
+ },
+ {
+  "id": "m-0100",
+  "input": "HTML"
+ },
+ {
+  "id": "m-0101",
+  "input": "I.T skills"
+ },
+ {
+  "id": "m-0102",
+  "input": "talking to clients"
+ },
+ {
+  "id": "m-0103",
+  "input": "RPA"
+ },
+ {
+  "id": "m-0104",
+  "input": "Azure"
+ },
+ {
+  "id": "m-0105",
+  "input": "love reading story books"
+ },
+ {
+  "id": "m-0106",
+  "input": "braiding hair"
+ },
+ {
+  "id": "m-0107",
+  "input": "self-executing agreements stored on a blockchain"
+ },
+ {
+  "id": "m-0108",
+  "input": "leather wallet making"
+ },
+ {
+  "id": "m-0109",
+  "input": "connecting branch offices securely over the internet"
+ },
+ {
+  "id": "m-0110",
+  "input": "UML"
+ },
+ {
+  "id": "m-0111",
+  "input": "dancing"
+ },
+ {
+  "id": "m-0112",
+  "input": "UX"
+ },
+ {
+  "id": "m-0113",
+  "input": "running several virtual machines on one physical host"
+ },
+ {
+  "id": "m-0114",
+  "input": "solving problems"
+ },
+ {
+  "id": "m-0115",
+  "input": "Solidity"
+ },
+ {
+  "id": "m-0116",
+  "input": "Metabase dashboards"
+ },
+ {
+  "id": "m-0117",
+  "input": "honest and trustworthy"
+ },
+ {
+  "id": "m-0118",
+  "input": "designing classes and inheritance"
+ },
+ {
+  "id": "m-0119",
+  "input": "fixing printers"
+ },
+ {
+  "id": "m-0120",
+  "input": "object oriented"
+ },
+ {
+  "id": "m-0121",
+  "input": "BI"
+ },
+ {
+  "id": "m-0122",
+  "input": "Smart contract"
+ },
+ {
+  "id": "m-0123",
+  "input": "judging how likely and how bad security threats are"
+ },
+ {
+  "id": "m-0124",
+  "input": "ITIL foundation"
+ },
+ {
+  "id": "m-0125",
+  "input": "OS"
+ },
+ {
+  "id": "m-0126",
+  "input": "organising functions and weddings"
+ },
+ {
+  "id": "m-0127",
+  "input": "finding why the internet is down"
+ },
+ {
+  "id": "m-0128",
+  "input": "reading novels"
+ },
+ {
+  "id": "m-0129",
+  "input": "configuring routers"
+ },
+ {
+  "id": "m-0130",
+  "input": "intelligent automation"
+ },
+ {
+  "id": "m-0131",
+  "input": "VMware"
+ },
+ {
+  "id": "m-0132",
+  "input": "research skills"
+ },
+ {
+  "id": "m-0133",
+  "input": "Shopify store setup"
+ },
+ {
+  "id": "m-0134",
+  "input": "backups"
+ },
+ {
+  "id": "m-0135",
+  "input": "DBA"
+ },
+ {
+  "id": "m-0136",
+  "input": "programming"
+ },
+ {
+  "id": "m-0137",
+  "input": "fibre splicing"
+ },
+ {
+  "id": "m-0138",
+  "input": "SPA"
+ },
+ {
+  "id": "m-0139",
+  "input": "CEH"
+ },
+ {
+  "id": "m-0140",
+  "input": "vitejs bundler"
+ },
+ {
+  "id": "m-0141",
+  "input": "Trojan war history"
+ },
+ {
+  "id": "m-0142",
+  "input": "making database lookups faster"
+ },
+ {
+  "id": "m-0143",
+  "input": "cloud stuff"
+ },
+ {
+  "id": "m-0144",
+  "input": "helping users with computer problems over the phone"
+ },
+ {
+  "id": "m-0145",
+  "input": "fitting windows and doors"
+ },
+ {
+  "id": "m-0146",
+  "input": "blockchain things"
+ },
+ {
+  "id": "m-0147",
+  "input": "reinforcement learning"
+ },
+ {
+  "id": "m-0148",
+  "input": "checking servers for unpatched flaws"
+ },
+ {
+  "id": "m-0149",
+  "input": "GAN"
+ },
+ {
+  "id": "m-0150",
+  "input": "tech savvy"
+ },
+ {
+  "id": "m-0151",
+  "input": "tracking code changes over time"
+ },
+ {
+  "id": "m-0152",
+  "input": "building a site on a content management platform"
+ },
+ {
+  "id": "m-0153",
+  "input": "user access"
+ },
+ {
+  "id": "m-0154",
+  "input": "checking pages look the same in Chrome and Firefox"
+ },
+ {
+  "id": "m-0155",
+  "input": "DAX"
+ },
+ {
+  "id": "m-0156",
+  "input": "pipelines that build test and deploy code"
+ },
+ {
+  "id": "m-0157",
+  "input": "God-fearing"
+ },
+ {
+  "id": "m-0158",
+  "input": "measuring how well a network is performing"
+ },
+ {
+  "id": "m-0159",
+  "input": "Google Analytics"
+ },
+ {
+  "id": "m-0160",
+  "input": "GDPR"
+ },
+ {
+  "id": "m-0161",
+  "input": "analysis skills"
+ },
+ {
+  "id": "m-0162",
+  "input": "window installation"
+ },
+ {
+  "id": "m-0163",
+  "input": "Microsoft Sentinel"
+ },
+ {
+  "id": "m-0164",
+  "input": "zero trust"
+ },
+ {
+  "id": "m-0165",
+  "input": "STRIDE threat model"
+ },
+ {
+  "id": "m-0166",
+  "input": "link to my GitHub"
+ },
+ {
+  "id": "m-0167",
+  "input": "analysis"
+ },
+ {
+  "id": "m-0168",
+  "input": "organising tasks and deadlines for a project"
+ },
+ {
+  "id": "m-0169",
+  "input": "Flutterwave integration"
+ },
+ {
+  "id": "m-0170",
+  "input": "port clearing agent Mombasa"
+ },
+ {
+  "id": "m-0171",
+  "input": "CompTIA A+"
+ },
+ {
+  "id": "m-0172",
+  "input": "UPS and power backup setup"
+ },
+ {
+  "id": "m-0173",
+  "input": "making apps easy to use"
+ },
+ {
+  "id": "m-0174",
+  "input": "zero trust architecture"
+ },
+ {
+  "id": "m-0175",
+  "input": "keeping peoples data safe"
+ },
+ {
+  "id": "m-0176",
+  "input": "using ciphers to protect data"
+ },
+ {
+  "id": "m-0177",
+  "input": "virology"
+ },
+ {
+  "id": "m-0178",
+  "input": "managing clusters of many containers"
+ },
+ {
+  "id": "m-0179",
+  "input": "play football for the school team"
+ },
+ {
+  "id": "m-0180",
+  "input": "setting up vpn"
+ },
+ {
+  "id": "m-0181",
+  "input": "Group Policy"
+ },
+ {
+  "id": "m-0182",
+  "input": "Critical thinking"
+ },
+ {
+  "id": "m-0183",
+  "input": "diplomatic protocol and etiquette"
+ },
+ {
+  "id": "m-0184",
+  "input": "BSc Computer Science Strathmore"
+ },
+ {
+  "id": "m-0185",
+  "input": "PKI"
+ },
+ {
+  "id": "m-0186",
+  "input": "NAT"
+ },
+ {
+  "id": "m-0187",
+  "input": "growth hacking"
+ },
+ {
+  "id": "m-0188",
+  "input": "born in Kisumu"
+ },
+ {
+  "id": "m-0189",
+  "input": "Traceroute"
+ },
+ {
+  "id": "m-0190",
+  "input": "working with grids of cells and formulas"
+ },
+ {
+  "id": "m-0191",
+  "input": "watching logs for suspicious activity"
+ },
+ {
+  "id": "m-0192",
+  "input": "restoring lost files"
+ },
+ {
+  "id": "m-0193",
+  "input": "anime fan"
+ },
+ {
+  "id": "m-0194",
+  "input": "API"
+ },
+ {
+  "id": "m-0195",
+  "input": "testing apps for bugs"
+ },
+ {
+  "id": "m-0196",
+  "input": "GitHub Copilot"
+ },
+ {
+  "id": "m-0197",
+  "input": "securing an API with tokens and login"
+ },
+ {
+  "id": "m-0198",
+  "input": "dock worker loading containers"
+ },
+ {
+  "id": "m-0199",
+  "input": "Bash",
+  "shared_name_owners": [
+   {
+    "id": "onet:2.B.3.e",
+    "label": "Programming"
+   },
+   {
+    "id": "tool:Bash",
+    "label": "Bash"
+   }
+  ]
+ },
+ {
+  "id": "m-0200",
+  "input": "analytics"
+ },
+ {
+  "id": "m-0201",
+  "input": "Keras"
+ },
+ {
+  "id": "m-0202",
+  "input": "spring cleaning services"
+ },
+ {
+  "id": "m-0203",
+  "input": "OpenCV"
+ },
+ {
+  "id": "m-0204",
+  "input": "Asana task boards"
+ },
+ {
+  "id": "m-0205",
+  "input": "angular or vue frameworks"
+ },
+ {
+  "id": "m-0206",
+  "input": "multimedia"
+ },
+ {
+  "id": "m-0207",
+  "input": "writing programs that talk over network sockets"
+ },
+ {
+  "id": "m-0208",
+  "input": "SQL Server"
+ },
+ {
+  "id": "m-0209",
+  "input": "building REST APIs"
+ },
+ {
+  "id": "m-0210",
+  "input": "Next.js"
+ },
+ {
+  "id": "m-0211",
+  "input": "agile and scrum"
+ },
+ {
+  "id": "m-0212",
+  "input": "troubleshooting"
+ },
+ {
+  "id": "m-0213",
+  "input": "patch panel termination"
+ },
+ {
+  "id": "m-0214",
+  "input": "DHCP"
+ },
+ {
+  "id": "m-0215",
+  "input": "working with databases"
+ },
+ {
+  "id": "m-0216",
+  "input": "Zabbix"
+ },
+ {
+  "id": "m-0217",
+  "input": "C#"
+ },
+ {
+  "id": "m-0218",
+  "input": "making copies of files in case of loss"
+ },
+ {
+  "id": "m-0219",
+  "input": "Wi-Fi"
+ },
+ {
+  "id": "m-0220",
+  "input": "help desk support"
+ },
+ {
+  "id": "m-0221",
+  "input": "data lake"
+ },
+ {
+  "id": "m-0222",
+  "input": "getting rid of viruses"
+ },
+ {
+  "id": "m-0223",
+  "input": "fiber optic cable splicing"
+ },
+ {
+  "id": "m-0224",
+  "input": "managing logins and passwords"
+ },
+ {
+  "id": "m-0225",
+  "input": "FTK"
+ },
+ {
+  "id": "m-0226",
+  "input": "smart contracts"
+ },
+ {
+  "id": "m-0227",
+  "input": "Mr Robot fan"
+ },
+ {
+  "id": "m-0228",
+  "input": "spaCy"
+ },
+ {
+  "id": "m-0229",
+  "input": "ODK data collection"
+ },
+ {
+  "id": "m-0230",
+  "input": "factory machine operator"
+ },
+ {
+  "id": "m-0231",
+  "input": "deploying apps"
+ },
+ {
+  "id": "m-0232",
+  "input": "WBS"
+ },
+ {
+  "id": "m-0233",
+  "input": "gold mining"
+ },
+ {
+  "id": "m-0234",
+  "input": "valid class B driving license"
+ },
+ {
+  "id": "m-0235",
+  "input": "python programming"
+ },
+ {
+  "id": "m-0236",
+  "input": "KoboToolbox"
+ },
+ {
+  "id": "m-0237",
+  "input": "GIS"
+ },
+ {
+  "id": "m-0238",
+  "input": "Excel"
+ },
+ {
+  "id": "m-0239",
+  "input": "tensorflow models"
+ },
+ {
+  "id": "m-0240",
+  "input": "software testing"
+ },
+ {
+  "id": "m-0241",
+  "input": "keeping accounts safe with strong passwords"
+ },
+ {
+  "id": "m-0242",
+  "input": "managing networks"
+ },
+ {
+  "id": "m-0243",
+  "input": "validation"
+ },
+ {
+  "id": "m-0244",
+  "input": "locksmith"
+ },
+ {
+  "id": "m-0245",
+  "input": "funnel analysis"
+ },
+ {
+  "id": "m-0246",
+  "input": "helping people who forgot their passwords"
+ },
+ {
+  "id": "m-0247",
+  "input": "fishing at Lake Victoria"
+ },
+ {
+  "id": "m-0248",
+  "input": "tables and chairs hire"
+ },
+ {
+  "id": "m-0249",
+  "input": "cloud computing"
+ },
+ {
+  "id": "m-0250",
+  "input": "spotting patterns in sales figures over time"
+ },
+ {
+  "id": "m-0251",
+  "input": "Figma"
+ },
+ {
+  "id": "m-0252",
+  "input": "backend development"
+ },
+ {
+  "id": "m-0253",
+  "input": "CI/CD"
+ },
+ {
+  "id": "m-0254",
+  "input": "baking cookies"
+ },
+ {
+  "id": "m-0255",
+  "input": "WLANs"
+ },
+ {
+  "id": "m-0256",
+  "input": "storekeeper in a warehouse"
+ },
+ {
+  "id": "m-0257",
+  "input": "building single-page apps from components"
+ },
+ {
+  "id": "m-0258",
+  "input": "Linux"
+ },
+ {
+  "id": "m-0259",
+  "input": "statistical analysis of survey results"
+ },
+ {
+  "id": "m-0260",
+  "input": "basketball"
+ },
+ {
+  "id": "m-0261",
+  "input": "getting reports out of the database"
+ },
+ {
+  "id": "m-0262",
+  "input": "designing databases"
+ },
+ {
+  "id": "m-0263",
+  "input": "CNNs"
+ },
+ {
+  "id": "m-0264",
+  "input": "data handling"
+ },
+ {
+  "id": "m-0265",
+  "input": "OOP"
+ },
+ {
+  "id": "m-0266",
+  "input": "cohort analysis"
+ },
+ {
+  "id": "m-0267",
+  "input": "moving data between systems into a warehouse"
+ },
+ {
+  "id": "m-0268",
+  "input": "software"
+ },
+ {
+  "id": "m-0269",
+  "input": "cloud security"
+ },
+ {
+  "id": "m-0270",
+  "input": "motorbike rider"
+ },
+ {
+  "id": "m-0271",
+  "input": "bug tracking"
+ },
+ {
+  "id": "m-0272",
+  "input": "network admin"
+ },
+ {
+  "id": "m-0273",
+  "input": "EIGRP"
+ },
+ {
+  "id": "m-0274",
+  "input": "teaching computers to learn from examples"
+ },
+ {
+  "id": "m-0275",
+  "input": "Machine learning"
+ },
+ {
+  "id": "m-0276",
+  "input": "Stripe payments"
+ },
+ {
+  "id": "m-0277",
+  "input": "APIs"
+ },
+ {
+  "id": "m-0278",
+  "input": "software setup"
+ },
+ {
+  "id": "m-0279",
+  "input": "distributed ledger technology"
+ },
+ {
+  "id": "m-0280",
+  "input": "react apps"
+ }
+]

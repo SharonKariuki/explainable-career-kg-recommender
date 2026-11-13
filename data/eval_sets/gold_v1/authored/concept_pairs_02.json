@@ -1,0 +1,902 @@
+[
+ {
+  "pair": "cp-101",
+  "a": "tool:Google Docs",
+  "b": "tool:Snort",
+  "a_label": "Google Docs",
+  "b_label": "Snort",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-102",
+  "a": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "b": "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+  "a_label": "data analytics",
+  "b_label": "perform data analysis",
+  "intended": "same_capability",
+  "author_note": "paraphrase"
+ },
+ {
+  "pair": "cp-103",
+  "a": "esco:1605025e-a179-421f-8f35-5b07d182a6b2",
+  "b": "tool:Google Analytics",
+  "a_label": "web analytics",
+  "b_label": "Google Analytics",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-104",
+  "a": "tool:Microsoft Excel",
+  "b": "tool:Git",
+  "a_label": "Microsoft Excel",
+  "b_label": "Git",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-105",
+  "a": "tool:Database management systems",
+  "b": "tool:Relational database management system software",
+  "a_label": "Database management systems",
+  "b_label": "Relational database management system software",
+  "intended": "same_capability",
+  "author_note": "shared name dbms"
+ },
+ {
+  "pair": "cp-106",
+  "a": "tool:pandas",
+  "b": "tool:NumPy",
+  "a_label": "pandas",
+  "b_label": "NumPy",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-107",
+  "a": "tool:JavaScript",
+  "b": "tool:Cisco Webex",
+  "a_label": "JavaScript",
+  "b_label": "Cisco Webex",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-108",
+  "a": "onet:2.B.3.e",
+  "b": "tool:Python",
+  "a_label": "Programming",
+  "b_label": "Python",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-109",
+  "a": "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+  "b": "tool:Bash",
+  "a_label": "use scripting programming",
+  "b_label": "Bash",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-110",
+  "a": "tool:Microsoft Office software",
+  "b": "tool:Microsoft PowerPoint",
+  "a_label": "Microsoft Office software",
+  "b_label": "Microsoft PowerPoint",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-111",
+  "a": "tool:Linux",
+  "b": "tool:Bash",
+  "a_label": "Linux",
+  "b_label": "Bash",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-112",
+  "a": "tool:NoSQL",
+  "b": "tool:MongoDB",
+  "a_label": "NoSQL",
+  "b_label": "MongoDB",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-113",
+  "a": "tool:Zoom",
+  "b": "tool:Microsoft Teams",
+  "a_label": "Zoom",
+  "b_label": "Microsoft Teams",
+  "intended": "same_capability",
+  "author_note": "video-meeting products; borderline"
+ },
+ {
+  "pair": "cp-114",
+  "a": "tool:Postman",
+  "b": "tool:Adobe After Effects",
+  "a_label": "Postman",
+  "b_label": "Adobe After Effects",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-115",
+  "a": "tool:JavaScript",
+  "b": "tool:TypeScript",
+  "a_label": "JavaScript",
+  "b_label": "TypeScript",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-116",
+  "a": "tool:Oracle Database",
+  "b": "esco:de9f85ba-e77f-48fd-8c66-f5ebaf32d655",
+  "a_label": "Oracle Database",
+  "b_label": "Oracle Relational Database",
+  "intended": "same_capability",
+  "author_note": "duplicate Oracle DB nodes"
+ },
+ {
+  "pair": "cp-117",
+  "a": "tool:Adobe Photoshop",
+  "b": "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+  "a_label": "Adobe Photoshop",
+  "b_label": "graphics editor software",
+  "intended": "same_capability",
+  "author_note": "shared name; may be broader"
+ },
+ {
+  "pair": "cp-118",
+  "a": "tool:Microsoft Windows",
+  "b": "tool:Microsoft PowerShell",
+  "a_label": "Microsoft Windows",
+  "b_label": "Microsoft PowerShell",
+  "intended": "broader_narrower",
+  "author_note": "borderline"
+ },
+ {
+  "pair": "cp-119",
+  "a": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "b": "esco:8369c2d6-c100-4cf6-bd83-9668d8678433",
+  "a_label": "machine learning",
+  "b_label": "utilise machine learning",
+  "intended": "same_capability",
+  "author_note": "knowledge vs skill phrasing of same thing"
+ },
+ {
+  "pair": "cp-120",
+  "a": "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb",
+  "b": "tool:Microsoft PowerPoint",
+  "a_label": "use presentation software",
+  "b_label": "Microsoft PowerPoint",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-121",
+  "a": "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+  "b": "tool:Linux",
+  "a_label": "operating systems",
+  "b_label": "Linux",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-122",
+  "a": "tool:Cisco IOS",
+  "b": "tool:Moodle",
+  "a_label": "Cisco IOS",
+  "b_label": "Moodle",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-123",
+  "a": "esco:0ee7b0d6-db98-4785-9948-f2ef415d155a",
+  "b": "tool:Node.js",
+  "a_label": "write research proposals",
+  "b_label": "Node.js",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-124",
+  "a": "esco:925463a7-d51f-4d5b-9f79-4d28cf30acde",
+  "b": "tool:Eclipse IDE",
+  "a_label": "integrated development environment software",
+  "b_label": "Eclipse IDE",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-125",
+  "a": "tool:Kubernetes",
+  "b": "tool:Adobe InDesign",
+  "a_label": "Kubernetes",
+  "b_label": "Adobe InDesign",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-126",
+  "a": "tool:Wireshark",
+  "b": "tool:Microsoft Project",
+  "a_label": "Wireshark",
+  "b_label": "Microsoft Project",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-127",
+  "a": "tool:Adobe Acrobat",
+  "b": "tool:Kali Linux",
+  "a_label": "Adobe Acrobat",
+  "b_label": "Kali Linux",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-128",
+  "a": "tool:Database management systems",
+  "b": "tool:MySQL",
+  "a_label": "Database management systems",
+  "b_label": "MySQL",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-129",
+  "a": "tool:Ansible software",
+  "b": "tool:Puppet",
+  "a_label": "Ansible software",
+  "b_label": "Puppet",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-130",
+  "a": "tool:JavaScript",
+  "b": "tool:jQuery",
+  "a_label": "JavaScript",
+  "b_label": "jQuery",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-131",
+  "a": "esco:a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+  "b": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "a_label": "ML (computer programming)",
+  "b_label": "machine learning",
+  "intended": "same_capability",
+  "author_note": "shared name ml"
+ },
+ {
+  "pair": "cp-132",
+  "a": "tool:Linux",
+  "b": "tool:Red Hat Enterprise Linux",
+  "a_label": "Linux",
+  "b_label": "Red Hat Enterprise Linux",
+  "intended": "broader_narrower",
+  "author_note": "student-style example"
+ },
+ {
+  "pair": "cp-133",
+  "a": "tool:MySQL",
+  "b": "tool:Figma",
+  "a_label": "MySQL",
+  "b_label": "Figma",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-134",
+  "a": "tool:Linux",
+  "b": "tool:Ubuntu",
+  "a_label": "Linux",
+  "b_label": "Ubuntu",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-135",
+  "a": "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+  "b": "tool:Git",
+  "a_label": "tools for software configuration management",
+  "b_label": "Git",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-136",
+  "a": "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+  "b": "tool:Open Shortest Path First OSPF",
+  "a_label": "ICT network routing",
+  "b_label": "Open Shortest Path First OSPF",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-137",
+  "a": "tool:PostgreSQL",
+  "b": "tool:Microsoft SQL Server",
+  "a_label": "PostgreSQL",
+  "b_label": "Microsoft SQL Server",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-138",
+  "a": "tool:Nmap",
+  "b": "tool:Metasploit",
+  "a_label": "Nmap",
+  "b_label": "Metasploit",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-139",
+  "a": "tool:Amazon Web Services AWS software",
+  "b": "tool:Amazon Simple Storage Service S3",
+  "a_label": "Amazon Web Services AWS software",
+  "b_label": "Amazon Simple Storage Service S3",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-140",
+  "a": "tool:pandas",
+  "b": "tool:Scikit-learn",
+  "a_label": "pandas",
+  "b_label": "Scikit-learn",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-141",
+  "a": "tool:Oracle Java",
+  "b": "tool:Spring Boot",
+  "a_label": "Oracle Java",
+  "b_label": "Spring Boot",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-142",
+  "a": "tool:JavaScript",
+  "b": "tool:React",
+  "a_label": "JavaScript",
+  "b_label": "React",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-143",
+  "a": "esco:81633a44-f1db-4a01-a940-804c6905e330",
+  "b": "tool:Microsoft Word",
+  "a_label": "use word processing software",
+  "b_label": "Microsoft Word",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-144",
+  "a": "tool:Django",
+  "b": "tool:SAP ERP",
+  "a_label": "Django",
+  "b_label": "SAP ERP",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-145",
+  "a": "esco:339ac029-066a-4985-9f9d-b3d7c8fea0bb",
+  "b": "tool:Linux",
+  "a_label": "manage staff",
+  "b_label": "Linux",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-146",
+  "a": "tool:Transact-SQL",
+  "b": "tool:Microsoft transact-structural query language T-SQL",
+  "a_label": "Transact-SQL",
+  "b_label": "Microsoft transact-structural query language T-SQL",
+  "intended": "same_capability",
+  "author_note": "duplicate T-SQL nodes"
+ },
+ {
+  "pair": "cp-147",
+  "a": "tool:Microsoft Power BI",
+  "b": "tool:Tableau",
+  "a_label": "Microsoft Power BI",
+  "b_label": "Tableau",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-148",
+  "a": "tool:Google Drive",
+  "b": "tool:Red Hat Enterprise Linux",
+  "a_label": "Google Drive",
+  "b_label": "Red Hat Enterprise Linux",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-149",
+  "a": "tool:Firewall software",
+  "b": "tool:Palo Alto Networks Next-Generation Security Platform",
+  "a_label": "Firewall software",
+  "b_label": "Palo Alto Networks Next-Generation Security Platform",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-150",
+  "a": "tool:Google Gmail",
+  "b": "tool:Microsoft Outlook",
+  "a_label": "Google Gmail",
+  "b_label": "Microsoft Outlook",
+  "intended": "same_capability",
+  "author_note": "two email clients; borderline"
+ },
+ {
+  "pair": "cp-151",
+  "a": "tool:Docker",
+  "b": "tool:Zoom",
+  "a_label": "Docker",
+  "b_label": "Zoom",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-152",
+  "a": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "b": "tool:Cisco IOS",
+  "a_label": "design computer network",
+  "b_label": "Cisco IOS",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-153",
+  "a": "onet:2.A.2.a",
+  "b": "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+  "a_label": "Critical Thinking",
+  "b_label": "think analytically",
+  "intended": "same_capability",
+  "author_note": "O*NET vs ESCO paraphrase"
+ },
+ {
+  "pair": "cp-154",
+  "a": "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+  "b": "onet:2.C.1.e",
+  "a_label": "customer service",
+  "b_label": "Customer and Personal Service",
+  "intended": "same_capability",
+  "author_note": "ESCO vs O*NET paraphrase"
+ },
+ {
+  "pair": "cp-155",
+  "a": "tool:Microsoft Azure DevOps Services",
+  "b": "tool:Git",
+  "a_label": "Microsoft Azure DevOps Services",
+  "b_label": "Git",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-156",
+  "a": "esco:925463a7-d51f-4d5b-9f79-4d28cf30acde",
+  "b": "tool:Microsoft Visual Studio",
+  "a_label": "integrated development environment software",
+  "b_label": "Microsoft Visual Studio",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-157",
+  "a": "tool:Microsoft Hyper-V Server",
+  "b": "tool:VMware",
+  "a_label": "Microsoft Hyper-V Server",
+  "b_label": "VMware",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-158",
+  "a": "esco:42c3287f-5e50-4559-a2d1-2000c70e0aab",
+  "b": "tool:Pentaho Kettle",
+  "a_label": "Pentaho Data Integration",
+  "b_label": "Pentaho Kettle",
+  "intended": "same_capability",
+  "author_note": "shared name"
+ },
+ {
+  "pair": "cp-159",
+  "a": "tool:Microsoft Excel",
+  "b": "tool:Microsoft Power BI",
+  "a_label": "Microsoft Excel",
+  "b_label": "Microsoft Power BI",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-160",
+  "a": "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+  "b": "esco:0da516ee-e70e-4384-be13-f5ff80be8127",
+  "a_label": "assist customers",
+  "b_label": "communicate with customers",
+  "intended": "same_capability",
+  "author_note": "shared names help customers"
+ },
+ {
+  "pair": "cp-161",
+  "a": "esco:daa52226-7795-48ff-aa3e-ad3189d9aa61",
+  "b": "tool:Cisco IOS",
+  "a_label": "tabulate survey results",
+  "b_label": "Cisco IOS",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-162",
+  "a": "onet:2.B.3.e",
+  "b": "tool:JavaScript",
+  "a_label": "Programming",
+  "b_label": "JavaScript",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-163",
+  "a": "onet:2.A.1.e",
+  "b": "onet:2.C.4.a",
+  "a_label": "Mathematics",
+  "b_label": "Mathematics",
+  "intended": "same_capability",
+  "author_note": "two O*NET Mathematics nodes (skill vs knowledge)"
+ },
+ {
+  "pair": "cp-164",
+  "a": "tool:Cisco IOS",
+  "b": "tool:Open Shortest Path First OSPF",
+  "a_label": "Cisco IOS",
+  "b_label": "Open Shortest Path First OSPF",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-165",
+  "a": "tool:Oracle Java Enterprise Edition EE",
+  "b": "tool:Oracle Java 2 Platform Enterprise Edition J2EE",
+  "a_label": "Oracle Java Enterprise Edition EE",
+  "b_label": "Oracle Java 2 Platform Enterprise Edition J2EE",
+  "intended": "same_capability",
+  "author_note": "duplicate Java EE nodes"
+ },
+ {
+  "pair": "cp-166",
+  "a": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "b": "tool:Cisco Systems CiscoWorks",
+  "a_label": "Cisco",
+  "b_label": "Cisco Systems CiscoWorks",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-167",
+  "a": "tool:Microsoft Access",
+  "b": "tool:Adobe After Effects",
+  "a_label": "Microsoft Access",
+  "b_label": "Adobe After Effects",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-168",
+  "a": "onet:2.C.8.b",
+  "b": "tool:TensorFlow",
+  "a_label": "Law and Government",
+  "b_label": "TensorFlow",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-169",
+  "a": "tool:Nagios",
+  "b": "tool:Adobe Photoshop",
+  "a_label": "Nagios",
+  "b_label": "Adobe Photoshop",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-170",
+  "a": "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+  "b": "tool:Wireshark",
+  "a_label": "computer forensics",
+  "b_label": "Wireshark",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-171",
+  "a": "esco:fe39d4db-4cb5-4299-bb9f-896c8fd6ab13",
+  "b": "tool:Wireshark",
+  "a_label": "perform market research",
+  "b_label": "Wireshark",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-172",
+  "a": "tool:Mozilla Firefox",
+  "b": "tool:Ansible software",
+  "a_label": "Mozilla Firefox",
+  "b_label": "Ansible software",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-173",
+  "a": "tool:PostgreSQL",
+  "b": "tool:Google Meet",
+  "a_label": "PostgreSQL",
+  "b_label": "Google Meet",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-174",
+  "a": "tool:React",
+  "b": "tool:Nmap",
+  "a_label": "React",
+  "b_label": "Nmap",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-175",
+  "a": "tool:Microsoft Office software",
+  "b": "tool:Microsoft Excel",
+  "a_label": "Microsoft Office software",
+  "b_label": "Microsoft Excel",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-176",
+  "a": "tool:Metasploit",
+  "b": "tool:Penetration testing software",
+  "a_label": "Metasploit",
+  "b_label": "Penetration testing software",
+  "intended": "same_capability",
+  "author_note": "shared name metasploit; may be broader"
+ },
+ {
+  "pair": "cp-177",
+  "a": "tool:Amazon Web Services AWS software",
+  "b": "tool:Docker",
+  "a_label": "Amazon Web Services AWS software",
+  "b_label": "Docker",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-178",
+  "a": "tool:Open Shortest Path First OSPF",
+  "b": "tool:Open source routing protocols OSPF",
+  "a_label": "Open Shortest Path First OSPF",
+  "b_label": "Open source routing protocols OSPF",
+  "intended": "same_capability",
+  "author_note": "duplicate OSPF nodes"
+ },
+ {
+  "pair": "cp-179",
+  "a": "tool:Python",
+  "b": "tool:NumPy",
+  "a_label": "Python",
+  "b_label": "NumPy",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-180",
+  "a": "tool:Atlassian JIRA",
+  "b": "tool:Atlassian Confluence",
+  "a_label": "Atlassian JIRA",
+  "b_label": "Atlassian Confluence",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-181",
+  "a": "esco:ea1bf5e5-e7f0-4d2c-a415-1c39c00512b1",
+  "b": "esco:b769f524-0f25-44d7-8538-5c46710a040e",
+  "a_label": "document management",
+  "b_label": "manage digital documents",
+  "intended": "same_capability",
+  "author_note": "near-paraphrases"
+ },
+ {
+  "pair": "cp-182",
+  "a": "tool:Google Workspace software",
+  "b": "tool:Google Gmail",
+  "a_label": "Google Workspace software",
+  "b_label": "Google Gmail",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-183",
+  "a": "tool:Cascading style sheets CSS",
+  "b": "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794",
+  "a_label": "Cascading style sheets CSS",
+  "b_label": "style sheet languages",
+  "intended": "same_capability",
+  "author_note": "shared name css; ESCO/O*NET duplicate; may be judged broader"
+ },
+ {
+  "pair": "cp-184",
+  "a": "tool:Django",
+  "b": "tool:Flask",
+  "a_label": "Django",
+  "b_label": "Flask",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-185",
+  "a": "tool:Python",
+  "b": "tool:TensorFlow",
+  "a_label": "Python",
+  "b_label": "TensorFlow",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-186",
+  "a": "esco:25f0ea33-b4a2-4f31-b7b4-7d20e827b180",
+  "b": "esco:4216e465-7baa-4884-a241-54b197bb9278",
+  "a_label": "data mining",
+  "b_label": "perform data mining",
+  "intended": "same_capability",
+  "author_note": "knowledge vs skill phrasing"
+ },
+ {
+  "pair": "cp-187",
+  "a": "tool:Atlassian Bitbucket",
+  "b": "tool:GitHub",
+  "a_label": "Atlassian Bitbucket",
+  "b_label": "GitHub",
+  "intended": "same_capability",
+  "author_note": "two Git hosting services; borderline"
+ },
+ {
+  "pair": "cp-188",
+  "a": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "b": "tool:Cisco IOS",
+  "a_label": "Cisco",
+  "b_label": "Cisco IOS",
+  "intended": "broader_narrower",
+  "author_note": "guide example"
+ },
+ {
+  "pair": "cp-189",
+  "a": "tool:React",
+  "b": "tool:React Native",
+  "a_label": "React",
+  "b_label": "React Native",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-190",
+  "a": "tool:Microsoft Visual C# .NET",
+  "b": "tool:C#",
+  "a_label": "Microsoft Visual C# .NET",
+  "b_label": "C#",
+  "intended": "same_capability",
+  "author_note": "C# language duplicates"
+ },
+ {
+  "pair": "cp-191",
+  "a": "tool:Microsoft Word",
+  "b": "tool:Microsoft Outlook",
+  "a_label": "Microsoft Word",
+  "b_label": "Microsoft Outlook",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-192",
+  "a": "tool:Oracle Database",
+  "b": "tool:Oracle PL/SQL",
+  "a_label": "Oracle Database",
+  "b_label": "Oracle PL/SQL",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ },
+ {
+  "pair": "cp-193",
+  "a": "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+  "b": "esco:4463a721-69f3-413d-8321-43e3af13a4f1",
+  "a_label": "database",
+  "b_label": "use databases",
+  "intended": "same_capability",
+  "author_note": "near-paraphrases"
+ },
+ {
+  "pair": "cp-194",
+  "a": "tool:C#",
+  "b": "tool:Microsoft .NET Framework",
+  "a_label": "C#",
+  "b_label": "Microsoft .NET Framework",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-195",
+  "a": "esco:a57a54b6-2f2e-43e4-9621-b52f4a63cb08",
+  "b": "esco:d1e954cd-d290-4d80-97c0-7969960d2928",
+  "a_label": "LDAP",
+  "b_label": "distributed directory information services",
+  "intended": "same_capability",
+  "author_note": "ESCO names the same thing"
+ },
+ {
+  "pair": "cp-196",
+  "a": "tool:Microsoft PowerShell",
+  "b": "tool:Microsoft Windows PowerShell",
+  "a_label": "Microsoft PowerShell",
+  "b_label": "Microsoft Windows PowerShell",
+  "intended": "same_capability",
+  "author_note": "duplicate PowerShell nodes"
+ },
+ {
+  "pair": "cp-197",
+  "a": "tool:Python",
+  "b": "tool:Microsoft Visio",
+  "a_label": "Python",
+  "b_label": "Microsoft Visio",
+  "intended": "unrelated",
+  "author_note": "plausible co-listing; unrelated"
+ },
+ {
+  "pair": "cp-198",
+  "a": "tool:Git",
+  "b": "tool:GitLab",
+  "a_label": "Git",
+  "b_label": "GitLab",
+  "intended": "related_distinct",
+  "author_note": "plausible co-listing; related distinct"
+ },
+ {
+  "pair": "cp-199",
+  "a": "esco:237db40b-4600-47c0-837f-4a2c4f3014ab",
+  "b": "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+  "a_label": "project management principles",
+  "b_label": "project management",
+  "intended": "same_capability",
+  "author_note": "shared name principles of project management"
+ },
+ {
+  "pair": "cp-200",
+  "a": "tool:Microsoft Azure software",
+  "b": "tool:Microsoft Azure Data Factory",
+  "a_label": "Microsoft Azure software",
+  "b_label": "Microsoft Azure Data Factory",
+  "intended": "broader_narrower",
+  "author_note": "plausible co-listing; broader narrower"
+ }
+]

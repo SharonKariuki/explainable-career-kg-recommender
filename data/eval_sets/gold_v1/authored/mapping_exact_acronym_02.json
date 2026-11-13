@@ -1,0 +1,443 @@
+[
+ {
+  "group": "ea-g040",
+  "input": "Routers",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: ICT networking hardware"
+ },
+ {
+  "group": "ea-g041",
+  "input": "Switches",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: ICT networking hardware"
+ },
+ {
+  "group": "ea-g042",
+  "input": "Traceroute",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: Traceroute"
+ },
+ {
+  "group": "ea-g043",
+  "input": "ICT network routing",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: ICT network routing"
+ },
+ {
+  "group": "ea-g044",
+  "input": "Metasploit",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name, shared-name key: Metasploit"
+ },
+ {
+  "group": "ea-g045",
+  "input": "Cyber security",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: cyber security"
+ },
+ {
+  "group": "ea-g045",
+  "input": "cyber security",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: cyber security; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g046",
+  "input": "Kali Linux",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: Kali Linux"
+ },
+ {
+  "group": "ea-g046",
+  "input": "kali linux",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: Kali Linux; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g047",
+  "input": "Snort",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: Snort"
+ },
+ {
+  "group": "ea-g048",
+  "input": "Nessus",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: Tenable Nessus"
+ },
+ {
+  "group": "ea-g049",
+  "input": "OWASP",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: web application security threats"
+ },
+ {
+  "group": "ea-g050",
+  "input": "Burpsuite",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "Exact catalogue name: Penetration testing software"
+ },
+ {
+  "group": "ea-g051",
+  "input": "Troubleshooting",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: Troubleshooting"
+ },
+ {
+  "group": "ea-g051",
+  "input": "troubleshooting",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: Troubleshooting; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g052",
+  "input": "Linux",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: Linux"
+ },
+ {
+  "group": "ea-g052",
+  "input": "linux",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: Linux; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g053",
+  "input": "Customer service",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: customer service"
+ },
+ {
+  "group": "ea-g053",
+  "input": "customer service",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: customer service; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g054",
+  "input": "Help desk",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: Help desk software"
+ },
+ {
+  "group": "ea-g055",
+  "input": "Ubuntu",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: Ubuntu"
+ },
+ {
+  "group": "ea-g056",
+  "input": "Microsoft Windows",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "Exact catalogue name: Microsoft Windows"
+ },
+ {
+  "group": "ea-g057",
+  "input": "MySQL",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name: MySQL"
+ },
+ {
+  "group": "ea-g057",
+  "input": "mysql",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name: MySQL; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g058",
+  "input": "PostgreSQL",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name: PostgreSQL"
+ },
+ {
+  "group": "ea-g058",
+  "input": "Postgres",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name: PostgreSQL; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g059",
+  "input": "SQL",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name, shared-name key: Database management systems"
+ },
+ {
+  "group": "ea-g059",
+  "input": "sql",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name, shared-name key: Database management systems; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g060",
+  "input": "MongoDB",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name: MongoDB"
+ },
+ {
+  "group": "ea-g061",
+  "input": "NoSQL",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name: NoSQL"
+ },
+ {
+  "group": "ea-g062",
+  "input": "Redis",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Exact catalogue name: Redis"
+ },
+ {
+  "group": "ea-g063",
+  "input": "Docker",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name: Docker"
+ },
+ {
+  "group": "ea-g063",
+  "input": "docker",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name: Docker; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g064",
+  "input": "Bash",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name, shared-name key: Programming"
+ },
+ {
+  "group": "ea-g064",
+  "input": "bash",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name, shared-name key: Programming; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g065",
+  "input": "Kubernetes",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name: Kubernetes"
+ },
+ {
+  "group": "ea-g065",
+  "input": "kubernetes",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name: Kubernetes; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g066",
+  "input": "Azure",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name: Microsoft Azure software"
+ },
+ {
+  "group": "ea-g067",
+  "input": "Ansible",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "Exact catalogue name: Ansible software"
+ },
+ {
+  "group": "ea-g068",
+  "input": "Selenium",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name, shared-name key: tools for ICT test automation"
+ },
+ {
+  "group": "ea-g068",
+  "input": "selenium",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name, shared-name key: tools for ICT test automation; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g069",
+  "input": "PRINCE2",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name, shared-name key: Prince2 project management"
+ },
+ {
+  "group": "ea-g070",
+  "input": "Cypress",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name, shared-name key: Selenium"
+ },
+ {
+  "group": "ea-g071",
+  "input": "Playwright",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name, shared-name key: Selenium"
+ },
+ {
+  "group": "ea-g072",
+  "input": "Scrum",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name: ICT project management methodologies"
+ },
+ {
+  "group": "ea-g072",
+  "input": "scrum",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name: ICT project management methodologies; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g073",
+  "input": "Postman",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name: Postman"
+ },
+ {
+  "group": "ea-g074",
+  "input": "Test cases",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "Exact catalogue name: develop ICT test suite"
+ },
+ {
+  "group": "ea-g075",
+  "input": "Solidity",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "Exact catalogue name: Solidity"
+ },
+ {
+  "group": "ea-g075",
+  "input": "solidity",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "Exact catalogue name: Solidity; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g076",
+  "input": "Ethereum",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "Exact catalogue name: blockchain platforms"
+ },
+ {
+  "group": "ea-g077",
+  "input": "Smart contract",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "Exact catalogue name: smart contract"
+ },
+ {
+  "group": "ea-g078",
+  "input": "Web3",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "Exact catalogue name: blockchain platforms"
+ },
+ {
+  "group": "ea-g079",
+  "input": "Vyper",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "Exact catalogue name: Vyper"
+ },
+ {
+  "group": "ea-g080",
+  "input": "Communication",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name: Speaking"
+ },
+ {
+  "group": "ea-g080",
+  "input": "communication",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name: Speaking; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g081",
+  "input": "Teamwork",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name: Coordination"
+ },
+ {
+  "group": "ea-g081",
+  "input": "teamwork",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name: Coordination; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g082",
+  "input": "Problem solving",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name: Complex Problem Solving"
+ },
+ {
+  "group": "ea-g083",
+  "input": "Time management",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name: Time Management"
+ },
+ {
+  "group": "ea-g084",
+  "input": "Negotiation",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name: Negotiation"
+ },
+ {
+  "group": "ea-g085",
+  "input": "Google Docs",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "Exact catalogue name, shared-name key: use word processing software"
+ },
+ {
+  "group": "ea-g086",
+  "input": "JS",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: JavaScript; catalogue has this name (-> JavaScript)"
+ }
+]

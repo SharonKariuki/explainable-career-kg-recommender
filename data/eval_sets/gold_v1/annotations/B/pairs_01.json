@@ -1,0 +1,1002 @@
+[
+ {
+  "pair": "cp-001",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-002",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-003",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-004",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-005",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-006",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-007",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-008",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-009",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-010",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-011",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-012",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-013",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-014",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-015",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-016",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-017",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-018",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-019",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-020",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-021",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-022",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-023",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-024",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-025",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-026",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-027",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-028",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-029",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-030",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-031",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-032",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-033",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-034",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-035",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-036",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-037",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-038",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-039",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-040",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-041",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-042",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-043",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-044",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-045",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-046",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-047",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-048",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-049",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-050",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-051",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-052",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-053",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-054",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-055",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-056",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-057",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-058",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-059",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-060",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-061",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-062",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-063",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-064",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-065",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-066",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-067",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-068",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-069",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-070",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-071",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-072",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-073",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-074",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-075",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-076",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-077",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-078",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-079",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-080",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-081",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-082",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-083",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-084",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-085",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-086",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-087",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-088",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-089",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-090",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-091",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-092",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-093",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-094",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-095",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-096",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-097",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-098",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-099",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-100",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-101",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-102",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-103",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-104",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-105",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-106",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-107",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-108",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-109",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-110",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-111",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-112",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-113",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-114",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-115",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-116",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-117",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-118",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-119",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-120",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-121",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-122",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-123",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-124",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-125",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-126",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-127",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-128",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-129",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-130",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-131",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-132",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-133",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-134",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-135",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-136",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-137",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-138",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-139",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-140",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-141",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-142",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-143",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-144",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-145",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-146",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-147",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-148",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-149",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-150",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-151",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-152",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-153",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-154",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-155",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-156",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-157",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-158",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-159",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-160",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-161",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-162",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-163",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-164",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-165",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-166",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-167",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-168",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-169",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-170",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-171",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-172",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-173",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-174",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-175",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-176",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-177",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-178",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-179",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-180",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-181",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-182",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-183",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-184",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-185",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-186",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-187",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-188",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-189",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-190",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-191",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-192",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-193",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-194",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-195",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ },
+ {
+  "pair": "cp-196",
+  "relationship": "same_capability",
+  "note": "one capability, counted once"
+ },
+ {
+  "pair": "cp-197",
+  "relationship": "unrelated",
+  "note": "no meaningful link"
+ },
+ {
+  "pair": "cp-198",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-199",
+  "relationship": "related_distinct",
+  "note": "related but distinct skills"
+ },
+ {
+  "pair": "cp-200",
+  "relationship": "broader_narrower",
+  "note": "one is a broader or narrower form of the other"
+ }
+]

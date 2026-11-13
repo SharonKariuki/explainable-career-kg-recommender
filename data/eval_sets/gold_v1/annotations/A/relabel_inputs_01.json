@@ -1,0 +1,2151 @@
+[
+ {
+  "id": "i-0008",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data analysis software",
+   "esco:cc7370dd-69fa-4c67-a96f-d4d135d38700"
+  ],
+  "preferred": "tool:Data analysis software",
+  "confidence": "low",
+  "note": "ydata-profiling is an automated data-profiling/EDA library; instance of data analysis software"
+ },
+ {
+  "id": "i-0010",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Unit testing software"
+  ],
+  "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+  "confidence": "low",
+  "note": "test-driven development is built on writing automated unit tests; no TDD node, unit testing closest"
+ },
+ {
+  "id": "i-0031",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.3.a"
+  ],
+  "preferred": "onet:2.C.3.a",
+  "confidence": "low",
+  "note": "general knowledge of personal computers; Computers and Electronics"
+ },
+ {
+  "id": "i-0036",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-0041",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "low",
+  "note": "database normal forms; normalise data node describes normal forms"
+ },
+ {
+  "id": "i-0042",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8"
+  ],
+  "preferred": "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0049",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "content-free; no interpretable capability"
+ },
+ {
+  "id": "i-0060",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "database normalisation; normalise data node"
+ },
+ {
+  "id": "i-0064",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "IP subnetting/VLSM; only related nodes (IP configuration, routing, address management software)"
+ },
+ {
+  "id": "i-0067",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "high",
+  "note": "Cucumber is a BDD test automation tool; instance of tools for ICT test automation"
+ },
+ {
+  "id": "i-0081",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "Xamarin.Forms is a cross-platform mobile framework; instance of mobile device software frameworks"
+ },
+ {
+  "id": "i-0083",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cascading style sheets CSS",
+   "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794"
+  ],
+  "preferred": "tool:Cascading style sheets CSS",
+  "confidence": "low",
+  "note": "in a computing context styling means CSS"
+ },
+ {
+  "id": "i-0092",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "content-free; no interpretable capability"
+ },
+ {
+  "id": "i-0106",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-0108",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "ethical hacking; penetration testing node names Ethical hacking"
+ },
+ {
+  "id": "i-0111",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.3.a"
+  ],
+  "preferred": "onet:2.C.3.a",
+  "confidence": "low",
+  "note": "basic computer use; no digital-literacy node, Computers and Electronics is the containing category"
+ },
+ {
+  "id": "i-0115",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0133",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "self-description as a hacker; read as ethical hacking"
+ },
+ {
+  "id": "i-0134",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "esco:0868eef3-2213-4572-9343-74931345a7d3"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "low",
+  "note": "server administration/maintenance"
+ },
+ {
+  "id": "i-0137",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "Gatsby is a JavaScript framework (amendment example)"
+ },
+ {
+  "id": "i-0142",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "tool:Virtual local area network management software"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "network segmentation is part of network design; no segmentation node"
+ },
+ {
+  "id": "i-0154",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "M-Pesa Daraja is a REST API; instance of RESTful API / application-specific interface"
+ },
+ {
+  "id": "i-0155",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "tool:Medical procedure coding software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "CPT: Certified Penetration Tester vs Current Procedural Terminology codes; unclear"
+ },
+ {
+  "id": "i-0160",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+   "esco:29fb0fb5-dfc4-4098-ac9b-3a712000f48f",
+   "tool:Database design software"
+  ],
+  "preferred": "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+  "confidence": "low",
+  "note": "creating databases: design/manage database"
+ },
+ {
+  "id": "i-0167",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+   "tool:Business software applications"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "low",
+  "note": "developing applications vs using application software"
+ },
+ {
+  "id": "i-0168",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "confidence": "low",
+  "note": "data analytics"
+ },
+ {
+  "id": "i-0170",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "M-Pesa Daraja is a REST API; instance of RESTful API / application-specific interface"
+ },
+ {
+  "id": "i-0171",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "backend development; ICT system programming names server side programming"
+ },
+ {
+  "id": "i-0172",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "keyboarding; no node, data entry software only related"
+ },
+ {
+  "id": "i-0175",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388"
+  ],
+  "preferred": "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+  "confidence": "low",
+  "note": "doing project work vs managing projects"
+ },
+ {
+  "id": "i-0176",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "normalise data node covers normal forms"
+ },
+ {
+  "id": "i-0179",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "names the IT field, not a capability"
+ },
+ {
+  "id": "i-0181",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "names the IT field, not a capability"
+ },
+ {
+  "id": "i-0186",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web browser software"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "low",
+  "note": "basic internet use"
+ },
+ {
+  "id": "i-0188",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "low",
+  "note": "Kaggle competitions = applied ML/data science practice"
+ },
+ {
+  "id": "i-0189",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web browser software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "low",
+  "note": "using the internet vs internet/networking technology"
+ },
+ {
+  "id": "i-0190",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "personal trait; organisational resilience is a different concept"
+ },
+ {
+  "id": "i-0192",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Intrusion detection system IDS",
+   "tool:Security incident management software",
+   "tool:Computer intrusion detection systems"
+  ],
+  "preferred": "tool:Intrusion detection system IDS",
+  "confidence": "high",
+  "note": "Wazuh is an open-source HIDS/SIEM platform; instance of IDS / security incident management"
+ },
+ {
+  "id": "i-0194",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+   "onet:2.B.3.e"
+  ],
+  "preferred": "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+  "confidence": "high",
+  "note": "computer vision library; digital image processing (OpenCV also a name on Programming)"
+ },
+ {
+  "id": "i-0200",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.f"
+  ],
+  "preferred": "onet:2.B.1.f",
+  "confidence": "low",
+  "note": "helping people; Service Orientation"
+ },
+ {
+  "id": "i-0210",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "keyboarding speed; no node"
+ },
+ {
+  "id": "i-0215",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "low",
+  "note": "developing software vs using software"
+ },
+ {
+  "id": "i-0221",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:670f8eea-f25b-4c3f-97ef-a4729d4c63d6"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "Chainlink oracle network; instance of blockchain platforms (Web3)"
+ },
+ {
+  "id": "i-0223",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web browser software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "low",
+  "note": "using the internet vs internet/networking technology"
+ },
+ {
+  "id": "i-0225",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "M-Pesa Daraja is a REST API; instance of RESTful API / application-specific interface"
+ },
+ {
+  "id": "i-0229",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "backend development; server side programming"
+ },
+ {
+  "id": "i-0242",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40"
+  ],
+  "preferred": "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40",
+  "confidence": "low",
+  "note": "SLA metrics tracking; instance of KPI tracking, no SLA node"
+ },
+ {
+  "id": "i-0247",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "Flutter/Dart mobile framework; instance of mobile device software frameworks"
+ },
+ {
+  "id": "i-0252",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3c4c3fa1-d638-42df-8e98-2a38021da6f9"
+  ],
+  "preferred": "esco:3c4c3fa1-d638-42df-8e98-2a38021da6f9",
+  "confidence": "high",
+  "note": "node names Chain of custody"
+ },
+ {
+  "id": "i-0255",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0868eef3-2213-4572-9343-74931345a7d3",
+   "onet:2.B.4.g",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e"
+  ],
+  "preferred": "esco:0868eef3-2213-4572-9343-74931345a7d3",
+  "confidence": "low",
+  "note": "systems administration vs analysis vs design"
+ },
+ {
+  "id": "i-0259",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "low",
+  "note": "capture-the-flag security competitions; offensive security practice"
+ },
+ {
+  "id": "i-0263",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "low",
+  "note": "TryHackMe / HackTheBox labs; ethical hacking practice"
+ },
+ {
+  "id": "i-0264",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+   "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea"
+  ],
+  "preferred": "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+  "confidence": "low",
+  "note": "malware analysis is reverse engineering of samples; no malware-analysis node"
+ },
+ {
+  "id": "i-0273",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.2.b"
+  ],
+  "preferred": "onet:2.A.2.b",
+  "confidence": "high",
+  "note": "Active Learning names Willingness to learn"
+ },
+ {
+  "id": "i-0275",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "interpersonal skill; Social Perceptiveness closest"
+ },
+ {
+  "id": "i-0277",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Virtual local area network management software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "tool:Virtual local area network management software",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0282",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40",
+   "esco:c544a9f3-5945-4b54-afed-de0697852817"
+  ],
+  "preferred": "esco:8dcbcabe-09f7-4d11-940d-125af57bbc40",
+  "confidence": "low",
+  "note": "reporting on performance metrics / KPIs"
+ },
+ {
+  "id": "i-0283",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "spanning tree is a switching protocol; ICT networking hardware (switching)"
+ },
+ {
+  "id": "i-0287",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web browser software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "low",
+  "note": "using the internet vs internet/networking technology"
+ },
+ {
+  "id": "i-0292",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+   "esco:a8797f21-1af0-4c5e-98ca-bf1442929363"
+  ],
+  "preferred": "esco:b04f377b-ee80-4b38-aca1-19d266a23b17",
+  "confidence": "low",
+  "note": "gathering reporting requirements"
+ },
+ {
+  "id": "i-0322",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "message queuing; only specific products (RabbitMQ, Kafka, WebSphere MQ, JMS), no category node"
+ },
+ {
+  "id": "i-0324",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f09e70cb-5d8c-4c57-b027-a45127c0bf92",
+   "esco:a56dec32-05ef-45de-a256-ee6741f356db"
+  ],
+  "preferred": "esco:f09e70cb-5d8c-4c57-b027-a45127c0bf92",
+  "confidence": "low",
+  "note": "keeping information confidential; secure sensitive information"
+ },
+ {
+  "id": "i-0325",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0327",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "Svelte is a JavaScript framework"
+ },
+ {
+  "id": "i-0341",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "keyboarding; no node"
+ },
+ {
+  "id": "i-0349",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "tool:Automated installation software",
+   "tool:Deployment software"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "low",
+  "note": "routine user-support task; no specific node"
+ },
+ {
+  "id": "i-0353",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Cloud software",
+   "tool:Platform as a service PaaS"
+  ],
+  "preferred": "tool:Google Cloud software",
+  "confidence": "low",
+  "note": "Firebase is a Google cloud backend-as-a-service"
+ },
+ {
+  "id": "i-0357",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Django",
+   "tool:RESTful API",
+   "tool:Web framework software"
+  ],
+  "preferred": "tool:Django",
+  "confidence": "low",
+  "note": "Django REST Framework"
+ },
+ {
+  "id": "i-0362",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "onet:2.B.3.l"
+  ],
+  "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0366",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague; no interpretable capability"
+ },
+ {
+  "id": "i-0367",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.a"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "empathy; Social Perceptiveness"
+ },
+ {
+  "id": "i-0370",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "tool:Access management software"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "low",
+  "note": "user account administration"
+ },
+ {
+  "id": "i-0394",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+   "esco:dccbdbb8-7266-4fb4-a4cf-29056f102f12",
+   "onet:2.B.5.b"
+  ],
+  "preferred": "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0399",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "designing systems for resilience; system design nodes"
+ },
+ {
+  "id": "i-0400",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "APIs, building or consuming"
+ },
+ {
+  "id": "i-0401",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+   "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea"
+  ],
+  "preferred": "esco:a7a14be2-78b5-4b4a-ba77-2658285e2756",
+  "confidence": "low",
+  "note": "malware analysis via reverse engineering; no malware-analysis node"
+ },
+ {
+  "id": "i-0406",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.2.a"
+  ],
+  "preferred": "onet:2.A.2.a",
+  "confidence": "low",
+  "note": "accuracy ~ attention to detail (named on Critical Thinking)"
+ },
+ {
+  "id": "i-0417",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "low",
+  "note": "IT service/support work"
+ },
+ {
+  "id": "i-0425",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0435",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+   "tool:Embedded systems development software",
+   "esco:f049d050-12da-4e40-813a-2b5eb6df6b51"
+  ],
+  "preferred": "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+  "confidence": "high",
+  "note": "Arduino microcontroller platform; embedded systems"
+ },
+ {
+  "id": "i-0438",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "low",
+  "note": "database normal forms"
+ },
+ {
+  "id": "i-0445",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388"
+  ],
+  "preferred": "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+  "confidence": "low",
+  "note": "doing projects vs managing projects"
+ },
+ {
+  "id": "i-0456",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "keyboarding; no node"
+ },
+ {
+  "id": "i-0464",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+   "tool:Remote install server software",
+   "tool:Automated installation software"
+  ],
+  "preferred": "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272",
+  "confidence": "low",
+  "note": "OS deployment/imaging; Ghost and Sysprep are specific products"
+ },
+ {
+  "id": "i-0471",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:670f8eea-f25b-4c3f-97ef-a4729d4c63d6"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "Chainlink oracles feed smart contracts; instance of blockchain platforms"
+ },
+ {
+  "id": "i-0473",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "amendment example"
+ },
+ {
+  "id": "i-0474",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "tool:Virtual local area network management software"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "network segmentation is part of network design"
+ },
+ {
+  "id": "i-0475",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+   "esco:020918ef-4b55-47c1-8430-ab7b8f6a7377"
+  ],
+  "preferred": "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+  "confidence": "low",
+  "note": "ETL pipelines vs data migration"
+ },
+ {
+  "id": "i-0480",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.C.3.c",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+   "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba"
+  ],
+  "preferred": "onet:2.C.3.c",
+  "confidence": "high",
+  "note": "UI, graphic or software design"
+ },
+ {
+  "id": "i-0481",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "high",
+  "note": "database normalisation"
+ },
+ {
+  "id": "i-0486",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Android",
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "tool:Google Android",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0487",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Event log monitor software",
+   "tool:Security incident management software"
+  ],
+  "preferred": "tool:Event log monitor software",
+  "confidence": "low",
+  "note": "log analysis; event log monitoring category"
+ },
+ {
+  "id": "i-0495",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:501537a7-9d63-491d-ae02-09f04767ff1e"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "hacking / threat actors; read as ethical hacking"
+ },
+ {
+  "id": "i-0497",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Password management software",
+   "tool:Password cracker software",
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be"
+  ],
+  "preferred": "tool:Password management software",
+  "confidence": "low",
+  "note": "password management vs cracking vs password resets"
+ },
+ {
+  "id": "i-0500",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.C.1.a",
+   "esco:339ac029-066a-4985-9f9d-b3d7c8fea0bb",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68"
+  ],
+  "preferred": "onet:2.C.1.a",
+  "confidence": "high",
+  "note": "people, project or general administration management"
+ },
+ {
+  "id": "i-0507",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software",
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "low",
+  "note": "Gherkin feature files are BDD test specifications"
+ },
+ {
+  "id": "i-0509",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "esco:797a4416-0b8d-44f3-8fcd-eb10bd0be6b4"
+  ],
+  "preferred": "esco:07dd856d-6141-48a7-a228-918f88494812",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0515",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "low",
+  "note": "Kaggle = applied ML/data science practice"
+ },
+ {
+  "id": "i-0517",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software",
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "low",
+  "note": "Gherkin BDD test specification language"
+ },
+ {
+  "id": "i-0521",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29"
+  ],
+  "preferred": "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+  "confidence": "low",
+  "note": "ICT troubleshooting applied to mobile devices"
+ },
+ {
+  "id": "i-0524",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "Xamarin cross-platform mobile framework"
+ },
+ {
+  "id": "i-0537",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+   "esco:ee3c1d54-f46a-43c7-a0f9-0ba3648164d0"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0540",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+   "esco:339ac029-066a-4985-9f9d-b3d7c8fea0bb",
+   "onet:2.B.5.d"
+  ],
+  "preferred": "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+  "confidence": "low",
+  "note": "delegating tasks; assign and schedule tasks"
+ },
+ {
+  "id": "i-0546",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+   "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "low",
+  "note": "experimental design is part of statistics (design of experiments)"
+ },
+ {
+  "id": "i-0548",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b",
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc"
+  ],
+  "preferred": "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b",
+  "confidence": "low",
+  "note": "cryptocurrency as blockchain/DLT knowledge"
+ },
+ {
+  "id": "i-0554",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+   "onet:2.B.5.a"
+  ],
+  "preferred": "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+  "confidence": "low",
+  "note": "organisational skill; apply organisational techniques"
+ },
+ {
+  "id": "i-0567",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "M-Pesa Daraja is a REST API; instance of RESTful API / application-specific interface"
+ },
+ {
+  "id": "i-0570",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "keyboarding; no node"
+ },
+ {
+  "id": "i-0582",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "content-free"
+ },
+ {
+  "id": "i-0584",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+   "tool:Access management software"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-0587",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:54924a2c-daca-40d3-9716-4b38ceb04f38",
+   "onet:2.B.3.e"
+  ],
+  "preferred": "esco:54924a2c-daca-40d3-9716-4b38ceb04f38",
+  "confidence": "low",
+  "note": "LeetCode = algorithm/coding practice"
+ },
+ {
+  "id": "i-0591",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "cyber security competitions"
+ },
+ {
+  "id": "i-0595",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "low",
+  "note": "data capture = data entry (Kenyan usage)"
+ },
+ {
+  "id": "i-0599",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:27ed854c-15b8-4ba2-90e9-ae888a219703",
+   "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+   "esco:56042303-972b-41be-9310-58467599ff7e"
+  ],
+  "preferred": "esco:27ed854c-15b8-4ba2-90e9-ae888a219703",
+  "confidence": "low",
+  "note": "gap analysis is a business analysis technique"
+ },
+ {
+  "id": "i-0600",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "names the IT field, not a capability"
+ },
+ {
+  "id": "i-0602",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "cyber security"
+ },
+ {
+  "id": "i-0606",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "low",
+  "note": "data capture = data entry (Kenyan usage)"
+ },
+ {
+  "id": "i-0626",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "interpersonal skill; Social Perceptiveness closest"
+ },
+ {
+  "id": "i-0630",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "backend development"
+ },
+ {
+  "id": "i-0631",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web framework software",
+   "tool:PHP"
+  ],
+  "preferred": "tool:Web framework software",
+  "confidence": "high",
+  "note": "Laravel is a PHP web framework"
+ },
+ {
+  "id": "i-0647",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "backend development"
+ },
+ {
+  "id": "i-0650",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+   "esco:fe1c2b32-7fe9-4668-affa-07ff658a68cf",
+   "esco:1dd23dba-dd00-45ab-abf4-642902538317"
+  ],
+  "preferred": "esco:6eff134b-e34f-4d6e-a6e8-5e47cf2228d0",
+  "confidence": "low",
+  "note": "business/project risk vs ICT security risk"
+ },
+ {
+  "id": "i-0653",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "content-free"
+ },
+ {
+  "id": "i-0660",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "high",
+  "note": "ethical hacking"
+ },
+ {
+  "id": "i-0661",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software",
+   "tool:3D graphics software",
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "low",
+  "note": "Three.js is a JavaScript 3D library"
+ },
+ {
+  "id": "i-0671",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free (amendment rule 3)"
+ },
+ {
+  "id": "i-0700",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:484df271-bb52-49f1-8f50-f19624bf4df2",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:484df271-bb52-49f1-8f50-f19624bf4df2",
+  "confidence": "low",
+  "note": "Storybook builds UI component libraries"
+ },
+ {
+  "id": "i-0705",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.3.a",
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4"
+  ],
+  "preferred": "onet:2.C.3.a",
+  "confidence": "low",
+  "note": "personal computers; Computers and Electronics"
+ },
+ {
+  "id": "i-0716",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "low",
+  "note": "tech support"
+ },
+ {
+  "id": "i-0731",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "low",
+  "note": "developing software vs using software"
+ },
+ {
+  "id": "i-0733",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "MikroTik routers; instance of networking hardware (routers)"
+ },
+ {
+  "id": "i-0758",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-0760",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "setting up wireless networks; networking devices / access points"
+ },
+ {
+  "id": "i-0767",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.3.a"
+  ],
+  "preferred": "onet:2.C.3.a",
+  "confidence": "low",
+  "note": "general digital/computer literacy"
+ },
+ {
+  "id": "i-0820",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "tool:Management information systems MIS"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "information systems as field: design of information systems vs MIS"
+ },
+ {
+  "id": "i-0822",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "making charts; data visualisation"
+ },
+ {
+  "id": "i-0827",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-0834",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "onet:2.C.3.a",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29"
+  ],
+  "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+  "confidence": "low",
+  "note": "computer hardware knowledge"
+ },
+ {
+  "id": "i-0840",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+   "onet:2.B.3.e"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "app development"
+ },
+ {
+  "id": "i-0843",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f975091a-e5a5-4472-ac17-11680e53e98f",
+   "esco:2fb8480e-de3c-462b-b169-e8bbb344da68",
+   "esco:8c4c49d4-9708-433f-8ca7-bf2c5211ee49"
+  ],
+  "preferred": "esco:f975091a-e5a5-4472-ac17-11680e53e98f",
+  "confidence": "low",
+  "note": "innovation; seek innovation names innovate"
+ },
+ {
+  "id": "i-0847",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free (amendment rule 3)"
+ },
+ {
+  "id": "i-0855",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "high",
+  "note": "security knowledge in computing = cyber security"
+ },
+ {
+  "id": "i-0882",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "content-free, like computer stuff"
+ },
+ {
+  "id": "i-0886",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388"
+  ],
+  "preferred": "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+  "confidence": "low",
+  "note": "doing project work vs managing projects"
+ },
+ {
+  "id": "i-0889",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "esco:0868eef3-2213-4572-9343-74931345a7d3"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "low",
+  "note": "server administration"
+ },
+ {
+  "id": "i-0899",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7364cc39-b9c0-449f-9416-57723e2fd9c4",
+   "esco:a4c2aa71-086f-4a46-b481-2619673c9dfe"
+  ],
+  "preferred": "esco:7364cc39-b9c0-449f-9416-57723e2fd9c4",
+  "confidence": "low",
+  "note": "journey mapping is a user-centred design method; no specific node"
+ },
+ {
+  "id": "i-0914",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+  "confidence": "high",
+  "note": "Canva is a graphics editor"
+ },
+ {
+  "id": "i-0937",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "Bitcoin Core node; blockchain platform"
+ },
+ {
+  "id": "i-0939",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3"
+  ],
+  "preferred": "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3",
+  "confidence": "high",
+  "note": "Microsoft Intune is mobile device management"
+ },
+ {
+  "id": "i-0962",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "spanning tree switching protocols"
+ },
+ {
+  "id": "i-0969",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+   "onet:2.A.1.d",
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337"
+  ],
+  "preferred": "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+  "confidence": "low",
+  "note": "communicating with stakeholders"
+ },
+ {
+  "id": "i-1002",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "designing (ICT) systems"
+ },
+ {
+  "id": "i-1003",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free (amendment rule 3)"
+ },
+ {
+  "id": "i-1016",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388"
+  ],
+  "preferred": "esco:1fcce318-3212-487a-ac07-4941bc85060d",
+  "confidence": "low",
+  "note": "project work vs project management; vague"
+ },
+ {
+  "id": "i-1029",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "low",
+  "note": "Kaggle = applied ML/data science practice"
+ },
+ {
+  "id": "i-1032",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.2.a"
+  ],
+  "preferred": "onet:2.A.2.a",
+  "confidence": "low",
+  "note": "accuracy ~ attention to detail (named on Critical Thinking)"
+ },
+ {
+  "id": "i-1034",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "system design"
+ },
+ {
+  "id": "i-1053",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free (amendment rule 3)"
+ },
+ {
+  "id": "i-1062",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:1019423b-3368-4f83-b24f-19e5fa23e816"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "user interface design"
+ },
+ {
+  "id": "i-1070",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless networking; no Wi-Fi node, networking devices / protocols"
+ },
+ {
+  "id": "i-1081",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "Bitcoin Core; blockchain platform"
+ },
+ {
+  "id": "i-1088",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "names the ICT field, not a capability"
+ },
+ {
+  "id": "i-1092",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "backend development"
+ },
+ {
+  "id": "i-1093",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Wide area network WAN software"
+  ],
+  "preferred": "tool:Wide area network WAN software",
+  "confidence": "low",
+  "note": "SD-WAN is WAN software; SDN has no node"
+ },
+ {
+  "id": "i-1097",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cascading style sheets CSS",
+   "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794"
+  ],
+  "preferred": "tool:Cascading style sheets CSS",
+  "confidence": "low",
+  "note": "Tailwind is a CSS framework; Bootstrap is a different product"
+ },
+ {
+  "id": "i-1107",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+   "esco:dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1"
+  ],
+  "preferred": "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+  "confidence": "low",
+  "note": "managing stakeholders; negotiate/collaborate with stakeholders"
+ },
+ {
+  "id": "i-1114",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fff0e2cd-d0bd-4b02-9daf-158b79d9688a"
+  ],
+  "preferred": "esco:fff0e2cd-d0bd-4b02-9daf-158b79d9688a",
+  "confidence": "high",
+  "note": "NLTK is an NLP library"
+ },
+ {
+  "id": "i-1115",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Project planning software",
+   "tool:Project portfolio management PPM software"
+  ],
+  "preferred": "tool:Project planning software",
+  "confidence": "low",
+  "note": "project management tools"
+ },
+ {
+  "id": "i-1135",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "tool:R"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "high",
+  "note": "ggplot2 is an R data visualisation library"
+ },
+ {
+  "id": "i-1146",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "end-to-end system design"
+ },
+ {
+  "id": "i-1167",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free (amendment rule 3)"
+ },
+ {
+  "id": "i-1180",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software",
+   "tool:3D graphics software",
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "low",
+  "note": "Three.js is a JavaScript 3D library"
+ },
+ {
+  "id": "i-1188",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "high",
+  "note": "Cobalt Strike is an adversary-simulation/pen-testing tool"
+ },
+ {
+  "id": "i-1198",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+   "esco:348b74cd-49ce-4844-8bdf-ec188b497213"
+  ],
+  "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+  "confidence": "low",
+  "note": "data visualisation vs graphic design"
+ },
+ {
+  "id": "i-1201",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "provide ICT support covers password resets"
+ },
+ {
+  "id": "i-1205",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "M-Pesa Daraja is a REST API; instance of RESTful API / application-specific interface"
+ },
+ {
+  "id": "i-1212",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "personal trait (honesty)"
+ },
+ {
+  "id": "i-1233",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+   "esco:f049d050-12da-4e40-813a-2b5eb6df6b51",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+  ],
+  "preferred": "esco:2180bd8c-86de-4889-8165-adac902eee9d",
+  "confidence": "low",
+  "note": "Raspberry Pi single-board computer; embedded/IoT"
+ },
+ {
+  "id": "i-1244",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "tool:Functional testing software",
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "high",
+  "note": "Cucumber/Gherkin BDD test automation"
+ },
+ {
+  "id": "i-1264",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "esco:81633a44-f1db-4a01-a940-804c6905e330",
+   "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+   "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "high",
+  "note": "MS Office packages"
+ },
+ {
+  "id": "i-1265",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+   "esco:86d2e2ea-1ba2-4aa6-b465-8a1f9abc81b8",
+   "esco:7814e88f-c133-4c3b-b27f-857afa145d42"
+  ],
+  "preferred": "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+  "confidence": "high",
+  "note": "Kenya Data Protection Act 2019 and GDPR"
+ },
+ {
+  "id": "i-1268",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:418a56a2-7cfc-4b6d-8cf5-5c2add99a849",
+   "esco:e54ff029-1ce9-447d-a5b2-eb7283a23e6e",
+   "esco:d54a1355-05c8-45eb-9c42-267d2cfcdf44",
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "esco:418a56a2-7cfc-4b6d-8cf5-5c2add99a849",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1278",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "tool:Traffic shapers"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "configuring MikroTik routers: hotspot and queue (traffic shaping)"
+ },
+ {
+  "id": "i-1280",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "cyber security"
+ },
+ {
+  "id": "i-1282",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "Flutter mobile apps"
+ },
+ {
+  "id": "i-1291",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0868eef3-2213-4572-9343-74931345a7d3",
+   "onet:2.B.4.g",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e"
+  ],
+  "preferred": "esco:0868eef3-2213-4572-9343-74931345a7d3",
+  "confidence": "low",
+  "note": "systems administration vs analysis vs design; vague"
+ },
+ {
+  "id": "i-1298",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "MikroTik RouterOS; router configuration (Cisco IOS is a different product)"
+ },
+ {
+  "id": "i-1307",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:906323f4-00c4-4c3b-ab5a-8af77be3456e",
+   "esco:9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:906323f4-00c4-4c3b-ab5a-8af77be3456e",
+  "confidence": "low",
+  "note": "creating vs managing vs analysing datasets"
+ },
+ {
+  "id": "i-1308",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:3D graphics software",
+   "esco:e8171178-9a60-40a6-ad3b-510e10cfebad"
+  ],
+  "preferred": "tool:3D graphics software",
+  "confidence": "high",
+  "note": "Blender is 3D graphics software"
+ },
+ {
+  "id": "i-1311",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+  ],
+  "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+  "confidence": "high",
+  "note": "manual exploratory testing; execute software tests (Manual testing)"
+ },
+ {
+  "id": "i-1314",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless LAN setup; networking devices"
+ },
+ {
+  "id": "i-1315",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL",
+   "esco:75f839c2-fd9a-4ad3-8921-6e734608568d"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1317",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "personal trait; time management only related"
+ },
+ {
+  "id": "i-1319",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free"
+ },
+ {
+  "id": "i-1328",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.C.1.a",
+   "esco:339ac029-066a-4985-9f9d-b3d7c8fea0bb",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68"
+  ],
+  "preferred": "onet:2.C.1.a",
+  "confidence": "high",
+  "note": "people, project or general management"
+ },
+ {
+  "id": "i-1331",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1333",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Diagramming software",
+   "esco:901105f8-3a08-453e-b1dc-23619e317fd3"
+  ],
+  "preferred": "tool:Diagramming software",
+  "confidence": "low",
+  "note": "making diagrams"
+ },
+ {
+  "id": "i-1338",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+   "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13"
+  ],
+  "preferred": "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+  "confidence": "low",
+  "note": "data protection vs system security; vague"
+ },
+ {
+  "id": "i-1343",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "learning Seaborn (Python visualisation library)"
+ },
+ {
+  "id": "i-1347",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+   "esco:a71577b2-7550-4222-88ee-dcbd2d881516"
+  ],
+  "preferred": "esco:945b8655-5577-4c3a-946a-842d4527afa8",
+  "confidence": "low",
+  "note": "image processing vs image editing"
+ }
+]

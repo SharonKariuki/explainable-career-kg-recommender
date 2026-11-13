@@ -1,0 +1,814 @@
+[
+ {
+  "group": "ev-g037",
+  "input": "machine learning",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: machine learning (ML knowledge vs skill); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g037",
+  "input": "teaching computers to learn",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: machine learning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g038",
+  "input": "ai stuff",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: AI; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g038",
+  "input": "artificial intelligence",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: AI; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g039",
+  "input": "neural nets",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: deep learning"
+ },
+ {
+  "group": "ev-g040",
+  "input": "making chatbots",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: chatbots"
+ },
+ {
+  "group": "ev-g041",
+  "input": "computer vision for photos",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: image recognition"
+ },
+ {
+  "group": "ev-g042",
+  "input": "tensorflow models",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: tensorflow"
+ },
+ {
+  "group": "ev-g043",
+  "input": "working with text and language data",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "everyday: NLP"
+ },
+ {
+  "group": "ev-g044",
+  "input": "good with networks",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: networking; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g044",
+  "input": "computer networking",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: networking; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g045",
+  "input": "I can set up wifi for a small office",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: office wifi; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g045",
+  "input": "setting up wifi at home or shop",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: office wifi; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g046",
+  "input": "routers and routing",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: routing (routing knowledge vs narrower Route command); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g046",
+  "input": "configuring routers",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: routing (routing vs Route command); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g047",
+  "input": "laying network cables",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: cables; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g047",
+  "input": "crimping lan cables",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: cables; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g048",
+  "input": "cisco packet tracer",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: cisco (Packet Tracer vs Cisco vs networking generally); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g048",
+  "input": "cisco labs from class",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: cisco; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g049",
+  "input": "vlans on switches",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: VLAN"
+ },
+ {
+  "group": "ev-g050",
+  "input": "ip addressing",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: IP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g050",
+  "input": "subnetting",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: IP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g051",
+  "input": "setting up vpn",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: VPN (VPN skill vs VPN software)"
+ },
+ {
+  "group": "ev-g052",
+  "input": "dns settings",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: DNS (DNS knowledge vs DNS tool)"
+ },
+ {
+  "group": "ev-g053",
+  "input": "finding why the internet is down",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: troubleshoot"
+ },
+ {
+  "group": "ev-g054",
+  "input": "dhcp server setup",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: DHCP (DHCP)"
+ },
+ {
+  "group": "ev-g055",
+  "input": "wireshark",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "everyday: wireshark (Wireshark vs packet analysis)"
+ },
+ {
+  "group": "ev-g056",
+  "input": "cyber security",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: security (broad security umbrella); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g056",
+  "input": "computer security",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: security; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g057",
+  "input": "setting up a firewall",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: firewall (firewall skill vs firewall software tool); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g057",
+  "input": "firewalls",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: firewall; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g058",
+  "input": "ethical hacker in training",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: hacking (pen testing vs generic security); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g058",
+  "input": "hacking into things to test them",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: hacking; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g059",
+  "input": "getting rid of viruses",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: antivirus; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g059",
+  "input": "antivirus installs",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: antivirus; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g060",
+  "input": "keeping accounts safe with strong passwords",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: passwords; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g060",
+  "input": "managing logins and passwords",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: passwords; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g061",
+  "input": "spotting scam emails",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: phishing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g061",
+  "input": "teaching people about phishing",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: phishing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g062",
+  "input": "encrypting files",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: encryption; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g062",
+  "input": "encryption",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: encryption; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g063",
+  "input": "data privacy",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: data protection; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g063",
+  "input": "keeping peoples data safe",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: data protection; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g064",
+  "input": "kali linux testing",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: pen testing (Kali Linux vs penetration testing)"
+ },
+ {
+  "group": "ev-g065",
+  "input": "finding security holes",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: vulnerabilities"
+ },
+ {
+  "group": "ev-g066",
+  "input": "handling security incidents",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: incident"
+ },
+ {
+  "group": "ev-g067",
+  "input": "digital forensics",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: forensics"
+ },
+ {
+  "group": "ev-g068",
+  "input": "making websites secure",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "everyday: web security"
+ },
+ {
+  "group": "ev-g069",
+  "input": "fixing peoples laptops",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: fixing laptops; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g069",
+  "input": "repairing computers",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: fixing laptops; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g070",
+  "input": "helping people with their computer problems",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: helpdesk; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g070",
+  "input": "help desk support",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: helpdesk; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g071",
+  "input": "installing windows",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: installing windows; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g071",
+  "input": "formatting and reinstalling pcs",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: installing windows; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g072",
+  "input": "computer hardware",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: hardware; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g072",
+  "input": "replacing ram and hard disks",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: hardware; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g073",
+  "input": "installing software for users",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: software install; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g073",
+  "input": "setting up programs on pcs",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: software install; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g074",
+  "input": "fixing printers",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: printers; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g074",
+  "input": "printer setup",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: printers; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g075",
+  "input": "linux",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: Linux (general Linux vs distribution-specific nodes); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g075",
+  "input": "using linux",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: Linux; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g076",
+  "input": "red hat linux",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: Red Hat (near-concept: Red Hat distribution vs Linux generally)"
+ },
+ {
+  "group": "ev-g077",
+  "input": "windows server",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: Windows server (Windows Server vs Windows general)"
+ },
+ {
+  "group": "ev-g078",
+  "input": "active directory",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: Active Directory (AD knowledge vs AD software)"
+ },
+ {
+  "group": "ev-g079",
+  "input": "backing up data",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: backups; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g079",
+  "input": "restoring lost files",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: backups; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g080",
+  "input": "fixing computers remotely",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: remote support; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g080",
+  "input": "teamviewer support",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: remote support; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g081",
+  "input": "virtualbox and vmware vms",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "everyday: virtual machines"
+ },
+ {
+  "group": "ev-g082",
+  "input": "databases",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: databases; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g082",
+  "input": "working with databases",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: databases; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g083",
+  "input": "sql",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: SQL (SQL language vs database management); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g083",
+  "input": "sql queries",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: SQL; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g084",
+  "input": "mysql",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: MySQL (MySQL vs SQL vs databases); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g084",
+  "input": "mysql databases",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: MySQL; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g085",
+  "input": "designing databases",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: design tables; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g085",
+  "input": "making tables and relationships",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: design tables; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g086",
+  "input": "oracle database",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: Oracle"
+ },
+ {
+  "group": "ev-g087",
+  "input": "mongodb",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: MongoDB (MongoDB vs NoSQL)"
+ },
+ {
+  "group": "ev-g088",
+  "input": "postgres",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "everyday: PostgreSQL (PostgreSQL vs general SQL/databases)"
+ },
+ {
+  "group": "ev-g089",
+  "input": "cloud computing",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: cloud (cloud generally vs specific provider); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g089",
+  "input": "cloud stuff",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: cloud; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g090",
+  "input": "aws",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: AWS (AWS vs cloud in general); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g090",
+  "input": "amazon web services basics",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: AWS; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g091",
+  "input": "microsoft azure",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: Azure"
+ },
+ {
+  "group": "ev-g092",
+  "input": "docker",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: Docker (Docker vs container management); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g092",
+  "input": "putting apps in docker containers",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: Docker; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g093",
+  "input": "auto deploying my code",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: CI/CD; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g093",
+  "input": "github actions pipelines",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: CI/CD; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g094",
+  "input": "kubernetes",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: Kubernetes (Kubernetes vs container management)"
+ },
+ {
+  "group": "ev-g095",
+  "input": "devops",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "everyday: DevOps"
+ },
+ {
+  "group": "ev-g096",
+  "input": "managing projects",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: project mgmt; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g096",
+  "input": "running a project team",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: project mgmt; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g097",
+  "input": "agile and scrum",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: agile (agile vs Scrum); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g097",
+  "input": "scrum",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: agile (Scrum vs agile); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g098",
+  "input": "software testing",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g098",
+  "input": "testing apps for bugs",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g099",
+  "input": "finding out what the client wants",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: requirements; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g099",
+  "input": "gathering requirements",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: requirements; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g100",
+  "input": "writing documentation",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: documentation; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g100",
+  "input": "documenting systems",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: documentation (documentation); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g101",
+  "input": "business analysis",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "everyday: business analysis (business analysis vs requirements/data analysis)"
+ },
+ {
+  "group": "ev-g102",
+  "input": "blockchain",
+  "category": "everyday",
+  "domain": "blockchain",
+  "author_note": "everyday: blockchain; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g102",
+  "input": "blockchain basics",
+  "category": "everyday",
+  "domain": "blockchain",
+  "author_note": "everyday: blockchain; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g103",
+  "input": "smart contracts",
+  "category": "everyday",
+  "domain": "blockchain",
+  "author_note": "everyday: smart contracts; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g103",
+  "input": "solidity contracts",
+  "category": "everyday",
+  "domain": "blockchain",
+  "author_note": "everyday: smart contracts (Solidity vs smart contract); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g104",
+  "input": "cryptocurrency stuff",
+  "category": "everyday",
+  "domain": "blockchain",
+  "author_note": "everyday: crypto"
+ },
+ {
+  "group": "ev-g105",
+  "input": "ethereum dapps",
+  "category": "everyday",
+  "domain": "blockchain",
+  "author_note": "everyday: ethereum"
+ },
+ {
+  "group": "ev-g106",
+  "input": "talking to clients",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "everyday: talking to clients; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g106",
+  "input": "dealing with customers",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "everyday: talking to clients; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g107",
+  "input": "good communicator",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "everyday: communication; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g107",
+  "input": "presenting my work to people",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "everyday: communication; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g108",
+  "input": "working in a team",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "everyday: teamwork"
+ },
+ {
+  "group": "ev-g109",
+  "input": "solving problems",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "everyday: problem solving"
+ },
+ {
+  "group": "ev-g110",
+  "input": "writing reports",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "everyday: report writing"
+ }
+]

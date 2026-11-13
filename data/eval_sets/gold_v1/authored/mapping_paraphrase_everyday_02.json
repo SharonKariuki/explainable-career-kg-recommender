@@ -1,0 +1,821 @@
+[
+ {
+  "group": "pe-g079",
+  "input": "designing tables and relationships",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: schema / ER design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g079",
+  "input": "planning how data is stored in a database",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: schema / ER design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g080",
+  "input": "tuning slow queries",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: query tuning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g080",
+  "input": "making database lookups faster",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: query tuning; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g081",
+  "input": "storing data as documents instead of tables",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: NoSQL; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g081",
+  "input": "schema-less databases",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: NoSQL; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g082",
+  "input": "looking after a company database and its backups",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: DBA"
+ },
+ {
+  "group": "pe-g083",
+  "input": "writing queries that combine several tables",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: SQL joins"
+ },
+ {
+  "group": "pe-g084",
+  "input": "free open source relational database",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: PostgreSQL/MySQL"
+ },
+ {
+  "group": "pe-g085",
+  "input": "controlling access to stored company data",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: database security/access"
+ },
+ {
+  "group": "pe-g086",
+  "input": "packaging apps into isolated boxes",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: containers; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g086",
+  "input": "running applications in containers",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: containers; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g087",
+  "input": "automating software releases",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: CI/CD; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g087",
+  "input": "pipelines that build test and deploy code",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: CI/CD; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g088",
+  "input": "describing infrastructure in config files",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: infrastructure as code; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g088",
+  "input": "setting up servers with code instead of clicking",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: infrastructure as code; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g089",
+  "input": "managing clusters of many containers",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: container orchestration"
+ },
+ {
+  "group": "pe-g090",
+  "input": "Amazon cloud platform",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: AWS"
+ },
+ {
+  "group": "pe-g091",
+  "input": "Microsoft cloud services",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: Azure"
+ },
+ {
+  "group": "pe-g092",
+  "input": "watching server and app health with alerts",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: monitoring"
+ },
+ {
+  "group": "pe-g093",
+  "input": "running several virtual machines on one physical host",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: virtualisation"
+ },
+ {
+  "group": "pe-g094",
+  "input": "planning and tracking a software project",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: project management; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g094",
+  "input": "keeping a team work on schedule",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: project management; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g095",
+  "input": "working in short sprint cycles with a backlog",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: agile; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g095",
+  "input": "iterative development with daily standups",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: agile; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g096",
+  "input": "checking an app for defects before release",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: software testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g096",
+  "input": "testing software before it goes live",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: software testing; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g097",
+  "input": "finding out what users need from a system",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: requirements"
+ },
+ {
+  "group": "pe-g098",
+  "input": "writing test plans and cases",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: test cases"
+ },
+ {
+  "group": "pe-g099",
+  "input": "writing up how a system works",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: technical documentation"
+ },
+ {
+  "group": "pe-g100",
+  "input": "estimating effort and cost of work",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: estimation"
+ },
+ {
+  "group": "pe-g101",
+  "input": "recording and following up software defects",
+  "category": "paraphrase",
+  "domain": "project_qa",
+  "author_note": "paraphrase: bug tracking"
+ },
+ {
+  "group": "pe-g102",
+  "input": "writing smart contracts",
+  "category": "paraphrase",
+  "domain": "blockchain",
+  "author_note": "paraphrase: smart contracts; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g102",
+  "input": "self-executing agreements stored on a blockchain",
+  "category": "paraphrase",
+  "domain": "blockchain",
+  "author_note": "paraphrase: smart contracts; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g103",
+  "input": "shared tamper-proof records across many nodes",
+  "category": "paraphrase",
+  "domain": "blockchain",
+  "author_note": "paraphrase: distributed ledger; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g103",
+  "input": "distributed ledger technology",
+  "category": "paraphrase",
+  "domain": "blockchain",
+  "author_note": "paraphrase: distributed ledger; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g104",
+  "input": "the programmable cryptocurrency network",
+  "category": "paraphrase",
+  "domain": "blockchain",
+  "author_note": "paraphrase: Ethereum"
+ },
+ {
+  "group": "pe-g105",
+  "input": "explaining technical things to non-technical people",
+  "category": "paraphrase",
+  "domain": "general",
+  "author_note": "paraphrase: communicating technical ideas"
+ },
+ {
+  "group": "pe-g106",
+  "input": "collaborating with others on joint work",
+  "category": "paraphrase",
+  "domain": "general",
+  "author_note": "paraphrase: teamwork"
+ },
+ {
+  "group": "pe-g107",
+  "input": "working through problems logically",
+  "category": "paraphrase",
+  "domain": "general",
+  "author_note": "paraphrase: problem solving"
+ },
+ {
+  "group": "pe-g108",
+  "input": "writing clear technical reports",
+  "category": "paraphrase",
+  "domain": "general",
+  "author_note": "paraphrase: technical writing"
+ },
+ {
+  "group": "pe-g109",
+  "input": "meeting deadlines by planning my time",
+  "category": "paraphrase",
+  "domain": "general",
+  "author_note": "paraphrase: time management"
+ },
+ {
+  "group": "pe-g110",
+  "input": "finding bottlenecks in network speed",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: network performance analysis; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g110",
+  "input": "measuring how well a network is performing",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: network performance analysis; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g111",
+  "input": "checking and fixing address settings on devices",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: maintain IP configuration; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g111",
+  "input": "setting a machine address and gateway",
+  "category": "paraphrase",
+  "domain": "networking",
+  "author_note": "paraphrase: maintain IP configuration; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "pe-g112",
+  "input": "knowing the threats facing a corporate network",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: ICT network security risks"
+ },
+ {
+  "group": "pe-g113",
+  "input": "blocking scam emails with software",
+  "category": "paraphrase",
+  "domain": "security",
+  "author_note": "paraphrase: anti-phishing software"
+ },
+ {
+  "group": "pe-g114",
+  "input": "enhancing and analysing digital pictures with algorithms",
+  "category": "paraphrase",
+  "domain": "ai_ml",
+  "author_note": "paraphrase: digital image processing"
+ },
+ {
+  "group": "pe-g115",
+  "input": "mapping out how data entities relate",
+  "category": "paraphrase",
+  "domain": "database",
+  "author_note": "paraphrase: data models"
+ },
+ {
+  "group": "pe-g116",
+  "input": "planning the interface other programs use to talk to a system",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: design API / application interfaces"
+ },
+ {
+  "group": "pe-g117",
+  "input": "groups of servers working together as one",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: cluster server software"
+ },
+ {
+  "group": "pe-g118",
+  "input": "the search giant cloud platform",
+  "category": "paraphrase",
+  "domain": "cloud_infrastructure",
+  "author_note": "paraphrase: Google Cloud"
+ },
+ {
+  "group": "pe-g119",
+  "input": "showing colleagues how to do their jobs",
+  "category": "paraphrase",
+  "domain": "general",
+  "author_note": "paraphrase: train employees"
+ },
+ {
+  "group": "pe-g120",
+  "input": "helping customers with what they need",
+  "category": "paraphrase",
+  "domain": "general",
+  "author_note": "paraphrase: assist customers"
+ },
+ {
+  "group": "pe-g121",
+  "input": "writing programs that talk over network sockets",
+  "category": "paraphrase",
+  "domain": "software_backend",
+  "author_note": "paraphrase: network programming"
+ },
+ {
+  "group": "pe-g122",
+  "input": "command interpreters for typing instructions to an OS",
+  "category": "paraphrase",
+  "domain": "it_support",
+  "author_note": "paraphrase: operating system shells"
+ },
+ {
+  "group": "pe-g123",
+  "input": "central store combining company data for reporting",
+  "category": "paraphrase",
+  "domain": "data_analytics",
+  "author_note": "paraphrase: data warehouse"
+ },
+ {
+  "group": "ev-g001",
+  "input": "making websites look nice",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: web design (web design vs HTML/CSS); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g001",
+  "input": "pretty websites",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: web design (web design vs HTML/CSS); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g002",
+  "input": "good with html",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: HTML vs web design (deliberately near-miss: HTML markup vs web design generally); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g002",
+  "input": "html and stuff",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: HTML vs web design (deliberately near-miss: HTML vs web design); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g003",
+  "input": "sites that work on phones",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: mobile-friendly; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g003",
+  "input": "mobile friendly pages",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: mobile-friendly; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g004",
+  "input": "front end coding",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: frontend; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g004",
+  "input": "coding the part of the site people see",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: frontend; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g005",
+  "input": "making logos and posters",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: graphic design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g005",
+  "input": "photoshop type design",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: graphic design; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g006",
+  "input": "wordpress sites for clients",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: WordPress (CMS vs general web building); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g006",
+  "input": "building blogs",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: WordPress; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g007",
+  "input": "javascript stuff",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: JavaScript (JavaScript vs Java confusion); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g007",
+  "input": "making web pages do things when you click",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: JavaScript; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g008",
+  "input": "react apps",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: React; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g008",
+  "input": "react",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: React (React vs JavaScript framework software); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g009",
+  "input": "making apps easy to use",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: UX (UX vs UI design); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g009",
+  "input": "user friendly app screens",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: UX; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g010",
+  "input": "html and css",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: HTML+CSS"
+ },
+ {
+  "group": "ev-g011",
+  "input": "css styling",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: CSS"
+ },
+ {
+  "group": "ev-g012",
+  "input": "angular or vue frameworks",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "everyday: Vue/Angular"
+ },
+ {
+  "group": "ev-g013",
+  "input": "backend development",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: backend; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g013",
+  "input": "back end stuff",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: backend; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g014",
+  "input": "making apis",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: APIs; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g014",
+  "input": "apis for apps to talk",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: APIs; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g015",
+  "input": "python programming",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: Python (Python vs pandas/other Python libraries); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g015",
+  "input": "coding in python",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: Python (Python vs pandas); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g016",
+  "input": "java",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: Java (Java (Oracle Java) vs JavaScript confusion)"
+ },
+ {
+  "group": "ev-g017",
+  "input": "using git",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: Git (Git vs GitHub); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g017",
+  "input": "github",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: Git (GitHub vs Git (related but distinct)); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g018",
+  "input": "testing my code",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: testing code; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g018",
+  "input": "writing tests",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: testing code; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g019",
+  "input": "oop",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: OOP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g019",
+  "input": "object oriented stuff",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: OOP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g020",
+  "input": "php websites",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: PHP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g020",
+  "input": "php and mysql",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: PHP; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g022",
+  "input": "fixing bugs in code",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: fixing bugs; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g022",
+  "input": "debugging",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: fixing bugs; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g023",
+  "input": "integrating M-Pesa payments",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: M-Pesa API; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g023",
+  "input": "daraja api",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: M-Pesa API (Daraja/M-Pesa API vs generic RESTful API); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g024",
+  "input": "making android apps",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: Android"
+ },
+ {
+  "group": "ev-g025",
+  "input": "django",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "everyday: Django"
+ },
+ {
+  "group": "ev-g026",
+  "input": "good with spreadsheets",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: spreadsheets (general spreadsheet skill vs Microsoft Excel tool); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g026",
+  "input": "spreadsheet work",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: spreadsheets (general spreadsheet skill vs Excel); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g027",
+  "input": "ms excel",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: Excel (Excel product vs general spreadsheet capability); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g027",
+  "input": "excel formulas and pivots",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: Excel (Excel specifically); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g028",
+  "input": "analysing data",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: data analysis; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g028",
+  "input": "looking at data to find insights",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: data analysis; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g029",
+  "input": "making graphs and charts",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: charts; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g029",
+  "input": "dashboards",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: charts (dashboards vs data visualization tools); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g030",
+  "input": "tidying up messy data",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: cleaning data; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g030",
+  "input": "fixing dirty data",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: cleaning data; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g031",
+  "input": "stats",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: statistics (statistics); variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g031",
+  "input": "statistics for research",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: statistics; variant of same intent as the other 1 item(s) in group"
+ },
+ {
+  "group": "ev-g032",
+  "input": "pandas",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: pandas (near-concept: pandas vs Python)"
+ },
+ {
+  "group": "ev-g033",
+  "input": "power bi reports",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: Power BI"
+ },
+ {
+  "group": "ev-g034",
+  "input": "tableau",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: Tableau"
+ },
+ {
+  "group": "ev-g035",
+  "input": "getting reports out of the database",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: SQL reports"
+ },
+ {
+  "group": "ev-g036",
+  "input": "big data stuff",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "everyday: big data"
+ }
+]

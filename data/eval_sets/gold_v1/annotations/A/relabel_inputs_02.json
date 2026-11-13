@@ -1,0 +1,710 @@
+[
+ {
+  "id": "i-1353",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software",
+   "tool:Web framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "SvelteKit is a JavaScript web framework"
+ },
+ {
+  "id": "i-1359",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3e23db60-0c3d-498a-a6ac-ffbed0ecb033",
+   "esco:be64bb4c-84ac-4c83-8cc7-fc8593e15136",
+   "esco:8696aff0-18c0-4ba6-a4d0-9a21861b3e5e"
+  ],
+  "preferred": "esco:3e23db60-0c3d-498a-a6ac-ffbed0ecb033",
+  "confidence": "high",
+  "note": "web accessibility standards"
+ },
+ {
+  "id": "i-1360",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "ITIL/IT service management; only narrower or related nodes (problem management, process quality models)"
+ },
+ {
+  "id": "i-1373",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Help desk software",
+   "esco:6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
+   "tool:Ticket information tracking software"
+  ],
+  "preferred": "tool:Help desk software",
+  "confidence": "high",
+  "note": "Zendesk is help desk software"
+ },
+ {
+  "id": "i-1377",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "self-description as a hacker; read as ethical hacking"
+ },
+ {
+  "id": "i-1382",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e",
+   "esco:385479b7-5da5-4367-9763-0d15b41bb65b",
+   "esco:327d15c8-29ff-4ad4-a4fe-6536d777a45f"
+  ],
+  "preferred": "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e",
+  "confidence": "high",
+  "note": "writing documentation"
+ },
+ {
+  "id": "i-1396",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless networking"
+ },
+ {
+  "id": "i-1408",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0868eef3-2213-4572-9343-74931345a7d3",
+   "onet:2.B.4.g",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e"
+  ],
+  "preferred": "esco:0868eef3-2213-4572-9343-74931345a7d3",
+  "confidence": "low",
+  "note": "systems administration vs analysis vs design"
+ },
+ {
+  "id": "i-1412",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1426",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-1429",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software",
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "low",
+  "note": "data capture = data entry"
+ },
+ {
+  "id": "i-1438",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "Flutter is a cross-platform mobile framework"
+ },
+ {
+  "id": "i-1443",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Graphical user interface GUI design software",
+   "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+   "esco:fc4fcb4b-993f-4f2c-b158-c2171ec18ed8"
+  ],
+  "preferred": "tool:Graphical user interface GUI design software",
+  "confidence": "low",
+  "note": "Sketch UI design app vs drawing sketches"
+ },
+ {
+  "id": "i-1473",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1476",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.f",
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3"
+  ],
+  "preferred": "onet:2.B.1.f",
+  "confidence": "low",
+  "note": "helping people; Service Orientation"
+ },
+ {
+  "id": "i-1480",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.3.a"
+  ],
+  "preferred": "onet:2.C.3.a",
+  "confidence": "low",
+  "note": "basic computer skills"
+ },
+ {
+  "id": "i-1484",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Network management software",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": "tool:Network management software",
+  "confidence": "low",
+  "note": "Cisco Meraki dashboard is cloud network management"
+ },
+ {
+  "id": "i-1501",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "interpersonal skill; Social Perceptiveness closest"
+ },
+ {
+  "id": "i-1508",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "onet:2.C.3.a",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29"
+  ],
+  "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+  "confidence": "low",
+  "note": "computer hardware"
+ },
+ {
+  "id": "i-1512",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "IT support vs customer support"
+ },
+ {
+  "id": "i-1516",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "esco:81633a44-f1db-4a01-a940-804c6905e330",
+   "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+   "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": "computer packages = office productivity software (Kenyan usage)"
+ },
+ {
+  "id": "i-1517",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d0c6d77e-cb25-4770-bf77-2073fc5f7523"
+  ],
+  "preferred": "esco:d0c6d77e-cb25-4770-bf77-2073fc5f7523",
+  "confidence": "low",
+  "note": "ICT infrastructure"
+ },
+ {
+  "id": "i-1538",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+   "onet:2.C.7.a"
+  ],
+  "preferred": "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1540",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-1542",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1554",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "high",
+  "note": "Seaborn is a Python data visualisation library"
+ },
+ {
+  "id": "i-1557",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Virtual local area network management software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "tool:Virtual local area network management software",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1573",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b"
+  ],
+  "preferred": "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+  "confidence": "low",
+  "note": "leadership"
+ },
+ {
+  "id": "i-1589",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-1592",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "cyber security"
+ },
+ {
+  "id": "i-1596",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "tool:Management information systems MIS"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "low",
+  "note": "information systems as field: design vs MIS"
+ },
+ {
+  "id": "i-1622",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b",
+   "onet:2.C.9.a"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless networking/communications"
+ },
+ {
+  "id": "i-1623",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "esco:81633a44-f1db-4a01-a940-804c6905e330",
+   "esco:1973c966-f236-40c9-b2d4-5d71a89019be",
+   "esco:234aeb8d-56c3-4531-9193-1c5e6a8d16cb"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": "computer packages = office productivity software (Kenyan usage)"
+ },
+ {
+  "id": "i-1627",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.l",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "onet:2.B.3.k"
+  ],
+  "preferred": "onet:2.B.3.l",
+  "confidence": "low",
+  "note": "repairing hardware vs fixing problems/bugs"
+ },
+ {
+  "id": "i-1635",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+   "onet:2.C.7.a"
+  ],
+  "preferred": "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1647",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+   "onet:2.B.5.a"
+  ],
+  "preferred": "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+  "confidence": "low",
+  "note": "organisational skill"
+ },
+ {
+  "id": "i-1648",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+   "esco:5898d99a-62a4-4e10-a2e3-0d815ce44248"
+  ],
+  "preferred": "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+  "confidence": "low",
+  "note": "hardening is part of managing system security"
+ },
+ {
+  "id": "i-1657",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "making graphs; data visualisation"
+ },
+ {
+  "id": "i-1659",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-1667",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:27ed854c-15b8-4ba2-90e9-ae888a219703",
+   "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+   "esco:56042303-972b-41be-9310-58467599ff7e"
+  ],
+  "preferred": "esco:27ed854c-15b8-4ba2-90e9-ae888a219703",
+  "confidence": "low",
+  "note": "gap analysis; business analysis technique"
+ },
+ {
+  "id": "i-1675",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "WLAN/access point deployment; networking devices"
+ },
+ {
+  "id": "i-1676",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+   "onet:2.B.3.e",
+   "tool:Business software applications"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "building apps vs using apps"
+ },
+ {
+  "id": "i-1677",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "low",
+  "note": "peripheral setup; ICT support task"
+ },
+ {
+  "id": "i-1700",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.1.e"
+  ],
+  "preferred": "onet:2.A.1.e",
+  "confidence": "low",
+  "note": "numeracy (named on Mathematics)"
+ },
+ {
+  "id": "i-1701",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL",
+   "esco:75f839c2-fd9a-4ad3-8921-6e734608568d"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "low",
+  "note": "stored procedures are written in SQL dialects"
+ },
+ {
+  "id": "i-1704",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "low",
+  "note": "peripheral setup; ICT support task"
+ },
+ {
+  "id": "i-1725",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Virtual local area network management software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "tool:Virtual local area network management software",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1731",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b"
+  ],
+  "preferred": "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+  "confidence": "low",
+  "note": "leadership"
+ },
+ {
+  "id": "i-1733",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.l",
+   "onet:2.B.3.k"
+  ],
+  "preferred": "onet:2.B.3.l",
+  "confidence": "low",
+  "note": "repairing"
+ },
+ {
+  "id": "i-1735",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking as a field; ICT networking hardware (CompTIA Network+, switching and routing) is the closest general networking node"
+ },
+ {
+  "id": "i-1737",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless networking; no Wi-Fi node"
+ },
+ {
+  "id": "i-1739",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+   "onet:2.B.5.a"
+  ],
+  "preferred": "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+  "confidence": "low",
+  "note": "organisational skill"
+ },
+ {
+  "id": "i-1744",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "personal trait"
+ },
+ {
+  "id": "i-1752",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+   "tool:Diagramming software",
+   "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba"
+  ],
+  "preferred": "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+  "confidence": "low",
+  "note": "system design diagrams, e.g. UML"
+ },
+ {
+  "id": "i-1761",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "low",
+  "note": "network printer configuration; ICT support task"
+ },
+ {
+  "id": "i-1763",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f049d050-12da-4e40-813a-2b5eb6df6b51",
+   "tool:Web browser software"
+  ],
+  "preferred": "esco:f049d050-12da-4e40-813a-2b5eb6df6b51",
+  "confidence": "low",
+  "note": "Internet of Things vs using the internet"
+ },
+ {
+  "id": "i-1769",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "clear match"
+ },
+ {
+  "id": "i-1774",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:bf5d77ad-e18c-48d8-83f0-bc79c011c74a"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "computer networking (ICT networking hardware) vs professional networking"
+ },
+ {
+  "id": "i-1775",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+   "esco:04fe962b-4017-4eb7-9139-7d69b6922bc9"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "APIs"
+ },
+ {
+  "id": "i-1777",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless surveys/access points; AirMagnet is a specific product"
+ },
+ {
+  "id": "i-1788",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "low",
+  "note": "coding = programming"
+ },
+ {
+  "id": "i-1789",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+   "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "high",
+  "note": "design of experiments is part of statistics"
+ },
+ {
+  "id": "i-1796",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "tool:Software libraries"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": "office packages vs software/library packages"
+ },
+ {
+  "id": "i-1805",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "high",
+  "note": "clear match"
+ }
+]

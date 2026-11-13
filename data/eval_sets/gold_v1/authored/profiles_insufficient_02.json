@@ -1,0 +1,2888 @@
+[
+ {
+  "key": "pi-121",
+  "family": "frontend",
+  "wordings": [
+   [
+    "HTML",
+    "HTML coding",
+    "writing HTML",
+    "html pages"
+   ],
+   [
+    "html",
+    "coding in html",
+    "html markup",
+    "making html pages"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: HTML"
+ },
+ {
+  "key": "pi-122",
+  "family": "frontend",
+  "wordings": [
+   [
+    "CSS",
+    "CSS styling",
+    "styling with CSS"
+   ],
+   [
+    "css",
+    "css styles",
+    "styling websites with css"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: CSS"
+ },
+ {
+  "key": "pi-123",
+  "family": "frontend",
+  "wordings": [
+   [
+    "JavaScript",
+    "JS",
+    "javascript programming",
+    "coding in js"
+   ],
+   [
+    "js",
+    "javascript",
+    "java script coding",
+    "js programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: JavaScript"
+ },
+ {
+  "key": "pi-124",
+  "family": "frontend",
+  "wordings": [
+   [
+    "React",
+    "React.js",
+    "reactjs",
+    "React framework"
+   ],
+   [
+    "react",
+    "react js",
+    "ReactJS development",
+    "reactjs framework"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: React"
+ },
+ {
+  "key": "pi-125",
+  "family": "backend",
+  "wordings": [
+   [
+    "Python",
+    "Python programming",
+    "coding in Python",
+    "python scripts"
+   ],
+   [
+    "python",
+    "python coding",
+    "python language",
+    "py scripts"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Python restated; generic too"
+ },
+ {
+  "key": "pi-126",
+  "family": "backend",
+  "wordings": [
+   [
+    "Java",
+    "Java programming",
+    "core Java",
+    "coding in java"
+   ],
+   [
+    "java",
+    "java coding",
+    "java language",
+    "java programs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Java restated"
+ },
+ {
+  "key": "pi-127",
+  "family": "backend",
+  "wordings": [
+   [
+    "PHP",
+    "PHP programming",
+    "php coding"
+   ],
+   [
+    "php",
+    "php scripts",
+    "coding php"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: PHP"
+ },
+ {
+  "key": "pi-128",
+  "family": "backend",
+  "wordings": [
+   [
+    "Node.js",
+    "NodeJS",
+    "node js backend",
+    "Node"
+   ],
+   [
+    "nodejs",
+    "node.js server side",
+    "node backend",
+    "node js"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Node"
+ },
+ {
+  "key": "pi-129",
+  "family": "data",
+  "wordings": [
+   [
+    "SQL",
+    "SQL queries",
+    "writing SQL",
+    "sql coding"
+   ],
+   [
+    "sql",
+    "querying with sql",
+    "sql statements",
+    "sql language"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "SQL restated"
+ },
+ {
+  "key": "pi-130",
+  "family": "data",
+  "wordings": [
+   [
+    "Excel",
+    "MS Excel",
+    "Microsoft Excel",
+    "excel spreadsheets"
+   ],
+   [
+    "excel",
+    "excel sheets",
+    "ms excel skills",
+    "spreadsheets in excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Excel restated"
+ },
+ {
+  "key": "pi-131",
+  "family": "data",
+  "wordings": [
+   [
+    "Python",
+    "python programming",
+    "python data",
+    "py for data"
+   ],
+   [
+    "python",
+    "python coding",
+    "python for data",
+    "python scripts for data"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Python restated; data aim"
+ },
+ {
+  "key": "pi-132",
+  "family": "data",
+  "wordings": [
+   [
+    "Power BI",
+    "PowerBI",
+    "Power BI dashboards",
+    "power bi reports"
+   ],
+   [
+    "power bi",
+    "powerbi dashboards",
+    "microsoft power bi",
+    "reports in power bi"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Power BI"
+ },
+ {
+  "key": "pi-133",
+  "family": "networking",
+  "wordings": [
+   [
+    "Cisco",
+    "Cisco routers",
+    "cisco networking",
+    "cisco devices"
+   ],
+   [
+    "cisco",
+    "cisco router config",
+    "cisco equipment",
+    "working with cisco"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Cisco"
+ },
+ {
+  "key": "pi-134",
+  "family": "networking",
+  "wordings": [
+   [
+    "Packet Tracer",
+    "Cisco Packet Tracer",
+    "packet tracer simulations"
+   ],
+   [
+    "packet tracer",
+    "CPT",
+    "simulating networks in packet tracer"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Packet Tracer"
+ },
+ {
+  "key": "pi-135",
+  "family": "networking",
+  "wordings": [
+   [
+    "Wi-Fi",
+    "wifi setup",
+    "setting up wifi",
+    "wireless setup"
+   ],
+   [
+    "wifi",
+    "configuring wifi",
+    "wireless networks setup",
+    "wifi routers"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Wi-Fi"
+ },
+ {
+  "key": "pi-136",
+  "family": "networking",
+  "wordings": [
+   [
+    "Networking",
+    "computer networking",
+    "networks",
+    "network basics"
+   ],
+   [
+    "networking",
+    "computer networks",
+    "networks knowledge",
+    "basic networking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I4"
+  ],
+  "author_note": "restating networking; broad"
+ },
+ {
+  "key": "pi-137",
+  "family": "security",
+  "wordings": [
+   [
+    "Kali Linux",
+    "Kali",
+    "kali linux tools",
+    "using kali"
+   ],
+   [
+    "kali",
+    "kali linux",
+    "kali tools",
+    "kali linux usage"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Kali"
+ },
+ {
+  "key": "pi-138",
+  "family": "security",
+  "wordings": [
+   [
+    "Wireshark",
+    "packet capture",
+    "wireshark analysis",
+    "capturing packets with wireshark"
+   ],
+   [
+    "wireshark",
+    "wireshark packet analysis",
+    "packet sniffing wireshark",
+    "packet capturing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Wireshark"
+ },
+ {
+  "key": "pi-139",
+  "family": "security",
+  "wordings": [
+   [
+    "Ethical hacking",
+    "ethical hacker",
+    "penetration testing",
+    "pen testing"
+   ],
+   [
+    "ethical hacking",
+    "pentesting",
+    "penetration tests",
+    "hacking ethically"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: pentesting"
+ },
+ {
+  "key": "pi-140",
+  "family": "security",
+  "wordings": [
+   [
+    "Cybersecurity",
+    "cyber security",
+    "cyber security basics",
+    "security"
+   ],
+   [
+    "cybersecurity",
+    "information security basics",
+    "cyber sec",
+    "security knowledge"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I4"
+  ],
+  "author_note": "one broad capability"
+ },
+ {
+  "key": "pi-141",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Troubleshooting",
+    "troubleshooting computers",
+    "fixing computers",
+    "computer repair"
+   ],
+   [
+    "troubleshooting pcs",
+    "pc repair",
+    "fixing laptops",
+    "computer troubleshooting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: PC troubleshooting"
+ },
+ {
+  "key": "pi-142",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Windows",
+    "Windows installation",
+    "installing windows",
+    "windows setup"
+   ],
+   [
+    "windows",
+    "windows 10 install",
+    "windows os installation",
+    "setting up windows"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Windows install"
+ },
+ {
+  "key": "pi-143",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Customer support",
+    "helping customers",
+    "customer service",
+    "customer care"
+   ],
+   [
+    "customer support",
+    "assisting customers",
+    "customer care skills",
+    "serving customers"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I2"
+  ],
+  "author_note": "one capability: customer care; soft-ish"
+ },
+ {
+  "key": "pi-144",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Helpdesk",
+    "help desk",
+    "IT helpdesk",
+    "helpdesk support"
+   ],
+   [
+    "helpdesk",
+    "it help desk work",
+    "help desk support",
+    "supporting users on helpdesk"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: helpdesk"
+ },
+ {
+  "key": "pi-145",
+  "family": "database",
+  "wordings": [
+   [
+    "MySQL",
+    "MySQL database",
+    "mysql queries",
+    "mysql coding"
+   ],
+   [
+    "mysql",
+    "my sql",
+    "mysql db",
+    "mysql database work"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: MySQL"
+ },
+ {
+  "key": "pi-146",
+  "family": "database",
+  "wordings": [
+   [
+    "Database design",
+    "designing databases",
+    "database designing",
+    "db design"
+   ],
+   [
+    "database design",
+    "designing a database",
+    "db designing",
+    "making databases"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: DB design"
+ },
+ {
+  "key": "pi-147",
+  "family": "database",
+  "wordings": [
+   [
+    "MongoDB",
+    "Mongo",
+    "mongodb database",
+    "mongo db"
+   ],
+   [
+    "mongodb",
+    "mongo db",
+    "mongodb nosql",
+    "mongo database"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: MongoDB"
+ },
+ {
+  "key": "pi-148",
+  "family": "database",
+  "wordings": [
+   [
+    "Oracle",
+    "Oracle database",
+    "oracle db",
+    "oracle sql"
+   ],
+   [
+    "oracle",
+    "oracle dbms",
+    "oracle database work",
+    "oracle database"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Oracle"
+ },
+ {
+  "key": "pi-149",
+  "family": "architecture",
+  "wordings": [
+   [
+    "UML",
+    "UML diagrams",
+    "drawing UML",
+    "uml modelling"
+   ],
+   [
+    "uml",
+    "uml design",
+    "use case diagrams uml",
+    "uml modeling"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: UML"
+ },
+ {
+  "key": "pi-150",
+  "family": "architecture",
+  "wordings": [
+   [
+    "System design",
+    "designing systems",
+    "system designing",
+    "software design"
+   ],
+   [
+    "system design",
+    "designing software systems",
+    "systems design",
+    "software system design"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: system design"
+ },
+ {
+  "key": "pi-151",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Cloud",
+    "cloud computing",
+    "cloud basics",
+    "the cloud"
+   ],
+   [
+    "cloud",
+    "cloud computing knowledge",
+    "cloud technology",
+    "cloud services basics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I4"
+  ],
+  "author_note": "one broad capability"
+ },
+ {
+  "key": "pi-152",
+  "family": "architecture",
+  "wordings": [
+   [
+    "AWS",
+    "Amazon AWS",
+    "aws cloud",
+    "aws services"
+   ],
+   [
+    "aws",
+    "amazon web services",
+    "aws platform",
+    "using aws"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: AWS"
+ },
+ {
+  "key": "pi-153",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Software testing",
+    "testing software",
+    "testing",
+    "manual testing"
+   ],
+   [
+    "software testing",
+    "testing apps",
+    "manual tests",
+    "testing programs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: testing"
+ },
+ {
+  "key": "pi-154",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Selenium",
+    "Selenium WebDriver",
+    "selenium testing",
+    "selenium automation"
+   ],
+   [
+    "selenium",
+    "selenium web driver",
+    "automated testing selenium",
+    "selenium tests"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Selenium"
+ },
+ {
+  "key": "pi-155",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Jira",
+    "Jira tickets",
+    "using jira",
+    "jira boards"
+   ],
+   [
+    "jira",
+    "jira board",
+    "jira software",
+    "jira issue tracking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Jira"
+ },
+ {
+  "key": "pi-156",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Agile",
+    "Agile methodology",
+    "agile scrum",
+    "agile development"
+   ],
+   [
+    "agile",
+    "agile method",
+    "scrum agile",
+    "agile software development"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Agile"
+ },
+ {
+  "key": "pi-157",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Python",
+    "Python 3",
+    "python programming",
+    "python coding"
+   ],
+   [
+    "python",
+    "python3",
+    "python language",
+    "py coding"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Python restated"
+ },
+ {
+  "key": "pi-158",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Java",
+    "Java programming",
+    "Java coding"
+   ],
+   [
+    "java",
+    "java language",
+    "programming in java"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Java restated"
+ },
+ {
+  "key": "pi-159",
+  "family": "beginner",
+  "wordings": [
+   [
+    "C++",
+    "C++ programming",
+    "coding in c++",
+    "c plus plus"
+   ],
+   [
+    "c++",
+    "cpp programming",
+    "c++ language",
+    "c plus plus coding"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "C++ restated"
+ },
+ {
+  "key": "pi-160",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Programming",
+    "coding",
+    "software programming",
+    "computer programming"
+   ],
+   [
+    "programming",
+    "writing code",
+    "code writing",
+    "computer coding"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "one generic capability"
+ },
+ {
+  "key": "pi-161",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Microsoft Office",
+    "MS Office",
+    "Office suite",
+    "ms office package"
+   ],
+   [
+    "microsoft office",
+    "office",
+    "office programs",
+    "ms office tools"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "one generic capability"
+ },
+ {
+  "key": "pi-162",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Web development",
+    "web dev",
+    "building websites",
+    "making websites"
+   ],
+   [
+    "web development",
+    "website development",
+    "website building",
+    "developing web sites"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one broad capability"
+ },
+ {
+  "key": "pi-163",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Git",
+    "Git version control",
+    "version control",
+    "git commits"
+   ],
+   [
+    "git",
+    "version control with git",
+    "git repositories",
+    "using git"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Git"
+ },
+ {
+  "key": "pi-164",
+  "family": "beginner",
+  "wordings": [
+   [
+    "GitHub",
+    "Github repos",
+    "github projects",
+    "using github"
+   ],
+   [
+    "github",
+    "github repositories",
+    "uploading to github",
+    "github hosting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: GitHub"
+ },
+ {
+  "key": "pi-165",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Linux",
+    "Linux OS",
+    "ubuntu",
+    "Linux commands"
+   ],
+   [
+    "linux",
+    "linux operating system",
+    "ubuntu linux",
+    "linux command line"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Linux"
+ },
+ {
+  "key": "pi-166",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Data analysis",
+    "analysing data",
+    "data analytics",
+    "analytics"
+   ],
+   [
+    "data analysis",
+    "analyzing data",
+    "data analytic work",
+    "analysis of data"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I4"
+  ],
+  "author_note": "restates data analysis; broad"
+ },
+ {
+  "key": "pi-167",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Excel",
+    "MS Excel",
+    "excel sheets",
+    "excel formulas"
+   ],
+   [
+    "microsoft excel",
+    "excel skills",
+    "excel spreadsheet work",
+    "formulas in excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Excel restated"
+ },
+ {
+  "key": "pi-168",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Python",
+    "Python language",
+    "python programming"
+   ],
+   [
+    "python",
+    "py",
+    "learning python"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Python restated; beginner"
+ },
+ {
+  "key": "pi-169",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Typing",
+    "fast typing",
+    "typing speed",
+    "touch typing"
+   ],
+   [
+    "typing",
+    "typing fast",
+    "typing skills",
+    "speed typing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: typing"
+ },
+ {
+  "key": "pi-170",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Computer packages",
+    "computer software",
+    "ms packages",
+    "packages"
+   ],
+   [
+    "computer packages",
+    "computer software packages",
+    "office packages",
+    "packages knowledge"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "restates generic packages"
+ },
+ {
+  "key": "pi-171",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Web design",
+    "designing websites",
+    "website design",
+    "web designing"
+   ],
+   [
+    "web design",
+    "designing web pages",
+    "website designing",
+    "making web designs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: web design"
+ },
+ {
+  "key": "pi-172",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Java",
+    "Java programming",
+    "coding in Java",
+    "java language"
+   ],
+   [
+    "java",
+    "java coding",
+    "programming with java",
+    "java programs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Java restated"
+ },
+ {
+  "key": "pi-173",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Mobile apps",
+    "app development",
+    "making apps",
+    "android apps"
+   ],
+   [
+    "mobile app development",
+    "developing apps",
+    "creating apps",
+    "android app dev"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: app dev"
+ },
+ {
+  "key": "pi-174",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Data entry",
+    "entering data",
+    "data capture",
+    "capturing data"
+   ],
+   [
+    "data entry",
+    "data capturing",
+    "entering records",
+    "computer data entry"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: data entry"
+ },
+ {
+  "key": "pi-175",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Hacking",
+    "hacking skills",
+    "ethical hacking",
+    "hacker"
+   ],
+   [
+    "hacking",
+    "being a hacker",
+    "hacking techniques",
+    "ethical hacker"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I4"
+  ],
+  "author_note": "one vague/single capability"
+ },
+ {
+  "key": "pi-176",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Programming",
+    "programming skills",
+    "coding",
+    "code"
+   ],
+   [
+    "programming",
+    "coding skills",
+    "code writing",
+    "writing programs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "one generic capability"
+ },
+ {
+  "key": "pi-177",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Canva",
+    "Canva design",
+    "designing with canva",
+    "canva posters"
+   ],
+   [
+    "canva",
+    "canva graphics",
+    "making posters in canva",
+    "canva designs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3"
+  ],
+  "author_note": "one capability: Canva"
+ },
+ {
+  "key": "pi-178",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Networking",
+    "networks",
+    "networking skills"
+   ],
+   [
+    "networking",
+    "computer networking",
+    "network skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I4"
+  ],
+  "author_note": "restates networking"
+ },
+ {
+  "key": "pi-179",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Python",
+    "Python coding",
+    "python scripts",
+    "programming in python"
+   ],
+   [
+    "python",
+    "python programs",
+    "python script writing",
+    "py programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "Python restated"
+ },
+ {
+  "key": "pi-180",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "SQL",
+    "SQL database",
+    "database sql",
+    "sql queries"
+   ],
+   [
+    "sql",
+    "structured query language",
+    "sql databases",
+    "sql querying"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I3",
+   "I1"
+  ],
+  "author_note": "SQL restated"
+ },
+ {
+  "key": "pi-181",
+  "family": "frontend",
+  "wordings": [
+   [
+    "web pages",
+    "websites",
+    "internet stuff",
+    "online things"
+   ],
+   [
+    "web pages",
+    "web sites",
+    "net stuff",
+    "online stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "frontend aim; vague"
+ },
+ {
+  "key": "pi-182",
+  "family": "frontend",
+  "wordings": [
+   [
+    "design",
+    "websites",
+    "apps",
+    "visuals"
+   ],
+   [
+    "designing",
+    "web stuff",
+    "applications",
+    "graphics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-183",
+  "family": "frontend",
+  "wordings": [
+   [
+    "web",
+    "coding",
+    "interfaces",
+    "tech stuff"
+   ],
+   [
+    "websites",
+    "programming",
+    "user interface things",
+    "tech things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-184",
+  "family": "frontend",
+  "wordings": [
+   [
+    "html maybe",
+    "web designing",
+    "apps",
+    "computers"
+   ],
+   [
+    "some html",
+    "web design",
+    "application stuff",
+    "pc things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-185",
+  "family": "backend",
+  "wordings": [
+   [
+    "coding",
+    "servers",
+    "systems",
+    "backend things"
+   ],
+   [
+    "programming",
+    "server things",
+    "systems work",
+    "back end stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "backend; vague"
+ },
+ {
+  "key": "pi-186",
+  "family": "backend",
+  "wordings": [
+   [
+    "apps",
+    "programming",
+    "tech",
+    "software"
+   ],
+   [
+    "applications",
+    "coding",
+    "technology",
+    "softwares"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-187",
+  "family": "backend",
+  "wordings": [
+   [
+    "servers",
+    "logic",
+    "coding",
+    "websites"
+   ],
+   [
+    "servers",
+    "logical stuff",
+    "programs",
+    "web"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-188",
+  "family": "backend",
+  "wordings": [
+   [
+    "code",
+    "systems",
+    "online",
+    "the backend"
+   ],
+   [
+    "coding",
+    "systems stuff",
+    "internet things",
+    "back end"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-189",
+  "family": "data",
+  "wordings": [
+   [
+    "analysis",
+    "data",
+    "numbers",
+    "reports"
+   ],
+   [
+    "analyzing",
+    "data stuff",
+    "figures",
+    "report writing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "data; vague"
+ },
+ {
+  "key": "pi-190",
+  "family": "data",
+  "wordings": [
+   [
+    "data",
+    "analysis",
+    "AI",
+    "tech stuff"
+   ],
+   [
+    "datasets",
+    "analytics",
+    "artificial intelligence",
+    "tech things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-191",
+  "family": "data",
+  "wordings": [
+   [
+    "charts",
+    "numbers",
+    "analysis",
+    "computers"
+   ],
+   [
+    "graphs",
+    "figures",
+    "analyzing",
+    "pcs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-192",
+  "family": "data",
+  "wordings": [
+   [
+    "data things",
+    "statistics",
+    "AI",
+    "research"
+   ],
+   [
+    "data stuff",
+    "stats",
+    "machine things",
+    "researching"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-193",
+  "family": "networking",
+  "wordings": [
+   [
+    "networking",
+    "connections",
+    "internet",
+    "cables"
+   ],
+   [
+    "networks",
+    "connecting things",
+    "the net",
+    "wires"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "networking; vague"
+ },
+ {
+  "key": "pi-194",
+  "family": "networking",
+  "wordings": [
+   [
+    "networking",
+    "IT",
+    "systems",
+    "wireless"
+   ],
+   [
+    "networks",
+    "information technology",
+    "systems stuff",
+    "wifi things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-195",
+  "family": "networking",
+  "wordings": [
+   [
+    "network things",
+    "connectivity",
+    "computers",
+    "servers"
+   ],
+   [
+    "networks stuff",
+    "connections",
+    "pcs",
+    "server things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-196",
+  "family": "networking",
+  "wordings": [
+   [
+    "internet",
+    "routers",
+    "networking",
+    "tech"
+   ],
+   [
+    "the internet",
+    "router things",
+    "networks",
+    "technology"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-197",
+  "family": "security",
+  "wordings": [
+   [
+    "security",
+    "hacking",
+    "protection",
+    "systems"
+   ],
+   [
+    "cyber stuff",
+    "hackers",
+    "protecting things",
+    "systems things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "security; vague"
+ },
+ {
+  "key": "pi-198",
+  "family": "security",
+  "wordings": [
+   [
+    "security",
+    "networks",
+    "tech",
+    "passwords"
+   ],
+   [
+    "safety online",
+    "networking",
+    "technology",
+    "password things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-199",
+  "family": "security",
+  "wordings": [
+   [
+    "cyber",
+    "protection",
+    "computers",
+    "analysis"
+   ],
+   [
+    "cyber things",
+    "safety",
+    "computer stuff",
+    "analysing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-200",
+  "family": "security",
+  "wordings": [
+   [
+    "hacking",
+    "security",
+    "IT",
+    "online"
+   ],
+   [
+    "hack stuff",
+    "securing things",
+    "information tech",
+    "internet things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-201",
+  "family": "user_support",
+  "wordings": [
+   [
+    "IT support",
+    "computers",
+    "fixing things",
+    "tech"
+   ],
+   [
+    "it help",
+    "pcs",
+    "repairs",
+    "tech stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "user support; vague"
+ },
+ {
+  "key": "pi-202",
+  "family": "user_support",
+  "wordings": [
+   [
+    "help people",
+    "tech",
+    "computers",
+    "fixing"
+   ],
+   [
+    "assisting people",
+    "technology",
+    "pcs",
+    "repairing things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-203",
+  "family": "user_support",
+  "wordings": [
+   [
+    "IT",
+    "support",
+    "systems",
+    "computers"
+   ],
+   [
+    "information technology",
+    "helping",
+    "system things",
+    "computer things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-204",
+  "family": "user_support",
+  "wordings": [
+   [
+    "tech support",
+    "devices",
+    "fixing",
+    "software"
+   ],
+   [
+    "supporting tech",
+    "gadgets",
+    "repairs",
+    "softwares"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-205",
+  "family": "database",
+  "wordings": [
+   [
+    "data",
+    "storage",
+    "systems",
+    "records"
+   ],
+   [
+    "databases maybe",
+    "storing things",
+    "system stuff",
+    "record keeping"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "database; vague"
+ },
+ {
+  "key": "pi-206",
+  "family": "database",
+  "wordings": [
+   [
+    "database",
+    "data",
+    "systems",
+    "IT"
+   ],
+   [
+    "databases",
+    "data stuff",
+    "system things",
+    "information tech"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-207",
+  "family": "database",
+  "wordings": [
+   [
+    "data",
+    "tables",
+    "information",
+    "software"
+   ],
+   [
+    "data things",
+    "tables stuff",
+    "info",
+    "programs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-208",
+  "family": "database",
+  "wordings": [
+   [
+    "information systems",
+    "data",
+    "storage",
+    "IT"
+   ],
+   [
+    "info systems",
+    "datasets",
+    "storing",
+    "IT stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-209",
+  "family": "architecture",
+  "wordings": [
+   [
+    "systems",
+    "design",
+    "structure",
+    "IT"
+   ],
+   [
+    "system things",
+    "designing",
+    "structuring",
+    "technology"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "architecture; vague"
+ },
+ {
+  "key": "pi-210",
+  "family": "architecture",
+  "wordings": [
+   [
+    "systems",
+    "cloud",
+    "design",
+    "tech"
+   ],
+   [
+    "systems stuff",
+    "the cloud",
+    "designs",
+    "technology"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-211",
+  "family": "architecture",
+  "wordings": [
+   [
+    "software",
+    "systems",
+    "planning",
+    "tech"
+   ],
+   [
+    "programs",
+    "system stuff",
+    "plans",
+    "tech things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-212",
+  "family": "architecture",
+  "wordings": [
+   [
+    "design",
+    "IT",
+    "infrastructure",
+    "systems"
+   ],
+   [
+    "designing",
+    "information technology",
+    "infrastructure stuff",
+    "systems things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-213",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "testing",
+    "software",
+    "checking",
+    "systems"
+   ],
+   [
+    "testing stuff",
+    "programs",
+    "checking things",
+    "system things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "qa; vague"
+ },
+ {
+  "key": "pi-214",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "management",
+    "IT",
+    "projects",
+    "systems"
+   ],
+   [
+    "managing",
+    "technology",
+    "project stuff",
+    "system things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-215",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "planning",
+    "tech",
+    "projects",
+    "testing"
+   ],
+   [
+    "plans",
+    "technology",
+    "projects work",
+    "tests"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-216",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "quality",
+    "software",
+    "IT",
+    "checking"
+   ],
+   [
+    "quality stuff",
+    "programs",
+    "information tech",
+    "checking things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-217",
+  "family": "beginner",
+  "wordings": [
+   [
+    "computers",
+    "tech",
+    "IT",
+    "software"
+   ],
+   [
+    "pcs",
+    "technology",
+    "information technology",
+    "programs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "beginner; vague"
+ },
+ {
+  "key": "pi-218",
+  "family": "beginner",
+  "wordings": [
+   [
+    "coding",
+    "tech",
+    "computers"
+   ],
+   [
+    "programming",
+    "tech things",
+    "pc stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-219",
+  "family": "beginner",
+  "wordings": [
+   [
+    "IT",
+    "computers",
+    "internet",
+    "systems"
+   ],
+   [
+    "info tech",
+    "computer things",
+    "the net",
+    "system stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-220",
+  "family": "beginner",
+  "wordings": [
+   [
+    "tech",
+    "innovation",
+    "digital",
+    "computers"
+   ],
+   [
+    "technology",
+    "innovating",
+    "digital stuff",
+    "pcs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-221",
+  "family": "beginner",
+  "wordings": [
+   [
+    "software",
+    "hardware",
+    "networks",
+    "data"
+   ],
+   [
+    "programs",
+    "hardware stuff",
+    "networking",
+    "datasets"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague spread of buzzwords"
+ },
+ {
+  "key": "pi-222",
+  "family": "beginner",
+  "wordings": [
+   [
+    "web pages",
+    "networking",
+    "analysis",
+    "tech stuff"
+   ],
+   [
+    "web sites",
+    "networks",
+    "analyzing",
+    "technology things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague (rubric example)"
+ },
+ {
+  "key": "pi-223",
+  "family": "beginner",
+  "wordings": [
+   [
+    "ICT",
+    "computers",
+    "technology",
+    "systems"
+   ],
+   [
+    "ICT stuff",
+    "pcs",
+    "tech",
+    "system things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-224",
+  "family": "beginner",
+  "wordings": [
+   [
+    "digital skills",
+    "computers",
+    "online",
+    "IT"
+   ],
+   [
+    "digital stuff",
+    "pc skills",
+    "the internet",
+    "info tech"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-225",
+  "family": "beginner",
+  "wordings": [
+   [
+    "programming",
+    "networks",
+    "security",
+    "data"
+   ],
+   [
+    "coding",
+    "networking",
+    "cyber",
+    "data stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "buzzwords"
+ },
+ {
+  "key": "pi-226",
+  "family": "beginner",
+  "wordings": [
+   [
+    "computer science",
+    "tech",
+    "programming"
+   ],
+   [
+    "comp sci",
+    "technology",
+    "coding"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-227",
+  "family": "beginner",
+  "wordings": [
+   [
+    "AI",
+    "tech",
+    "data",
+    "robots"
+   ],
+   [
+    "artificial intelligence",
+    "technology",
+    "datasets",
+    "robotics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-228",
+  "family": "beginner",
+  "wordings": [
+   [
+    "apps",
+    "websites",
+    "games",
+    "tech"
+   ],
+   [
+    "applications",
+    "web sites",
+    "gaming",
+    "technology"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-229",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "system things",
+    "IT",
+    "computers",
+    "digital"
+   ],
+   [
+    "systems",
+    "info tech",
+    "pc stuff",
+    "digital things"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-230",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "online",
+    "digital",
+    "internet",
+    "computers"
+   ],
+   [
+    "the web",
+    "digital stuff",
+    "the net",
+    "pcs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-231",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "software",
+    "IT",
+    "coding",
+    "systems"
+   ],
+   [
+    "programs",
+    "information tech",
+    "programming",
+    "system stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-232",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "analysis",
+    "systems",
+    "technology",
+    "design"
+   ],
+   [
+    "analysing",
+    "system things",
+    "tech",
+    "designing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-233",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "networking",
+    "software",
+    "IT"
+   ],
+   [
+    "networks",
+    "programs",
+    "information technology"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-234",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "graphics",
+    "websites",
+    "tech",
+    "apps"
+   ],
+   [
+    "images",
+    "web pages",
+    "technology",
+    "applications"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-235",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "security",
+    "data",
+    "software",
+    "IT"
+   ],
+   [
+    "safety",
+    "datasets",
+    "programs",
+    "info tech"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-236",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "computers",
+    "digital",
+    "coding",
+    "data"
+   ],
+   [
+    "pcs",
+    "digital things",
+    "programming",
+    "data stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-237",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "tech",
+    "systems",
+    "support",
+    "networks"
+   ],
+   [
+    "technology",
+    "system stuff",
+    "helping",
+    "networking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-238",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "web",
+    "data",
+    "AI",
+    "cloud"
+   ],
+   [
+    "websites",
+    "datasets",
+    "artificial intelligence",
+    "cloud stuff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "buzzwords"
+ },
+ {
+  "key": "pi-239",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "IT things",
+    "internet",
+    "software",
+    "design"
+   ],
+   [
+    "it stuff",
+    "the net",
+    "programs",
+    "designing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ },
+ {
+  "key": "pi-240",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "cyber",
+    "digital",
+    "coding",
+    "online"
+   ],
+   [
+    "cyber stuff",
+    "digital things",
+    "programming",
+    "internet"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I4"
+  ],
+  "author_note": "vague"
+ }
+]

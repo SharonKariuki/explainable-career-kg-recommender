@@ -1,0 +1,682 @@
+[
+ {
+  "id": "i-1353",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript framework software"
+  ],
+  "preferred": "tool:JavaScript framework software",
+  "confidence": "high",
+  "note": "JavaScript framework, instance of category node"
+ },
+ {
+  "id": "i-1359",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3e23db60-0c3d-498a-a6ac-ffbed0ecb033",
+   "esco:be64bb4c-84ac-4c83-8cc7-fc8593e15136"
+  ],
+  "preferred": "esco:3e23db60-0c3d-498a-a6ac-ffbed0ecb033",
+  "confidence": "high",
+  "note": "accessible websites"
+ },
+ {
+  "id": "i-1360",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1373",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Help desk software"
+  ],
+  "preferred": "tool:Help desk software",
+  "confidence": "low",
+  "note": "Zendesk is help desk software"
+ },
+ {
+  "id": "i-1377",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "hacking read as ethical hacking / penetration testing"
+ },
+ {
+  "id": "i-1382",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e",
+   "esco:385479b7-5da5-4367-9763-0d15b41bb65b",
+   "esco:327d15c8-29ff-4ad4-a4fe-6536d777a45f",
+   "esco:64db87c7-2360-4e20-88d3-d222402e477c"
+  ],
+  "preferred": "esco:04dfd9fb-e0cf-40f6-96c6-9d2280c4347e",
+  "confidence": "low",
+  "note": "documentation of several kinds"
+ },
+ {
+  "id": "i-1396",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic Wi-Fi/wireless; no wireless node, networking hardware only related"
+ },
+ {
+  "id": "i-1408",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Management information systems MIS",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272"
+  ],
+  "preferred": "tool:Management information systems MIS",
+  "confidence": "low",
+  "note": "systems/info systems: several readings"
+ },
+ {
+  "id": "i-1412",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "tool:Hypertext markup language HTML",
+   "tool:Cascading style sheets CSS",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "visual/UI design vs building pages; several readings"
+ },
+ {
+  "id": "i-1426",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-1429",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:0d6714c6-720e-4985-9791-5ab85d28da79",
+   "tool:Data entry software"
+  ],
+  "preferred": "esco:0d6714c6-720e-4985-9791-5ab85d28da79",
+  "confidence": "low",
+  "note": "data capture: collection vs entry"
+ },
+ {
+  "id": "i-1438",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "cross-platform mobile framework, instance of mobile device software frameworks"
+ },
+ {
+  "id": "i-1443",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:a71577b2-7550-4222-88ee-dcbd2d881516",
+  "confidence": "low",
+  "note": "design tool, instance of graphics editor software"
+ },
+ {
+  "id": "i-1473",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+  "confidence": "low",
+  "note": "time series forecasting"
+ },
+ {
+  "id": "i-1476",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-1480",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "content-free or generic IT phrase with no interpretable capability"
+ },
+ {
+  "id": "i-1484",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+   "tool:Network management software"
+  ],
+  "preferred": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "confidence": "low",
+  "note": "Meraki is Cisco cloud network management"
+ },
+ {
+  "id": "i-1501",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "onet:2.A.1.d",
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "interpersonal skills: several soft-skill nodes"
+ },
+ {
+  "id": "i-1508",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+  "confidence": "low",
+  "note": "hardware several readings"
+ },
+ {
+  "id": "i-1512",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+   "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc"
+  ],
+  "preferred": "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+  "confidence": "low",
+  "note": "support: tech or customer"
+ },
+ {
+  "id": "i-1516",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "tool:Business software applications"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": "software packages: office vs other packages"
+ },
+ {
+  "id": "i-1517",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d0c6d77e-cb25-4770-bf77-2073fc5f7523"
+  ],
+  "preferred": "esco:d0c6d77e-cb25-4770-bf77-2073fc5f7523",
+  "confidence": "low",
+  "note": "infrastructure"
+ },
+ {
+  "id": "i-1538",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+   "onet:2.C.7.a"
+  ],
+  "preferred": "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+  "confidence": "low",
+  "note": "spoken languages"
+ },
+ {
+  "id": "i-1540",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-1542",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5"
+  ],
+  "preferred": "esco:118efbcd-8fc5-4668-81d1-c383a0d16070",
+  "confidence": "low",
+  "note": "IT support"
+ },
+ {
+  "id": "i-1554",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "plotting library, instance of visualization software"
+ },
+ {
+  "id": "i-1557",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Virtual local area network management software"
+  ],
+  "preferred": "tool:Virtual local area network management software",
+  "confidence": "low",
+  "note": "VLAN technology; nearest node is VLAN management software"
+ },
+ {
+  "id": "i-1573",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86"
+  ],
+  "preferred": "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+  "confidence": "low",
+  "note": "management/leadership several readings"
+ },
+ {
+  "id": "i-1589",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networks stuff; several readings"
+ },
+ {
+  "id": "i-1592",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "cyber read as cyber security"
+ },
+ {
+  "id": "i-1596",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Management information systems MIS",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:f9a6f35b-01a7-40c9-8b61-b6ee46f97272"
+  ],
+  "preferred": "tool:Management information systems MIS",
+  "confidence": "low",
+  "note": "systems/info systems: several readings"
+ },
+ {
+  "id": "i-1622",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic Wi-Fi/wireless; no wireless node, networking hardware only related"
+ },
+ {
+  "id": "i-1623",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "tool:Business software applications"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": "software packages: office vs other packages"
+ },
+ {
+  "id": "i-1627",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.l",
+   "onet:2.B.3.k",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"
+  ],
+  "preferred": "onet:2.B.3.l",
+  "confidence": "low",
+  "note": "fixing hardware vs troubleshooting software"
+ },
+ {
+  "id": "i-1635",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+   "onet:2.C.7.a"
+  ],
+  "preferred": "esco:2de4572a-4724-4f76-afc2-72a568a264ac",
+  "confidence": "low",
+  "note": "spoken languages"
+ },
+ {
+  "id": "i-1647",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-1648",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1657",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "tool:Data visualization software"
+  ],
+  "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+  "confidence": "low",
+  "note": "graphs: charts vs other readings"
+ },
+ {
+  "id": "i-1659",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-1667",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+   "esco:27ed854c-15b8-4ba2-90e9-ae888a219703"
+  ],
+  "preferred": "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+  "confidence": "low",
+  "note": "gap analysis"
+ },
+ {
+  "id": "i-1675",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless LAN/AP deployment, access points as networking devices"
+ },
+ {
+  "id": "i-1676",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+   "tool:Web application software"
+  ],
+  "preferred": "esco:b8c01891-e3df-4a4b-948d-95b45e1788f5",
+  "confidence": "low",
+  "note": "apps: mobile or web"
+ },
+ {
+  "id": "i-1677",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1700",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.A.1.e",
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "onet:2.A.1.e",
+  "confidence": "low",
+  "note": "numbers: maths or statistics"
+ },
+ {
+  "id": "i-1701",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "low",
+  "note": "stored procedures are SQL database programming"
+ },
+ {
+  "id": "i-1704",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1725",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Virtual local area network management software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "tool:Virtual local area network management software",
+  "confidence": "low",
+  "note": "VLANs on switches"
+ },
+ {
+  "id": "i-1731",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68",
+   "esco:d5145a9a-602e-40bf-b3e1-f04cf9c3ef86"
+  ],
+  "preferred": "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+  "confidence": "low",
+  "note": "management/leadership several readings"
+ },
+ {
+  "id": "i-1733",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.l",
+   "onet:2.B.3.k",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"
+  ],
+  "preferred": "onet:2.B.3.l",
+  "confidence": "low",
+  "note": "fixing hardware vs troubleshooting software"
+ },
+ {
+  "id": "i-1735",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-1737",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "generic Wi-Fi/wireless; no wireless node, networking hardware only related"
+ },
+ {
+  "id": "i-1739",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-1744",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "personal trait or attitude no node names"
+ },
+ {
+  "id": "i-1752",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Diagramming software",
+   "esco:901105f8-3a08-453e-b1dc-23619e317fd3",
+   "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3"
+  ],
+  "preferred": "tool:Diagramming software",
+  "confidence": "low",
+  "note": "diagrams: several kinds"
+ },
+ {
+  "id": "i-1761",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1763",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "no node expresses this specific concept; nearest nodes are related or narrower only"
+ },
+ {
+  "id": "i-1769",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "tool:Hypertext markup language HTML",
+   "tool:Cascading style sheets CSS",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "visual/UI design vs building pages; several readings"
+ },
+ {
+  "id": "i-1774",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "generic networking: design, hardware or routing readings; no node clearly best"
+ },
+ {
+  "id": "i-1775",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "APIs generic"
+ },
+ {
+  "id": "i-1777",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "wireless LAN/AP deployment, access points as networking devices"
+ },
+ {
+  "id": "i-1788",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "low",
+  "note": "generic coding"
+ },
+ {
+  "id": "i-1789",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "low",
+  "note": "DOE/A-B testing within statistics (hypothesis testing)"
+ },
+ {
+  "id": "i-1796",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software",
+   "tool:Business software applications"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": "software packages: office vs other packages"
+ },
+ {
+  "id": "i-1805",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "tool:Hypertext markup language HTML",
+   "tool:Cascading style sheets CSS",
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "visual/UI design vs building pages; several readings"
+ }
+]

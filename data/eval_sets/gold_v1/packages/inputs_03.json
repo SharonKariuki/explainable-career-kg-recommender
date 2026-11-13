@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "i-0601",
+  "input": "learning entity relationship diagrams"
+ },
+ {
+  "id": "i-0602",
+  "input": "security stuff"
+ },
+ {
+  "id": "i-0603",
+  "input": "service now ITSM"
+ },
+ {
+  "id": "i-0604",
+  "input": "Java"
+ },
+ {
+  "id": "i-0605",
+  "input": "hadoop hdfs"
+ },
+ {
+  "id": "i-0606",
+  "input": "data capture"
+ },
+ {
+  "id": "i-0607",
+  "input": "cisco ios cli"
+ },
+ {
+  "id": "i-0608",
+  "input": "building a data warehouse"
+ },
+ {
+  "id": "i-0609",
+  "input": "facebook prophet time series"
+ },
+ {
+  "id": "i-0610",
+  "input": "PRINCE2",
+  "shared_name_owners": [
+   {
+    "id": "esco:7106b5df-e017-4c28-8c40-98814db5b775",
+    "label": "Prince2 project management"
+   },
+   {
+    "id": "esco:bec4359e-cb92-468f-a997-8fb28e32fba9",
+    "label": "ICT project management methodologies"
+   }
+  ]
+ },
+ {
+  "id": "i-0611",
+  "input": "writing research papers (LaTeX)"
+ },
+ {
+  "id": "i-0612",
+  "input": "customer care skills"
+ },
+ {
+  "id": "i-0613",
+  "input": "github projects"
+ },
+ {
+  "id": "i-0614",
+  "input": "learning java"
+ },
+ {
+  "id": "i-0615",
+  "input": "phones"
+ },
+ {
+  "id": "i-0616",
+  "input": "looker studio"
+ },
+ {
+  "id": "i-0617",
+  "input": "google data studio"
+ },
+ {
+  "id": "i-0618",
+  "input": "pandas"
+ },
+ {
+  "id": "i-0619",
+  "input": "bilingual (English/Kiswahili)"
+ },
+ {
+  "id": "i-0620",
+  "input": "reimaging laptops"
+ },
+ {
+  "id": "i-0621",
+  "input": "RMAN backups oracle"
+ },
+ {
+  "id": "i-0622",
+  "input": "writing clear bug reports"
+ },
+ {
+  "id": "i-0623",
+  "input": "Next.js"
+ },
+ {
+  "id": "i-0624",
+  "input": "Pandas and NumPy"
+ },
+ {
+  "id": "i-0625",
+  "input": "retesting after changes"
+ },
+ {
+  "id": "i-0626",
+  "input": "dealing with people"
+ },
+ {
+  "id": "i-0627",
+  "input": "scikit-learn"
+ },
+ {
+  "id": "i-0628",
+  "input": "transformer models"
+ },
+ {
+  "id": "i-0629",
+  "input": "IA and site maps"
+ },
+ {
+  "id": "i-0630",
+  "input": "back end stuff"
+ },
+ {
+  "id": "i-0631",
+  "input": "Laravel"
+ },
+ {
+  "id": "i-0632",
+  "input": "spreadsheets (excel)"
+ },
+ {
+  "id": "i-0633",
+  "input": "Unity"
+ },
+ {
+  "id": "i-0634",
+  "input": "Kenya Data Protection Act compliance"
+ },
+ {
+  "id": "i-0635",
+  "input": "wifi routers"
+ },
+ {
+  "id": "i-0636",
+  "input": "agile scrum"
+ },
+ {
+  "id": "i-0637",
+  "input": "designing with canva"
+ },
+ {
+  "id": "i-0638",
+  "input": "basic adobe xd"
+ },
+ {
+  "id": "i-0639",
+  "input": "IP addressing and subnetting"
+ },
+ {
+  "id": "i-0640",
+  "input": "prince 2 certified"
+ },
+ {
+  "id": "i-0641",
+  "input": "customer care"
+ },
+ {
+  "id": "i-0642",
+  "input": "data analysis"
+ },
+ {
+  "id": "i-0643",
+  "input": "accessibility, ARIA labels"
+ },
+ {
+  "id": "i-0644",
+  "input": "application stuff"
+ },
+ {
+  "id": "i-0645",
+  "input": "SQL Server Integration Services"
+ },
+ {
+  "id": "i-0646",
+  "input": "Amazon AWS"
+ },
+ {
+  "id": "i-0647",
+  "input": "backend things"
+ },
+ {
+  "id": "i-0648",
+  "input": "xd"
+ },
+ {
+  "id": "i-0649",
+  "input": "vlan and trunking"
+ },
+ {
+  "id": "i-0650",
+  "input": "risk"
+ },
+ {
+  "id": "i-0651",
+  "input": "PowerBI dashboards"
+ },
+ {
+  "id": "i-0652",
+  "input": "hardhat/truffle"
+ },
+ {
+  "id": "i-0653",
+  "input": "connecting things"
+ },
+ {
+  "id": "i-0654",
+  "input": "word, excel, powerpoint"
+ },
+ {
+  "id": "i-0655",
+  "input": "antivirus software"
+ },
+ {
+  "id": "i-0656",
+  "input": "printer troubleshooting"
+ },
+ {
+  "id": "i-0657",
+  "input": "mongodb database"
+ },
+ {
+  "id": "i-0658",
+  "input": "analysis"
+ },
+ {
+  "id": "i-0659",
+  "input": "finding SQL injection"
+ },
+ {
+  "id": "i-0660",
+  "input": "hacking skills"
+ },
+ {
+  "id": "i-0661",
+  "input": "threejs"
+ },
+ {
+  "id": "i-0662",
+  "input": "requirements gathering"
+ },
+ {
+  "id": "i-0663",
+  "input": "master-slave replication"
+ },
+ {
+  "id": "i-0664",
+  "input": "query tuning and execution plans"
+ },
+ {
+  "id": "i-0665",
+  "input": "unit testing"
+ },
+ {
+  "id": "i-0666",
+  "input": "VPN setup (OpenVPN)"
+ },
+ {
+  "id": "i-0667",
+  "input": "some SQL queries and joins"
+ },
+ {
+  "id": "i-0668",
+  "input": "firewall rules (pfSense/Fortinet)"
+ },
+ {
+  "id": "i-0669",
+  "input": "huggingface models"
+ },
+ {
+  "id": "i-0670",
+  "input": "istqb certified tester syllabus"
+ },
+ {
+  "id": "i-0671",
+  "input": "computer things"
+ },
+ {
+  "id": "i-0672",
+  "input": "snort"
+ },
+ {
+  "id": "i-0673",
+  "input": "shell scripts"
+ },
+ {
+  "id": "i-0674",
+  "input": "rman"
+ },
+ {
+  "id": "i-0675",
+  "input": "Scratch"
+ },
+ {
+  "id": "i-0676",
+  "input": "Volatility"
+ },
+ {
+  "id": "i-0677",
+  "input": "researching"
+ },
+ {
+  "id": "i-0678",
+  "input": "css styling"
+ },
+ {
+  "id": "i-0679",
+  "input": "python data"
+ },
+ {
+  "id": "i-0680",
+  "input": "bgp routing"
+ },
+ {
+  "id": "i-0681",
+  "input": "thinking critically"
+ },
+ {
+  "id": "i-0682",
+  "input": "olap and SSAS"
+ },
+ {
+  "id": "i-0683",
+  "input": "prob and stats theory"
+ },
+ {
+  "id": "i-0684",
+  "input": "Prisma"
+ },
+ {
+  "id": "i-0685",
+  "input": "npm/webpack build tools"
+ },
+ {
+  "id": "i-0686",
+  "input": "AWS EC2"
+ },
+ {
+  "id": "i-0687",
+  "input": "defect logging in Jira"
+ },
+ {
+  "id": "i-0688",
+  "input": "snort ids"
+ },
+ {
+  "id": "i-0689",
+  "input": "team work"
+ },
+ {
+  "id": "i-0690",
+  "input": "information architecture"
+ },
+ {
+  "id": "i-0691",
+  "input": "basic test case design"
+ },
+ {
+  "id": "i-0692",
+  "input": "cisco ccna"
+ },
+ {
+  "id": "i-0693",
+  "input": "troubleshooting connectivity"
+ },
+ {
+  "id": "i-0694",
+  "input": "some spss"
+ },
+ {
+  "id": "i-0695",
+  "input": "Tableau Public"
+ },
+ {
+  "id": "i-0696",
+  "input": "oracle sql"
+ },
+ {
+  "id": "i-0697",
+  "input": "regression modelling"
+ },
+ {
+  "id": "i-0698",
+  "input": "cobalt strike red team"
+ },
+ {
+  "id": "i-0699",
+  "input": "Wi-Fi and LAN troubleshooting for users"
+ },
+ {
+  "id": "i-0700",
+  "input": "storybook UI components"
+ },
+ {
+  "id": "i-0701",
+  "input": "permissioned blockchain (Fabric)"
+ },
+ {
+  "id": "i-0702",
+  "input": "CCNA coursework"
+ },
+ {
+  "id": "i-0703",
+  "input": "HTML coding"
+ },
+ {
+  "id": "i-0704",
+  "input": "packet analysis with Wireshark"
+ },
+ {
+  "id": "i-0705",
+  "input": "pcs"
+ },
+ {
+  "id": "i-0706",
+  "input": "apache hadoop"
+ },
+ {
+  "id": "i-0707",
+  "input": "python programs"
+ },
+ {
+  "id": "i-0708",
+  "input": "Jenkins pipelines"
+ },
+ {
+  "id": "i-0709",
+  "input": "iso 27001 controls"
+ },
+ {
+  "id": "i-0710",
+  "input": "k8s"
+ },
+ {
+  "id": "i-0711",
+  "input": "volatility framework"
+ },
+ {
+  "id": "i-0712",
+  "input": "helping customers"
+ },
+ {
+  "id": "i-0713",
+  "input": "low-level hacking"
+ },
+ {
+  "id": "i-0714",
+  "input": "project scheduling in ms project"
+ },
+ {
+  "id": "i-0715",
+  "input": "user research"
+ },
+ {
+  "id": "i-0716",
+  "input": "supporting tech"
+ },
+ {
+  "id": "i-0717",
+  "input": "normalisation (3NF)"
+ },
+ {
+  "id": "i-0718",
+  "input": "MITRE ATT&CK"
+ },
+ {
+  "id": "i-0719",
+  "input": "linux basics"
+ },
+ {
+  "id": "i-0720",
+  "input": "Canva design"
+ },
+ {
+  "id": "i-0721",
+  "input": "cloud basics"
+ },
+ {
+  "id": "i-0722",
+  "input": "kali tools"
+ },
+ {
+  "id": "i-0723",
+  "input": "critical thinking"
+ },
+ {
+  "id": "i-0724",
+  "input": "microsoft excel"
+ },
+ {
+  "id": "i-0725",
+  "input": "robotics"
+ },
+ {
+  "id": "i-0726",
+  "input": "computer troubleshooting"
+ },
+ {
+  "id": "i-0727",
+  "input": "NextJS server side rendering"
+ },
+ {
+  "id": "i-0728",
+  "input": "UX research"
+ },
+ {
+  "id": "i-0729",
+  "input": "ANOVA and post-hoc tests"
+ },
+ {
+  "id": "i-0730",
+  "input": "basic wireshark traffic capture"
+ },
+ {
+  "id": "i-0731",
+  "input": "computer software"
+ },
+ {
+  "id": "i-0732",
+  "input": "cryptography (AES, RSA)"
+ },
+ {
+  "id": "i-0733",
+  "input": "MikroTik"
+ },
+ {
+  "id": "i-0734",
+  "input": "cypress e2e tests"
+ },
+ {
+  "id": "i-0735",
+  "input": "cisco networking"
+ },
+ {
+  "id": "i-0736",
+  "input": "adapts"
+ },
+ {
+  "id": "i-0737",
+  "input": "coding skills"
+ },
+ {
+  "id": "i-0738",
+  "input": "attention to detail"
+ },
+ {
+  "id": "i-0739",
+  "input": "learning functional testing by hand"
+ },
+ {
+  "id": "i-0740",
+  "input": "critical thinker"
+ },
+ {
+  "id": "i-0741",
+  "input": "crypto"
+ },
+ {
+  "id": "i-0742",
+  "input": "computer studies"
+ },
+ {
+  "id": "i-0743",
+  "input": "designing test cases"
+ },
+ {
+  "id": "i-0744",
+  "input": "reading system and web server logs"
+ },
+ {
+  "id": "i-0745",
+  "input": "negotiation"
+ },
+ {
+  "id": "i-0746",
+  "input": "Prophet forecasting"
+ },
+ {
+  "id": "i-0747",
+  "input": "WAN stuff"
+ },
+ {
+  "id": "i-0748",
+  "input": "Linux OS"
+ },
+ {
+  "id": "i-0749",
+  "input": "online stuff"
+ },
+ {
+  "id": "i-0750",
+  "input": "working with cisco"
+ },
+ {
+  "id": "i-0751",
+  "input": "safety"
+ },
+ {
+  "id": "i-0752",
+  "input": "detail oriented"
+ },
+ {
+  "id": "i-0753",
+  "input": "MLflow"
+ },
+ {
+  "id": "i-0754",
+  "input": "db designing"
+ },
+ {
+  "id": "i-0755",
+  "input": "zero-trust network design"
+ },
+ {
+  "id": "i-0756",
+  "input": "probability distributions"
+ },
+ {
+  "id": "i-0757",
+  "input": "beginner Cisco CCNA"
+ },
+ {
+  "id": "i-0758",
+  "input": "basic networking"
+ },
+ {
+  "id": "i-0759",
+  "input": "Word"
+ },
+ {
+  "id": "i-0760",
+  "input": "wifi setup"
+ },
+ {
+  "id": "i-0761",
+  "input": "backups"
+ },
+ {
+  "id": "i-0762",
+  "input": "linux operating system"
+ },
+ {
+  "id": "i-0763",
+  "input": "langchain agents"
+ },
+ {
+  "id": "i-0764",
+  "input": "c language"
+ },
+ {
+  "id": "i-0765",
+  "input": "microsoft office"
+ },
+ {
+  "id": "i-0766",
+  "input": "computers"
+ },
+ {
+  "id": "i-0767",
+  "input": "digital skills"
+ },
+ {
+  "id": "i-0768",
+  "input": "beginner writing clear bug reports"
+ },
+ {
+  "id": "i-0769",
+  "input": "API testing"
+ },
+ {
+  "id": "i-0770",
+  "input": "eMASS (RMF)"
+ },
+ {
+  "id": "i-0771",
+  "input": "power bi dashboards"
+ },
+ {
+  "id": "i-0772",
+  "input": "learning figma mockups"
+ },
+ {
+  "id": "i-0773",
+  "input": "handling client calls and emails"
+ },
+ {
+  "id": "i-0774",
+  "input": "Veeam backup"
+ },
+ {
+  "id": "i-0775",
+  "input": "basics of fixing Windows errors"
+ },
+ {
+  "id": "i-0776",
+  "input": "intro to stored procs"
+ },
+ {
+  "id": "i-0777",
+  "input": "wireshark analysis"
+ },
+ {
+  "id": "i-0778",
+  "input": "record keeping"
+ },
+ {
+  "id": "i-0779",
+  "input": "NIST 800-53"
+ },
+ {
+  "id": "i-0780",
+  "input": "Maven"
+ },
+ {
+  "id": "i-0781",
+  "input": "jupyter notebooks"
+ },
+ {
+  "id": "i-0782",
+  "input": "ipsec vpns"
+ },
+ {
+  "id": "i-0783",
+  "input": "basics of packet analysis with Wireshark"
+ },
+ {
+  "id": "i-0784",
+  "input": "C/C++"
+ },
+ {
+  "id": "i-0785",
+  "input": "networks"
+ },
+ {
+  "id": "i-0786",
+  "input": "DSA"
+ },
+ {
+  "id": "i-0787",
+  "input": "works in teams"
+ },
+ {
+  "id": "i-0788",
+  "input": "MongoDB Atlas"
+ },
+ {
+  "id": "i-0789",
+  "input": "team leader"
+ },
+ {
+  "id": "i-0790",
+  "input": "designing segmented secure networks"
+ },
+ {
+  "id": "i-0791",
+  "input": "database programming"
+ },
+ {
+  "id": "i-0792",
+  "input": "dealing with customers"
+ },
+ {
+  "id": "i-0793",
+  "input": "learning CCNA-level networking"
+ },
+ {
+  "id": "i-0794",
+  "input": "Ghidra"
+ },
+ {
+  "id": "i-0795",
+  "input": "supervised learning"
+ },
+ {
+  "id": "i-0796",
+  "input": "hacking tools"
+ },
+ {
+  "id": "i-0797",
+  "input": "Adobe XD"
+ },
+ {
+  "id": "i-0798",
+  "input": "programs"
+ },
+ {
+  "id": "i-0799",
+  "input": "network monitoring (Zabbix/Nagios)"
+ },
+ {
+  "id": "i-0800",
+  "input": "Hardhat"
+ },
+ {
+  "id": "i-0801",
+  "input": "data"
+ },
+ {
+  "id": "i-0802",
+  "input": "chain of custody"
+ },
+ {
+  "id": "i-0803",
+  "input": "office 365"
+ },
+ {
+  "id": "i-0804",
+  "input": "node js backend"
+ },
+ {
+  "id": "i-0805",
+  "input": "basic agile/scrum"
+ },
+ {
+  "id": "i-0806",
+  "input": "the web"
+ },
+ {
+  "id": "i-0807",
+  "input": "spreadsheets"
+ },
+ {
+  "id": "i-0808",
+  "input": "time series forecasting"
+ },
+ {
+  "id": "i-0809",
+  "input": "routing"
+ },
+ {
+  "id": "i-0810",
+  "input": "cloud migration planning"
+ },
+ {
+  "id": "i-0811",
+  "input": "office 365 administration"
+ },
+ {
+  "id": "i-0812",
+  "input": "adobe xd wireframes"
+ },
+ {
+  "id": "i-0813",
+  "input": "replication and failover"
+ },
+ {
+  "id": "i-0814",
+  "input": "python for data"
+ },
+ {
+  "id": "i-0815",
+  "input": "analyzing"
+ },
+ {
+  "id": "i-0816",
+  "input": "good communication"
+ },
+ {
+  "id": "i-0817",
+  "input": "wires"
+ },
+ {
+  "id": "i-0818",
+  "input": "checking things"
+ },
+ {
+  "id": "i-0819",
+  "input": "sql querying"
+ },
+ {
+  "id": "i-0820",
+  "input": "information systems"
+ },
+ {
+  "id": "i-0821",
+  "input": "Oracle Database"
+ },
+ {
+  "id": "i-0822",
+  "input": "charts"
+ },
+ {
+  "id": "i-0823",
+  "input": "OpenVAS"
+ },
+ {
+  "id": "i-0824",
+  "input": "rust programming"
+ },
+ {
+  "id": "i-0825",
+  "input": "blockchain tech"
+ },
+ {
+  "id": "i-0826",
+  "input": "Rust smart contracts on Solana"
+ },
+ {
+  "id": "i-0827",
+  "input": "network basics"
+ },
+ {
+  "id": "i-0828",
+  "input": "traffic and capacity analysis"
+ },
+ {
+  "id": "i-0829",
+  "input": "web pages"
+ },
+ {
+  "id": "i-0830",
+  "input": "building rest api"
+ },
+ {
+  "id": "i-0831",
+  "input": "Jupyter Notebook"
+ },
+ {
+  "id": "i-0832",
+  "input": "ethical hacking"
+ },
+ {
+  "id": "i-0833",
+  "input": "curiosity"
+ },
+ {
+  "id": "i-0834",
+  "input": "hardware"
+ },
+ {
+  "id": "i-0835",
+  "input": "sql queries"
+ },
+ {
+  "id": "i-0836",
+  "input": "M-Pesa Daraja API"
+ },
+ {
+  "id": "i-0837",
+  "input": "SPARQL",
+  "shared_name_owners": [
+   {
+    "id": "esco:5da8018b-ae85-4cde-ad93-0394369018f3",
+    "label": "SPARQL"
+   },
+   {
+    "id": "esco:99207709-d076-4cce-ba38-e90d3bb28806",
+    "label": "resource description framework query language"
+   }
+  ]
+ },
+ {
+  "id": "i-0838",
+  "input": "figma designs"
+ },
+ {
+  "id": "i-0839",
+  "input": "Customer support"
+ },
+ {
+  "id": "i-0840",
+  "input": "making apps"
+ },
+ {
+  "id": "i-0841",
+  "input": "big picture thinking"
+ },
+ {
+  "id": "i-0842",
+  "input": "Github repos"
+ },
+ {
+  "id": "i-0843",
+  "input": "innovation"
+ },
+ {
+  "id": "i-0844",
+  "input": "prolog language"
+ },
+ {
+  "id": "i-0845",
+  "input": "patience"
+ },
+ {
+  "id": "i-0846",
+  "input": "jwt auth and role-based access"
+ },
+ {
+  "id": "i-0847",
+  "input": "IT stuff"
+ },
+ {
+  "id": "i-0848",
+  "input": "REST APIs"
+ },
+ {
+  "id": "i-0849",
+  "input": "Excel"
+ },
+ {
+  "id": "i-0850",
+  "input": "router things"
+ },
+ {
+  "id": "i-0851",
+  "input": "analytical mind"
+ },
+ {
+  "id": "i-0852",
+  "input": "intro to Packet Tracer labs"
+ },
+ {
+  "id": "i-0853",
+  "input": "endpoint security (EDR)"
+ },
+ {
+  "id": "i-0854",
+  "input": "cyber"
+ },
+ {
+  "id": "i-0855",
+  "input": "security knowledge"
+ },
+ {
+  "id": "i-0856",
+  "input": "office"
+ },
+ {
+  "id": "i-0857",
+  "input": "confident"
+ },
+ {
+  "id": "i-0858",
+  "input": "selenium testing"
+ },
+ {
+  "id": "i-0859",
+  "input": "zendesk/Freshdesk"
+ },
+ {
+  "id": "i-0860",
+  "input": "uml modelling"
+ },
+ {
+  "id": "i-0861",
+  "input": "Hugging Face"
+ },
+ {
+  "id": "i-0862",
+  "input": "computer coding"
+ },
+ {
+  "id": "i-0863",
+  "input": "coding in Java"
+ },
+ {
+  "id": "i-0864",
+  "input": "pytorch models"
+ },
+ {
+  "id": "i-0865",
+  "input": "AWS cloud architecture"
+ },
+ {
+  "id": "i-0866",
+  "input": "help desk ticketing"
+ },
+ {
+  "id": "i-0867",
+  "input": "comm skills"
+ },
+ {
+  "id": "i-0868",
+  "input": "cloud stuff"
+ },
+ {
+  "id": "i-0869",
+  "input": "network capacity planning"
+ },
+ {
+  "id": "i-0870",
+  "input": "Cisco ASA"
+ },
+ {
+  "id": "i-0871",
+  "input": "airflow dags"
+ },
+ {
+  "id": "i-0872",
+  "input": "structuring"
+ },
+ {
+  "id": "i-0873",
+  "input": "computer skills"
+ },
+ {
+  "id": "i-0874",
+  "input": "hyperledger"
+ },
+ {
+  "id": "i-0875",
+  "input": "sees the big picture"
+ },
+ {
+  "id": "i-0876",
+  "input": "learning packet tracer simulations"
+ },
+ {
+  "id": "i-0877",
+  "input": "microsoft word"
+ },
+ {
+  "id": "i-0878",
+  "input": "firewalls"
+ },
+ {
+  "id": "i-0879",
+  "input": "Hyperledger Fabric"
+ },
+ {
+  "id": "i-0880",
+  "input": "presenting"
+ },
+ {
+  "id": "i-0881",
+  "input": "ITIL"
+ },
+ {
+  "id": "i-0882",
+  "input": "pc stuff"
+ },
+ {
+  "id": "i-0883",
+  "input": "dashboards"
+ },
+ {
+  "id": "i-0884",
+  "input": "ServiceNow"
+ },
+ {
+  "id": "i-0885",
+  "input": "pytest unit tests"
+ },
+ {
+  "id": "i-0886",
+  "input": "projects work"
+ },
+ {
+  "id": "i-0887",
+  "input": "PL/SQL"
+ },
+ {
+  "id": "i-0888",
+  "input": "redis"
+ },
+ {
+  "id": "i-0889",
+  "input": "servers"
+ },
+ {
+  "id": "i-0890",
+  "input": "NLTK / spaCy text processing"
+ },
+ {
+  "id": "i-0891",
+  "input": "Zeplin"
+ },
+ {
+  "id": "i-0892",
+  "input": "basic UI design in Figma"
+ },
+ {
+  "id": "i-0893",
+  "input": "oracle database administration"
+ },
+ {
+  "id": "i-0894",
+  "input": "HA and failover architecture"
+ },
+ {
+  "id": "i-0895",
+  "input": "penetration tests"
+ },
+ {
+  "id": "i-0896",
+  "input": "CIS benchmarks hardening"
+ },
+ {
+  "id": "i-0897",
+  "input": "research"
+ },
+ {
+  "id": "i-0898",
+  "input": "using aws"
+ },
+ {
+  "id": "i-0899",
+  "input": "journey mapping"
+ },
+ {
+  "id": "i-0900",
+  "input": "Postman"
+ }
+]

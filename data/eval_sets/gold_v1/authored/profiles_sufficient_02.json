@@ -1,0 +1,2398 @@
+[
+ {
+  "key": "ps-101",
+  "family": "networking",
+  "wordings": [
+   [
+    "Spanning Tree Protocol",
+    "VLANs",
+    "OSPF and EIGRP routing",
+    "3-month attachment"
+   ],
+   [
+    "STP/RSTP",
+    "VLAN configuration on switches",
+    "OSPF routing",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-102",
+  "family": "networking",
+  "wordings": [
+   [
+    "Cisco IOS",
+    "setting up DHCP/DNS",
+    "bash scripting",
+    "solving problems"
+   ],
+   [
+    "shell scripts",
+    "DNS, DHCP server config",
+    "configuring Cisco routers and switches",
+    "problem-solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-103",
+  "family": "networking",
+  "wordings": [
+   [
+    "wireshark traffic capture",
+    "Cisco IOS",
+    "VLANs",
+    "network monitoring (Zabbix/Nagios)",
+    "fixing office wifi and network points",
+    "problem solving"
+   ],
+   [
+    "packet analysis with Wireshark",
+    "cisco router config",
+    "VLAN configuration on switches",
+    "Zabbix",
+    "Wi-Fi and LAN troubleshooting for users",
+    "problem-solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-104",
+  "family": "networking",
+  "wordings": [
+   [
+    "CCNA-level networking",
+    "cisco router config",
+    "monitoring with nagios",
+    "troubleshooting connectivity",
+    "communication skills",
+    "Microsoft Office suite"
+   ],
+   [
+    "cisco CCNA",
+    "Cisco IOS",
+    "monitoring",
+    "networking",
+    "verbal and written communication",
+    "word, excel, powerpoint"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-105",
+  "family": "networking",
+  "wordings": [
+   [
+    "subnetting (IPv4/VLSM)",
+    "setting up DHCP/DNS",
+    "backup and restore administration",
+    "vmware virtualization",
+    "Linux"
+   ],
+   [
+    "VMware ESXi",
+    "DNS, DHCP server config",
+    "backup & disaster recovery routines",
+    "Ubuntu",
+    "VLSM subnetting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-106",
+  "family": "networking",
+  "wordings": [
+   [
+    "VPN setup (OpenVPN)",
+    "subnetting (IPv4/VLSM)",
+    "network monitoring (Zabbix/Nagios)",
+    "Wi-Fi site surveys and access points",
+    "manages time well",
+    "solving problems"
+   ],
+   [
+    "wireless lan setup",
+    "networking",
+    "problem solving",
+    "monitoring",
+    "VLSM subnetting",
+    "time management"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-107",
+  "family": "networking",
+  "wordings": [
+   [
+    "CCNA-level networking",
+    "packet tracer simulations",
+    "MikroTik RouterOS",
+    "meeting deadlines",
+    "problem solving"
+   ],
+   [
+    "CCNA coursework",
+    "packet tracer labs",
+    "mikrotik routers",
+    "manages time well",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-108",
+  "family": "networking",
+  "wordings": [
+   [
+    "linux sysadmin",
+    "managing Windows Server",
+    "vmware virtualization",
+    "IPSec VPN configuration",
+    "shell scripts",
+    "linux basics",
+    "industrial attachment experience"
+   ],
+   [
+    "Ubuntu/CentOS server admin",
+    "Windows Server administration",
+    "VMware ESXi",
+    "site-to-site VPN",
+    "bash and cron automation",
+    "Linux",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-109",
+  "family": "networking",
+  "wordings": [
+   [
+    "Zabbix",
+    "setting up DHCP/DNS",
+    "Cisco Packet Tracer",
+    "3-month attachment"
+   ],
+   [
+    "networking",
+    "industrial attachment experience",
+    "monitoring",
+    "DHCP and DNS services"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-110",
+  "family": "networking",
+  "wordings": [
+   [
+    "wireshark traffic capture",
+    "WLAN and access point deployment",
+    "mikrotik hotspot and queue config",
+    "solving problems",
+    "Ubuntu",
+    "works well in teams"
+   ],
+   [
+    "Linux",
+    "Wi-Fi site surveys and access points",
+    "Wireshark",
+    "problem-solving",
+    "mikrotik routers",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-111",
+  "family": "networking",
+  "wordings": [
+   [
+    "shell scripts",
+    "IPSec VPN configuration",
+    "manages time well",
+    "team player",
+    "solving problems"
+   ],
+   [
+    "bash and cron automation",
+    "VPN setup (OpenVPN)",
+    "meeting deadlines",
+    "works well in teams",
+    "problem-solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-112",
+  "family": "networking",
+  "wordings": [
+   [
+    "configuring Cisco routers and switches",
+    "CCNA-level networking",
+    "vlan and trunking"
+   ],
+   [
+    "VLANs",
+    "Cisco IOS",
+    "cisco ccna"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-113",
+  "family": "networking",
+  "wordings": [
+   [
+    "wireless LAN setup",
+    "setting up DHCP/DNS",
+    "spanning-tree config",
+    "meeting deadlines"
+   ],
+   [
+    "STP/RSTP",
+    "Wi-Fi site surveys and access points",
+    "time management",
+    "DHCP and DNS services"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-114",
+  "family": "networking",
+  "wordings": [
+   [
+    "VMware and Hyper-V virtualisation",
+    "monitoring with Nagios",
+    "setting up DHCP/DNS",
+    "problem-solving",
+    "linux basics"
+   ],
+   [
+    "virtualization",
+    "monitoring",
+    "networking",
+    "problem solving",
+    "Ubuntu"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-115",
+  "family": "networking",
+  "wordings": [
+   [
+    "OSPF routing",
+    "subnetting (IPv4/VLSM)",
+    "wireshark traffic capture",
+    "verbal and written communication",
+    "3-month attachment",
+    "time management"
+   ],
+   [
+    "OSPF and EIGRP routing",
+    "IP addressing and subnetting",
+    "Wireshark",
+    "good communicator",
+    "industrial attachment experience",
+    "manages time well"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-116",
+  "family": "networking",
+  "wordings": [
+   [
+    "VPN setup (OpenVPN)",
+    "OSPF routing",
+    "Spanning Tree Protocol",
+    "word, excel, powerpoint",
+    "Linux"
+   ],
+   [
+    "Microsoft Office suite",
+    "ospf",
+    "Ubuntu",
+    "spanning-tree config",
+    "IPSec VPN configuration"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-117",
+  "family": "networking",
+  "wordings": [
+   [
+    "backup & disaster recovery routines",
+    "cisco router config",
+    "IP addressing and subnetting",
+    "good communicator"
+   ],
+   [
+    "communication skills",
+    "server backups",
+    "subnetting (IPv4/VLSM)",
+    "Cisco IOS"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-118",
+  "family": "networking",
+  "wordings": [
+   [
+    "Zabbix",
+    "Cisco Packet Tracer",
+    "Cisco IOS",
+    "CCNA-level networking",
+    "linux basics",
+    "verbal and written communication"
+   ],
+   [
+    "linux",
+    "monitoring",
+    "networking",
+    "packet tracer simulations",
+    "CCNA coursework",
+    "good communicator"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-119",
+  "family": "networking",
+  "wordings": [
+   [
+    "VLSM subnetting",
+    "VLAN configuration on switches",
+    "monitoring with Nagios",
+    "Packet Tracer labs",
+    "3-month attachment",
+    "problem-solving"
+   ],
+   [
+    "IP addressing and subnetting",
+    "networking",
+    "monitoring",
+    "cisco Packet Tracer",
+    "industrial attachment experience",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support specialist / network administrator"
+ },
+ {
+  "key": "ps-120",
+  "family": "networking",
+  "wordings": [
+   [
+    "AD and Group Policy",
+    "Ubuntu/CentOS server admin",
+    "VPN setup (OpenVPN)",
+    "python programming",
+    "meeting deadlines"
+   ],
+   [
+    "networking",
+    "linux sysadmin",
+    "Python",
+    "server admin",
+    "time management"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network and computer systems administrator"
+ },
+ {
+  "key": "ps-121",
+  "family": "security",
+  "wordings": [
+   [
+    "handling security incidents",
+    "vulnerability assessment",
+    "teamwork"
+   ],
+   [
+    "IR playbooks",
+    "vulnerability scanning (Nessus)",
+    "works well in teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-122",
+  "family": "security",
+  "wordings": [
+   [
+    "Burp Suite",
+    "exploit development basics",
+    "metasploit framework",
+    "python programming",
+    "self-learner",
+    "team player"
+   ],
+   [
+    "web security",
+    "writing simple exploits",
+    "hacking",
+    "Python",
+    "research skills",
+    "teamwork"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-123",
+  "family": "security",
+  "wordings": [
+   [
+    "malware analysis",
+    "autopsy",
+    "communication skills",
+    "problem solving"
+   ],
+   [
+    "forensics tools",
+    "solving problems",
+    "good communicator",
+    "cyber stuff"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "digital forensics analyst"
+ },
+ {
+  "key": "ps-124",
+  "family": "security",
+  "wordings": [
+   [
+    "identity and access management",
+    "cryptography (AES, RSA)",
+    "pfSense firewall",
+    "git",
+    "communication skills"
+   ],
+   [
+    "IAM policies, MFA",
+    "encryption",
+    "network security",
+    "Git and GitHub",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security engineer"
+ },
+ {
+  "key": "ps-125",
+  "family": "security",
+  "wordings": [
+   [
+    "IDS/IPS",
+    "reading system and web server logs",
+    "log monitoring in Splunk",
+    "industrial attachment experience",
+    "Linux",
+    "research skills"
+   ],
+   [
+    "monitoring",
+    "analysis",
+    "SIEM",
+    "3-month attachment",
+    "linux basics",
+    "self-learner"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-126",
+  "family": "security",
+  "wordings": [
+   [
+    "buffer overflow exploitation",
+    "kali linux tools",
+    "web vulnerabilities (xss, sqli, csrf)",
+    "capture the flag (HackTheBox/TryHackMe)",
+    "bash"
+   ],
+   [
+    "low-level hacking",
+    "hacking tools",
+    "owasp top ten vulnerabilities",
+    "cyber competitions",
+    "command-line scripting"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-127",
+  "family": "security",
+  "wordings": [
+   [
+    "disk imaging and acquisition",
+    "log analysis",
+    "memory analysis with Volatility",
+    "linux basics",
+    "works well in teams"
+   ],
+   [
+    "team player",
+    "forensic disk imaging",
+    "Volatility memory forensics",
+    "Linux",
+    "analysing logs for intrusions"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "digital forensics analyst"
+ },
+ {
+  "key": "ps-128",
+  "family": "security",
+  "wordings": [
+   [
+    "identity and access management",
+    "designing segmented secure networks",
+    "endpoint security (EDR)",
+    "Ubuntu",
+    "works well in teams"
+   ],
+   [
+    "access control",
+    "antivirus and edr management",
+    "network security",
+    "team player",
+    "Linux"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security engineer"
+ },
+ {
+  "key": "ps-129",
+  "family": "security",
+  "wordings": [
+   [
+    "Nessus/OpenVAS scans",
+    "incident response",
+    "log monitoring in Splunk",
+    "good communicator",
+    "works well in teams"
+   ],
+   [
+    "vulnerability scanning (Nessus)",
+    "handling security incidents",
+    "splunk siem",
+    "verbal and written communication",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-130",
+  "family": "security",
+  "wordings": [
+   [
+    "Kali Linux",
+    "Metasploit exploits",
+    "network scanning with nmap",
+    "git"
+   ],
+   [
+    "hacking",
+    "Nmap",
+    "hacking tools",
+    "Git and GitHub"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-131",
+  "family": "security",
+  "wordings": [
+   [
+    "log analysis",
+    "analysing malware samples",
+    "disk imaging and acquisition",
+    "extracting data from phones for investigations",
+    "works well in teams"
+   ],
+   [
+    "mobile phone forensics",
+    "analysis",
+    "forensics",
+    "team player",
+    "cyber stuff"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "digital forensics analyst"
+ },
+ {
+  "key": "ps-132",
+  "family": "security",
+  "wordings": [
+   [
+    "ModSecurity",
+    "encryption algorithms",
+    "GitHub Actions",
+    "Python (basic)",
+    "Linux"
+   ],
+   [
+    "web application firewall",
+    "applied cryptography",
+    "jenkins pipelines",
+    "Python",
+    "ubuntu"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security engineer"
+ },
+ {
+  "key": "ps-133",
+  "family": "security",
+  "wordings": [
+   [
+    "iso 27001 controls",
+    "CIS benchmarks hardening",
+    "handling security incidents",
+    "Nessus/OpenVAS scans",
+    "solving problems"
+   ],
+   [
+    "ISO/IEC 27001 compliance",
+    "hardening Linux/Windows servers",
+    "problem solving",
+    "vulnerability scanning (Nessus)",
+    "IR playbooks"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-134",
+  "family": "security",
+  "wordings": [
+   [
+    "finding SQL injection",
+    "CTF competitions",
+    "OWASP Top 10",
+    "command-line scripting"
+   ],
+   [
+    "SQL injection testing",
+    "TryHackMe and HTB",
+    "owasp top ten vulnerabilities",
+    "basic shell scripting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-135",
+  "family": "security",
+  "wordings": [
+   [
+    "Autopsy and Sleuth Kit",
+    "basic malware reverse engineering",
+    "chain of custody"
+   ],
+   [
+    "forensics",
+    "cyber stuff",
+    "digital evidence handling"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "digital forensics analyst"
+ },
+ {
+  "key": "ps-136",
+  "family": "security",
+  "wordings": [
+   [
+    "encryption algorithms",
+    "zero-trust network design",
+    "works well in teams",
+    "Git and GitHub"
+   ],
+   [
+    "cryptography (AES, RSA)",
+    "teamwork",
+    "git",
+    "network segmentation and zero trust design"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security engineer"
+ },
+ {
+  "key": "ps-137",
+  "family": "security",
+  "wordings": [
+   [
+    "firewall rules (pfSense/Fortinet)",
+    "Splunk SIEM",
+    "log analysis",
+    "communication skills",
+    "Python (basic)",
+    "linux basics"
+   ],
+   [
+    "analysis",
+    "verbal and written communication",
+    "pfSense firewall",
+    "Python",
+    "security stuff",
+    "linux"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-138",
+  "family": "security",
+  "wordings": [
+   [
+    "finding SQL injection",
+    "capture the flag (HackTheBox/TryHackMe)",
+    "Ubuntu"
+   ],
+   [
+    "linux basics",
+    "SQL injection testing",
+    "TryHackMe and HTB"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-139",
+  "family": "security",
+  "wordings": [
+   [
+    "forensic disk imaging",
+    "autopsy forensic browser",
+    "basic malware reverse engineering",
+    "problem-solving",
+    "team player"
+   ],
+   [
+    "creating forensic images",
+    "Autopsy",
+    "analysing malware samples",
+    "solving problems",
+    "teamwork"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "digital forensics analyst"
+ },
+ {
+  "key": "ps-140",
+  "family": "security",
+  "wordings": [
+   [
+    "hardening Linux/Windows servers",
+    "applied cryptography",
+    "endpoint protection tools",
+    "Linux",
+    "works well in teams"
+   ],
+   [
+    "system hardening",
+    "cryptography (AES, RSA)",
+    "endpoint security (EDR)",
+    "Ubuntu",
+    "teamwork"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security engineer"
+ },
+ {
+  "key": "ps-141",
+  "family": "security",
+  "wordings": [
+   [
+    "Nessus/OpenVAS scans",
+    "DPA 2019 and GDPR",
+    "CIS benchmarks hardening",
+    "antivirus and EDR management",
+    "self-learner"
+   ],
+   [
+    "vulnerability scanning (nessus)",
+    "data protection and privacy compliance",
+    "hardening Linux/Windows servers",
+    "endpoint security (EDR)",
+    "can research and learn quickly"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-142",
+  "family": "security",
+  "wordings": [
+   [
+    "web vulnerabilities (XSS, SQLi, CSRF)",
+    "capture the flag (HackTheBox/TryHackMe)",
+    "Kali Linux",
+    "linux basics",
+    "problem solving"
+   ],
+   [
+    "owasp top ten vulnerabilities",
+    "TryHackMe and HTB",
+    "pentesting with kali",
+    "Linux",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-143",
+  "family": "security",
+  "wordings": [
+   [
+    "ftk imager disk imaging",
+    "mobile phone forensics",
+    "log analysis",
+    "RAM forensics",
+    "communication skills",
+    "teamwork"
+   ],
+   [
+    "team player",
+    "Android forensics",
+    "EnCase/FTK",
+    "Volatility memory forensics",
+    "reading system and web server logs",
+    "good communicator"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "digital forensics analyst"
+ },
+ {
+  "key": "ps-144",
+  "family": "security",
+  "wordings": [
+   [
+    "IAM and role-based access",
+    "firewall configuration",
+    "applied cryptography",
+    "hardening Linux/Windows servers",
+    "problem solving",
+    "git"
+   ],
+   [
+    "IAM policies, MFA",
+    "pfSense firewall",
+    "cryptography (AES, RSA)",
+    "CIS benchmarks hardening",
+    "problem-solving",
+    "git and GitHub"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security engineer"
+ },
+ {
+  "key": "ps-145",
+  "family": "security",
+  "wordings": [
+   [
+    "IDS/IPS",
+    "log analysis",
+    "Nessus/OpenVAS scans",
+    "pfSense firewall",
+    "3-month attachment"
+   ],
+   [
+    "snort ids",
+    "analysing logs for intrusions",
+    "vulnerability assessment",
+    "firewall rules (pfSense/Fortinet)",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-146",
+  "family": "security",
+  "wordings": [
+   [
+    "nmap scanning",
+    "web app testing with burp",
+    "research skills",
+    "command-line scripting"
+   ],
+   [
+    "nmap",
+    "burpsuite",
+    "self-learner",
+    "bash"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-147",
+  "family": "security",
+  "wordings": [
+   [
+    "Android forensics",
+    "Autopsy",
+    "Python",
+    "linux basics",
+    "solving problems"
+   ],
+   [
+    "extracting data from phones for investigations",
+    "autopsy forensic browser",
+    "python programming",
+    "Linux",
+    "problem solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "digital forensics analyst"
+ },
+ {
+  "key": "ps-148",
+  "family": "security",
+  "wordings": [
+   [
+    "applied cryptography",
+    "PKI and TLS certificates",
+    "firewall rules (pfSense/Fortinet)"
+   ],
+   [
+    "cryptography (AES, RSA)",
+    "public key infrastructure",
+    "firewall configuration"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security engineer"
+ },
+ {
+  "key": "ps-149",
+  "family": "security",
+  "wordings": [
+   [
+    "reading system and web server logs",
+    "Nessus/OpenVAS scans",
+    "log monitoring in Splunk",
+    "verbal and written communication",
+    "self-learner",
+    "Linux"
+   ],
+   [
+    "SIEM",
+    "good communicator",
+    "can research and learn quickly",
+    "vulnerability assessment",
+    "linux basics",
+    "analysing logs for intrusions"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst"
+ },
+ {
+  "key": "ps-150",
+  "family": "security",
+  "wordings": [
+   [
+    "finding SQL injection",
+    "web vulnerabilities (XSS, SQLi, CSRF)",
+    "pentesting with kali",
+    "buffer overflow exploitation",
+    "CTF competitions",
+    "Python (basic)",
+    "bash",
+    "can research and learn quickly"
+   ],
+   [
+    "SQLi exploitation",
+    "OWASP Top 10",
+    "kali linux tools",
+    "writing simple exploits",
+    "capture the flag (HackTheBox/TryHackMe)",
+    "Python",
+    "command-line scripting",
+    "research skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "penetration tester"
+ },
+ {
+  "key": "ps-151",
+  "family": "user_support",
+  "wordings": [
+   [
+    "teaching users new software",
+    "escalating tickets within SLA",
+    "Windows 10/11 troubleshooting",
+    "student club leadership",
+    "bilingual (English/Kiswahili)"
+   ],
+   [
+    "IT support",
+    "English and Kiswahili",
+    "training",
+    "led a class project team",
+    "fixing computers"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-152",
+  "family": "user_support",
+  "wordings": [
+   [
+    "OS installation and imaging",
+    "Zendesk",
+    "English and Kiswahili"
+   ],
+   [
+    "installing Windows/Ubuntu",
+    "zendesk/Freshdesk",
+    "fluent in English and Swahili"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-153",
+  "family": "user_support",
+  "wordings": [
+   [
+    "ITIL v4",
+    "cleaning infected computers",
+    "password resets and account unlocks",
+    "escalating tickets within SLA",
+    "help desk ticketing"
+   ],
+   [
+    "IT service stuff",
+    "computer repair",
+    "user accounts",
+    "SLA and ticket escalation handling",
+    "logging and resolving tickets"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-154",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Wi-Fi and LAN troubleshooting for users",
+    "cleaning infected computers",
+    "helpdesk tickets",
+    "password resets and account unlocks",
+    "teamwork"
+   ],
+   [
+    "user accounts",
+    "team player",
+    "logging and resolving tickets",
+    "networking",
+    "virus and malware removal"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-155",
+  "family": "user_support",
+  "wordings": [
+   [
+    "printer troubleshooting",
+    "fixing Windows errors",
+    "fixing office wifi and network points",
+    "reimaging laptops"
+   ],
+   [
+    "printer and scanner setup",
+    "OS installation and imaging",
+    "Wi-Fi and LAN troubleshooting for users",
+    "troubleshooting windows"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-156",
+  "family": "user_support",
+  "wordings": [
+   [
+    "laptop repair and upgrades",
+    "Windows 10/11 troubleshooting",
+    "remote support (TeamViewer/AnyDesk)",
+    "student club leadership",
+    "MS Office",
+    "good communicator"
+   ],
+   [
+    "PC hardware repair",
+    "troubleshooting windows",
+    "remote desktop support",
+    "led a class project team",
+    "word, excel, powerpoint",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-157",
+  "family": "user_support",
+  "wordings": [
+   [
+    "password resets and account unlocks",
+    "teaching users new software",
+    "assembling and repairing desktops",
+    "ITIL v4",
+    "meeting deadlines"
+   ],
+   [
+    "time management",
+    "PC hardware repair",
+    "end-user training",
+    "ITIL foundations",
+    "resetting user accounts in AD"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-158",
+  "family": "user_support",
+  "wordings": [
+   [
+    "freshdesk ticketing",
+    "laptop repair and upgrades",
+    "remote support (TeamViewer/AnyDesk)",
+    "resetting user accounts in AD",
+    "writing user guides and knowledge base articles",
+    "internship experience",
+    "verbal and written communication",
+    "problem solving"
+   ],
+   [
+    "Zendesk",
+    "assembling and repairing desktops",
+    "remote desktop support",
+    "user account management",
+    "documentation and user manuals",
+    "3-month attachment",
+    "good communicator",
+    "problem-solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-159",
+  "family": "user_support",
+  "wordings": [
+   [
+    "remote support (TeamViewer/AnyDesk)",
+    "help desk ticketing",
+    "printer troubleshooting",
+    "Microsoft 365 administration",
+    "fixing office wifi and network points",
+    "Microsoft Office suite"
+   ],
+   [
+    "MS Office",
+    "Wi-Fi and LAN troubleshooting for users",
+    "helpdesk tickets",
+    "printer and scanner setup",
+    "Office 365 admin (mailboxes, licences)",
+    "TeamViewer"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-160",
+  "family": "user_support",
+  "wordings": [
+   [
+    "ITIL v4",
+    "printer troubleshooting",
+    "Zendesk",
+    "word, excel, powerpoint"
+   ],
+   [
+    "microsoft office suite",
+    "office equipment",
+    "support tools",
+    "ITIL service management"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-161",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Office 365 admin (mailboxes, licences)",
+    "PC hardware repair",
+    "Windows 10/11 troubleshooting",
+    "documentation and user manuals",
+    "printer and scanner setup"
+   ],
+   [
+    "IT admin",
+    "laptop repair and upgrades",
+    "fixing computers",
+    "documentation",
+    "printer troubleshooting"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-162",
+  "family": "user_support",
+  "wordings": [
+   [
+    "how-to guides for users",
+    "TeamViewer",
+    "meeting deadlines",
+    "English and Kiswahili"
+   ],
+   [
+    "documentation and user manuals",
+    "remote desktop support",
+    "time management",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-163",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Windows 10/11 troubleshooting",
+    "user account management",
+    "verbal and written communication",
+    "industrial attachment experience"
+   ],
+   [
+    "fixing windows errors",
+    "resetting user accounts in ad",
+    "communication skills",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-164",
+  "family": "user_support",
+  "wordings": [
+   [
+    "troubleshooting windows",
+    "O365 user setup",
+    "end-user training"
+   ],
+   [
+    "Windows 10/11 troubleshooting",
+    "Office 365 admin (mailboxes, licences)",
+    "teaching users new software"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-165",
+  "family": "user_support",
+  "wordings": [
+   [
+    "fixing office wifi and network points",
+    "documentation and user manuals",
+    "Microsoft 365 administration",
+    "problem-solving"
+   ],
+   [
+    "troubleshooting connectivity",
+    "how-to guides for users",
+    "office 365 admin (mailboxes, licences)",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-166",
+  "family": "user_support",
+  "wordings": [
+   [
+    "ITIL service management",
+    "Wi-Fi and LAN troubleshooting for users",
+    "android and ios device support",
+    "problem solving",
+    "MS Office"
+   ],
+   [
+    "ITIL foundations",
+    "mobile device troubleshooting",
+    "word, excel, powerpoint",
+    "troubleshooting connectivity",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-167",
+  "family": "user_support",
+  "wordings": [
+   [
+    "configuring network printers",
+    "removing malware from pcs",
+    "reimaging laptops",
+    "PC hardware repair",
+    "Zendesk/Freshdesk",
+    "teamwork",
+    "student club leadership"
+   ],
+   [
+    "printer and scanner setup",
+    "zendesk",
+    "installing software",
+    "leadership",
+    "virus and malware removal",
+    "computer repair",
+    "team player"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-168",
+  "family": "user_support",
+  "wordings": [
+   [
+    "installing Windows/Ubuntu",
+    "Microsoft 365 administration",
+    "troubleshooting connectivity",
+    "removing malware from PCs",
+    "setting up smartphones for staff",
+    "industrial attachment experience"
+   ],
+   [
+    "OS installation and imaging",
+    "IT admin",
+    "wi-Fi and LAN troubleshooting for users",
+    "computer repair",
+    "phones",
+    "3-month attachment"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-169",
+  "family": "user_support",
+  "wordings": [
+   [
+    "escalating tickets within SLA",
+    "fixing office wifi and network points",
+    "writing user guides and knowledge base articles",
+    "configuring network printers",
+    "problem solving",
+    "industrial attachment experience",
+    "good communicator"
+   ],
+   [
+    "SLA tracking",
+    "troubleshooting connectivity",
+    "documentation and user manuals",
+    "printer troubleshooting",
+    "solving problems",
+    "internship experience",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-170",
+  "family": "user_support",
+  "wordings": [
+   [
+    "documentation and user manuals",
+    "Microsoft 365 administration",
+    "logging and resolving tickets",
+    "remote desktop support",
+    "Microsoft Office suite",
+    "good communicator"
+   ],
+   [
+    "writing user guides and knowledge base articles",
+    "O365 user setup",
+    "help desk ticketing",
+    "teamviewer",
+    "MS Office",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-171",
+  "family": "user_support",
+  "wordings": [
+   [
+    "TeamViewer",
+    "phone and email customer support",
+    "help desk ticketing",
+    "virus and malware removal",
+    "escalating tickets within SLA",
+    "good communicator",
+    "time management",
+    "student club leadership"
+   ],
+   [
+    "remote support (TeamViewer/AnyDesk)",
+    "handling client calls and emails",
+    "logging and resolving tickets",
+    "removing malware from PCs",
+    "SLA and ticket escalation handling",
+    "communication skills",
+    "manages time well",
+    "led a class project team"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-172",
+  "family": "user_support",
+  "wordings": [
+   [
+    "ITIL service management",
+    "cleaning infected computers",
+    "reimaging laptops",
+    "teamwork"
+   ],
+   [
+    "ITIL v4",
+    "removing malware from PCs",
+    "OS installation and imaging",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-173",
+  "family": "user_support",
+  "wordings": [
+   [
+    "training staff on Office and email",
+    "configuring network printers",
+    "freshdesk ticketing",
+    "handling client calls and emails",
+    "fluent in English and Swahili",
+    "industrial attachment experience"
+   ],
+   [
+    "training",
+    "office equipment",
+    "zendesk/Freshdesk",
+    "customer service",
+    "English and Kiswahili",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-174",
+  "family": "user_support",
+  "wordings": [
+   [
+    "printer and scanner setup",
+    "SLA tracking",
+    "Windows 10/11 troubleshooting",
+    "O365 user setup",
+    "ITIL service management",
+    "solving problems"
+   ],
+   [
+    "Microsoft 365 administration",
+    "ITIL foundations",
+    "escalating tickets within SLA",
+    "configuring network printers",
+    "problem solving",
+    "fixing Windows errors"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-175",
+  "family": "user_support",
+  "wordings": [
+   [
+    "assembling and repairing desktops",
+    "help desk ticketing",
+    "writing user guides and knowledge base articles",
+    "end-user training",
+    "O365 user setup",
+    "solving problems"
+   ],
+   [
+    "PC hardware repair",
+    "IT support",
+    "documentation",
+    "teaching users new software",
+    "Office 365 admin (mailboxes, licences)",
+    "problem-solving"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-176",
+  "family": "user_support",
+  "wordings": [
+   [
+    "escalating tickets within SLA",
+    "setting up smartphones for staff",
+    "fixing Windows errors",
+    "resetting user accounts in ad",
+    "problem solving"
+   ],
+   [
+    "Windows 10/11 troubleshooting",
+    "password resets and account unlocks",
+    "SLA tracking",
+    "problem-solving",
+    "Android and iOS device support"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-177",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Office 365 admin (mailboxes, licences)",
+    "PC hardware repair",
+    "OS installation and imaging",
+    "troubleshooting connectivity",
+    "printer troubleshooting",
+    "team player"
+   ],
+   [
+    "teamwork",
+    "reimaging laptops",
+    "Microsoft 365 administration",
+    "configuring network printers",
+    "fixing office wifi and network points",
+    "assembling and repairing desktops"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-178",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Microsoft 365 administration",
+    "password resets and account unlocks",
+    "cleaning infected computers",
+    "fluent in English and Swahili",
+    "verbal and written communication",
+    "team player"
+   ],
+   [
+    "office 365 admin (mailboxes, licences)",
+    "user account management",
+    "virus and malware removal",
+    "bilingual (English/Kiswahili)",
+    "communication skills",
+    "works well in teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer user support specialist"
+ },
+ {
+  "key": "ps-179",
+  "family": "database",
+  "wordings": [
+   [
+    "DB access control",
+    "database indexes",
+    "MS SQL Server",
+    "Excel",
+    "problem-solving"
+   ],
+   [
+    "databases",
+    "database performance",
+    "SQL Server",
+    "microsoft excel",
+    "problem solving"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-180",
+  "family": "database",
+  "wordings": [
+   [
+    "creating indexes for performance",
+    "MS SQL Server",
+    "internship experience"
+   ],
+   [
+    "industrial attachment experience",
+    "database indexes",
+    "microsoft SQL Server and SSMS"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-181",
+  "family": "database",
+  "wordings": [
+   [
+    "postgres",
+    "dbt models",
+    "microsoft SQL Server and SSMS",
+    "python programming",
+    "git"
+   ],
+   [
+    "postgres admin",
+    "data stuff",
+    "databases",
+    "python (basic)",
+    "git and GitHub"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-182",
+  "family": "database",
+  "wordings": [
+   [
+    "document and key-value stores",
+    "Oracle Database",
+    "migrating data between databases",
+    "verbal and written communication"
+   ],
+   [
+    "nosql (mongo, cassandra)",
+    "Oracle DB and PL/SQL",
+    "database migration",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-183",
+  "family": "database",
+  "wordings": [
+   [
+    "MS SQL Server",
+    "database migration",
+    "database indexes",
+    "verbal and written communication"
+   ],
+   [
+    "Microsoft SQL Server and SSMS",
+    "migrating data between databases",
+    "creating indexes for performance",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-184",
+  "family": "database",
+  "wordings": [
+   [
+    "Microsoft SQL Server and SSMS",
+    "ETL pipelines",
+    "normalisation (3NF)",
+    "MS Excel",
+    "git"
+   ],
+   [
+    "version control (Git)",
+    "SQL Server",
+    "microsoft excel",
+    "database design",
+    "data stuff"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-185",
+  "family": "database",
+  "wordings": [
+   [
+    "document and key-value stores",
+    "stored procs",
+    "database replication",
+    "database migration",
+    "DB access control"
+   ],
+   [
+    "NoSQL databases",
+    "stored procedures and triggers",
+    "replication and failover",
+    "migrating data between databases",
+    "database user roles and permissions"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-186",
+  "family": "database",
+  "wordings": [
+   [
+    "master-slave replication",
+    "database user roles and permissions",
+    "works well in teams",
+    "Excel",
+    "problem solving"
+   ],
+   [
+    "database replication",
+    "DB access control",
+    "team player",
+    "microsoft excel",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-187",
+  "family": "database",
+  "wordings": [
+   [
+    "fact and dimension tables",
+    "postgreSQL",
+    "data warehousing",
+    "dbt",
+    "SSIS packages",
+    "good communicator"
+   ],
+   [
+    "star schema design",
+    "dbt models",
+    "Postgres admin",
+    "building a data warehouse",
+    "SSIS",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-188",
+  "family": "database",
+  "wordings": [
+   [
+    "mysql server",
+    "Oracle DB and PL/SQL",
+    "database backup and recovery",
+    "sql basics",
+    "Excel",
+    "problem-solving"
+   ],
+   [
+    "databases",
+    "oracle 19c",
+    "backups",
+    "SQL",
+    "microsoft excel",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-189",
+  "family": "database",
+  "wordings": [
+   [
+    "mysql",
+    "Microsoft SQL Server and SSMS",
+    "Postgres admin"
+   ],
+   [
+    "MySQL database admin",
+    "SQL Server",
+    "PostgreSQL"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-190",
+  "family": "database",
+  "wordings": [
+   [
+    "MS SQL Server",
+    "ER modelling",
+    "ETL development",
+    "version control (Git)",
+    "verbal and written communication"
+   ],
+   [
+    "SQL Server",
+    "ERD design",
+    "extract-transform-load processes",
+    "git",
+    "good communicator"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-191",
+  "family": "database",
+  "wordings": [
+   [
+    "Postgres admin",
+    "T-SQL / PL/SQL procedures",
+    "MS SQL Server",
+    "industrial attachment experience"
+   ],
+   [
+    "postgres",
+    "database programming",
+    "databases",
+    "3-month attachment"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-192",
+  "family": "database",
+  "wordings": [
+   [
+    "PostgreSQL",
+    "backup/restore of databases",
+    "Oracle DB and PL/SQL",
+    "3-month attachment"
+   ],
+   [
+    "postgres",
+    "database backup and recovery",
+    "oracle 19c",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-193",
+  "family": "database",
+  "wordings": [
+   [
+    "airflow dags",
+    "ETL pipelines",
+    "SSIS packages",
+    "dbt",
+    "designing data models",
+    "problem-solving"
+   ],
+   [
+    "data transformation with dbt",
+    "problem solving",
+    "ETL development",
+    "SSIS",
+    "workflow orchestration with Airflow",
+    "database schema design for large systems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-194",
+  "family": "database",
+  "wordings": [
+   [
+    "master-slave replication",
+    "indexing strategies",
+    "backup/restore of databases",
+    "good communicator"
+   ],
+   [
+    "database replication",
+    "creating indexes for performance",
+    "point-in-time recovery",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-195",
+  "family": "database",
+  "wordings": [
+   [
+    "indexing strategies",
+    "MySQL database admin",
+    "NoSQL databases",
+    "MS SQL Server",
+    "verbal and written communication",
+    "industrial attachment experience"
+   ],
+   [
+    "creating indexes for performance",
+    "MySQL",
+    "document and key-value stores",
+    "SQL Server",
+    "communication skills",
+    "3-month attachment"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-196",
+  "family": "database",
+  "wordings": [
+   [
+    "data warehouse design",
+    "postgres",
+    "git"
+   ],
+   [
+    "data warehousing",
+    "PostgreSQL",
+    "Git and GitHub"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-197",
+  "family": "database",
+  "wordings": [
+   [
+    "DB access control",
+    "oracle database",
+    "migrating data between databases",
+    "SQL (basic queries)"
+   ],
+   [
+    "sql basics",
+    "granting privileges and roles",
+    "databases",
+    "data moving"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-198",
+  "family": "database",
+  "wordings": [
+   [
+    "SQL performance tuning",
+    "Postgres admin",
+    "DB access control",
+    "solving problems",
+    "Linux"
+   ],
+   [
+    "problem solving",
+    "ubuntu",
+    "postgres",
+    "granting privileges and roles",
+    "query tuning and execution plans"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-199",
+  "family": "database",
+  "wordings": [
+   [
+    "data warehousing",
+    "SQL Server Integration Services",
+    "extract-transform-load processes",
+    "workflow orchestration with Airflow",
+    "MS Excel"
+   ],
+   [
+    "ETL pipelines",
+    "data warehouse design",
+    "Apache Airflow",
+    "SSIS packages",
+    "microsoft excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-200",
+  "family": "database",
+  "wordings": [
+   [
+    "stored procs",
+    "backup/restore of databases",
+    "Oracle Database",
+    "database migration"
+   ],
+   [
+    "T-SQL / PL/SQL procedures",
+    "point-in-time recovery",
+    "Oracle DB and PL/SQL",
+    "migrating data between databases"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ }
+]

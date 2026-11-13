@@ -1,0 +1,597 @@
+[
+ {
+  "group": "nc-g059",
+  "input": "organising functions and weddings",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched function; no node fits"
+ },
+ {
+  "group": "nc-g060",
+  "input": "eye vision screening",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched vision; no node fits"
+ },
+ {
+  "group": "nc-g061",
+  "input": "crop farming at home",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched farming; no node fits"
+ },
+ {
+  "group": "nc-g062",
+  "input": "references available on request",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched CV boilerplate; no node fits"
+ },
+ {
+  "group": "nc-g063",
+  "input": "ARIMA",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched arima; no node fits"
+ },
+ {
+  "group": "nc-g063",
+  "input": "Prophet forecasting",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched arima; no node fits"
+ },
+ {
+  "group": "nc-g064",
+  "input": "cooking",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched cooking; no node fits"
+ },
+ {
+  "group": "nc-g064",
+  "input": "love cooking",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched cooking; no node fits"
+ },
+ {
+  "group": "nc-g065",
+  "input": "Polygon network",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched polygon; no node fits"
+ },
+ {
+  "group": "nc-g065",
+  "input": "Solana",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched polygon; no node fits"
+ },
+ {
+  "group": "nc-g066",
+  "input": "patch panel termination",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched patch panel; no node fits"
+ },
+ {
+  "group": "nc-g067",
+  "input": "eyebrow threading",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched thread; no node fits"
+ },
+ {
+  "group": "nc-g067",
+  "input": "thread weaving",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched thread; no node fits"
+ },
+ {
+  "group": "nc-g068",
+  "input": "tech savvy",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched tech savvy; no node fits"
+ },
+ {
+  "group": "nc-g068",
+  "input": "techie guy",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched tech savvy; no node fits"
+ },
+ {
+  "group": "nc-g069",
+  "input": "honest and trustworthy",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched honesty; no node fits"
+ },
+ {
+  "group": "nc-g069",
+  "input": "honesty",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched honesty; no node fits"
+ },
+ {
+  "group": "nc-g070",
+  "input": "punctual",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched punctual; no node fits"
+ },
+ {
+  "group": "nc-g070",
+  "input": "I never come late",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched punctual; no node fits"
+ },
+ {
+  "group": "nc-g071",
+  "input": "dancing",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched dance; no node fits"
+ },
+ {
+  "group": "nc-g072",
+  "input": "gold mining",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched mining; no node fits"
+ },
+ {
+  "group": "nc-g073",
+  "input": "speech recognition",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched speech; no node fits"
+ },
+ {
+  "group": "nc-g074",
+  "input": "QGIS",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched qgis; no node fits"
+ },
+ {
+  "group": "nc-g075",
+  "input": "dream job at Safaricom",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched employer wish; no node fits"
+ },
+ {
+  "group": "nc-g076",
+  "input": "driving licence",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched driving; no node fits"
+ },
+ {
+  "group": "nc-g076",
+  "input": "valid class B driving license",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched driving; no node fits"
+ },
+ {
+  "group": "nc-g077",
+  "input": "waiter serving customers at a hotel",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched server; no node fits"
+ },
+ {
+  "group": "nc-g078",
+  "input": "neat and presentable",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched neat; no node fits"
+ },
+ {
+  "group": "nc-g079",
+  "input": "burndown charts",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched burndown; no node fits"
+ },
+ {
+  "group": "nc-g079",
+  "input": "sprint planning",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched burndown; no node fits"
+ },
+ {
+  "group": "nc-g080",
+  "input": "tour guide at Lake Naivasha",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched data lake; no node fits"
+ },
+ {
+  "group": "nc-g081",
+  "input": "perfectionist",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched perfectionist; no node fits"
+ },
+ {
+  "group": "nc-g082",
+  "input": "anime fan",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched anime; no node fits"
+ },
+ {
+  "group": "nc-g082",
+  "input": "watching anime",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched anime; no node fits"
+ },
+ {
+  "group": "nc-g083",
+  "input": "I own a laptop",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched laptop; no node fits"
+ },
+ {
+  "group": "nc-g083",
+  "input": "have my own laptop and modem",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched laptop; no node fits"
+ },
+ {
+  "group": "nc-g084",
+  "input": "love meeting new people",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched social trait; no node fits"
+ },
+ {
+  "group": "nc-g085",
+  "input": "fitting windows and doors",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched Windows; no node fits"
+ },
+ {
+  "group": "nc-g085",
+  "input": "window installation",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched Windows; no node fits"
+ },
+ {
+  "group": "nc-g086",
+  "input": "issuing birth certificates",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched certificate; no node fits"
+ },
+ {
+  "group": "nc-g087",
+  "input": "neuro-linguistic programming coach",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched NLP; coaching; no node fits"
+ },
+ {
+  "group": "nc-g087",
+  "input": "NLP life coach",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched NLP; coaching; no node fits"
+ },
+ {
+  "group": "nc-g088",
+  "input": "karate black belt",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched karate; no node fits"
+ },
+ {
+  "group": "nc-g089",
+  "input": "SOAP web services",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched soap; no node fits"
+ },
+ {
+  "group": "nc-g090",
+  "input": "GitHub Copilot",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched copilot; no node fits"
+ },
+ {
+  "group": "nc-g091",
+  "input": "Chakra UI",
+  "category": "no_concept",
+  "domain": "web_frontend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched chakra; no node fits"
+ },
+ {
+  "group": "nc-g092",
+  "input": "KCSE B+",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched credential grade, not skill; no node fits"
+ },
+ {
+  "group": "nc-g093",
+  "input": "BSc Computer Science Strathmore",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched degree not skill; no node fits"
+ },
+ {
+  "group": "nc-g093",
+  "input": "Bachelor of IT, 3rd year",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched degree not skill; no node fits"
+ },
+ {
+  "group": "nc-g094",
+  "input": "travelling",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched travel; no node fits"
+ },
+ {
+  "group": "nc-g095",
+  "input": "storekeeper in a warehouse",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched warehouse; no node fits"
+ },
+ {
+  "group": "nc-g095",
+  "input": "warehouse stock handling",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched warehouse; no node fits"
+ },
+ {
+  "group": "nc-g096",
+  "input": "reinforcement learning",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched rl; no node fits"
+ },
+ {
+  "group": "nc-g097",
+  "input": "Material UI",
+  "category": "no_concept",
+  "domain": "web_frontend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched material ui; no node fits"
+ },
+ {
+  "group": "nc-g098",
+  "input": "humble",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched humble; no node fits"
+ },
+ {
+  "group": "nc-g098",
+  "input": "humility and respect",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched humble; no node fits"
+ },
+ {
+  "group": "nc-g099",
+  "input": "VirtualBox",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched virtualbox; no node fits"
+ },
+ {
+  "group": "nc-g099",
+  "input": "setting up VMs on VirtualBox",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched virtualbox; no node fits"
+ },
+ {
+  "group": "nc-g100",
+  "input": "CAP theorem",
+  "category": "no_concept",
+  "domain": "database",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched cap; no node fits"
+ },
+ {
+  "group": "nc-g101",
+  "input": "beadwork and crafts",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched crafts; no node fits"
+ },
+ {
+  "group": "nc-g102",
+  "input": "Vite",
+  "category": "no_concept",
+  "domain": "web_frontend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched vite; no node fits"
+ },
+ {
+  "group": "nc-g102",
+  "input": "vitejs bundler",
+  "category": "no_concept",
+  "domain": "web_frontend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched vite; no node fits"
+ },
+ {
+  "group": "nc-g103",
+  "input": "keyboardist at church",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched keyboard; no node fits"
+ },
+ {
+  "group": "nc-g103",
+  "input": "playing keyboard piano",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched keyboard; no node fits"
+ },
+ {
+  "group": "nc-g104",
+  "input": "UPS and power backup setup",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched ups; no node fits"
+ },
+ {
+  "group": "nc-g105",
+  "input": "certificate of good conduct",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched good conduct, clearance; no node fits"
+ },
+ {
+  "group": "nc-g105",
+  "input": "police clearance",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched good conduct, clearance; no node fits"
+ },
+ {
+  "group": "nc-g106",
+  "input": "DeFi",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched defi; no node fits"
+ },
+ {
+  "group": "nc-g106",
+  "input": "decentralised finance",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched defi; no node fits"
+ },
+ {
+  "group": "nc-g107",
+  "input": "football",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched football, sports; no node fits"
+ },
+ {
+  "group": "nc-g107",
+  "input": "play football for the school team",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched football, sports; no node fits"
+ },
+ {
+  "group": "nc-g108",
+  "input": "OpenStack",
+  "category": "no_concept",
+  "domain": "cloud_infrastructure",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched openstack; no node fits"
+ },
+ {
+  "group": "nc-g109",
+  "input": "Kaggle notebooks",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched kaggle; no node fits"
+ },
+ {
+  "group": "nc-g110",
+  "input": "music sampling and beat making",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched sampling; no node fits"
+ },
+ {
+  "group": "nc-g111",
+  "input": "good wifi at home",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched wifi, internet access (not network skill); no node fits"
+ },
+ {
+  "group": "nc-g111",
+  "input": "stable internet at hostel",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched wifi, internet access (not network skill); no node fits"
+ },
+ {
+  "group": "nc-g112",
+  "input": "diplomatic protocol and etiquette",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched protocol; no node fits"
+ },
+ {
+  "group": "nc-g113",
+  "input": "self storage unit management",
+  "category": "no_concept",
+  "domain": "cloud_infrastructure",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched storage; no node fits"
+ },
+ {
+  "group": "nc-g114",
+  "input": "Huawei eNSP simulator",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched huawei ensp; no node fits"
+ },
+ {
+  "group": "nc-g115",
+  "input": "singing in church choir",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched singing, choir; no node fits"
+ },
+ {
+  "group": "nc-g115",
+  "input": "choir member",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched singing, choir; no node fits"
+ },
+ {
+  "group": "nc-g116",
+  "input": "MLOps",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched mlops; no node fits"
+ },
+ {
+  "group": "nc-g117",
+  "input": "link to my GitHub",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched portfolio link; GitHub node exists but meaning is a link not a skill; no node fits"
+ },
+ {
+  "group": "nc-g117",
+  "input": "GitHub profile available",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched portfolio link; GitHub node exists but meaning is a link not a skill; no node fits"
+ },
+ {
+  "group": "nc-g118",
+  "input": "Rubik's cube solver",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched cube; no node fits"
+ }
+]
