@@ -126,12 +126,15 @@ def engine():
     return get_engine()
 
 
-@pytest.fixture(scope='module')
-def results(engine):
+@pytest.fixture(scope='module', params=['fixture', 'calibrated'])
+def results(engine, request):
+    """E1-E5, E10, E11 under the fixture thresholds and again under the calibrated ones (AC12)."""
+    params = F if request.param == 'fixture' else ev.DEFAULT_PARAMS
     out = {}
     for name, skills in CASES.items():
         matches, ranked = engine.rank(skills, top_k=None)
-        out[name] = ev.assess(engine, matches, ranked, F)
+        out[name] = ev.assess(engine, matches, ranked, params)
+        out[name]['params'] = params
     return out
 
 
@@ -147,7 +150,8 @@ def test_E2_rare_core_skills_from_different_careers_are_insufficient(results):
 
 def test_E3_one_rare_core_skill_alone_is_insufficient(results):
     e = results['E3']['evidence']
-    assert e['supported_weight'] <= F.cap < F.W_min and results['E3']['insufficient'] is True
+    p = results['E3']['params']
+    assert e['supported_weight'] <= p.cap < p.W_min and results['E3']['insufficient'] is True
 
 
 def test_E4_generic_skills_add_nothing(results):
@@ -157,7 +161,7 @@ def test_E4_generic_skills_add_nothing(results):
 
 def test_E5_two_or_more_concepts_of_one_career_are_sufficient(results):
     e = results['E5']['evidence']
-    assert e['supported_concepts'] >= 2 and e['supported_weight'] >= F.W_min
+    assert e['supported_concepts'] >= 2 and e['supported_weight'] >= results['E5']['params'].W_min
     assert e['best_supported_career'] == '15-1244.00' and results['E5']['insufficient'] is False
 
 
@@ -191,3 +195,13 @@ def test_evidence_is_the_same_for_every_top_k():
         _, ranked, assessed = services.rank_with_evidence(skills, top_k=k)
         assert assessed == first
         assert len(ranked) == (min(k, total) if k else total)
+
+
+def test_gold_wrong_selections_follow_the_input_labels():
+    from recommender.student_report import gold_wrong
+    labels = {'tcp/ip': {'label': 'no_concept', 'acceptable': []},
+              'routing': {'label': 'unambiguous', 'acceptable': ['esco:route']},
+              'python': {'label': 'unambiguous', 'acceptable': ['tool:Python']}}
+    matches = [reading('tool:ipconfig'), reading('tool:Route'), reading('tool:Python'), reading('tool:Unlabelled')]
+    matches = [replace(m, query=q) for m, q in zip(matches, ['TCP/IP', 'routing', 'Python', 'something'])]
+    assert gold_wrong(matches, labels) == {'tool:ipconfig', 'tool:Route'}

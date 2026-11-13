@@ -1,0 +1,2598 @@
+[
+ {
+  "key": "pi-001",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Python",
+    "SQL",
+    "Excel"
+   ],
+   [
+    "python programming",
+    "sql queries",
+    "MS Excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "web dev aim; generic trio"
+ },
+ {
+  "key": "pi-002",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Java",
+    "MS Office",
+    "computers"
+   ],
+   [
+    "java coding",
+    "Microsoft Office",
+    "computer literacy"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "frontend aim; generic"
+ },
+ {
+  "key": "pi-003",
+  "family": "frontend",
+  "wordings": [
+   [
+    "coding",
+    "Excel",
+    "Word"
+   ],
+   [
+    "programming",
+    "excel spreadsheets",
+    "ms word"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic coding and office"
+ },
+ {
+  "key": "pi-004",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Python",
+    "Java",
+    "SQL"
+   ],
+   [
+    "python",
+    "java language",
+    "sql basics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic languages only"
+ },
+ {
+  "key": "pi-005",
+  "family": "backend",
+  "wordings": [
+   [
+    "Java",
+    "SQL"
+   ],
+   [
+    "java programming",
+    "sql databases"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "backend aim; only generic pair"
+ },
+ {
+  "key": "pi-006",
+  "family": "backend",
+  "wordings": [
+   [
+    "Python",
+    "Excel",
+    "MS Office"
+   ],
+   [
+    "python scripts",
+    "ms excel",
+    "microsoft office suite"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-007",
+  "family": "backend",
+  "wordings": [
+   [
+    "coding",
+    "computers",
+    "internet"
+   ],
+   [
+    "programming",
+    "computer knowledge",
+    "using the internet"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-008",
+  "family": "backend",
+  "wordings": [
+   [
+    "Java",
+    "Python",
+    "C++",
+    "SQL"
+   ],
+   [
+    "java",
+    "python3",
+    "c plus plus",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "common languages, nothing specific"
+ },
+ {
+  "key": "pi-009",
+  "family": "data",
+  "wordings": [
+   [
+    "Excel",
+    "SQL",
+    "Python"
+   ],
+   [
+    "MS Excel",
+    "SQL queries",
+    "python programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "data aim; generic trio"
+ },
+ {
+  "key": "pi-010",
+  "family": "data",
+  "wordings": [
+   [
+    "Excel",
+    "MS Office",
+    "computers"
+   ],
+   [
+    "microsoft excel",
+    "ms word and powerpoint",
+    "computer skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic office"
+ },
+ {
+  "key": "pi-011",
+  "family": "data",
+  "wordings": [
+   [
+    "SQL",
+    "Excel"
+   ],
+   [
+    "sql",
+    "spreadsheets (excel)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic pair"
+ },
+ {
+  "key": "pi-012",
+  "family": "data",
+  "wordings": [
+   [
+    "Python",
+    "Excel",
+    "coding"
+   ],
+   [
+    "python",
+    "excel",
+    "writing code"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-013",
+  "family": "networking",
+  "wordings": [
+   [
+    "computers",
+    "internet",
+    "MS Office"
+   ],
+   [
+    "computer skills",
+    "using internet",
+    "microsoft office"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "networking aim; generic"
+ },
+ {
+  "key": "pi-014",
+  "family": "networking",
+  "wordings": [
+   [
+    "Windows",
+    "MS Office",
+    "computers"
+   ],
+   [
+    "windows os",
+    "ms office package",
+    "computer literacy"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-015",
+  "family": "networking",
+  "wordings": [
+   [
+    "Python",
+    "Excel"
+   ],
+   [
+    "python coding",
+    "MS excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic pair"
+ },
+ {
+  "key": "pi-016",
+  "family": "networking",
+  "wordings": [
+   [
+    "computers",
+    "coding",
+    "Windows"
+   ],
+   [
+    "pc knowledge",
+    "programming",
+    "windows"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-017",
+  "family": "security",
+  "wordings": [
+   [
+    "Python",
+    "computers",
+    "internet"
+   ],
+   [
+    "python scripting",
+    "computer literacy",
+    "internet browsing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "security aim; generic"
+ },
+ {
+  "key": "pi-018",
+  "family": "security",
+  "wordings": [
+   [
+    "Java",
+    "SQL",
+    "Windows"
+   ],
+   [
+    "java",
+    "sql",
+    "windows operating system"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-019",
+  "family": "security",
+  "wordings": [
+   [
+    "coding",
+    "MS Office"
+   ],
+   [
+    "programming",
+    "microsoft office"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-020",
+  "family": "security",
+  "wordings": [
+   [
+    "Python",
+    "Java",
+    "Excel"
+   ],
+   [
+    "python",
+    "java",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-021",
+  "family": "user_support",
+  "wordings": [
+   [
+    "MS Office",
+    "Windows",
+    "computers"
+   ],
+   [
+    "ms word excel powerpoint",
+    "windows 10",
+    "computer skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "support aim; generic"
+ },
+ {
+  "key": "pi-022",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Excel",
+    "Word",
+    "PowerPoint"
+   ],
+   [
+    "ms excel",
+    "ms word",
+    "ms powerpoint"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "office suite only"
+ },
+ {
+  "key": "pi-023",
+  "family": "user_support",
+  "wordings": [
+   [
+    "computers",
+    "internet",
+    "typing"
+   ],
+   [
+    "computer literacy",
+    "internet",
+    "fast typing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-024",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Windows",
+    "MS Office",
+    "Excel"
+   ],
+   [
+    "windows",
+    "office 365",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-025",
+  "family": "database",
+  "wordings": [
+   [
+    "SQL",
+    "Excel"
+   ],
+   [
+    "sql",
+    "ms excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "database aim; only generic"
+ },
+ {
+  "key": "pi-026",
+  "family": "database",
+  "wordings": [
+   [
+    "SQL",
+    "Python",
+    "Excel"
+   ],
+   [
+    "sql queries",
+    "python",
+    "excel sheets"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-027",
+  "family": "database",
+  "wordings": [
+   [
+    "SQL",
+    "Java"
+   ],
+   [
+    "sql knowledge",
+    "java coding"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-028",
+  "family": "database",
+  "wordings": [
+   [
+    "Excel",
+    "MS Access",
+    "SQL"
+   ],
+   [
+    "excel",
+    "access",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic office-level data"
+ },
+ {
+  "key": "pi-029",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Java",
+    "Python",
+    "SQL"
+   ],
+   [
+    "java",
+    "python",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "architecture aim; only generic langs"
+ },
+ {
+  "key": "pi-030",
+  "family": "architecture",
+  "wordings": [
+   [
+    "coding",
+    "computers",
+    "Excel"
+   ],
+   [
+    "programming",
+    "computers",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-031",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Python",
+    "Java",
+    "C++"
+   ],
+   [
+    "python",
+    "java",
+    "c++"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic langs"
+ },
+ {
+  "key": "pi-032",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Java",
+    "MS Office"
+   ],
+   [
+    "java programming",
+    "office"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-033",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Excel",
+    "MS Office",
+    "computers"
+   ],
+   [
+    "excel",
+    "microsoft office",
+    "computer skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "qa aim; generic"
+ },
+ {
+  "key": "pi-034",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Python",
+    "Excel"
+   ],
+   [
+    "python",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-035",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Java",
+    "SQL",
+    "Excel"
+   ],
+   [
+    "java",
+    "sql",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-036",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "MS Word",
+    "Excel",
+    "PowerPoint",
+    "computers"
+   ],
+   [
+    "word",
+    "excel",
+    "powerpoint",
+    "computer knowledge"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic office"
+ },
+ {
+  "key": "pi-037",
+  "family": "beginner",
+  "wordings": [
+   [
+    "computers",
+    "MS Office"
+   ],
+   [
+    "computer skills",
+    "microsoft office"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "first year, generic"
+ },
+ {
+  "key": "pi-038",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Python",
+    "Excel",
+    "SQL"
+   ],
+   [
+    "python",
+    "ms excel",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "beginner with the usual three"
+ },
+ {
+  "key": "pi-039",
+  "family": "beginner",
+  "wordings": [
+   [
+    "coding",
+    "computers"
+   ],
+   [
+    "programming",
+    "computer skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "very generic"
+ },
+ {
+  "key": "pi-040",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Java",
+    "C++"
+   ],
+   [
+    "java",
+    "c++"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "school-level languages"
+ },
+ {
+  "key": "pi-041",
+  "family": "beginner",
+  "wordings": [
+   [
+    "MS Word",
+    "Excel",
+    "internet"
+   ],
+   [
+    "microsoft word",
+    "excel",
+    "browsing the internet"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-042",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Python",
+    "Java"
+   ],
+   [
+    "learning python",
+    "learning java"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-043",
+  "family": "beginner",
+  "wordings": [
+   [
+    "computers",
+    "typing",
+    "MS Office",
+    "internet"
+   ],
+   [
+    "computer literacy",
+    "typing speed",
+    "office",
+    "internet"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-044",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Scratch",
+    "MS Office",
+    "computers"
+   ],
+   [
+    "scratch",
+    "microsoft office",
+    "computer studies"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "school-level, generic"
+ },
+ {
+  "key": "pi-045",
+  "family": "beginner",
+  "wordings": [
+   [
+    "C",
+    "Java",
+    "Excel"
+   ],
+   [
+    "c language",
+    "java",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-046",
+  "family": "beginner",
+  "wordings": [
+   [
+    "HTML",
+    "computers"
+   ],
+   [
+    "html",
+    "computer knowledge"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "one light web item + generic; leaning generic"
+ },
+ {
+  "key": "pi-047",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Python",
+    "SQL"
+   ],
+   [
+    "python",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic pair"
+ },
+ {
+  "key": "pi-048",
+  "family": "beginner",
+  "wordings": [
+   [
+    "coding",
+    "Excel",
+    "Windows"
+   ],
+   [
+    "coding",
+    "excel",
+    "windows"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-049",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Java",
+    "SQL",
+    "Python",
+    "Excel"
+   ],
+   [
+    "java",
+    "sql",
+    "python",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic quad"
+ },
+ {
+  "key": "pi-050",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "MS Office",
+    "computers",
+    "internet",
+    "Windows"
+   ],
+   [
+    "ms office",
+    "computer skills",
+    "internet",
+    "windows 11"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-051",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "coding",
+    "Python"
+   ],
+   [
+    "coding",
+    "python"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-052",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Excel",
+    "SQL",
+    "Java"
+   ],
+   [
+    "excel",
+    "sql",
+    "java"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "mixed aim, generic"
+ },
+ {
+  "key": "pi-053",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "computers",
+    "Python",
+    "Excel"
+   ],
+   [
+    "computers",
+    "python",
+    "excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-054",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "programming",
+    "computers",
+    "MS Word"
+   ],
+   [
+    "coding",
+    "pc skills",
+    "word"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-055",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Java",
+    "Excel",
+    "SQL"
+   ],
+   [
+    "java",
+    "excel",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-056",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Python",
+    "C++",
+    "MS Office"
+   ],
+   [
+    "python",
+    "c++",
+    "office"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-057",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "coding",
+    "SQL"
+   ],
+   [
+    "programming",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-058",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "computers",
+    "Excel"
+   ],
+   [
+    "computer skills",
+    "spreadsheets"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-059",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Python",
+    "Java",
+    "C",
+    "SQL"
+   ],
+   [
+    "python",
+    "java",
+    "c",
+    "sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic languages"
+ },
+ {
+  "key": "pi-060",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "MS Office",
+    "Python"
+   ],
+   [
+    "office",
+    "python"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I1"
+  ],
+  "author_note": "generic"
+ },
+ {
+  "key": "pi-061",
+  "family": "frontend",
+  "wordings": [
+   [
+    "communication",
+    "teamwork",
+    "problem solving"
+   ],
+   [
+    "good communicator",
+    "team player",
+    "solves problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "frontend aim; soft only"
+ },
+ {
+  "key": "pi-062",
+  "family": "frontend",
+  "wordings": [
+   [
+    "creativity",
+    "attention to detail",
+    "teamwork"
+   ],
+   [
+    "creative",
+    "detail oriented",
+    "works well in teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft only"
+ },
+ {
+  "key": "pi-063",
+  "family": "frontend",
+  "wordings": [
+   [
+    "leadership",
+    "communication"
+   ],
+   [
+    "leader",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft only"
+ },
+ {
+  "key": "pi-064",
+  "family": "frontend",
+  "wordings": [
+   [
+    "hardworking",
+    "fast learner",
+    "teamwork"
+   ],
+   [
+    "hard working",
+    "quick learner",
+    "team work"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft only"
+ },
+ {
+  "key": "pi-065",
+  "family": "backend",
+  "wordings": [
+   [
+    "problem solving",
+    "critical thinking",
+    "teamwork"
+   ],
+   [
+    "solving problems",
+    "thinking critically",
+    "collaboration"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "backend aim; soft"
+ },
+ {
+  "key": "pi-066",
+  "family": "backend",
+  "wordings": [
+   [
+    "time management",
+    "communication",
+    "adaptability"
+   ],
+   [
+    "manages time well",
+    "communicates well",
+    "adapts easily"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-067",
+  "family": "backend",
+  "wordings": [
+   [
+    "logical thinking",
+    "problem solving"
+   ],
+   [
+    "logical",
+    "problem-solving skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-068",
+  "family": "backend",
+  "wordings": [
+   [
+    "teamwork",
+    "leadership",
+    "time management"
+   ],
+   [
+    "team player",
+    "leading groups",
+    "time management"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-069",
+  "family": "data",
+  "wordings": [
+   [
+    "analytical thinking",
+    "communication",
+    "attention to detail"
+   ],
+   [
+    "analytical",
+    "good communication",
+    "detail oriented"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "data aim; soft only"
+ },
+ {
+  "key": "pi-070",
+  "family": "data",
+  "wordings": [
+   [
+    "critical thinking",
+    "problem solving",
+    "curiosity"
+   ],
+   [
+    "thinks critically",
+    "problem solver",
+    "curious"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-071",
+  "family": "data",
+  "wordings": [
+   [
+    "teamwork",
+    "communication"
+   ],
+   [
+    "works in teams",
+    "communicates"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-072",
+  "family": "data",
+  "wordings": [
+   [
+    "attention to detail",
+    "time management",
+    "hardworking"
+   ],
+   [
+    "pays attention to detail",
+    "manages time",
+    "hard worker"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-073",
+  "family": "networking",
+  "wordings": [
+   [
+    "communication",
+    "patience",
+    "teamwork"
+   ],
+   [
+    "good communication",
+    "patient",
+    "team work"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "networking aim; soft"
+ },
+ {
+  "key": "pi-074",
+  "family": "networking",
+  "wordings": [
+   [
+    "problem solving",
+    "adaptability",
+    "fast learner"
+   ],
+   [
+    "problem solving",
+    "adaptable",
+    "learns fast"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-075",
+  "family": "networking",
+  "wordings": [
+   [
+    "leadership",
+    "teamwork",
+    "communication"
+   ],
+   [
+    "leadership",
+    "teamwork",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-076",
+  "family": "networking",
+  "wordings": [
+   [
+    "critical thinking",
+    "hardworking"
+   ],
+   [
+    "critical thinker",
+    "hard working"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-077",
+  "family": "security",
+  "wordings": [
+   [
+    "integrity",
+    "attention to detail",
+    "discipline"
+   ],
+   [
+    "honest",
+    "detail oriented",
+    "disciplined"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "security aim; soft"
+ },
+ {
+  "key": "pi-078",
+  "family": "security",
+  "wordings": [
+   [
+    "problem solving",
+    "analytical thinking",
+    "curiosity"
+   ],
+   [
+    "problem solver",
+    "analytical mind",
+    "curious"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-079",
+  "family": "security",
+  "wordings": [
+   [
+    "teamwork",
+    "confidentiality",
+    "communication"
+   ],
+   [
+    "team work",
+    "keeps confidential",
+    "communicates well"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-080",
+  "family": "security",
+  "wordings": [
+   [
+    "critical thinking",
+    "time management"
+   ],
+   [
+    "thinks critically",
+    "good time management"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-081",
+  "family": "user_support",
+  "wordings": [
+   [
+    "communication",
+    "patience",
+    "customer care"
+   ],
+   [
+    "good communication",
+    "patient",
+    "customer service"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "user support; customer-care soft only"
+ },
+ {
+  "key": "pi-082",
+  "family": "user_support",
+  "wordings": [
+   [
+    "listening",
+    "empathy",
+    "teamwork"
+   ],
+   [
+    "good listener",
+    "empathetic",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-083",
+  "family": "user_support",
+  "wordings": [
+   [
+    "communication",
+    "problem solving",
+    "politeness"
+   ],
+   [
+    "communication skills",
+    "solving problems",
+    "polite"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-084",
+  "family": "user_support",
+  "wordings": [
+   [
+    "customer service",
+    "patience",
+    "teamwork"
+   ],
+   [
+    "dealing with customers",
+    "patience",
+    "works in a team"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-085",
+  "family": "database",
+  "wordings": [
+   [
+    "attention to detail",
+    "analytical thinking"
+   ],
+   [
+    "detail oriented",
+    "analytical"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "database aim; soft"
+ },
+ {
+  "key": "pi-086",
+  "family": "database",
+  "wordings": [
+   [
+    "organization",
+    "time management",
+    "problem solving"
+   ],
+   [
+    "organized",
+    "manages time",
+    "problem solver"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-087",
+  "family": "database",
+  "wordings": [
+   [
+    "hardworking",
+    "accuracy",
+    "teamwork"
+   ],
+   [
+    "hard working",
+    "accurate",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-088",
+  "family": "database",
+  "wordings": [
+   [
+    "logical thinking",
+    "patience"
+   ],
+   [
+    "logical mind",
+    "patient"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-089",
+  "family": "architecture",
+  "wordings": [
+   [
+    "big picture thinking",
+    "leadership",
+    "communication"
+   ],
+   [
+    "sees the big picture",
+    "leader",
+    "communicates well"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "architecture aim; soft"
+ },
+ {
+  "key": "pi-090",
+  "family": "architecture",
+  "wordings": [
+   [
+    "critical thinking",
+    "decision making",
+    "teamwork"
+   ],
+   [
+    "thinks critically",
+    "makes decisions",
+    "collaborates"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-091",
+  "family": "architecture",
+  "wordings": [
+   [
+    "problem solving",
+    "creativity",
+    "leadership"
+   ],
+   [
+    "solving problems",
+    "creative",
+    "leader"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-092",
+  "family": "architecture",
+  "wordings": [
+   [
+    "analytical thinking",
+    "communication"
+   ],
+   [
+    "analytical",
+    "good communicator"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-093",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "organization",
+    "leadership",
+    "time management"
+   ],
+   [
+    "organised",
+    "leadership",
+    "time management"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "project_qa aim; soft"
+ },
+ {
+  "key": "pi-094",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "attention to detail",
+    "patience",
+    "communication"
+   ],
+   [
+    "detail oriented",
+    "patient",
+    "communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "qa aim; soft"
+ },
+ {
+  "key": "pi-095",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "teamwork",
+    "negotiation",
+    "leadership"
+   ],
+   [
+    "team work",
+    "negotiating",
+    "leading teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-096",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "planning",
+    "communication",
+    "delegation"
+   ],
+   [
+    "planning",
+    "communicates",
+    "delegating"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-097",
+  "family": "beginner",
+  "wordings": [
+   [
+    "hardworking",
+    "teamwork"
+   ],
+   [
+    "hard working",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "beginner; soft"
+ },
+ {
+  "key": "pi-098",
+  "family": "beginner",
+  "wordings": [
+   [
+    "fast learner",
+    "passionate",
+    "hardworking"
+   ],
+   [
+    "quick learner",
+    "passion for tech",
+    "hard working"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-099",
+  "family": "beginner",
+  "wordings": [
+   [
+    "communication",
+    "teamwork",
+    "leadership",
+    "problem solving"
+   ],
+   [
+    "communicates well",
+    "team player",
+    "leader",
+    "problem solver"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft quad"
+ },
+ {
+  "key": "pi-100",
+  "family": "beginner",
+  "wordings": [
+   [
+    "willing to learn",
+    "hardworking",
+    "discipline"
+   ],
+   [
+    "eager to learn",
+    "hard worker",
+    "disciplined"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-101",
+  "family": "beginner",
+  "wordings": [
+   [
+    "teamwork",
+    "time management"
+   ],
+   [
+    "working in teams",
+    "time management"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-102",
+  "family": "beginner",
+  "wordings": [
+   [
+    "curiosity",
+    "creativity",
+    "fast learner"
+   ],
+   [
+    "curious",
+    "creative",
+    "learns quickly"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-103",
+  "family": "beginner",
+  "wordings": [
+   [
+    "communication",
+    "public speaking",
+    "confidence"
+   ],
+   [
+    "communication",
+    "public speaking",
+    "confident"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-104",
+  "family": "beginner",
+  "wordings": [
+   [
+    "problem solving",
+    "critical thinking"
+   ],
+   [
+    "solves problems",
+    "critical thinker"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-105",
+  "family": "beginner",
+  "wordings": [
+   [
+    "leadership",
+    "teamwork",
+    "hardworking"
+   ],
+   [
+    "team leader",
+    "team player",
+    "hardworking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft; club leadership"
+ },
+ {
+  "key": "pi-106",
+  "family": "beginner",
+  "wordings": [
+   [
+    "adaptability",
+    "resilience",
+    "communication"
+   ],
+   [
+    "adaptable",
+    "resilient",
+    "good communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-107",
+  "family": "beginner",
+  "wordings": [
+   [
+    "teamwork",
+    "honesty",
+    "punctuality"
+   ],
+   [
+    "team work",
+    "honest",
+    "punctual"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-108",
+  "family": "beginner",
+  "wordings": [
+   [
+    "analytical skills",
+    "problem solving",
+    "teamwork"
+   ],
+   [
+    "analytical",
+    "problem solving",
+    "collaboration"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-109",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "creativity",
+    "innovation",
+    "teamwork"
+   ],
+   [
+    "creative thinking",
+    "innovative",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-110",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "communication skills",
+    "interpersonal skills"
+   ],
+   [
+    "communicates well",
+    "good with people"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-111",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "organization",
+    "attention to detail",
+    "communication"
+   ],
+   [
+    "organised",
+    "detail oriented",
+    "communicates"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-112",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "critical thinking",
+    "leadership",
+    "adaptability"
+   ],
+   [
+    "critical thinker",
+    "leader",
+    "adaptable"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-113",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "problem solving",
+    "passion",
+    "dedication"
+   ],
+   [
+    "problem solver",
+    "passionate",
+    "dedicated"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-114",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "teamwork",
+    "communication",
+    "time management",
+    "adaptability"
+   ],
+   [
+    "team player",
+    "communicator",
+    "manages time",
+    "adapts"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft quad"
+ },
+ {
+  "key": "pi-115",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "fast learner",
+    "self motivated",
+    "hardworking"
+   ],
+   [
+    "quick learner",
+    "self-motivated",
+    "hard worker"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-116",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "leadership",
+    "presentation skills",
+    "teamwork"
+   ],
+   [
+    "leader",
+    "presenting",
+    "team work"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-117",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "creativity",
+    "problem solving"
+   ],
+   [
+    "creative",
+    "problem solver"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-118",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "interpersonal skills",
+    "empathy",
+    "patience"
+   ],
+   [
+    "people skills",
+    "empathetic",
+    "patient"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-119",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "analytical thinking",
+    "decision making",
+    "communication"
+   ],
+   [
+    "analytical",
+    "decision maker",
+    "communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft"
+ },
+ {
+  "key": "pi-120",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "teamwork",
+    "leadership",
+    "critical thinking",
+    "creativity"
+   ],
+   [
+    "team work",
+    "leading",
+    "critical thinking",
+    "creative"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "insufficient",
+  "intended_reasons": [
+   "I2"
+  ],
+  "author_note": "soft quad"
+ }
+]

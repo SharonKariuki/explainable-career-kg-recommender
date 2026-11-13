@@ -1,0 +1,590 @@
+[
+ {
+  "group": "nc-g119",
+  "input": "hairdressing",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched hair; no node fits"
+ },
+ {
+  "group": "nc-g119",
+  "input": "braiding hair",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched hair; no node fits"
+ },
+ {
+  "group": "nc-g120",
+  "input": "cohort analysis",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched cohort; no node fits"
+ },
+ {
+  "group": "nc-g120",
+  "input": "funnel analysis",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched cohort; no node fits"
+ },
+ {
+  "group": "nc-g121",
+  "input": "attending networking events with alumni",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched networking social; no node fits"
+ },
+ {
+  "group": "nc-g122",
+  "input": "gardening",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched gardening; no node fits"
+ },
+ {
+  "group": "nc-g123",
+  "input": "Zendesk",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched zendesk; no node fits"
+ },
+ {
+  "group": "nc-g123",
+  "input": "Freshdesk ticketing",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched zendesk; no node fits"
+ },
+ {
+  "group": "nc-g124",
+  "input": "mobile money agent",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched mobile money; no node fits"
+ },
+ {
+  "group": "nc-g124",
+  "input": "M-Pesa agent shop",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched mobile money; no node fits"
+ },
+ {
+  "group": "nc-g125",
+  "input": "ONNX model export",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched onnx; no node fits"
+ },
+ {
+  "group": "nc-g126",
+  "input": "Group Policy",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched group policy; no node fits"
+ },
+ {
+  "group": "nc-g126",
+  "input": "GPO management",
+  "category": "no_concept",
+  "domain": "it_support",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched group policy; no node fits"
+ },
+ {
+  "group": "nc-g127",
+  "input": "running marathons",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched athletics; no node fits"
+ },
+ {
+  "group": "nc-g127",
+  "input": "athletics 800m",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched athletics; no node fits"
+ },
+ {
+  "group": "nc-g128",
+  "input": "ping pong champion",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched ping; no node fits"
+ },
+ {
+  "group": "nc-g128",
+  "input": "table tennis",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched ping; no node fits"
+ },
+ {
+  "group": "nc-g129",
+  "input": "WebSockets",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched websockets; no node fits"
+ },
+ {
+  "group": "nc-g129",
+  "input": "realtime sockets",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched websockets; no node fits"
+ },
+ {
+  "group": "nc-g130",
+  "input": "fishing at Lake Victoria",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched phishing; no node fits"
+ },
+ {
+  "group": "nc-g130",
+  "input": "phishing for tilapia",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched phishing; no node fits"
+ },
+ {
+  "group": "nc-g131",
+  "input": "GDSC lead",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched club role; no node fits"
+ },
+ {
+  "group": "nc-g131",
+  "input": "Google Developer Student Club member",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched club role; no node fits"
+ },
+ {
+  "group": "nc-g132",
+  "input": "spider web biology research",
+  "category": "no_concept",
+  "domain": "web_frontend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched web; no node fits"
+ },
+ {
+  "group": "nc-g133",
+  "input": "Apache helicopter pilot",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched Apache; no node fits"
+ },
+ {
+  "group": "nc-g134",
+  "input": "tailoring",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched tailoring; no node fits"
+ },
+ {
+  "group": "nc-g134",
+  "input": "sewing clothes",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched tailoring; no node fits"
+ },
+ {
+  "group": "nc-g135",
+  "input": "reading novels",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched novels; Reading Comprehension node is a different meaning; no node fits"
+ },
+ {
+  "group": "nc-g135",
+  "input": "love reading story books",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched novels; Reading Comprehension node is a different meaning; no node fits"
+ },
+ {
+  "group": "nc-g136",
+  "input": "Asana task boards",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched asana; no node fits"
+ },
+ {
+  "group": "nc-g137",
+  "input": "Muslim",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched religion; no node fits"
+ },
+ {
+  "group": "nc-g137",
+  "input": "pray five times daily",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched religion; no node fits"
+ },
+ {
+  "group": "nc-g138",
+  "input": "FortiGate firewall",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched fortigate (firewall nodes generic); no node fits"
+ },
+ {
+  "group": "nc-g139",
+  "input": "packing flour into packets",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched packet; no node fits"
+ },
+ {
+  "group": "nc-g140",
+  "input": "Pulumi",
+  "category": "no_concept",
+  "domain": "cloud_infrastructure",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched pulumi; no node fits"
+ },
+ {
+  "group": "nc-g141",
+  "input": "Java coffee brewing",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched Java; coffee; no node fits"
+ },
+ {
+  "group": "nc-g141",
+  "input": "brewing Kenyan Java coffee",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched Java; coffee; no node fits"
+ },
+ {
+  "group": "nc-g142",
+  "input": "stand-up comedian",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched stand-up; no node fits"
+ },
+ {
+  "group": "nc-g142",
+  "input": "stand up comedy",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched stand-up; no node fits"
+ },
+ {
+  "group": "nc-g143",
+  "input": "DHIS2",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched dhis2; no node fits"
+ },
+ {
+  "group": "nc-g144",
+  "input": "poetry",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched poetry; no node fits"
+ },
+ {
+  "group": "nc-g144",
+  "input": "composing songs",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched poetry; no node fits"
+ },
+ {
+  "group": "nc-g145",
+  "input": "Seaborn",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched seaborn; no node fits"
+ },
+ {
+  "group": "nc-g146",
+  "input": "basketball",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched basketball; no node fits"
+ },
+ {
+  "group": "nc-g147",
+  "input": "Mr Robot fan",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched hacker movies; not a security skill; no node fits"
+ },
+ {
+  "group": "nc-g148",
+  "input": "runway fashion model",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched model; no node fits"
+ },
+ {
+  "group": "nc-g148",
+  "input": "fashion modelling",
+  "category": "no_concept",
+  "domain": "ai_ml",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched model; no node fits"
+ },
+ {
+  "group": "nc-g149",
+  "input": "spring cleaning services",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched Spring; no node fits"
+ },
+ {
+  "group": "nc-g150",
+  "input": "fibre splicing",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched fibre; no node fits"
+ },
+ {
+  "group": "nc-g150",
+  "input": "fiber optic cable splicing",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched fibre; no node fits"
+ },
+ {
+  "group": "nc-g151",
+  "input": "100m sprinter",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched sprint; no node fits"
+ },
+ {
+  "group": "nc-g151",
+  "input": "sprint races",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched sprint; no node fits"
+ },
+ {
+  "group": "nc-g152",
+  "input": "dental scaling",
+  "category": "no_concept",
+  "domain": "cloud_infrastructure",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched scaling; no node fits"
+ },
+ {
+  "group": "nc-g152",
+  "input": "scaling fish",
+  "category": "no_concept",
+  "domain": "cloud_infrastructure",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched scaling; no node fits"
+ },
+ {
+  "group": "nc-g153",
+  "input": "installing electrical sockets",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched socket; no node fits"
+ },
+ {
+  "group": "nc-g153",
+  "input": "house electrical wiring",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched socket; no node fits"
+ },
+ {
+  "group": "nc-g154",
+  "input": "swimming",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched swimming; no node fits"
+ },
+ {
+  "group": "nc-g155",
+  "input": "STRIDE threat model",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched stride; no node fits"
+ },
+ {
+  "group": "nc-g156",
+  "input": "beekeeping and honey harvesting",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched honeypot/honey; no node fits"
+ },
+ {
+  "group": "nc-g157",
+  "input": "backup dancer",
+  "category": "no_concept",
+  "domain": "cloud_infrastructure",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched backup; no node fits"
+ },
+ {
+  "group": "nc-g158",
+  "input": "spoof comedy sketches",
+  "category": "no_concept",
+  "domain": "security",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched spoofing; no node fits"
+ },
+ {
+  "group": "nc-g159",
+  "input": "wildebeest migration tour guiding",
+  "category": "no_concept",
+  "domain": "cloud_infrastructure",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched migration; no node fits"
+ },
+ {
+  "group": "nc-g160",
+  "input": "sports betting",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched betting; no node fits"
+ },
+ {
+  "group": "nc-g161",
+  "input": "knowledge graphs",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched knowledge graph; no node fits"
+ },
+ {
+  "group": "nc-g162",
+  "input": "woodworking router and sander",
+  "category": "no_concept",
+  "domain": "networking",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched router; no node fits"
+ },
+ {
+  "group": "nc-g163",
+  "input": "Astro framework",
+  "category": "no_concept",
+  "domain": "web_frontend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched astro; no node fits"
+ },
+ {
+  "group": "nc-g164",
+  "input": "reading nautical charts",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched charts; no node fits"
+ },
+ {
+  "group": "nc-g165",
+  "input": "Dean's list",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched award; no node fits"
+ },
+ {
+  "group": "nc-g165",
+  "input": "first class honours",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched award; no node fits"
+ },
+ {
+  "group": "nc-g166",
+  "input": "railway track maintenance",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched rails; no node fits"
+ },
+ {
+  "group": "nc-g167",
+  "input": "Kenyan citizen, holds national ID",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched personal fact; no node fits"
+ },
+ {
+  "group": "nc-g168",
+  "input": "making concrete blocks",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched block/chain; no node fits"
+ },
+ {
+  "group": "nc-g168",
+  "input": "chain link fence installation",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched block/chain; no node fits"
+ },
+ {
+  "group": "nc-g169",
+  "input": "bootstrapping a startup with own money",
+  "category": "no_concept",
+  "domain": "project_qa",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched Bootstrap; no node fits"
+ },
+ {
+  "group": "nc-g170",
+  "input": "football match analyst",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched analyst; no node fits"
+ },
+ {
+  "group": "nc-g170",
+  "input": "sports analyst commentary",
+  "category": "no_concept",
+  "domain": "data_analytics",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched analyst; no node fits"
+ },
+ {
+  "group": "nc-g171",
+  "input": "loop braids hairstyle",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched loop; no node fits"
+ },
+ {
+  "group": "nc-g172",
+  "input": "cold wallet storage",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched wallet; no node fits"
+ },
+ {
+  "group": "nc-g172",
+  "input": "crypto wallets",
+  "category": "no_concept",
+  "domain": "blockchain",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched wallet; no node fits"
+ },
+ {
+  "group": "nc-g173",
+  "input": "TikTok",
+  "category": "no_concept",
+  "domain": "general",
+  "author_note": "kind 1 (non-skill/trait/hobby); searched TikTok; no node fits"
+ },
+ {
+  "group": "nc-g174",
+  "input": "class teacher at primary school",
+  "category": "no_concept",
+  "domain": "software_backend",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched class; no node fits"
+ },
+ {
+  "group": "nc-g175",
+  "input": "table making carpentry",
+  "category": "no_concept",
+  "domain": "database",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched table; no node fits"
+ },
+ {
+  "group": "nc-g175",
+  "input": "tables and chairs hire",
+  "category": "no_concept",
+  "domain": "database",
+  "author_note": "kind 3 (near-miss: wording overlaps a catalogue name, meaning differs); searched table; no node fits"
+ },
+ {
+  "group": "nc-g176",
+  "input": "Gatsby",
+  "category": "no_concept",
+  "domain": "web_frontend",
+  "author_note": "kind 2 (technical concept absent from catalogue); searched gatsby; no node fits"
+ }
+]

@@ -30,8 +30,9 @@ from recommender.graph import esco_node_ids, onet_node_id
 # "sql", "cloud computing"), vaguer ones at 0.53-0.65 ("teamwork", "public
 # speaking"), and unrelated words mostly at 0.35-0.59 ("gardening", "asdf").
 LOW_CONFIDENCE_THRESHOLD = 0.60
-# Margin under which a different runner-up makes a reading uncertain. None turns the reason off:
-# it is chosen on the gold mapping set's development split (Measured Matching C3), not here.
+# Margin under which a different runner-up makes a reading uncertain. None turns the reason off.
+# C3 calibration (#159, recommender/calibration.py) found no margin that keeps false uncertainty
+# within both targets on the gold development split, so it stays off.
 MARGIN_THRESHOLD = None
 ALIASES_FILE = Path(__file__).with_name('skill_aliases.csv')
 

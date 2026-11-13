@@ -1,0 +1,443 @@
+[
+ {
+  "group": "ea-g086",
+  "input": "js",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: JavaScript; catalogue has this name (-> JavaScript); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g087",
+  "input": "TS",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: TypeScript; catalogue has this name (-> TypeScript)"
+ },
+ {
+  "group": "ea-g087",
+  "input": "ts",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: TypeScript; catalogue has this name (-> TypeScript); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g088",
+  "input": "HTML",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: HTML markup language; no catalogue name"
+ },
+ {
+  "group": "ea-g088",
+  "input": "html",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: HTML markup language; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g089",
+  "input": "UI/UX",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: user interface and user experience design; catalogue has this name (-> create prototype of user experience solutions)"
+ },
+ {
+  "group": "ea-g089",
+  "input": "ui ux",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: user interface and user experience design; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g090",
+  "input": "UX",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: user experience design; catalogue has this name (-> create prototype of user experience solutions)"
+ },
+ {
+  "group": "ea-g090",
+  "input": "ux",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: user experience design; catalogue has this name (-> create prototype of user experience solutions); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g091",
+  "input": "SEO",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: search engine optimisation; no catalogue name"
+ },
+ {
+  "group": "ea-g092",
+  "input": "PWA",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: progressive web apps; no catalogue name"
+ },
+ {
+  "group": "ea-g093",
+  "input": "AJAX",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "Abbreviation: AJAX technique; catalogue has this name (-> AJAX)"
+ },
+ {
+  "group": "ea-g094",
+  "input": "OOP",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: object-oriented programming; no catalogue name"
+ },
+ {
+  "group": "ea-g094",
+  "input": "oop",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: object-oriented programming; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g095",
+  "input": "API",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: working with/building APIs; no catalogue name"
+ },
+ {
+  "group": "ea-g095",
+  "input": "api",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: working with/building APIs; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g096",
+  "input": "REST",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: RESTful APIs; no catalogue name"
+ },
+ {
+  "group": "ea-g096",
+  "input": "rest",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: RESTful APIs; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g097",
+  "input": "DSA",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: data structures and algorithms; no catalogue name"
+ },
+ {
+  "group": "ea-g097",
+  "input": "dsa",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: data structures and algorithms; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g098",
+  "input": "MVC",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: model-view-controller pattern; no catalogue name"
+ },
+ {
+  "group": "ea-g099",
+  "input": "ORM",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: object-relational mapping, maybe Hibernate ORM; no catalogue name"
+ },
+ {
+  "group": "ea-g100",
+  "input": "SDLC",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: software development life cycle; no catalogue name"
+ },
+ {
+  "group": "ea-g101",
+  "input": "JSON",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "Abbreviation: JSON data format; no catalogue name"
+ },
+ {
+  "group": "ea-g102",
+  "input": "BI",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: business intelligence (Power BI, Tableau, dashboards); no catalogue name"
+ },
+ {
+  "group": "ea-g102",
+  "input": "bi",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: business intelligence (Power BI, Tableau, dashboards); no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g103",
+  "input": "ETL",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: extract-transform-load; catalogue has this name (-> data extraction, transformation and loading tools)"
+ },
+ {
+  "group": "ea-g103",
+  "input": "etl",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: extract-transform-load; catalogue has this name (-> data extraction, transformation and loading tools); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g104",
+  "input": "MS Excel",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: Microsoft Excel; no catalogue name"
+ },
+ {
+  "group": "ea-g104",
+  "input": "ms excel",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: Microsoft Excel; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g105",
+  "input": "EDA",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: exploratory data analysis; no catalogue name"
+ },
+ {
+  "group": "ea-g106",
+  "input": "KPI",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: key performance indicators; no catalogue name"
+ },
+ {
+  "group": "ea-g107",
+  "input": "DAX",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: DAX formula language in Power BI; catalogue has this name (-> Microsoft Power BI)"
+ },
+ {
+  "group": "ea-g108",
+  "input": "OLAP",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Abbreviation: online analytical processing; catalogue has this name (-> online analytical processing)"
+ },
+ {
+  "group": "ea-g109",
+  "input": "ML",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: machine learning; catalogue has this name (-> machine learning)"
+ },
+ {
+  "group": "ea-g110",
+  "input": "NLP",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: natural language processing; catalogue has this name (-> natural language processing)"
+ },
+ {
+  "group": "ea-g110",
+  "input": "nlp",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: natural language processing; catalogue has this name (-> natural language processing); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g111",
+  "input": "AI",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: artificial intelligence; no catalogue name"
+ },
+ {
+  "group": "ea-g111",
+  "input": "ai",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: artificial intelligence; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g112",
+  "input": "DL",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: deep learning; no catalogue name"
+ },
+ {
+  "group": "ea-g112",
+  "input": "dl",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: deep learning; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g113",
+  "input": "CV",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: computer vision (in an AI context); no catalogue name"
+ },
+ {
+  "group": "ea-g114",
+  "input": "LLM",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: large language models; no catalogue name"
+ },
+ {
+  "group": "ea-g115",
+  "input": "GAN",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: generative adversarial networks; no catalogue name"
+ },
+ {
+  "group": "ea-g116",
+  "input": "OCR",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "Abbreviation: optical character recognition; no catalogue name"
+ },
+ {
+  "group": "ea-g117",
+  "input": "LAN",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: local area networks; no catalogue name"
+ },
+ {
+  "group": "ea-g117",
+  "input": "lan",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: local area networks; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g118",
+  "input": "WAN",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: wide area networks; no catalogue name"
+ },
+ {
+  "group": "ea-g118",
+  "input": "wan",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: wide area networks; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g119",
+  "input": "TCP/IP",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: TCP/IP protocol suite; no catalogue name"
+ },
+ {
+  "group": "ea-g119",
+  "input": "tcp/ip",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: TCP/IP protocol suite; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g120",
+  "input": "CCNA",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: Cisco CCNA certification; catalogue has this name (-> Cisco IOS)"
+ },
+ {
+  "group": "ea-g120",
+  "input": "ccna",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: Cisco CCNA certification; catalogue has this name (-> Cisco IOS); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g121",
+  "input": "DHCP",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: DHCP service; no catalogue name"
+ },
+ {
+  "group": "ea-g121",
+  "input": "dhcp",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: DHCP service; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g122",
+  "input": "VLAN",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: virtual LANs; no catalogue name"
+ },
+ {
+  "group": "ea-g122",
+  "input": "vlan",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: virtual LANs; no catalogue name; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g123",
+  "input": "OSPF",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: OSPF routing protocol; no catalogue name"
+ },
+ {
+  "group": "ea-g124",
+  "input": "VoIP",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: voice over IP; no catalogue name"
+ },
+ {
+  "group": "ea-g125",
+  "input": "VPN",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Abbreviation: virtual private networks; no catalogue name"
+ },
+ {
+  "group": "ea-g126",
+  "input": "SIEM",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: security information and event management; catalogue has this name (-> IBM QRadar SIEM)"
+ },
+ {
+  "group": "ea-g126",
+  "input": "siem",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: security information and event management; catalogue has this name (-> IBM QRadar SIEM); case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g127",
+  "input": "SOC",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "Abbreviation: security operations centre; catalogue has this name (-> Security incident management software)"
+ }
+]

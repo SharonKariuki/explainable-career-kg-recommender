@@ -1,0 +1,2386 @@
+[
+ {
+  "key": "ps-201",
+  "family": "database",
+  "wordings": [
+   [
+    "master-slave replication",
+    "Postgres admin",
+    "mysql server",
+    "document and key-value stores",
+    "database migration",
+    "SQL"
+   ],
+   [
+    "MySQL",
+    "NoSQL databases",
+    "postgres",
+    "migrating data between databases",
+    "database replication",
+    "SQL (basic queries)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-202",
+  "family": "database",
+  "wordings": [
+   [
+    "Apache Airflow",
+    "entity relationship diagrams",
+    "problem solving",
+    "SQL (basic queries)"
+   ],
+   [
+    "airflow dags",
+    "ERD design",
+    "solving problems",
+    "SQL"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-203",
+  "family": "database",
+  "wordings": [
+   [
+    "optimising slow queries",
+    "mysql server",
+    "problem-solving"
+   ],
+   [
+    "query tuning and execution plans",
+    "MySQL database admin",
+    "problem solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-204",
+  "family": "database",
+  "wordings": [
+   [
+    "postgres",
+    "granting privileges and roles",
+    "document and key-value stores",
+    "SQL performance tuning",
+    "sql basics",
+    "3-month attachment"
+   ],
+   [
+    "database performance",
+    "internship experience",
+    "SQL (basic queries)",
+    "PostgreSQL",
+    "databases",
+    "nosql databases"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-205",
+  "family": "database",
+  "wordings": [
+   [
+    "normalisation (3NF)",
+    "dbt",
+    "SSIS packages",
+    "Postgres admin",
+    "database schema design for large systems",
+    "MS Excel"
+   ],
+   [
+    "data stuff",
+    "database normalization",
+    "microsoft excel",
+    "SQL Server Integration Services",
+    "designing data models",
+    "databases"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-206",
+  "family": "database",
+  "wordings": [
+   [
+    "database migration",
+    "granting privileges and roles",
+    "mysql server",
+    "Oracle DB and PL/SQL",
+    "Postgres admin"
+   ],
+   [
+    "data moving",
+    "DB access control",
+    "MySQL database admin",
+    "databases",
+    "postgres"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator"
+ },
+ {
+  "key": "ps-207",
+  "family": "architecture",
+  "wordings": [
+   [
+    "high availability design",
+    "network segmentation and zero trust design",
+    "Cisco IOS",
+    "research skills",
+    "good communicator",
+    "problem solving"
+   ],
+   [
+    "infrastructure",
+    "solving problems",
+    "self-learner",
+    "network security",
+    "verbal and written communication",
+    "cisco router config"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-208",
+  "family": "architecture",
+  "wordings": [
+   [
+    "container orchestration with Kubernetes",
+    "cloud migration planning",
+    "systems architecture design",
+    "IaC with Terraform"
+   ],
+   [
+    "k8s",
+    "lift-and-shift migration",
+    "designing end-to-end systems",
+    "infrastructure as code (terraform)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-209",
+  "family": "architecture",
+  "wordings": [
+   [
+    "postgres admin",
+    "normalisation (3NF)",
+    "extract-transform-load processes",
+    "data warehousing",
+    "ERD design",
+    "good communicator",
+    "MS Excel"
+   ],
+   [
+    "PostgreSQL",
+    "normal forms",
+    "microsoft excel",
+    "verbal and written communication",
+    "ETL pipelines",
+    "data warehouse design",
+    "entity relationship diagrams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-210",
+  "family": "architecture",
+  "wordings": [
+   [
+    "high availability design",
+    "MPLS",
+    "SD-WAN",
+    "communication skills",
+    "self-learner"
+   ],
+   [
+    "infrastructure",
+    "WAN stuff",
+    "SDN and SD-WAN",
+    "good communicator",
+    "can research and learn quickly"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-211",
+  "family": "architecture",
+  "wordings": [
+   [
+    "HAProxy and Nginx load balancing",
+    "Docker",
+    "cloud migration planning",
+    "solving problems"
+   ],
+   [
+    "load balancing",
+    "docker containers",
+    "problem-solving",
+    "migrating on-prem workloads to cloud"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-212",
+  "family": "architecture",
+  "wordings": [
+   [
+    "database schema design for large systems",
+    "OLAP cubes",
+    "ER modelling",
+    "SSIS",
+    "MS Excel",
+    "good communicator"
+   ],
+   [
+    "data architecture",
+    "data stuff",
+    "database design",
+    "SQL Server Integration Services",
+    "microsoft excel",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-213",
+  "family": "architecture",
+  "wordings": [
+   [
+    "HAProxy and Nginx load balancing",
+    "bgp",
+    "network design (LAN/WAN)",
+    "Linux",
+    "solving problems"
+   ],
+   [
+    "networking",
+    "routing",
+    "infrastructure",
+    "problem solving",
+    "Ubuntu"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-214",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Kubernetes",
+    "azure vnets and VMs",
+    "HAProxy and Nginx load balancing",
+    "terraform",
+    "presenting to clients",
+    "Linux"
+   ],
+   [
+    "container orchestration with kubernetes",
+    "Azure solutions",
+    "load balancing",
+    "infrastructure as code (Terraform)",
+    "public speaking",
+    "linux basics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-215",
+  "family": "architecture",
+  "wordings": [
+   [
+    "data architecture",
+    "MS SQL Server",
+    "snowflake data warehouse",
+    "SSIS packages",
+    "sql basics",
+    "communication skills"
+   ],
+   [
+    "designing data models",
+    "microsoft SQL Server and SSMS",
+    "Snowflake/BigQuery",
+    "SSIS",
+    "SQL (basic queries)",
+    "good communicator"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-216",
+  "family": "architecture",
+  "wordings": [
+   [
+    "designing resilient systems",
+    "MPLS WAN design",
+    "zero-trust network design",
+    "public speaking",
+    "Ubuntu"
+   ],
+   [
+    "infrastructure",
+    "WAN stuff",
+    "network security",
+    "presentation skills",
+    "linux"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-217",
+  "family": "architecture",
+  "wordings": [
+   [
+    "designing end-to-end systems",
+    "AWS (EC2, S3, VPC)",
+    "azure vnets and VMs",
+    "docker",
+    "cloud migration planning",
+    "git"
+   ],
+   [
+    "AWS cloud architecture",
+    "git and GitHub",
+    "lift-and-shift migration",
+    "systems architecture design",
+    "Azure solutions",
+    "dockerizing apps"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-218",
+  "family": "architecture",
+  "wordings": [
+   [
+    "olap and SSAS",
+    "pyspark",
+    "postgreSQL",
+    "snowflake data warehouse",
+    "microsoft excel",
+    "team player",
+    "good communicator"
+   ],
+   [
+    "teamwork",
+    "OLAP cubes",
+    "Snowflake",
+    "MS Excel",
+    "communication skills",
+    "postgres",
+    "apache spark"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-219",
+  "family": "architecture",
+  "wordings": [
+   [
+    "VPN setup (OpenVPN)",
+    "LAN and WAN topology design",
+    "designing segmented secure networks",
+    "high availability design",
+    "self-learner",
+    "Ubuntu"
+   ],
+   [
+    "IPSec VPN configuration",
+    "networking",
+    "network segmentation and zero trust design",
+    "infrastructure",
+    "research skills",
+    "linux basics"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-220",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Amazon Web Services",
+    "Microsoft Azure",
+    "designing resilient systems",
+    "API and systems integration",
+    "communication skills"
+   ],
+   [
+    "AWS (EC2, S3, VPC)",
+    "cloud",
+    "infrastructure",
+    "systems",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-221",
+  "family": "architecture",
+  "wordings": [
+   [
+    "extract-transform-load processes",
+    "airflow dags",
+    "Python (basic)"
+   ],
+   [
+    "python programming",
+    "workflow orchestration with Airflow",
+    "ETL pipelines"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-222",
+  "family": "architecture",
+  "wordings": [
+   [
+    "ospf",
+    "network segmentation and zero trust design",
+    "good communicator",
+    "industrial attachment experience"
+   ],
+   [
+    "OSPF and EIGRP routing",
+    "zero-trust network design",
+    "verbal and written communication",
+    "internship experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-223",
+  "family": "architecture",
+  "wordings": [
+   [
+    "load balancers (HAProxy/F5)",
+    "k8s",
+    "systems architecture design",
+    "UML diagrams",
+    "presentation skills"
+   ],
+   [
+    "HAProxy and Nginx load balancing",
+    "kubernetes",
+    "designing end-to-end systems",
+    "system design diagrams",
+    "public speaking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-224",
+  "family": "architecture",
+  "wordings": [
+   [
+    "postgres",
+    "entity relationship diagrams",
+    "SSIS packages",
+    "Python (basic)"
+   ],
+   [
+    "postgreSQL",
+    "ER modelling",
+    "SSIS",
+    "python"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-225",
+  "family": "architecture",
+  "wordings": [
+   [
+    "VPN setup (OpenVPN)",
+    "MPLS WAN design",
+    "network capacity planning",
+    "presenting to clients"
+   ],
+   [
+    "presentation skills",
+    "bandwidth capacity planning",
+    "site-to-site VPN",
+    "MPLS"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-226",
+  "family": "architecture",
+  "wordings": [
+   [
+    "cloud migration planning",
+    "high availability design",
+    "infrastructure as code (Terraform)",
+    "load balancers (HAProxy/F5)"
+   ],
+   [
+    "migrating on-prem workloads to cloud",
+    "cloud",
+    "infrastructure",
+    "HAProxy and Nginx load balancing"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-227",
+  "family": "architecture",
+  "wordings": [
+   [
+    "normal forms",
+    "pyspark",
+    "ERD design",
+    "star schema design",
+    "MS Excel",
+    "problem solving"
+   ],
+   [
+    "database normalization",
+    "apache spark",
+    "microsoft excel",
+    "fact and dimension tables",
+    "problem-solving",
+    "ER modelling"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-228",
+  "family": "architecture",
+  "wordings": [
+   [
+    "BGP peering and route policies",
+    "SDN and SD-WAN",
+    "designing resilient systems",
+    "public speaking",
+    "good communicator"
+   ],
+   [
+    "bgp",
+    "software-defined WAN",
+    "verbal and written communication",
+    "presenting to clients",
+    "HA and failover architecture"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-229",
+  "family": "architecture",
+  "wordings": [
+   [
+    "enterprise systems integration",
+    "kubernetes",
+    "designing resilient systems",
+    "Linux"
+   ],
+   [
+    "systems",
+    "cloud",
+    "high availability design",
+    "Ubuntu"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-230",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Apache Spark",
+    "airflow dags",
+    "SSIS",
+    "SQL",
+    "MS Excel"
+   ],
+   [
+    "workflow orchestration with Airflow",
+    "pyspark",
+    "sql basics",
+    "SQL Server Integration Services",
+    "microsoft excel"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database architect / data warehousing specialist"
+ },
+ {
+  "key": "ps-231",
+  "family": "architecture",
+  "wordings": [
+   [
+    "designing enterprise networks",
+    "bandwidth capacity planning",
+    "high availability design",
+    "BGP routing",
+    "configuring cisco routers and switches",
+    "public speaking",
+    "good communicator"
+   ],
+   [
+    "LAN and WAN topology design",
+    "traffic and capacity analysis",
+    "designing resilient systems",
+    "BGP peering and route policies",
+    "cisco router config",
+    "presenting to clients",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer network architect"
+ },
+ {
+  "key": "ps-232",
+  "family": "architecture",
+  "wordings": [
+   [
+    "systems architecture design",
+    "AWS (EC2, S3, VPC)",
+    "UML (class, sequence diagrams)",
+    "communication skills"
+   ],
+   [
+    "solution architecture",
+    "AWS cloud architecture",
+    "UML diagrams",
+    "verbal and written communication"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems engineer / architect"
+ },
+ {
+  "key": "ps-233",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "requirements gathering",
+    "IT project budgets and cost tracking",
+    "PMI project management certification",
+    "stakeholder management",
+    "project timelines and Gantt",
+    "public speaking",
+    "MS Office"
+   ],
+   [
+    "gathering user requirements",
+    "project budgeting",
+    "certifications",
+    "managing stakeholders",
+    "planning",
+    "presenting to clients",
+    "word, excel, powerpoint"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "IT project manager"
+ },
+ {
+  "key": "ps-234",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "UAT coordination",
+    "UML (class, sequence diagrams)",
+    "writing user stories",
+    "SQL queries and joins",
+    "good communicator",
+    "Microsoft Office suite"
+   ],
+   [
+    "databases",
+    "communication skills",
+    "diagrams",
+    "use cases and user stories",
+    "testing",
+    "word, excel, powerpoint"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems analyst"
+ },
+ {
+  "key": "ps-235",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "retesting after changes",
+    "defect logging in Jira",
+    "istqb certified tester syllabus",
+    "internship experience"
+   ],
+   [
+    "certifications",
+    "industrial attachment experience",
+    "regression testing",
+    "testing"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-236",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "regression testing",
+    "Selenium test scripts",
+    "JMeter load testing",
+    "problem-solving",
+    "manages time well",
+    "git"
+   ],
+   [
+    "regression test suites",
+    "Selenium WebDriver",
+    "load and stress testing",
+    "problem solving",
+    "time management",
+    "version control (Git)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-237",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "risk registers",
+    "requirements elicitation",
+    "jira boards",
+    "Scrum (sprint planning, standups)",
+    "MS Project",
+    "problem-solving",
+    "time management",
+    "MS Excel"
+   ],
+   [
+    "project risk management",
+    "business analysis",
+    "project tools",
+    "project work",
+    "project scheduling in ms project",
+    "solving problems",
+    "manages time well",
+    "excel"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "IT project manager"
+ },
+ {
+  "key": "ps-238",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "use cases and user stories",
+    "managing stakeholders",
+    "business process mapping",
+    "UML (class, sequence diagrams)",
+    "MS Office",
+    "problem-solving",
+    "internship experience"
+   ],
+   [
+    "analysis",
+    "stakeholder communication",
+    "BPMN process modelling",
+    "diagrams",
+    "microsoft office suite",
+    "problem solving",
+    "3-month attachment"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems analyst"
+ },
+ {
+  "key": "ps-239",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "writing clear bug reports",
+    "jira boards",
+    "istqb certified tester syllabus"
+   ],
+   [
+    "bug reporting and tracking",
+    "jira",
+    "ISTQB foundation"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-240",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "ISTQB testing fundamentals",
+    "junit tests",
+    "jira boards",
+    "cypress e2e tests",
+    "regression test suites",
+    "3-month attachment",
+    "Python (basic)"
+   ],
+   [
+    "ISTQB foundation",
+    "unit testing with jest/junit",
+    "Jira",
+    "Cypress",
+    "retesting after changes",
+    "internship experience",
+    "python programming"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-241",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "project timelines and Gantt",
+    "scrum master duties",
+    "PMI project management certification",
+    "MS Project",
+    "presenting to clients"
+   ],
+   [
+    "gantt scheduling",
+    "running sprints and retrospectives",
+    "PMP / PRINCE2 training",
+    "project scheduling in MS Project",
+    "presentation skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "IT project manager"
+ },
+ {
+  "key": "ps-242",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "running UAT with end users",
+    "use cases and user stories",
+    "system design diagrams",
+    "stakeholder management",
+    "SQL"
+   ],
+   [
+    "sql basics",
+    "UML diagrams",
+    "testing",
+    "dealing with people",
+    "use case modelling"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems analyst"
+ },
+ {
+  "key": "ps-243",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Jira and Confluence",
+    "Cypress end-to-end testing",
+    "performance testing with JMeter",
+    "defect logging in Jira",
+    "java",
+    "python programming"
+   ],
+   [
+    "project tools",
+    "cypress e2e tests",
+    "JMeter load testing",
+    "testing",
+    "Java programming",
+    "Python (basic)"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-244",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Jira and Confluence",
+    "testing APIs in Postman",
+    "writing clear bug reports",
+    "Jenkins pipelines",
+    "Python (basic)",
+    "3-month attachment",
+    "time management"
+   ],
+   [
+    "Jira",
+    "postman collections",
+    "bug reporting and tracking",
+    "CI/CD pipelines",
+    "python programming",
+    "internship experience",
+    "meeting deadlines"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-245",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "prince2 foundation",
+    "MS Project",
+    "project budgeting",
+    "project timelines and gantt",
+    "Microsoft Office suite",
+    "MS Excel",
+    "teamwork"
+   ],
+   [
+    "word, excel, powerpoint",
+    "team player",
+    "budgeting",
+    "certifications",
+    "project tools",
+    "Excel",
+    "gantt scheduling"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "IT project manager"
+ },
+ {
+  "key": "ps-246",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "UML (class, sequence diagrams)",
+    "API and systems integration",
+    "current vs target state analysis"
+   ],
+   [
+    "UML diagrams",
+    "integrating legacy systems",
+    "systems gap analysis"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems analyst"
+ },
+ {
+  "key": "ps-247",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Selenium WebDriver",
+    "ISTQB testing fundamentals",
+    "regression test suites",
+    "Python",
+    "verbal and written communication"
+   ],
+   [
+    "selenium automation",
+    "istqb certified tester syllabus",
+    "regression testing",
+    "python programming",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-248",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "istqb certified tester syllabus",
+    "regression testing",
+    "Postman API testing",
+    "version control (Git)"
+   ],
+   [
+    "ISTQB foundation",
+    "retesting after changes",
+    "testing APIs in Postman",
+    "Git and GitHub"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-249",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "prince2 foundation",
+    "Jira and Confluence",
+    "cost estimation"
+   ],
+   [
+    "certifications",
+    "project tools",
+    "budgeting"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "IT project manager"
+ },
+ {
+  "key": "ps-250",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "running UAT with end users",
+    "managing stakeholders",
+    "sql basics",
+    "problem-solving"
+   ],
+   [
+    "UAT coordination",
+    "stakeholder communication",
+    "SQL",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems analyst"
+ },
+ {
+  "key": "ps-251",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "user acceptance testing",
+    "selenium webdriver",
+    "ISTQB foundation",
+    "CI/CD pipelines",
+    "3-month attachment",
+    "Java",
+    "python programming"
+   ],
+   [
+    "UAT coordination",
+    "Selenium test scripts",
+    "ISTQB testing fundamentals",
+    "github actions",
+    "internship experience",
+    "java",
+    "Python"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-252",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "selenium automation",
+    "writing clear bug reports",
+    "writing test cases"
+   ],
+   [
+    "test plans and test cases",
+    "bug reporting and tracking",
+    "Selenium WebDriver"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-253",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Scrum (sprint planning, standups)",
+    "project scheduling in ms project",
+    "managing stakeholders"
+   ],
+   [
+    "running sprints and retrospectives",
+    "MS Project",
+    "stakeholder management"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "IT project manager"
+ },
+ {
+  "key": "ps-254",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "writing user stories",
+    "business process mapping",
+    "requirements elicitation",
+    "systems gap analysis",
+    "problem solving",
+    "Excel",
+    "good communicator"
+   ],
+   [
+    "use cases and user stories",
+    "process flow diagrams",
+    "gathering user requirements",
+    "gap analysis",
+    "solving problems",
+    "microsoft excel",
+    "communication skills"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems analyst"
+ },
+ {
+  "key": "ps-255",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "test plans and test cases",
+    "selenium WebDriver",
+    "ISTQB foundation",
+    "exploratory testing",
+    "internship experience"
+   ],
+   [
+    "test case design",
+    "selenium automation",
+    "ISTQB testing fundamentals",
+    "manual testing",
+    "industrial attachment experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-256",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "selenium test scripts",
+    "Cypress",
+    "Postman collections"
+   ],
+   [
+    "selenium automation",
+    "Cypress end-to-end testing",
+    "testing apis in postman"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-257",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "requirements elicitation",
+    "prince2 foundation",
+    "managing stakeholders",
+    "jira boards",
+    "project budgeting",
+    "works well in teams",
+    "good communicator"
+   ],
+   [
+    "cost estimation",
+    "teamwork",
+    "PMI project management certification",
+    "Jira",
+    "stakeholder management",
+    "verbal and written communication",
+    "requirements gathering"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "IT project manager"
+ },
+ {
+  "key": "ps-258",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "UAT coordination",
+    "managing stakeholders",
+    "business process mapping",
+    "microsoft excel",
+    "solving problems"
+   ],
+   [
+    "testing",
+    "problem-solving",
+    "dealing with people",
+    "excel",
+    "business analysis"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "computer systems analyst"
+ },
+ {
+  "key": "ps-259",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Postman collections",
+    "CI/CD pipelines",
+    "jira boards",
+    "ISTQB testing fundamentals",
+    "problem-solving"
+   ],
+   [
+    "Postman API testing",
+    "Jenkins pipelines",
+    "Jira",
+    "ISTQB foundation",
+    "solving problems"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-260",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "writing test cases",
+    "selenium automation",
+    "manages time well",
+    "teamwork"
+   ],
+   [
+    "Selenium WebDriver",
+    "test plans and test cases",
+    "time management",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software QA analyst / tester"
+ },
+ {
+  "key": "ps-261",
+  "family": "beginner",
+  "wordings": [
+   [
+    "PHP backend dev",
+    "basic javascript",
+    "beginner html and markup",
+    "teamwork"
+   ],
+   [
+    "backend",
+    "coding",
+    "learning HTML (web pages)",
+    "team player"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer (first/second-year level)"
+ },
+ {
+  "key": "ps-262",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic VLSM subnetting",
+    "basic VLANs",
+    "configuring Cisco routers and switches",
+    "SQL (basic queries)"
+   ],
+   [
+    "cisco router config",
+    "sql basics",
+    "some IP addressing and subnetting",
+    "some vlan and trunking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support/administrator (first/second-year level)"
+ },
+ {
+  "key": "ps-263",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic matplotlib and seaborn",
+    "Jupyter/Colab",
+    "Linux"
+   ],
+   [
+    "learning seaborn plots",
+    "learning Jupyter Notebook",
+    "Ubuntu"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist/BI analyst (first/second-year level)"
+ },
+ {
+  "key": "ps-264",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic wireshark traffic capture",
+    "Kali Linux",
+    "intro to encryption algorithms",
+    "microsoft excel",
+    "SQL (basic queries)"
+   ],
+   [
+    "Excel",
+    "sql basics",
+    "encryption",
+    "networking",
+    "hacking tools"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst/pentester (first/second-year level)"
+ },
+ {
+  "key": "ps-265",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to PC hardware repair",
+    "beginner printer and scanner setup",
+    "cleaning infected computers",
+    "solving problems",
+    "Java"
+   ],
+   [
+    "problem-solving",
+    "some laptop repair and upgrades",
+    "some configuring network printers",
+    "Java programming",
+    "some virus and malware removal"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "user support specialist (first/second-year level)"
+ },
+ {
+  "key": "ps-266",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic ERD design",
+    "beginner normal forms",
+    "basic T-SQL / PL/SQL procedures",
+    "Excel"
+   ],
+   [
+    "learning entity relationship diagrams",
+    "database design",
+    "database programming",
+    "MS Excel"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator (first/second-year level)"
+ },
+ {
+  "key": "ps-267",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Flask",
+    "beginner c sharp",
+    "beginner HTML5",
+    "MS Excel",
+    "SQL"
+   ],
+   [
+    "backend",
+    "coding",
+    "web stuff",
+    "excel",
+    "sql basics"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer/programmer (first/second-year level)"
+ },
+ {
+  "key": "ps-268",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to Postman collections",
+    "basic agile/scrum",
+    "git",
+    "time management"
+   ],
+   [
+    "version control (Git)",
+    "manages time well",
+    "learning Agile delivery",
+    "some testing APIs in Postman"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "QA tester (first/second-year level)"
+ },
+ {
+  "key": "ps-269",
+  "family": "beginner",
+  "wordings": [
+   [
+    "prototype building",
+    "basic typography and colour theory",
+    "basic adobe xd",
+    "verbal and written communication",
+    "git"
+   ],
+   [
+    "some clickable prototypes",
+    "basics of visual design principles (colour, type, layout)",
+    "some Adobe XD",
+    "communication skills",
+    "version control (git)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web/UI designer (first/second-year level)"
+ },
+ {
+  "key": "ps-270",
+  "family": "beginner",
+  "wordings": [
+   [
+    "SPSS",
+    "beginner linear and logistic regression",
+    "Stata",
+    "verbal and written communication"
+   ],
+   [
+    "some spss",
+    "statistics",
+    "data analysis",
+    "good communicator"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician (first/second-year level)"
+ },
+ {
+  "key": "ps-271",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Bootstrapp grid layouts",
+    "beginner WP websites for small businesses",
+    "fluent in English and Swahili",
+    "git"
+   ],
+   [
+    "version control (Git)",
+    "bootstrap 5",
+    "bilingual (English/Kiswahili)",
+    "some wordpress themes"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer (first/second-year level)"
+ },
+ {
+  "key": "ps-272",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Packet Tracer labs",
+    "basic vlans",
+    "beginner Cisco CCNA",
+    "works well in teams",
+    "English and Kiswahili"
+   ],
+   [
+    "basics of Cisco Packet Tracer",
+    "vlan and trunking",
+    "learning CCNA-level networking",
+    "team player",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support/administrator (first/second-year level)"
+ },
+ {
+  "key": "ps-273",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic writing SQL (joins, aggregates)",
+    "intro to Pandas and NumPy",
+    "jupyter notebooks",
+    "fluent in English and Swahili"
+   ],
+   [
+    "some SQL queries and joins",
+    "some pandas dataframes",
+    "jupyter/colab",
+    "English and Kiswahili"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist/BI analyst (first/second-year level)"
+ },
+ {
+  "key": "ps-274",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to wireshark traffic capture",
+    "basic kali linux tools",
+    "works well in teams",
+    "problem-solving"
+   ],
+   [
+    "teamwork",
+    "solving problems",
+    "some Kali Linux",
+    "packet analysis with Wireshark"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst/pentester (first/second-year level)"
+ },
+ {
+  "key": "ps-275",
+  "family": "beginner",
+  "wordings": [
+   [
+    "laptop repair and upgrades",
+    "intro to setting up smartphones for staff",
+    "basic O365 user setup",
+    "MS Office"
+   ],
+   [
+    "IT admin",
+    "some mobile device troubleshooting",
+    "computer repair",
+    "word, excel, powerpoint"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "user support specialist (first/second-year level)"
+ },
+ {
+  "key": "ps-276",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic T-SQL / PL/SQL procedures",
+    "normal forms",
+    "intro to PostgreSQL",
+    "git"
+   ],
+   [
+    "basics of normalisation (3NF)",
+    "version control (Git)",
+    "basics of Postgres admin",
+    "stored procs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator (first/second-year level)"
+ },
+ {
+  "key": "ps-277",
+  "family": "beginner",
+  "wordings": [
+   [
+    "beginner php/mysql",
+    "HTML (web pages)",
+    "junit tests",
+    "self-learner"
+   ],
+   [
+    "web stuff",
+    "unit testing with Jest/JUnit",
+    "backend",
+    "research skills"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer/programmer (first/second-year level)"
+ },
+ {
+  "key": "ps-278",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to manual testing",
+    "beginner test plans and test cases",
+    "beginner writing clear bug reports",
+    "MS Office"
+   ],
+   [
+    "learning test case design",
+    "basics of bug reporting and tracking",
+    "learning functional testing by hand",
+    "Microsoft Office suite"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "QA tester (first/second-year level)"
+ },
+ {
+  "key": "ps-279",
+  "family": "beginner",
+  "wordings": [
+   [
+    "beginner Adobe XD",
+    "basic clickable prototypes",
+    "wireframing",
+    "team player",
+    "good communicator"
+   ],
+   [
+    "works well in teams",
+    "some adobe xd",
+    "learning making wireframes (Balsamiq)",
+    "communication skills",
+    "prototype building"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web/UI designer (first/second-year level)"
+ },
+ {
+  "key": "ps-280",
+  "family": "beginner",
+  "wordings": [
+   [
+    "regression modelling",
+    "beginner R and RStudio",
+    "basic prob and stats theory",
+    "Excel",
+    "manages time well"
+   ],
+   [
+    "statistics",
+    "data analysis",
+    "some probability theory",
+    "microsoft excel",
+    "time management"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician (first/second-year level)"
+ },
+ {
+  "key": "ps-281",
+  "family": "beginner",
+  "wordings": [
+   [
+    "MySQL database admin",
+    "intro to HTML5",
+    "beginner Bootstrapp grid layouts",
+    "SQL",
+    "English and Kiswahili"
+   ],
+   [
+    "fluent in English and Swahili",
+    "web stuff",
+    "SQL (basic queries)",
+    "databases",
+    "learning Bootstrap 5"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web developer (first/second-year level)"
+ },
+ {
+  "key": "ps-282",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to Packet Tracer labs",
+    "CCNA coursework",
+    "MS Office"
+   ],
+   [
+    "learning packet tracer simulations",
+    "microsoft office suite",
+    "CCNA-level networking"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "network support/administrator (first/second-year level)"
+ },
+ {
+  "key": "ps-283",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to writing SQL (joins, aggregates)",
+    "seaborn plots",
+    "spss",
+    "english and kiswahili"
+   ],
+   [
+    "learning SQL queries and joins",
+    "data visualisation with matplotlib",
+    "learning SPSS",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "data scientist/BI analyst (first/second-year level)"
+ },
+ {
+  "key": "ps-284",
+  "family": "beginner",
+  "wordings": [
+   [
+    "beginner web vulnerabilities (XSS, SQLi, CSRF)",
+    "Wireshark",
+    "verbal and written communication",
+    "Microsoft Office suite"
+   ],
+   [
+    "owasp top ten vulnerabilities",
+    "basics of packet analysis with Wireshark",
+    "communication skills",
+    "word, excel, powerpoint"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "information security analyst/pentester (first/second-year level)"
+ },
+ {
+  "key": "ps-285",
+  "family": "beginner",
+  "wordings": [
+   [
+    "beginner mobile device troubleshooting",
+    "troubleshooting windows",
+    "configuring network printers",
+    "python programming",
+    "microsoft excel"
+   ],
+   [
+    "Excel",
+    "python",
+    "learning setting up smartphones for staff",
+    "printer and scanner setup",
+    "basics of fixing Windows errors"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "user support specialist (first/second-year level)"
+ },
+ {
+  "key": "ps-286",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to stored procs",
+    "normal forms",
+    "complex SQL queries",
+    "SQL (basic queries)",
+    "team player"
+   ],
+   [
+    "T-SQL / PL/SQL procedures",
+    "database design",
+    "databases",
+    "SQL",
+    "teamwork"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "database administrator (first/second-year level)"
+ },
+ {
+  "key": "ps-287",
+  "family": "beginner",
+  "wordings": [
+   [
+    "beginner javascript",
+    "basic C# programming",
+    "unit testing with Jest/JUnit",
+    "C++",
+    "works well in teams"
+   ],
+   [
+    "c++ basics",
+    "some c#",
+    "writing unit tests",
+    "JS for DOM scripting",
+    "team player"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "software developer/programmer (first/second-year level)"
+ },
+ {
+  "key": "ps-288",
+  "family": "beginner",
+  "wordings": [
+   [
+    "intro to defect logging in jira",
+    "Postman collections",
+    "basic test case design",
+    "SQL (basic queries)"
+   ],
+   [
+    "basics of bug reporting and tracking",
+    "basics of testing APIs in Postman",
+    "some test plans and test cases",
+    "sql basics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "QA tester (first/second-year level)"
+ },
+ {
+  "key": "ps-289",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic UI design in Figma",
+    "intro to wireframes and low-fi sketches",
+    "git",
+    "bilingual (English/Kiswahili)"
+   ],
+   [
+    "learning figma mockups",
+    "learning making wireframes (Balsamiq)",
+    "Git and GitHub",
+    "english and kiswahili"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "web/UI designer (first/second-year level)"
+ },
+ {
+  "key": "ps-290",
+  "family": "beginner",
+  "wordings": [
+   [
+    "basic t-tests and chi-square tests",
+    "basic IBM SPSS data analysis",
+    "fluent in English and Swahili"
+   ],
+   [
+    "hypothesis testing",
+    "spss",
+    "bilingual (english/kiswahili)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "statistician (first/second-year level)"
+ },
+ {
+  "key": "ps-291",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "vue 3 composition api",
+    "wordpress themes",
+    "JS for DOM scripting",
+    "RESTful services",
+    "works well in teams",
+    "fluent in English and Swahili"
+   ],
+   [
+    "Vue.js",
+    "web stuff",
+    "javascript",
+    "APIs",
+    "teamwork",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: web developer / software developer (frontend) and software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-292",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "matplotlib and seaborn",
+    "preparing features for models",
+    "database backup and recovery",
+    "nosql (Mongo, Cassandra)",
+    "git"
+   ],
+   [
+    "NoSQL databases",
+    "data visualisation with matplotlib",
+    "feature selection and engineering",
+    "version control (Git)",
+    "point-in-time recovery"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: data scientist and database administrator"
+ },
+ {
+  "key": "ps-293",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "CCNA-level networking",
+    "OSPF routing",
+    "log analysis",
+    "DPA 2019 and GDPR",
+    "Linux",
+    "industrial attachment experience"
+   ],
+   [
+    "CCNA coursework",
+    "OSPF and EIGRP routing",
+    "reading system and web server logs",
+    "Kenya Data Protection Act compliance",
+    "linux basics",
+    "3-month attachment"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: network support specialist / network administrator and information security analyst"
+ },
+ {
+  "key": "ps-294",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "SLA tracking",
+    "fixing Windows errors",
+    "CCNA-level networking",
+    "STP/RSTP",
+    "fluent in English and Swahili"
+   ],
+   [
+    "SLA and ticket escalation handling",
+    "Windows 10/11 troubleshooting",
+    "cisco ccna",
+    "spanning tree protocol",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: computer user support specialist and network support specialist / network administrator"
+ },
+ {
+  "key": "ps-295",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "risk log and mitigation planning",
+    "project budgeting",
+    "GitHub Actions",
+    "TDD",
+    "internship experience"
+   ],
+   [
+    "project risk management",
+    "cost estimation",
+    "CI/CD pipelines",
+    "writing tests first",
+    "industrial attachment experience"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: IT project manager and software QA analyst / tester"
+ },
+ {
+  "key": "ps-296",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "capture the flag (hackthebox/tryhackme)",
+    "SQLi exploitation",
+    "mongodb and mongoose",
+    "Node.js",
+    "basic shell scripting"
+   ],
+   [
+    "CTF competitions",
+    "SQL injection testing",
+    "MongoDB",
+    "node (server side JS)",
+    "command-line scripting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: penetration tester and software developer / web developer (Node backend)"
+ },
+ {
+  "key": "ps-297",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Power BI",
+    "building dashboards",
+    "database migration",
+    "mysql server",
+    "internship experience",
+    "SQL (basic queries)"
+   ],
+   [
+    "Microsoft Power BI",
+    "KPI dashboards",
+    "migrating data between databases",
+    "MySQL database admin",
+    "3-month attachment",
+    "sql basics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: business intelligence analyst and database administrator"
+ },
+ {
+  "key": "ps-298",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "integrating legacy systems",
+    "running UAT with end users",
+    "risk log and mitigation planning",
+    "Agile delivery",
+    "teamwork",
+    "MS Office"
+   ],
+   [
+    "enterprise systems integration",
+    "testing",
+    "risk",
+    "agile/scrum",
+    "team player",
+    "Microsoft Office suite"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: computer systems analyst and IT project manager"
+ },
+ {
+  "key": "ps-299",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "cisco router config",
+    "windows server 2019",
+    "handling security incidents",
+    "ISO 27001",
+    "internship experience"
+   ],
+   [
+    "managing Windows Server",
+    "cyber stuff",
+    "configuring Cisco routers and switches",
+    "3-month attachment",
+    "compliance"
+   ]
+  ],
+  "wording_kind": "clean_ambiguous",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: network and computer systems administrator and information security analyst"
+ },
+ {
+  "key": "ps-300",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "WordPress site building",
+    "npm/webpack build tools",
+    "design systems",
+    "user interviews, usability studies",
+    "meeting deadlines",
+    "problem solving"
+   ],
+   [
+    "WP websites for small businesses",
+    "vite, npm",
+    "UI design system / style guide",
+    "user research and interviews",
+    "time management",
+    "problem-solving"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "author_note": "spans two neighbouring areas: web developer / software developer (frontend) and web and digital interface designer"
+ }
+]

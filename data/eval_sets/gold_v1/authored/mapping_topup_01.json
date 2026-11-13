@@ -1,0 +1,807 @@
+[
+ {
+  "group": "tu-g001",
+  "input": "C#",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "two catalogue names for C#"
+ },
+ {
+  "group": "tu-g001",
+  "input": "C Sharp",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "two catalogue names for C#"
+ },
+ {
+  "group": "tu-g002",
+  "input": "Maven",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "build tool, name and long form"
+ },
+ {
+  "group": "tu-g002",
+  "input": "Apache Maven",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "build tool, name and long form"
+ },
+ {
+  "group": "tu-g003",
+  "input": "SQL Server",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Microsoft SQL Server name variants"
+ },
+ {
+  "group": "tu-g003",
+  "input": "MS SQL Server",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "Microsoft SQL Server name variants"
+ },
+ {
+  "group": "tu-g004",
+  "input": "MS Access",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "desktop database tool"
+ },
+ {
+  "group": "tu-g004",
+  "input": "Microsoft Access",
+  "category": "exact",
+  "domain": "database",
+  "author_note": "desktop database tool"
+ },
+ {
+  "group": "tu-g005",
+  "input": "Office 365",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "office suite names"
+ },
+ {
+  "group": "tu-g005",
+  "input": "Microsoft 365",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "office suite names"
+ },
+ {
+  "group": "tu-g006",
+  "input": "Microsoft Visio",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "diagramming tool for process/UML"
+ },
+ {
+  "group": "tu-g006",
+  "input": "MS Visio",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "diagramming tool for process/UML"
+ },
+ {
+  "group": "tu-g007",
+  "input": "Vagrant",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "dev environment tool"
+ },
+ {
+  "group": "tu-g007",
+  "input": "HashiCorp Vagrant",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "dev environment tool"
+ },
+ {
+  "group": "tu-g008",
+  "input": "Microsoft Sentinel",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "SIEM product"
+ },
+ {
+  "group": "tu-g008",
+  "input": "Microsoft Azure Sentinel",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "SIEM product"
+ },
+ {
+  "group": "tu-g009",
+  "input": "Bootstrap",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g010",
+  "input": "Sass",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g011",
+  "input": "Webpack",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g012",
+  "input": "Next.js",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g013",
+  "input": "React Native",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g014",
+  "input": "AngularJS",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g015",
+  "input": "Flask",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g016",
+  "input": "Spring Boot",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g017",
+  "input": "Kotlin",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g018",
+  "input": "GraphQL",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g019",
+  "input": "R",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g020",
+  "input": "Minitab",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g021",
+  "input": "Google Analytics",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g022",
+  "input": "BigQuery",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g023",
+  "input": "Keras",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g024",
+  "input": "OpenCV",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g025",
+  "input": "spaCy",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g026",
+  "input": "SolarWinds",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g027",
+  "input": "Zabbix",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g028",
+  "input": "OpenVAS",
+  "category": "exact",
+  "domain": "security",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g029",
+  "input": "ServiceNow",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g030",
+  "input": "VMware",
+  "category": "exact",
+  "domain": "it_support",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g031",
+  "input": "Puppet",
+  "category": "exact",
+  "domain": "cloud_infrastructure",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g032",
+  "input": "Appium",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g033",
+  "input": "TestRail",
+  "category": "exact",
+  "domain": "project_qa",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g034",
+  "input": "Hardhat",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g035",
+  "input": "Truffle",
+  "category": "exact",
+  "domain": "blockchain",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g036",
+  "input": "Critical thinking",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g037",
+  "input": "Active listening",
+  "category": "exact",
+  "domain": "general",
+  "author_note": "exact catalogue node name"
+ },
+ {
+  "group": "tu-g038",
+  "input": "SSL",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "catalogue has SSL name; variant combined"
+ },
+ {
+  "group": "tu-g038",
+  "input": "SSL/TLS",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "catalogue has SSL name; variant combined"
+ },
+ {
+  "group": "tu-g039",
+  "input": "Security+",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "CompTIA cert abbreviation; probably no node"
+ },
+ {
+  "group": "tu-g039",
+  "input": "Sec+",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "CompTIA cert abbreviation; probably no node"
+ },
+ {
+  "group": "tu-g040",
+  "input": "WLAN",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "wireless LAN acronym"
+ },
+ {
+  "group": "tu-g040",
+  "input": "WLANs",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "wireless LAN acronym"
+ },
+ {
+  "group": "tu-g041",
+  "input": "EIGRP",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Cisco routing protocol"
+ },
+ {
+  "group": "tu-g041",
+  "input": "EIGRP routing",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Cisco routing protocol"
+ },
+ {
+  "group": "tu-g042",
+  "input": "CCNP",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Cisco certification; catalogue has CCNP name"
+ },
+ {
+  "group": "tu-g042",
+  "input": "CCNP Enterprise",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "Cisco certification; catalogue has CCNP name"
+ },
+ {
+  "group": "tu-g043",
+  "input": "SPA",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "single page application"
+ },
+ {
+  "group": "tu-g043",
+  "input": "SPAs",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "single page application"
+ },
+ {
+  "group": "tu-g044",
+  "input": "CRUD",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "create/read/update/delete operations"
+ },
+ {
+  "group": "tu-g044",
+  "input": "CRUD ops",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "create/read/update/delete operations"
+ },
+ {
+  "group": "tu-g045",
+  "input": "CNN",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "convolutional neural network"
+ },
+ {
+  "group": "tu-g045",
+  "input": "CNNs",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "convolutional neural network"
+ },
+ {
+  "group": "tu-g046",
+  "input": "CSV",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "file format"
+ },
+ {
+  "group": "tu-g046",
+  "input": "CSV files",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "file format"
+ },
+ {
+  "group": "tu-g047",
+  "input": "ERD",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "entity relationship diagram"
+ },
+ {
+  "group": "tu-g047",
+  "input": "ERD diagrams",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "entity relationship diagram"
+ },
+ {
+  "group": "tu-g048",
+  "input": "TDD",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "test-driven development"
+ },
+ {
+  "group": "tu-g048",
+  "input": "TDD testing",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "test-driven development"
+ },
+ {
+  "group": "tu-g049",
+  "input": "TLS",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "catalogue name"
+ },
+ {
+  "group": "tu-g050",
+  "input": "XSS",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "cross-site scripting; likely no name"
+ },
+ {
+  "group": "tu-g051",
+  "input": "PKI",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "public key infrastructure"
+ },
+ {
+  "group": "tu-g052",
+  "input": "FTK",
+  "category": "acronym",
+  "domain": "security",
+  "author_note": "forensic toolkit; catalogue name"
+ },
+ {
+  "group": "tu-g053",
+  "input": "NAT",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "network address translation"
+ },
+ {
+  "group": "tu-g054",
+  "input": "STP",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "spanning tree"
+ },
+ {
+  "group": "tu-g055",
+  "input": "SNMP",
+  "category": "acronym",
+  "domain": "networking",
+  "author_note": "network monitoring protocol"
+ },
+ {
+  "group": "tu-g056",
+  "input": "DOM",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "document object model"
+ },
+ {
+  "group": "tu-g057",
+  "input": "HCI",
+  "category": "acronym",
+  "domain": "web_frontend",
+  "author_note": "catalogue name"
+ },
+ {
+  "group": "tu-g058",
+  "input": "SDK",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "software dev kit"
+ },
+ {
+  "group": "tu-g059",
+  "input": "gRPC",
+  "category": "acronym",
+  "domain": "software_backend",
+  "author_note": "RPC framework"
+ },
+ {
+  "group": "tu-g060",
+  "input": "RNN",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "recurrent neural network"
+ },
+ {
+  "group": "tu-g061",
+  "input": "NLU",
+  "category": "acronym",
+  "domain": "ai_ml",
+  "author_note": "natural language understanding"
+ },
+ {
+  "group": "tu-g062",
+  "input": "PDI",
+  "category": "acronym",
+  "domain": "data_analytics",
+  "author_note": "Pentaho Data Integration; catalogue name"
+ },
+ {
+  "group": "tu-g063",
+  "input": "ACID",
+  "category": "acronym",
+  "domain": "database",
+  "author_note": "transaction properties"
+ },
+ {
+  "group": "tu-g064",
+  "input": "IaaS",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "infrastructure as a service"
+ },
+ {
+  "group": "tu-g065",
+  "input": "VPC",
+  "category": "acronym",
+  "domain": "cloud_infrastructure",
+  "author_note": "virtual private cloud"
+ },
+ {
+  "group": "tu-g066",
+  "input": "SRS",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "software requirements specification"
+ },
+ {
+  "group": "tu-g067",
+  "input": "CAPM",
+  "category": "acronym",
+  "domain": "project_qa",
+  "author_note": "catalogue name"
+ },
+ {
+  "group": "tu-g068",
+  "input": "GPO",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "group policy object"
+ },
+ {
+  "group": "tu-g069",
+  "input": "BYOD",
+  "category": "acronym",
+  "domain": "it_support",
+  "author_note": "catalogue name"
+ },
+ {
+  "group": "tu-g070",
+  "input": "PoS",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "proof of stake; catalogue name"
+ },
+ {
+  "group": "tu-g071",
+  "input": "DAO",
+  "category": "acronym",
+  "domain": "blockchain",
+  "author_note": "decentralised autonomous organisation"
+ },
+ {
+  "group": "tu-g072",
+  "input": "making websites look good on phones",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g072",
+  "input": "making my site work on mobile screens",
+  "category": "everyday",
+  "domain": "web_frontend",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g073",
+  "input": "fixing computers that won't turn on",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g073",
+  "input": "repairing laptops that don't boot",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g074",
+  "input": "setting up wifi for an office",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g074",
+  "input": "installing a wireless network at work",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g075",
+  "input": "finding patterns in sales numbers",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g075",
+  "input": "looking for trends in company data",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g076",
+  "input": "making charts from data in excel",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g076",
+  "input": "drawing graphs from spreadsheet numbers",
+  "category": "everyday",
+  "domain": "data_analytics",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g077",
+  "input": "teaching a computer to recognise images",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g077",
+  "input": "training a model to identify pictures",
+  "category": "everyday",
+  "domain": "ai_ml",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g078",
+  "input": "keeping hackers out of a network",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g078",
+  "input": "protecting company systems from attacks",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "casual paraphrase of a real capability"
+ },
+ {
+  "group": "tu-g079",
+  "input": "building the part of an app that talks to the database",
+  "category": "everyday",
+  "domain": "software_backend",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g080",
+  "input": "writing queries to get info out of a database",
+  "category": "everyday",
+  "domain": "database",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g081",
+  "input": "putting my app online on a server in the cloud",
+  "category": "everyday",
+  "domain": "cloud_infrastructure",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g082",
+  "input": "checking that software works before release",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g083",
+  "input": "helping people who forgot their passwords",
+  "category": "everyday",
+  "domain": "it_support",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g084",
+  "input": "connecting computers in a lab with cables",
+  "category": "everyday",
+  "domain": "networking",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g085",
+  "input": "working well with a team on a group project",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g086",
+  "input": "breaking down tech stuff so non-IT people understand",
+  "category": "everyday",
+  "domain": "general",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g087",
+  "input": "finding weaknesses in a website by trying to break it",
+  "category": "everyday",
+  "domain": "security",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g088",
+  "input": "writing smart contracts for tokens",
+  "category": "everyday",
+  "domain": "blockchain",
+  "author_note": "casual phrasing"
+ },
+ {
+  "group": "tu-g089",
+  "input": "organising tasks and deadlines for a project",
+  "category": "everyday",
+  "domain": "project_qa",
+  "author_note": "casual phrasing"
+ }
+]

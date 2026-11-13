@@ -1,0 +1,43 @@
+{
+  "run": "c3-mapping-validation",
+  "command": "python -m recommender.mapping_eval --run c3-mapping-validation --split validation",
+  "started": "2026-11-13T08:16:53+00:00",
+  "git": {
+    "commit": "ad9198fea9db0ee9c3a2242daf675eb9d938430b",
+    "clean": false,
+    "changes": [
+      " M backend/recommender/mapping_eval.py",
+      "?? backend/pipeline/gold_sets.py",
+      "?? backend/recommender/agreement.py",
+      "?? backend/recommender/calibration.py",
+      "?? backend/tests/test_agreement.py",
+      "?? backend/tests/test_calibration.py",
+      "?? data/eval_sets/mapping_v1.json"
+    ]
+  },
+  "finished": "2026-11-13T08:17:19+00:00",
+  "profile_sets": {
+    "mapping-v1-validation": {
+      "items": 399,
+      "groups": 310
+    }
+  },
+  "configuration": {
+    "id": "6a55b36b29c3",
+    "params": null,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "processed_data": {
+      "esco_occupation_skills.csv": "730a0fd91330a4d0d50c50029e2d579c3ab1acacb300a32ccbc86cc020f68e6f",
+      "esco_occupations.csv": "40d9022063397afb94fdd42b21ab48c437fcebd04407a8cec22b2c657a92a76c",
+      "esco_onet_map.csv": "0f969e55c9bc4a83b169610fc27c38e1ca9de4fd4972a0c8d7535d882f1cefe2",
+      "esco_skills.csv": "8ca13e4006818d6c261ce40ce28fb4ce37678118de1cc1ea0bc6266fe9221579",
+      "occupations.csv": "1e269e3b46ee92fe38f7da2d374c135fcd6bec4a1fccad632a6c1ff7e2b17f5c",
+      "onet_skills.csv": "40739fd1460fd8925a588cf2ba521f8322e9eb003b57afb1e747bae6271cf37d",
+      "onet_tools.csv": "85704841128099482501c5e6c6b966bf1aeed2fd844552864d831dbaafe7eeea"
+    },
+    "skill_aliases": "50bc9e820b297c5793971bebda1b6616150a8f3fe6a91f72399d0c855d70669b",
+    "flagged": "matcher uncertain",
+    "margin_threshold": null,
+    "delta": null
+  }
+}

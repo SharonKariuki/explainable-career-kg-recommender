@@ -1,0 +1,2104 @@
+[
+ {
+  "key": "pm-001",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Hugging Face",
+    "Solidity",
+    "eMASS",
+    "Azure Data Factory"
+   ],
+   [
+    "huggingface models",
+    "solidity coding",
+    "eMASS (RMF)",
+    "ADF pipelines on Azure"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: AI, blockchain, security compliance, data engineering; no area has two specific skills."
+ },
+ {
+  "key": "pm-002",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Wireshark",
+    "Figma",
+    "Terraform",
+    "Tableau"
+   ],
+   [
+    "packet analysis with wireshark",
+    "figma prototyping",
+    "terraform IaC",
+    "tableau dashboards"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: network, design, infra, BI; no area has two specific skills."
+ },
+ {
+  "key": "pm-003",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Ghidra",
+    "Hyperledger Fabric",
+    "Apache Airflow",
+    "Selenium"
+   ],
+   [
+    "reverse engineering using Ghidra",
+    "hyperledger fabric chaincode",
+    "airflow DAGs",
+    "selenium test automation"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: RE, blockchain, DE, QA; no area has two specific skills."
+ },
+ {
+  "key": "pm-004",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Burp Suite",
+    "dbt",
+    "Cypress",
+    "Ansible",
+    "Jira"
+   ],
+   [
+    "burpsuite",
+    "dbt models",
+    "cypress e2e",
+    "ansible playbooks",
+    "jira boards"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: pentest, analytics eng, QA, sysadmin, PM; no area has two specific skills."
+ },
+ {
+  "key": "pm-005",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Autopsy",
+    "PyTorch",
+    "GraphQL",
+    "Cisco Packet Tracer"
+   ],
+   [
+    "autopsy forensic tool",
+    "pytorch",
+    "graphql APIs",
+    "packet tracer labs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: forensics, ML, web API, network; no area has two specific skills."
+ },
+ {
+  "key": "pm-006",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Splunk",
+    "Flutter",
+    "MLflow",
+    "Oracle RMAN"
+   ],
+   [
+    "splunk SIEM searches",
+    "flutter apps",
+    "mlflow tracking",
+    "RMAN backups oracle"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: SOC, mobile, MLOps, DBA; no area has two specific skills."
+ },
+ {
+  "key": "pm-007",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Rust smart contracts on Solana",
+    "OpenVAS",
+    "Power Query",
+    "Unity"
+   ],
+   [
+    "solana contracts in Rust",
+    "openvas scans",
+    "power query",
+    "unity game dev"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: blockchain, vuln scan, BI, game dev; no area has two specific skills."
+ },
+ {
+  "key": "pm-008",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Kubernetes",
+    "SPSS",
+    "Axure RP",
+    "Metasploit"
+   ],
+   [
+    "k8s",
+    "spss stats",
+    "axure prototypes",
+    "metasploit framework"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: devops, stats, UX, pentest; no area has two specific skills."
+ },
+ {
+  "key": "pm-009",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Nessus",
+    "TensorFlow Lite",
+    "Snowflake",
+    "Postman"
+   ],
+   [
+    "nessus vulnerability scanner",
+    "tensorflow lite",
+    "snowflake data warehouse",
+    "postman API testing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: vuln, edge ML, DW, API QA; no area has two specific skills."
+ },
+ {
+  "key": "pm-010",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "MS Project",
+    "Bash scripting on Ubuntu",
+    "R Shiny",
+    "Ethereum Web3.js"
+   ],
+   [
+    "Microsoft Project scheduling",
+    "ubuntu shell scripts",
+    "shiny apps in R",
+    "web3.js ethereum"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: PM, sysadmin, stats, blockchain; no area has two specific skills."
+ },
+ {
+  "key": "pm-011",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "FTK Imager",
+    "Laravel",
+    "Informatica",
+    "Nmap"
+   ],
+   [
+    "FTK imager disk imaging",
+    "laravel php",
+    "informatica powercenter",
+    "nmap scanning"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: forensics, web, ETL, network sec; no area has two specific skills."
+ },
+ {
+  "key": "pm-012",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "LangChain",
+    "Cisco ASA firewall",
+    "Cucumber BDD",
+    "MongoDB Atlas"
+   ],
+   [
+    "langchain agents",
+    "ASA firewalls",
+    "cucumber/gherkin",
+    "mongodb atlas"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: LLM, network sec, QA, NoSQL; no area has two specific skills."
+ },
+ {
+  "key": "pm-013",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Sketch",
+    "Zabbix",
+    "OpenCV",
+    "Truffle"
+   ],
+   [
+    "sketch app UI",
+    "zabbix monitoring",
+    "opencv",
+    "truffle suite dapps"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: UI, monitoring, CV, blockchain; no area has two specific skills."
+ },
+ {
+  "key": "pm-014",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "SAS",
+    "Kali Linux",
+    "React Native",
+    "Visio"
+   ],
+   [
+    "SAS programming",
+    "kali linux",
+    "react native",
+    "ms visio diagrams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: stats, pentest, mobile, architecture docs; no area has two specific skills."
+ },
+ {
+  "key": "pm-015",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Qualys",
+    "Apache Spark",
+    "Gherkin",
+    "Vagrant",
+    "Adobe XD"
+   ],
+   [
+    "qualys scans",
+    "pyspark",
+    "gherkin feature files",
+    "vagrant boxes",
+    "adobe xd wireframes"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: vuln, big data, QA, infra, design; no area has two specific skills."
+ },
+ {
+  "key": "pm-016",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Solidity",
+    "Looker Studio",
+    "Wazuh",
+    "Appium"
+   ],
+   [
+    "solidity dev",
+    "google looker studio reports",
+    "wazuh",
+    "appium mobile tests"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: blockchain, BI, SOC, QA; no area has two specific skills."
+ },
+ {
+  "key": "pm-017",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Remedy ticketing",
+    "Keras",
+    "Redis",
+    "OWASP ZAP"
+   ],
+   [
+    "BMC remedy tickets",
+    "keras neural nets",
+    "redis caching",
+    "zap proxy"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: helpdesk, ML, DB, appsec; no area has two specific skills."
+ },
+ {
+  "key": "pm-018",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "PRINCE2",
+    "Cisco IOS XE",
+    "scikit-learn",
+    "Svelte"
+   ],
+   [
+    "prince 2 certified",
+    "IOS-XE routers",
+    "sklearn",
+    "sveltekit"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: PM, network, ML, frontend; no area has two specific skills."
+ },
+ {
+  "key": "pm-019",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Volatility memory forensics",
+    "Redshift",
+    "Django REST",
+    "Zeplin"
+   ],
+   [
+    "volatility framework",
+    "amazon redshift",
+    "DRF",
+    "zeplin handoff"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: forensics, DW, backend, design; no area has two specific skills."
+ },
+ {
+  "key": "pm-020",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Hadoop",
+    "Nginx",
+    "TestRail",
+    "Hardhat"
+   ],
+   [
+    "hadoop hdfs",
+    "nginx config",
+    "testrail",
+    "hardhat ethereum"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: big data, web server, QA, blockchain; no area has two specific skills."
+ },
+ {
+  "key": "pm-021",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "NIST 800-53",
+    "Prophet forecasting",
+    "Vue.js",
+    "Active Directory GPO"
+   ],
+   [
+    "NIST SP 800-53 controls",
+    "facebook prophet time series",
+    "vuejs",
+    "AD group policy"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: compliance, forecasting, frontend, sysadmin; no area has two specific skills."
+ },
+ {
+  "key": "pm-022",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Cobalt Strike",
+    "Neo4j",
+    "Storybook",
+    "SonarQube"
+   ],
+   [
+    "cobalt strike red team",
+    "neo4j cypher",
+    "storybook UI components",
+    "sonarqube code scans"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: red team, graph DB, UI, code quality; no area has two specific skills."
+ },
+ {
+  "key": "pm-023",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "PL/SQL",
+    "Fortinet FortiGate",
+    "NLTK",
+    "Miro"
+   ],
+   [
+    "plsql procedures",
+    "fortigate",
+    "nltk nlp",
+    "miro boards"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: DB, firewall, NLP, collab design; no area has two specific skills."
+ },
+ {
+  "key": "pm-024",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Dynamics 365 CRM",
+    "YARA rules",
+    "Arduino",
+    "Matplotlib"
+   ],
+   [
+    "MS dynamics CRM",
+    "yara malware rules",
+    "arduino uno",
+    "matplotlib charts"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: business systems, malware, embedded, viz; no area has two specific skills."
+ },
+ {
+  "key": "pm-025",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Chainlink oracles",
+    "Elasticsearch",
+    "JMeter",
+    "Cisco Meraki"
+   ],
+   [
+    "chainlink",
+    "elastic search",
+    "apache jmeter load tests",
+    "meraki dashboard"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: blockchain, search, perf test, network; no area has two specific skills."
+ },
+ {
+  "key": "pm-026",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Trello",
+    "Wireshark",
+    "Stata",
+    "Next.js"
+   ],
+   [
+    "trello",
+    "wireshark traces",
+    "stata",
+    "nextjs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: PM, network, stats, web; no area has two specific skills."
+ },
+ {
+  "key": "pm-027",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Veeam backup",
+    "Pandas profiling",
+    "Gatsby",
+    "Chainalysis"
+   ],
+   [
+    "veeam B&R",
+    "ydata profiling",
+    "gatsbyjs",
+    "chainalysis reactor"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: backup, data, web, blockchain forensics; no area has two specific skills."
+ },
+ {
+  "key": "pm-028",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "ServiceNow",
+    "ELK stack",
+    "Three.js",
+    "SPARQL"
+   ],
+   [
+    "service now ITSM",
+    "elk",
+    "threejs",
+    "sparql queries"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: ITSM, logging, 3D web, semantic data; no area has two specific skills."
+ },
+ {
+  "key": "pm-029",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Okta SSO",
+    "PostgreSQL partitioning",
+    "Cypress.io",
+    "OpenAI Whisper"
+   ],
+   [
+    "okta identity",
+    "postgres table partitioning",
+    "cypress testing",
+    "whisper speech-to-text"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: IAM, DB, QA, AI; no area has two specific skills."
+ },
+ {
+  "key": "pm-030",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Crystal Reports",
+    "Snort IDS",
+    "Xamarin",
+    "Bitcoin Core"
+   ],
+   [
+    "crystal reports",
+    "snort",
+    "xamarin forms",
+    "bitcoin core node"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [
+   "B1"
+  ],
+  "subtype": "spread",
+  "author_note": "Spread: reporting, IDS, mobile, blockchain; no area has two specific skills."
+ },
+ {
+  "key": "pm-031",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Solidity",
+    "smart contracts",
+    "eMASS",
+    "MITRE ATT&CK"
+   ],
+   [
+    "solidity programming",
+    "writing smart contracts",
+    "eMASS RMF",
+    "mitre attack framework"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: blockchain + security."
+ },
+ {
+  "key": "pm-032",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Cisco IOS",
+    "OSPF routing",
+    "pandas",
+    "Power BI"
+   ],
+   [
+    "cisco ios cli",
+    "ospf",
+    "python pandas",
+    "power bi dashboards"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: network + BI."
+ },
+ {
+  "key": "pm-033",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "React",
+    "Tailwind CSS",
+    "Figma",
+    "wireframing"
+   ],
+   [
+    "react.js",
+    "tailwindcss",
+    "figma designs",
+    "wireframes"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: frontend + design."
+ },
+ {
+  "key": "pm-034",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Wireshark",
+    "Nmap",
+    "Splunk",
+    "incident response"
+   ],
+   [
+    "wireshark",
+    "nmap scans",
+    "splunk",
+    "IR handling"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: security."
+ },
+ {
+  "key": "pm-035",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "PostgreSQL",
+    "database normalization",
+    "Airflow",
+    "ETL pipelines"
+   ],
+   [
+    "postgres",
+    "normalisation 3NF",
+    "apache airflow",
+    "etl jobs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: DB + data engineering."
+ },
+ {
+  "key": "pm-036",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Django",
+    "REST APIs",
+    "Selenium",
+    "unit testing"
+   ],
+   [
+    "django framework",
+    "building rest api",
+    "selenium webdriver",
+    "pytest unit tests"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: backend + QA."
+ },
+ {
+  "key": "pm-037",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "scikit-learn",
+    "feature engineering",
+    "Tableau",
+    "SQL window functions"
+   ],
+   [
+    "sklearn",
+    "feature engineering",
+    "tableau",
+    "window functions sql"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: ML + BI."
+ },
+ {
+  "key": "pm-038",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Active Directory",
+    "Windows Server",
+    "Helpdesk ticketing",
+    "ITIL"
+   ],
+   [
+    "AD user admin",
+    "windows server 2019",
+    "ticketing systems helpdesk",
+    "ITIL foundation"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: sysadmin + support."
+ },
+ {
+  "key": "pm-039",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Terraform",
+    "AWS EC2",
+    "Kubernetes",
+    "Docker"
+   ],
+   [
+    "terraform",
+    "ec2 instances",
+    "k8s",
+    "docker containers"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: cloud + devops."
+ },
+ {
+  "key": "pm-040",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Burp Suite",
+    "SQL injection",
+    "OWASP Top 10",
+    "Metasploit"
+   ],
+   [
+    "burpsuite",
+    "sqli testing",
+    "owasp top ten",
+    "metasploit"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: pentest."
+ },
+ {
+  "key": "pm-041",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Autopsy",
+    "FTK Imager",
+    "chain of custody",
+    "disk imaging"
+   ],
+   [
+    "autopsy",
+    "FTK imager",
+    "evidence chain of custody",
+    "forensic imaging"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: forensics."
+ },
+ {
+  "key": "pm-042",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Spring Boot",
+    "Hibernate",
+    "JUnit",
+    "Maven"
+   ],
+   [
+    "springboot",
+    "hibernate ORM",
+    "junit",
+    "maven builds"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: java dev."
+ },
+ {
+  "key": "pm-043",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Hyperledger Fabric",
+    "Web3.js",
+    "Tableau",
+    "SPSS"
+   ],
+   [
+    "hyperledger",
+    "web3js",
+    "tableau",
+    "spss"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: blockchain + stats/BI."
+ },
+ {
+  "key": "pm-044",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Jira",
+    "Scrum",
+    "Gantt charts",
+    "MS Project",
+    "stakeholder management"
+   ],
+   [
+    "jira",
+    "scrum master",
+    "gantt",
+    "microsoft project",
+    "stakeholder mgmt"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: project management."
+ },
+ {
+  "key": "pm-045",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Oracle DBA",
+    "RMAN backup",
+    "Cisco Packet Tracer",
+    "VLANs"
+   ],
+   [
+    "oracle database administration",
+    "rman",
+    "packet tracer",
+    "vlan config"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: DB + network."
+ },
+ {
+  "key": "pm-046",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Flutter",
+    "Firebase",
+    "Postman",
+    "API testing"
+   ],
+   [
+    "flutter dart",
+    "firebase",
+    "postman",
+    "testing apis"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: mobile + QA."
+ },
+ {
+  "key": "pm-047",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "R",
+    "hypothesis testing",
+    "regression analysis",
+    "ggplot2"
+   ],
+   [
+    "R programming",
+    "hypothesis tests",
+    "regression",
+    "ggplot"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: statistics."
+ },
+ {
+  "key": "pm-048",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Snowflake",
+    "dbt",
+    "Kimball dimensional modeling",
+    "star schema"
+   ],
+   [
+    "snowflake",
+    "dbt",
+    "kimball modelling",
+    "star schemas"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: data warehouse."
+ },
+ {
+  "key": "pm-049",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "PyTorch",
+    "transformers",
+    "Hugging Face",
+    "NLP"
+   ],
+   [
+    "pytorch",
+    "transformer models",
+    "hugging face",
+    "natural language processing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: AI."
+ },
+ {
+  "key": "pm-050",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "UML",
+    "use case diagrams",
+    "requirements gathering",
+    "BPMN"
+   ],
+   [
+    "uml",
+    "use cases",
+    "requirements elicitation",
+    "bpmn"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: systems analysis."
+ },
+ {
+  "key": "pm-051",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Cisco ASA",
+    "IPsec VPN",
+    "BGP",
+    "network segmentation"
+   ],
+   [
+    "ASA firewall",
+    "ipsec vpns",
+    "bgp routing",
+    "segmenting networks"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: network architecture + security."
+ },
+ {
+  "key": "pm-052",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Next.js",
+    "TypeScript",
+    "GraphQL",
+    "Prisma"
+   ],
+   [
+    "nextjs",
+    "typescript",
+    "graphql",
+    "prisma ORM"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: full-stack web."
+ },
+ {
+  "key": "pm-053",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Cypress",
+    "Selenium",
+    "test case design",
+    "bug reporting"
+   ],
+   [
+    "cypress",
+    "selenium",
+    "designing test cases",
+    "bug reports"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: QA."
+ },
+ {
+  "key": "pm-054",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Ansible",
+    "Bash scripting",
+    "Linux administration",
+    "Nginx"
+   ],
+   [
+    "ansible",
+    "shell scripting",
+    "linux sysadmin",
+    "nginx"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: sysadmin."
+ },
+ {
+  "key": "pm-055",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Solidity",
+    "Hardhat",
+    "Splunk",
+    "Wazuh"
+   ],
+   [
+    "solidity",
+    "hardhat",
+    "splunk",
+    "wazuh siem"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: blockchain + SOC."
+ },
+ {
+  "key": "pm-056",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "PowerShell",
+    "Intune",
+    "Microsoft 365 admin",
+    "remote desktop support"
+   ],
+   [
+    "powershell",
+    "intune MDM",
+    "office 365 administration",
+    "remote support tools"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: support + admin."
+ },
+ {
+  "key": "pm-057",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Power Query",
+    "DAX",
+    "Excel pivot tables",
+    "SSRS"
+   ],
+   [
+    "power query",
+    "DAX measures",
+    "pivot tables in excel",
+    "ssrs reports"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: BI."
+ },
+ {
+  "key": "pm-058",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "MongoDB",
+    "Redis",
+    "Express.js",
+    "Node.js"
+   ],
+   [
+    "mongodb",
+    "redis",
+    "expressjs",
+    "nodejs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: backend."
+ },
+ {
+  "key": "pm-059",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Ghidra",
+    "malware analysis",
+    "YARA",
+    "Volatility"
+   ],
+   [
+    "ghidra",
+    "analysing malware",
+    "yara",
+    "volatility"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: malware + forensics."
+ },
+ {
+  "key": "pm-060",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Kali Linux",
+    "Nessus",
+    "Figma",
+    "Adobe XD",
+    "user research"
+   ],
+   [
+    "kali",
+    "nessus scans",
+    "figma",
+    "xd",
+    "user interviews"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "sufficient",
+  "intended_reasons": [],
+  "subtype": "two_per_area",
+  "author_note": "Two specific skills per area: pentest + UX."
+ },
+ {
+  "key": "pm-061",
+  "family": "data",
+  "wordings": [
+   [
+    "Python",
+    "SQL",
+    "Excel",
+    "pandas"
+   ],
+   [
+    "python programming",
+    "sql",
+    "ms excel",
+    "pandas library"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Mostly generic plus pandas."
+ },
+ {
+  "key": "pm-062",
+  "family": "networking",
+  "wordings": [
+   [
+    "Networking",
+    "Cisco",
+    "routers"
+   ],
+   [
+    "computer networks",
+    "cisco devices",
+    "router config"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Coherent but loosely specific."
+ },
+ {
+  "key": "pm-063",
+  "family": "frontend",
+  "wordings": [
+   [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+   ],
+   [
+    "html5",
+    "css3",
+    "js",
+    "reactjs"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Generic web basics plus one framework."
+ },
+ {
+  "key": "pm-064",
+  "family": "backend",
+  "wordings": [
+   [
+    "Java",
+    "teamwork",
+    "communication",
+    "Eclipse"
+   ],
+   [
+    "java",
+    "team work",
+    "good communication",
+    "eclipse ide"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "One specific, soft skills, one IDE."
+ },
+ {
+  "key": "pm-065",
+  "family": "security",
+  "wordings": [
+   [
+    "Cybersecurity",
+    "Kali Linux",
+    "ethical hacking"
+   ],
+   [
+    "cyber security",
+    "kali",
+    "ethical hacker"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "One tool, two generic area labels."
+ },
+ {
+  "key": "pm-066",
+  "family": "data",
+  "wordings": [
+   [
+    "Python",
+    "communication",
+    "problem solving",
+    "TensorFlow"
+   ],
+   [
+    "python coding",
+    "communicating well",
+    "problem-solving",
+    "tensorflow"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Mostly generic with one niche library."
+ },
+ {
+  "key": "pm-067",
+  "family": "user_support",
+  "wordings": [
+   [
+    "MS Office",
+    "Windows",
+    "troubleshooting",
+    "customer care"
+   ],
+   [
+    "microsoft office",
+    "windows 10",
+    "troubleshooting pcs",
+    "customer service"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Generic support-type skills."
+ },
+ {
+  "key": "pm-068",
+  "family": "database",
+  "wordings": [
+   [
+    "MySQL",
+    "database design",
+    "PHP"
+   ],
+   [
+    "mysql",
+    "designing databases",
+    "php"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Two specific items loosely pointing to databases."
+ },
+ {
+  "key": "pm-069",
+  "family": "networking",
+  "wordings": [
+   [
+    "Linux",
+    "networking",
+    "scripting"
+   ],
+   [
+    "ubuntu",
+    "networks",
+    "bash"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Generic trio."
+ },
+ {
+  "key": "pm-070",
+  "family": "backend",
+  "wordings": [
+   [
+    "Python",
+    "Django",
+    "communication",
+    "Git"
+   ],
+   [
+    "python",
+    "django framework",
+    "comm skills",
+    "github"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "One framework plus generics."
+ },
+ {
+  "key": "pm-071",
+  "family": "data",
+  "wordings": [
+   [
+    "Data analysis",
+    "Excel",
+    "Power BI"
+   ],
+   [
+    "analysing data",
+    "excel",
+    "powerbi"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "One named BI tool plus generic."
+ },
+ {
+  "key": "pm-072",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Blockchain",
+    "cryptocurrency",
+    "Solidity"
+   ],
+   [
+    "blockchain tech",
+    "crypto",
+    "solidity"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Vague blockchain terms plus one tool."
+ },
+ {
+  "key": "pm-073",
+  "family": "frontend",
+  "wordings": [
+   [
+    "Web design",
+    "WordPress",
+    "Canva"
+   ],
+   [
+    "designing websites",
+    "wordpress",
+    "canva"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Loosely pointing at web design."
+ },
+ {
+  "key": "pm-074",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Project management",
+    "Excel",
+    "communication"
+   ],
+   [
+    "managing projects",
+    "ms excel",
+    "communicating"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Generic PM."
+ },
+ {
+  "key": "pm-075",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Testing",
+    "Java",
+    "Selenium"
+   ],
+   [
+    "software testing",
+    "java",
+    "selenium"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Generic testing plus one tool."
+ },
+ {
+  "key": "pm-076",
+  "family": "data",
+  "wordings": [
+   [
+    "Machine learning",
+    "Python",
+    "Kaggle"
+   ],
+   [
+    "ML",
+    "python",
+    "kaggle competitions"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Aspirational ML, little specific."
+ },
+ {
+  "key": "pm-077",
+  "family": "networking",
+  "wordings": [
+   [
+    "Packet Tracer",
+    "CCNA",
+    "subnetting"
+   ],
+   [
+    "cisco packet tracer",
+    "ccna studying",
+    "IP subnetting"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Student-level networking, may be sufficient."
+ },
+ {
+  "key": "pm-078",
+  "family": "mixed_ambiguous",
+  "wordings": [
+   [
+    "Android Studio",
+    "Kotlin",
+    "Firebase",
+    "teamwork"
+   ],
+   [
+    "android studio",
+    "kotlin",
+    "firebase",
+    "working in a team"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Mobile dev; catalogue coverage unclear."
+ },
+ {
+  "key": "pm-079",
+  "family": "user_support",
+  "wordings": [
+   [
+    "Computer repair",
+    "hardware",
+    "networking",
+    "M-Pesa Daraja API"
+   ],
+   [
+    "pc repair",
+    "hardware maintenance",
+    "basic networking",
+    "daraja api mpesa integration"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Support skills plus one niche API."
+ },
+ {
+  "key": "pm-080",
+  "family": "security",
+  "wordings": [
+   [
+    "Security",
+    "firewalls",
+    "antivirus"
+   ],
+   [
+    "IT security",
+    "firewall",
+    "antivirus software"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Generic security."
+ },
+ {
+  "key": "pm-081",
+  "family": "database",
+  "wordings": [
+   [
+    "SQL Server",
+    "SSMS",
+    "reporting"
+   ],
+   [
+    "ms sql server",
+    "sql server mgt studio",
+    "making reports"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Specific tools but narrow."
+ },
+ {
+  "key": "pm-082",
+  "family": "architecture",
+  "wordings": [
+   [
+    "Cloud computing",
+    "AWS",
+    "Docker"
+   ],
+   [
+    "cloud",
+    "amazon web services",
+    "docker"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Loose area."
+ },
+ {
+  "key": "pm-083",
+  "family": "backend",
+  "wordings": [
+   [
+    "C++",
+    "algorithms",
+    "data structures",
+    "competitive programming"
+   ],
+   [
+    "c plus plus",
+    "algorithms",
+    "DSA",
+    "leetcode"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Fundamentals only."
+ },
+ {
+  "key": "pm-084",
+  "family": "beginner",
+  "wordings": [
+   [
+    "Excel",
+    "Word",
+    "PowerPoint",
+    "typing"
+   ],
+   [
+    "ms excel",
+    "ms word",
+    "powerpoint",
+    "fast typing"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Generic office skills."
+ },
+ {
+  "key": "pm-085",
+  "family": "data",
+  "wordings": [
+   [
+    "R",
+    "statistics",
+    "SPSS"
+   ],
+   [
+    "R language",
+    "stats",
+    "spss"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Statistics plus tools; may be sufficient."
+ },
+ {
+  "key": "pm-086",
+  "family": "networking",
+  "wordings": [
+   [
+    "Wireshark",
+    "teamwork",
+    "networking basics"
+   ],
+   [
+    "wireshark",
+    "team player",
+    "basic networks"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "One tool plus generics."
+ },
+ {
+  "key": "pm-087",
+  "family": "frontend",
+  "wordings": [
+   [
+    "UI design",
+    "Figma",
+    "HTML"
+   ],
+   [
+    "ui design",
+    "figma",
+    "html basics"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Design with HTML basics."
+ },
+ {
+  "key": "pm-088",
+  "family": "security",
+  "wordings": [
+   [
+    "Ethical hacking",
+    "Python",
+    "CTF"
+   ],
+   [
+    "pen testing",
+    "python scripts",
+    "capture the flag"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Aspiring pentester."
+ },
+ {
+  "key": "pm-089",
+  "family": "project_qa",
+  "wordings": [
+   [
+    "Agile",
+    "Scrum",
+    "communication",
+    "leadership"
+   ],
+   [
+    "agile methods",
+    "scrum",
+    "communicates well",
+    "leading teams"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "Method names plus soft skills."
+ },
+ {
+  "key": "pm-090",
+  "family": "database",
+  "wordings": [
+   [
+    "Oracle",
+    "SQL",
+    "PL/SQL",
+    "teamwork"
+   ],
+   [
+    "oracle db",
+    "sql",
+    "plsql",
+    "team work"
+   ]
+  ],
+  "wording_kind": "paraphrase",
+  "intended_sufficiency": "borderline",
+  "intended_reasons": [],
+  "subtype": "near_line",
+  "author_note": "DB specifics plus soft skill."
+ }
+]

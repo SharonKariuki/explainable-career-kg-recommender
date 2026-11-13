@@ -1,0 +1,443 @@
+[
+ {
+  "group": "ea-g001",
+  "input": "JavaScript",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: JavaScript"
+ },
+ {
+  "group": "ea-g001",
+  "input": "javascript",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: JavaScript; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g002",
+  "input": "React",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: React"
+ },
+ {
+  "group": "ea-g002",
+  "input": "react",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: React; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g003",
+  "input": "Vue.js",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: Vue.js"
+ },
+ {
+  "group": "ea-g003",
+  "input": "vue.js",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: Vue.js; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g004",
+  "input": "jQuery",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: jQuery"
+ },
+ {
+  "group": "ea-g004",
+  "input": "JQuery",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: jQuery; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g005",
+  "input": "Figma",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: Figma"
+ },
+ {
+  "group": "ea-g005",
+  "input": "figma",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: Figma; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g006",
+  "input": "WordPress",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: WordPress"
+ },
+ {
+  "group": "ea-g006",
+  "input": "wordpress",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: WordPress; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g007",
+  "input": "CSS",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name, shared-name key: style sheet languages"
+ },
+ {
+  "group": "ea-g007",
+  "input": "css",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name, shared-name key: style sheet languages; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g008",
+  "input": "TypeScript",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: TypeScript"
+ },
+ {
+  "group": "ea-g009",
+  "input": "Angular",
+  "category": "exact",
+  "domain": "web_frontend",
+  "author_note": "Exact catalogue name: Google Angular"
+ },
+ {
+  "group": "ea-g010",
+  "input": "Python",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: Python"
+ },
+ {
+  "group": "ea-g010",
+  "input": "python",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: Python; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g011",
+  "input": "C++",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: C++"
+ },
+ {
+  "group": "ea-g011",
+  "input": "c++",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: C++; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g012",
+  "input": "PHP",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: PHP"
+ },
+ {
+  "group": "ea-g012",
+  "input": "php",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: PHP; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g013",
+  "input": "Node.js",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: Node.js"
+ },
+ {
+  "group": "ea-g013",
+  "input": "node.js",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: Node.js; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g014",
+  "input": "Git",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name, shared-name key: tools for software configuration management"
+ },
+ {
+  "group": "ea-g014",
+  "input": "git",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name, shared-name key: tools for software configuration management; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g015",
+  "input": "Algorithms",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: algorithms"
+ },
+ {
+  "group": "ea-g015",
+  "input": "algorithms",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: algorithms; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g016",
+  "input": "Java",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: Oracle Java"
+ },
+ {
+  "group": "ea-g017",
+  "input": "Django",
+  "category": "exact",
+  "domain": "software_backend",
+  "author_note": "Exact catalogue name: Django"
+ },
+ {
+  "group": "ea-g018",
+  "input": "Microsoft Excel",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: Microsoft Excel"
+ },
+ {
+  "group": "ea-g018",
+  "input": "microsoft excel",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: Microsoft Excel; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g019",
+  "input": "pandas",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: pandas"
+ },
+ {
+  "group": "ea-g019",
+  "input": "Pandas",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: pandas; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g020",
+  "input": "Statistics",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: statistics"
+ },
+ {
+  "group": "ea-g020",
+  "input": "statistics",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: statistics; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g021",
+  "input": "Tableau",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: Tableau"
+ },
+ {
+  "group": "ea-g021",
+  "input": "tableau",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: Tableau; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g022",
+  "input": "AWK",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name, shared-name key: Programming"
+ },
+ {
+  "group": "ea-g023",
+  "input": "Google Sheets",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name, shared-name key: use spreadsheets software"
+ },
+ {
+  "group": "ea-g024",
+  "input": "NumPy",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: NumPy"
+ },
+ {
+  "group": "ea-g025",
+  "input": "Microsoft Power BI",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: Microsoft Power BI"
+ },
+ {
+  "group": "ea-g026",
+  "input": "Data mining",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: data mining"
+ },
+ {
+  "group": "ea-g027",
+  "input": "Apache Spark",
+  "category": "exact",
+  "domain": "data_analytics",
+  "author_note": "Exact catalogue name: Apache Spark"
+ },
+ {
+  "group": "ea-g028",
+  "input": "Machine learning",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: machine learning"
+ },
+ {
+  "group": "ea-g028",
+  "input": "machine learning",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: machine learning; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g029",
+  "input": "PyTorch",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: PyTorch"
+ },
+ {
+  "group": "ea-g029",
+  "input": "pytorch",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: PyTorch; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g030",
+  "input": "Scikit-learn",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: Scikit-learn"
+ },
+ {
+  "group": "ea-g030",
+  "input": "scikit-learn",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: Scikit-learn; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g031",
+  "input": "TensorFlow",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: TensorFlow"
+ },
+ {
+  "group": "ea-g031",
+  "input": "tensorflow",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: TensorFlow; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g032",
+  "input": "Mathematics",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name, shared-name key: Mathematics"
+ },
+ {
+  "group": "ea-g033",
+  "input": "Calculus",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name, shared-name key: Mathematics"
+ },
+ {
+  "group": "ea-g034",
+  "input": "Deep learning",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: deep learning"
+ },
+ {
+  "group": "ea-g035",
+  "input": "Hugging Face",
+  "category": "exact",
+  "domain": "ai_ml",
+  "author_note": "Exact catalogue name: Hugging Face"
+ },
+ {
+  "group": "ea-g036",
+  "input": "Cisco IOS",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: Cisco IOS"
+ },
+ {
+  "group": "ea-g036",
+  "input": "cisco ios",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: Cisco IOS; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g037",
+  "input": "Wireshark",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: Wireshark"
+ },
+ {
+  "group": "ea-g037",
+  "input": "wireshark",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: Wireshark; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g038",
+  "input": "Nmap",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name, shared-name key: Nmap"
+ },
+ {
+  "group": "ea-g038",
+  "input": "nmap",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name, shared-name key: Nmap; case/spelling variant of same intent"
+ },
+ {
+  "group": "ea-g039",
+  "input": "Cisco",
+  "category": "exact",
+  "domain": "networking",
+  "author_note": "Exact catalogue name: Cisco"
+ }
+]

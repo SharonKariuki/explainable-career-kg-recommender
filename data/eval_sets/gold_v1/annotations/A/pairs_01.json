@@ -1,0 +1,1002 @@
+[
+ {
+  "pair": "cp-001",
+  "relationship": "same_capability",
+  "note": "Ansible and Red Hat Ansible Engine are the same product"
+ },
+ {
+  "pair": "cp-002",
+  "relationship": "same_capability",
+  "note": "two video-conferencing products for one capability"
+ },
+ {
+  "pair": "cp-003",
+  "relationship": "same_capability",
+  "note": "duplicate ESCO concepts for SaaS/service-oriented modelling"
+ },
+ {
+  "pair": "cp-004",
+  "relationship": "unrelated",
+  "note": "data library vs presentation app"
+ },
+ {
+  "pair": "cp-005",
+  "relationship": "broader_narrower",
+  "note": "EC2 is one AWS service"
+ },
+ {
+  "pair": "cp-006",
+  "relationship": "same_capability",
+  "note": "two version-control systems for one capability"
+ },
+ {
+  "pair": "cp-007",
+  "relationship": "related_distinct",
+  "note": "IDS vs packet analyser; both network security tools"
+ },
+ {
+  "pair": "cp-008",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-009",
+  "relationship": "same_capability",
+  "note": "Visual Studio and Visual Studio .NET are the same IDE"
+ },
+ {
+  "pair": "cp-010",
+  "relationship": "broader_narrower",
+  "note": "Kali is a Linux distribution"
+ },
+ {
+  "pair": "cp-011",
+  "relationship": "related_distinct",
+  "note": "related operating systems, distinct skills"
+ },
+ {
+  "pair": "cp-012",
+  "relationship": "broader_narrower",
+  "note": "Redis is a NoSQL store"
+ },
+ {
+  "pair": "cp-013",
+  "relationship": "same_capability",
+  "note": "two video-conferencing products"
+ },
+ {
+  "pair": "cp-014",
+  "relationship": "broader_narrower",
+  "note": "Android is a mobile OS"
+ },
+ {
+  "pair": "cp-015",
+  "relationship": "related_distinct",
+  "note": "OOP is a paradigm; Java is one language using it"
+ },
+ {
+  "pair": "cp-016",
+  "relationship": "same_capability",
+  "note": "two presentation products"
+ },
+ {
+  "pair": "cp-017",
+  "relationship": "broader_narrower",
+  "note": "Photoshop is part of Creative Cloud"
+ },
+ {
+  "pair": "cp-018",
+  "relationship": "related_distinct",
+  "note": "Django is a Python framework, separate skill"
+ },
+ {
+  "pair": "cp-019",
+  "relationship": "same_capability",
+  "note": "SAP R3 node includes SAP ERP names"
+ },
+ {
+  "pair": "cp-020",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-021",
+  "relationship": "related_distinct",
+  "note": "two different relational DBMS products"
+ },
+ {
+  "pair": "cp-022",
+  "relationship": "same_capability",
+  "note": "managing the task schedule is time management"
+ },
+ {
+  "pair": "cp-023",
+  "relationship": "related_distinct",
+  "note": "Node.js is a runtime for JavaScript, separate skill"
+ },
+ {
+  "pair": "cp-024",
+  "relationship": "same_capability",
+  "note": "two word processors"
+ },
+ {
+  "pair": "cp-025",
+  "relationship": "broader_narrower",
+  "note": "Selenium is a test automation tool"
+ },
+ {
+  "pair": "cp-026",
+  "relationship": "broader_narrower",
+  "note": "Windows is an operating system"
+ },
+ {
+  "pair": "cp-027",
+  "relationship": "broader_narrower",
+  "note": "Nmap is a pentesting/scanning tool"
+ },
+ {
+  "pair": "cp-028",
+  "relationship": "related_distinct",
+  "note": "MySQL is a DBMS that uses SQL"
+ },
+ {
+  "pair": "cp-029",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-030",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-031",
+  "relationship": "same_capability",
+  "note": "two deep-learning frameworks for one capability"
+ },
+ {
+  "pair": "cp-032",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-033",
+  "relationship": "related_distinct",
+  "note": "Redux bindings are a separate library used with React"
+ },
+ {
+  "pair": "cp-034",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-035",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-036",
+  "relationship": "related_distinct",
+  "note": "complementary web front-end languages"
+ },
+ {
+  "pair": "cp-037",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-038",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-039",
+  "relationship": "broader_narrower",
+  "note": "Python is a scripting language"
+ },
+ {
+  "pair": "cp-040",
+  "relationship": "broader_narrower",
+  "note": "Google Docs is word-processing software"
+ },
+ {
+  "pair": "cp-041",
+  "relationship": "broader_narrower",
+  "note": "managing several projects is a case of project management"
+ },
+ {
+  "pair": "cp-042",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-043",
+  "relationship": "same_capability",
+  "note": "two spreadsheet products"
+ },
+ {
+  "pair": "cp-044",
+  "relationship": "related_distinct",
+  "note": "VBA is a language used inside Excel, distinct skill"
+ },
+ {
+  "pair": "cp-045",
+  "relationship": "broader_narrower",
+  "note": "SketchBook Pro is a graphics editor"
+ },
+ {
+  "pair": "cp-046",
+  "relationship": "broader_narrower",
+  "note": "HTML is a markup language"
+ },
+ {
+  "pair": "cp-047",
+  "relationship": "broader_narrower",
+  "note": "SSRS is a component of SQL Server"
+ },
+ {
+  "pair": "cp-048",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-049",
+  "relationship": "related_distinct",
+  "note": "Keras is a high-level API on TensorFlow, distinct skill"
+ },
+ {
+  "pair": "cp-050",
+  "relationship": "related_distinct",
+  "note": "Jupyter is an environment for Python"
+ },
+ {
+  "pair": "cp-051",
+  "relationship": "related_distinct",
+  "note": "complementary container tools"
+ },
+ {
+  "pair": "cp-052",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-053",
+  "relationship": "related_distinct",
+  "note": "pandas is a Python library"
+ },
+ {
+  "pair": "cp-054",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-055",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-056",
+  "relationship": "broader_narrower",
+  "note": "AWS is a cloud technology"
+ },
+ {
+  "pair": "cp-057",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-058",
+  "relationship": "broader_narrower",
+  "note": "iOS is a mobile OS"
+ },
+ {
+  "pair": "cp-059",
+  "relationship": "related_distinct",
+  "note": "Webex is a Cisco product but not Cisco networking"
+ },
+ {
+  "pair": "cp-060",
+  "relationship": "broader_narrower",
+  "note": "XP is a Windows version"
+ },
+ {
+  "pair": "cp-061",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-062",
+  "relationship": "broader_narrower",
+  "note": "deep learning is a subfield of machine learning"
+ },
+ {
+  "pair": "cp-063",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-064",
+  "relationship": "broader_narrower",
+  "note": "PRINCE2 is one PM methodology"
+ },
+ {
+  "pair": "cp-065",
+  "relationship": "broader_narrower",
+  "note": "Google Sheets is spreadsheet software"
+ },
+ {
+  "pair": "cp-066",
+  "relationship": "same_capability",
+  "note": "knowledge vs skill of statistics"
+ },
+ {
+  "pair": "cp-067",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-068",
+  "relationship": "same_capability",
+  "note": "same Java under two vendors"
+ },
+ {
+  "pair": "cp-069",
+  "relationship": "related_distinct",
+  "note": "related but distinct tools (guide)"
+ },
+ {
+  "pair": "cp-070",
+  "relationship": "broader_narrower",
+  "note": "SQL is a query language"
+ },
+ {
+  "pair": "cp-071",
+  "relationship": "broader_narrower",
+  "note": "Excel is spreadsheet software (guide)"
+ },
+ {
+  "pair": "cp-072",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-073",
+  "relationship": "related_distinct",
+  "note": "AD runs on Windows Server; distinct admin skill"
+ },
+ {
+  "pair": "cp-074",
+  "relationship": "broader_narrower",
+  "note": "Power BI is part of Power Platform"
+ },
+ {
+  "pair": "cp-075",
+  "relationship": "broader_narrower",
+  "note": "ICT troubleshooting is a kind of troubleshooting"
+ },
+ {
+  "pair": "cp-076",
+  "relationship": "related_distinct",
+  "note": "often used together, distinct skills"
+ },
+ {
+  "pair": "cp-077",
+  "relationship": "related_distinct",
+  "note": "Jira supports agile PM; tool vs method"
+ },
+ {
+  "pair": "cp-078",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-079",
+  "relationship": "related_distinct",
+  "note": "both network tools, different purposes"
+ },
+ {
+  "pair": "cp-080",
+  "relationship": "broader_narrower",
+  "note": "Windows Server is part of the Windows family"
+ },
+ {
+  "pair": "cp-081",
+  "relationship": "broader_narrower",
+  "note": "Word is part of Office"
+ },
+ {
+  "pair": "cp-082",
+  "relationship": "same_capability",
+  "note": "two presentation products"
+ },
+ {
+  "pair": "cp-083",
+  "relationship": "related_distinct",
+  "note": "Flask is a Python framework, separate skill"
+ },
+ {
+  "pair": "cp-084",
+  "relationship": "same_capability",
+  "note": "Visual Basic today means VB.NET; counted once"
+ },
+ {
+  "pair": "cp-085",
+  "relationship": "related_distinct",
+  "note": "container tool vs CI server"
+ },
+ {
+  "pair": "cp-086",
+  "relationship": "related_distinct",
+  "note": "VCS vs CI server"
+ },
+ {
+  "pair": "cp-087",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-088",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-089",
+  "relationship": "same_capability",
+  "note": "knowledge vs skill of cloud security and compliance"
+ },
+ {
+  "pair": "cp-090",
+  "relationship": "same_capability",
+  "note": "two video-conferencing products"
+ },
+ {
+  "pair": "cp-091",
+  "relationship": "same_capability",
+  "note": "two packet-capture tools for one capability"
+ },
+ {
+  "pair": "cp-092",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-093",
+  "relationship": "broader_narrower",
+  "note": "Agile PM is a kind of project management"
+ },
+ {
+  "pair": "cp-094",
+  "relationship": "broader_narrower",
+  "note": "Docs is part of Workspace"
+ },
+ {
+  "pair": "cp-095",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-096",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-097",
+  "relationship": "same_capability",
+  "note": "two Git hosting platforms"
+ },
+ {
+  "pair": "cp-098",
+  "relationship": "broader_narrower",
+  "note": "Outlook is part of Office"
+ },
+ {
+  "pair": "cp-099",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-100",
+  "relationship": "related_distinct",
+  "note": "Bootstrap is a CSS framework, separate skill"
+ },
+ {
+  "pair": "cp-101",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-102",
+  "relationship": "same_capability",
+  "note": "data analytics knowledge vs performing data analysis"
+ },
+ {
+  "pair": "cp-103",
+  "relationship": "broader_narrower",
+  "note": "Google Analytics is a web analytics tool"
+ },
+ {
+  "pair": "cp-104",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-105",
+  "relationship": "broader_narrower",
+  "note": "RDBMS is a type of DBMS"
+ },
+ {
+  "pair": "cp-106",
+  "relationship": "related_distinct",
+  "note": "companion Python libraries, distinct"
+ },
+ {
+  "pair": "cp-107",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-108",
+  "relationship": "broader_narrower",
+  "note": "Python is a programming language"
+ },
+ {
+  "pair": "cp-109",
+  "relationship": "broader_narrower",
+  "note": "Bash is a scripting language"
+ },
+ {
+  "pair": "cp-110",
+  "relationship": "broader_narrower",
+  "note": "PowerPoint is part of Office"
+ },
+ {
+  "pair": "cp-111",
+  "relationship": "related_distinct",
+  "note": "Bash is a Linux shell, distinct skill"
+ },
+ {
+  "pair": "cp-112",
+  "relationship": "broader_narrower",
+  "note": "MongoDB is a NoSQL database"
+ },
+ {
+  "pair": "cp-113",
+  "relationship": "same_capability",
+  "note": "two video-conferencing products"
+ },
+ {
+  "pair": "cp-114",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-115",
+  "relationship": "related_distinct",
+  "note": "TypeScript is a superset of JS, distinct skill"
+ },
+ {
+  "pair": "cp-116",
+  "relationship": "related_distinct",
+  "note": "Oracle Rdb is a distinct legacy product from Oracle Database"
+ },
+ {
+  "pair": "cp-117",
+  "relationship": "broader_narrower",
+  "note": "Photoshop is a graphics editor"
+ },
+ {
+  "pair": "cp-118",
+  "relationship": "related_distinct",
+  "note": "PowerShell is a Windows shell, distinct skill"
+ },
+ {
+  "pair": "cp-119",
+  "relationship": "same_capability",
+  "note": "knowledge vs skill of machine learning"
+ },
+ {
+  "pair": "cp-120",
+  "relationship": "broader_narrower",
+  "note": "PowerPoint is presentation software"
+ },
+ {
+  "pair": "cp-121",
+  "relationship": "broader_narrower",
+  "note": "Linux is an operating system"
+ },
+ {
+  "pair": "cp-122",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-123",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-124",
+  "relationship": "broader_narrower",
+  "note": "Eclipse is an IDE"
+ },
+ {
+  "pair": "cp-125",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-126",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-127",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-128",
+  "relationship": "broader_narrower",
+  "note": "MySQL is a DBMS"
+ },
+ {
+  "pair": "cp-129",
+  "relationship": "same_capability",
+  "note": "two configuration-management tools for one capability"
+ },
+ {
+  "pair": "cp-130",
+  "relationship": "related_distinct",
+  "note": "jQuery is a JS library, distinct skill"
+ },
+ {
+  "pair": "cp-131",
+  "relationship": "unrelated",
+  "note": "ML the programming language vs machine learning"
+ },
+ {
+  "pair": "cp-132",
+  "relationship": "broader_narrower",
+  "note": "RHEL is a Linux distribution"
+ },
+ {
+  "pair": "cp-133",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-134",
+  "relationship": "broader_narrower",
+  "note": "Ubuntu is a Linux distribution"
+ },
+ {
+  "pair": "cp-135",
+  "relationship": "broader_narrower",
+  "note": "Git is a version-control tool"
+ },
+ {
+  "pair": "cp-136",
+  "relationship": "broader_narrower",
+  "note": "OSPF is a routing protocol"
+ },
+ {
+  "pair": "cp-137",
+  "relationship": "related_distinct",
+  "note": "two different relational DBMS products"
+ },
+ {
+  "pair": "cp-138",
+  "relationship": "related_distinct",
+  "note": "both pentesting tools, different stages"
+ },
+ {
+  "pair": "cp-139",
+  "relationship": "broader_narrower",
+  "note": "S3 is an AWS service"
+ },
+ {
+  "pair": "cp-140",
+  "relationship": "related_distinct",
+  "note": "companion data libraries"
+ },
+ {
+  "pair": "cp-141",
+  "relationship": "related_distinct",
+  "note": "Spring Boot is a Java framework"
+ },
+ {
+  "pair": "cp-142",
+  "relationship": "related_distinct",
+  "note": "React is a JS library, distinct skill"
+ },
+ {
+  "pair": "cp-143",
+  "relationship": "broader_narrower",
+  "note": "Word is word-processing software"
+ },
+ {
+  "pair": "cp-144",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-145",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-146",
+  "relationship": "same_capability",
+  "note": "same T-SQL language"
+ },
+ {
+  "pair": "cp-147",
+  "relationship": "same_capability",
+  "note": "two BI/dashboard products for one capability"
+ },
+ {
+  "pair": "cp-148",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-149",
+  "relationship": "broader_narrower",
+  "note": "Palo Alto is firewall software"
+ },
+ {
+  "pair": "cp-150",
+  "relationship": "same_capability",
+  "note": "two email clients"
+ },
+ {
+  "pair": "cp-151",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-152",
+  "relationship": "related_distinct",
+  "note": "Cisco IOS used in networks; design is a distinct skill"
+ },
+ {
+  "pair": "cp-153",
+  "relationship": "related_distinct",
+  "note": "analytical thinking overlaps but is distinct from critical thinking"
+ },
+ {
+  "pair": "cp-154",
+  "relationship": "same_capability",
+  "note": "same customer service concept"
+ },
+ {
+  "pair": "cp-155",
+  "relationship": "related_distinct",
+  "note": "Azure DevOps hosts Git repos; distinct tools"
+ },
+ {
+  "pair": "cp-156",
+  "relationship": "broader_narrower",
+  "note": "Visual Studio is an IDE"
+ },
+ {
+  "pair": "cp-157",
+  "relationship": "same_capability",
+  "note": "two hypervisors for one capability"
+ },
+ {
+  "pair": "cp-158",
+  "relationship": "same_capability",
+  "note": "Kettle is the original name of Pentaho Data Integration"
+ },
+ {
+  "pair": "cp-159",
+  "relationship": "related_distinct",
+  "note": "both data tools, distinct skills"
+ },
+ {
+  "pair": "cp-160",
+  "relationship": "same_capability",
+  "note": "overlapping names; same customer help skill"
+ },
+ {
+  "pair": "cp-161",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-162",
+  "relationship": "broader_narrower",
+  "note": "JavaScript is a programming language"
+ },
+ {
+  "pair": "cp-163",
+  "relationship": "same_capability",
+  "note": "duplicate Mathematics nodes"
+ },
+ {
+  "pair": "cp-164",
+  "relationship": "related_distinct",
+  "note": "OSPF configured on Cisco IOS; distinct"
+ },
+ {
+  "pair": "cp-165",
+  "relationship": "same_capability",
+  "note": "Java EE and J2EE are the same platform"
+ },
+ {
+  "pair": "cp-166",
+  "relationship": "broader_narrower",
+  "note": "CiscoWorks is a Cisco network product"
+ },
+ {
+  "pair": "cp-167",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-168",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-169",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-170",
+  "relationship": "related_distinct",
+  "note": "Wireshark used in network forensics"
+ },
+ {
+  "pair": "cp-171",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-172",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-173",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-174",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-175",
+  "relationship": "broader_narrower",
+  "note": "Excel is part of Office"
+ },
+ {
+  "pair": "cp-176",
+  "relationship": "broader_narrower",
+  "note": "Metasploit is pentesting software"
+ },
+ {
+  "pair": "cp-177",
+  "relationship": "related_distinct",
+  "note": "cloud platform vs container tool"
+ },
+ {
+  "pair": "cp-178",
+  "relationship": "same_capability",
+  "note": "same OSPF protocol"
+ },
+ {
+  "pair": "cp-179",
+  "relationship": "related_distinct",
+  "note": "NumPy is a Python library"
+ },
+ {
+  "pair": "cp-180",
+  "relationship": "related_distinct",
+  "note": "companion Atlassian tools"
+ },
+ {
+  "pair": "cp-181",
+  "relationship": "same_capability",
+  "note": "document management knowledge vs managing digital documents"
+ },
+ {
+  "pair": "cp-182",
+  "relationship": "broader_narrower",
+  "note": "Gmail is part of Workspace"
+ },
+ {
+  "pair": "cp-183",
+  "relationship": "broader_narrower",
+  "note": "CSS is a style sheet language"
+ },
+ {
+  "pair": "cp-184",
+  "relationship": "same_capability",
+  "note": "two Python web frameworks for one capability"
+ },
+ {
+  "pair": "cp-185",
+  "relationship": "related_distinct",
+  "note": "TensorFlow is a Python library"
+ },
+ {
+  "pair": "cp-186",
+  "relationship": "same_capability",
+  "note": "knowledge vs skill of data mining"
+ },
+ {
+  "pair": "cp-187",
+  "relationship": "same_capability",
+  "note": "two Git hosting platforms"
+ },
+ {
+  "pair": "cp-188",
+  "relationship": "broader_narrower",
+  "note": "Cisco IOS is a Cisco product (guide)"
+ },
+ {
+  "pair": "cp-189",
+  "relationship": "related_distinct",
+  "note": "React Native is a distinct mobile framework"
+ },
+ {
+  "pair": "cp-190",
+  "relationship": "same_capability",
+  "note": "same C# language"
+ },
+ {
+  "pair": "cp-191",
+  "relationship": "related_distinct",
+  "note": "both Office apps, distinct uses"
+ },
+ {
+  "pair": "cp-192",
+  "relationship": "related_distinct",
+  "note": "PL/SQL is Oracle's language, distinct skill"
+ },
+ {
+  "pair": "cp-193",
+  "relationship": "same_capability",
+  "note": "knowledge vs skill of databases"
+ },
+ {
+  "pair": "cp-194",
+  "relationship": "related_distinct",
+  "note": "C# runs on .NET, distinct skill"
+ },
+ {
+  "pair": "cp-195",
+  "relationship": "broader_narrower",
+  "note": "LDAP is a directory services protocol"
+ },
+ {
+  "pair": "cp-196",
+  "relationship": "same_capability",
+  "note": "same PowerShell"
+ },
+ {
+  "pair": "cp-197",
+  "relationship": "unrelated",
+  "note": "no shared domain or use"
+ },
+ {
+  "pair": "cp-198",
+  "relationship": "related_distinct",
+  "note": "Git vs a Git hosting platform, distinct tools"
+ },
+ {
+  "pair": "cp-199",
+  "relationship": "same_capability",
+  "note": "PM principles vs project management, counted once"
+ },
+ {
+  "pair": "cp-200",
+  "relationship": "broader_narrower",
+  "note": "Data Factory is an Azure service"
+ }
+]

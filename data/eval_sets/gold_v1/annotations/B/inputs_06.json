@@ -1,0 +1,3059 @@
+[
+ {
+  "id": "i-1501",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.1.a",
+   "onet:2.A.1.d",
+   "onet:2.B.1.b"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "people skills: interpersonal, communication or teamwork"
+ },
+ {
+  "id": "i-1502",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.a"
+  ],
+  "preferred": "onet:2.B.1.a",
+  "confidence": "low",
+  "note": "empathy ~ social perceptiveness"
+ },
+ {
+  "id": "i-1503",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "tool:Django"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "low",
+  "note": "Django REST framework APIs"
+ },
+ {
+  "id": "i-1504",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+   "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8"
+  ],
+  "preferred": "esco:07889c08-7220-47c8-96f7-6068fbea00dc",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1505",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "ethical hacking"
+ },
+ {
+  "id": "i-1506",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Tenable Nessus"
+  ],
+  "preferred": "tool:Tenable Nessus",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1507",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:NoSQL"
+  ],
+  "preferred": "tool:NoSQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1508",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:e043aeeb-78f5-4049-afbf-12bba52225bc",
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4",
+   "esco:117373c8-f04b-4fff-8683-aebe36edac81"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "hardware stuff vague"
+ },
+ {
+  "id": "i-1509",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1510",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Computer forensic software"
+  ],
+  "preferred": "tool:Computer forensic software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1511",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Bootstrap"
+  ],
+  "preferred": "tool:Bootstrap",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1512",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "support vague"
+ },
+ {
+  "id": "i-1513",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Go"
+  ],
+  "preferred": "tool:Go",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1514",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917"
+  ],
+  "preferred": "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1515",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Elasticsearch"
+  ],
+  "preferred": "tool:Elasticsearch",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1516",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1517",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:d0c6d77e-cb25-4770-bf77-2073fc5f7523",
+   "tool:IBM Terraform"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "infrastructure vague"
+ },
+ {
+  "id": "i-1518",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1519",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "load balancing: only vendor-specific protocols"
+ },
+ {
+  "id": "i-1520",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Snowflake"
+  ],
+  "preferred": "tool:Snowflake",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1521",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait"
+ },
+ {
+  "id": "i-1522",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1523",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1524",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1525",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows Server"
+  ],
+  "preferred": "tool:Microsoft Windows Server",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1526",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Solidity",
+   "esco:670f8eea-f25b-4c3f-97ef-a4729d4c63d6"
+  ],
+  "preferred": "tool:Solidity",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1527",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "low",
+  "note": "",
+  "shared_owner_marks": {
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43": "valid",
+   "esco:a4d336a6-9ffd-402a-91cc-f359716ba4e0": "not_valid"
+  }
+ },
+ {
+  "id": "i-1528",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cascading style sheets CSS",
+   "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794"
+  ],
+  "preferred": "tool:Cascading style sheets CSS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1529",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JUnit"
+  ],
+  "preferred": "tool:JUnit",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1530",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8359bd04-d2cb-4757-af1f-39a921df9efe",
+   "esco:bb2b4485-2bad-402f-8517-44bf7d9afff4"
+  ],
+  "preferred": "esco:8359bd04-d2cb-4757-af1f-39a921df9efe",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1531",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de",
+   "esco:fd6d2981-3d4a-4ce2-9741-cfc98c5b74bd",
+   "tool:Data warehouse software"
+  ],
+  "preferred": "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1532",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "confidence": "low",
+  "note": "Meraki not present; Cisco closest"
+ },
+ {
+  "id": "i-1533",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+   "esco:2d008d5a-b7bd-46f7-bbb1-5d70a0af9c84",
+   "tool:Cost estimating software"
+  ],
+  "preferred": "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1534",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:918f5211-b99f-4b29-9a34-6e475583ef55",
+   "esco:941364b9-1375-4add-9889-d67bae99bc8c",
+   "onet:2.A.1.c"
+  ],
+  "preferred": "esco:918f5211-b99f-4b29-9a34-6e475583ef55",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1535",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:3D graphics software"
+  ],
+  "preferred": "tool:3D graphics software",
+  "confidence": "low",
+  "note": "Blender not present"
+ },
+ {
+  "id": "i-1536",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "high availability design not present"
+ },
+ {
+  "id": "i-1537",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1538",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.C.7.a"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "English present, Kiswahili absent"
+ },
+ {
+  "id": "i-1539",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Atlassian JIRA",
+   "tool:Issue tracking system software"
+  ],
+  "preferred": "tool:Atlassian JIRA",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1540",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "network skills vague"
+ },
+ {
+  "id": "i-1541",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ecc4552a-92c5-4222-b18d-faf5ac841080"
+  ],
+  "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1542",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+   "tool:Help desk software"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "tech support generic"
+ },
+ {
+  "id": "i-1543",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+   "onet:2.A.2.a"
+  ],
+  "preferred": "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1544",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Git",
+   "tool:Version control software"
+  ],
+  "preferred": "tool:Git",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1545",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "speech-to-text not present"
+ },
+ {
+  "id": "i-1546",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de"
+  ],
+  "preferred": "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1547",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1548",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Zabbix"
+  ],
+  "preferred": "tool:Zabbix",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1549",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+   "tool:Database design software"
+  ],
+  "preferred": "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1550",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:PySpark"
+  ],
+  "preferred": "tool:PySpark",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1551",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+   "esco:94dd823c-148e-4614-a6e8-99249b16357d"
+  ],
+  "preferred": "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+  "confidence": "low",
+  "note": "certification itself not a node"
+ },
+ {
+  "id": "i-1552",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web browser software"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1553",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python",
+   "esco:5ef0c719-5bcb-49f8-b8eb-824388225333"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1554",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "seaborn not present"
+ },
+ {
+  "id": "i-1555",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Power BI"
+  ],
+  "preferred": "tool:Microsoft Power BI",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1556",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Jenkins CI"
+  ],
+  "preferred": "tool:Jenkins CI",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1557",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "VLANs not present"
+ },
+ {
+  "id": "i-1558",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:54924a2c-daca-40d3-9716-4b38ceb04f38"
+  ],
+  "preferred": "esco:54924a2c-daca-40d3-9716-4b38ceb04f38",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1559",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Remote access software",
+   "tool:Remote control software"
+  ],
+  "preferred": "tool:Remote access software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1560",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Oracle Java",
+   "esco:5b9cde20-f1b9-4adc-bfb3-dbf70b14138d"
+  ],
+  "preferred": "tool:Oracle Java",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1561",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:IBM QRadar SIEM"
+  ],
+  "preferred": "tool:IBM QRadar SIEM",
+  "confidence": "low",
+  "note": "Wazuh not present; SIEM node"
+ },
+ {
+  "id": "i-1562",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Wide area network WAN software"
+  ],
+  "preferred": "tool:Wide area network WAN software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1563",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Neo4j"
+  ],
+  "preferred": "tool:Neo4j",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1564",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Project"
+  ],
+  "preferred": "tool:Microsoft Project",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1565",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait"
+ },
+ {
+  "id": "i-1566",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows Server"
+  ],
+  "preferred": "tool:Microsoft Windows Server",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1567",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:WordPress"
+  ],
+  "preferred": "tool:WordPress",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1568",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3"
+  ],
+  "preferred": "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1569",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+   "tool:Unified modeling language UML"
+  ],
+  "preferred": "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1570",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308",
+  "confidence": "low",
+  "note": "solution architecture ~ define software architecture"
+ },
+ {
+  "id": "i-1571",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Tenable Nessus",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+  ],
+  "preferred": "tool:Tenable Nessus",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1572",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Redis"
+  ],
+  "preferred": "tool:Redis",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1573",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1574",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:React"
+  ],
+  "preferred": "tool:React",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1575",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.l",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29"
+  ],
+  "preferred": "onet:2.B.3.l",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1576",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Remote control software",
+   "tool:Remote access software"
+  ],
+  "preferred": "tool:Remote control software",
+  "confidence": "low",
+  "note": "TeamViewer is remote control software"
+ },
+ {
+  "id": "i-1577",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:R"
+  ],
+  "preferred": "tool:R",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1578",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1579",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137"
+  ],
+  "preferred": "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1580",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1581",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.2.b"
+  ],
+  "preferred": "onet:2.A.2.b",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1582",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1583",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:GitHub"
+  ],
+  "preferred": "tool:GitHub",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1584",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Web application software",
+   "tool:Web browser software",
+   "tool:Web framework software",
+   "tool:Web server software"
+  ],
+  "preferred": null,
+  "confidence": "high",
+  "note": "web stuff vague"
+ },
+ {
+  "id": "i-1585",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "onet:2.C.3.c"
+  ],
+  "preferred": "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1586",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a skill"
+ },
+ {
+  "id": "i-1587",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bec4359e-cb92-468f-a997-8fb28e32fba9"
+  ],
+  "preferred": "esco:bec4359e-cb92-468f-a997-8fb28e32fba9",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1588",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Security incident management software"
+  ],
+  "preferred": "tool:Security incident management software",
+  "confidence": "low",
+  "note": "incident response playbooks"
+ },
+ {
+  "id": "i-1589",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "networks vague"
+ },
+ {
+  "id": "i-1590",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1591",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Hypertext markup language HTML",
+   "esco:0af062de-eb43-41e9-9b96-249e2cd22d26"
+  ],
+  "preferred": "tool:Hypertext markup language HTML",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1592",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:5898d99a-62a4-4e10-a2e3-0d815ce44248"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "cyber vague"
+ },
+ {
+  "id": "i-1593",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Scikit-learn"
+  ],
+  "preferred": "tool:Scikit-learn",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1594",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Solidity"
+  ],
+  "preferred": "tool:Solidity",
+  "confidence": "low",
+  "note": "Truffle listed under Solidity"
+ },
+ {
+  "id": "i-1595",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f0f5bb34-71df-4715-9c9e-03567b76ec8f"
+  ],
+  "preferred": "esco:f0f5bb34-71df-4715-9c9e-03567b76ec8f",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1596",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1597",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1598",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "tool:JavaScript"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1599",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:pandas",
+   "tool:NumPy"
+  ],
+  "preferred": "tool:pandas",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1600",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:MySQL",
+   "tool:PHP"
+  ],
+  "preferred": "tool:MySQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1601",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Load testing software",
+   "tool:Stress testing software",
+   "tool:Network and application load and performance testing software"
+  ],
+  "preferred": "tool:Load testing software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1602",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f6424ebb-8401-446b-9f7e-10d7c854da02",
+   "tool:Simulation software"
+  ],
+  "preferred": "esco:f6424ebb-8401-446b-9f7e-10d7c854da02",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1603",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft ASP.NET Core MVC",
+   "tool:Microsoft ASP.NET"
+  ],
+  "preferred": "tool:Microsoft ASP.NET Core MVC",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1604",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows"
+  ],
+  "preferred": "tool:Microsoft Windows",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1605",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137"
+  ],
+  "preferred": "esco:4707da90-9cfc-46ca-8de0-38a0b7bfb137",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1606",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "YARA not present"
+ },
+ {
+  "id": "i-1607",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "high",
+  "note": "Express itself not a node"
+ },
+ {
+  "id": "i-1608",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+   "esco:0da516ee-e70e-4384-be13-f5ff80be8127"
+  ],
+  "preferred": "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1609",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Computer forensic software",
+   "esco:28a0fe16-4e03-4d5e-8f0e-5198309e77a9"
+  ],
+  "preferred": "tool:Computer forensic software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1610",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:R"
+  ],
+  "preferred": "tool:R",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1611",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Oracle Database",
+   "esco:de9f85ba-e77f-48fd-8c66-f5ebaf32d655"
+  ],
+  "preferred": "tool:Oracle Database",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1612",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Apache JMeter",
+   "tool:Load testing software"
+  ],
+  "preferred": "tool:Apache JMeter",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1613",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cisco IOS",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": "tool:Cisco IOS",
+  "confidence": "low",
+  "note": "CCNA cert"
+ },
+ {
+  "id": "i-1614",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Eclipse IDE"
+  ],
+  "preferred": "tool:Eclipse IDE",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1615",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1616",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Firewall software",
+   "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+   "esco:054f26ab-cfdc-4077-883c-1c4c9e9b310a"
+  ],
+  "preferred": "tool:Firewall software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1617",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Firewall software"
+  ],
+  "preferred": "tool:Firewall software",
+  "confidence": "low",
+  "note": "ModSecurity is a WAF"
+ },
+ {
+  "id": "i-1618",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": "ZAP not present"
+ },
+ {
+  "id": "i-1619",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Event log monitor software",
+   "tool:Intrusion detection system IDS",
+   "tool:Computer Associates Log Analyzer"
+  ],
+  "preferred": "tool:Event log monitor software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1620",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Figma",
+   "esco:797a4416-0b8d-44f3-8fcd-eb10bd0be6b4"
+  ],
+  "preferred": "tool:Figma",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1621",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft SQL Server Integration Services SSIS"
+  ],
+  "preferred": "tool:Microsoft SQL Server Integration Services SSIS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1622",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "wireless too vague"
+ },
+ {
+  "id": "i-1623",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1624",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bec4359e-cb92-468f-a997-8fb28e32fba9"
+  ],
+  "preferred": "esco:bec4359e-cb92-468f-a997-8fb28e32fba9",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1625",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft SQL Server"
+  ],
+  "preferred": "tool:Microsoft SQL Server",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1626",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Selenium",
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73"
+  ],
+  "preferred": "tool:Selenium",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1627",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1628",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:3c2e6f38-42c1-46ec-b782-5854b2db330d",
+   "esco:f7e051fc-8f7b-45b3-8911-8ffb9b951f4a"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1629",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "CTF not present"
+ },
+ {
+  "id": "i-1630",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Bootstrap"
+  ],
+  "preferred": "tool:Bootstrap",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1631",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Zeplin not present"
+ },
+ {
+  "id": "i-1632",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Wireshark",
+   "tool:Packet analysis software"
+  ],
+  "preferred": "tool:Wireshark",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1633",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.d",
+   "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b"
+  ],
+  "preferred": "onet:2.B.1.d",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1634",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "ISTQB certification not present"
+ },
+ {
+  "id": "i-1635",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.C.7.a"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "English present, Swahili absent"
+ },
+ {
+  "id": "i-1636",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "developing apps unclear platform"
+ },
+ {
+  "id": "i-1637",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:C++"
+  ],
+  "preferred": "tool:C++",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1638",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1639",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1640",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1641",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1642",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1643",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Bidirectional encoder representations from transformers (BERT)"
+  ],
+  "preferred": "tool:Bidirectional encoder representations from transformers (BERT)",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1644",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Vue.js"
+  ],
+  "preferred": "tool:Vue.js",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1645",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data entry software"
+  ],
+  "preferred": "tool:Data entry software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1646",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Node.js",
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:Node.js",
+  "confidence": "low",
+  "note": "Express not a node"
+ },
+ {
+  "id": "i-1647",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:d3eccb86-f02d-4950-bfbd-20b9510774a1",
+   "esco:fdf15b35-9028-4acb-bfd2-43f00a015cd9"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "organization vague"
+ },
+ {
+  "id": "i-1648",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "hardening not present"
+ },
+ {
+  "id": "i-1649",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Spring Boot"
+  ],
+  "preferred": "tool:Spring Boot",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1650",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+  ],
+  "preferred": "esco:902fb91c-3113-4004-9b4f-79aa86b638b7",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1651",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1652",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Oracle Database"
+  ],
+  "preferred": "tool:Oracle Database",
+  "confidence": "low",
+  "note": "RMAN is Oracle backup tool"
+ },
+ {
+  "id": "i-1653",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows"
+  ],
+  "preferred": "tool:Microsoft Windows",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1654",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bd14968e-e409-45af-b362-3495ed7b10e0"
+  ],
+  "preferred": "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1655",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "CTF not present"
+ },
+ {
+  "id": "i-1656",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Flask",
+   "tool:Python"
+  ],
+  "preferred": "tool:Flask",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1657",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1658",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:e465a154-93f7-4973-9ce1-31659fe16dd2"
+  ],
+  "preferred": "esco:e465a154-93f7-4973-9ce1-31659fe16dd2",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1659",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "networking basics vague"
+ },
+ {
+  "id": "i-1660",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "ggplot2 not a node"
+ },
+ {
+  "id": "i-1661",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087",
+   "esco:11eebd42-44ab-401d-8a2c-bdb9fc9beb50",
+   "esco:86d2e2ea-1ba2-4aa6-b465-8a1f9abc81b8"
+  ],
+  "preferred": "esco:6833e58b-eceb-4599-9375-1b7e6ec64087",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1662",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:dba46f87-0831-49cd-a1c7-340a653c0221",
+   "esco:0a9acb6b-1139-4be9-b431-3a80a959f2f4",
+   "esco:bec4359e-cb92-468f-a997-8fb28e32fba9"
+  ],
+  "preferred": "esco:dba46f87-0831-49cd-a1c7-340a653c0221",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1663",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:5b6fb4d6-582e-4187-9f17-f6e582f8714f",
+   "esco:5f00bf83-f776-4488-b312-6725f8b6783a"
+  ],
+  "preferred": "esco:5b6fb4d6-582e-4187-9f17-f6e582f8714f",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1664",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1665",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Oracle Java"
+  ],
+  "preferred": "tool:Oracle Java",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1666",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Index tuning software",
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "tool:Index tuning software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1667",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "gap analysis not present"
+ },
+ {
+  "id": "i-1668",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:Web application software"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1669",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Snowflake",
+   "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de"
+  ],
+  "preferred": "tool:Snowflake",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1670",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+   "tool:Unit testing software"
+  ],
+  "preferred": "esco:7961413f-61d0-4722-9cd9-20a050a29899",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1671",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ca73ac82-867a-4afa-9732-834aebe896ff"
+  ],
+  "preferred": "esco:ca73ac82-867a-4afa-9732-834aebe896ff",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1672",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:TensorFlow",
+   "tool:Keras"
+  ],
+  "preferred": "tool:TensorFlow",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1673",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Active Directory",
+   "tool:Active directory software",
+   "esco:d1e954cd-d290-4d80-97c0-7969960d2928"
+  ],
+  "preferred": "tool:Microsoft Active Directory",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1674",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+   "tool:Database software"
+  ],
+  "preferred": "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1675",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "WLAN/access points not present"
+ },
+ {
+  "id": "i-1676",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1677",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "device setup: no node"
+ },
+ {
+  "id": "i-1678",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.b",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1679",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:MongoDB"
+  ],
+  "preferred": "tool:MongoDB",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1680",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+  ],
+  "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1681",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.1.d"
+  ],
+  "preferred": "onet:2.A.1.d",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1682",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Git"
+  ],
+  "preferred": "tool:Git",
+  "confidence": "high",
+  "note": "",
+  "shared_owner_marks": {
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f": "not_valid",
+   "tool:Git": "valid"
+  }
+ },
+ {
+  "id": "i-1683",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:LangChain"
+  ],
+  "preferred": "tool:LangChain",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1684",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Git"
+  ],
+  "preferred": "tool:Git",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1685",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.j",
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "esco:6a609f8f-1451-4102-ad2d-62c5270e1237"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "office equipment vague"
+ },
+ {
+  "id": "i-1686",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Bootstrap"
+  ],
+  "preferred": "tool:Bootstrap",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1687",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+   "esco:ed8de897-adbe-4f0e-b4d2-534953e64c72"
+  ],
+  "preferred": "esco:6fa1c2c0-a012-4ca0-9642-e01569ba322c",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1688",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JUnit"
+  ],
+  "preferred": "tool:JUnit",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1689",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.4.e"
+  ],
+  "preferred": "onet:2.B.4.e",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1690",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b9aad733-959a-4178-984f-53e4bd05b420"
+  ],
+  "preferred": "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1691",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Oracle Java",
+   "esco:5b9cde20-f1b9-4adc-bfb3-dbf70b14138d"
+  ],
+  "preferred": "tool:Oracle Java",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1692",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Shell script"
+  ],
+  "preferred": "tool:Shell script",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1693",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71"
+  ],
+  "preferred": "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1694",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Security incident management software"
+  ],
+  "preferred": "tool:Security incident management software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1695",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8359bd04-d2cb-4757-af1f-39a921df9efe",
+   "esco:bb2b4485-2bad-402f-8517-44bf7d9afff4"
+  ],
+  "preferred": "esco:8359bd04-d2cb-4757-af1f-39a921df9efe",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1696",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Adobe XD"
+  ],
+  "preferred": "tool:Adobe XD",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1697",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1698",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1699",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Computer forensic software"
+  ],
+  "preferred": "tool:Computer forensic software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1700",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1701",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Transact-SQL",
+   "tool:Oracle PL/SQL",
+   "tool:Structured query language SQL"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "stored procedures: T-SQL vs PL/SQL vs generic"
+ },
+ {
+  "id": "i-1702",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Vue.js"
+  ],
+  "preferred": "tool:Vue.js",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1703",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Project",
+   "tool:Scheduling software"
+  ],
+  "preferred": "tool:Microsoft Project",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1704",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "device setup: no node"
+ },
+ {
+  "id": "i-1705",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a skill"
+ },
+ {
+  "id": "i-1706",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Single sign-on SSO"
+  ],
+  "preferred": "tool:Single sign-on SSO",
+  "confidence": "high",
+  "note": "Okta SSO"
+ },
+ {
+  "id": "i-1707",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:R"
+  ],
+  "preferred": "tool:R",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1708",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.k",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "esco:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"
+  ],
+  "preferred": "onet:2.B.3.k",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1709",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "tool:Selenium"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "low",
+  "note": "Cypress is a test automation tool; not a node"
+ },
+ {
+  "id": "i-1710",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Microsoft Visual Studio.NET",
+   "tool:Microsoft ASP.NET",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": ".NET or network?"
+ },
+ {
+  "id": "i-1711",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3"
+  ],
+  "preferred": "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1712",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows"
+  ],
+  "preferred": "tool:Microsoft Windows",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1713",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Structured query language SQL",
+   "esco:75f839c2-fd9a-4ad3-8921-6e734608568d"
+  ],
+  "preferred": "tool:Structured query language SQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1714",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.2.b"
+  ],
+  "preferred": "onet:2.A.2.b",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1715",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Defect tracking software",
+   "esco:918f5211-b99f-4b29-9a34-6e475583ef55"
+  ],
+  "preferred": "tool:Defect tracking software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1716",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.A.2.d",
+   "onet:2.B.3.g",
+   "tool:Remote monitoring software"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "monitoring: what is monitored unclear"
+ },
+ {
+  "id": "i-1717",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "touch typing not present"
+ },
+ {
+  "id": "i-1718",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fff0e2cd-d0bd-4b02-9daf-158b79d9688a"
+  ],
+  "preferred": "esco:fff0e2cd-d0bd-4b02-9daf-158b79d9688a",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1719",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+   "tool:Software development tools"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "support tools vague"
+ },
+ {
+  "id": "i-1720",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Shiny",
+   "tool:R"
+  ],
+  "preferred": "tool:Shiny",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1721",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2"
+  ],
+  "preferred": "esco:5da73370-f6b9-417d-a94c-09bf01f84aa2",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1722",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+   "tool:Unified modeling language UML"
+  ],
+  "preferred": "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1723",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1724",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows"
+  ],
+  "preferred": "tool:Microsoft Windows",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1725",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "VLANs not present"
+ },
+ {
+  "id": "i-1726",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Apache Maven"
+  ],
+  "preferred": "tool:Apache Maven",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1727",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Apache Spark"
+  ],
+  "preferred": "tool:Apache Spark",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1728",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Firewall software"
+  ],
+  "preferred": "tool:Firewall software",
+  "confidence": "low",
+  "note": "FortiGate not present"
+ },
+ {
+  "id": "i-1729",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:Web application software"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1730",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Backup and archival software",
+   "esco:cf3e976d-2c3e-495c-a874-f9e8a66d3b48",
+   "esco:82de2df7-0d6c-42b1-94ac-b3e9a029e917"
+  ],
+  "preferred": "tool:Backup and archival software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1731",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1732",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
+   "tool:Ticket information tracking software"
+  ],
+  "preferred": "esco:6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1733",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1734",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1735",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "basic networks vague"
+ },
+ {
+  "id": "i-1736",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bd14968e-e409-45af-b362-3495ed7b10e0"
+  ],
+  "preferred": "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1737",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Wi-Fi not present"
+ },
+ {
+  "id": "i-1738",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de"
+  ],
+  "preferred": "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1739",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait"
+ },
+ {
+  "id": "i-1740",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "ITIL not present"
+ },
+ {
+  "id": "i-1741",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+   "esco:8ff015a0-98ea-4d80-a23e-1f68110a919e",
+   "esco:2b7a79e5-84d8-4880-be66-3d9bb05bea17"
+  ],
+  "preferred": "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1742",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Firewall software",
+   "esco:e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+   "esco:054f26ab-cfdc-4077-883c-1c4c9e9b310a"
+  ],
+  "preferred": "tool:Firewall software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1743",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1744",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait"
+ },
+ {
+  "id": "i-1745",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:5b6fb4d6-582e-4187-9f17-f6e582f8714f"
+  ],
+  "preferred": "esco:5b6fb4d6-582e-4187-9f17-f6e582f8714f",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1746",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Linux"
+  ],
+  "preferred": "tool:Linux",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1747",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:af313ba1-a39e-49ac-99ec-94630fbe4f7f",
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7"
+  ],
+  "preferred": "esco:af313ba1-a39e-49ac-99ec-94630fbe4f7f",
+  "confidence": "low",
+  "note": "SQL injection exploitation"
+ },
+ {
+  "id": "i-1748",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Linux"
+  ],
+  "preferred": "tool:Linux",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1749",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Azure software"
+  ],
+  "preferred": "tool:Microsoft Azure software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1750",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:bd14968e-e409-45af-b362-3495ed7b10e0"
+  ],
+  "preferred": "esco:bd14968e-e409-45af-b362-3495ed7b10e0",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1751",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1752",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Diagramming software",
+   "esco:a47d194d-0ffd-4aaa-b695-fbbe0255000e",
+   "esco:901105f8-3a08-453e-b1dc-23619e317fd3"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "diagram types vague"
+ },
+ {
+  "id": "i-1753",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Postman"
+  ],
+  "preferred": "tool:Postman",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1754",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Angular"
+  ],
+  "preferred": "tool:Google Angular",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1755",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Kali Linux"
+  ],
+  "preferred": "tool:Kali Linux",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1756",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+  ],
+  "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+  "confidence": "low",
+  "note": "UAT is software testing with users"
+ },
+ {
+  "id": "i-1757",
+  "label": "ambiguous",
+  "acceptable": [
+   "onet:2.B.3.m",
+   "esco:8d4271ca-c9fd-40b3-875f-15f78332a49e",
+   "esco:3be6b84a-fa78-42b9-a8df-150cdb40b9d7"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "quality vague"
+ },
+ {
+  "id": "i-1758",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051"
+  ],
+  "preferred": "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1759",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Axure RP"
+  ],
+  "preferred": "tool:Axure RP",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1760",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Solidity"
+  ],
+  "preferred": "tool:Solidity",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1761",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "network printer setup: no node"
+ },
+ {
+  "id": "i-1762",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.b",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1763",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f049d050-12da-4e40-813a-2b5eb6df6b51"
+  ],
+  "preferred": "esco:f049d050-12da-4e40-813a-2b5eb6df6b51",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1764",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:PostgreSQL"
+  ],
+  "preferred": "tool:PostgreSQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1765",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1766",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Snowflake",
+   "tool:BigQuery"
+  ],
+  "preferred": "tool:Snowflake",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1767",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:d1a86399-24d8-415f-98b9-e8cbb6b04a26",
+   "esco:966f2fd3-3de6-42da-b87c-da924c6d7960"
+  ],
+  "preferred": "esco:d1a86399-24d8-415f-98b9-e8cbb6b04a26",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1768",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b",
+  "confidence": "low",
+  "note": "STP not a node"
+ },
+ {
+  "id": "i-1769",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "onet:2.C.3.c"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "web design: front-end vs UX vs visual"
+ },
+ {
+  "id": "i-1770",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Wide area network WAN software"
+  ],
+  "preferred": "tool:Wide area network WAN software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1771",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+   "tool:Database software"
+  ],
+  "preferred": "esco:43ae58b9-5e56-4524-b45a-b422777a0576",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1772",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+   "tool:Unified modeling language UML"
+  ],
+  "preferred": "esco:7193cb6d-8334-494f-86e5-21e6d03a47c3",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1773",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Linux"
+  ],
+  "preferred": "tool:Linux",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1774",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "networking skills vague"
+ },
+ {
+  "id": "i-1775",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968"
+  ],
+  "preferred": null,
+  "confidence": "low",
+  "note": "API stuff vague"
+ },
+ {
+  "id": "i-1776",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.2.b"
+  ],
+  "preferred": "onet:2.A.2.b",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1777",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Wi-Fi surveys not present"
+ },
+ {
+  "id": "i-1778",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:C#"
+  ],
+  "preferred": "tool:C#",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1779",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Apache Airflow"
+  ],
+  "preferred": "tool:Apache Airflow",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1780",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Hypertext markup language HTML",
+   "esco:0af062de-eb43-41e9-9b96-249e2cd22d26"
+  ],
+  "preferred": "tool:Hypertext markup language HTML",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1781",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+   "esco:dccbdbb8-7266-4fb4-a4cf-29056f102f12"
+  ],
+  "preferred": "esco:21c5790c-0930-4d74-b3b0-84caf5af12ea",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1782",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1783",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.b",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1784",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microservices Architecture"
+  ],
+  "preferred": "tool:Microservices Architecture",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1785",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "npm/Vite not present"
+ },
+ {
+  "id": "i-1786",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft PowerShell",
+   "tool:Microsoft Windows PowerShell"
+  ],
+  "preferred": "tool:Microsoft PowerShell",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1787",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051"
+  ],
+  "preferred": "esco:9d0d89be-bffa-4393-b6f6-8d05bea49051",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1788",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1789",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not present"
+ },
+ {
+  "id": "i-1790",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "trait"
+ },
+ {
+  "id": "i-1791",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Wireshark"
+  ],
+  "preferred": "tool:Wireshark",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1792",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+   "tool:Selenium"
+  ],
+  "preferred": "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+  "confidence": "low",
+  "note": "Cypress not a node"
+ },
+ {
+  "id": "i-1793",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Penetration testing software",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+  ],
+  "preferred": "tool:Penetration testing software",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1794",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b"
+  ],
+  "preferred": "esco:87de6e49-ca1c-42a4-8751-5ff0b991966b",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1795",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Wireshark",
+   "tool:Packet analysis software"
+  ],
+  "preferred": "tool:Wireshark",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1796",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "too vague"
+ },
+ {
+  "id": "i-1797",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Excel",
+   "esco:1973c966-f236-40c9-b2d4-5d71a89019be"
+  ],
+  "preferred": "tool:Microsoft Excel",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1798",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.k",
+   "esco:744442ac-c157-4350-8be0-ce454df4f5c5",
+   "esco:cf532795-a1fd-43bd-8407-6e43f877e6e3"
+  ],
+  "preferred": "onet:2.B.3.k",
+  "confidence": "low",
+  "note": ""
+ },
+ {
+  "id": "i-1799",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.b",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "i-1800",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:NoSQL"
+  ],
+  "preferred": "tool:NoSQL",
+  "confidence": "high",
+  "note": ""
+ }
+]

@@ -1,0 +1,2946 @@
+[
+ {
+  "id": "m-0281",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Portswigger BurP Suite"
+  ],
+  "preferred": "tool:Portswigger BurP Suite",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0282",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68"
+  ],
+  "preferred": "esco:7111b95d-0ce3-441a-9d92-4c75d05c4388",
+  "confidence": "low",
+  "note": "vague wording"
+ },
+ {
+  "id": "m-0283",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "tool:Access management software",
+   "tool:IBM Tivoli Identity Management TIM"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0284",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
+   "tool:Ticket information tracking software",
+   "tool:Help desk software"
+  ],
+  "preferred": "esco:6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0285",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Deployment software",
+   "esco:f0de4973-0a70-4644-8fd4-3a97080476f4",
+   "tool:Continuous integration software"
+  ],
+  "preferred": "tool:Deployment software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0286",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "low",
+  "note": "ethical vs malicious hacking"
+ },
+ {
+  "id": "m-0287",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Distributed database management software",
+   "tool:CodeFutures dbShards"
+  ],
+  "preferred": "tool:Distributed database management software",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0288",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+   "esco:1019423b-3368-4f83-b24f-19e5fa23e816"
+  ],
+  "preferred": "esco:2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+  "confidence": "high",
+  "note": "design patterns"
+ },
+ {
+  "id": "m-0289",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+   "tool:Computer forensic software"
+  ],
+  "preferred": "esco:118a9b27-1c5a-4214-b685-1a4d9e6365ea",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0290",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0291",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0292",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+   "tool:Active directory software",
+   "tool:Microsoft Active Directory"
+  ],
+  "preferred": "esco:ab49f767-296b-47d5-af56-0b4a69515b03",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0293",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8",
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc"
+  ],
+  "preferred": "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0294",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "tool:Operating system shells",
+   "tool:Bash"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0295",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0296",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "low",
+  "note": "Webflow absent; front-end design covered"
+ },
+ {
+  "id": "m-0297",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "m-0298",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Hypertext markup language HTML",
+   "tool:Cascading style sheets CSS"
+  ],
+  "preferred": "tool:Hypertext markup language HTML",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0299",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0300",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.A.1.c",
+   "esco:be40c4c3-a855-4d67-9ca5-6f4428c34b0d"
+  ],
+  "preferred": "onet:2.A.1.c",
+  "confidence": "low",
+  "note": "writing generic"
+ },
+ {
+  "id": "m-0301",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "m-0302",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Redis"
+  ],
+  "preferred": "tool:Redis",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0303",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0304",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:25f0ea33-b4a2-4f31-b7b4-7d20e827b180",
+   "esco:4216e465-7baa-4884-a241-54b197bb9278",
+   "esco:47a49cd6-097d-457a-9f7b-c290c14930d5"
+  ],
+  "preferred": "esco:25f0ea33-b4a2-4f31-b7b4-7d20e827b180",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0305",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c32ad607-0c4d-4e34-b73f-668298f7bf13",
+   "esco:ff64e9fc-36dd-4035-872a-83aa41dc1ad9",
+   "esco:7b3abd38-61ae-42a4-88bb-0884784f9ee1"
+  ],
+  "preferred": "esco:c32ad607-0c4d-4e34-b73f-668298f7bf13",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0306",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:5d74614d-32c8-4ca4-9818-6980e52424b1"
+  ],
+  "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+  "confidence": "low",
+  "note": "software vs security vs other testing"
+ },
+ {
+  "id": "m-0307",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows Server",
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "esco:0868eef3-2213-4572-9343-74931345a7d3"
+  ],
+  "preferred": "tool:Microsoft Windows Server",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0308",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:NoSQL"
+  ],
+  "preferred": "tool:NoSQL",
+  "confidence": "low",
+  "note": "CouchDB absent; NoSQL category"
+ },
+ {
+  "id": "m-0309",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Chatbot software",
+   "esco:fff0e2cd-d0bd-4b02-9daf-158b79d9688a"
+  ],
+  "preferred": "tool:Chatbot software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0310",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+   "tool:Firewall software",
+   "tool:Intrusion prevention system IPS",
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+  "confidence": "low",
+  "note": "network security"
+ },
+ {
+  "id": "m-0311",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fbbcb9ab-4b95-4e57-a756-30d08b7da7a5",
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98"
+  ],
+  "preferred": "esco:fbbcb9ab-4b95-4e57-a756-30d08b7da7a5",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0312",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a0bf9b9d-e53f-418c-a839-5d99eff718fe",
+   "esco:ef64005d-75bc-4597-8ed6-717edec5e55e",
+   "esco:1605025e-a179-421f-8f35-5b07d182a6b2"
+  ],
+  "preferred": "esco:a0bf9b9d-e53f-418c-a839-5d99eff718fe",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0313",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+   "esco:fbafa41f-cd05-4109-a649-8b44d306d779"
+  ],
+  "preferred": "esco:84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0314",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "m-0315",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:jQuery"
+  ],
+  "preferred": "tool:jQuery",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0316",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "NFT absent"
+ },
+ {
+  "id": "m-0317",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0318",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Office software"
+  ],
+  "preferred": "tool:Microsoft Office software",
+  "confidence": "low",
+  "note": "alias Microsoft 365"
+ },
+ {
+  "id": "m-0319",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Excel",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "tool:Data visualization software"
+  ],
+  "preferred": "tool:Microsoft Excel",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0320",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Local area network LAN software"
+  ],
+  "preferred": "tool:Local area network LAN software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0321",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0322",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "CAP theorem absent"
+ },
+ {
+  "id": "m-0323",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software",
+   "esco:dad7e408-162f-46a4-8567-db560e19e2fc",
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0324",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "speech recognition absent"
+ },
+ {
+  "id": "m-0325",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Flask"
+  ],
+  "preferred": "tool:Flask",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0326",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "ITIL not in catalogue"
+ },
+ {
+  "id": "m-0327",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:HashiCorp Vagrant"
+  ],
+  "preferred": "tool:HashiCorp Vagrant",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0328",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+   "tool:Cisco IOS"
+  ],
+  "preferred": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "confidence": "low",
+  "note": "Cisco coursework"
+ },
+ {
+  "id": "m-0329",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "esco:5d74614d-32c8-4ca4-9818-6980e52424b1"
+  ],
+  "preferred": "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+  "confidence": "low",
+  "note": "vague testing"
+ },
+ {
+  "id": "m-0330",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Sun Microsystems Java",
+   "tool:Oracle Java",
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript",
+  "confidence": "low",
+  "note": "Java vs JavaScript unclear"
+ },
+ {
+  "id": "m-0331",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:1019423b-3368-4f83-b24f-19e5fa23e816",
+   "tool:Graphical user interface GUI design software"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0332",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0333",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:SolarWinds"
+  ],
+  "preferred": "tool:SolarWinds",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0334",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Encryption software",
+   "esco:d32db06e-bd06-4415-a7ab-1b0ee68caa9a"
+  ],
+  "preferred": "tool:Encryption software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0335",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:BigQuery"
+  ],
+  "preferred": "tool:BigQuery",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0336",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Syntactically awesome style sheets SASS",
+   "esco:26fa7a33-a426-4cd5-9792-33bf668612e1"
+  ],
+  "preferred": "tool:Syntactically awesome style sheets SASS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0337",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "tool:Data analysis software"
+  ],
+  "preferred": "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0338",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+   "tool:Web framework software"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "low",
+  "note": "no backend node"
+ },
+ {
+  "id": "m-0339",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0340",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:NoSQL",
+   "tool:MongoDB"
+  ],
+  "preferred": "tool:NoSQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0341",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:209a5498-3449-4689-8ed9-bd08cab4fd78",
+   "onet:2.C.3.b"
+  ],
+  "preferred": "esco:209a5498-3449-4689-8ed9-bd08cab4fd78",
+  "confidence": "low",
+  "note": "field unspecified"
+ },
+ {
+  "id": "m-0342",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0343",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ff2c668-0e86-418a-a962-4958262ee337",
+   "esco:fe30a4b0-1a99-4fc7-afff-b162b8c834ba",
+   "onet:2.A.1.d",
+   "esco:c32ad607-0c4d-4e34-b73f-668298f7bf13"
+  ],
+  "preferred": "esco:7ff2c668-0e86-418a-a962-4958262ee337",
+  "confidence": "low",
+  "note": "soft skill"
+ },
+ {
+  "id": "m-0344",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:PostgreSQL"
+  ],
+  "preferred": "tool:PostgreSQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0345",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+   "tool:Shell script"
+  ],
+  "preferred": "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0346",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Tenable Nessus"
+  ],
+  "preferred": "tool:Tenable Nessus",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0347",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:JavaScript"
+  ],
+  "preferred": "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+  "confidence": "low",
+  "note": "no front-end node"
+ },
+ {
+  "id": "m-0348",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0349",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a7f0fbe0-c546-4f30-8e41-34a58c64567e",
+   "tool:Storage management software"
+  ],
+  "preferred": "esco:a7f0fbe0-c546-4f30-8e41-34a58c64567e",
+  "confidence": "low",
+  "note": "RAID storage"
+ },
+ {
+  "id": "m-0350",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996"
+  ],
+  "preferred": "esco:902fb91c-3113-4004-9b4f-79aa86b638b7",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0351",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:06358891-8424-43c5-891e-d40f226bef40",
+   "esco:bda0d115-f315-453e-99dc-f8b0e5862db3",
+   "esco:1dae8445-12e5-423a-bb26-824010e299b9",
+   "esco:3d3ee5c3-4286-457f-9f76-1704011f7e11"
+  ],
+  "preferred": "esco:06358891-8424-43c5-891e-d40f226bef40",
+  "confidence": "low",
+  "note": "IT, legal or policy compliance"
+ },
+ {
+  "id": "m-0352",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:d32db06e-bd06-4415-a7ab-1b0ee68caa9a",
+   "tool:Encryption software",
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b",
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc"
+  ],
+  "preferred": "esco:d32db06e-bd06-4415-a7ab-1b0ee68caa9a",
+  "confidence": "low",
+  "note": "cryptography vs cryptocurrency"
+ },
+ {
+  "id": "m-0353",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft SQL Server"
+  ],
+  "preferred": "tool:Microsoft SQL Server",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0354",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0355",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:d908a818-70ef-419e-9d60-8f459114cb2f",
+   "tool:Software as a service SaaS"
+  ],
+  "preferred": "esco:d908a818-70ef-419e-9d60-8f459114cb2f",
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0356",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f"
+  ],
+  "preferred": "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0357",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:e465a154-93f7-4973-9ce1-31659fe16dd2",
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+  ],
+  "preferred": "esco:e465a154-93f7-4973-9ce1-31659fe16dd2",
+  "confidence": "low",
+  "note": "vague AI"
+ },
+ {
+  "id": "m-0358",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:bf5d77ad-e18c-48d8-83f0-bc79c011c74a",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "tool:Network management software"
+  ],
+  "preferred": "esco:bf5d77ad-e18c-48d8-83f0-bc79c011c74a",
+  "confidence": "low",
+  "note": "social vs computer networking"
+ },
+ {
+  "id": "m-0359",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0360",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:5d74614d-32c8-4ca4-9818-6980e52424b1",
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+   "esco:78a74fd1-efc6-49dc-adb1-1b0fbe35c22c"
+  ],
+  "preferred": "esco:5d74614d-32c8-4ca4-9818-6980e52424b1",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0361",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2ddb1226-1117-4eb4-ae65-3a2f5a5a3c80",
+   "esco:501537a7-9d63-491d-ae02-09f04767ff1e",
+   "esco:fe1c2b32-7fe9-4668-affa-07ff658a68cf"
+  ],
+  "preferred": "esco:2ddb1226-1117-4eb4-ae65-3a2f5a5a3c80",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0362",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ecc4552a-92c5-4222-b18d-faf5ac841080"
+  ],
+  "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0363",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "esco:913e7e83-b8f8-4574-b1ca-1b38f3fd974a"
+  ],
+  "preferred": "esco:7253d98c-4a6d-4e37-8b6c-accca9f4b639",
+  "confidence": "high",
+  "note": "alias Test cases"
+ },
+ {
+  "id": "m-0364",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Access"
+  ],
+  "preferred": "tool:Microsoft Access",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0365",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f7e051fc-8f7b-45b3-8911-8ffb9b951f4a"
+  ],
+  "preferred": "esco:f7e051fc-8f7b-45b3-8911-8ffb9b951f4a",
+  "confidence": "low",
+  "note": "proof of stake vs point of sale"
+ },
+ {
+  "id": "m-0366",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce",
+   "tool:VMware"
+  ],
+  "preferred": "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0367",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Angular"
+  ],
+  "preferred": "tool:Google Angular",
+  "confidence": "low",
+  "note": "AngularJS older version"
+ },
+ {
+  "id": "m-0368",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.1.b"
+  ],
+  "preferred": "onet:2.B.1.b",
+  "confidence": "low",
+  "note": "Teamwork alias of Coordination"
+ },
+ {
+  "id": "m-0369",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd60bbcc-c3b6-4fa5-936c-eef5ae0a2d44",
+   "esco:d6e3395b-5ab6-4fba-969a-3df634e904c5"
+  ],
+  "preferred": "esco:fd60bbcc-c3b6-4fa5-936c-eef5ae0a2d44",
+  "confidence": "low",
+  "note": "cabling"
+ },
+ {
+  "id": "m-0370",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Hypertext markup language HTML",
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:Web browser software"
+  ],
+  "preferred": "tool:Hypertext markup language HTML",
+  "confidence": "low",
+  "note": "building, designing or browsing"
+ },
+ {
+  "id": "m-0371",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b",
+  "confidence": "low",
+  "note": "network protocols"
+ },
+ {
+  "id": "m-0372",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:PyTorch"
+  ],
+  "preferred": "tool:PyTorch",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0373",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "BIOS firmware absent"
+ },
+ {
+  "id": "m-0374",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Packet analysis software",
+   "tool:Packet analyzers",
+   "tool:Wireshark",
+   "tool:Tcpdump"
+  ],
+  "preferred": "tool:Packet analysis software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0375",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0376",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0377",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ecc4552a-92c5-4222-b18d-faf5ac841080"
+  ],
+  "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+  "confidence": "low",
+  "note": "LSTM deep learning"
+ },
+ {
+  "id": "m-0378",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4"
+  ],
+  "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0379",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:7e1f9657-ab4e-407c-842f-b846197060e3",
+   "esco:d83cba15-8511-4d07-b89a-9fde0d1d8241",
+   "esco:6a536b36-c5c7-4d10-bf67-a4fb0f8549b2"
+  ],
+  "preferred": "esco:7e1f9657-ab4e-407c-842f-b846197060e3",
+  "confidence": "low",
+  "note": "IT, quality or financial auditing"
+ },
+ {
+  "id": "m-0380",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9ce670ec-318c-4a91-9179-03437db728dc",
+   "esco:f28617ad-afdd-4041-814c-216153a38998"
+  ],
+  "preferred": "esco:9ce670ec-318c-4a91-9179-03437db728dc",
+  "confidence": "low",
+  "note": "software requirements specification"
+ },
+ {
+  "id": "m-0381",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b"
+  ],
+  "preferred": "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0382",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0383",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "tool:Structured query language SQL"
+  ],
+  "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0384",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Virtual local area network management software",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "tool:Virtual local area network management software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0385",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+   "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0386",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Selenium"
+  ],
+  "preferred": "tool:Selenium",
+  "shared_owner_marks": {
+   "esco:7557f0f4-b8bc-4ac0-b91e-222ab1ba744f": "not_valid",
+   "tool:Selenium": "valid"
+  },
+  "confidence": "high",
+  "note": "test automation tool"
+ },
+ {
+  "id": "m-0387",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:6a609f8f-1451-4102-ad2d-62c5270e1237",
+   "esco:0868eef3-2213-4572-9343-74931345a7d3",
+   "onet:2.C.1.b"
+  ],
+  "preferred": "esco:0868eef3-2213-4572-9343-74931345a7d3",
+  "confidence": "low",
+  "note": "office vs system admin"
+ },
+ {
+  "id": "m-0388",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0389",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6ad40ca3-dc34-4442-b23f-0b1b28936f56"
+  ],
+  "preferred": "esco:6ad40ca3-dc34-4442-b23f-0b1b28936f56",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0390",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.4.a",
+   "onet:2.A.1.e"
+  ],
+  "preferred": "onet:2.C.4.a",
+  "shared_owner_marks": {
+   "onet:2.A.1.e": "valid",
+   "onet:2.C.4.a": "valid"
+  },
+  "confidence": "high",
+  "note": "Calculus alias of Mathematics"
+ },
+ {
+  "id": "m-0391",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b"
+  ],
+  "preferred": "esco:6e4f75b4-c60f-4623-a9ba-760c8245753b",
+  "confidence": "low",
+  "note": "network packets"
+ },
+ {
+  "id": "m-0392",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Kubernetes"
+  ],
+  "preferred": "tool:Kubernetes",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0393",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+   "esco:27ed854c-15b8-4ba2-90e9-ae888a219703"
+  ],
+  "preferred": "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6",
+  "shared_owner_marks": {
+   "esco:633a3637-2c6b-40ae-ac38-289eb2a62aa6": "valid",
+   "esco:9e84a506-df06-4be3-874a-fa01293e3dd5": "not_valid"
+  },
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0394",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Security incident management software",
+   "esco:5898d99a-62a4-4e10-a2e3-0d815ce44248",
+   "esco:440d5784-52a5-4729-8b04-29f978bd896d"
+  ],
+  "preferred": "tool:Security incident management software",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0395",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "tool:Web application software"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "low",
+  "note": "building vs using"
+ },
+ {
+  "id": "m-0396",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0397",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:GraphQL"
+  ],
+  "preferred": "tool:GraphQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0398",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+   "tool:Microsoft Power Automate",
+   "esco:6a322874-e32f-4cd8-9683-badce67a7f73",
+   "esco:ce8ae6ca-61d8-4174-b457-641de96cbff4"
+  ],
+  "preferred": "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+  "confidence": "low",
+  "note": "scripting, test or process automation"
+ },
+ {
+  "id": "m-0399",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "wireless networks absent"
+ },
+ {
+  "id": "m-0400",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:949ced5f-7536-4614-ac60-563ffc91a2f2",
+   "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+   "esco:f5dd06b8-5d17-4932-9d03-957d0c4f5051"
+  ],
+  "preferred": "esco:0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5",
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0401",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Software as a service SaaS"
+  ],
+  "preferred": "tool:Software as a service SaaS",
+  "shared_owner_marks": {
+   "esco:83218cac-3599-417e-93d2-26013cdccd98": "not_valid",
+   "esco:eeca3780-8049-499f-a268-95a7ad26642c": "not_valid"
+  },
+  "confidence": "high",
+  "note": "SaaS delivery model; both owners are service-oriented modelling"
+ },
+ {
+  "id": "m-0402",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Docker"
+  ],
+  "preferred": "tool:Docker",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0403",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+   "esco:fbafa41f-cd05-4109-a649-8b44d306d779"
+  ],
+  "preferred": "esco:84f58e3d-8669-4d83-8c1d-5dd1e73a654f",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0404",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:NoSQL"
+  ],
+  "preferred": "tool:NoSQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0405",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+   "esco:2b7a79e5-84d8-4880-be66-3d9bb05bea17"
+  ],
+  "preferred": "esco:2450c3b3-e78e-435b-b84d-e05d984e71dc",
+  "confidence": "low",
+  "note": "MVC pattern"
+ },
+ {
+  "id": "m-0406",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:PHP",
+   "tool:MySQL",
+   "tool:LAMP Stack"
+  ],
+  "preferred": "tool:PHP",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0407",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b"
+  ],
+  "preferred": "esco:3be79ccc-a455-49b9-8c65-55c50071ba5b",
+  "confidence": "low",
+  "note": "accounting vs distributed ledger"
+ },
+ {
+  "id": "m-0408",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0409",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Defect tracking software"
+  ],
+  "preferred": "tool:Defect tracking software",
+  "confidence": "low",
+  "note": "TestRail alias on defect tracking"
+ },
+ {
+  "id": "m-0410",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0411",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6ad40ca3-dc34-4442-b23f-0b1b28936f56"
+  ],
+  "preferred": "esco:6ad40ca3-dc34-4442-b23f-0b1b28936f56",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0412",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:React Native"
+  ],
+  "preferred": "tool:React Native",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0413",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0414",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0415",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Docs"
+  ],
+  "preferred": "tool:Google Docs",
+  "shared_owner_marks": {
+   "esco:81633a44-f1db-4a01-a940-804c6905e330": "not_valid",
+   "tool:Google Docs": "valid"
+  },
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0416",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cascading style sheets CSS"
+  ],
+  "preferred": "tool:Cascading style sheets CSS",
+  "shared_owner_marks": {
+   "esco:c2999f0c-eb37-4cdf-b9b0-82107b628794": "not_valid",
+   "tool:Cascading style sheets CSS": "valid"
+  },
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0417",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "tool:Network management software",
+   "esco:bf5d77ad-e18c-48d8-83f0-bc79c011c74a"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "computer vs social networks"
+ },
+ {
+  "id": "m-0418",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "wireless absent"
+ },
+ {
+  "id": "m-0419",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Visio",
+   "tool:Diagramming software"
+  ],
+  "preferred": "tool:Microsoft Visio",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0420",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9889b795-d755-41b2-8afd-2e3c87a65a38"
+  ],
+  "preferred": "esco:9889b795-d755-41b2-8afd-2e3c87a65a38",
+  "confidence": "low",
+  "note": "CRM software use"
+ },
+ {
+  "id": "m-0421",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:dad7e408-162f-46a4-8567-db560e19e2fc",
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Network and system vulnerability assessment software"
+  ],
+  "preferred": "esco:dad7e408-162f-46a4-8567-db560e19e2fc",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0422",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+   "esco:8ff015a0-98ea-4d80-a23e-1f68110a919e",
+   "esco:f7e2eb04-3e50-4561-bce1-7e51a1fec308"
+  ],
+  "preferred": "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0423",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0424",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "m-0425",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Patch and update management software",
+   "tool:Patch management software",
+   "tool:Software distribution management software"
+  ],
+  "preferred": "tool:Patch and update management software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0426",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript",
+   "tool:Document Object Model DOM Scripting",
+   "tool:AJAX"
+  ],
+  "preferred": "tool:JavaScript",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0427",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Docker"
+  ],
+  "preferred": "tool:Docker",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0428",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+   "tool:Cisco IOS"
+  ],
+  "preferred": "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+  "confidence": "low",
+  "note": "CCNA is alias of Cisco IOS"
+ },
+ {
+  "id": "m-0429",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29"
+  ],
+  "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0430",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Spring Boot"
+  ],
+  "preferred": "tool:Spring Boot",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0431",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+   "esco:a4b2a278-2123-4450-8b43-be01c4f341da",
+   "esco:a56dec32-05ef-45de-a256-ee6741f356db"
+  ],
+  "preferred": "esco:a4346013-a967-4a58-a533-6b32ad1364c5",
+  "confidence": "low",
+  "note": "data vs online privacy"
+ },
+ {
+  "id": "m-0432",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "Group Policy absent"
+ },
+ {
+  "id": "m-0433",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+   "esco:3c76296d-4bbd-44ba-8eaa-95bf275f79b7",
+   "esco:cd5efa8c-e44d-4cbc-91c6-796018dbed68"
+  ],
+  "preferred": "esco:cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0434",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+   "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+   "tool:Data modeling software"
+  ],
+  "preferred": "esco:fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0435",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "m-0436",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+   "tool:Penetration testing software"
+  ],
+  "preferred": "esco:f4a85869-1855-45d5-a43c-7ee8cd451996",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0437",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:e465a154-93f7-4973-9ce1-31659fe16dd2"
+  ],
+  "preferred": "esco:e465a154-93f7-4973-9ce1-31659fe16dd2",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0438",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Data visualization software",
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389"
+  ],
+  "preferred": "tool:Data visualization software",
+  "confidence": "low",
+  "note": "Seaborn absent; visualisation covered"
+ },
+ {
+  "id": "m-0439",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+   "tool:Automated installation software"
+  ],
+  "preferred": "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0440",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:902fb91c-3113-4004-9b4f-79aa86b638b7"
+  ],
+  "preferred": "esco:902fb91c-3113-4004-9b4f-79aa86b638b7",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0441",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+   "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+   "esco:022dc430-872a-473a-9cf4-fed4895e58ad"
+  ],
+  "preferred": "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0442",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Domain name system DNS",
+   "tool:Berkeley Internet Domain Name BIND"
+  ],
+  "preferred": "tool:Domain name system DNS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0443",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44",
+   "esco:2a3a96a3-709e-4d60-81f6-d247d6933f13",
+   "esco:6833e58b-eceb-4599-9375-1b7e6ec64087"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "low",
+  "note": "vague security"
+ },
+ {
+  "id": "m-0444",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f7e051fc-8f7b-45b3-8911-8ffb9b951f4a"
+  ],
+  "preferred": "esco:f7e051fc-8f7b-45b3-8911-8ffb9b951f4a",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0445",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.3.e",
+   "esco:09f2f811-a3fb-4de3-a70f-6420a6935575",
+   "tool:Software development tools"
+  ],
+  "preferred": "onet:2.B.3.e",
+  "confidence": "low",
+  "note": "generic"
+ },
+ {
+  "id": "m-0446",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:1d86f05e-e9cc-40ce-99d8-2b21cc71b16b",
+   "tool:Deployment software"
+  ],
+  "preferred": "esco:1d86f05e-e9cc-40ce-99d8-2b21cc71b16b",
+  "confidence": "low",
+  "note": "software deployment"
+ },
+ {
+  "id": "m-0447",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+   "esco:97bd1c21-66b2-4b7e-ad0f-e3cda590e378",
+   "onet:2.B.4.g"
+  ],
+  "preferred": "esco:2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0448",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f6424ebb-8401-446b-9f7e-10d7c854da02"
+  ],
+  "preferred": "esco:f6424ebb-8401-446b-9f7e-10d7c854da02",
+  "confidence": "low",
+  "note": "eNSP absent; network simulation covered"
+ },
+ {
+  "id": "m-0449",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Sheets"
+  ],
+  "preferred": "tool:Google Sheets",
+  "shared_owner_marks": {
+   "esco:1973c966-f236-40c9-b2d4-5d71a89019be": "not_valid",
+   "tool:Google Sheets": "valid"
+  },
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0450",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6ad40ca3-dc34-4442-b23f-0b1b28936f56"
+  ],
+  "preferred": "esco:6ad40ca3-dc34-4442-b23f-0b1b28936f56",
+  "confidence": "low",
+  "note": "responsive design"
+ },
+ {
+  "id": "m-0451",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:0da6cab1-0ee9-4391-a299-f71fbf21db56",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0452",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Metasploit"
+  ],
+  "preferred": "tool:Metasploit",
+  "shared_owner_marks": {
+   "tool:Metasploit": "valid",
+   "tool:Penetration testing software": "not_valid"
+  },
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0453",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8"
+  ],
+  "preferred": "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0454",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Version control software",
+   "tool:Revision control software",
+   "tool:Source code management SCM software",
+   "esco:9d2e926f-53d9-41f5-98f3-19dfaa687f3f"
+  ],
+  "preferred": "tool:Version control software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0455",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Relational database management system software",
+   "tool:Relational database management software"
+  ],
+  "preferred": "tool:Relational database management system software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0456",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Oracle Database",
+   "esco:de9f85ba-e77f-48fd-8c66-f5ebaf32d655"
+  ],
+  "preferred": "tool:Oracle Database",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0457",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Microsoft Access",
+   "tool:Access management software"
+  ],
+  "preferred": "tool:Microsoft Access",
+  "confidence": "low",
+  "note": "MS Access vs access control"
+ },
+ {
+  "id": "m-0458",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8"
+  ],
+  "preferred": "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0459",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "WLAN absent"
+ },
+ {
+  "id": "m-0460",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "feature engineering absent"
+ },
+ {
+  "id": "m-0461",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Power BI"
+  ],
+  "preferred": "tool:Microsoft Power BI",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0462",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Windows Server"
+  ],
+  "preferred": "tool:Microsoft Windows Server",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0463",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:React"
+  ],
+  "preferred": "tool:React",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0464",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "low",
+  "note": "server-side programming"
+ },
+ {
+  "id": "m-0465",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+   "tool:Shell script",
+   "tool:Bash"
+  ],
+  "preferred": "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0466",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:MySQL"
+  ],
+  "preferred": "tool:MySQL",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0467",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:C++",
+   "esco:8369ede5-4200-4a44-be2e-bc60ef959259"
+  ],
+  "preferred": "tool:C++",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0468",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+   "esco:57231a22-4da7-49c8-97b8-75672feadf1e"
+  ],
+  "preferred": "esco:9ff9db9d-d14b-426e-83f3-e7449af6c79f",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0469",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "tool:Dynamic modeling software"
+  ],
+  "preferred": "esco:38d49d88-9069-467b-b29e-3cae739bdd4d",
+  "confidence": "low",
+  "note": "ML vs data vs 3D models"
+ },
+ {
+  "id": "m-0470",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0471",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd60bbcc-c3b6-4fa5-936c-eef5ae0a2d44",
+   "esco:d6e3395b-5ab6-4fba-969a-3df634e904c5"
+  ],
+  "preferred": "esco:fd60bbcc-c3b6-4fa5-936c-eef5ae0a2d44",
+  "confidence": "low",
+  "note": "cabling"
+ },
+ {
+  "id": "m-0472",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "STP ambiguous; absent"
+ },
+ {
+  "id": "m-0473",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd60bbcc-c3b6-4fa5-936c-eef5ae0a2d44",
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "lab cabling"
+ },
+ {
+  "id": "m-0474",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:JavaScript",
+   "tool:Document Object Model DOM Scripting"
+  ],
+  "preferred": "tool:JavaScript",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0475",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac",
+   "esco:118efbcd-8fc5-4668-81d1-c383a0d16070"
+  ],
+  "preferred": "esco:c2296e2e-5fef-4f24-a24f-e5b3792268be",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0476",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:RESTful API",
+   "esco:b0096dc5-2e2d-4bc1-8172-05bf486c3968"
+  ],
+  "preferred": "tool:RESTful API",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0477",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+   "esco:fbafa41f-cd05-4109-a649-8b44d306d779",
+   "tool:Database design software"
+  ],
+  "preferred": "esco:6c08403c-a5bb-4868-b8c2-b7d039c0e511",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0478",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0479",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cisco IOS",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a"
+  ],
+  "preferred": "tool:Cisco IOS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0480",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0481",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "file format absent"
+ },
+ {
+  "id": "m-0482",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "neuro-linguistic programming coaching, not NLP"
+ },
+ {
+  "id": "m-0483",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+   "tool:Network address management software"
+  ],
+  "preferred": "esco:b9aad733-959a-4178-984f-53e4bd05b420",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0484",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Domain name system DNS"
+  ],
+  "preferred": "tool:Domain name system DNS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0485",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0486",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+   "tool:Shell script"
+  ],
+  "preferred": "esco:5ef0c719-5bcb-49f8-b8eb-824388225333",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0487",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0488",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Appium"
+  ],
+  "preferred": "tool:Appium",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0489",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:9190d87f-9792-42e0-bb7f-64294a656bcd",
+   "tool:Remote monitoring software",
+   "esco:8efa6a7a-6556-4cb8-908d-59d3b5c58d2f",
+   "onet:2.A.2.d"
+  ],
+  "preferred": "esco:9190d87f-9792-42e0-bb7f-64294a656bcd",
+  "confidence": "low",
+  "note": "system, cloud or general monitoring"
+ },
+ {
+  "id": "m-0490",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:TypeScript"
+  ],
+  "preferred": "tool:TypeScript",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0491",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "tokens ambiguous; no node"
+ },
+ {
+  "id": "m-0492",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:e465a154-93f7-4973-9ce1-31659fe16dd2",
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43"
+  ],
+  "preferred": "esco:e465a154-93f7-4973-9ce1-31659fe16dd2",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0493",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0494",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Amazon Elastic Compute Cloud EC2",
+   "tool:Amazon Web Services AWS software"
+  ],
+  "preferred": "tool:Amazon Elastic Compute Cloud EC2",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0495",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Web browser software"
+  ],
+  "preferred": "tool:Web browser software",
+  "confidence": "low",
+  "note": "using browsers"
+ },
+ {
+  "id": "m-0496",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "phishing awareness training absent"
+ },
+ {
+  "id": "m-0497",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:de0be6e8-644c-4cc9-9c8d-925dd98dda56",
+   "esco:07dd856d-6141-48a7-a228-918f88494812",
+   "esco:7364cc39-b9c0-449f-9416-57723e2fd9c4"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0498",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0499",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+   "tool:Data visualization software",
+   "tool:Tableau"
+  ],
+  "preferred": "esco:c3e36d05-8ae8-447f-bb2b-6f9409f85389",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0500",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+   "esco:382c11ed-20d5-4ae7-b60e-15fec527fa6c"
+  ],
+  "preferred": "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+  "confidence": "low",
+  "note": "ARIMA forecasting"
+ },
+ {
+  "id": "m-0501",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "m-0502",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+   "esco:15a33d76-4640-438d-ae64-fdc0c1d3eebc",
+   "onet:2.C.1.e"
+  ],
+  "preferred": "esco:61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0503",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:CodeFutures dbShards",
+   "tool:Distributed database management software"
+  ],
+  "preferred": "tool:CodeFutures dbShards",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0504",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+   "tool:Web framework software"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "low",
+  "note": "no backend node"
+ },
+ {
+  "id": "m-0505",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:8088750d-8388-4170-a76f-48354c469c44"
+  ],
+  "preferred": "esco:8088750d-8388-4170-a76f-48354c469c44",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0506",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:R"
+  ],
+  "preferred": "tool:R",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0507",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:8369c2d6-c100-4cf6-bd83-9668d8678433"
+  ],
+  "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+  "confidence": "low",
+  "note": "image classification"
+ },
+ {
+  "id": "m-0508",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce"
+  ],
+  "preferred": "esco:ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0509",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Cisco IOS",
+   "esco:709ef32a-7435-48e2-8fa2-16e389ecab8a",
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "tool:Cisco IOS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0510",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0511",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Microsoft Azure software"
+  ],
+  "preferred": "tool:Microsoft Azure software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0512",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Python"
+  ],
+  "preferred": "tool:Python",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0513",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.4.a",
+   "onet:2.A.1.e"
+  ],
+  "preferred": "onet:2.C.4.a",
+  "shared_owner_marks": {
+   "onet:2.A.1.e": "valid",
+   "onet:2.C.4.a": "valid"
+  },
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0514",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de",
+   "tool:Data warehouse software",
+   "esco:fd6d2981-3d4a-4ce2-9741-cfc98c5b74bd"
+  ],
+  "preferred": "esco:3ec2e4d6-7000-4905-bf1a-c5b1679416de",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0515",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:fd60bbcc-c3b6-4fa5-936c-eef5ae0a2d44",
+   "esco:d6e3395b-5ab6-4fba-969a-3df634e904c5"
+  ],
+  "preferred": "esco:fd60bbcc-c3b6-4fa5-936c-eef5ae0a2d44",
+  "confidence": "low",
+  "note": "cabling"
+ },
+ {
+  "id": "m-0516",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "trading absent"
+ },
+ {
+  "id": "m-0517",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0518",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:TensorFlow"
+  ],
+  "preferred": "tool:TensorFlow",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0519",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0520",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+   "tool:Network architecture design software"
+  ],
+  "preferred": "esco:2164e860-7f20-48bc-b98c-5d9f8a561550",
+  "confidence": "low",
+  "note": "topology design"
+ },
+ {
+  "id": "m-0521",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "M-Pesa integration absent"
+ },
+ {
+  "id": "m-0522",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3e23db60-0c3d-498a-a6ac-ffbed0ecb033",
+   "esco:be64bb4c-84ac-4c83-8cc7-fc8593e15136"
+  ],
+  "preferred": "esco:3e23db60-0c3d-498a-a6ac-ffbed0ecb033",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0523",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:4fabca9a-7435-4f33-b1da-3cdb00340fdc",
+   "esco:485cdafb-3c7f-4104-ab1c-773e6131a39a",
+   "esco:0d282d6e-8cb9-4339-8e7d-cfafed96b5ed",
+   "esco:a4c2aa71-086f-4a46-b481-2619673c9dfe"
+  ],
+  "preferred": "esco:4fabca9a-7435-4f33-b1da-3cdb00340fdc",
+  "confidence": "low",
+  "note": "research type unclear"
+ },
+ {
+  "id": "m-0524",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+   "esco:07889c08-7220-47c8-96f7-6068fbea00dc"
+  ],
+  "preferred": "esco:50b100ea-74fd-4706-99db-3e4ca55e51b8",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0525",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Docker"
+  ],
+  "preferred": "tool:Docker",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0526",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+   "esco:8369c2d6-c100-4cf6-bd83-9668d8678433"
+  ],
+  "preferred": "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+  "shared_owner_marks": {
+   "esco:3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43": "valid",
+   "esco:a4d336a6-9ffd-402a-91cc-f359716ba4e0": "not_valid"
+  },
+  "confidence": "high",
+  "note": "ML language node is different"
+ },
+ {
+  "id": "m-0527",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+   "tool:Automated installation software",
+   "esco:db36f7f1-5900-45bd-9ffb-f2b19c4362ac"
+  ],
+  "preferred": "esco:b3c8eada-b0a8-4b61-968b-b354fbfb6874",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0528",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+   "esco:251b5528-693c-4ef9-a7f6-9924bb8d7ef8"
+  ],
+  "preferred": "esco:9035afc4-5317-455d-ab60-f32e2ecc6bfc",
+  "confidence": "low",
+  "note": "EVM, Ethereum runtime"
+ },
+ {
+  "id": "m-0529",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0530",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Document Object Model DOM Scripting"
+  ],
+  "preferred": "tool:Document Object Model DOM Scripting",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0531",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Google Cloud software"
+  ],
+  "preferred": "tool:Google Cloud software",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0532",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "wifi absent"
+ },
+ {
+  "id": "m-0533",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0534",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+   "tool:Structured query language SQL",
+   "esco:9cf681c7-89ec-470c-b651-7fe03786f586"
+  ],
+  "preferred": "esco:75f839c2-fd9a-4ad3-8921-6e734608568d",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0535",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff"
+  ],
+  "preferred": "esco:f9e788df-d68a-4f92-92c7-80e135fc35ff",
+  "confidence": "low",
+  "note": "Switching and routing alias"
+ },
+ {
+  "id": "m-0536",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Hypertext markup language HTML",
+   "esco:c4b1f326-224a-420a-b8b3-814a8f13b6cb",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28"
+  ],
+  "preferred": "tool:Hypertext markup language HTML",
+  "confidence": "low",
+  "note": "vague web pages"
+ },
+ {
+  "id": "m-0537",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "CV ambiguous; no node"
+ },
+ {
+  "id": "m-0538",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f058bf62-70d1-4f5e-be2a-8b26fac24a96",
+   "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+   "esco:3bddfd7c-ab6d-40c2-883d-5e97fb7640ba",
+   "onet:2.C.3.c"
+  ],
+  "preferred": "esco:fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+  "confidence": "low",
+  "note": "graphic, UI or software design"
+ },
+ {
+  "id": "m-0539",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "not a computing skill; no node fits"
+ },
+ {
+  "id": "m-0540",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.B.5.a",
+   "esco:65ca5e3c-940c-46b2-b277-aff394cfdd4c"
+  ],
+  "preferred": "onet:2.B.5.a",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0541",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+   "esco:945b8655-5577-4c3a-946a-842d4527afa8"
+  ],
+  "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+  "confidence": "low",
+  "note": "broad or loosely worded; best-fit nodes listed"
+ },
+ {
+  "id": "m-0542",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28"
+  ],
+  "preferred": "esco:b105ec9b-0857-41d6-8d07-a83e58b73d90",
+  "confidence": "low",
+  "note": "alias server side programming"
+ },
+ {
+  "id": "m-0543",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Syntactically awesome style sheets SASS"
+  ],
+  "preferred": "tool:Syntactically awesome style sheets SASS",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0544",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:ecc4552a-92c5-4222-b18d-faf5ac841080"
+  ],
+  "preferred": "esco:ecc4552a-92c5-4222-b18d-faf5ac841080",
+  "confidence": "low",
+  "note": "CNN deep learning"
+ },
+ {
+  "id": "m-0545",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71"
+  ],
+  "preferred": "esco:be727774-46d7-43d7-aee9-1a51b5cd8c71",
+  "confidence": "low",
+  "note": "Prophet forecasting"
+ },
+ {
+  "id": "m-0546",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+   "esco:4b51e76e-9e8a-455f-a289-5b48246345c4"
+  ],
+  "preferred": "esco:b4877620-c375-45f3-a678-2ddb4dae6a29",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0547",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:NumPy"
+  ],
+  "preferred": "tool:NumPy",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0548",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "PWA absent"
+ },
+ {
+  "id": "m-0549",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "low",
+  "note": "too vague"
+ },
+ {
+  "id": "m-0550",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "helicopter pilot, not Apache server"
+ },
+ {
+  "id": "m-0551",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:9190d87f-9792-42e0-bb7f-64294a656bcd",
+   "tool:Nagios",
+   "tool:Zabbix",
+   "tool:Operating system monitoring software"
+  ],
+  "preferred": "esco:9190d87f-9792-42e0-bb7f-64294a656bcd",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0552",
+  "label": "unambiguous",
+  "acceptable": [
+   "onet:2.C.3.a"
+  ],
+  "preferred": "onet:2.C.3.a",
+  "confidence": "low",
+  "note": "vague"
+ },
+ {
+  "id": "m-0553",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Scikit-learn"
+  ],
+  "preferred": "tool:Scikit-learn",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0554",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:Django"
+  ],
+  "preferred": "tool:Django",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0555",
+  "label": "no_concept",
+  "acceptable": [],
+  "preferred": null,
+  "confidence": "high",
+  "note": "neuro-linguistic programming coaching"
+ },
+ {
+  "id": "m-0556",
+  "label": "ambiguous",
+  "acceptable": [
+   "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+   "tool:Web server software",
+   "tool:Microsoft Windows Server"
+  ],
+  "preferred": "esco:f5ac9226-0ace-4d34-a1c3-7b3845834a98",
+  "confidence": "low",
+  "note": "vague servers"
+ },
+ {
+  "id": "m-0557",
+  "label": "unambiguous",
+  "acceptable": [
+   "tool:AJAX"
+  ],
+  "preferred": "tool:AJAX",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "m-0558",
+  "label": "ambiguous",
+  "acceptable": [
+   "tool:Sun Microsystems Java",
+   "tool:Oracle Java",
+   "tool:JavaScript"
+  ],
+  "preferred": "tool:JavaScript",
+  "confidence": "low",
+  "note": "Java vs JavaScript unclear"
+ },
+ {
+  "id": "m-0559",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+   "esco:f9670490-8aa4-4540-b121-d440a8294aab"
+  ],
+  "preferred": "esco:69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+  "confidence": "low",
+  "note": "backend database layer"
+ },
+ {
+  "id": "m-0560",
+  "label": "unambiguous",
+  "acceptable": [
+   "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833"
+  ],
+  "preferred": "esco:7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+  "confidence": "high",
+  "note": ""
+ }
+]

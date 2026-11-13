@@ -1,0 +1,4919 @@
+[
+ {
+  "id": "s-0004",
+  "wordings": [
+   [
+    "SQL Server",
+    "SSMS",
+    "reporting"
+   ],
+   [
+    "ms sql server",
+    "sql server mgt studio",
+    "making reports"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0004",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1242.00": 3,
+    "15-2051.01": 2,
+    "15-1243.00": 1,
+    "15-1243.01": 1
+   },
+   "plausible_careers": [
+    "15-1242.00",
+    "15-2051.01"
+   ],
+   "confidence": "low",
+   "note": "SQL Server and SSMS largely one capability; reporting is vague"
+  },
+  "annotation_2": {
+   "id": "s-0004",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.01": 3,
+    "15-1242.00": 2,
+    "15-2051.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.01",
+    "15-1242.00"
+   ],
+   "confidence": "high",
+   "note": "SQL Server, SSMS, reporting"
+  }
+ },
+ {
+  "id": "s-0006",
+  "wordings": [
+   [
+    "hardening Linux/Windows servers",
+    "applied cryptography",
+    "endpoint protection tools",
+    "Linux",
+    "works well in teams"
+   ],
+   [
+    "system hardening",
+    "cryptography (AES, RSA)",
+    "endpoint security (EDR)",
+    "Ubuntu",
+    "teamwork"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0006",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 3,
+    "15-1244.00": 1,
+    "15-1299.04": 1,
+    "15-1299.06": 1
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "hardening, cryptography and EDR point to security engineering/analysis"
+  },
+  "annotation_2": {
+   "id": "s-0006",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 2,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "server hardening, crypto, endpoint"
+  }
+ },
+ {
+  "id": "s-0017",
+  "wordings": [
+   [
+    "printer and scanner setup",
+    "SLA tracking",
+    "Windows 10/11 troubleshooting",
+    "O365 user setup",
+    "ITIL service management",
+    "solving problems"
+   ],
+   [
+    "Microsoft 365 administration",
+    "ITIL foundations",
+    "escalating tickets within SLA",
+    "configuring network printers",
+    "problem solving",
+    "fixing Windows errors"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0017",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 2,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "ITIL, SLA tickets, O365 setup, Windows and printers: user support"
+  },
+  "annotation_2": {
+   "id": "s-0017",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "helpdesk/ITIL/O365"
+  }
+ },
+ {
+  "id": "s-0029",
+  "wordings": [
+   [
+    "Web design",
+    "WordPress",
+    "Canva"
+   ],
+   [
+    "designing websites",
+    "wordpress",
+    "canva"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0029",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1255.00": 3,
+    "15-1254.00": 2
+   },
+   "plausible_careers": [
+    "15-1255.00",
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "web design, WordPress, Canva: web design"
+  },
+  "annotation_2": {
+   "id": "s-0029",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1255.00": 2
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1255.00"
+   ],
+   "confidence": "high",
+   "note": "web design, WordPress"
+  }
+ },
+ {
+  "id": "s-0036",
+  "wordings": [
+   [
+    "Node.js",
+    "express.js",
+    "mongodb and mongoose",
+    "graphql apis",
+    "TypeScript"
+   ],
+   [
+    "backend",
+    "expressjs REST endpoints",
+    "databases",
+    "graphql",
+    "TS typed JavaScript"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0036",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 3,
+    "15-1251.00": 2,
+    "15-1242.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Node/Express, MongoDB, GraphQL, TypeScript: backend web development"
+  },
+  "annotation_2": {
+   "id": "s-0036",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "Node/Express/Mongo/GraphQL"
+  }
+ },
+ {
+  "id": "s-0046",
+  "wordings": [
+   [
+    "IDS/IPS",
+    "log analysis",
+    "Nessus/OpenVAS scans",
+    "pfSense firewall",
+    "3-month attachment"
+   ],
+   [
+    "snort ids",
+    "analysing logs for intrusions",
+    "vulnerability assessment",
+    "firewall rules (pfSense/Fortinet)",
+    "internship experience"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0046",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 3,
+    "15-1299.05": 2,
+    "15-1299.04": 1,
+    "15-1299.06": 1,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "IDS/IPS, vulnerability scans, log analysis, pfSense: security analyst"
+  },
+  "annotation_2": {
+   "id": "s-0046",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 3,
+    "15-1299.05": 3,
+    "15-1299.04": 1,
+    "15-1299.06": 1,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "IDS/IPS, scans, firewall"
+  }
+ },
+ {
+  "id": "s-0053",
+  "wordings": [
+   [
+    "Computer repair",
+    "hardware",
+    "networking",
+    "M-Pesa Daraja API"
+   ],
+   [
+    "pc repair",
+    "hardware maintenance",
+    "basic networking",
+    "daraja api mpesa integration"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0053",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 2,
+    "15-1252.00": 1,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00",
+    "15-1231.00"
+   ],
+   "confidence": "low",
+   "note": "PC repair and hardware largely one capability; networking basic; Daraja API off-area"
+  },
+  "annotation_2": {
+   "id": "s-0053",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 2,
+    "15-1231.00": 1,
+    "15-1251.00": 1,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "low",
+   "note": "repair plus Daraja API; networking vague"
+  }
+ },
+ {
+  "id": "s-0067",
+  "wordings": [
+   [
+    "identity and access management",
+    "designing segmented secure networks",
+    "endpoint security (EDR)",
+    "Ubuntu",
+    "works well in teams"
+   ],
+   [
+    "access control",
+    "antivirus and edr management",
+    "network security",
+    "team player",
+    "Linux"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0067",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 3,
+    "15-1241.00": 1,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "IAM, segmented secure networks, EDR: security engineering"
+  },
+  "annotation_2": {
+   "id": "s-0067",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "IAM, EDR, secure network design"
+  }
+ },
+ {
+  "id": "s-0071",
+  "wordings": [
+   [
+    "PyTorch",
+    "transformers",
+    "Hugging Face",
+    "NLP"
+   ],
+   [
+    "pytorch",
+    "transformer models",
+    "hugging face",
+    "natural language processing"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0071",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1221.00": 3,
+    "15-2051.00": 3
+   },
+   "plausible_careers": [
+    "15-1221.00",
+    "15-2051.00"
+   ],
+   "confidence": "high",
+   "note": "PyTorch, transformers, Hugging Face, NLP: AI research/data science"
+  },
+  "annotation_2": {
+   "id": "s-0071",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1221.00": 3,
+    "15-2051.00": 2
+   },
+   "plausible_careers": [
+    "15-1221.00",
+    "15-2051.00"
+   ],
+   "confidence": "high",
+   "note": "transformers, NLP"
+  }
+ },
+ {
+  "id": "s-0076",
+  "wordings": [
+   [
+    "DNS, DHCP server config",
+    "monitoring with Nagios",
+    "VLSM subnetting",
+    "team player"
+   ],
+   [
+    "DHCP and DNS services",
+    "network monitoring (Zabbix/Nagios)",
+    "subnetting (IPv4/VLSM)",
+    "teamwork"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0076",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 3,
+    "15-1231.00": 3,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "DNS/DHCP, Nagios monitoring, VLSM subnetting: network admin/support"
+  },
+  "annotation_2": {
+   "id": "s-0076",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 3,
+    "15-1231.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "DNS/DHCP, Nagios, subnetting"
+  }
+ },
+ {
+  "id": "s-0079",
+  "wordings": [
+   [
+    "MySQL",
+    "database design",
+    "PHP"
+   ],
+   [
+    "mysql",
+    "designing databases",
+    "php"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0079",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1242.00": 2,
+    "15-1243.00": 2,
+    "15-1252.00": 1,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1242.00",
+    "15-1243.00"
+   ],
+   "confidence": "low",
+   "note": "PHP and MySQL with database design: web dev with database side"
+  },
+  "annotation_2": {
+   "id": "s-0079",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.00": 2,
+    "15-1242.00": 2,
+    "15-1254.00": 2,
+    "15-1251.00": 1,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1243.00",
+    "15-1242.00",
+    "15-1254.00"
+   ],
+   "confidence": "low",
+   "note": "MySQL, DB design, PHP"
+  }
+ },
+ {
+  "id": "s-0088",
+  "wordings": [
+   [
+    "basic matplotlib and seaborn",
+    "Jupyter/Colab",
+    "Linux"
+   ],
+   [
+    "learning seaborn plots",
+    "learning Jupyter Notebook",
+    "Ubuntu"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0088",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-2051.01": 2,
+    "15-2041.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-2051.01"
+   ],
+   "confidence": "low",
+   "note": "beginner matplotlib/seaborn and Jupyter: data analysis"
+  },
+  "annotation_2": {
+   "id": "s-0088",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 2,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-2051.00"
+   ],
+   "confidence": "low",
+   "note": "basic viz tools only"
+  }
+ },
+ {
+  "id": "s-0129",
+  "wordings": [
+   [
+    "Microsoft SQL Server and SSMS",
+    "ETL pipelines",
+    "normalisation (3NF)",
+    "MS Excel",
+    "git"
+   ],
+   [
+    "version control (Git)",
+    "SQL Server",
+    "microsoft excel",
+    "database design",
+    "data stuff"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0129",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1242.00": 3,
+    "15-1243.01": 2,
+    "15-1243.00": 2,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-1242.00",
+    "15-1243.01",
+    "15-1243.00"
+   ],
+   "confidence": "high",
+   "note": "SQL Server, ETL, 3NF: database/warehouse"
+  },
+  "annotation_2": {
+   "id": "s-0129",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.01": 3,
+    "15-1243.00": 2,
+    "15-1242.00": 2,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-1243.01",
+    "15-1243.00",
+    "15-1242.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0130",
+  "wordings": [
+   [
+    "Active Directory",
+    "Windows Server",
+    "Helpdesk ticketing",
+    "ITIL"
+   ],
+   [
+    "AD user admin",
+    "windows server 2019",
+    "ticketing systems helpdesk",
+    "ITIL foundation"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0130",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 3,
+    "15-1232.00": 3,
+    "15-1231.00": 1,
+    "15-1299.08": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "AD and Windows Server for sysadmin; helpdesk+ITIL for user support"
+  },
+  "annotation_2": {
+   "id": "s-0130",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 3,
+    "15-1232.00": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0132",
+  "wordings": [
+   [
+    "Ghidra",
+    "malware analysis",
+    "YARA",
+    "Volatility"
+   ],
+   [
+    "ghidra",
+    "analysing malware",
+    "yara",
+    "volatility"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0132",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.06": 3,
+    "15-1212.00": 2,
+    "15-1299.05": 2,
+    "15-1299.04": 1
+   },
+   "plausible_careers": [
+    "15-1299.06",
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "Ghidra, YARA, Volatility, malware analysis: forensics/malware"
+  },
+  "annotation_2": {
+   "id": "s-0132",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.06": 3,
+    "15-1212.00": 2,
+    "15-1299.04": 1
+   },
+   "plausible_careers": [
+    "15-1299.06"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0134",
+  "wordings": [
+   [
+    "Solidity"
+   ],
+   [
+    "solidity smart contracts"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0134",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I5"
+   ],
+   "grades": {
+    "15-1299.07": 3,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.07"
+   ],
+   "confidence": "high",
+   "note": "single specific item Solidity"
+  },
+  "annotation_2": {
+   "id": "s-0134",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I5"
+   ],
+   "grades": {
+    "15-1299.07": 2,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0141",
+  "wordings": [
+   [
+    "Python",
+    "Django",
+    "communication",
+    "Git"
+   ],
+   [
+    "python",
+    "django framework",
+    "comm skills",
+    "github"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0141",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 3,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "low",
+   "note": "Django plus Git point to web/software dev; Python generic"
+  },
+  "annotation_2": {
+   "id": "s-0141",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 2,
+    "15-1254.00": 2
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0142",
+  "wordings": [
+   [
+    "configuring Cisco routers and switches",
+    "CCNA-level networking",
+    "vlan and trunking"
+   ],
+   [
+    "VLANs",
+    "Cisco IOS",
+    "cisco ccna"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0142",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "Cisco IOS, CCNA, VLAN trunking"
+  },
+  "annotation_2": {
+   "id": "s-0142",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0144",
+  "wordings": [
+   [
+    "basic VLSM subnetting",
+    "basic VLANs",
+    "configuring Cisco routers and switches",
+    "SQL (basic queries)"
+   ],
+   [
+    "cisco router config",
+    "sql basics",
+    "some IP addressing and subnetting",
+    "some vlan and trunking"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0144",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "Cisco config, VLANs, subnetting (basic level)"
+  },
+  "annotation_2": {
+   "id": "s-0144",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0145",
+  "wordings": [
+   [
+    "Cisco IOS",
+    "OSPF routing",
+    "pandas",
+    "Power BI"
+   ],
+   [
+    "cisco ios cli",
+    "ospf",
+    "python pandas",
+    "power bi dashboards"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0145",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2,
+    "15-2051.01": 3,
+    "15-2051.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00",
+    "15-2051.01",
+    "15-2051.00"
+   ],
+   "confidence": "low",
+   "note": "two areas each with two specifics: Cisco IOS+OSPF and pandas+Power BI"
+  },
+  "annotation_2": {
+   "id": "s-0145",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 2,
+    "15-2051.01": 2,
+    "15-2051.00": 1,
+    "15-1244.00": 1,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-2051.01"
+   ],
+   "confidence": "low",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0150",
+  "wordings": [
+   [
+    "OSPF routing",
+    "subnetting (IPv4/VLSM)",
+    "wireshark traffic capture",
+    "verbal and written communication",
+    "3-month attachment",
+    "time management"
+   ],
+   [
+    "OSPF and EIGRP routing",
+    "IP addressing and subnetting",
+    "Wireshark",
+    "good communicator",
+    "industrial attachment experience",
+    "manages time well"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0150",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2,
+    "15-1212.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "OSPF, subnetting, Wireshark"
+  },
+  "annotation_2": {
+   "id": "s-0150",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1241.00": 2,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0151",
+  "wordings": [
+   [
+    "SLA tracking",
+    "fixing Windows errors",
+    "CCNA-level networking",
+    "STP/RSTP",
+    "fluent in English and Swahili"
+   ],
+   [
+    "SLA and ticket escalation handling",
+    "Windows 10/11 troubleshooting",
+    "cisco ccna",
+    "spanning tree protocol",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0151",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1232.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1232.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "SLA/Windows support plus CCNA/STP networking"
+  },
+  "annotation_2": {
+   "id": "s-0151",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 2,
+    "15-1232.00": 2,
+    "15-1244.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1232.00",
+    "15-1244.00"
+   ],
+   "confidence": "low",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0152",
+  "wordings": [
+   [
+    "jwt auth and role-based access",
+    "Flask",
+    "python programming"
+   ],
+   [
+    "token auth (JWT)",
+    "Python Flask microservices",
+    "Python"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0152",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 3,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Flask and JWT auth: backend web/API development"
+  },
+  "annotation_2": {
+   "id": "s-0152",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 2,
+    "15-1254.00": 2,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0156",
+  "wordings": [
+   [
+    "basic wireshark traffic capture",
+    "Kali Linux",
+    "intro to encryption algorithms",
+    "microsoft excel",
+    "SQL (basic queries)"
+   ],
+   [
+    "Excel",
+    "sql basics",
+    "encryption",
+    "networking",
+    "hacking tools"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0156",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 3,
+    "15-1299.04": 2,
+    "15-1299.05": 2,
+    "15-1231.00": 1,
+    "15-1299.06": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.04",
+    "15-1299.05"
+   ],
+   "confidence": "low",
+   "note": "Wireshark, Kali, encryption: security; second wording vaguer"
+  },
+  "annotation_2": {
+   "id": "s-0156",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.04": 2,
+    "15-1212.00": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.04",
+    "15-1212.00"
+   ],
+   "confidence": "low",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0158",
+  "wordings": [
+   [
+    "Software testing",
+    "testing software",
+    "testing",
+    "manual testing"
+   ],
+   [
+    "software testing",
+    "testing apps",
+    "manual tests",
+    "testing programs"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0158",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3"
+   ],
+   "grades": {
+    "15-1253.00": 3
+   },
+   "plausible_careers": [
+    "15-1253.00"
+   ],
+   "confidence": "high",
+   "note": "software testing restated"
+  },
+  "annotation_2": {
+   "id": "s-0158",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3"
+   ],
+   "grades": {
+    "15-1253.00": 2
+   },
+   "plausible_careers": [],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0159",
+  "wordings": [
+   [
+    "Linux",
+    "networking",
+    "scripting"
+   ],
+   [
+    "ubuntu",
+    "networks",
+    "bash"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0159",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 2,
+    "15-1231.00": 2,
+    "15-1299.08": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1231.00"
+   ],
+   "confidence": "low",
+   "note": "Linux and bash are specific-ish but generic; networking vague"
+  },
+  "annotation_2": {
+   "id": "s-0159",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I1",
+    "I4"
+   ],
+   "grades": {
+    "15-1244.00": 1,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [],
+   "confidence": "low",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0160",
+  "wordings": [
+   [
+    "Wi-Fi and LAN troubleshooting for users",
+    "network monitoring (Zabbix/Nagios)",
+    "MikroTik RouterOS",
+    "Spanning Tree Protocol",
+    "communication skills"
+   ],
+   [
+    "networking",
+    "monitoring",
+    "mikrotik routers",
+    "spanning-tree config",
+    "verbal and written communication"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0160",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 1,
+    "15-1232.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "MikroTik, Zabbix/Nagios, STP, LAN troubleshooting"
+  },
+  "annotation_2": {
+   "id": "s-0160",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1232.00": 1,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0172",
+  "wordings": [
+   [
+    "MS SQL Server",
+    "ER modelling",
+    "ETL development",
+    "version control (Git)",
+    "verbal and written communication"
+   ],
+   [
+    "SQL Server",
+    "ERD design",
+    "extract-transform-load processes",
+    "git",
+    "good communicator"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0172",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1242.00": 3,
+    "15-1243.00": 2,
+    "15-1243.01": 2,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-1242.00",
+    "15-1243.00",
+    "15-1243.01"
+   ],
+   "confidence": "high",
+   "note": "SQL Server, ER modelling, ETL"
+  },
+  "annotation_2": {
+   "id": "s-0172",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.01": 3,
+    "15-1243.00": 2,
+    "15-1242.00": 2,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-1243.01",
+    "15-1243.00",
+    "15-1242.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0173",
+  "wordings": [
+   [
+    "graphql apis",
+    "jwt auth and role-based access",
+    "TS typed JavaScript",
+    "sql basics",
+    "internship experience",
+    "version control (Git)"
+   ],
+   [
+    "APIs",
+    "git",
+    "security",
+    "coding",
+    "SQL (basic queries)",
+    "3-month attachment"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0173",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 3,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "GraphQL, JWT, TypeScript: web/backend dev"
+  },
+  "annotation_2": {
+   "id": "s-0173",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0179",
+  "wordings": [
+   [
+    "NLP (text classification)",
+    "RL (Q-learning, policy gradients)",
+    "machine learning"
+   ],
+   [
+    "natural language processing",
+    "reinforcement learning agents",
+    "ML models (classification, regression)"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0179",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-1221.00": 3
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-1221.00"
+   ],
+   "confidence": "high",
+   "note": "NLP, reinforcement learning, ML models"
+  },
+  "annotation_2": {
+   "id": "s-0179",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1221.00": 3,
+    "15-2051.00": 2
+   },
+   "plausible_careers": [
+    "15-1221.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0182",
+  "wordings": [
+   [
+    "Web design",
+    "designing websites",
+    "website design",
+    "web designing"
+   ],
+   [
+    "web design",
+    "designing web pages",
+    "website designing",
+    "making web designs"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0182",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3"
+   ],
+   "grades": {
+    "15-1255.00": 3,
+    "15-1254.00": 2
+   },
+   "plausible_careers": [
+    "15-1255.00",
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "web design restated"
+  },
+  "annotation_2": {
+   "id": "s-0182",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I4"
+   ],
+   "grades": {
+    "15-1255.00": 2,
+    "15-1254.00": 2
+   },
+   "plausible_careers": [],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0195",
+  "wordings": [
+   [
+    "RESTful services",
+    "Django (Python web framework)",
+    "Django REST Framework",
+    "postgres",
+    "linux basics"
+   ],
+   [
+    "Django",
+    "PostgreSQL",
+    "DRF APIs",
+    "designing RESTful endpoints",
+    "ubuntu"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0195",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 3,
+    "15-1251.00": 2,
+    "15-1242.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Django, DRF, REST design, PostgreSQL"
+  },
+  "annotation_2": {
+   "id": "s-0195",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 2,
+    "15-1251.00": 1,
+    "15-1242.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0203",
+  "wordings": [
+   [
+    "shell scripts",
+    "IPSec VPN configuration",
+    "manages time well",
+    "team player",
+    "solving problems"
+   ],
+   [
+    "bash and cron automation",
+    "VPN setup (OpenVPN)",
+    "meeting deadlines",
+    "works well in teams",
+    "problem-solving"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0203",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 3,
+    "15-1231.00": 2,
+    "15-1241.00": 1,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1231.00"
+   ],
+   "confidence": "low",
+   "note": "shell scripting/cron and VPN config: sysadmin; thin"
+  },
+  "annotation_2": {
+   "id": "s-0203",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 2,
+    "15-1231.00": 2,
+    "15-1299.05": 1,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1231.00"
+   ],
+   "confidence": "low",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0218",
+  "wordings": [
+   [
+    "airflow dags",
+    "ETL pipelines",
+    "SSIS packages",
+    "dbt",
+    "designing data models",
+    "problem-solving"
+   ],
+   [
+    "data transformation with dbt",
+    "problem solving",
+    "ETL development",
+    "SSIS",
+    "workflow orchestration with Airflow",
+    "database schema design for large systems"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0218",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.01": 3,
+    "15-1243.00": 3,
+    "15-2051.00": 1,
+    "15-2051.01": 1,
+    "15-1242.00": 1
+   },
+   "plausible_careers": [
+    "15-1243.01",
+    "15-1243.00"
+   ],
+   "confidence": "high",
+   "note": "Airflow, SSIS, dbt, ETL, data modelling"
+  },
+  "annotation_2": {
+   "id": "s-0218",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.01": 3,
+    "15-1243.00": 2,
+    "15-2051.00": 1
+   },
+   "plausible_careers": [
+    "15-1243.01"
+   ],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0226",
+  "wordings": [
+   [
+    "Selenium",
+    "Selenium WebDriver",
+    "selenium testing",
+    "selenium automation"
+   ],
+   [
+    "selenium",
+    "selenium web driver",
+    "automated testing selenium",
+    "selenium tests"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0226",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3"
+   ],
+   "grades": {
+    "15-1253.00": 3
+   },
+   "plausible_careers": [
+    "15-1253.00"
+   ],
+   "confidence": "high",
+   "note": "Selenium restated"
+  },
+  "annotation_2": {
+   "id": "s-0226",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3"
+   ],
+   "grades": {
+    "15-1253.00": 2
+   },
+   "plausible_careers": [],
+   "confidence": "high",
+   "note": "see sufficiency/reasons"
+  }
+ },
+ {
+  "id": "s-0233",
+  "wordings": [
+   [
+    "MongoDB",
+    "Redis",
+    "Express.js",
+    "Node.js"
+   ],
+   [
+    "mongodb",
+    "redis",
+    "expressjs",
+    "nodejs"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0233",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 3,
+    "15-1251.00": 2,
+    "15-1242.00": 1,
+    "15-1243.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "MERN-style backend stack"
+  },
+  "annotation_2": {
+   "id": "s-0233",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "MERN stack"
+  }
+ },
+ {
+  "id": "s-0267",
+  "wordings": [
+   [
+    "ospf",
+    "network segmentation and zero trust design",
+    "good communicator",
+    "industrial attachment experience"
+   ],
+   [
+    "OSPF and EIGRP routing",
+    "zero-trust network design",
+    "verbal and written communication",
+    "internship experience"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0267",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1241.00": 3,
+    "15-1244.00": 2,
+    "15-1299.05": 2,
+    "15-1231.00": 1,
+    "15-1212.00": 1
+   },
+   "plausible_careers": [
+    "15-1241.00",
+    "15-1244.00",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "OSPF routing and zero-trust network design"
+  },
+  "annotation_2": {
+   "id": "s-0267",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1241.00": 3,
+    "15-1244.00": 2,
+    "15-1299.08": 2,
+    "15-1299.05": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1241.00",
+    "15-1244.00",
+    "15-1299.08",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "routing + zero trust design"
+  }
+ },
+ {
+  "id": "s-0278",
+  "wordings": [
+   [
+    "seaborn plots",
+    "kaggle projects",
+    "verbal and written communication",
+    "problem solving",
+    "SQL (basic queries)"
+   ],
+   [
+    "problem-solving",
+    "charts",
+    "communication skills",
+    "data stuff",
+    "SQL"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0278",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-2051.01": 2,
+    "15-2041.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-2051.01"
+   ],
+   "confidence": "low",
+   "note": "seaborn and Kaggle point to data science; second wording vaguer"
+  },
+  "annotation_2": {
+   "id": "s-0278",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 2,
+    "15-2051.01": 1,
+    "15-2041.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.00"
+   ],
+   "confidence": "low",
+   "note": "some specifics, vague data stuff"
+  }
+ },
+ {
+  "id": "s-0279",
+  "wordings": [
+   [
+    "postgres",
+    "entity relationship diagrams",
+    "SSIS packages",
+    "Python (basic)"
+   ],
+   [
+    "postgreSQL",
+    "ER modelling",
+    "SSIS",
+    "python"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0279",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.00": 3,
+    "15-1243.01": 2,
+    "15-1242.00": 2,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-1243.00",
+    "15-1243.01",
+    "15-1242.00"
+   ],
+   "confidence": "high",
+   "note": "Postgres, ER modelling, SSIS"
+  },
+  "annotation_2": {
+   "id": "s-0279",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1242.00": 3,
+    "15-1243.00": 2,
+    "15-1243.01": 2
+   },
+   "plausible_careers": [
+    "15-1242.00",
+    "15-1243.00",
+    "15-1243.01"
+   ],
+   "confidence": "high",
+   "note": "DB modelling, ETL"
+  }
+ },
+ {
+  "id": "s-0309",
+  "wordings": [
+   [
+    "wireshark traffic capture",
+    "WLAN and access point deployment",
+    "mikrotik hotspot and queue config",
+    "solving problems",
+    "Ubuntu",
+    "works well in teams"
+   ],
+   [
+    "Linux",
+    "Wi-Fi site surveys and access points",
+    "Wireshark",
+    "problem-solving",
+    "mikrotik routers",
+    "team player"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0309",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 1,
+    "15-1232.00": 1,
+    "15-1212.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "Wireshark, WLAN, MikroTik"
+  },
+  "annotation_2": {
+   "id": "s-0309",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "wireless/LAN support"
+  }
+ },
+ {
+  "id": "s-0312",
+  "wordings": [
+   [
+    "MongoDB",
+    "jwt auth and role-based access",
+    "REST API design"
+   ],
+   [
+    "databases",
+    "security",
+    "APIs"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0312",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 3,
+    "15-1251.00": 1,
+    "15-1242.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "MongoDB, JWT auth, REST API design"
+  },
+  "annotation_2": {
+   "id": "s-0312",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00"
+   ],
+   "confidence": "low",
+   "note": "backend API work; second wording vague"
+  }
+ },
+ {
+  "id": "s-0329",
+  "wordings": [
+   [
+    "running UAT with end users",
+    "managing stakeholders",
+    "sql basics",
+    "problem-solving"
+   ],
+   [
+    "UAT coordination",
+    "stakeholder communication",
+    "SQL",
+    "solving problems"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0329",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1211.00": 3,
+    "15-1299.09": 2,
+    "15-1253.00": 2
+   },
+   "plausible_careers": [
+    "15-1211.00",
+    "15-1299.09",
+    "15-1253.00"
+   ],
+   "confidence": "low",
+   "note": "UAT and stakeholder management point to analyst/PM"
+  },
+  "annotation_2": {
+   "id": "s-0329",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1211.00": 2,
+    "15-1253.00": 2,
+    "15-1299.09": 1,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-1211.00",
+    "15-1253.00"
+   ],
+   "confidence": "low",
+   "note": "UAT/stakeholders point to analyst"
+  }
+ },
+ {
+  "id": "s-0332",
+  "wordings": [
+   [
+    "wireless LAN setup",
+    "setting up DHCP/DNS",
+    "spanning-tree config",
+    "meeting deadlines"
+   ],
+   [
+    "STP/RSTP",
+    "Wi-Fi site surveys and access points",
+    "time management",
+    "DHCP and DNS services"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0332",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 3,
+    "15-1231.00": 3,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "WLAN, DHCP/DNS, STP"
+  },
+  "annotation_2": {
+   "id": "s-0332",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "LAN/wireless"
+  }
+ },
+ {
+  "id": "s-0347",
+  "wordings": [
+   [
+    "intro to Packet Tracer labs",
+    "CCNA coursework",
+    "MS Office"
+   ],
+   [
+    "learning packet tracer simulations",
+    "microsoft office suite",
+    "CCNA-level networking"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0347",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2,
+    "15-1232.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "low",
+   "note": "Packet Tracer and CCNA networking, beginner level"
+  },
+  "annotation_2": {
+   "id": "s-0347",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1241.00": 2,
+    "15-1244.00": 2,
+    "15-1232.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1241.00",
+    "15-1244.00"
+   ],
+   "confidence": "low",
+   "note": "Packet Tracer plus CCNA networking, beginner level"
+  }
+ },
+ {
+  "id": "s-0364",
+  "wordings": [
+   [
+    "VPN setup (OpenVPN)",
+    "OSPF routing",
+    "Spanning Tree Protocol",
+    "word, excel, powerpoint",
+    "Linux"
+   ],
+   [
+    "Microsoft Office suite",
+    "ospf",
+    "Ubuntu",
+    "spanning-tree config",
+    "IPSec VPN configuration"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0364",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1241.00": 3,
+    "15-1244.00": 3,
+    "15-1231.00": 2,
+    "15-1299.05": 1,
+    "15-1299.08": 1
+   },
+   "plausible_careers": [
+    "15-1241.00",
+    "15-1244.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "OSPF, STP, VPN config: network engineering"
+  },
+  "annotation_2": {
+   "id": "s-0364",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1241.00": 3,
+    "15-1231.00": 2,
+    "15-1244.00": 2
+   },
+   "plausible_careers": [
+    "15-1241.00",
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "OSPF, STP, VPN, Linux"
+  }
+ },
+ {
+  "id": "s-0375",
+  "wordings": [
+   [
+    "cloud migration planning",
+    "high availability design",
+    "infrastructure as code (Terraform)",
+    "load balancers (HAProxy/F5)"
+   ],
+   [
+    "migrating on-prem workloads to cloud",
+    "cloud",
+    "infrastructure",
+    "HAProxy and Nginx load balancing"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0375",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.08": 3,
+    "15-1241.00": 3,
+    "15-1244.00": 2
+   },
+   "plausible_careers": [
+    "15-1299.08",
+    "15-1241.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "cloud migration, HA, Terraform, load balancers"
+  },
+  "annotation_2": {
+   "id": "s-0375",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.08": 3,
+    "15-1241.00": 2,
+    "15-1244.00": 2
+   },
+   "plausible_careers": [
+    "15-1299.08",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "Cloud migration, Terraform, load balancers"
+  }
+ },
+ {
+  "id": "s-0385",
+  "wordings": [
+   [
+    "Oracle",
+    "Oracle database",
+    "oracle db",
+    "oracle sql"
+   ],
+   [
+    "oracle",
+    "oracle dbms",
+    "oracle database work",
+    "oracle database"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0385",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I5"
+   ],
+   "grades": {
+    "15-1242.00": 2,
+    "15-1243.00": 1,
+    "15-1243.01": 1
+   },
+   "plausible_careers": [
+    "15-1242.00"
+   ],
+   "confidence": "high",
+   "note": "Oracle DB restated"
+  },
+  "annotation_2": {
+   "id": "s-0385",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I5"
+   ],
+   "grades": {
+    "15-1242.00": 3,
+    "15-1243.00": 1,
+    "15-1243.01": 1
+   },
+   "plausible_careers": [],
+   "confidence": "high",
+   "note": "Oracle DB restated"
+  }
+ },
+ {
+  "id": "s-0387",
+  "wordings": [
+   [
+    "Machine learning",
+    "Python",
+    "Kaggle"
+   ],
+   [
+    "ML",
+    "python",
+    "kaggle competitions"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0387",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-1221.00": 2,
+    "15-2041.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-1221.00"
+   ],
+   "confidence": "low",
+   "note": "machine learning plus Kaggle; thin but data-science pointed"
+  },
+  "annotation_2": {
+   "id": "s-0387",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-1221.00": 2,
+    "15-2041.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.00"
+   ],
+   "confidence": "low",
+   "note": "ML and Kaggle, Python generic"
+  }
+ },
+ {
+  "id": "s-0399",
+  "wordings": [
+   [
+    "Troubleshooting",
+    "troubleshooting computers",
+    "fixing computers",
+    "computer repair"
+   ],
+   [
+    "troubleshooting pcs",
+    "pc repair",
+    "fixing laptops",
+    "computer troubleshooting"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0399",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I5"
+   ],
+   "grades": {
+    "15-1232.00": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "PC troubleshooting restated"
+  },
+  "annotation_2": {
+   "id": "s-0399",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I4"
+   ],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [],
+   "confidence": "high",
+   "note": "Troubleshooting restated"
+  }
+ },
+ {
+  "id": "s-0404",
+  "wordings": [
+   [
+    "Mobile apps",
+    "app development",
+    "making apps",
+    "android apps"
+   ],
+   [
+    "mobile app development",
+    "developing apps",
+    "creating apps",
+    "android app dev"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0404",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I5"
+   ],
+   "grades": {
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "mobile app development restated"
+  },
+  "annotation_2": {
+   "id": "s-0404",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I4"
+   ],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [],
+   "confidence": "low",
+   "note": "Mobile apps restated, no tools"
+  }
+ },
+ {
+  "id": "s-0412",
+  "wordings": [
+   [
+    "MySQL database admin",
+    "intro to HTML5",
+    "beginner Bootstrapp grid layouts",
+    "SQL",
+    "English and Kiswahili"
+   ],
+   [
+    "fluent in English and Swahili",
+    "web stuff",
+    "SQL (basic queries)",
+    "databases",
+    "learning Bootstrap 5"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0412",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1242.00": 2,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1242.00"
+   ],
+   "confidence": "low",
+   "note": "HTML5/Bootstrap plus MySQL admin; beginner, two areas"
+  },
+  "annotation_2": {
+   "id": "s-0412",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1242.00": 3,
+    "15-1254.00": 2
+   },
+   "plausible_careers": [
+    "15-1242.00",
+    "15-1254.00"
+   ],
+   "confidence": "low",
+   "note": "MySQL admin plus beginner web, two areas"
+  }
+ },
+ {
+  "id": "s-0439",
+  "wordings": [
+   [
+    "password resets and account unlocks",
+    "teaching users new software",
+    "assembling and repairing desktops",
+    "ITIL v4",
+    "meeting deadlines"
+   ],
+   [
+    "time management",
+    "PC hardware repair",
+    "end-user training",
+    "ITIL foundations",
+    "resetting user accounts in AD"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0439",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 2,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "account resets, PC repair, ITIL, end-user training"
+  },
+  "annotation_2": {
+   "id": "s-0439",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "Password resets, repair, ITIL"
+  }
+ },
+ {
+  "id": "s-0445",
+  "wordings": [
+   [
+    "Solidity",
+    "smart contracts",
+    "eMASS",
+    "MITRE ATT&CK"
+   ],
+   [
+    "solidity programming",
+    "writing smart contracts",
+    "eMASS RMF",
+    "mitre attack framework"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0445",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.07": 3,
+    "15-1212.00": 3,
+    "15-1299.05": 2,
+    "15-1299.04": 1
+   },
+   "plausible_careers": [
+    "15-1299.07",
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "low",
+   "note": "Solidity/smart contracts and eMASS/ATT&CK; two areas, could be B1"
+  },
+  "annotation_2": {
+   "id": "s-0445",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.07": 3,
+    "15-1212.00": 1,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1299.07"
+   ],
+   "confidence": "high",
+   "note": "Solidity and smart contracts"
+  }
+ },
+ {
+  "id": "s-0446",
+  "wordings": [
+   [
+    "beginner javascript",
+    "basic C# programming",
+    "unit testing with Jest/JUnit",
+    "C++",
+    "works well in teams"
+   ],
+   [
+    "c++ basics",
+    "some c#",
+    "writing unit tests",
+    "JS for DOM scripting",
+    "team player"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0446",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1253.00": 2,
+    "15-1251.00": 2,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1253.00",
+    "15-1251.00"
+   ],
+   "confidence": "low",
+   "note": "several languages plus unit testing with Jest/JUnit"
+  },
+  "annotation_2": {
+   "id": "s-0446",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 2,
+    "15-1251.00": 2,
+    "15-1253.00": 1,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "low",
+   "note": "Beginner languages and unit testing"
+  }
+ },
+ {
+  "id": "s-0447",
+  "wordings": [
+   [
+    "how-to guides for users",
+    "TeamViewer",
+    "meeting deadlines",
+    "English and Kiswahili"
+   ],
+   [
+    "documentation and user manuals",
+    "remote desktop support",
+    "time management",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0447",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "user documentation and TeamViewer remote support"
+  },
+  "annotation_2": {
+   "id": "s-0447",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "low",
+   "note": "Support-leaning but thin"
+  }
+ },
+ {
+  "id": "s-0454",
+  "wordings": [
+   [
+    "Burp Suite",
+    "SQL injection",
+    "OWASP Top 10",
+    "Metasploit"
+   ],
+   [
+    "burpsuite",
+    "sqli testing",
+    "owasp top ten",
+    "metasploit"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0454",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.04": 3,
+    "15-1212.00": 2,
+    "15-1299.05": 2
+   },
+   "plausible_careers": [
+    "15-1299.04",
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "Burp, Metasploit, SQLi, OWASP"
+  },
+  "annotation_2": {
+   "id": "s-0454",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.04": 3,
+    "15-1212.00": 2
+   },
+   "plausible_careers": [
+    "15-1299.04"
+   ],
+   "confidence": "high",
+   "note": "Burp, SQLi, OWASP, Metasploit"
+  }
+ },
+ {
+  "id": "s-0465",
+  "wordings": [
+   [
+    "TypeScript",
+    "jwt auth and role-based access",
+    "solving problems"
+   ],
+   [
+    "TS typed JavaScript",
+    "JWT authentication",
+    "problem solving"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0465",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 3,
+    "15-1251.00": 2,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "low",
+   "note": "TypeScript plus JWT/RBAC auth: web/back-end development"
+  },
+  "annotation_2": {
+   "id": "s-0465",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "TypeScript and JWT auth"
+  }
+ },
+ {
+  "id": "s-0469",
+  "wordings": [
+   [
+    "Java",
+    "C++"
+   ],
+   [
+    "java",
+    "c++"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0469",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I1"
+   ],
+   "grades": {
+    "15-1251.00": 2,
+    "15-1252.00": 2
+   },
+   "plausible_careers": [
+    "15-1251.00",
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "two general-purpose languages only"
+  },
+  "annotation_2": {
+   "id": "s-0469",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 3,
+    "15-1253.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "low",
+   "note": "two languages only; generic"
+  }
+ },
+ {
+  "id": "s-0472",
+  "wordings": [
+   [
+    "Next.js",
+    "TypeScript",
+    "GraphQL",
+    "Prisma"
+   ],
+   [
+    "nextjs",
+    "typescript",
+    "graphql",
+    "prisma ORM"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0472",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 3,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Next.js, TS, GraphQL, Prisma: full-stack web"
+  },
+  "annotation_2": {
+   "id": "s-0472",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "Next.js, GraphQL stack"
+  }
+ },
+ {
+  "id": "s-0473",
+  "wordings": [
+   [
+    "Nessus/OpenVAS scans",
+    "DPA 2019 and GDPR",
+    "CIS benchmarks hardening",
+    "antivirus and EDR management",
+    "self-learner"
+   ],
+   [
+    "vulnerability scanning (nessus)",
+    "data protection and privacy compliance",
+    "hardening Linux/Windows servers",
+    "endpoint security (EDR)",
+    "can research and learn quickly"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0473",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 3,
+    "15-1299.05": 2,
+    "15-1299.04": 1,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "vuln scanning, hardening, EDR, data-protection compliance"
+  },
+  "annotation_2": {
+   "id": "s-0473",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 3,
+    "15-1299.05": 3,
+    "15-1299.04": 1,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "high",
+   "note": "scanning, compliance, hardening, EDR"
+  }
+ },
+ {
+  "id": "s-0475",
+  "wordings": [
+   [
+    "junit tests",
+    "writing smart contracts in Solidity",
+    "Node.js",
+    "solving problems",
+    "Git and GitHub",
+    "teamwork"
+   ],
+   [
+    "works well in teams",
+    "writing unit tests",
+    "problem solving",
+    "Solidity",
+    "version control (Git)",
+    "NodeJS"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0475",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.07": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1,
+    "15-1253.00": 1,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.07",
+    "15-1252.00"
+   ],
+   "confidence": "low",
+   "note": "Solidity plus Node.js and unit testing: blockchain dev"
+  },
+  "annotation_2": {
+   "id": "s-0475",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.07": 3,
+    "15-1252.00": 3,
+    "15-1253.00": 1,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.07",
+    "15-1252.00"
+   ],
+   "confidence": "low",
+   "note": "Solidity, Node.js, JUnit, Git"
+  }
+ },
+ {
+  "id": "s-0477",
+  "wordings": [
+   [
+    "Packet Tracer",
+    "CCNA",
+    "subnetting"
+   ],
+   [
+    "cisco packet tracer",
+    "ccna studying",
+    "IP subnetting"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0477",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "CCNA, Packet Tracer, subnetting: networking"
+  },
+  "annotation_2": {
+   "id": "s-0477",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1241.00": 2,
+    "15-1244.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "CCNA, Packet Tracer, subnetting"
+  }
+ },
+ {
+  "id": "s-0485",
+  "wordings": [
+   [
+    "intro to wireshark traffic capture",
+    "basic kali linux tools",
+    "works well in teams",
+    "problem-solving"
+   ],
+   [
+    "teamwork",
+    "solving problems",
+    "some Kali Linux",
+    "packet analysis with Wireshark"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0485",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 3,
+    "15-1299.04": 2,
+    "15-1231.00": 1,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.04"
+   ],
+   "confidence": "low",
+   "note": "Wireshark and Kali at intro level: entry security"
+  },
+  "annotation_2": {
+   "id": "s-0485",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 2,
+    "15-1299.04": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.04"
+   ],
+   "confidence": "low",
+   "note": "beginner Wireshark and Kali"
+  }
+ },
+ {
+  "id": "s-0496",
+  "wordings": [
+   [
+    "Java",
+    "Python",
+    "C++",
+    "SQL"
+   ],
+   [
+    "java",
+    "python3",
+    "c plus plus",
+    "sql"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0496",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I1"
+   ],
+   "grades": {
+    "15-1251.00": 2,
+    "15-1252.00": 2
+   },
+   "plausible_careers": [
+    "15-1251.00",
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "general-purpose languages and SQL only"
+  },
+  "annotation_2": {
+   "id": "s-0496",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 3,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "low",
+   "note": "four generic languages"
+  }
+ },
+ {
+  "id": "s-0500",
+  "wordings": [
+   [
+    "Spring Boot",
+    "Hibernate",
+    "JUnit",
+    "Maven"
+   ],
+   [
+    "springboot",
+    "hibernate ORM",
+    "junit",
+    "maven builds"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0500",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 3,
+    "15-1254.00": 2,
+    "15-1253.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1251.00",
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "Spring Boot, Hibernate, JUnit, Maven: Java back-end"
+  },
+  "annotation_2": {
+   "id": "s-0500",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 2,
+    "15-1253.00": 1,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "Java Spring stack"
+  }
+ },
+ {
+  "id": "s-0504",
+  "wordings": [
+   [
+    "Wireshark",
+    "teamwork",
+    "networking basics"
+   ],
+   [
+    "wireshark",
+    "team player",
+    "basic networks"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0504",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I5"
+   ],
+   "grades": {
+    "15-1231.00": 1,
+    "15-1244.00": 1,
+    "15-1212.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1212.00"
+   ],
+   "confidence": "low",
+   "note": "Wireshark plus vague networking basics"
+  },
+  "annotation_2": {
+   "id": "s-0504",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 2,
+    "15-1241.00": 1,
+    "15-1212.00": 1,
+    "15-1299.04": 1
+   },
+   "plausible_careers": [
+    "15-1231.00"
+   ],
+   "confidence": "low",
+   "note": "Wireshark and vague networking basics"
+  }
+ },
+ {
+  "id": "s-0507",
+  "wordings": [
+   [
+    "CCNA-level networking",
+    "packet tracer simulations",
+    "MikroTik RouterOS",
+    "meeting deadlines",
+    "problem solving"
+   ],
+   [
+    "CCNA coursework",
+    "packet tracer labs",
+    "mikrotik routers",
+    "manages time well",
+    "solving problems"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0507",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "CCNA, Packet Tracer, MikroTik"
+  },
+  "annotation_2": {
+   "id": "s-0507",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1241.00": 2,
+    "15-1244.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "CCNA, Packet Tracer, MikroTik"
+  }
+ },
+ {
+  "id": "s-0514",
+  "wordings": [
+   [
+    "beginner mobile device troubleshooting",
+    "troubleshooting windows",
+    "configuring network printers",
+    "python programming",
+    "microsoft excel"
+   ],
+   [
+    "Excel",
+    "python",
+    "learning setting up smartphones for staff",
+    "printer and scanner setup",
+    "basics of fixing Windows errors"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0514",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 2
+   },
+   "plausible_careers": [
+    "15-1232.00",
+    "15-1231.00"
+   ],
+   "confidence": "low",
+   "note": "beginner device, Windows and printer support"
+  },
+  "annotation_2": {
+   "id": "s-0514",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "low",
+   "note": "beginner support tasks"
+  }
+ },
+ {
+  "id": "s-0516",
+  "wordings": [
+   [
+    "CCNA-level networking",
+    "cisco router config",
+    "monitoring with nagios",
+    "troubleshooting connectivity",
+    "communication skills",
+    "Microsoft Office suite"
+   ],
+   [
+    "cisco CCNA",
+    "Cisco IOS",
+    "monitoring",
+    "networking",
+    "verbal and written communication",
+    "word, excel, powerpoint"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0516",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "CCNA, Cisco config, Nagios"
+  },
+  "annotation_2": {
+   "id": "s-0516",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "CCNA, Cisco IOS, Nagios"
+  }
+ },
+ {
+  "id": "s-0520",
+  "wordings": [
+   [
+    "CCNA-level networking",
+    "OSPF routing",
+    "log analysis",
+    "DPA 2019 and GDPR",
+    "Linux",
+    "industrial attachment experience"
+   ],
+   [
+    "CCNA coursework",
+    "OSPF and EIGRP routing",
+    "reading system and web server logs",
+    "Kenya Data Protection Act compliance",
+    "linux basics",
+    "3-month attachment"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0520",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2,
+    "15-1212.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "CCNA, OSPF, Linux, plus logs and DPA compliance"
+  },
+  "annotation_2": {
+   "id": "s-0520",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 2,
+    "15-1241.00": 2,
+    "15-1212.00": 2,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1241.00"
+   ],
+   "confidence": "low",
+   "note": "CCNA/OSPF networking with some security"
+  }
+ },
+ {
+  "id": "s-0531",
+  "wordings": [
+   [
+    "fact and dimension tables",
+    "postgreSQL",
+    "data warehousing",
+    "dbt",
+    "SSIS packages",
+    "good communicator"
+   ],
+   [
+    "star schema design",
+    "dbt models",
+    "Postgres admin",
+    "building a data warehouse",
+    "SSIS",
+    "verbal and written communication"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0531",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.01": 3,
+    "15-1243.00": 2,
+    "15-2051.01": 2,
+    "15-1242.00": 2,
+    "15-2051.00": 1
+   },
+   "plausible_careers": [
+    "15-1243.01",
+    "15-1243.00",
+    "15-2051.01",
+    "15-1242.00"
+   ],
+   "confidence": "high",
+   "note": "star schema, dbt, SSIS: data warehousing"
+  },
+  "annotation_2": {
+   "id": "s-0531",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1243.01": 3,
+    "15-1243.00": 2,
+    "15-1242.00": 1
+   },
+   "plausible_careers": [
+    "15-1243.01"
+   ],
+   "confidence": "high",
+   "note": "dimensional modelling, dbt, SSIS"
+  }
+ },
+ {
+  "id": "s-0537",
+  "wordings": [
+   [
+    "Zabbix",
+    "setting up DHCP/DNS",
+    "Cisco Packet Tracer",
+    "3-month attachment"
+   ],
+   [
+    "networking",
+    "industrial attachment experience",
+    "monitoring",
+    "DHCP and DNS services"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0537",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "Zabbix, DHCP/DNS, Packet Tracer"
+  },
+  "annotation_2": {
+   "id": "s-0537",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "Zabbix, DHCP/DNS, Packet Tracer"
+  }
+ },
+ {
+  "id": "s-0541",
+  "wordings": [
+   [
+    "ITIL v4",
+    "cleaning infected computers",
+    "password resets and account unlocks",
+    "escalating tickets within SLA",
+    "help desk ticketing"
+   ],
+   [
+    "IT service stuff",
+    "computer repair",
+    "user accounts",
+    "SLA and ticket escalation handling",
+    "logging and resolving tickets"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0541",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 2
+   },
+   "plausible_careers": [
+    "15-1232.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "ITIL, ticketing, SLA, account resets: help desk"
+  },
+  "annotation_2": {
+   "id": "s-0541",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "help desk ITIL, SLA, tickets"
+  }
+ },
+ {
+  "id": "s-0553",
+  "wordings": [
+   [
+    "beginner web vulnerabilities (XSS, SQLi, CSRF)",
+    "Wireshark",
+    "verbal and written communication",
+    "Microsoft Office suite"
+   ],
+   [
+    "owasp top ten vulnerabilities",
+    "basics of packet analysis with Wireshark",
+    "communication skills",
+    "word, excel, powerpoint"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0553",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 3,
+    "15-1299.04": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.04"
+   ],
+   "confidence": "low",
+   "note": "beginner web vulns plus Wireshark: entry security"
+  },
+  "annotation_2": {
+   "id": "s-0553",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1212.00": 2,
+    "15-1299.04": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1212.00",
+    "15-1299.04"
+   ],
+   "confidence": "low",
+   "note": "beginner web vulns and Wireshark"
+  }
+ },
+ {
+  "id": "s-0554",
+  "wordings": [
+   [
+    "VLSM subnetting",
+    "VLAN configuration on switches",
+    "monitoring with Nagios",
+    "Packet Tracer labs",
+    "3-month attachment",
+    "problem-solving"
+   ],
+   [
+    "IP addressing and subnetting",
+    "networking",
+    "monitoring",
+    "cisco Packet Tracer",
+    "industrial attachment experience",
+    "solving problems"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0554",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "VLSM, VLANs, Nagios, Packet Tracer"
+  },
+  "annotation_2": {
+   "id": "s-0554",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1241.00": 2,
+    "15-1244.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "subnetting, VLAN, Nagios"
+  }
+ },
+ {
+  "id": "s-0559",
+  "wordings": [
+   [
+    "C++",
+    "algorithms",
+    "data structures",
+    "competitive programming"
+   ],
+   [
+    "c plus plus",
+    "algorithms",
+    "DSA",
+    "leetcode"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0559",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1251.00": 3,
+    "15-1252.00": 3,
+    "15-1221.00": 1
+   },
+   "plausible_careers": [
+    "15-1251.00",
+    "15-1252.00"
+   ],
+   "confidence": "low",
+   "note": "C++ with DSA/competitive programming: general CS but points to programming"
+  },
+  "annotation_2": {
+   "id": "s-0559",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1251.00": 3,
+    "15-1221.00": 1
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "C++, algorithms, data structures"
+  }
+ },
+ {
+  "id": "s-0563",
+  "wordings": [
+   [
+    "risk log and mitigation planning",
+    "project budgeting",
+    "GitHub Actions",
+    "TDD",
+    "internship experience"
+   ],
+   [
+    "project risk management",
+    "cost estimation",
+    "CI/CD pipelines",
+    "writing tests first",
+    "industrial attachment experience"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0563",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.09": 3,
+    "15-1252.00": 2,
+    "15-1253.00": 1,
+    "15-1211.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.09",
+    "15-1252.00"
+   ],
+   "confidence": "low",
+   "note": "risk and budgeting (PM) plus CI/CD and TDD (dev)"
+  },
+  "annotation_2": {
+   "id": "s-0563",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.09": 2,
+    "15-1252.00": 2,
+    "15-1253.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.09",
+    "15-1252.00"
+   ],
+   "confidence": "low",
+   "note": "risk/budget plus CI and TDD"
+  }
+ },
+ {
+  "id": "s-0570",
+  "wordings": [
+   [
+    "Flask",
+    "beginner c sharp",
+    "beginner HTML5",
+    "MS Excel",
+    "SQL"
+   ],
+   [
+    "backend",
+    "coding",
+    "web stuff",
+    "excel",
+    "sql basics"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0570",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00",
+    "15-1251.00"
+   ],
+   "confidence": "low",
+   "note": "Flask and HTML at beginner level: web dev"
+  },
+  "annotation_2": {
+   "id": "s-0570",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 2,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00"
+   ],
+   "confidence": "low",
+   "note": "beginner, mixed web/backend"
+  }
+ },
+ {
+  "id": "s-0580",
+  "wordings": [
+   [
+    "spanning-tree config",
+    "Cisco Packet Tracer",
+    "DNS, DHCP server config"
+   ],
+   [
+    "packet tracer simulations",
+    "setting up DHCP/DNS",
+    "STP/RSTP"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0580",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2,
+    "15-1232.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "STP, Packet Tracer, DNS/DHCP: network support/admin"
+  },
+  "annotation_2": {
+   "id": "s-0580",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00"
+   ],
+   "confidence": "high",
+   "note": "STP, Packet Tracer, DHCP/DNS"
+  }
+ },
+ {
+  "id": "s-0583",
+  "wordings": [
+   [
+    "Django",
+    "REST APIs",
+    "Selenium",
+    "unit testing"
+   ],
+   [
+    "django framework",
+    "building rest api",
+    "selenium webdriver",
+    "pytest unit tests"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0583",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 3,
+    "15-1251.00": 2,
+    "15-1253.00": 2
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00",
+    "15-1251.00",
+    "15-1253.00"
+   ],
+   "confidence": "high",
+   "note": "Django, REST APIs and Selenium/pytest testing"
+  },
+  "annotation_2": {
+   "id": "s-0583",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 2,
+    "15-1253.00": 2,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00",
+    "15-1253.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Django, REST, Selenium"
+  }
+ },
+ {
+  "id": "s-0590",
+  "wordings": [
+   [
+    "Python",
+    "communication",
+    "problem solving",
+    "TensorFlow"
+   ],
+   [
+    "python coding",
+    "communicating well",
+    "problem-solving",
+    "tensorflow"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0590",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I5"
+   ],
+   "grades": {
+    "15-2051.00": 2,
+    "15-1221.00": 2,
+    "15-1252.00": 1,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-1221.00"
+   ],
+   "confidence": "low",
+   "note": "TensorFlow is the only specific item; Python generic, rest soft"
+  },
+  "annotation_2": {
+   "id": "s-0590",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1221.00": 2,
+    "15-2051.00": 2,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1221.00",
+    "15-2051.00"
+   ],
+   "confidence": "low",
+   "note": "Python plus TensorFlow only specific item"
+  }
+ },
+ {
+  "id": "s-0593",
+  "wordings": [
+   [
+    "applied cryptography",
+    "PKI and TLS certificates",
+    "firewall rules (pfSense/Fortinet)"
+   ],
+   [
+    "cryptography (AES, RSA)",
+    "public key infrastructure",
+    "firewall configuration"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0593",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 3,
+    "15-1241.00": 1,
+    "15-1244.00": 1,
+    "15-1299.04": 1
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "crypto, PKI/TLS, firewalls: security"
+  },
+  "annotation_2": {
+   "id": "s-0593",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 2,
+    "15-1299.04": 1,
+    "15-1241.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "crypto, PKI, firewalls"
+  }
+ },
+ {
+  "id": "s-0594",
+  "wordings": [
+   [
+    "Solidity",
+    "Hardhat",
+    "Splunk",
+    "Wazuh"
+   ],
+   [
+    "solidity",
+    "hardhat",
+    "splunk",
+    "wazuh siem"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0594",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.07": 3,
+    "15-1212.00": 3,
+    "15-1299.05": 2,
+    "15-1252.00": 1,
+    "15-1299.06": 1
+   },
+   "plausible_careers": [
+    "15-1299.07",
+    "15-1212.00",
+    "15-1299.05"
+   ],
+   "confidence": "low",
+   "note": "two clear areas: Solidity/Hardhat blockchain and Splunk/Wazuh SIEM"
+  },
+  "annotation_2": {
+   "id": "s-0594",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.07": 3,
+    "15-1212.00": 2,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1299.07",
+    "15-1212.00"
+   ],
+   "confidence": "low",
+   "note": "Solidity+Hardhat; Splunk+Wazuh"
+  }
+ },
+ {
+  "id": "s-0602",
+  "wordings": [
+   [
+    "token auth (JWT)",
+    "NodeJS",
+    "linux basics",
+    "industrial attachment experience",
+    "works well in teams"
+   ],
+   [
+    "JWT authentication",
+    "node (server side JS)",
+    "Ubuntu",
+    "3-month attachment",
+    "teamwork"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0602",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 3,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Node.js and JWT auth: backend development"
+  },
+  "annotation_2": {
+   "id": "s-0602",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "JWT, Node"
+  }
+ },
+ {
+  "id": "s-0607",
+  "wordings": [
+   [
+    "cisco router config",
+    "windows server 2019",
+    "handling security incidents",
+    "ISO 27001",
+    "internship experience"
+   ],
+   [
+    "managing Windows Server",
+    "cyber stuff",
+    "configuring Cisco routers and switches",
+    "3-month attachment",
+    "compliance"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0607",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1244.00": 3,
+    "15-1231.00": 2,
+    "15-1212.00": 2,
+    "15-1241.00": 1,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1244.00",
+    "15-1231.00",
+    "15-1212.00"
+   ],
+   "confidence": "low",
+   "note": "Cisco + Windows Server admin plus incident handling/ISO 27001; second wording vague"
+  },
+  "annotation_2": {
+   "id": "s-0607",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1212.00": 2,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1212.00"
+   ],
+   "confidence": "low",
+   "note": "Cisco/Windows Server plus security incidents/ISO"
+  }
+ },
+ {
+  "id": "s-0614",
+  "wordings": [
+   [
+    "capture the flag (hackthebox/tryhackme)",
+    "SQLi exploitation",
+    "mongodb and mongoose",
+    "Node.js",
+    "basic shell scripting"
+   ],
+   [
+    "CTF competitions",
+    "SQL injection testing",
+    "MongoDB",
+    "node (server side JS)",
+    "command-line scripting"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0614",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.04": 3,
+    "15-1212.00": 2,
+    "15-1252.00": 2,
+    "15-1254.00": 2,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1299.04",
+    "15-1212.00",
+    "15-1252.00",
+    "15-1254.00"
+   ],
+   "confidence": "low",
+   "note": "CTF/SQLi point to pentesting; MongoDB/Node to backend dev"
+  },
+  "annotation_2": {
+   "id": "s-0614",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.04": 3,
+    "15-1212.00": 1,
+    "15-1254.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.04"
+   ],
+   "confidence": "high",
+   "note": "CTF, SQLi"
+  }
+ },
+ {
+  "id": "s-0620",
+  "wordings": [
+   [
+    "M-Pesa Daraja API integration",
+    "JWT authentication",
+    "mySQL",
+    "git"
+   ],
+   [
+    "Mpesa API integration",
+    "jwt auth and role-based access",
+    "MySQL database admin",
+    "version control (Git)"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0620",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 3,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Daraja API, JWT, MySQL: backend/web development"
+  },
+  "annotation_2": {
+   "id": "s-0620",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1252.00": 3,
+    "15-1254.00": 2,
+    "15-1251.00": 2
+   },
+   "plausible_careers": [
+    "15-1252.00",
+    "15-1254.00",
+    "15-1251.00"
+   ],
+   "confidence": "high",
+   "note": "Daraja API, JWT, MySQL"
+  }
+ },
+ {
+  "id": "s-0621",
+  "wordings": [
+   [
+    "Ethical hacking",
+    "ethical hacker",
+    "penetration testing",
+    "pen testing"
+   ],
+   [
+    "ethical hacking",
+    "pentesting",
+    "penetration tests",
+    "hacking ethically"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0621",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I5"
+   ],
+   "grades": {
+    "15-1299.04": 2,
+    "15-1212.00": 1
+   },
+   "plausible_careers": [
+    "15-1299.04"
+   ],
+   "confidence": "high",
+   "note": "ethical hacking restated; one capability"
+  },
+  "annotation_2": {
+   "id": "s-0621",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3"
+   ],
+   "grades": {
+    "15-1299.04": 3,
+    "15-1212.00": 1,
+    "15-1299.05": 1
+   },
+   "plausible_careers": [
+    "15-1299.04"
+   ],
+   "confidence": "high",
+   "note": "ethical hacking restated"
+  }
+ },
+ {
+  "id": "s-0628",
+  "wordings": [
+   [
+    "matplotlib and seaborn",
+    "preparing features for models",
+    "database backup and recovery",
+    "nosql (Mongo, Cassandra)",
+    "git"
+   ],
+   [
+    "NoSQL databases",
+    "data visualisation with matplotlib",
+    "feature selection and engineering",
+    "version control (Git)",
+    "point-in-time recovery"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0628",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-1242.00": 3,
+    "15-2051.01": 1,
+    "15-1243.00": 1,
+    "15-2041.00": 1
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-1242.00"
+   ],
+   "confidence": "low",
+   "note": "visualisation + feature engineering (DS) and backup/NoSQL (DBA): two areas"
+  },
+  "annotation_2": {
+   "id": "s-0628",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-1242.00": 2,
+    "15-2051.01": 1
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-1242.00"
+   ],
+   "confidence": "low",
+   "note": "DS viz/features plus DB backup/NoSQL"
+  }
+ },
+ {
+  "id": "s-0632",
+  "wordings": [
+   [
+    "VPN setup (OpenVPN)",
+    "subnetting (IPv4/VLSM)",
+    "network monitoring (Zabbix/Nagios)",
+    "Wi-Fi site surveys and access points",
+    "manages time well",
+    "solving problems"
+   ],
+   [
+    "wireless lan setup",
+    "networking",
+    "problem solving",
+    "monitoring",
+    "VLSM subnetting",
+    "time management"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0632",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 3,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "VPN, VLSM, Zabbix/Nagios, Wi-Fi surveys: networking"
+  },
+  "annotation_2": {
+   "id": "s-0632",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1231.00": 3,
+    "15-1244.00": 2,
+    "15-1241.00": 2
+   },
+   "plausible_careers": [
+    "15-1231.00",
+    "15-1244.00",
+    "15-1241.00"
+   ],
+   "confidence": "high",
+   "note": "VPN, subnetting, Zabbix, WiFi"
+  }
+ },
+ {
+  "id": "s-0641",
+  "wordings": [
+   [
+    "intro to writing SQL (joins, aggregates)",
+    "seaborn plots",
+    "spss",
+    "english and kiswahili"
+   ],
+   [
+    "learning SQL queries and joins",
+    "data visualisation with matplotlib",
+    "learning SPSS",
+    "bilingual (English/Kiswahili)"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0641",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.01": 3,
+    "15-2051.00": 2,
+    "15-2041.00": 2
+   },
+   "plausible_careers": [
+    "15-2051.01",
+    "15-2051.00",
+    "15-2041.00"
+   ],
+   "confidence": "low",
+   "note": "SQL, seaborn, SPSS at intro level: junior data analysis"
+  },
+  "annotation_2": {
+   "id": "s-0641",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-2051.00": 3,
+    "15-2051.01": 2,
+    "15-2041.00": 2
+   },
+   "plausible_careers": [
+    "15-2051.00",
+    "15-2051.01",
+    "15-2041.00"
+   ],
+   "confidence": "low",
+   "note": "beginner SQL, plots, SPSS"
+  }
+ },
+ {
+  "id": "s-0654",
+  "wordings": [
+   [
+    "React",
+    "React.js",
+    "reactjs",
+    "React framework"
+   ],
+   [
+    "react",
+    "react js",
+    "ReactJS development",
+    "reactjs framework"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0654",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3",
+    "I5"
+   ],
+   "grades": {
+    "15-1254.00": 2,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "React restated"
+  },
+  "annotation_2": {
+   "id": "s-0654",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I3"
+   ],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "React restated"
+  }
+ },
+ {
+  "id": "s-0658",
+  "wordings": [
+   [
+    "TeamViewer",
+    "phone and email customer support",
+    "help desk ticketing",
+    "virus and malware removal",
+    "escalating tickets within SLA",
+    "good communicator",
+    "time management",
+    "student club leadership"
+   ],
+   [
+    "remote support (TeamViewer/AnyDesk)",
+    "handling client calls and emails",
+    "logging and resolving tickets",
+    "removing malware from PCs",
+    "SLA and ticket escalation handling",
+    "communication skills",
+    "manages time well",
+    "led a class project team"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0658",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 2
+   },
+   "plausible_careers": [
+    "15-1232.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "TeamViewer, ticketing, malware removal, SLA: help desk"
+  },
+  "annotation_2": {
+   "id": "s-0658",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "remote support, ticketing, malware"
+  }
+ },
+ {
+  "id": "s-0669",
+  "wordings": [
+   [
+    "Laravel",
+    "passionate"
+   ],
+   [
+    "laravel framework",
+    "passion for coding"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0669",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I5"
+   ],
+   "grades": {
+    "15-1254.00": 2,
+    "15-1252.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00"
+   ],
+   "confidence": "high",
+   "note": "single framework Laravel plus a trait"
+  },
+  "annotation_2": {
+   "id": "s-0669",
+   "sufficiency": "insufficient",
+   "reasons": [
+    "I5"
+   ],
+   "grades": {
+    "15-1254.00": 3,
+    "15-1252.00": 2,
+    "15-1251.00": 1
+   },
+   "plausible_careers": [
+    "15-1254.00",
+    "15-1252.00"
+   ],
+   "confidence": "high",
+   "note": "single framework"
+  }
+ },
+ {
+  "id": "s-0675",
+  "wordings": [
+   [
+    "assembling and repairing desktops",
+    "help desk ticketing",
+    "writing user guides and knowledge base articles",
+    "end-user training",
+    "O365 user setup",
+    "solving problems"
+   ],
+   [
+    "PC hardware repair",
+    "IT support",
+    "documentation",
+    "teaching users new software",
+    "Office 365 admin (mailboxes, licences)",
+    "problem-solving"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0675",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1231.00": 2,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00",
+    "15-1231.00"
+   ],
+   "confidence": "high",
+   "note": "PC repair, ticketing, KB articles, O365 admin: user support"
+  },
+  "annotation_2": {
+   "id": "s-0675",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3,
+    "15-1244.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "high",
+   "note": "repair, ticketing, O365, training"
+  }
+ },
+ {
+  "id": "s-0677",
+  "wordings": [
+   [
+    "identity and access management",
+    "cryptography (AES, RSA)",
+    "pfSense firewall",
+    "git",
+    "communication skills"
+   ],
+   [
+    "IAM policies, MFA",
+    "encryption",
+    "network security",
+    "Git and GitHub",
+    "verbal and written communication"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0677",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 3,
+    "15-1244.00": 1,
+    "15-1299.04": 1
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "IAM/MFA, crypto, pfSense: security"
+  },
+  "annotation_2": {
+   "id": "s-0677",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1299.05": 3,
+    "15-1212.00": 2
+   },
+   "plausible_careers": [
+    "15-1299.05",
+    "15-1212.00"
+   ],
+   "confidence": "high",
+   "note": "IAM, crypto, pfSense"
+  }
+ },
+ {
+  "id": "s-0678",
+  "wordings": [
+   [
+    "MS Office",
+    "Windows",
+    "troubleshooting",
+    "customer care"
+   ],
+   [
+    "microsoft office",
+    "windows 10",
+    "troubleshooting pcs",
+    "customer service"
+   ]
+  ],
+  "annotation_1": {
+   "id": "s-0678",
+   "sufficiency": "borderline",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 2,
+    "15-1231.00": 1
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "low",
+   "note": "PC troubleshooting and customer care hint at help desk, but items are generic"
+  },
+  "annotation_2": {
+   "id": "s-0678",
+   "sufficiency": "sufficient",
+   "reasons": [],
+   "grades": {
+    "15-1232.00": 3
+   },
+   "plausible_careers": [
+    "15-1232.00"
+   ],
+   "confidence": "low",
+   "note": "Windows/Office troubleshooting, support; fairly generic"
+  }
+ }
+]

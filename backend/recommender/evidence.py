@@ -49,8 +49,10 @@ class EvidenceParams:
 
 # Fixture thresholds from the plan (revision 4 §C6): structure tests E1-E11 use these.
 FIXTURE_PARAMS = EvidenceParams(w_min=1.6, cap=3.2, W_min=4.0, G_min=2, epsilon=0.02).check()
-# Production thresholds, chosen on the students_v1 development split (see docs/evaluation_protocol.md).
-DEFAULT_PARAMS = FIXTURE_PARAMS
+# Production thresholds, chosen on the students_v1 development split by recommender/evidence_calibration.py
+# (data/results/c4-evidence-calibration). No setting within the constraints met both gate targets on
+# development: every one marks most human-sufficient profiles insufficient (see docs/evaluation_protocol.md).
+DEFAULT_PARAMS = EvidenceParams(w_min=1.5891, cap=3.2, W_min=3.5, G_min=2, epsilon=0.02).check()
 
 ADVICE = {
     'skills_spread_across_areas': "Your skills point to several different areas. Pick the one you're most "

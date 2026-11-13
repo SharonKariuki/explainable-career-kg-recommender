@@ -25,7 +25,7 @@ from recommender.evaluation import check_test_set, graded_metrics
 from recommender.results import normalised_hash
 
 STUDENTS_FILE = DATA_DIR / 'eval_sets' / 'students_v1.json'
-FROZEN = {'students_v1.json': None}
+FROZEN = {'students_v1.json': '49d0f88e26ff491bccff1df5e47bc6f3e557fe939208422d7ca8f47cdee7082a'}
 SPLITS = ('development', 'validation', 'test')
 SUFFICIENCY = ('sufficient', 'insufficient', 'borderline')
 REASONS = ('I1', 'I2', 'I3', 'I4', 'I5', 'B1')

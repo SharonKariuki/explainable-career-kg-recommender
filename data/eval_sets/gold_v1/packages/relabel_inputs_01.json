@@ -1,0 +1,802 @@
+[
+ {
+  "id": "i-0008",
+  "input": "ydata profiling"
+ },
+ {
+  "id": "i-0010",
+  "input": "TDD"
+ },
+ {
+  "id": "i-0031",
+  "input": "pc knowledge"
+ },
+ {
+  "id": "i-0036",
+  "input": "networks knowledge"
+ },
+ {
+  "id": "i-0041",
+  "input": "normal forms"
+ },
+ {
+  "id": "i-0042",
+  "input": "cleaning messy datasets"
+ },
+ {
+  "id": "i-0049",
+  "input": "storing things"
+ },
+ {
+  "id": "i-0060",
+  "input": "normalisation 3NF"
+ },
+ {
+  "id": "i-0064",
+  "input": "basic VLSM subnetting"
+ },
+ {
+  "id": "i-0067",
+  "input": "Cucumber BDD"
+ },
+ {
+  "id": "i-0081",
+  "input": "xamarin forms"
+ },
+ {
+  "id": "i-0083",
+  "input": "styling"
+ },
+ {
+  "id": "i-0092",
+  "input": "connections"
+ },
+ {
+  "id": "i-0106",
+  "input": "computer networks"
+ },
+ {
+  "id": "i-0108",
+  "input": "hack stuff"
+ },
+ {
+  "id": "i-0111",
+  "input": "computer literacy"
+ },
+ {
+  "id": "i-0115",
+  "input": "Web design"
+ },
+ {
+  "id": "i-0133",
+  "input": "hacker"
+ },
+ {
+  "id": "i-0134",
+  "input": "server things"
+ },
+ {
+  "id": "i-0137",
+  "input": "gatsbyjs"
+ },
+ {
+  "id": "i-0142",
+  "input": "segmenting networks"
+ },
+ {
+  "id": "i-0154",
+  "input": "Daraja API"
+ },
+ {
+  "id": "i-0155",
+  "input": "CPT"
+ },
+ {
+  "id": "i-0160",
+  "input": "making databases"
+ },
+ {
+  "id": "i-0167",
+  "input": "applications"
+ },
+ {
+  "id": "i-0168",
+  "input": "analytics"
+ },
+ {
+  "id": "i-0170",
+  "input": "safaricom daraja api"
+ },
+ {
+  "id": "i-0171",
+  "input": "backend"
+ },
+ {
+  "id": "i-0172",
+  "input": "typing"
+ },
+ {
+  "id": "i-0175",
+  "input": "project work"
+ },
+ {
+  "id": "i-0176",
+  "input": "database normalization"
+ },
+ {
+  "id": "i-0179",
+  "input": "info tech"
+ },
+ {
+  "id": "i-0181",
+  "input": "information technology"
+ },
+ {
+  "id": "i-0186",
+  "input": "using internet"
+ },
+ {
+  "id": "i-0188",
+  "input": "Kaggle competitions"
+ },
+ {
+  "id": "i-0189",
+  "input": "the internet"
+ },
+ {
+  "id": "i-0190",
+  "input": "resilience"
+ },
+ {
+  "id": "i-0192",
+  "input": "Wazuh"
+ },
+ {
+  "id": "i-0194",
+  "input": "OpenCV"
+ },
+ {
+  "id": "i-0200",
+  "input": "helping"
+ },
+ {
+  "id": "i-0210",
+  "input": "typing speed"
+ },
+ {
+  "id": "i-0215",
+  "input": "software"
+ },
+ {
+  "id": "i-0221",
+  "input": "chainlink"
+ },
+ {
+  "id": "i-0223",
+  "input": "internet"
+ },
+ {
+  "id": "i-0225",
+  "input": "daraja api mpesa integration"
+ },
+ {
+  "id": "i-0229",
+  "input": "the backend"
+ },
+ {
+  "id": "i-0242",
+  "input": "SLA tracking"
+ },
+ {
+  "id": "i-0247",
+  "input": "flutter dart"
+ },
+ {
+  "id": "i-0252",
+  "input": "evidence chain of custody"
+ },
+ {
+  "id": "i-0255",
+  "input": "systems"
+ },
+ {
+  "id": "i-0259",
+  "input": "CTF"
+ },
+ {
+  "id": "i-0263",
+  "input": "TryHackMe and HTB"
+ },
+ {
+  "id": "i-0264",
+  "input": "analysing malware samples"
+ },
+ {
+  "id": "i-0273",
+  "input": "willing to learn"
+ },
+ {
+  "id": "i-0275",
+  "input": "good with people"
+ },
+ {
+  "id": "i-0277",
+  "input": "basic VLANs"
+ },
+ {
+  "id": "i-0282",
+  "input": "performance reporting"
+ },
+ {
+  "id": "i-0283",
+  "input": "spanning-tree config"
+ },
+ {
+  "id": "i-0287",
+  "input": "the net"
+ },
+ {
+  "id": "i-0292",
+  "input": "requirements for reports"
+ },
+ {
+  "id": "i-0322",
+  "input": "async messaging with queues"
+ },
+ {
+  "id": "i-0324",
+  "input": "keeps confidential"
+ },
+ {
+  "id": "i-0325",
+  "input": "mobile app development"
+ },
+ {
+  "id": "i-0327",
+  "input": "Svelte"
+ },
+ {
+  "id": "i-0341",
+  "input": "typing fast"
+ },
+ {
+  "id": "i-0349",
+  "input": "installing software"
+ },
+ {
+  "id": "i-0353",
+  "input": "firebase backend"
+ },
+ {
+  "id": "i-0357",
+  "input": "DRF"
+ },
+ {
+  "id": "i-0362",
+  "input": "fixing computers"
+ },
+ {
+  "id": "i-0366",
+  "input": "storing"
+ },
+ {
+  "id": "i-0367",
+  "input": "empathy"
+ },
+ {
+  "id": "i-0370",
+  "input": "user accounts"
+ },
+ {
+  "id": "i-0394",
+  "input": "project budgeting"
+ },
+ {
+  "id": "i-0399",
+  "input": "designing resilient systems"
+ },
+ {
+  "id": "i-0400",
+  "input": "APIs"
+ },
+ {
+  "id": "i-0401",
+  "input": "analysing malware"
+ },
+ {
+  "id": "i-0406",
+  "input": "accurate"
+ },
+ {
+  "id": "i-0417",
+  "input": "IT service stuff"
+ },
+ {
+  "id": "i-0425",
+  "input": "web designing"
+ },
+ {
+  "id": "i-0435",
+  "input": "Arduino"
+ },
+ {
+  "id": "i-0438",
+  "input": "beginner normal forms"
+ },
+ {
+  "id": "i-0445",
+  "input": "projects"
+ },
+ {
+  "id": "i-0456",
+  "input": "fast typing"
+ },
+ {
+  "id": "i-0464",
+  "input": "OS installation and imaging"
+ },
+ {
+  "id": "i-0471",
+  "input": "Chainlink oracles"
+ },
+ {
+  "id": "i-0473",
+  "input": "Gatsby"
+ },
+ {
+  "id": "i-0474",
+  "input": "network segmentation"
+ },
+ {
+  "id": "i-0475",
+  "input": "data moving"
+ },
+ {
+  "id": "i-0480",
+  "input": "designing"
+ },
+ {
+  "id": "i-0481",
+  "input": "basics of normalisation (3NF)"
+ },
+ {
+  "id": "i-0486",
+  "input": "android apps"
+ },
+ {
+  "id": "i-0487",
+  "input": "log analysis"
+ },
+ {
+  "id": "i-0495",
+  "input": "hackers"
+ },
+ {
+  "id": "i-0497",
+  "input": "passwords"
+ },
+ {
+  "id": "i-0500",
+  "input": "management"
+ },
+ {
+  "id": "i-0507",
+  "input": "gherkin feature files"
+ },
+ {
+  "id": "i-0509",
+  "input": "interactive prototyping"
+ },
+ {
+  "id": "i-0515",
+  "input": "Kaggle"
+ },
+ {
+  "id": "i-0517",
+  "input": "Gherkin"
+ },
+ {
+  "id": "i-0521",
+  "input": "mobile device troubleshooting"
+ },
+ {
+  "id": "i-0524",
+  "input": "Xamarin"
+ },
+ {
+  "id": "i-0537",
+  "input": "systems architecture design"
+ },
+ {
+  "id": "i-0540",
+  "input": "delegation"
+ },
+ {
+  "id": "i-0546",
+  "input": "DOE and A/B test design"
+ },
+ {
+  "id": "i-0548",
+  "input": "cryptocurrency"
+ },
+ {
+  "id": "i-0554",
+  "input": "organised"
+ },
+ {
+  "id": "i-0567",
+  "input": "Mpesa API integration"
+ },
+ {
+  "id": "i-0570",
+  "input": "typing skills"
+ },
+ {
+  "id": "i-0582",
+  "input": "technology"
+ },
+ {
+  "id": "i-0584",
+  "input": "user account management"
+ },
+ {
+  "id": "i-0587",
+  "input": "leetcode"
+ },
+ {
+  "id": "i-0591",
+  "input": "cyber competitions"
+ },
+ {
+  "id": "i-0595",
+  "input": "data capturing"
+ },
+ {
+  "id": "i-0599",
+  "input": "gap analysis"
+ },
+ {
+  "id": "i-0600",
+  "input": "IT"
+ },
+ {
+  "id": "i-0602",
+  "input": "security stuff"
+ },
+ {
+  "id": "i-0606",
+  "input": "data capture"
+ },
+ {
+  "id": "i-0626",
+  "input": "dealing with people"
+ },
+ {
+  "id": "i-0630",
+  "input": "back end stuff"
+ },
+ {
+  "id": "i-0631",
+  "input": "Laravel"
+ },
+ {
+  "id": "i-0647",
+  "input": "backend things"
+ },
+ {
+  "id": "i-0650",
+  "input": "risk"
+ },
+ {
+  "id": "i-0653",
+  "input": "connecting things"
+ },
+ {
+  "id": "i-0660",
+  "input": "hacking skills"
+ },
+ {
+  "id": "i-0661",
+  "input": "threejs"
+ },
+ {
+  "id": "i-0671",
+  "input": "computer things"
+ },
+ {
+  "id": "i-0700",
+  "input": "storybook UI components"
+ },
+ {
+  "id": "i-0705",
+  "input": "pcs"
+ },
+ {
+  "id": "i-0716",
+  "input": "supporting tech"
+ },
+ {
+  "id": "i-0731",
+  "input": "computer software"
+ },
+ {
+  "id": "i-0733",
+  "input": "MikroTik"
+ },
+ {
+  "id": "i-0758",
+  "input": "basic networking"
+ },
+ {
+  "id": "i-0760",
+  "input": "wifi setup"
+ },
+ {
+  "id": "i-0767",
+  "input": "digital skills"
+ },
+ {
+  "id": "i-0820",
+  "input": "information systems"
+ },
+ {
+  "id": "i-0822",
+  "input": "charts"
+ },
+ {
+  "id": "i-0827",
+  "input": "network basics"
+ },
+ {
+  "id": "i-0834",
+  "input": "hardware"
+ },
+ {
+  "id": "i-0840",
+  "input": "making apps"
+ },
+ {
+  "id": "i-0843",
+  "input": "innovation"
+ },
+ {
+  "id": "i-0847",
+  "input": "IT stuff"
+ },
+ {
+  "id": "i-0855",
+  "input": "security knowledge"
+ },
+ {
+  "id": "i-0882",
+  "input": "pc stuff"
+ },
+ {
+  "id": "i-0886",
+  "input": "projects work"
+ },
+ {
+  "id": "i-0889",
+  "input": "servers"
+ },
+ {
+  "id": "i-0899",
+  "input": "journey mapping"
+ },
+ {
+  "id": "i-0914",
+  "input": "Canva"
+ },
+ {
+  "id": "i-0937",
+  "input": "bitcoin core node"
+ },
+ {
+  "id": "i-0939",
+  "input": "Intune"
+ },
+ {
+  "id": "i-0962",
+  "input": "STP/RSTP"
+ },
+ {
+  "id": "i-0969",
+  "input": "stakeholder communication"
+ },
+ {
+  "id": "i-1002",
+  "input": "designing systems"
+ },
+ {
+  "id": "i-1003",
+  "input": "tech things"
+ },
+ {
+  "id": "i-1016",
+  "input": "project stuff"
+ },
+ {
+  "id": "i-1029",
+  "input": "kaggle projects"
+ },
+ {
+  "id": "i-1032",
+  "input": "accuracy"
+ },
+ {
+  "id": "i-1034",
+  "input": "system designing"
+ },
+ {
+  "id": "i-1053",
+  "input": "computer stuff"
+ },
+ {
+  "id": "i-1062",
+  "input": "user interface things"
+ },
+ {
+  "id": "i-1070",
+  "input": "wifi"
+ },
+ {
+  "id": "i-1081",
+  "input": "Bitcoin Core"
+ },
+ {
+  "id": "i-1088",
+  "input": "ICT"
+ },
+ {
+  "id": "i-1092",
+  "input": "back end"
+ },
+ {
+  "id": "i-1093",
+  "input": "SDN and SD-WAN"
+ },
+ {
+  "id": "i-1097",
+  "input": "tailwindcss"
+ },
+ {
+  "id": "i-1107",
+  "input": "stakeholder management"
+ },
+ {
+  "id": "i-1114",
+  "input": "NLTK"
+ },
+ {
+  "id": "i-1115",
+  "input": "project tools"
+ },
+ {
+  "id": "i-1135",
+  "input": "ggplot"
+ },
+ {
+  "id": "i-1146",
+  "input": "designing end-to-end systems"
+ },
+ {
+  "id": "i-1167",
+  "input": "IT things"
+ },
+ {
+  "id": "i-1180",
+  "input": "Three.js"
+ },
+ {
+  "id": "i-1188",
+  "input": "Cobalt Strike"
+ },
+ {
+  "id": "i-1198",
+  "input": "visuals"
+ },
+ {
+  "id": "i-1201",
+  "input": "password resets and account unlocks"
+ },
+ {
+  "id": "i-1205",
+  "input": "M-Pesa Daraja API integration"
+ },
+ {
+  "id": "i-1212",
+  "input": "integrity"
+ },
+ {
+  "id": "i-1233",
+  "input": "Raspberry Pi"
+ },
+ {
+  "id": "i-1244",
+  "input": "cucumber/gherkin"
+ },
+ {
+  "id": "i-1264",
+  "input": "ms packages"
+ },
+ {
+  "id": "i-1265",
+  "input": "DPA 2019 and GDPR"
+ },
+ {
+  "id": "i-1268",
+  "input": "training staff on Office and email"
+ },
+ {
+  "id": "i-1278",
+  "input": "mikrotik hotspot and queue config"
+ },
+ {
+  "id": "i-1280",
+  "input": "cyber things"
+ },
+ {
+  "id": "i-1282",
+  "input": "flutter apps"
+ },
+ {
+  "id": "i-1291",
+  "input": "systems stuff"
+ },
+ {
+  "id": "i-1298",
+  "input": "MikroTik RouterOS"
+ },
+ {
+  "id": "i-1307",
+  "input": "datasets"
+ },
+ {
+  "id": "i-1308",
+  "input": "Blender"
+ },
+ {
+  "id": "i-1311",
+  "input": "exploratory testing"
+ },
+ {
+  "id": "i-1314",
+  "input": "wireless LAN setup"
+ },
+ {
+  "id": "i-1315",
+  "input": "sql statements"
+ },
+ {
+  "id": "i-1317",
+  "input": "punctuality"
+ },
+ {
+  "id": "i-1319",
+  "input": "machine things"
+ },
+ {
+  "id": "i-1328",
+  "input": "managing"
+ },
+ {
+  "id": "i-1331",
+  "input": "IT support"
+ },
+ {
+  "id": "i-1333",
+  "input": "diagrams"
+ },
+ {
+  "id": "i-1338",
+  "input": "protection"
+ },
+ {
+  "id": "i-1343",
+  "input": "learning seaborn plots"
+ },
+ {
+  "id": "i-1347",
+  "input": "images"
+ }
+]
