@@ -1,4 +1,4 @@
-// Minimal hash router: #/dashboard, #/recommendations, #/careers/15-2051.00.
+// Minimal hash router: #/home, #/matches, #/careers/15-2051.00. routes.js says what each address opens.
 // Using the URL hash keeps the browser's back button working without a
 // routing library.
 
@@ -8,7 +8,12 @@ export function navigate(path) {
   window.location.hash = path
 }
 
-function currentPath() {
+// Like navigate, but replaces the current history entry, so Back skips a moved address.
+export function redirect(path) {
+  window.location.replace(`#${path}`)
+}
+
+export function currentPath() {
   return window.location.hash.replace(/^#/, '') || '/'
 }
 

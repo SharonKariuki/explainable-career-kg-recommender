@@ -1,54 +1,60 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { SIGNED_OUT_EVENT, getToken, logout, me } from './api.js'
-import { IconButton, LogoTile, Status, ThemeToggle, WakingNotice } from './components.jsx'
+import { Status, ThemeToggle, WakingNotice } from './components.jsx'
 import { Icon } from './icons.jsx'
-import { navigate, useRoute } from './router.js'
+import { currentPath, navigate, redirect, useRoute } from './router.js'
+import { activeLink, landing, queryOf, resolve } from './routes.js'
 import { useTheme } from './theme.js'
+import { TopBar } from './TopBar.jsx'
 import AuthScreen from './screens/AuthScreen.jsx'
 import CareerDetailScreen from './screens/CareerDetailScreen.jsx'
 import CareersScreen from './screens/CareersScreen.jsx'
 import DashboardScreen from './screens/DashboardScreen.jsx'
 import HistoryScreen from './screens/HistoryScreen.jsx'
+import NotFoundScreen from './screens/NotFoundScreen.jsx'
+import PlanScreen from './screens/PlanScreen.jsx'
 import ProfileScreen from './screens/ProfileScreen.jsx'
 import RecommendationsScreen from './screens/RecommendationsScreen.jsx'
-import RoadmapScreen from './screens/RoadmapScreen.jsx'
-import SavedScreen from './screens/SavedScreen.jsx'
 import SettingsScreen from './screens/SettingsScreen.jsx'
+import WelcomeScreen from './screens/WelcomeScreen.jsx'
 
-const CAREER_ROUTE = /^\/careers\/([\w.-]+)$/
-const ROADMAP_ROUTE = /^\/roadmap(?:\/([\w.-]+))?$/
-const HISTORY_ROUTE = /^\/history(?:\/(\d+))?$/
-
-// The sidebar (wide screens) and the floating tab bar (phones) share these;
-// on phones the middle one is the round black button.
+// The top bar's pills (wide screens) and the floating tab bar (phones) share these.
 const NAV = [
-  { path: '/dashboard', label: 'Home', icon: 'home' },
-  { path: '/recommendations', label: 'Matches', icon: 'matches' },
-  { path: '/assessment', label: 'Your skills', icon: 'plus' },
-  { path: '/careers', label: 'Explore', icon: 'explore' },
-  { path: '/roadmap', label: 'Roadmap', icon: 'roadmap' },
+  { path: '/home', label: 'Home', icon: 'home' },
+  { path: '/matches', label: 'Matches', icon: 'matches' },
+  { path: '/careers', label: 'Careers', icon: 'explore' },
+  { path: '/plan', label: 'My plan', icon: 'roadmap' },
 ]
 
-// Sidebar only; on phones they are reached from the dashboard.
+// Reached from the avatar menu, at every width.
 const MORE_NAV = [
-  { path: '/saved', label: 'Saved', icon: 'bookmark' },
+  { path: '/profile', label: 'My profile', icon: 'user' },
   { path: '/history', label: 'History', icon: 'matches' },
   { path: '/settings', label: 'Settings', icon: 'settings' },
 ]
 
-function initials(name) {
-  return name.slice(0, 2).toUpperCase()
+// True once the page has scrolled, when the top bar leaves the navy wash.
+function useScrolled() {
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+  return scrolled
 }
 
 function App() {
-  const route = useRoute()
-  const path = route === '/profile' ? '/assessment' : route  // the old address still works
+  const address = useRoute()
+  const route = resolve(address)
   const [user, setUser] = useState(null)
   const [checking, setChecking] = useState(Boolean(getToken()))
   const [startupError, setStartupError] = useState(null)
   const [signedOutNotice, setSignedOutNotice] = useState(null)
   const [theme, toggleTheme] = useTheme()
+  const scrolled = useScrolled()
 
   // A saved token may have expired or been revoked; confirm it on load. Only a
   // 401 means signed out: a network error or a sleeping server keeps the token.
@@ -82,11 +88,36 @@ function App() {
     navigate('/')
   }
 
-  function signedIn(account) {
+  // The page a signed-out visitor asked for, kept while they move between the sign-in forms.
+  const asked = useRef(null)
+
+  function signedIn(account, isNew) {
     setSignedOutNotice(null)
     setUser(account)
-    navigate('/dashboard')
+    // Signing in returns only the username; fetch the rest (the name) for the greeting.
+    me().then(setUser).catch(() => {})
+    // A new account is welcomed; otherwise open the page that was asked for, or home.
+    navigate(isNew ? '/welcome' : landing(currentPath(), asked.current))
+    asked.current = null
   }
+
+  // A moved address is swapped for its new one, so Back does not return to it.
+  useEffect(() => {
+    if (route.redirect) redirect(route.redirect)
+  }, [route.redirect])
+
+  const hasUser = Boolean(user)
+  const needsAccount = Boolean(route.name) && route.name !== 'not-found' && !route.open
+  useEffect(() => {
+    // Already signed in: the forms have nothing to offer. The address bar is read afresh,
+    // because signing in moves on before this component hears of the new address.
+    if (hasUser && route.open && resolve(currentPath()).open) redirect('/home')
+    else if (!hasUser && needsAccount) asked.current = address
+  }, [hasUser, route.open, needsAccount, address])
+
+  useEffect(() => {
+    document.title = (hasUser || route.open) && route.title ? `${route.title} · AjiraGuide` : 'AjiraGuide'
+  }, [hasUser, route.open, route.title])
 
   if (checking) return <main className="auth"><WakingNotice /><Status loading /></main>
   if (startupError) return <main className="auth"><Status error={startupError} /></main>
@@ -95,59 +126,35 @@ function App() {
       <main className="auth">
         <WakingNotice />
         <ThemeToggle theme={theme} onToggle={toggleTheme} className="auth-theme" />
-        <AuthScreen onSignedIn={signedIn} notice={signedOutNotice} />
+        <AuthScreen mode={route.name === 'signup' ? 'register' : 'login'} onSignedIn={signedIn} notice={signedOutNotice} />
       </main>
     )
   }
 
-  const career = path.match(CAREER_ROUTE)
-  const roadmap = path.match(ROADMAP_ROUTE)
-  const historyRoute = path.match(HISTORY_ROUTE)
+  const { name, params } = route
   let screen
-  if (path === '/assessment') screen = <ProfileScreen onSaved={() => navigate('/recommendations')} />
-  else if (path === '/recommendations') screen = <RecommendationsScreen />
-  else if (path === '/careers') screen = <CareersScreen />
-  else if (career) screen = <CareerDetailScreen key={career[1]} code={career[1]} />
-  else if (roadmap) screen = <RoadmapScreen code={roadmap[1]} />
-  else if (path === '/saved') screen = <SavedScreen />
-  else if (historyRoute) screen = <HistoryScreen key={historyRoute[1] ?? 'all'} runId={historyRoute[1]} />
-  else if (path === '/settings') {
+  if (route.redirect || route.open) screen = <Status loading />
+  else if (name === 'welcome') screen = <WelcomeScreen user={user} />
+  else if (name === 'home') screen = <DashboardScreen user={user} />
+  else if (name === 'profile') screen = <ProfileScreen onSaved={() => navigate('/matches')} onAccount={setUser} />
+  else if (name === 'matches') screen = <RecommendationsScreen />
+  else if (name === 'careers') screen = <CareersScreen show={queryOf(address).show} />
+  else if (name === 'career') screen = <CareerDetailScreen key={params.code} code={params.code} tab={params.tab} />
+  else if (name === 'plan') screen = <PlanScreen />
+  else if (name === 'history') screen = <HistoryScreen key={params.runId ?? 'all'} runId={params.runId} />
+  else if (name === 'settings') {
     screen = <SettingsScreen theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} onDeleted={accountDeleted} />
   }
-  else screen = <DashboardScreen user={user} onSignOut={signOut} theme={theme} onToggleTheme={toggleTheme} />
+  else screen = <NotFoundScreen />
 
-  const active = [...NAV, ...MORE_NAV].find((n) => path.startsWith(n.path))?.path ?? '/dashboard'
+  const active = activeLink(address, [...NAV, ...MORE_NAV])
   const current = (n) => (n.path === active ? 'page' : undefined)
+  // On phones the round middle button opens the profile, where skills are added.
+  const tabs = [NAV[0], NAV[1], { ...MORE_NAV[0], icon: 'plus' }, NAV[2], NAV[3]]
 
   return (
-    <div className="app">
-      <aside className="sidebar glass">
-        <a href="#/dashboard" className="brand">
-          <LogoTile size={36} />
-          AjiraGuide
-        </a>
-        <nav aria-label="Main">
-          {NAV.map((n) => (
-            <a key={n.path} href={`#${n.path}`} aria-current={current(n)}>
-              <Icon name={n.icon} />
-              {n.label}
-            </a>
-          ))}
-          <hr className="nav-rule" />
-          {MORE_NAV.map((n) => (
-            <a key={n.path} href={`#${n.path}`} aria-current={current(n)}>
-              <Icon name={n.icon} />
-              {n.label}
-            </a>
-          ))}
-        </nav>
-        <div className="sidebar-user">
-          <span className="av">{initials(user.username)}</span>
-          <a className="grow truncate" href="#/settings" title="Settings">{user.username}</a>
-          <ThemeToggle theme={theme} onToggle={toggleTheme} glass={false} />
-          <IconButton icon="logout" label="Sign out" onClick={signOut} glass={false} />
-        </div>
-      </aside>
+    <div className={name === 'home' ? 'app on-hero' : 'app'}>
+      <TopBar nav={NAV} more={MORE_NAV} active={active} user={user} theme={theme} onToggleTheme={toggleTheme} onSignOut={signOut} stuck={scrolled} />
 
       <main className="content">
         <WakingNotice />
@@ -155,7 +162,7 @@ function App() {
       </main>
 
       <nav className="tabs glass" aria-label="Main">
-        {NAV.map((n, i) =>
+        {tabs.map((n, i) =>
           i === 2 ? (
             <a key={n.path} href={`#${n.path}`} className="tab-plus" aria-label={n.label} aria-current={current(n)}>
               <Icon name={n.icon} size={20} />

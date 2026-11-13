@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { googleLogin, login, register } from '../api.js'
 import { LogoTile } from '../components.jsx'
 import { Icon } from '../icons.jsx'
+import { navigate } from '../router.js'
 
 // Google sign-in shows only when frontend/.env sets VITE_GOOGLE_CLIENT_ID.
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID
@@ -59,16 +60,20 @@ function GoogleButton({ text, onCredential, onError }) {
   return <div ref={slot} className="google-btn" />
 }
 
-export default function AuthScreen({ onSignedIn, notice = null }) {
-  const [mode, setMode] = useState('login')
+// mode: 'login' or 'register', from the address (#/signin or #/signup).
+// onSignedIn(account, isNew): isNew is true for an account made with the form just now.
+export default function AuthScreen({ mode = 'login', onSignedIn, notice = null }) {
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
-  const [error, setError] = useState(null)
+  // An error belongs to the form it happened on; switching forms hides it.
+  const [failure, setFailure] = useState(null)
   const [busy, setBusy] = useState(false)
 
   const isRegister = mode === 'register'
+  const error = failure?.mode === mode ? failure.text : null
+  const setError = (text) => setFailure(text && { mode, text })
 
   // Editing a field clears the last error, which may no longer apply.
   const edit = (setter) => (event) => {
@@ -82,7 +87,7 @@ export default function AuthScreen({ onSignedIn, notice = null }) {
     setError(null)
     try {
       const user = isRegister ? await register(username, password, email, name.trim()) : await login(username, password)
-      onSignedIn(user)
+      onSignedIn(user, isRegister)
     } catch (err) {
       setError(err.message)
     } finally {
@@ -94,7 +99,7 @@ export default function AuthScreen({ onSignedIn, notice = null }) {
     setBusy(true)
     setError(null)
     try {
-      onSignedIn(await googleLogin(credential))
+      onSignedIn(await googleLogin(credential), false)
     } catch (err) {
       setError(err.message)
     } finally {
@@ -103,8 +108,7 @@ export default function AuthScreen({ onSignedIn, notice = null }) {
   }
 
   function switchMode() {
-    setMode(isRegister ? 'login' : 'register')
-    setError(null)
+    navigate(isRegister ? '/signin' : '/signup')
   }
 
   return (

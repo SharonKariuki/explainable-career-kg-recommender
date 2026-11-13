@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 
 import { getCareers } from '../api.js'
-import { FilterChips, PageHeader, Pill, SaveButton, SearchField, Status } from '../components.jsx'
-import { capitalise, domainOptions } from '../format.js'
+import { EmptyState, FilterChips, PageHeader, Pill, SaveButton, SearchField, Status } from '../components.jsx'
+import { capitalise, domainOptions, filterCareers, showFilter } from '../format.js'
 import { Icon } from '../icons.jsx'
+import { navigate } from '../router.js'
 
 const SHOW = [
   { value: 'all', label: 'All careers' },
@@ -11,20 +12,12 @@ const SHOW = [
   { value: 'saved', label: 'Saved' },
 ]
 
-function filterCareers(careers, show, domain, query) {
-  const q = query.trim().toLowerCase()
-  return careers.filter(
-    (c) =>
-      (show === 'all' || (show === 'matched' ? c.match : c.saved)) &&
-      (domain === 'all' || c.domain === domain) &&
-      (!q || c.title.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)),
-  )
-}
-
-export default function CareersScreen() {
+// show: the address's ?show= value, so a filtered list can be linked to and survives Back.
+export default function CareersScreen({ show: requested }) {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
-  const [show, setShow] = useState('all')
+  const show = showFilter(requested)
+  const setShow = (value) => navigate(value === 'all' ? '/careers' : `/careers?show=${value}`)
   const [domain, setDomain] = useState('all')
   const [query, setQuery] = useState('')
 
@@ -67,7 +60,7 @@ export default function CareersScreen() {
 
       {!data.skills.length && (
         <p className="muted small">
-          <a href="#/assessment">Add your skills</a> to see how well you match each career.
+          <a href="#/profile">Add your skills</a> to see how well you match each career.
         </p>
       )}
 
@@ -87,7 +80,10 @@ export default function CareersScreen() {
                 <span className="muted small num">{c.skill_count} skills · {c.tool_count} tools</span>
               </p>
               <div className="card-foot">
-                <a href={`#/careers/${c.career_code}`}>Details <Icon name="forward" size={14} /></a>
+                <span className="card-links">
+                  <a href={`#/careers/${c.career_code}`}>Details <Icon name="forward" size={14} /></a>
+                  {c.match && <a href={`#/careers/${c.career_code}/plan`}>Plan <Icon name="forward" size={14} /></a>}
+                </span>
                 <SaveButton
                   code={c.career_code}
                   saved={c.saved}
@@ -98,6 +94,10 @@ export default function CareersScreen() {
             </li>
           ))}
         </ul>
+      ) : show === 'saved' && !careers.some((c) => c.saved) ? (
+        <EmptyState title="No saved careers yet" action={{ href: '#/careers', label: 'See all careers' }}>
+          Save a career from its card or its page, and it will wait for you here.
+        </EmptyState>
       ) : (
         <p className="empty">No careers fit this search.</p>
       )}

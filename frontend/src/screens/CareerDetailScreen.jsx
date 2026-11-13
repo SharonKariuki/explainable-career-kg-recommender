@@ -2,18 +2,21 @@ import { useEffect, useState } from 'react'
 
 import { getCareer, getRecommendation } from '../api.js'
 import CareerGraph from '../CareerGraph.jsx'
+import CareerPlan from '../CareerPlan.jsx'
 import { Disclosure, Meter, Notice, PageHeader, Pill, SaveButton, Status } from '../components.jsx'
-import { capitalise, fitLabel, sourceNames } from '../format.js'
+import { CAREER_TABS, capitalise, fitLabel, sourceNames } from '../format.js'
 import { Icon } from '../icons.jsx'
 
 // The skills to develop shown before "show more"; the rest keep their order.
 const NEXT_STEPS = 3
 const TECHNICAL_ID = 'how-calculated'
 
-export default function CareerDetailScreen({ code }) {
+// tab: 'fit', 'plan' or nothing for the overview; each has its own address.
+export default function CareerDetailScreen({ code, tab = 'overview' }) {
   const [profile, setProfile] = useState(null)
   const [career, setCareer] = useState(null)
   const [error, setError] = useState(null)
+  const [reload, setReload] = useState(0)
 
   useEffect(() => {
     // App keys this screen by career code, so state starts fresh for each career.
@@ -30,11 +33,11 @@ export default function CareerDetailScreen({ code }) {
     return () => {
       current = false
     }
-  }, [code])
+  }, [code, reload])
 
   const back = profile?.match
-    ? { href: '#/recommendations', label: 'All my matches' }
-    : { href: '#/careers', label: 'Explore careers' }
+    ? { href: '#/matches', label: 'All my matches' }
+    : { href: '#/careers', label: 'All careers' }
 
   if (!profile) {
     return (
@@ -51,22 +54,43 @@ export default function CareerDetailScreen({ code }) {
 
   return (
     <>
-      <PageHeader title={profile.title} subtitle={subtitle} back={back} />
-
-      <div className="button-row">
+      <PageHeader title={profile.title} subtitle={subtitle} back={back}>
         <SaveButton code={code} saved={profile.saved} />
-        {career && (
-          <>
-            <a className="btn glass" href={`#/roadmap/${code}`}><Icon name="roadmap" />Skills roadmap</a>
-            <button type="button" className="btn glass" onClick={openTechnical}>
-              <Icon name="graph" />How this was calculated
-            </button>
-          </>
-        )}
-      </div>
+      </PageHeader>
 
-      {career ? <MatchDetail career={career} description={profile.description} /> : <Requirements profile={profile} />}
+      <nav className="filters page-tabs" aria-label="Sections of this career">
+        {CAREER_TABS.map((t) => (
+          <a
+            key={t.value}
+            href={`#/careers/${code}${t.suffix}`}
+            className={t.value === tab ? 'filter on' : 'filter glass'}
+            aria-current={t.value === tab ? 'page' : undefined}
+          >
+            {t.label}
+          </a>
+        ))}
+      </nav>
+
+      {tab === 'overview' && <Overview profile={profile} career={career} />}
+      {tab === 'fit' && (career ? <MatchDetail career={career} /> : <NotLinked />)}
+      {tab === 'plan' && (
+        <CareerPlan
+          title={profile.title}
+          have={career ? career.skill_contributions : []}
+          gap={career ? career.skills_gap : profile.requirements}
+          matched={Boolean(career)}
+          onProfileChanged={() => setReload((n) => n + 1)}
+        />
+      )}
     </>
+  )
+}
+
+function NotLinked() {
+  return (
+    <Notice icon="bulb" title="None of your skills link to this career yet" action={{ href: '#/profile', label: 'Edit skills' }}>
+      Add skills this career requires that you already have, and it will be ranked and explained for you.
+    </Notice>
   )
 }
 
@@ -77,7 +101,7 @@ function openTechnical() {
   details.querySelector('summary').focus()
 }
 
-export function MatchDetail({ career, description }) {
+export function MatchDetail({ career }) {
   return (
     <>
       <section className="hero-card" aria-labelledby="match-heading">
@@ -87,15 +111,16 @@ export function MatchDetail({ career, description }) {
         <p className="hero-reason">{career.reason}</p>
       </section>
 
+      <div className="button-row">
+        <button type="button" className="btn glass" onClick={openTechnical}>
+          <Icon name="graph" />How this was calculated
+        </button>
+      </div>
+
       <div className="split-2">
         <SkillsYouHave skills={career.skill_contributions} />
         <SkillsToDevelop gap={career.skills_gap} code={career.career_code} />
       </div>
-
-      <section className="card panel" aria-labelledby="about-heading">
-        <h2 id="about-heading">About this career</h2>
-        <p className="explanation-lead">{description}</p>
-      </section>
 
       <TechnicalExplanation career={career} />
     </>
@@ -119,7 +144,7 @@ function SkillsYouHave({ skills }) {
               <span className="row-main">
                 <b>{s.skill_label}</b>
                 {s.low_confidence ? (
-                  <span className="sub">Unsure match for your “{s.query}”. <a href="#/assessment">Reword it</a></span>
+                  <span className="sub">Unsure match for your “{s.query}”. <a href="#/profile">Reword it</a></span>
                 ) : (
                   s.query.toLowerCase() !== s.skill_label.toLowerCase() && <span className="sub">You said “{s.query}”</span>
                 )}
@@ -175,7 +200,7 @@ function SkillsToDevelop({ gap, code }) {
               </ol>
             </Disclosure>
           )}
-          <p className="panel-foot"><a href={`#/roadmap/${code}`}>Track these in your roadmap <Icon name="forward" size={14} /></a></p>
+          <p className="panel-foot"><a href={`#/careers/${code}/plan`}>Track these in the skills plan <Icon name="forward" size={14} /></a></p>
         </>
       ) : (
         <p className="empty">Your skills already include every skill this career requires.</p>
@@ -267,18 +292,23 @@ function TechnicalExplanation({ career }) {
   )
 }
 
-// For a career none of the user's skills link to: what it asks for, from the knowledge graph.
-function Requirements({ profile }) {
+// What the career is and what it asks for, from the knowledge graph; the same for every student
+// except the line saying how it fits them.
+function Overview({ profile, career }) {
   return (
     <>
+      {career ? (
+        <Notice icon="graph" title={`${fitLabel(career.fit)} · #${career.rank} of your matches`} action={{ href: `#/careers/${profile.career_code}/fit`, label: 'Why it fits' }}>
+          {career.reason}
+        </Notice>
+      ) : (
+        <NotLinked />
+      )}
+
       <section className="card panel" aria-labelledby="about-heading">
         <h2 id="about-heading">About this career</h2>
         <p className="explanation-lead">{profile.description}</p>
       </section>
-
-      <Notice icon="bulb" title="None of your skills link to this career yet" action={{ href: '#/assessment', label: 'Edit skills' }}>
-        Add skills from the list below that you already have, and it will be ranked and explained for you.
-      </Notice>
 
       <div className="split-2">
         <section className="card panel">
@@ -290,15 +320,16 @@ function Requirements({ profile }) {
           <ol className="list">
             {profile.requirements.map((r, i) => (
               <li key={r.skill_id} className="row">
-                <span className="av num">{i + 1}</span>
+                <span className={r.have ? 'av have' : 'av num'}>{r.have ? <Icon name="check" size={16} /> : i + 1}</span>
                 <span className="row-main">
                   <b>{r.label}</b>
-                  <span className="sub">{capitalise(r.skill_type || 'skill')}</span>
+                  <span className="sub">{capitalise(r.skill_type || 'skill')}{r.have && ' · you have this'}</span>
                 </span>
                 <span className="row-value"><Pill>{r.requirement}</Pill></span>
               </li>
             ))}
           </ol>
+          <p className="panel-foot"><a href={`#/careers/${profile.career_code}/plan`}>Plan these skills <Icon name="forward" size={14} /></a></p>
         </section>
 
         <section className="card panel">

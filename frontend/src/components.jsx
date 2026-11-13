@@ -35,7 +35,7 @@ export function PageHeader({ title, subtitle, back, children }) {
   )
 }
 
-// glass={false} gives the quieter borderless variant used inside the sidebar.
+// glass={false} gives the quieter borderless variant.
 export function IconButton({ icon, label, onClick, href, glass = true, className = '' }) {
   const classes = `icon-btn ${glass ? 'glass' : 'plain'} ${className}`
   if (href) {
@@ -115,16 +115,6 @@ export function Notice({ icon = 'bulb', title, children, action }) {
   )
 }
 
-export function Kpi({ label, value, note }) {
-  return (
-    <div className="card kpi">
-      <div className="kpi-label">{label}</div>
-      <div className="kpi-value num">{value}</div>
-      <div className="kpi-note">{note}</div>
-    </div>
-  )
-}
-
 // A 0-1 fill. Gold marks progress or what is current; dark is for plain amounts.
 export function Progress({ value, tone = 'dark', label }) {
   const percent = Math.round(Math.max(0, Math.min(1, value)) * 100)
@@ -149,12 +139,26 @@ export function Meter({ label, value, weight }) {
 
 // The engine's plain fit label with the 0-1 match score beneath it. The label
 // carries the meaning in text, so colour is never the only cue.
-export function MatchBadge({ fit, score }) {
+export function MatchBadge({ fit, score, top = false }) {
   return (
     <div className="match-badge">
       <Pill tone={fit === 'strong' ? 'match' : 'neutral'}>{fitLabel(fit)}</Pill>
-      <span className="sub num">Match score {score.toFixed(2)}</span>
+      <span className="match-badge-score">
+        <ScoreBar score={score} tone={top ? 'amber' : undefined} />
+        <span className="sub num">Match score {score.toFixed(2)}</span>
+      </span>
     </div>
+  )
+}
+
+// A 0-1 score as ten segments; any score above zero fills at least one.
+// tone="amber" is for the top match only.
+export function ScoreBar({ score, tone }) {
+  const filled = score > 0 ? Math.max(1, Math.round(score * 10)) : 0
+  return (
+    <span className={tone ? `seg-bar ${tone}` : 'seg-bar'} aria-hidden="true">
+      {Array.from({ length: 10 }, (_, i) => <i key={i} className={i < filled ? 'on' : ''} />)}
+    </span>
   )
 }
 

@@ -93,7 +93,7 @@ export default function HistoryScreen({ runId }) {
     return (
       <>
         {header}
-        <EmptyState title="No history yet" action={{ href: '#/assessment', label: 'Add your skills' }}>
+        <EmptyState title="No history yet" action={{ href: '#/profile', label: 'Add your skills' }}>
           Save your skills and your matches will be recorded here, so you can see how they change as you grow.
         </EmptyState>
       </>

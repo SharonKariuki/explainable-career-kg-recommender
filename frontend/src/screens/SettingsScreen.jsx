@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { changePassword, deleteAccount, me, updateAccount } from '../api.js'
+import { changePassword, deleteAccount, me } from '../api.js'
 import { PageHeader, Pill, Status, ThemeToggle } from '../components.jsx'
 import { Icon } from '../icons.jsx'
 
@@ -28,14 +28,15 @@ export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDele
     }
   }, [])
 
-  const header = <PageHeader title="Settings" subtitle="Your account, sign-in and appearance." />
+  const header = <PageHeader title="Settings" subtitle="Sign-in, appearance, help and your account." />
 
   if (!account) return <>{header}<Status loading={!error} error={error} /></>
 
   return (
+    <>
+    {header}
     <div className="narrow-page">
-      {header}
-      <AccountPanel account={account} onChange={setAccount} />
+      <AccountPanel account={account} />
       <PasswordPanel hasPassword={account.has_password} onChanged={() => setAccount({ ...account, has_password: true })} />
 
       <section className="card panel">
@@ -80,29 +81,11 @@ export default function SettingsScreen({ theme, onToggleTheme, onSignOut, onDele
 
       <DeletePanel username={account.username} onDeleted={onDeleted} />
     </div>
+    </>
   )
 }
 
-function AccountPanel({ account, onChange }) {
-  const [email, setEmail] = useState(account.email)
-  const [name, setName] = useState(account.name ?? '')
-  const [busy, setBusy] = useState(false)
-  const [result, setResult] = useState(null)
-
-  async function save(event) {
-    event.preventDefault()
-    setBusy(true)
-    setResult(null)
-    try {
-      onChange({ ...account, ...(await updateAccount({ name: name.trim(), email: email.trim() })) })
-      setResult({ ok: true, text: 'Account details saved.' })
-    } catch (err) {
-      setResult({ ok: false, text: err.message })
-    } finally {
-      setBusy(false)
-    }
-  }
-
+function AccountPanel({ account }) {
   const joined = new Date(account.date_joined).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })
 
   return (
@@ -117,41 +100,13 @@ function AccountPanel({ account, onChange }) {
         </span>
         {account.google && <Pill>Google sign-in</Pill>}
       </div>
-      <form className="stack" onSubmit={save}>
-        <label>
-          Full name
-          <input
-            className="field"
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value)
-              setResult(null)
-            }}
-            autoComplete="name"
-            maxLength={150}
-          />
-        </label>
-        <label>
-          Email
-          <input
-            className="field"
-            type="email"
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value)
-              setResult(null)
-            }}
-            autoComplete="email"
-            placeholder="you@example.com"
-          />
-        </label>
-        <Message result={result} />
-        <div className="actions">
-          <button type="submit" className="btn dark small" disabled={busy || (email.trim() === account.email && name.trim() === (account.name ?? ''))}>
-            {busy ? 'Saving…' : 'Save details'}
-          </button>
-        </div>
-      </form>
+      <div className="setting-row">
+        <span className="grow">
+          <b>Name and email</b>
+          <span className="sub">Kept with your skills on your profile.</span>
+        </span>
+        <a className="btn glass" href="#/profile">Edit profile</a>
+      </div>
     </section>
   )
 }
