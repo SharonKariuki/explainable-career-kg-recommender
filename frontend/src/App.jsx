@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-import { SIGNED_OUT_EVENT, getToken, logout, me } from './api.js'
+import { SIGNED_OUT_EVENT, getToken, logout, me, wake } from './api.js'
 import { Status, ThemeToggle, WakingNotice } from './components.jsx'
 import { Icon } from './icons.jsx'
 import { currentPath, navigate, redirect, useRoute } from './router.js'
@@ -59,7 +59,10 @@ function App() {
   // A saved token may have expired or been revoked; confirm it on load. Only a
   // 401 means signed out: a network error or a sleeping server keeps the token.
   useEffect(() => {
-    if (!getToken()) return
+    if (!getToken()) {
+      wake()
+      return
+    }
     me()
       .then(setUser)
       .catch((err) => (err.status === 401 ? setUser(null) : setStartupError(err.message)))

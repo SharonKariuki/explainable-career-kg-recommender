@@ -44,6 +44,20 @@ test('a lost connection says so', async (t) => {
   await assert.rejects(api.me(), { message: api.OFFLINE_MESSAGE, status: 0 })
 })
 
+test('waking the backend sends one request and reports nothing', async (t) => {
+  const states = []
+  const stop = api.onWaking((waking) => states.push(waking))
+  for (const answer of [async () => json(401, { detail: 'No token.' }), async () => json(503, null), async () => { throw new TypeError('Failed to fetch') }]) {
+    const fetch = t.mock.method(globalThis, 'fetch', answer)
+    assert.equal(api.wake(), undefined)
+    await new Promise((resolve) => setImmediate(resolve))
+    assert.equal(fetch.mock.callCount(), 1)
+    assert.equal(fetch.mock.calls[0].arguments[0], '/api/auth/me/')
+  }
+  stop()
+  assert.deepEqual(states, [])
+})
+
 test('requests wait while the backend starts, then succeed', async (t) => {
   t.mock.timers.enable({ apis: ['setTimeout'] })
   const answers = [json(503, { error: 'App port is not ready' }), json(504, null), json(200, { username: 'amina' })]

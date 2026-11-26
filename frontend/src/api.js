@@ -41,6 +41,13 @@ function setWaking(waking) {
   wakingListeners.forEach((listener) => listener(waking))
 }
 
+// Starts the sleeping backend without waiting for it: one request, sent when a
+// signed-out visitor opens the app, so the server starts while they type. Any
+// answer will do (it is 401 without a token), so nothing is read or reported.
+export function wake() {
+  fetch('/api/auth/me/').catch(() => {})
+}
+
 export class ApiError extends Error {
   constructor(status, data, message) {
     super(message ?? describe(status, data))
