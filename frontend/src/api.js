@@ -1,11 +1,19 @@
 // Small client for the Django REST API. The token from login is kept in
-// localStorage so a page reload keeps the user signed in.
+// sessionStorage: a page reload stays signed in, but a new tab or a reopened
+// browser asks to sign in again, so a shared computer does not keep the account.
 
 const TOKEN_KEY = 'ajiraguide.token'
 
+// Earlier versions kept the token in localStorage, where it never expired.
+try {
+  localStorage.removeItem(TOKEN_KEY)
+} catch {
+  // Storage unavailable: nothing was saved there.
+}
+
 export function getToken() {
   try {
-    return localStorage.getItem(TOKEN_KEY)
+    return sessionStorage.getItem(TOKEN_KEY)
   } catch {
     return null
   }
@@ -13,8 +21,8 @@ export function getToken() {
 
 function setToken(token) {
   try {
-    if (token) localStorage.setItem(TOKEN_KEY, token)
-    else localStorage.removeItem(TOKEN_KEY)
+    if (token) sessionStorage.setItem(TOKEN_KEY, token)
+    else sessionStorage.removeItem(TOKEN_KEY)
   } catch {
     // Storage unavailable (private mode): the session lasts until reload.
   }
